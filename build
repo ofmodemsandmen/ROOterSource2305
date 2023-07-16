@@ -1,7 +1,7 @@
 #!/bin/sh
 
-cores="-j 7"
-#cores=""
+#cores="-j 7"
+cores=""
 DATE=$(date +%Y-%m-%d)
 routersjson="./router2305.json"
 templatefolder="template/"
