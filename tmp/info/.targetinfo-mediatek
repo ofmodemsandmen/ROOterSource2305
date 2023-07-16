@@ -1,0 +1,728 @@
+Source-Makefile: target/linux/mediatek/Makefile
+Target: mediatek
+Target-Board: mediatek
+Target-Name: MediaTek Ralink ARM
+Target-Arch: arm
+Target-Arch-Packages: arm_xscale
+Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ramdisk squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: xscale
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug 
+Target: mediatek/mt7622
+Target-Board: mediatek
+Target-Name: MT7622
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_cortex-a53
+Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=cortex-a53
+CPU-Type: cortex-a53
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware images for MediaTek MT7622 ARM based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-mt7622-firmware wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_bananapi_bpi-r64
+Target-Profile-Name: Bananapi BPi-R64
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 e2fsprogs mkf2fs f2fsck 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: bananapi,bpi-r64
+
+
+Target-Profile-Description:
+Build firmware images for Bananapi BPi-R64
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_buffalo_wsr-2533dhp2
+Target-Profile-Name: Buffalo WSR-2533DHP2
+Target-Profile-Packages: kmod-mt7615-firmware swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: buffalo,wsr-2533dhp2
+
+
+Target-Profile-Description:
+Build firmware images for Buffalo WSR-2533DHP2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_elecom_wrc-2533gent
+Target-Profile-Name: Elecom WRC-2533GENT
+Target-Profile-Packages: kmod-btmtkuart kmod-mt7615-firmware kmod-usb3 swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: elecom,wrc-2533gent
+
+
+Target-Profile-Description:
+Build firmware images for Elecom WRC-2533GENT
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_elecom_wrc-x3200gst3
+Target-Profile-Name: ELECOM WRC-X3200GST3
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: elecom,wrc-x3200gst3
+
+
+Target-Profile-Description:
+Build firmware images for ELECOM WRC-X3200GST3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450
+Target-Profile-Name: Belkin RT3200 (Linksys E8450)
+Target-Profile-Packages: kmod-mt7915-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450
+
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450
+Alternative device titles:
+- Belkin RT3200
+
+
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450
+Target-Profile-Name: Linksys E8450
+Target-Profile-Packages: kmod-mt7915-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450
+
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450
+Alternative device titles:
+- Belkin RT3200
+
+
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450-ubi
+Target-Profile-Name: Belkin RT3200 UBI (Linksys E8450 UBI)
+Target-Profile-Packages: kmod-mt7915-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450-ubi
+
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450 UBI
+Alternative device titles:
+- Belkin RT3200 UBI
+
+
+
+
+@@
+
+Target-Profile: DEVICE_linksys_e8450-ubi
+Target-Profile-Name: Linksys E8450 UBI
+Target-Profile-Packages: kmod-mt7915-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: linksys,e8450-ubi
+
+
+Target-Profile-Description:
+Build firmware images for Linksys E8450 UBI
+Alternative device titles:
+- Belkin RT3200 UBI
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7622-rfb1
+Target-Profile-Name: MediaTek MTK7622 rfb1 AP
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7622-rfb1
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MTK7622 rfb1 AP
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7622-rfb1-ubi
+Target-Profile-Name: MediaTek MTK7622 rfb1 AP (UBI)
+Target-Profile-Packages: kmod-ata-ahci-mtk kmod-btmtkuart kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7622-rfb1-ubi
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MTK7622 rfb1 AP (UBI)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wax206
+Target-Profile-Name: NETGEAR WAX206
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,wax206
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR WAX206
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ruijie_rg-ew3200gx-pro
+Target-Profile-Name: Ruijie RG-EW3200GX PRO
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ruijie,rg-ew3200gx-pro
+
+
+Target-Profile-Description:
+Build firmware images for Ruijie RG-EW3200GX PRO
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_reyee_ax3200-e5
+Target-Profile-Name: reyee AX3200 E5
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: reyee,ax3200-e5
+
+
+Target-Profile-Description:
+Build firmware images for reyee AX3200 E5
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_totolink_a8000ru
+Target-Profile-Name: TOTOLINK A8000RU
+Target-Profile-Packages: kmod-mt7615-firmware swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: totolink,a8000ru
+
+
+Target-Profile-Description:
+Build firmware images for TOTOLINK A8000RU
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v1
+Target-Profile-Name: Ubiquiti UniFi 6 LR v1
+Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1 ubnt,unifi-6-lr
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v1-ubootmod
+Target-Profile-Name: Ubiquiti UniFi 6 LR v1 U-Boot mod
+Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1-ubootmod ubnt,unifi-6-lr-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v2
+Target-Profile-Name: Ubiquiti UniFi 6 LR v2
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v2-ubootmod
+Target-Profile-Name: Ubiquiti UniFi 6 LR v2 U-Boot mod
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi 6 LR v2 U-Boot mod
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_redmi-router-ax6s
+Target-Profile-Name: Xiaomi Router AX3200 (Xiaomi Redmi Router AX6S)
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6s
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Redmi Router AX6S
+Alternative device titles:
+- Xiaomi Router AX3200
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_redmi-router-ax6s
+Target-Profile-Name: Xiaomi Redmi Router AX6S
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6s
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Redmi Router AX6S
+Alternative device titles:
+- Xiaomi Router AX3200
+
+
+
+
+@@
+
+Target: mediatek/mt7623
+Target-Board: mediatek
+Target-Name: MT7623
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a7_neon-vfpv4
+Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs usb usbgadget
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a7+neon-vfpv4
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware images for MediaTek mt7623 ARM based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-crypto-hw-safexcel uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug 
+Target-Profile: DEVICE_bananapi_bpi-r2
+Target-Profile-Name: Bananapi BPi-R2
+Target-Profile-Packages: mkf2fs e2fsprogs kmod-usb3 kmod-ata-ahci 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: bananapi,bpi-r2
+
+
+Target-Profile-Description:
+Build firmware images for Bananapi BPi-R2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7623-02
+Target-Profile-Name: UniElec U7623-02
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7623-02 unielec,u7623-02-emmc-512m
+
+
+Target-Profile-Description:
+Build firmware images for UniElec U7623-02
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7623-02-emmc-512m-legacy
+Target-Profile-Name: UniElec U7623-02 eMMC/512MiB RAM (legacy image)
+Target-Profile-Packages: kmod-fs-vfat kmod-nls-cp437 kmod-nls-iso8859-1 kmod-mmc mkf2fs e2fsprogs kmod-usb-ohci kmod-usb2 kmod-usb3 kmod-ata-ahci partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7623-02-emmc-512m
+
+
+Target-Profile-Description:
+Build firmware images for UniElec U7623-02 eMMC/512MiB RAM (legacy image)
+
+
+
+
+
+@@
+
+Target: mediatek/mt7629
+Target-Board: mediatek
+Target-Name: MT7629
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a7
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a7
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware images for MediaTek mt7629 ARM based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug 
+Target-Profile: DEVICE_mediatek_mt7629-rfb
+Target-Profile-Name: MediaTek MT7629 rfb AP
+Target-Profile-Packages: swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7629-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MT7629 rfb AP
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_iptime_a6004mx
+Target-Profile-Name: ipTIME A6004MX
+Target-Profile-Packages: kmod-usb3 uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: iptime,a6004mx
+
+
+Target-Profile-Description:
+Build firmware images for ipTIME A6004MX
+
+
+
+
+
+@@
+
+Target: mediatek/filogic
+Target-Board: mediatek
+Target-Name: Filogic 8x0 (MT798x)
+Target-Arch: aarch64
+Target-Arch-Packages: aarch64_cortex-a53
+Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separate_ramdisk squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=cortex-a53
+CPU-Type: cortex-a53
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm64
+Target-Description:
+	Build firmware images for MediaTek Filogic ARM based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-crypto-hw-safexcel kmod-mt7915e wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_asus_tuf-ax4200
+Target-Profile-Name: ASUS TUF-AX4200
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,tuf-ax4200
+
+
+Target-Profile-Description:
+Build firmware images for ASUS TUF-AX4200
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_bananapi_bpi-r3
+Target-Profile-Name: Bananapi BPi-R3
+Target-Profile-Packages: kmod-hwmon-pwmfan kmod-i2c-gpio kmod-mt7986-firmware kmod-sfp kmod-usb3 e2fsprogs f2fsck mkf2fs mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: bananapi,bpi-r3
+
+
+Target-Profile-Description:
+Build firmware images for Bananapi BPi-R3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_wr3000-v1
+Target-Profile-Name: Cudy WR3000 v1
+Target-Profile-Packages: kmod-mt7981-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,wr3000-v1 R31
+
+
+Target-Profile-Description:
+Build firmware images for Cudy WR3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_glinet_gl-mt3000
+Target-Profile-Name: GL.iNet GL-MT3000
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-hwmon-pwmfan kmod-usb3 
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: glinet,gl-mt3000 glinet,mt3000-snand
+
+
+Target-Profile-Description:
+Build firmware images for GL.iNet GL-MT3000
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wax220
+Target-Profile-Name: Netgear WAX220
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,wax220
+
+
+Target-Profile-Description:
+Build firmware images for Netgear WAX220
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7986a-rfb-nand
+Target-Profile-Name: MediaTek MT7986 rfba AP (NAND)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7986a-rfb-snand
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MT7986 rfba AP (NAND)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7986b-rfb
+Target-Profile-Name: MediaTek MTK7986 rfbb AP
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7986b-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MTK7986 rfbb AP
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7988a-rfb-nand
+Target-Profile-Name: MediaTek MT7988a nand rfb
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7988a-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MT7988a nand rfb
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_qihoo_360t7
+Target-Profile-Name: Qihoo 360T7
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: qihoo,360t7
+
+
+Target-Profile-Description:
+Build firmware images for Qihoo 360T7
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-xdr4288
+Target-Profile-Name: TP-Link TL-XDR4288
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-xdr4288
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-XDR4288
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-xdr6086
+Target-Profile-Name: TP-Link TL-XDR6086
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-xdr6086
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-XDR6086
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_tl-xdr6088
+Target-Profile-Name: TP-Link TL-XDR6088
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,tl-xdr6088
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link TL-XDR6088
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_redmi-router-ax6000-stock
+Target-Profile-Name: Xiaomi Redmi Router AX6000 (stock layout)
+Target-Profile-Packages: kmod-leds-ws2812b kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6000-stock
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Redmi Router AX6000 (stock layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_redmi-router-ax6000-ubootmod
+Target-Profile-Name: Xiaomi Redmi Router AX6000 (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-leds-ws2812b kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,redmi-router-ax6000-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Redmi Router AX6000 (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_ex5601-t0-stock
+Target-Profile-Name: Zyxel EX5601-T0  (stock layout)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7986a-rfb-snand
+
+
+Target-Profile-Description:
+Build firmware images for Zyxel EX5601-T0  (stock layout)
+
+
+
+
+
+@@
+
+

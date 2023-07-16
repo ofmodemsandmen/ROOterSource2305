@@ -1,0 +1,13 @@
+{
+	"BPIR3": {
+		"details": "BananaPi BPi R3",
+		"type": "4",
+		"build": "2305",
+		"config": ".config_bpir3",
+		"image1": "openwrt-mediatek-filogic-bananapi_bpi-r3-sdcard.img.gz",
+		"image2": "openwrt-mediatek-filogic-bananapi_bpi-r3-sdcard.img",
+		"imagepath": "/mediatek/filogic/",
+		"mod": "BananaPi-BPi-R3",
+		"addons": ["readme.pdf"]
+	}
+}

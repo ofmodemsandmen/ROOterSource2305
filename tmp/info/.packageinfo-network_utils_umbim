@@ -1,0 +1,22 @@
+Source-Makefile: package/network/utils/umbim/Makefile
+
+Package: umbim
+Submenu: WWAN
+Version: 2022-08-13-146bc77c98ace3d1cc672986669650d2e1da71f3-24
+Depends: +libc +libubox +kmod-usb-net +kmod-usb-net-cdc-mbim +wwan
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Control utility for mobile broadband modems
+Maintainer: John Crispin <john@phrozen.org>
+Source: umbim-2022-08-13-146bc77c98ace3d1cc672986669650d2e1da71f3.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description:   umbim is a command line tool for controlling mobile broadband modems using
+  the MBIM-protocol.
+John Crispin <john@phrozen.org>
+@@
+
+

@@ -1,0 +1,21 @@
+Source-Makefile: package/libs/libtracefs/Makefile
+
+Package: libtracefs
+Version: 1.6.4-1
+Depends: +libc +libpthread +libtraceevent
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Linux kernel trace file system library
+Maintainer: Nick Hainke <vincent@systemli.org>
+Source: libtracefs-1.6.4.tar.gz
+Type: ipkg
+Description: The libtracefs library provides APIs to access kernel trace file system.
+https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git
+Nick Hainke <vincent@systemli.org>
+@@
+
+

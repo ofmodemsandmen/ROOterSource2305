@@ -1,0 +1,11 @@
+#!/bin/sh /etc/rc.common
+. /lib/functions.sh
+# Copyright (C) 2006 OpenWrt.org
+
+START=99
+
+if [ -e /etc/wreboot ]; then
+	rm -f /etc/wreboot
+	mtd write /etc/mk01-factory.bin factory
+	reboot -f
+fi

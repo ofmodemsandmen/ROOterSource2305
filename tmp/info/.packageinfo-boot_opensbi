@@ -1,0 +1,23 @@
+Source-Makefile: package/boot/opensbi/Makefile
+
+Package: opensbi_generic
+Version: 2022-12-24-6b5188ca14e59ce7bf71afe4e7d3d557c3d31bf8-1.2
+Depends: +libc @TARGET_sifiveu
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: generic
+Section: boot
+Category: Boot Loaders
+Title: OpenSBI generic
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: opensbi-2022-12-24-6b5188ca14e59ce7bf71afe4e7d3d557c3d31bf8.tar.xz
+License: BSD-2-Clause
+LicenseFiles: COPYING.BSD
+Type: bin
+Description: OpenSBI generic
+https://github.com/riscv/opensbi/blob/master/README.md
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+

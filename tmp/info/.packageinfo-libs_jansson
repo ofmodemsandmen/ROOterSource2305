@@ -1,0 +1,23 @@
+Source-Makefile: package/libs/jansson/Makefile
+
+Package: jansson
+Version: 2.14-3
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Jansson library
+Maintainer: 
+Source: jansson-2.14.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Jansson is a C library for encoding, decoding and manipulating JSON data
+http://www.digip.org/jansson/
+
+@@
+
+

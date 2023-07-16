@@ -1,0 +1,370 @@
+Source-Makefile: package/boot/tfa-layerscape/Makefile
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1012a-frdm
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1012a-frdm @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1012a-frdm
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1012AFRDM
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1012AFRDM
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1012a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1012a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1012a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1012ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1012ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1012a-frwy-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1012a-frwy-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1012a-frwy-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1012AFRWY
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1012AFRWY
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1028a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1028a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1028a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for 
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for 
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1028a-rdb-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1028a-rdb-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1028a-rdb-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for 
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for 
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1043a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1043a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1043a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1043ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1043ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1043a-rdb-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1043a-rdb-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1043a-rdb-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1043ARDB SD Boot
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1043ARDB SD Boot
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1046a-frwy
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1046a-frwy @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1046a-frwy
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1046AFRWY
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1046AFRWY
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1046a-frwy-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1046a-frwy-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1046a-frwy-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1046AFRWY SD Boot
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1046AFRWY SD Boot
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1046a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1046a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1046a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1046ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1046ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1046a-rdb-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1046a-rdb-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1046a-rdb-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1046ARDB SD Boot
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1046ARDB SD Boot
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1088a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1088a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1088a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1088ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1088ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls1088a-rdb-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls1088a-rdb-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls1088a-rdb-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS1088ARDB SD Boot
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS1088ARDB SD Boot
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-ls2088a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_ls2088a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: ls2088a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LS2088ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LS2088ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-lx2160a-rdb
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_lx2160a-rdb @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: lx2160a-rdb
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LX2160ARDB
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LX2160ARDB
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+Build-Depends: tfa-layerscape/host
+Build-Types: host
+
+Package: trusted-firmware-a-lx2160a-rdb-sdboot
+Version: lf-6.1.1-1.0.0-1
+Depends: +libc @!IN_SDK +layerscape-rcw +u-boot-fsl_lx2160a-rdb-sdboot @TARGET_layerscape_armv8_64b
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: lx2160a-rdb-sdboot
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for NXP LX2160ARDB SD Boot
+Maintainer: 
+Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for NXP LX2160ARDB SD Boot
+https://www.trustedfirmware.org/projects/tf-a/
+
+@@
+
+

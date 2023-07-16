@@ -1,0 +1,41 @@
+Source-Makefile: package/devel/trace-cmd/Makefile
+
+Package: trace-cmd
+Version: v3.1.6-1
+Depends: +libc +libtracefs +zlib
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: Linux trace command line utility
+Maintainer: 
+Source: trace-cmd-v3.1.6.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description: Linux trace command line utility
+
+@@
+
+Package: trace-cmd-extra
+Version: v3.1.6-1
+Depends: +libc +libtraceevent-extra
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: Extra plugins for trace-cmd
+Maintainer: 
+Source: trace-cmd-v3.1.6.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description: Extra plugins for trace-cmd
+
+@@
+
+

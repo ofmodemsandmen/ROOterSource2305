@@ -1,0 +1,20 @@
+Source-Makefile: package/devel/perf/Makefile
+
+Package: perf
+Version: <LINUX_VERSION>-4
+Depends: +libc +libelf +libdw +PACKAGE_libunwind:libunwind +libpthread +librt +objdump @!IN_SDK @KERNEL_PERF_EVENTS +PACKAGE_libbfd:libbfd +PACKAGE_libopcodes:libopcodes
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Title: Linux performance monitoring tool
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: 
+Type: ipkg
+Description:   perf is the Linux performance monitoring tool
+http://www.kernel.org
+Felix Fietkau <nbd@nbd.name>
+@@
+
+

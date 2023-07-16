@@ -1,0 +1,44 @@
+Source-Makefile: feeds/luci/applications/luci-app-mosquitto/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-mosquitto
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-compat +luci-mod-admin-full mosquitto +luci-lua-runtime
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: Mosquitto LuCI interface
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description:    Provides a webadmin for most basic mosquitto parameters.
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-mosquitto-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc luci-app-mosquitto
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-mosquitto - es translation
+Maintainer: Karl Palsson <karlp@etactica.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-mosquitto - Español (Spanish)
+Karl Palsson <karlp@etactica.com>
+@@
+
+

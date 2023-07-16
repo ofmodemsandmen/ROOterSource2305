@@ -1,0 +1,41 @@
+Source-Makefile: package/network/utils/ipset/Makefile
+
+Package: libipset
+Version: 7.17-1
+Depends: +libc +kmod-ipt-ipset +libmnl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: IPset administration utility
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ipset-7.17.tar.bz2
+License: GPL-2.0
+Type: ipkg
+Description: IPset administration utility
+http://ipset.netfilter.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+Package: ipset
+Version: 7.17-1
+Depends: +libc +kmod-ipt-ipset +libmnl +libipset
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: IPset administration utility
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Source: ipset-7.17.tar.bz2
+License: GPL-2.0
+Type: ipkg
+Description: IPset administration utility
+http://ipset.netfilter.org/
+Jo-Philipp Wich <jo@mein.io>
+@@
+
+

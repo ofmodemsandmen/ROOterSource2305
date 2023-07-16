@@ -1,0 +1,21 @@
+Source-Makefile: package/network/utils/wpan-tools/Makefile
+
+Package: wpan-tools
+Version: 0.9-1
+Depends: +libc +libnl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: cfg802154 interface configuration utility
+Maintainer: 
+Source: wpan-tools-0.9.tar.gz
+Type: ipkg
+Description: cfg802154 interface configuration utility
+https://linux-wpan.org/wpan-tools.html
+
+@@
+
+

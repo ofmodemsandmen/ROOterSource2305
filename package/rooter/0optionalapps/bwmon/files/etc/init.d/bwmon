@@ -1,0 +1,36 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2006 OpenWrt.org
+
+START=60
+
+start() {
+	WX=$(uci -q get custom.bwallocate.lock)
+	if [ "$WX" = "1" ]; then
+		uci set bwmon.general.enabled=1
+		uci commit bwmon
+	fi
+	WX=$(uci -q get bwmon.backup)
+	if [ -z "$WX" ]; then
+		uci set bwmon.backup='backup'
+		uci set bwmon.backup.dailytotal='0'
+		uci set bwmon.backup.dailyrx='0'
+		uci set bwmon.backup.dailytx='0'
+		uci set bwmon.backup.montotal='0'
+		uci set bwmon.backup.monrx='0'
+		uci set bwmon.backup.montx='0'
+		uci set bwmon.backup.days='1'
+		uci set bwmon.backup.year='0'
+		uci set bwmon.backup.month='0'
+		uci set bwmon.backup.day='0'
+		uci commit bwmon
+	fi
+	if [ -e /usr/lib/bwmon/luci-app-nlbwmonon.json ]; then
+		enb=$(uci -q get nlbwmon.nlbwmon.enabled)
+		if [ "$enb" = "1" ]; then
+			cp /usr/lib/bwmon/luci-app-nlbwmonon.json /usr/share/luci/menu.d/luci-app-nlbwmon.json
+		else
+			cp /usr/lib/bwmon/luci-app-nlbwmonoff.json /usr/share/luci/menu.d/luci-app-nlbwmon.json
+		fi
+	fi
+	/usr/lib/bwmon/bwmon.sh &
+}

@@ -1,0 +1,81 @@
+Source-Makefile: package/network/utils/xdp-tools/Makefile
+Build-Depends: bpf-headers
+
+Package: libxdp
+Version: 1.2.9-1
+Depends: +libc +libbpf @HAS_BPF_TOOLCHAIN
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: libxdp - Library for use with XDP
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: xdp-tools-1.2.9.tar.gz
+License: LGPL-2.1 OR BSD-2-Clause
+Type: ipkg
+Description: libxdp - library for attaching XDP programs and using AF_XDP sockets
+https://github.com/xdp-project/xdp-tools/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: xdp-filter
+Version: 1.2.9-1
+Depends: +libc +libxdp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: xdp-filter - a simple XDP-powered packet filter
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: xdp-tools-1.2.9.tar.gz
+License: GPL-2.0-only
+Type: ipkg
+Description: xdp-filter is a packet filtering utility powered by XDP. It is deliberately
+simple and so does not have the same matching capabilities as, e.g.,
+netfilter. Instead, thanks to XDP, it can achieve very high drop rates:
+tens of millions of packets per second on a single CPU core.
+https://github.com/xdp-project/xdp-tools/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: xdp-loader
+Version: 1.2.9-1
+Depends: +libc +libxdp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: xdp-loader - an XDP program loader
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: xdp-tools-1.2.9.tar.gz
+License: GPL-2.0-only
+Type: ipkg
+Description: xdp-loader is a simple loader for XDP programs with support for attaching
+multiple programs to the same interface. To achieve this it exposes the same
+load and unload semantics exposed by the libxdp library.
+https://github.com/xdp-project/xdp-tools/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+Package: xdpdump
+Version: 1.2.9-1
+Depends: +libc +libxdp +libpcap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: xdpdump - tool for capturing packets at the XDP layer
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: xdp-tools-1.2.9.tar.gz
+License: GPL-2.0-only
+Type: ipkg
+Description: xdpdump - a simple tcpdump like tool for capturing packets at the XDP layer
+https://github.com/xdp-project/xdp-tools/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

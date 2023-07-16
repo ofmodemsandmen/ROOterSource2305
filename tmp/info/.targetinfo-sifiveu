@@ -1,0 +1,68 @@
+Source-Makefile: target/linux/sifiveu/Makefile
+Target: sifiveu
+Target-Board: sifiveu
+Target-Name: SiFive U-based RISC-V boards
+Target-Arch: riscv64
+Target-Arch-Packages: riscv64_riscv64
+Target-Features: dt ext4 gpio pci pcie rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mabi=lp64d -march=rv64imafdc
+CPU-Type: riscv64
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: riscv
+Target-Description:
+	Build firmware images for the SiFive U-based boards
+	(HiFive boards)
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
+Target: sifiveu/generic
+Target-Board: sifiveu
+Target-Name: Generic
+Target-Arch: riscv64
+Target-Arch-Packages: riscv64_riscv64
+Target-Features: dt ext4 gpio pci pcie rtc usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mabi=lp64d -march=rv64imafdc
+CPU-Type: riscv64
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: riscv
+Target-Description:
+	Build firmware images for the SiFive U-based boards
+	(HiFive boards)
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
+Target-Profile: DEVICE_sifive_unleashed
+Target-Profile-Name: SiFive Unleashed (FU540)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sifive,unleashed
+
+
+Target-Profile-Description:
+Build firmware images for SiFive Unleashed (FU540)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_sifive_unmatched
+Target-Profile-Name: SiFive Unmatched (FU740)
+Target-Profile-Packages:  kmod-eeprom-at24 kmod-hwmon-lm90 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sifive,unmatched
+
+
+Target-Profile-Description:
+Build firmware images for SiFive Unmatched (FU740)
+
+
+
+
+
+@@
+
+

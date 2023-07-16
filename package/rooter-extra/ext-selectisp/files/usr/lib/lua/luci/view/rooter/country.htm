@@ -1,0 +1,521 @@
+
+<script type="text/javascript" src="<%=resource%>/xhr.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+var countrylist = new Array() ;
+var countryname = new Array() ;
+var countrymcc = new Array() ;
+var countryisp = new Array() ;
+var ispdata = new Array() ;
+var selectbtn;
+var dropclr = '#FFFFF0';
+var current_country;
+var current_isp;
+var current_isp_index;
+var current_mcc;
+var current_isp_data;
+var editmode = '0';
+var addmode = '0';
+var editdata = '0';
+var saveddate = new Array() ;
+var fileString;
+var mlen;
+
+var listsize;
+
+	function clearListul(listboxID)
+ 	{
+  		var mylistbox = document.getElementById(listboxID);
+		if(mylistbox == null)
+		{
+  			return 1;
+		}
+		mylistbox.innerHTML = '';
+ 	}
+	
+	function addisp(txtline, indx)
+	{
+		var ul = document.getElementById("hotList1");
+		var li = document.createElement('li');
+		lix = indx + 1;
+		li.id = 'li' + lix;
+		li.style.backgroundColor = dropclr;
+		li.setAttribute('onclick', "testclk(" + lix + ")");
+		li.appendChild(document.createTextNode(txtline));
+		ul.appendChild(li);
+	}
+	
+	function buildlist(line)
+	{
+		if (ispcnt == 0 )
+		{
+			//document.getElementById("showisp").style.visibility="hidden";
+			document.getElementById("nselectisp").style.visibility="hidden";
+			document.getElementById("nselectisp").style.display="none";
+			document.getElementById("phead2").style.visibility="hidden";
+			document.getElementById("phead2").style.display="none";
+			return;
+		}
+		//document.getElementById("showisp").style.visibility="visible";
+		document.getElementById("nselectisp").style.visibility="visible";
+		document.getElementById("nselectisp").style.display="block";
+		document.getElementById("phead2").style.visibility="visible";
+		document.getElementById("phead2").style.display="block";
+		arr=line.split(",");
+		document.getElementById("nameispd").innerHTML=arr[2];
+		//document.getElementById("nameisp").value=arr[2];
+		saveddate[9] = arr[2];
+		current_isp = arr[2];
+		document.getElementById("mncispd").innerHTML=countrymcc[document.getElementById("drop1").selectedIndex] + ":" + arr[0];
+		current_mcc = countrymcc[document.getElementById("drop1").selectedIndex] + arr[0];
+		//document.getElementById("mncisp").innerHTML=countrymcc[document.getElementById("drop1").selectedIndex] + "/" + arr[0];
+		saveddate[1] = countrymcc[document.getElementById("drop1").selectedIndex];
+		saveddate[2] = arr[0];
+		document.getElementById("apnispd").innerHTML=arr[1];
+		//document.getElementById("apnisp").value=arr[1];
+		saveddate[3] = arr[1];
+		//document.getElementById("cidisp").value=arr[4];
+		saveddate[4] = arr[4];
+		switch(arr[7]) {
+			case "0":
+				auth = "<%:Default%>"
+			break;
+			case "1":
+				auth = "<%:IPv4%>"
+			break;
+			case "2":
+				auth = "<%:IPv6%>"
+			break;
+			default:
+				auth = "<%:IPv4+IPv6%>"
+		}
+		saveddate[5] = arr[7];
+		if ( arr[6] == "~" )
+		{
+			arr[6] = 0;
+		}
+		else
+		{
+			arr[6] = parseInt(arr[6]);
+		}
+		switch(arr[6]) {
+			case 0:
+				auth = "<%:None%>"
+			break;
+			case 1:
+				auth = "<%:PAP%>"
+			break;
+			case 2:
+				auth = "<%:CHAP%>"
+			break;
+			default:
+				auth = "<%:None%>"
+		}
+		saveddate[6] = arr[6];
+		user = arr[5];
+		if ( user =="~" )
+		{
+			user = "<%:None%>";
+		}
+		pass = arr[3];
+		if ( pass =="~" )
+		{
+			pass = "<%:None%>";
+		}
+		//document.getElementById("userisp").value=user;
+		//document.getElementById("passisp").value=pass;
+		saveddate[7] = user;
+		saveddate[8] = pass;
+	}
+	
+	function createlist(countryselect, flag) 
+	{
+		cmcc = countrymcc[countryselect];
+		indx = 0;
+		clearListul("hotList1");
+		document.getElementById("noList1").style.display="none";
+		document.getElementById("noList1").style.visibility="hidden";
+		document.getElementById("hotList1").style.display="none";
+		document.getElementById("hotList1").style.visibility="hidden";
+		isptmp = countryisp[countryselect];
+		ispcnt = 0;
+		while ( true )
+		{
+			nxt = isptmp.search(/\|/);
+			if ( nxt == -1 )
+			{
+				tmpisp = isptmp.substring(0);
+				if ( tmpisp == "?" )
+				{
+					var ul = document.getElementById("hotList1");
+					var li = document.createElement('li');
+					lix = 1;
+					li.id = 'li' + lix;
+					li.style.backgroundColor = dropclr;
+					li.appendChild(document.createTextNode("No ISP Available"));
+					ul.appendChild(li);
+					document.getElementById("hotList1").style.display="block";
+					document.getElementById("hotList1").style.visibility="visible";
+					break;
+				}
+				ispdata[ispcnt] = tmpisp;
+				arr=(tmpisp.split(","));
+				tmpisp = "(" + cmcc + arr[0] + ")  " + arr[2];
+				if ( flag == "0" )
+				{
+					addisp(tmpisp, indx);
+				}
+				indx = indx + 1;
+				ispcnt = ispcnt + 1;
+				document.getElementById("hotList1").style.display="block";
+				document.getElementById("hotList1").style.visibility="visible";
+				break;
+			}
+			tmpisp = isptmp.substring(0,nxt);
+			ispdata[ispcnt] = tmpisp;
+			ispcnt = ispcnt + 1;
+			arr=(tmpisp.split(","));
+			tmpisp = "(" + cmcc + arr[0] + ")  " + arr[2];
+			if ( flag == "0" )
+			{
+				addisp(tmpisp, indx);
+			}
+			indx = indx + 1;
+			isptmp = isptmp.substring(nxt + 1);
+		}
+		
+	}
+	
+	function testclk(row)
+	{
+		if ( editmode == '1' )
+		{
+		 return;
+		}
+		var num = indx+1;
+		for (i = 1; i <= num; i++) {
+			id = "li" + i;
+			if ( document.getElementById(id) != null )
+			{
+				document.getElementById(id).style.backgroundColor = dropclr;
+				document.getElementById(id).style.color = 'inherit';
+			}
+		}
+		id = "li" + row;
+		ulselect = row;
+		document.getElementById(id).style.backgroundColor = '#4686fe';
+		document.getElementById(id).style.color = 'white';
+		s = ulselect-1;
+		selectline = s;
+		ispline = ispdata[selectline];
+		arr=(ispline.split(","));
+		buildlist(ispline);
+		ix = parseInt(ulselect)-1;
+		current_isp_index = ix.toString();
+		current_isp_data = ispline;
+	}
+	
+	XHR.get('<%=luci.dispatcher.build_url("admin", "country", "get_list")%>',
+		null,
+		function(x, rv)
+		{
+			listsize = rv.k;
+			countrylist = rv.list;
+			cselected = rv.selected;
+			ccountry = rv.country;
+			cisp = rv.isp;
+			document.getElementById("drop1").options.length=0;
+			x = document.getElementById("drop1");
+		
+			for (i = 0; i < listsize; i++) {
+				position = countrylist[i].search(/,/);
+				name = countrylist[i].substring(0, position);
+				countryname[i] = name;
+				mccposition = countrylist[i].search(/\|/);
+				mcc = countrylist[i].substring(position + 1, mccposition);
+				countrymcc[i] = mcc;
+				countryisp[i] = countrylist[i].substring(mccposition + 1);
+				isptmp = countryisp[i];
+				ispcnt = 0;
+				while ( true )
+				{
+					nxt = isptmp.search(/\|/);
+					if ( nxt == -1 )
+					{
+						ispcnt = ispcnt + 1;
+						break;
+					}
+					ispcnt = ispcnt + 1;
+					isptmp = isptmp.substring(nxt + 1);
+				}
+				option = document.createElement("option");
+				option.text = name + "  (" + mcc + ")";
+				option.value = i;
+				x.add(option);
+			}
+			
+			if ( cselected == '0' )
+			{
+				if ( ccountry == "0" )
+				{
+					ccountry = "77";
+				}
+				document.getElementById("drop1").selectedIndex = parseInt(ccountry);
+				dex = "1"
+				selectbtn = "0";
+				cne = "\240\240\240\240None";
+				document.getElementById("bselectisp").style.visibility="hidden";
+				document.getElementById("bselectisp").style.display="none";
+			}
+			else
+			{
+				document.getElementById("drop1").selectedIndex = parseInt(ccountry);
+				dex = Number(parseInt(cisp)+1);
+				selectbtn = "1";
+				createlist(ccountry, "0");
+				arr=ispdata[cisp].split(",");
+				cne = "\240\240\240\240" + countryname[ccountry] + "<br />" + "\240\240\240\240(" + countrymcc[ccountry] + arr[0] + ") ";
+				cne = cne + arr[2];
+				document.getElementById("bselectisp").style.visibility="visible";
+				document.getElementById("bselectisp").style.display="block";
+			}
+
+			document.getElementById("currprov").innerHTML = cne;
+			countryselect = document.getElementById("drop1").selectedIndex;
+			current_country = countryselect;
+			createlist(countryselect, "0");
+			id = "li" + dex;
+			document.getElementById(id).style.backgroundColor = '#4686fe';
+			document.getElementById(id).style.color = 'white';
+			buildlist(ispdata[parseInt(dex)-1]);
+			ix = parseInt(dex)-1;
+			current_isp_index = ix.toString();
+			current_isp_data = ispdata[parseInt(dex)-1];
+		}
+	);
+	
+	function cntyselect(btn)
+	{
+		countryselect = document.getElementById("drop1").selectedIndex;
+		createlist(countryselect, "0");
+		id = "li1";
+		document.getElementById(id).style.backgroundColor = '#4686fe';
+		document.getElementById(id).style.color = 'white';
+		buildlist(ispdata[0]);
+		current_isp_index = "0";
+		current_isp_data = ispdata[0];
+		current_country = countryselect;
+	}
+	
+	function selection_isp()
+	{
+		document.getElementById("bselectisp").style.visibility="hidden";
+		document.getElementById("bselectisp").style.display="none";
+		cselected = "0";
+		document.getElementById("currprov").innerHTML = "\240\240\240\240<%:None%>";
+		set = "0:" + current_country.toString() + ":" + current_isp_index + ":" + current_isp_data;
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "set_select")%>',
+			{ set: set },
+			function()
+			{
+				window.location.reload(false);
+			}
+		);
+	}
+	
+	function nselection_isp()
+	{
+		cne = "\240\240\240\240<%:Country%> : " + "(" + current_mcc + ")  " + countryname[current_country] + "\240\240\240\240  <%:ISP%> : ";
+		cne = cne + current_isp;
+		document.getElementById("currprov").innerHTML = cne;
+		document.getElementById("bselectisp").style.visibility="visible";
+		document.getElementById("bselectisp").style.display="block";
+		set = "1:" + current_country.toString() + ":" + current_isp_index + ":" + current_isp_data;
+		cselected = "1";
+		ccountry = current_country;
+		cisp = current_isp_index;
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "set_select")%>',
+			{ set: set },
+			function()
+			{
+				window.location.reload(false);
+			}
+		);
+	}
+
+	function modemrestart()
+	{
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "modrestart")%>',
+			null,
+			function()
+			{
+				alert("<%:Modem has been restarted%>");
+			}
+		);
+	}
+	
+// document.getElementById("attxt").value=" ";
+
+//]]></script>
+
+<form method="post" action="<%=REQUEST_URI%>">
+<body onload="refresh();"></body>
+<div class="cbi-map" id="cbi-hot">
+<head>
+	<link rel="stylesheet" href="<%=resource%>/buttons/buttons.css">
+	<style>
+		ul.select {
+		   list-style: none;
+		   margin:  0;
+		   padding: 2px;
+		   border: 1px solid grey;
+		   max-height: 300px;
+		   overflow:auto;
+		}
+		
+		ul.select li {
+		   padding: 2px 6px;
+		}
+		ul.select li:hover {
+			background-color: #ccc;
+		   cursor: pointer;
+		}
+		ul.select li.selected {
+		   background-color: blue;
+		   color: white;
+		}
+
+	</style>
+</head>
+<fieldset class="cbi-section" id="cbi-read">
+
+	<table width="380px" border="0">
+		<tr>
+			<td width="380px"><img src="<%=resource%>/icons/line.jpg" height="5px" width="380px"></td>
+		</tr>
+	</table>
+	<table width="380" border="0">
+		<tr>
+			<td width="1%" bgcolor="#ADD8E6" ><div>&nbsp;</div></td>
+			<td width="22%" bgcolor="#ADD8E6"  align="center"><input type="button" style="font-size: 18px" id="restart" class="button-62" value="<%:Restart the Modem%>" onclick="return modemrestart()" /></div></td>
+			<td width="77%">
+				<div></div>
+			</td>
+		</tr>
+	</table>
+	<table width="380px" border="0">
+		<tr>
+			<td width="380px"><img src="<%=resource%>/icons/line.jpg" height="5px" width="380px"></td>
+		</tr>
+	</table>
+	
+	<h2><%:Select ISP by Country%></h2>
+	<table width="380px" border="0">
+		<tr>
+			<td width="2%"><div>&nbsp;</div></td>
+			<td width="21%" bgcolor="#ADD8E6" style="font-size: 18px"><div align="center"><%:Current Selected Provider%></div></td>
+			<td width="1%" ><div>&nbsp;</div></td>
+			<td width="75%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td><div>&nbsp;</div></td>
+			<td id="currprov" bgcolor="#ADD8E6" align="center" style="font-size: 18px">
+				<div></div>
+			</td>
+			<td><div>&nbsp;</div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td><div>&nbsp;</div></td>
+			<td bgcolor="#ADD8E6" align="center" ><input type="button" style="visibility:hidden;display:none" id="bselectisp" class="button-62" value="<%:Cancel Selection%>" onclick="return selection_isp()" /></div></td>
+			<td><div>&nbsp;</div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+	<table>
+	<table width="350" border="0" id="countrytxt">
+		<tr>
+			<td width="20%"><div>&nbsp;</div></td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td><div align="center" style="font-size: 20px"><%:Country %></div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td>
+				<select style="width:380px; font-size: 18px" name="countrydrop" id="drop1" onchange="cntyselect(this)">
+				</select>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+	</table>
+
+	<table width="380" border="0" id="hlist">
+		<tr>
+			<td width="20%"><div align="center" style="font-size: 18px"><%:Providers%></div></td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td>
+				<ul class="select" id="hotList1" style="width:380px; font-size: 20px">
+				</ul>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<div style="color:white; visibility:hidden;display:none;width:300px" id="nselectisp" class="button-62" role="button" onclick="return nselection_isp()"><%:Select Current ISP%></div>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+	</table>
+		<table width="380" border="0">
+		<tr>
+			<td width="10%"><div align="right"></div></td>
+			<td width="90%">
+				<ul id="noList1" style="width:380px; font-size: 18px; visibility:hidden;display:none">
+				<li>&nbsp;</li>
+				<li><%:No ISP Available%></li>
+				<li>&nbsp;</li>
+				</ul>
+			</td>
+		</tr>
+	<table>
+	
+	<table width="380" border="0" id="phead2"  style="visibility:hidden;display:none">
+		<tr>
+			<td width="380px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:MCC:MNC%></div></td>
+		</tr>
+		<tr>
+			<td bgcolor="#fae9d7" id="mncispd" style="font-size: 18px" align="center"><div></div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Name%></div></td>
+		</tr>
+		<tr>
+			<td bgcolor="#fae9d7" id="nameispd" style="font-size: 18px" align="center"><div></div></td>
+		</tr>
+		<tr>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:APN%></div></td>
+		</tr>
+		<tr>
+			<td bgcolor="#fae9d7" id="apnispd" style="font-size: 20px" align="center"><div></div></td>
+		</tr>
+	</table>
+	<table width="380px" border="0">
+		<tr>
+			<td width="380px"><img src="<%=resource%>/icons/line.jpg" height="5px" width="380px"></td>
+		</tr>
+	</table>
+</fieldset>
+
+	<table  width="380px">
+		<tr>
+			<td bgcolor="#ADFF2F" width="20%" style="font-size: 20px;text-align: left">
+				<div width="370px"><%:Changes below this point require the use of the Save&Apply button%>
+			</td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+	</table>
+</form>

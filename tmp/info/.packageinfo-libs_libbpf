@@ -1,0 +1,22 @@
+Source-Makefile: package/libs/libbpf/Makefile
+
+Package: libbpf
+Version: 1.2.0-1
+Depends: +libc +libelf
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libbpf - eBPF helper library
+Maintainer: Tony Ambardar <itugrok@yahoo.com>
+Source: libbpf-1.2.0.tar.xz
+License: LGPL-2.1 OR BSD-2-Clause
+Type: ipkg
+Description:   libbpf is a library for loading eBPF programs and reading and manipulating eBPF objects from user-space.
+http://www.kernel.org
+Tony Ambardar <itugrok@yahoo.com>
+@@
+
+

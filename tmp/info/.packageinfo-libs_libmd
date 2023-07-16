@@ -1,0 +1,25 @@
+Source-Makefile: package/libs/libmd/Makefile
+
+Package: libmd
+Version: 1.0.4-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Message Digest functions from BSD systems
+Maintainer: 
+Source: libmd-1.0.4.tar.xz
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Type: ipkg
+Description:   This library provides message digest functions found on BSD systems either
+  on their libc or libmd libraries and lacking on others like GNU systems,
+  thus making it easier to port projects with strong BSD origins, without
+  needing to embed the same code over and over again on each project.
+
+@@
+
+

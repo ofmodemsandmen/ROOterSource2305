@@ -1,0 +1,87 @@
+Source-Makefile: package/utils/uencrypt/Makefile
+
+Package: uencrypt-mbedtls
+Version: 5
+Depends: +libc +libmbedtls
+Conflicts: uencrypt-openssl uencrypt-wolfssl
+Menu-Depends: 
+Provides: 
+Build-Variant: mbedtls
+Section: utils
+Category: Base system
+Repository: base
+Title: Small Decryption utility using mbedTLS
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Description:   This is a small encrypton/decryption program. It defaults
+  to AES-128-CBC, but supports any encryption provided by
+  the crypto library. Even though it can be used for
+  non-critical* regular encryption and decryption operations,
+  it is included here to unencrypt the configuration from mtd
+  on some devices.
+
+  * Key and IV are exposed on cmdline
+
+  This variant uses mbedTLS as crypto provider
+Eneas U de Queiroz <cotequeiroz@gmail.com>
+@@
+
+Package: uencrypt-openssl
+Version: 5
+Depends: +libc +libopenssl
+Conflicts: uencrypt-wolfssl
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: utils
+Category: Base system
+Repository: base
+Title: Small Decryption utility using OpenSSL
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Description:   This is a small encrypton/decryption program. It defaults
+  to AES-128-CBC, but supports any encryption provided by
+  the crypto library. Even though it can be used for
+  non-critical* regular encryption and decryption operations,
+  it is included here to unencrypt the configuration from mtd
+  on some devices.
+
+  * Key and IV are exposed on cmdline
+
+  This variant uses OpenSSL as crypto provider
+Eneas U de Queiroz <cotequeiroz@gmail.com>
+@@
+
+Package: uencrypt-wolfssl
+Version: 5
+Depends: +libc +libwolfssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: wolfssl
+Section: utils
+Category: Base system
+Repository: base
+Title: Small Decryption utility using wolfSSL
+Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Description:   This is a small encrypton/decryption program. It defaults
+  to AES-128-CBC, but supports any encryption provided by
+  the crypto library. Even though it can be used for
+  non-critical* regular encryption and decryption operations,
+  it is included here to unencrypt the configuration from mtd
+  on some devices.
+
+  * Key and IV are exposed on cmdline
+
+  This variant uses wolfSSL as crypto provider
+Eneas U de Queiroz <cotequeiroz@gmail.com>
+@@
+
+

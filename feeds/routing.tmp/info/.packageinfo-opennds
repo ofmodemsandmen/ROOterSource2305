@@ -1,0 +1,28 @@
+Source-Makefile: feeds/routing/opennds/Makefile
+
+Package: opennds
+Submenu: Captive Portals
+Version: 9.10.0-1
+Depends: +libc +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
+Conflicts: nodogsplash
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Open public network gateway daemon
+Maintainer: Rob White <rob@blue-wave.net>
+Source: opennds-9.10.0.tar.gz
+License: GPL-2.0-or-later
+LicenseFiles: COPYING
+Type: ipkg
+Description:   openNDS (open Network Demarcation Service) is a high performance, small footprint, Captive Portal.
+  It provides a border control gateway between a public local area network and the Internet.
+  It supports all scenarios ranging from small stand alone venues through to large mesh networks with multiple portal entry points.
+  Both the client driven Captive Portal Detection method (CPD) and gateway driven Captive Portal Identification method (CPI - RFC 8910 and RFC 8908) are supported.
+  This version requires iptables-nft.
+https://github.com/opennds/opennds
+Rob White <rob@blue-wave.net>
+@@
+
+

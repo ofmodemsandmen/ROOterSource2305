@@ -1,0 +1,304 @@
+Source-Makefile: feeds/luci/modules/luci-mod-dsl/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-mod-dsl
+Submenu: 2. Modules
+Version: x
+Depends: +libc +luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LUCI DSL spectrum graph
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: LUCI DSL spectrum graph
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-dsl-da
+Default: LUCI_LANG_da||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - da translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Dansk (Danish)
+
+@@
+
+Package: luci-i18n-dsl-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - de translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Deutsch (German)
+
+@@
+
+Package: luci-i18n-dsl-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - es translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Español (Spanish)
+
+@@
+
+Package: luci-i18n-dsl-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - it translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Italiano (Italian)
+
+@@
+
+Package: luci-i18n-dsl-no
+Default: LUCI_LANG_nb_NO||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - no translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Norsk (Norwegian)
+
+@@
+
+Package: luci-i18n-dsl-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - pl translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Polski (Polish)
+
+@@
+
+Package: luci-i18n-dsl-pt
+Default: LUCI_LANG_pt||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - pt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Português (Portuguese)
+
+@@
+
+Package: luci-i18n-dsl-pt-br
+Default: LUCI_LANG_pt_BR||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - pt-br translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Português do Brasil (Brazilian Portuguese)
+
+@@
+
+Package: luci-i18n-dsl-ro
+Default: LUCI_LANG_ro||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - ro translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Română (Romanian)
+
+@@
+
+Package: luci-i18n-dsl-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - ru translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Русский (Russian)
+
+@@
+
+Package: luci-i18n-dsl-sv
+Default: LUCI_LANG_sv||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - sv translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Svenska (Swedish)
+
+@@
+
+Package: luci-i18n-dsl-tr
+Default: LUCI_LANG_tr||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - tr translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Türkçe (Turkish)
+
+@@
+
+Package: luci-i18n-dsl-uk
+Default: LUCI_LANG_uk||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - uk translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Українська (Ukrainian)
+
+@@
+
+Package: luci-i18n-dsl-zh-tw
+Default: LUCI_LANG_zh_Hant||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - zh-tw translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - 繁體中文 (Chinese Traditional)
+
+@@
+
+

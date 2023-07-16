@@ -1,0 +1,52 @@
+Source-Makefile: target/linux/qoriq/Makefile
+Target: qoriq
+Target-Board: qoriq
+Target-Name: NXP QorIQ (PowerPC)
+Target-Arch: powerpc64
+Target-Arch-Packages: powerpc64_e5500
+Target-Features: boot-part display dt ext4 fpu gpio legacy-sdcard pci powerpc64 ramdisk rootfs-part rtc source-only usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=e5500
+CPU-Type: e5500
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: powerpc
+Target-Description:
+
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe e2fsprogs mkf2fs uboot-envtools 
+Target: qoriq/generic
+Target-Board: qoriq
+Target-Name: NXP QorIQ (PowerPC)
+Target-Arch: powerpc64
+Target-Arch-Packages: powerpc64_e5500
+Target-Features: boot-part display dt ext4 fpu gpio legacy-sdcard pci powerpc64 ramdisk rootfs-part rtc source-only usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mcpu=e5500
+CPU-Type: e5500
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: powerpc
+Target-Description:
+        Build firmware images for NXP QorIQ boards in the
+        T-Series(T1-T5) aka AMP Series platforms.
+        Features the e5500 and e6500 64-bit Power Architecture cores.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe e2fsprogs mkf2fs uboot-envtools 
+Target-Profile: DEVICE_watchguard_firebox-m300
+Target-Profile-Name: WatchGuard Firebox M300
+Target-Profile-Packages: kmod-gpio-button-hotplug kmod-hwmon-w83793 kmod-leds-gpio kmod-ptp-qoriq kmod-rtc-rs5c372a kmod-tpm-i2c-atmel 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: watchguard,firebox-m300
+
+
+Target-Profile-Description:
+Build firmware images for WatchGuard Firebox M300
+
+
+
+
+
+@@
+
+

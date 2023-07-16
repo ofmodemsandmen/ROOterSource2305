@@ -1,0 +1,29 @@
+Source-Makefile: feeds/packages/net/wsdd2/Makefile
+
+Package: wsdd2
+Submenu: IP Addresses and Names
+Version: 2022-04-25-e37443ac4c757dbf14167ec3f754ebe88244ad4b-3
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Web Services for Devices (WSD) daemon
+Maintainer: 
+Source: wsdd2-2022-04-25-e37443ac4c757dbf14167ec3f754ebe88244ad4b.tar.xz
+License: GPL-3.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Web Services for Devices or Web Services on Devices (WSD),
+  is a Microsoft API to simplify programming connections to web service
+  enabled devices, such as printers, scanners and file shares.
+
+  This daemon advertises and responds to probe requests from Windows clients looking for file shares.
+  It also implements LLMNR multicast name lookup services.
+https://github.com/Netgear/wsdd2
+
+@@
+
+

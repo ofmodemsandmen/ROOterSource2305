@@ -1,0 +1,523 @@
+Source-Makefile: target/linux/bmips/Makefile
+Target: bmips
+Target-Board: bmips
+Target-Name: Broadcom BMIPS
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: gpio squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for BCM33xx cable modem chips,
+	BCM63xx DSL chips and BCM7xxx set-top box chips.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target: bmips/bcm6318
+Target-Board: bmips
+Target-Name: BCM6318 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio pci pcie squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM6318 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_comtrend_ar-5315u
+Target-Profile-Name: Comtrend AR-5315u
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43217-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,ar-5315u
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend AR-5315u
+
+
+
+
+
+@@
+
+Target: bmips/bcm6328
+Target-Board: bmips
+Target-Name: BCM6328 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio nand pci pcie squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM6328 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_arcadyan_ar7516
+Target-Profile-Name: Arcadyan AR7516
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43227-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: arcadyan,ar7516
+
+
+Target-Profile-Description:
+Build firmware images for Arcadyan AR7516
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_ar-5381u
+Target-Profile-Name: Comtrend AR-5381u
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43225-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,ar-5381u
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend AR-5381u
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_ar-5387un
+Target-Profile-Name: Comtrend AR-5387un
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43225-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,ar-5387un
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend AR-5387un
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_nucom_r5010unv2
+Target-Profile-Name: NuCom R5010UNv2
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43217-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: nucom,r5010unv2
+
+
+Target-Profile-Description:
+Build firmware images for NuCom R5010UNv2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_sercomm_ad1018
+Target-Profile-Name: Sercomm AD1018
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43217-sprom kmod-leds-bcm6328 iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sercomm,ad1018
+
+
+Target-Profile-Description:
+Build firmware images for Sercomm AD1018
+
+
+
+
+
+@@
+
+Target: bmips/bcm6358
+Target-Board: bmips
+Target-Name: BCM6358 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio low_mem pci squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM6358 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_huawei_hg556a-b
+Target-Profile-Name: Huawei EchoLife HG556a B
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-ath9k kmod-owl-loader wpad-basic-mbedtls kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: huawei,hg556a-b
+
+
+Target-Profile-Description:
+Build firmware images for Huawei EchoLife HG556a B
+
+
+
+
+
+@@
+
+Target: bmips/bcm6362
+Target-Board: bmips
+Target-Name: BCM6362 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio nand pci pcie squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM6362 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_huawei_hg253s-v2
+Target-Profile-Name: Huawei HG253s v2
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-leds-bcm6328 kmod-leds-gpio 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: huawei,hg253s-v2
+
+
+Target-Profile-Description:
+Build firmware images for Huawei HG253s v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_dgnd3700-v2
+Target-Profile-Name: NETGEAR DGND3700 v2
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls kmod-leds-bcm6328 kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,dgnd3700-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR DGND3700 v2
+
+
+
+
+
+@@
+
+Target: bmips/bcm6368
+Target-Board: bmips
+Target-Name: BCM6368 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio nand pci squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM6368 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_actiontec_r1000h
+Target-Profile-Name: Actiontec R1000H
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: actiontec,r1000h
+
+
+Target-Profile-Description:
+Build firmware images for Actiontec R1000H
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_vr-3025u
+Target-Profile-Name: Comtrend VR-3025u
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43222-sprom kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,vr-3025u
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend VR-3025u
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_vr-3025un
+Target-Profile-Name: Comtrend VR-3025un
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43222-sprom kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,vr-3025un
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend VR-3025un
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_wap-5813n
+Target-Profile-Name: Comtrend WAP-5813n
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-4322-sprom kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,wap-5813n
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend WAP-5813n
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_dgnd3700-v1
+Target-Profile-Name: NETGEAR DGND3700 v1
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,dgnd3700-v1
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR DGND3700 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_dgnd3800b
+Target-Profile-Name: NETGEAR DGND3800B
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,dgnd3800b
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR DGND3800B
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_evg2000
+Target-Profile-Name: NETGEAR EVG2000
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-4322-sprom kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,evg2000
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EVG2000
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_observa_vh4032n
+Target-Profile-Name: Observa VH4032N
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-b43 wpad-basic-mbedtls broadcom-43222-sprom kmod-leds-gpio iwinfo
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: observa,vh4032n
+
+
+Target-Profile-Description:
+Build firmware images for Observa VH4032N
+
+
+
+
+
+@@
+
+Target: bmips/bcm63268
+Target-Board: bmips
+Target-Name: BCM63268 based boards
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: dt gpio nand pci pcie squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+  Build firmware images for Broadcom BCM63268 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe ethtool kmod-gpio-button-hotplug 
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+  Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_comtrend_vg-8050
+Target-Profile-Name: Comtrend VG-8050
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-leds-bcm6328 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,vg-8050
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend VG-8050
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comtrend_vr-3032u
+Target-Profile-Name: Comtrend VR-3032u
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-leds-bcm6328 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comtrend,vr-3032u
+
+
+Target-Profile-Description:
+Build firmware images for Comtrend VR-3032u
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_sercomm_h500-s-lowi
+Target-Profile-Name: Sercomm H500-s lowi
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-leds-bcm6328 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sercomm,h500-s-lowi
+
+
+Target-Profile-Description:
+Build firmware images for Sercomm H500-s lowi
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_sercomm_h500-s-vfes
+Target-Profile-Name: Sercomm H500-s vfes
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 kmod-leds-bcm6328 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sercomm,h500-s-vfes
+
+
+Target-Profile-Description:
+Build firmware images for Sercomm H500-s vfes
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_sercomm_shg2500
+Target-Profile-Name: Sercomm SHG2500
+Target-Profile-Packages:  nand-utils kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-usb2 broadcom-4360-sprom kmod-i2c-gpio kmod-leds-sercomm-msp430 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: sercomm,shg2500
+
+
+Target-Profile-Description:
+Build firmware images for Sercomm SHG2500
+
+
+
+
+
+@@
+
+

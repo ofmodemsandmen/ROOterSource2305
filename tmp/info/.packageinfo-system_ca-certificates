@@ -1,0 +1,37 @@
+Source-Makefile: package/system/ca-certificates/Makefile
+
+Package: ca-bundle
+Version: 20230311-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: ca-certs
+Section: base
+Category: Base system
+Repository: base
+Title: System CA certificates as a bundle
+Maintainer: 
+Source: ca-certificates_20230311.tar.xz
+Type: ipkg
+Description: System CA certificates as a bundle
+
+@@
+
+Package: ca-certificates
+Version: 20230311-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: ca-certs
+Section: base
+Category: Base system
+Repository: base
+Title: System CA certificates
+Maintainer: 
+Source: ca-certificates_20230311.tar.xz
+Type: ipkg
+Description: System CA certificates
+
+@@
+
+

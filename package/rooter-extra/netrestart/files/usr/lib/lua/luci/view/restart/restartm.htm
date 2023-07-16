@@ -1,0 +1,146 @@
+<%+header%>
+<%
+
+-%>
+<script type="text/javascript" src="<%=resource%>/xhr.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+var btncolor = "#FF8C00";
+var btncolor1 = "#0078d0";
+var runbtn;
+
+	XHR.get('<%=luci.dispatcher.build_url("admin", "restart", "getdata")%>',
+		null,
+		function(x, rv)
+		{
+			runbtn = rv.enabled;
+			document.getElementById('appt').value = rv.time;
+			tim = document.getElementById('appt').value;
+			if ( runbtn == "1" )
+			{
+				document.getElementById('runbtn').innerHTML="<%:Network Restart at %>" + tim;
+				document.getElementById('runbtn').style.background=btncolor;
+				document.getElementById("timebtn").style.display="none";
+				document.getElementById("timebtn").style.visibility="hidden";
+				document.getElementById("appt").style.display="none";
+				document.getElementById("appt").style.visibility="hidden";
+			}
+			else
+			{
+				document.getElementById('runbtn').innerHTML="<%:Network Restart Not Set%>";
+				document.getElementById('runbtn').style.background=btncolor1;
+				document.getElementById("timebtn").style.display="block";
+				document.getElementById("timebtn").style.visibility="visible";
+				document.getElementById("appt").style.display="block";
+				document.getElementById("appt").style.visibility="visible";
+			}
+			
+		}
+	);
+	
+	function timeenable(btn) {
+		tim = document.getElementById('appt').value;
+		if ( tim == "")
+		{
+			return false;
+		}
+		XHR.get('<%=luci.dispatcher.build_url("admin", "restart", "settime")%>',
+			{ set: tim },
+			function()
+			{
+				alert("<%:Start Time has been set to %>" + tim);
+			}
+		);
+	}
+	
+	function btnenable(btn)
+	{
+		if ( runbtn == "0" )
+		{
+			tim = document.getElementById('appt').value;
+			if ( tim == "" ) {
+				return false;
+			}
+			runbtn = "1";
+			document.getElementById('runbtn').innerHTML="<%:Network Restart at %>" + tim;
+			document.getElementById('runbtn').style.background=btncolor;
+			document.getElementById("timebtn").style.display="none";
+			document.getElementById("timebtn").style.visibility="hidden";
+			document.getElementById("appt").style.display="none";
+			document.getElementById("appt").style.visibility="hidden";
+		}
+		else
+		{
+			runbtn = "0";
+			document.getElementById('runbtn').innerHTML="<%:Network Restart Not Set%>";
+			document.getElementById('runbtn').style.background=btncolor1;
+			document.getElementById("timebtn").style.display="block";
+			document.getElementById("timebtn").style.visibility="visible";
+			document.getElementById("appt").style.display="block";
+			document.getElementById("appt").style.visibility="visible";
+		}
+		XHR.get('<%=luci.dispatcher.build_url("admin", "restart", "enable")%>',
+			{ set: runbtn },
+			function()
+			{
+
+			}
+		); 
+		return false;
+	}
+	
+//]]></script>
+
+<form method="post" action="<%=REQUEST_URI%>">
+<div class="cbi-map" id="cbi-modem">
+<h2><a id="content" name="content"><%:Network Restart%></a></h2>
+<div class="cbi-map-descr"> </div>
+<head>
+	<link rel="stylesheet" href="<%=resource%>/buttons/buttons.css">
+</head>
+
+<fieldset class="cbi-section" id="cbi-mod">
+<table width="550"  border="0">
+	<tr>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="60%">&nbsp;</td>
+	</tr>
+  	<tr>
+		<td>&nbsp;</td>
+		<td>
+			<div style="width: 300px;color:white;" id="runbtn" class="button-71" role="button" onclick="return btnenable(this)">&nbsp;
+			</div>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+	<table width="440"  border="0">
+	<tr>
+		<td width="8%">&nbsp;</td>
+		<td width="5%">
+			<div style="width: 250px;color:black;" id="timebtn" class="button-82-pushable" role="button" onclick="return timeenable(this)">
+				  <span class="button-82-shadow"></span>
+				  <span class="button-82-edge"></span>
+				  <span class="button-82-front text">
+					<%:Set Run Time%>
+				  </span>
+			</div>
+		</td>
+		<td width="10%">
+			<input type="time" id="appt" style="font-size : 18px; width: 150px; height: 40px;border-style:double">
+		</td>
+		<td width="77%">&nbsp;</td>
+	</tr>
+</table>
+</fieldset>		
+
+</div>
+</form>
+<%+footer%>

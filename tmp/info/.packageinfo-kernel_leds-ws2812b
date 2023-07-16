@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/leds-ws2812b/Makefile
+
+Package: kmod-leds-ws2812b
+Submenu: LED modules
+Version: <LINUX_VERSION>-1
+Depends: @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Worldsemi WS2812B (NeoPixel) LED support
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   LED support for driving WS2812B (NeoPixel) using SPI MOSI.
+
+@@
+
+

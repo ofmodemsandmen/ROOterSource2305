@@ -1,0 +1,5 @@
+
+config info 'info'
+	option time '03:00'
+	option enabled '1'
+

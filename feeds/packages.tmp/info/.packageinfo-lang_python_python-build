@@ -1,0 +1,60 @@
+Source-Makefile: feeds/packages/lang/python/python-build/Makefile
+Build-Depends/host: python3/host python-installer/host python-flit-core/host python-packaging/host python-pyproject-hooks/host
+Build-Types: host
+
+Package: python3-build
+Submenu: Python
+Version: 0.10.0-2
+Depends: +libc +python3-light +python3-logging
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: A simple, correct Python build frontend
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: build-0.10.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description: A simple, correct PEP 517 build frontend.
+
+build will invoke the PEP 517 hooks to build a distribution package. It
+is a simple build tool and does not perform any dependency management.
+https://github.com/pypa/build
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-build-src
+Submenu: Python
+Version: 0.10.0-2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: A simple, correct Python build frontend (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: build-0.10.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:     A simple, correct PEP 517 build frontend.
+
+build will invoke the PEP 517 hooks to build a distribution package. It
+is a simple build tool and does not perform any dependency management.
+
+    This package contains the Python source files for python3-build.
+https://github.com/pypa/build
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-build
+@@
+
+

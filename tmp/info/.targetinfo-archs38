@@ -1,0 +1,41 @@
+Source-Makefile: target/linux/archs38/Makefile
+Target: archs38
+Target-Board: archs38
+Target-Name: Synopsys DesignWare ARC HS38
+Target-Arch: arc
+Target-Arch-Packages: arc_archs
+Target-Features: display dt gpio source-only usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -matomic -mcpu=archs
+CPU-Type: archs
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arc
+Target-Description:
+	Synopsys DesignWare boards
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  
+Target: archs38/generic
+Target-Board: archs38
+Target-Name: Generic
+Target-Arch: arc
+Target-Arch-Packages: arc_archs
+Target-Features: display dt ext4 gpio ramdisk source-only usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -matomic -mcpu=archs
+CPU-Type: archs
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arc
+Target-Description:
+	Build firmware images for ARC HS38 based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  
+Target-Profile: Default
+Target-Profile-Name: Default Profile (all drivers)
+Target-Profile-Packages: kmod-usb2 kmod-ath9k-htc wpad-basic-mbedtls iwinfo
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+

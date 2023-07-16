@@ -1,0 +1,22 @@
+Source-Makefile: package/network/services/relayd/Makefile
+
+Package: relayd
+Submenu: Routing and Redirection
+Version: 2023-01-28-f646ba40489371e69f624f2dee2fc4e19ceec00e-1
+Depends: +libc +libubox
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Transparent routing / relay daemon
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: relayd-2023-01-28-f646ba40489371e69f624f2dee2fc4e19ceec00e.tar.xz
+License: GPL-2.0
+Type: ipkg
+Description: Transparent routing / relay daemon
+Felix Fietkau <nbd@nbd.name>
+@@
+
+

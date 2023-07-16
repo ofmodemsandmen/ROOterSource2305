@@ -1,0 +1,485 @@
+Source-Makefile: package/boot/arm-trusted-firmware-mediatek/Makefile
+
+Package: trusted-firmware-a-mt7622-nor-1ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-nor-1ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SPI-NOR, 1x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SPI-NOR, 1x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-nor-2ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-nor-2ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SPI-NOR, 2x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SPI-NOR, 2x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-snand-1ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-snand-1ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SPI-NAND, 1x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SPI-NAND, 1x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-snand-2ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-snand-2ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SPI-NAND, 2x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SPI-NAND, 2x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-emmc-1ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-emmc-1ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (eMMC, 1x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (eMMC, 1x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-emmc-2ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-emmc-2ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (eMMC, 2x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (eMMC, 2x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-sdmmc-1ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-sdmmc-1ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SD card, 1x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SD card, 1x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7622-sdmmc-2ddr
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_mt7622
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7622-sdmmc-2ddr
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7622 (SD card, 2x DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7622 (SD card, 2x DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7981-emmc-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7981-emmc-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7981 (eMMC, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7981 (eMMC, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7981-nor-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7981-nor-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7981 (SPI-NOR, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7981 (SPI-NOR, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7981-sdmmc-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7981-sdmmc-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7981 (SD card, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7981 (SD card, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-snand-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-snand-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7981-spim-nand-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7981-spim-nand-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7981 (SPI-NAND via SPIM, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7981 (SPI-NAND via SPIM, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-emmc-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-emmc-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (eMMC, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (eMMC, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-nor-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-nor-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NOR, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NOR, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-sdmmc-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-sdmmc-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SD card, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SD card, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-snand-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-snand-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-spim-nand-ddr3
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-spim-nand-ddr3
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SPIM, DDR3)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SPIM, DDR3)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-emmc-ddr4
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-emmc-ddr4
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (eMMC, DDR4)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (eMMC, DDR4)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-nor-ddr4
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-nor-ddr4
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NOR, DDR4)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NOR, DDR4)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-sdmmc-ddr4
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-sdmmc-ddr4
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SD card, DDR4)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SD card, DDR4)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-snand-ddr4
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-snand-ddr4
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR4)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SNFI, DDR4)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+
+Package: trusted-firmware-a-mt7986-spim-nand-ddr4
+Version: 2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779-1
+Depends: +libc @!IN_SDK @TARGET_mediatek_filogic
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: mt7986-spim-nand-ddr4
+Section: boot
+Category: Boot Loaders
+Title: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SPIM, DDR4)
+Maintainer: Daniel Golle <daniel@makrotopia.org>
+Source: arm-trusted-firmware-mediatek-2022-08-31-7539348480af57c6d0db95aba6381f3ee7483779.tar.xz
+License: BSD-3-Clause
+LicenseFiles: docs/license.rst
+Type: bin
+Description: Trusted-Firmware-A for MediaTek MT7986 (SPI-NAND via SPIM, DDR4)
+https://www.trustedfirmware.org/projects/tf-a/
+Daniel Golle <daniel@makrotopia.org>
+@@
+
+

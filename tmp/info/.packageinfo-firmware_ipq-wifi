@@ -1,0 +1,328 @@
+Source-Makefile: package/firmware/ipq-wifi/Makefile
+
+Package: ipq-wifi-buffalo_wxr-5950ax12
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Buffalo WXR-5950AX12
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Buffalo WXR-5950AX12 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Buffalo WXR-5950AX12.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-compex_wpq873
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Compex WPQ-873
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Compex WPQ-873 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Compex WPQ-873.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-dynalink_dl-wrx36
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Dynalink DL-WRX36
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Dynalink DL-WRX36 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Dynalink DL-WRX36.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edgecore_eap102
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edgecore EAP102
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Edgecore EAP102 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edgecore EAP102.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-edimax_cax1800
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Edimax CAX1800
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Edimax CAX1800 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Edimax CAX1800.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-netgear_wax218
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Netgear WAX218
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Netgear WAX218 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Netgear WAX218.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-prpl_haze
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for prpl Haze
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The prpl Haze requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the prpl Haze.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-qnap_301w
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for QNAP 301w
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The QNAP 301w requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the QNAP 301w.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-redmi_ax6
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w ipq-wifi-prpl_haze
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Redmi AX6
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Redmi AX6 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Redmi AX6.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-wallys_dr40x9
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w ipq-wifi-prpl_haze ipq-wifi-redmi_ax6
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Wallys DR40X9
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Wallys DR40X9 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Wallys DR40X9.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-xiaomi_ax3600
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w ipq-wifi-prpl_haze ipq-wifi-redmi_ax6 ipq-wifi-wallys_dr40x9
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Xiaomi AX3600
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Xiaomi AX3600 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Xiaomi AX3600.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-xiaomi_ax9000
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w ipq-wifi-prpl_haze ipq-wifi-redmi_ax6 ipq-wifi-wallys_dr40x9 ipq-wifi-xiaomi_ax3600
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Xiaomi AX9000
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Xiaomi AX9000 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Xiaomi AX9000.
+
+Do not install it for any other device!
+
+@@
+
+Package: ipq-wifi-zyxel_nbg7815
+Submenu: ath10k Board-Specific Overrides
+Version: 2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92-1
+Depends: +libc @(TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x)
+Conflicts: ipq-wifi-buffalo_wxr-5950ax12 ipq-wifi-compex_wpq873 ipq-wifi-dynalink_dl-wrx36 ipq-wifi-edgecore_eap102 ipq-wifi-edimax_cax1800 ipq-wifi-netgear_wax218 ipq-wifi-qnap_301w ipq-wifi-prpl_haze ipq-wifi-redmi_ax6 ipq-wifi-wallys_dr40x9 ipq-wifi-xiaomi_ax3600 ipq-wifi-xiaomi_ax9000
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: board-2.bin Overrides for Zyxel NBG7815
+Maintainer: 
+Source: ipq-wifi-2023-06-03-cd9c30ca47b8e5388b770c523a7f6b8b969e2f92.tar.xz
+Type: ipkg
+Description: The Zyxel NBG7815 requires board-specific, reference ("cal") data
+that is not yet present in the upstream wireless firmware distribution.
+
+This package supplies board-2.bin file(s) that, in the interim,
+overwrite those supplied by the ath10k-firmware-* packages.
+
+This is package is only necessary for the Zyxel NBG7815.
+
+Do not install it for any other device!
+
+@@
+
+

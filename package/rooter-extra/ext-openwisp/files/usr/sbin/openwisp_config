@@ -1,0 +1,965 @@
+#!/bin/sh
+# shellcheck disable=SC2039
+# shellcheck disable=SC3043
+
+# parse options
+while [ -n "$1" ]; do
+	case "$1" in
+		--version | -v)
+			export VERSION=1
+			break
+			;;
+		--url)
+			export URL="${2%/}"
+			shift
+			;; # strip trailing slash
+		--interval)
+			export INTERVAL="$2"
+			shift
+			;;
+		--management_interval)
+			export MANAGEMENT_INTERVAL="$2"
+			shift
+			;;
+		--registration_interval)
+			export REGISTRATION_INTERVAL="$2"
+			shift
+			;;
+		--verify-ssl)
+			export VERIFY_SSL="$2"
+			shift
+			;;
+		--uuid)
+			export UUID="$2"
+			shift
+			;;
+		--key)
+			export KEY="$2"
+			shift
+			;;
+		--shared-secret)
+			export SHARED_SECRET="$2"
+			shift
+			;;
+		--consistent-key)
+			export CONSISTENT_KEY="$2"
+			shift
+			;;
+		--hardware-id-script)
+			export HARDWARE_ID_SCRIPT="$2"
+			shift
+			;;
+		--hardware-id-key)
+			export HARDWARE_ID_KEY="$2"
+			shift
+			;;
+		--bootup-delay)
+			export BOOTUP_DELAY="$2"
+			shift
+			;;
+		--merge-config)
+			export MERGE_CONFIG="$2"
+			shift
+			;;
+		--unmanaged)
+			export UNMANAGED="$2"
+			shift
+			;;
+		--test-config)
+			export TEST_CONFIG="$2"
+			shift
+			;;
+		--test-retries)
+			export TEST_RETRIES="$2"
+			shift
+			;;
+		--test-script)
+			export TEST_SCRIPT="$2"
+			shift
+			;;
+		--connect-timeout)
+			export CONNECT_TIMEOUT="$2"
+			shift
+			;;
+		--max-time)
+			export MAX_TIME="$2"
+			shift
+			;;
+		--capath)
+			export CAPATH="$2"
+			shift
+			;;
+		--cacert)
+			export CACERT="$2"
+			shift
+			;;
+		--mac-interface)
+			export MAC_INTERFACE="$2"
+			shift
+			;;
+		--management-interface)
+			export MANAGEMENT_INTERFACE="$2"
+			shift
+			;;
+		--default-hostname)
+			export DEFAULT_HOSTNAME="$2"
+			shift
+			;;
+		--pre-reload-hook)
+			export PRE_RELOAD_HOOK="$2"
+			shift
+			;;
+		--post-reload-hook)
+			export POST_RELOAD_HOOK="$2"
+			shift
+			;;
+		--post-reload-delay)
+			export POST_RELOAD_DELAY="$2"
+			shift
+			;;
+		--post-registration-hook)
+			export POST_REGISTRATION_HOOK="$2"
+			shift
+			;;
+		--checksum-max-retries)
+			export CHECKSUM_MAX_RETRIES="$2"
+			shift
+			;;
+		--checksum-retry-delay)
+			export CHECKSUM_RETRY_DELAY="$2"
+			shift
+			;;
+		-*)
+			echo "Invalid option: $1"
+			exit 1
+			;;
+		*) break ;;
+	esac
+	shift
+done
+
+if [ "$VERSION" -eq "1" ]; then
+	VERSION=$(cat /usr/lib/openwisp-config/VERSION)
+	echo "openwisp-config $VERSION"
+	exit 0
+fi
+
+if [ -z "$URL" ]; then
+	logger -s "missing required --url option" \
+		-t openwisp \
+		-p daemon.err
+	exit 2
+fi
+
+if { [ -z "$UUID" ] || [ -z "$KEY" ]; } && [ -z "$SHARED_SECRET" ]; then
+	logger -s "you must either specify --uuid and --key, or --shared-secret" \
+		-t openwisp \
+		-p daemon.err
+	exit 3
+fi
+
+INTERVAL=${INTERVAL:-120}
+MANAGEMENT_INTERVAL=${MANAGEMENT_INTERVAL:-$((INTERVAL / 12))}
+REGISTRATION_INTERVAL=${REGISTRATION_INTERVAL:-$((INTERVAL / 4))}
+VERIFY_SSL=${VERIFY_SSL:-1}
+MERGE_CONFIG=${MERGE_CONFIG:-1}
+TEST_CONFIG=${TEST_CONFIG:-1}
+TEST_RETRIES=${TEST_RETRIES:-3}
+CONSISTENT_KEY=${CONSISTENT_KEY:-1}
+HARDWARE_ID_KEY=${HARDWARE_ID_KEY:-1}
+BOOTUP_DELAY=${BOOTUP_DELAY:-10}
+CONNECT_TIMEOUT=${CONNECT_TIMEOUT:-15}
+MAX_TIME=${MAX_TIME:-30}
+MAC_INTERFACE=${MAC_INTERFACE:-eth0}
+# LEDE was a popular fork of OpenWRT used in 2017
+# it's kept here for backward compatibility
+DEFAULT_HOSTNAME=${DEFAULT_HOSTNAME:-"LEDE"}
+PRE_RELOAD_HOOK=${PRE_RELOAD_HOOK:-/etc/openwisp/pre-reload-hook}
+POST_RELOAD_HOOK=${POST_RELOAD_HOOK:-/etc/openwisp/post-reload-hook}
+POST_RELOAD_DELAY=${POST_RELOAD_DELAY:-5}
+POST_REGISTRATION_HOOK=${POST_REGISTRATION_HOOK:-/etc/openwisp/post-registration-hook}
+WORKING_DIR="/tmp/openwisp"
+BASEURL="$URL/controller"
+CONFIGURATION_ARCHIVE="$WORKING_DIR/configuration.tar.gz"
+CONFIGURATION_CHECKSUM="$WORKING_DIR/checksum"
+PERSISTENT_CHECKSUM="/etc/openwisp/checksum"
+CONFIGURATION_BACKUP="$WORKING_DIR/backup.tar.gz"
+BACKUP_FILE_LIST="$WORKING_DIR/backup_file_list.conf"
+REGISTRATION_PARAMETERS="$WORKING_DIR/registration_parameters"
+TEST_CHECKSUM="$WORKING_DIR/test_checksum"
+UPDATE_INFO="$WORKING_DIR/update_info"
+STATUS_REPORT="$WORKING_DIR/status_report"
+APPLYING_CONF="$WORKING_DIR/applying_conf"
+UPDATE_CONFIG_LOG="$WORKING_DIR/update-config.log"
+BOOTUP="$WORKING_DIR/bootup"
+REGISTRATION_URL="$URL/controller/register/"
+UNMANAGED_DIR="$WORKING_DIR/unmanaged"
+CONFIG_ERROR_LOG="$WORKING_DIR/config-error.log"
+FETCH_COMMAND="curl -s --connect-timeout $CONNECT_TIMEOUT --max-time $MAX_TIME"
+CHECKSUM_MAX_RETRIES=${CHECKSUM_MAX_RETRIES:-5}
+CHECKSUM_RETRY_DELAY=${CHECKSUM_RETRY_DELAY:-6}
+mkdir -p $WORKING_DIR
+mkdir -p $UNMANAGED_DIR
+
+retry_with_backoff() {
+	local exit_code command
+	command="$1"
+	shift 1
+	for i in $(seq 1 10); do
+		$command "$@" "$i"
+		exit_code=$?
+		if [ "$exit_code" -eq "0" ]; then
+			break
+		else
+			sleep "$(/usr/sbin/openwisp-get-random-number 2 15)"
+		fi
+	done
+	return "$exit_code"
+}
+
+# restore last known checksum
+if [ -f "$PERSISTENT_CHECKSUM" ]; then
+	cp "$PERSISTENT_CHECKSUM" "$CONFIGURATION_CHECKSUM"
+fi
+
+if [ "$VERIFY_SSL" -eq "0" ]; then
+	FETCH_COMMAND="$FETCH_COMMAND -k"
+else
+	if [ -n "$CAPATH" ]; then
+		FETCH_COMMAND="$FETCH_COMMAND --capath $CAPATH"
+	fi
+	if [ -n "$CACERT" ]; then
+		FETCH_COMMAND="$FETCH_COMMAND --cacert $CACERT"
+	fi
+fi
+
+if [ ! -x "$HARDWARE_ID_SCRIPT" ]; then
+	HARDWARE_ID_KEY=0
+fi
+
+if [ -n "$UNMANAGED" ]; then
+	# replace commas with spaces
+	UNMANAGED=$(echo "$UNMANAGED" | tr ',' ' ')
+fi
+
+# if management interface is not ready, the ip will be empty but other
+# attempts at determining it will be done before the start-up is completed
+if [ -n "$MANAGEMENT_INTERFACE" ]; then
+	MANAGEMENT_IP=$(/usr/sbin/openwisp-get-address "$MANAGEMENT_INTERFACE")
+fi
+
+get_model() { cat /tmp/sysinfo/model; }
+get_os() { ubus call system board | grep description | awk -F\" '{ print $4 }'; }
+get_system() { ubus call system board | grep system | awk -F\" '{ print $4 }'; }
+
+# ensures we are dealing with the right web server
+check_header() {
+	local is_controller
+	is_controller=$(grep -ic "X-Openwisp-Controller: true" "$1")
+	if [ "$is_controller" -lt 1 ]; then
+		logger -s "Invalid url: missing X-Openwisp-Controller header" \
+			-t openwisp \
+			-p daemon.err
+		exit 4
+	fi
+}
+
+is_http_status() {
+	head -n 1 "$1" | grep "$2" >/dev/null
+}
+
+# performs automatic registration
+register() {
+	logger "Registering device..." \
+		-t openwisp \
+		-p daemon.info
+
+	local hostname raw macaddr name backend tags model os system hardware_id \
+		params keybase consistent_key exit_code message new prefix
+	hostname=$(uci get system.@system[0].hostname)
+	# use macaddr of interface specified in $MAC_INTERFACE
+	raw=$(ifconfig "$MAC_INTERFACE" 2>/dev/null 2>&1)
+	# if previous command fails, fallback to first non-loopback interface
+	if [ -z "$raw" ]; then raw=$(ifconfig); fi
+	macaddr=$(echo "$raw " | grep -E -v "^(lo|tap[0-9]+)" | awk '/HWaddr/ { print $5 }' | head -n 1)
+	# convert hostname to lowercase for case insensitive check
+	name=$(echo "$hostname" | awk '{print tolower($0)}')
+	# use mac address if hostname is the default one or empty
+	if [ "$DEFAULT_HOSTNAME" = "*" ] || [ "$name" = "openwrt" ] \
+		|| [ "$hostname" = "$DEFAULT_HOSTNAME" ] || [ -z "$name" ]; then
+		hostname="$macaddr"
+	fi
+	backend="netjsonconfig.OpenWrt"
+	tags=$(uci get openwisp.http.tags 2>/dev/null 2>&1)
+	# get device model, OS identifier and SOC info
+	model=$(get_model)
+	os=$(get_os)
+	system=$(get_system)
+	# get hardware id if script is given
+	if [ -x "$HARDWARE_ID_SCRIPT" ]; then
+		hardware_id=$("$HARDWARE_ID_SCRIPT")
+	else
+		hardware_id=""
+	fi
+	# prepare POST params
+	params="backend=$backend"
+	if [ "$CONSISTENT_KEY" -eq "1" ]; then
+		if [ -x "$HARDWARE_ID_SCRIPT" ] && [ "$HARDWARE_ID_KEY" = "1" ]; then
+			# use hardware id as base for the key
+			keybase="$hardware_id"
+		else
+			# use macaddress as base for the key
+			keybase="$macaddr"
+		fi
+		# shellcheck disable=SC3037
+		consistent_key=$(echo -n "$keybase+$SHARED_SECRET" | md5sum | awk '{print $1}')
+		params="$params&key=$consistent_key"
+	fi
+	# add management ip in params if present
+	if [ -n "$MANAGEMENT_IP" ]; then
+		params="$params&management_ip=$MANAGEMENT_IP"
+	fi
+	$FETCH_COMMAND --data "$params" \
+		--data-urlencode secret="$SHARED_SECRET" \
+		--data-urlencode name="$hostname" \
+		--data-urlencode hardware_id="$hardware_id" \
+		--data-urlencode mac_address="$macaddr" \
+		--data-urlencode tags="$tags" \
+		--data-urlencode model="$model" \
+		--data-urlencode os="$os" \
+		--data-urlencode system="$system" \
+		-i "$REGISTRATION_URL" >"$REGISTRATION_PARAMETERS"
+	exit_code=$?
+	# report eventual failures and return
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to connect to controller during registration: curl exit code $exit_code" \
+			-t openwisp \
+			-p daemon.err
+		return 1
+	fi
+	# exit if response does not seem to come from openwisp controller
+	check_header $REGISTRATION_PARAMETERS
+	if ! is_http_status $REGISTRATION_PARAMETERS 201; then
+		# get body of failure response, seperated from header by a blank line (CRLF-ended)
+		message=$(awk 'BEGIN{RS="\r\n\r\n"}{if(NR>1)print $0}' $REGISTRATION_PARAMETERS)
+		logger -s "Registration failed! $message" \
+			-t openwisp \
+			-p daemon.err
+		# send registration-failed hotplug event
+		env -i ACTION="registration-failed" /sbin/hotplug-call openwisp
+		# if controller returns 403, stop retrying because it's useless
+		if is_http_status $REGISTRATION_PARAMETERS 403; then
+			exit 5
+		# in all other cases, keep re-trying because the problem can be fixed
+		# on the server (eg: self creation disabled and device needs to be created
+		# or temporary error condition on the server)
+		else
+			return 2
+		fi
+	fi
+	# set configuration options and reload
+	# shellcheck disable=SC2002
+	{
+		UUID=$(cat "$REGISTRATION_PARAMETERS" | grep uuid | awk '/uuid: / { print $2 }')
+		KEY=$(cat "$REGISTRATION_PARAMETERS" | grep key | awk '/key: / { print $2 }')
+		name=$(cat "$REGISTRATION_PARAMETERS" | grep hostname | awk '/hostname: / { print $2 }')
+		new=$(cat "$REGISTRATION_PARAMETERS" | grep 'is-new' | awk '/is-new: / { print $2 }')
+	}
+	export UUID KEY
+	# keep backward compatibility with older controller (TODO: remove this in 0.5)
+	[ -z "$name" ] && name="$hostname"
+	[ -z "$new" ] && new="1"
+	# persist uuid and key in conf
+	uci set openwisp.http.uuid="$UUID"
+	uci set openwisp.http.key="$KEY"
+	# remove shared secret to avoid accidental re-registration
+	uci set openwisp.http.shared_secret=""
+	uci commit openwisp
+	rm $REGISTRATION_PARAMETERS
+	# log operation
+	prefix=$([ "$new" -eq "1" ] && echo "New" || echo "Existing")
+	logger "$prefix device registered successfully as $name, id: $UUID" \
+		-t openwisp \
+		-p daemon.info
+	# indicates this function has been called
+	# (used by `discover_management_ip`)
+	export REGISTER_CALLED=1
+	# send post-registration hotplug event
+	env -i ACTION="post-registration" /sbin/hotplug-call openwisp
+	# call post registration hook
+	post_registration_hook
+}
+
+# gets checksum from controller
+# - 404 trigger retries and if the 404 persists the agent
+#   quits assuming the device is deleted from OpenWISP Controller
+# - any other error is logged but the agent continues execution
+#   and will eventually try again at the next cycle
+get_checksum() {
+	local exit_code status attempt_no
+	# The last argument is the attempt_no of retry_with_backoff
+	for attempt_no; do true; done
+
+	$FETCH_COMMAND -i "$CHECKSUM_URL" >"$1"
+	exit_code=$?
+
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to connect to controller while getting checksum: curl exit code $exit_code" \
+			-t openwisp \
+			-p daemon.err
+		return 2
+	fi
+
+	if is_http_status "$1" 404; then
+		logger -s "Failed to retrieve checksum: 404 Not Found" \
+			-t openwisp \
+			-p daemon.warning
+
+		if [ "$attempt_no" -eq "$CHECKSUM_MAX_RETRIES" ]; then
+			logger -s "Giving up and shutting down: the device may have been deleted from OpenWISP Controller" \
+				-t openwisp \
+				-p daemon.err
+			exit 0
+		fi
+		sleep "$CHECKSUM_RETRY_DELAY"
+	fi
+
+	if ! is_http_status "$1" 200; then
+		status=$(head -n 1 "$1")
+		logger -s "Failed to retrieve checksum: $status" \
+			-t openwisp \
+			-p daemon.err
+		return 3
+	fi
+
+	check_header "$1"
+}
+
+# returns 1 if configuration in controller has changed
+configuration_changed() {
+	local CURRENT_CHECKSUM exit_code REMOTE_CHECKSUM
+	CURRENT_CHECKSUM=$(tail -n 1 $CONFIGURATION_CHECKSUM 2>/dev/null)
+	retry_with_backoff get_checksum $CONFIGURATION_CHECKSUM
+	exit_code=$?
+
+	if [ "$exit_code" -ne "0" ]; then
+		# restore last known checksum if get_checksum failed
+		if [ -f "$PERSISTENT_CHECKSUM" ]; then
+			cp "$PERSISTENT_CHECKSUM" "$CONFIGURATION_CHECKSUM"
+		fi
+		return $exit_code
+	fi
+
+	REMOTE_CHECKSUM=$(tail -n 1 $CONFIGURATION_CHECKSUM 2>/dev/null)
+
+	if [ "$CURRENT_CHECKSUM" != "$REMOTE_CHECKSUM" ]; then
+		logger "Local configuration outdated" \
+			-t openwisp \
+			-p daemon.info
+		return 1
+	fi
+
+	return 0
+}
+
+# called in `apply_configuration` before services are reloaded
+pre_reload_hook() {
+	local exit_code
+	if [ -x "$PRE_RELOAD_HOOK" ]; then
+		$PRE_RELOAD_HOOK
+		exit_code=$?
+		logger "Called pre-reload-hook: $PRE_RELOAD_HOOK - exit code: $exit_code" \
+			-t openwisp \
+			-p daemon.info
+		return $exit_code
+	fi
+}
+
+# called in `apply_configuration` after services are reloaded
+post_reload_hook() {
+	if [ -x "$POST_RELOAD_HOOK" ]; then
+		$POST_RELOAD_HOOK
+		local exit_code=$?
+		logger "Called post-reload-hook: $POST_RELOAD_HOOK - exit code: $exit_code" \
+			-t openwisp \
+			-p daemon.info
+		return $exit_code
+	fi
+}
+
+# called after registration is completed
+post_registration_hook() {
+	if [ -x "$POST_REGISTRATION_HOOK" ]; then
+		$POST_REGISTRATION_HOOK
+		local exit_code=$?
+		logger "Called post-registration-hook: $POST_REGISTRATION_HOOK - exit code: $exit_code" \
+			-t openwisp \
+			-p daemon.info
+		return $exit_code
+	fi
+}
+
+# applies a specified configuration archive
+apply_configuration() {
+	# store unmanaged config (if enabled)
+	call_store_unmanaged
+	# update local configuration
+	/usr/sbin/openwisp-update-config --conf="$1" --merge="$MERGE_CONFIG" >"$UPDATE_CONFIG_LOG" 2>&1
+	local exit_code=$?
+	# restore unmanaged configurations
+	call_restore_unmanaged
+	# if configuration could not be applied
+	# (because of a syntax error) restore a backup
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Could not apply configuration, openwisp-update-config exit code was $exit_code" \
+			-t openwisp \
+			-p daemon.crit
+		logger -t openwisp -p daemon.crit -s <"$UPDATE_CONFIG_LOG"
+		rm "$UPDATE_CONFIG_LOG"
+		restore_backup
+		return 1
+	fi
+	# send pre-reload hotplug event
+	env -i ACTION="pre-reload" /sbin/hotplug-call openwisp
+	# call pre-reload-hook
+	pre_reload_hook
+	# reload changes and wait $POST_RELOAD_DELAY
+	/usr/sbin/openwisp-reload-config
+	sleep "$POST_RELOAD_DELAY"
+	# send post-reload hotplug event
+	env -i ACTION="post-reload" /sbin/hotplug-call openwisp
+	# call post-reload-hook
+	post_reload_hook
+	rm "$UPDATE_CONFIG_LOG"
+}
+
+# send up to date device info to the controller
+update_info() {
+	# get device model, OS identifier and SOC info
+	local model os system exit_code status
+	model=$(get_model)
+	os=$(get_os)
+	system=$(get_system)
+	# retry several times
+	for i in $(seq 1 10); do
+		$FETCH_COMMAND -i \
+			--data "key=$KEY" \
+			--data-urlencode model="$model" \
+			--data-urlencode os="$os" \
+			--data-urlencode system="$system" \
+			"$UPDATE_INFO_URL" >$UPDATE_INFO
+		exit_code=$?
+		if [ "$exit_code" -eq "0" ]; then
+			logger "Device info updated on the controller" \
+				-t openwisp \
+				-p daemon.info
+			break
+		else
+			sleep 2
+		fi
+	done
+
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to connect to controller during update-info: curl exit code $exit_code" \
+			-t openwisp \
+			-p daemon.err
+		return 2
+	fi
+
+	if ! is_http_status $UPDATE_INFO 200; then
+		local status
+		status=$(head -n 1 $UPDATE_INFO)
+		logger -s "Failed to update device info: $status" \
+			-t openwisp \
+			-p daemon.err
+		return 3
+	fi
+	check_header $UPDATE_INFO
+	rm $UPDATE_INFO
+}
+
+print_error_logs() {
+	local last_update_line_no logs log_bytes max_log_bytes
+	# The log text is limited to 1011 byte because
+	# "\n[truncated]" is appended to the logs which adds
+	# another 13 bytes.
+	max_log_bytes=1011
+	# Save openwisp_config related logs to a temporary file
+	logread -e openwisp >"$CONFIG_ERROR_LOG"
+	# Get the line number of the last configuration update
+	last_update_line_no=$(
+		grep "Configuration downloaded, now applying it" -n \
+			"$CONFIG_ERROR_LOG" \
+			| tail -1 \
+			| cut -d : -f 1
+	)
+	# Incrementing line number for brief logs
+	last_update_line_no=$((last_update_line_no + 1))
+	# Print all logs since the last configuration update to stdout
+	# after replacing new lines with "\n"
+	logs=$(tail "$CONFIG_ERROR_LOG" -n +"$last_update_line_no" | sed 's/\n/\<br\>/g')
+	# Truncate the logs if it execeeds "max_log_bytes"
+	log_bytes=${#logs}
+	if [ "$log_bytes" -gt "$max_log_bytes" ]; then
+		logs=$(echo "$logs" | head -c "$max_log_bytes")
+		logs="$logs\n[truncated]"
+	fi
+	# Print the logs on the stdout
+	echo "$logs"
+	rm $CONFIG_ERROR_LOG
+}
+
+# report configuration status: "applied" or "error"
+report_status() {
+	local exit_code status error_reason_payload error_log
+	if [ "$1" = "error" ]; then
+		error_log=$(print_error_logs)
+		error_reason_payload="error_reason=$error_log"
+	fi
+	$FETCH_COMMAND -i --data "key=$KEY&status=$1" \
+		--data-urlencode "$error_reason_payload" \
+		"$REPORT_URL" >$STATUS_REPORT
+	exit_code=$?
+
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to connect to controller during report-status: curl exit code $exit_code" \
+			-t openwisp \
+			-p daemon.err
+		return 2
+	fi
+
+	if ! is_http_status $STATUS_REPORT 200; then
+		local status
+		status=$(head -n 1 $STATUS_REPORT)
+		logger -s "Failed to report status: $status" \
+			-t openwisp \
+			-p daemon.err
+		return 3
+	fi
+	check_header $STATUS_REPORT
+	rm $STATUS_REPORT
+}
+
+# performs configuration test and reports result
+test_configuration() {
+	if ! apply_configuration "$1"; then
+		return 1
+	fi
+
+	logger "Testing configuration..." \
+		-t openwisp \
+		-p daemon.info
+
+	if [ -z "$TEST_SCRIPT" ]; then
+		perform_default_test
+		local test_result=$?
+	else
+		$TEST_SCRIPT
+		local test_result=$?
+	fi
+
+	if [ $test_result -gt 0 ]; then
+		logger -s "Configuration test failed! Restoring previous backup" \
+			-t openwisp \
+			-p daemon.err
+		restore_backup
+		local ret=1
+	else
+		logger "Configuration test succeeded" \
+			-t openwisp \
+			-p daemon.info
+		local ret=0
+	fi
+
+	rm $CONFIGURATION_BACKUP
+	return $ret
+}
+
+perform_default_test() {
+	# the default test is performed several times, as indicated by $TEST_RETRIES
+	for i in $(seq 1 "$TEST_RETRIES"); do
+		$FETCH_COMMAND -i "$CHECKSUM_URL" >$TEST_CHECKSUM
+		local result=$?
+		if [ $result -ne 0 ]; then
+			logger "Configuration test failed (attempt $i)" \
+				-t openwisp \
+				-p daemon.warning
+			sleep 5
+		else
+			break
+		fi
+	done
+	rm $TEST_CHECKSUM
+	return $result
+}
+
+# stores unmanaged configuration sections that will be merged
+# with the configuration downloaded from the controller
+call_store_unmanaged() {
+	if [ -z "$UNMANAGED" ]; then
+		return 0
+	fi
+	/usr/sbin/openwisp-store-unmanaged -o="$UNMANAGED"
+}
+
+# restores unmanaged configuration sections that will be merged
+# with the configuration downloaded from the controller
+call_restore_unmanaged() {
+	if [ -z "$UNMANAGED" ]; then
+		return 0
+	fi
+	/usr/sbin/openwisp-restore-unmanaged
+}
+
+# 1. ensures there are no anonymous UCI blocks
+# 2. re-generate the md5 checksums
+# 3. removes default wifi-ifaces directive (LEDE or OpenWrt SSID)
+fix_uci_config() {
+	output=$(/usr/sbin/openwisp-uci-autoname)
+	if [ -n "$output" ]; then
+		logger "The following uci configs have been renamed: $output" \
+			-t openwisp \
+			-p daemon.info
+	fi
+
+	# Re-generate the md5 checksums to avoid reloading services which had
+	# anonymous UCI sections which were removed.
+	rm -rf /var/run/config.check
+	mkdir -p /var/run/config.check
+	for config in /etc/config/*; do
+		file=${config##*/}
+		uci show "${file##*/}" >/var/run/config.check/"$file"
+	done
+	md5sum /var/run/config.check/* >/var/run/config.md5
+	rm -rf /var/run/config.check
+
+	/usr/sbin/openwisp-remove-default-wifi
+}
+
+download_configuration() {
+	logger "Downloading configuration from controller..." \
+		-t openwisp \
+		-p daemon.info
+	$FETCH_COMMAND --fail "$CONFIGURATION_URL" -o "$CONFIGURATION_ARCHIVE"
+	local exit_code=$?
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to connect to controller while downloading new config: curl exit code $exit_code" \
+			-t openwisp \
+			-p daemon.err
+	fi
+	return "$exit_code"
+}
+
+# downloads configuration from controller
+# performs test (if testing enabled)
+# and applies it
+update_configuration() {
+	retry_with_backoff download_configuration
+	local exit_code=$?
+
+	if [ "$exit_code" -ne "0" ]; then
+		logger -s "Failed to download configuration from controller, giving up!" \
+			-t openwisp \
+			-p daemon.err
+		# remove the checksum to ensure update is tried again at the next run
+		rm -f $CONFIGURATION_CHECKSUM
+		return $exit_code
+	fi
+
+	local LOCAL_CHECKSUM
+	local REMOTE_CHECKSUM
+	LOCAL_CHECKSUM=$(md5sum $CONFIGURATION_ARCHIVE | cut -d ' ' -f 1)
+	REMOTE_CHECKSUM=$(tail -n 1 $CONFIGURATION_CHECKSUM 2>/dev/null)
+
+	if [ "$LOCAL_CHECKSUM" != "$REMOTE_CHECKSUM" ]; then
+		logger -s "Configuration checksum mismatch! Local: $LOCAL_CHECKSUM, Remote: $REMOTE_CHECKSUM" \
+			-t openwisp \
+			-p daemon.err
+		# remove the checksum to ensure update is tried again at the next run
+		rm -f $CONFIGURATION_CHECKSUM
+		return 4
+	fi
+
+	logger "Configuration downloaded, now applying it..." \
+		-t openwisp \
+		-p daemon.info
+
+	# makes fixes to the default uci config so
+	# it's more suited for remote control
+	fix_uci_config
+
+	# control file to avoid reloading the agent while
+	# configuration is still being applied
+	touch $APPLYING_CONF
+
+	# performs backup of files that are going to be changed
+	backup_configuration
+
+	# testing enabled
+	if [ "$TEST_CONFIG" -eq "1" ]; then
+		test_configuration $CONFIGURATION_ARCHIVE
+		result=$?
+	# testing diabled
+	else
+		apply_configuration $CONFIGURATION_ARCHIVE
+		result=$?
+	fi
+
+	if [ "$result" -eq "0" ]; then
+		logger "Configuration applied successfully" \
+			-t openwisp \
+			-p daemon.info
+		# send config-applied hotplug event
+		env -i ACTION="config-applied" /sbin/hotplug-call openwisp
+		# store the new checksum as last known checksum
+		cp "$CONFIGURATION_CHECKSUM" "$PERSISTENT_CHECKSUM"
+		retry_with_backoff report_status "applied"
+	else
+		retry_with_backoff report_status "error"
+	fi
+	# if reporting of the status fails, let it retry in the next cycle
+	# shellcheck disable=SC2181
+	if [ "$?" -ne "0" ]; then
+		rm -f $CONFIGURATION_CHECKSUM $PERSISTENT_CHECKSUM
+	fi
+
+	rm $APPLYING_CONF
+}
+
+backup_configuration() {
+	# save list of files that are going to be changed by openwisp
+	# so that if the changes sent by openwisp cause problems,
+	# the previous version can be rolled back
+	tar -ztf $CONFIGURATION_ARCHIVE | sed 's/^/\//' >$BACKUP_FILE_LIST
+	# backup only those files
+	tar -zcf $CONFIGURATION_BACKUP -T $BACKUP_FILE_LIST
+	rm $BACKUP_FILE_LIST
+}
+
+restore_backup() {
+	# restores backup created in backup_configuration() function
+	sysupgrade -r $CONFIGURATION_BACKUP
+	pre_reload_hook
+	/usr/sbin/openwisp-reload-config
+	sleep "$POST_RELOAD_DELAY"
+	post_reload_hook
+	logger -s "The most recent configuration backup was restored" \
+		-t openwisp \
+		-p daemon.info
+	# send config-restored hotplug event
+	env -i ACTION="config-restored" /sbin/hotplug-call openwisp
+}
+
+discover_management_ip() {
+	# return if not using management interface
+	if [ -z "$MANAGEMENT_INTERFACE" ]; then
+		return
+	fi
+	# if being called just after `register` was called
+	if [ -n "$REGISTER_CALLED" ]; then
+		# don't do anything now, but unset the
+		# control variable so the logic will be
+		# executed at the next iteration
+		unset REGISTER_CALLED
+		return
+	fi
+	MANAGEMENT_IP=$(/usr/sbin/openwisp-get-address "$MANAGEMENT_INTERFACE")
+	# if management interface is defined but its ip could not be determined
+	# and the shared secret is not present anymore
+	# (which means the device has been already registered)
+	# try waiting for the management interface to be ready
+	if [ -z "$MANAGEMENT_IP" ] && [ -z "$SHARED_SECRET" ]; then
+		MAX_ATTEMPTS=3
+		for attempt in $(seq $MAX_ATTEMPTS); do
+			MANAGEMENT_IP=$(/usr/sbin/openwisp-get-address "$MANAGEMENT_INTERFACE")
+
+			if [ -z "$MANAGEMENT_IP" ]; then
+				logger -s "management interface not ready (attempt $attempt of $MAX_ATTEMPTS)" \
+					-t openwisp \
+					-p daemon.notice
+				if [ "$attempt" -lt "$MAX_ATTEMPTS" ]; then
+					sleep "$MANAGEMENT_INTERVAL"
+				else
+					logger -s "could not determine ip address of management interface, giving up..." \
+						-t openwisp \
+						-p daemon.warning
+				fi
+			else
+				break
+			fi
+		done
+	fi
+	# add management ip to URLs if present
+	if [ -n "$MANAGEMENT_IP" ]; then
+		export CONFIGURATION_URL="$BASE_CONFIGURATION_URL&management_ip=$MANAGEMENT_IP"
+		export CHECKSUM_URL="$BASE_CHECKSUM_URL&management_ip=$MANAGEMENT_IP"
+	fi
+}
+
+handle_sigusr1() {
+	logger -s "Received SIGUSR1: interrupting interval sleep..." \
+		-t openwisp \
+		-p daemon.info
+}
+
+# ensure both UUID and KEY are defined
+# otherwise perform registration
+if [ -z "$UUID" ] || [ -z "$KEY" ]; then
+	# do not crash if controller can't be reached
+	# but retry every $REGISTRATION_INTERVAL seconds
+	# (device might be unplugged, unconfigured or connecting)
+	until register; do
+		sleep "$REGISTRATION_INTERVAL"
+	done
+	# send bootup hotplug event
+	env -i ACTION="bootup" /sbin/hotplug-call openwisp
+	touch "$BOOTUP"
+fi
+
+# these variables are evaluated here because "register()" might set UUID and KEY
+BASE_CONFIGURATION_URL="$BASEURL/download-config/$UUID/?key=$KEY"
+BASE_CHECKSUM_URL="$BASEURL/checksum/$UUID/?key=$KEY"
+CONFIGURATION_URL=$BASE_CONFIGURATION_URL
+CHECKSUM_URL=$BASE_CHECKSUM_URL
+UPDATE_INFO_URL="$BASEURL/update-info/$UUID/"
+REPORT_URL="$BASEURL/report-status/$UUID/"
+
+if [ ! -f "$BOOTUP" ]; then
+	# actions to do only after agent start, not after registration or agent restart
+	if [ "$BOOTUP_DELAY" -ne "0" ]; then
+		# get a random number between zero and $BOOTUP_DELAY
+		DELAY=$(/usr/sbin/openwisp-get-random-number 0 "$BOOTUP_DELAY")
+		logger "Delaying startup for $DELAY seconds..." \
+			-t openwisp \
+			-p daemon.info
+		sleep "$DELAY"
+	fi
+	# send bootup hotplug event
+	env -i ACTION="bootup" /sbin/hotplug-call openwisp
+	# send up to date device info
+	update_info
+	touch "$BOOTUP"
+else
+	# send restart hotplug event
+	env -i ACTION="restart" /sbin/hotplug-call openwisp
+fi
+
+while true; do
+	# check management interface at each iteration
+	# (because the address may change due to
+	# configuration updates or manual reconfigurations)
+	discover_management_ip
+
+	configuration_changed
+
+	if [ "$?" -eq "1" ]; then
+		update_configuration
+	fi
+
+	# handle SIGUSR1 to interrupt sleep
+	trap handle_sigusr1 USR1
+	sleep "$INTERVAL" &
+	wait $!
+	# ignore SIGUSR1 signals again
+	trap "" USR1
+done

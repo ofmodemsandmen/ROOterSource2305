@@ -1,0 +1,21 @@
+Source-Makefile: package/network/config/vti/Makefile
+
+Package: vti
+Version: 5
+Depends: +libc +kmod-ip-vti +IPV6:kmod-ip6-vti
+Conflicts: 
+Menu-Depends: 
+Provides: vtiv4 vtiv6
+Section: net
+Category: Network
+Repository: base
+Title: Virtual IPsec Tunnel Interface config support
+Maintainer: Andre Valentin <avalentin@marcant.net>
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:  Virtual IPsec Tunnel Interface config support (IPv4 and IPv6) in /etc/config/network.
+Andre Valentin <avalentin@marcant.net>
+@@
+
+

@@ -1,0 +1,53 @@
+Source-Makefile: feeds/packages/lang/python/python-pluggy/Makefile
+Build-Depends: python-setuptools-scm/host
+Build-Depends/host: python3/host python-build/host python-installer/host python-wheel/host python-setuptools-scm/host
+Build-Types: host
+
+Package: python3-pluggy
+Submenu: Python
+Version: 1.0.0-1
+Depends: +libc +python3-light
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Plugin and hook calling mechanisms for Python
+Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: pluggy-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A minimalist production ready plugin system for python
+https://github.com/pytest-dev/pluggy
+Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-pluggy-src
+Submenu: Python
+Version: 1.0.0-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Plugin and hook calling mechanisms for Python (sources)
+Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+Source: pluggy-1.0.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       A minimalist production ready plugin system for python
+
+    This package contains the Python source files for python3-pluggy.
+https://github.com/pytest-dev/pluggy
+Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-pluggy
+@@
+
+

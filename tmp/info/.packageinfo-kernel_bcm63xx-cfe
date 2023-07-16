@@ -1,0 +1,20 @@
+Source-Makefile: package/kernel/bcm63xx-cfe/Makefile
+
+Package: bcm63xx-cfe
+Default: y
+Version: 2021-06-22-e5050f37150b34deb547b50feccd0e7439cb5bd7-1
+Depends: +libc @(TARGET_bcm4908||TARGET_bcm63xx||TARGET_bmips)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: bcm63xx-cfe
+Maintainer: 
+Source: bcm63xx-cfe-2021-06-22-e5050f37150b34deb547b50feccd0e7439cb5bd7.tar.xz
+Type: ipkg
+Description:   CFE RAM binaries for bcm63xx.
+
+@@
+
+

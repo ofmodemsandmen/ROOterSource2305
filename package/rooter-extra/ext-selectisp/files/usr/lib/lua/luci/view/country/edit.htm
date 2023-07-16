@@ -1,0 +1,1097 @@
+<%+header%>
+
+<script type="text/javascript" src="<%=resource%>/xhr.js"></script>
+<script type="text/javascript">//<![CDATA[
+
+var countrylist = new Array() ;
+var countryname = new Array() ;
+var countrymcc = new Array() ;
+var countryisp = new Array() ;
+var ispdata = new Array() ;
+var selectbtn;
+var dropclr = '#FFFFF0';
+var current_country;
+var current_isp;
+var current_isp_index;
+var current_mcc;
+var current_isp_data;
+var editmode = '0';
+var addmode = '0';
+var editdata = '0';
+var saveddate = new Array() ;
+var fileString;
+var mlen;
+var passwordexp;
+
+var listsize;
+
+	function clearListul(listboxID)
+ 	{
+  		var mylistbox = document.getElementById(listboxID);
+		if(mylistbox == null)
+		{
+  			return 1;
+		}
+		mylistbox.innerHTML = '';
+ 	}
+	
+	function addisp(txtline, indx)
+	{
+		var ul = document.getElementById("hotList1");
+		var li = document.createElement('li');
+		lix = indx + 1;
+		li.id = 'li' + lix;
+		li.style.backgroundColor = dropclr;
+		li.setAttribute('onclick', "testclk(" + lix + ")");
+		li.appendChild(document.createTextNode(txtline));
+		ul.appendChild(li);
+	}
+	
+	function buildlist(line)
+	{
+		//document.getElementById("showisp").style.visibility="visible";
+		//document.getElementById("nselectisp").disabled=false;
+		arr=line.split(",");
+		//document.getElementById("nameispd").innerHTML=arr[2];
+		document.getElementById("nameisp").value=arr[2];
+		saveddate[9] = arr[2];
+		current_isp = arr[2];
+		//document.getElementById("mncispd").innerHTML=countrymcc[document.getElementById("drop1").selectedIndex] + "/" + arr[0];
+		current_mcc = countrymcc[document.getElementById("drop1").selectedIndex] + arr[0];
+		document.getElementById("mncisp").innerHTML=countrymcc[document.getElementById("drop1").selectedIndex] + ":" + arr[0];
+		saveddate[1] = countrymcc[document.getElementById("drop1").selectedIndex];
+		saveddate[2] = arr[0];
+		//document.getElementById("apnispd").innerHTML=arr[1];
+		document.getElementById("apnisp").value=arr[1];
+		saveddate[3] = arr[1];
+		//document.getElementById("cidispd").innerHTML=arr[4];
+		document.getElementById("cidisp").value=arr[4];
+		saveddate[4] = arr[4];
+		switch(arr[7]) {
+			case "0":
+				auth = "<%:Default%>"
+			break;
+			case "1":
+				auth = "<%:IPv4%>"
+			break;
+			case "2":
+				auth = "<%:IPv6%>"
+			break;
+			default:
+				auth = "<%:IPv4+IPv6%>"
+		}
+		//document.getElementById("protoispd").innerHTML=auth;
+		document.getElementById("protoisp").selectedIndex=parseInt(arr[7]);
+		saveddate[5] = arr[7];
+		if ( arr[6] == "~" )
+		{
+			arr[6] = 0;
+		}
+		else
+		{
+			arr[6] = parseInt(arr[6]);
+		}
+		switch(arr[6]) {
+			case 0:
+				auth = "<%:None%>"
+			break;
+			case 1:
+				auth = "<%:PAP%>"
+			break;
+			case 2:
+				auth = "<%:CHAP%>"
+			break;
+			default:
+				auth = "<%:None%>"
+		}
+		//document.getElementById("authispd").innerHTML=auth;
+		document.getElementById("authisp").selectedIndex=arr[6];
+		saveddate[6] = arr[6];
+		user = arr[5];
+		if ( user =="~" )
+		{
+			user = "<%:None%>";
+		}
+		pass = arr[3];
+		if ( pass =="~" )
+		{
+			pass = "<%:None%>";
+		}
+		//document.getElementById("userispd").innerHTML=user;
+		document.getElementById("userisp").value=user;
+		//document.getElementById("passispd").innerHTML=pass;
+		document.getElementById("passisp").value=pass;
+		saveddate[7] = user;
+		saveddate[8] = pass;
+	}
+	
+	function createlist(countryselect, flag) 
+	{
+		cmcc = countrymcc[countryselect];
+		indx = 0;
+		clearListul("hotList1");
+		document.getElementById("noList1").style.display="none";
+		document.getElementById("noList1").style.visibility="hidden";
+		document.getElementById("hotList1").style.display="none";
+		document.getElementById("hotList1").style.visibility="hidden";
+		document.getElementById("editisp").style.display="none";
+		document.getElementById("editisp").style.visibility="hidden";
+		document.getElementById("saveisp").style.display="none";
+		document.getElementById("saveisp").style.visibility="hidden";
+		document.getElementById("deleteisp").style.display="none";
+		document.getElementById("deleteisp").style.visibility="hidden";
+		isptmp = countryisp[countryselect];
+		ispcnt = 0;
+		while ( true )
+		{
+			nxt = isptmp.search(/\|/);
+			if ( nxt == -1 )
+			{
+				tmpisp = isptmp.substring(0);
+				if ( tmpisp == "?" )
+				{
+					var ul = document.getElementById("hotList1");
+					var li = document.createElement('li');
+					lix = 1;
+					li.id = 'li' + lix;
+					li.style.backgroundColor = dropclr;
+					li.appendChild(document.createTextNode("No ISP Available"));
+					ul.appendChild(li);
+					document.getElementById("hotList1").style.display="block";
+					document.getElementById("hotList1").style.visibility="visible";
+					break;
+				}
+				ispdata[ispcnt] = tmpisp;
+				arr=(tmpisp.split(","));
+				tmpisp = "(" + cmcc + arr[0] + ")  " + arr[2];
+				if ( flag == "0" )
+				{
+					addisp(tmpisp, indx);
+				}
+				indx = indx + 1;
+				ispcnt = ispcnt + 1;
+				document.getElementById("hotList1").style.display="block";
+				document.getElementById("hotList1").style.visibility="visible";
+				document.getElementById("editisp").style.display="block";
+				document.getElementById("editisp").style.visibility="visible";
+				document.getElementById("saveisp").style.display="block";
+				document.getElementById("saveisp").style.visibility="visible";
+				document.getElementById("deleteisp").style.display="block";
+				document.getElementById("deleteisp").style.visibility="visible";
+				break;
+			}
+			tmpisp = isptmp.substring(0,nxt);
+			ispdata[ispcnt] = tmpisp;
+			ispcnt = ispcnt + 1;
+			arr=(tmpisp.split(","));
+			tmpisp = "(" + cmcc + arr[0] + ")  " + arr[2];
+			if ( flag == "0" )
+			{
+				addisp(tmpisp, indx);
+			}
+			indx = indx + 1;
+			isptmp = isptmp.substring(nxt + 1);
+		}
+		
+	}
+	
+	function testclk(row)
+	{
+		if ( editmode == '1' )
+		{
+		 return;
+		}
+		var num = indx+1;
+		for (i = 1; i <= num; i++) {
+			id = "li" + i;
+			if ( document.getElementById(id) != null )
+			{
+				document.getElementById(id).style.backgroundColor = dropclr;
+				document.getElementById(id).style.color = 'inherit';
+			}
+		}
+		id = "li" + row;
+		ulselect = row;
+		document.getElementById(id).style.backgroundColor = '#4686fe';
+		document.getElementById(id).style.color = 'white';
+		s = ulselect-1;
+		selectline = s;
+		ispline = ispdata[selectline];
+		arr=(ispline.split(","));
+		buildlist(ispline);
+		ix = parseInt(ulselect)-1;
+		current_isp_index = ix.toString();
+		current_isp_data = ispline;
+	}
+	
+	XHR.get('<%=luci.dispatcher.build_url("admin", "country", "get_list")%>',
+		null,
+		function(x, rv)
+		{
+			listsize = rv.k;
+			countrylist = rv.list;
+			cselected = rv.selected;
+			ccountry = rv.country;
+			cisp = rv.isp;
+			passwordexp = rv.password;
+			document.getElementById("drop1").options.length=0;
+			x = document.getElementById("drop1");
+			x2 = document.getElementById("drop2");
+			
+			//document.getElementById("simpin").value = rv.simpin;
+			//document.getElementById("roaming").value = rv.roaming;
+			//document.getElementById("mtu").value = rv.mtu;
+			//document.getElementById("roaming").value = rv.roaming;
+			//document.getElementById("roammcc").value = rv.mcc;
+			//document.getElementById("roammnc").value = rv.mnc;
+			//document.getElementById("ttl").value = rv.ttl;
+			//document.getElementById("autoset").value = rv.autoset;
+			//document.getElementById("status").value = rv.status;
+			//document.getElementById("interval").value = rv.interval;
+			//document.getElementById("timeout").value = rv.timeout;
+			//document.getElementById("check").value = rv.check;
+			//document.getElementById("ip1").value = rv.ip1;
+			//document.getElementById("ip2").value = rv.ip2;
+			//document.getElementById("ip3").value = rv.ip3;
+		/*	sts = document.getElementById("status").value;
+			if ( sts == 0 )
+			{
+				document.getElementById("interval").disabled=true;
+				document.getElementById("timeout").disabled=true;
+				document.getElementById("check").disabled=true;
+				document.getElementById("ip1").disabled=true;
+				document.getElementById("ip2").disabled=true;
+				document.getElementById("ip3").disabled=true;
+			} */
+			
+			for (i = 0; i < listsize; i++) {
+				position = countrylist[i].search(/,/);
+				name = countrylist[i].substring(0, position);
+				countryname[i] = name;
+				mccposition = countrylist[i].search(/\|/);
+				mcc = countrylist[i].substring(position + 1, mccposition);
+				countrymcc[i] = mcc;
+				countryisp[i] = countrylist[i].substring(mccposition + 1);
+				isptmp = countryisp[i];
+				ispcnt = 0;
+				while ( true )
+				{
+					nxt = isptmp.search(/\|/);
+					if ( nxt == -1 )
+					{
+						ispcnt = ispcnt + 1;
+						break;
+					}
+					ispcnt = ispcnt + 1;
+					isptmp = isptmp.substring(nxt + 1);
+				}
+				option = document.createElement("option");
+				option.text = name + "  (" + mcc + ")";
+				option.value = i;
+				x.add(option);
+				option = document.createElement("option");
+				option.text = name + "  (" + mcc + ")";
+				option.value = i;
+				x2.add(option);
+			}
+			
+			if ( cselected == '0' )
+			{
+				if ( ccountry == "0" )
+				{
+					ccountry = "77";
+				}
+				document.getElementById("drop1").selectedIndex = parseInt(ccountry);
+				document.getElementById("drop2").selectedIndex = parseInt(ccountry);
+				dex = "1"
+				selectbtn = "0";
+				cne = "\240\240\240\240None";
+				//document.getElementById("bselectisp").style.visibility="hidden";
+				//document.getElementById("bselectisp").style.display="none";
+				//document.getElementById("restart").style.visibility="hidden";
+				//document.getElementById("restart").style.display="none";
+			}
+			else
+			{
+				document.getElementById("drop1").selectedIndex = parseInt(ccountry);
+				document.getElementById("drop2").selectedIndex = parseInt(ccountry);
+				dex = Number(parseInt(cisp)+1);
+				selectbtn = "1";
+				createlist(ccountry, "0");
+				arr=ispdata[cisp].split(",");
+				cne = "\240\240\240\240<%:Country%> : " + "(" + countrymcc[ccountry] + arr[0] + ")  " + countryname[ccountry] + "\240\240\240\240  <%:ISP%> : ";
+				cne = cne + arr[2];
+				//document.getElementById("bselectisp").style.visibility="visible";
+				//document.getElementById("bselectisp").style.display="block";
+				//document.getElementById("restart").style.visibility="visible";
+				//document.getElementById("restart").style.display="block";
+			}
+
+			countryselect = document.getElementById("drop1").selectedIndex;
+			current_country = countryselect;
+			createlist(countryselect, "0");
+			id = "li" + dex;
+			document.getElementById(id).style.backgroundColor = '#4686fe';
+			document.getElementById(id).style.color = 'white';
+			buildlist(ispdata[parseInt(dex)-1]);
+			ix = parseInt(dex)-1;
+			current_isp_index = ix.toString();
+			current_isp_data = ispdata[parseInt(dex)-1];
+		}
+	);
+	
+	function cntyselect(btn)
+	{
+		countryselect = document.getElementById("drop1").selectedIndex;
+		createlist(countryselect, "0");
+		id = "li1";
+		document.getElementById(id).style.backgroundColor = '#4686fe';
+		document.getElementById(id).style.color = 'white';
+		buildlist(ispdata[0]);
+		current_isp_index = "0";
+		current_isp_data = ispdata[0];
+		current_country = countryselect;
+	}
+
+	function save_data()
+	{
+		ispnum = parseInt(current_isp_index);
+		dat = countryname[current_country];
+		countrydat = dat + "," + saveddate[1];
+		if ( document.getElementById("apnisp").value == "" )
+		{
+			alert("<%:No APN%>");
+			return;
+		}
+		dat = saveddate[2] + "," + document.getElementById("apnisp").value + "," + document.getElementById("nameisp").value + ",";
+		if ( document.getElementById("nameisp").value == "" )
+		{
+			alert("<%:No ISP Name%>");
+			return;
+		}
+		pval = document.getElementById("passisp").value;
+		if ( pval == "" )
+		{
+			pval = "~"; 
+		}
+		if ( pval == '<%:None%>' )
+		{
+			dat = dat + "~,"; 
+		}
+		else
+		{ 
+			dat = dat + pval + ",";
+		}
+		dat = dat + document.getElementById("cidisp").value + ",";
+		if ( document.getElementById("cidisp").value == "" )
+		{
+			alert("<%:No PDP Context%>");
+			return;
+		}
+		uval = document.getElementById("userisp").value;
+		if ( uval == "" )
+		{
+			uval = "~"; 
+		}
+		if ( uval == '<%:None%>' )
+		{
+			dat = dat + "~,"; 
+		}
+		else
+		{ 
+			dat = dat + uval + ",";
+		}
+		aval = document.getElementById("authisp").selectedIndex.toString();
+		if ( aval == 0 )
+		{
+			aval = "~"; 
+		}
+		dat = dat + aval + ",";
+		dat = dat + document.getElementById("protoisp").selectedIndex.toString();
+		
+		cdat = countrylist[current_country];
+		arr=cdat.split("|");
+		alen = arr.length;
+		arr[ispnum+1] = dat;
+		ilist = arr[0];
+		for (let i = 1; i < alen; i++) {
+			ilist = ilist + "|" + arr[i];
+		}
+		islist = arr[1];
+		for (let i = 2; i < alen; i++) {
+			islist = islist + "|" + arr[i];
+		}
+		countrylist[current_country] = ilist;
+		countryisp[current_country] = islist;
+		createlist(current_country, "0");
+		linenum = current_country+2;
+		linen = linenum.toString() + ":" + ilist + ":";
+		buildlist(ispdata[ispnum]);
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "set_change")%>',
+			{ set: linen },
+			function()
+			{
+				alert("<%:ISP Data Saved%>");
+			}
+		);
+	}
+	
+	function del_data()
+	{
+		if ( cselected == "1")
+		{
+			if ( ccountry == current_country )
+			{
+				if ( cisp == current_isp_index)
+				{
+					alert("<%:Can not Delete the Current Selected Provider%>");
+				}
+			}
+		}
+		conf = confirm("<%:Do you really want to delete%> (" + current_mcc + ")  " + current_isp + "?");
+		if ( conf == true )
+		{
+			ispnum = parseInt(current_isp_index);
+			dat = countryname[current_country];
+			countrydat = dat + "," + saveddate[1];
+			linenum = current_country+2;
+			linen = linenum.toString() + ":" + countrydat + "|";
+			cdat = countrylist[current_country];
+			arr=cdat.split("|");
+			alen = arr.length;
+			if ( alen == 2)
+			{
+				islist = "?";
+				nxtisp = 0;
+				//document.getElementById("editdata").disabled=true;
+				//document.getElementById("deldata").disabled=true;
+			}
+			else
+			{
+				islist = arr[1];
+				str = 2;
+				nxtisp = ispnum-1;
+				if ( ispnum == 0 )
+				{
+					nxtisp = 1;
+					islist = arr[2];
+					str = 3;
+				}
+				if ( nxtisp > alen-2 )
+				{
+					nxtisp = alen-2;
+				}
+				for (let i = str; i < alen; i++) {
+					if ( i != ispnum+1 )
+					{
+						islist = islist + "|" + arr[i];
+					}
+				}
+			}
+			ilist = arr[0] + "|" + islist;
+			ulist = linen + islist + ":";
+			countrylist[current_country] = ilist;
+			countryisp[current_country] = islist;
+			createlist(current_country, "0");
+			row = nxtisp+1;
+			id = "li" + row.toString();
+			document.getElementById(id).style.backgroundColor = '#4686fe';
+			document.getElementById(id).style.color = 'white';
+			buildlist(ispdata[nxtisp]);
+			XHR.get('<%=luci.dispatcher.build_url("admin", "country", "set_change")%>',
+				{ set: ulist },
+				function()
+				{
+					alert("<%:ISP Data Saved%>");
+				}
+			);
+		}
+	}
+	
+	function add_data()
+	{
+		if ( addmode == '0' )
+		{
+			//document.getElementById("adddata").value = "<%:Cancel New Provider%>";
+			document.getElementById("tab1").style.visibility="visible";
+			document.getElementById("tab1").style.display="block";
+			document.getElementById("editnew").style.visibility="visible";
+			document.getElementById("editnew").style.display="block";
+			//document.getElementById("editdata").style.visibility="hidden";
+			//document.getElementById("editdata").style.display="none";
+			//document.getElementById("deldata").style.visibility="hidden";
+			//document.getElementById("deldata").style.display="none";
+			//document.getElementById("savenew").style.visibility="visible";
+			//document.getElementById("savenew").style.display="block";
+			addmode = '1';
+		}
+		else
+		{
+			//document.getElementById("adddata").value = "<%:Add New Provider%>";
+			document.getElementById("tab1").style.visibility="hidden";
+			document.getElementById("tab1").style.display="none";
+			document.getElementById("editnew").style.visibility="hidden";
+			document.getElementById("editnew").style.display="none";
+			//document.getElementById("editdata").style.visibility="visible";
+			//document.getElementById("editdata").style.display="block";
+			//document.getElementById("deldata").style.visibility="visible";
+			//document.getElementById("deldata").style.display="block";
+			//document.getElementById("savenew").style.visibility="hidden";
+			//document.getElementById("savenew").style.display="none";
+			document.getElementById("apnnew").value = "";
+			document.getElementById("newmnc").value = "";
+			document.getElementById("newisp").value = "";
+			document.getElementById("usernew").value = "None";
+			document.getElementById("passnew").value = "None";
+			document.getElementById("authnew").selectedIndex = 0;
+			document.getElementById("protonew").selectedIndex = 0;
+			addmode = '0';
+		}
+	}
+	
+	function save_new()
+	{
+		newselect = document.getElementById("drop2").selectedIndex;
+		newname = countryname[newselect] + "," + countrymcc[newselect] + "|";
+		olddat = countryisp[newselect];
+		if ( document.getElementById("apnnew").value == "" )
+		{
+			alert("<%:No APN%>");
+			return;
+		}
+		if ( document.getElementById("newmnc").value == "" )
+		{
+			alert("<%:No MNC%>");
+			return;
+		}
+		if ( document.getElementById("newisp").value == "" )
+		{
+			alert("<%:No ISP Name%>");
+			return;
+		}
+		dat = document.getElementById("newmnc").value + "," + document.getElementById("apnnew").value + "," + document.getElementById("newisp").value + ",";
+		pval = document.getElementById("passnew").value;
+		if ( pval == "" )
+		{
+			pval = "~"; 
+		}
+		if ( pval == '<%:None%>' )
+		{
+			dat = dat + "~,"; 
+		}
+		else
+		{ 
+			dat = dat + pval + ",";
+		}
+		dat = dat + document.getElementById("cidnew").value + ",";
+		if ( document.getElementById("cidnew").value == "" )
+		{
+			alert("<%:No PDP Context%>");
+			return;
+		}
+		uval = document.getElementById("usernew").value;
+		if ( uval == "" )
+		{
+			uval = "~"; 
+		}
+		if ( uval == '<%:None%>' )
+		{
+			dat = dat + "~,"; 
+		}
+		else
+		{ 
+			dat = dat + uval + ",";
+		}
+		aval = document.getElementById("authnew").selectedIndex.toString();
+		if ( aval == 0 )
+		{
+			aval = "~"; 
+		}
+		dat = dat + aval + ",";
+		dat = dat + document.getElementById("protonew").selectedIndex.toString();
+		if ( olddat == "?" )
+		{
+			newdat = newname + dat;
+			countryisp[newselect] = dat;
+		}
+		else
+		{
+			newdat = newname + olddat + "|" + dat;
+			countryisp[newselect] = olddat + "|" + dat;
+		}
+		
+		countrylist[newselect] = newdat;
+		if ( newselect == current_country )
+		{
+			createlist(newselect, "0");
+			cdat = countrylist[current_country];
+			arr=cdat.split("|");
+			alen = arr.length - 2;
+			row = alen+1;
+			id = "li" + row.toString();
+			document.getElementById(id).style.backgroundColor = '#4686fe';
+			document.getElementById(id).style.color = 'white';
+			buildlist(ispdata[alen]);
+		}
+		newselect2 = newselect+2;
+		ulist = newselect2.toString() + ":" + newdat + ":";
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "set_change")%>',
+			{ set: ulist },
+			function()
+			{
+				alert("<%:ISP Data Saved%>");
+			}
+		); 
+	}
+
+	function saveconf(btn)
+	{
+		passwd = prompt("<%:Enter Password to Continue%>");
+		if ( passwd != passwordexp )
+		{
+			alert("<%:Incorrect Password%>");
+			return false;
+		} 
+		passwd = confirm("<%:Encode Database? Cancel is unencoded%>");
+		encode = "0";
+		if ( passwd == true )
+		{
+			encode = "1";
+		}
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "savecfg")%>',
+			{ set: encode },
+			function()
+			{
+				window.open('http://'+window.location.hostname+'/package/mccdata.mccdata', '_self')
+			}
+		);
+	}
+	
+	function configup(btn)
+	{
+		var filex = btn.files[0];
+		var reader = new FileReader();
+		reader. readAsText(filex);
+		 reader.onload = loaded;
+	}
+
+	function loaded(evt) 
+	{
+		fileString = evt.target.result;
+		document.getElementById("mbutton").style.visibility="visible";
+	}
+	
+	function recurse(index)
+	{
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "loadcfg")%>',
+			{ set: marr[index] },
+			function()
+			{
+				nxtindex = index + 1;
+				if ( nxtindex < mlen )
+				{
+					recurse(nxtindex);
+				}
+				else
+				{
+					XHR.get('<%=luci.dispatcher.build_url("admin", "country", "movecfg")%>',
+					null,
+						function()
+						{
+							window.location.reload(false);
+						}
+					);
+				}
+			}
+		); 
+	}
+	
+	function movemcc()
+	{
+/*		passwd = prompt("Enter Password to Continue");
+		if ( passwd != passwordexp )
+		{
+			alert("Incorrect Password");
+			return false;
+		} */
+		marr = fileString.match(/(.|[\r\n]){1,2000}/g);
+		mlen = marr.length;
+		XHR.get('<%=luci.dispatcher.build_url("admin", "country", "clearcfg")%>',
+			null,
+			function()
+			{
+				document.getElementById("overlay").style.display = "block";
+				recurse(0);
+			}
+		);
+
+	}
+
+	function hidenew() { 
+		document.getElementById("popup").style.display = "none";
+		document.getElementById("saveisp").disabled=false;
+		document.getElementById("addisp").disabled=false;
+		document.getElementById("deleteisp").disabled=false;
+		document.getElementById("nameisp").disabled=false;
+		document.getElementById("apnisp").disabled=false;
+		document.getElementById("cidisp").disabled=false;
+		document.getElementById("protoisp").disabled=false;
+		document.getElementById("authisp").disabled=false;
+		document.getElementById("userisp").disabled=false;
+		document.getElementById("passisp").disabled=false;
+		//document.getElementById("imex").style.display = "block";
+	}
+	
+	function shownew()
+	{
+		document.getElementById("popup").style.display = "block";
+		document.getElementById("saveisp").disabled=true;
+		document.getElementById("addisp").disabled=true;
+		document.getElementById("deleteisp").disabled=true;
+		document.getElementById("nameisp").disabled=true;
+		document.getElementById("apnisp").disabled=true;
+		document.getElementById("cidisp").disabled=true;
+		document.getElementById("protoisp").disabled=true;
+		document.getElementById("authisp").disabled=true;
+		document.getElementById("userisp").disabled=true;
+		document.getElementById("passisp").disabled=true;
+		//document.getElementById("imex").style.display = "none";
+	}
+
+	
+// document.getElementById("attxt").value=" ";
+
+//]]></script>
+
+<form method="post" action="<%=REQUEST_URI%>">
+<body onload="refresh();"></body>
+<div class="cbi-map" id="cbi-hot">
+<h2><a id="content" name="content"><%:Edit ISP Database%></a></h2>
+<div class="cbi-map-descr"><%:Edit the database of ISP information%></div>
+<head>
+	<link rel="stylesheet" href="<%=resource%>/buttons/buttons.css">
+	<style>
+		ul.select {
+		   list-style: none;
+		   margin:  0;
+		   padding: 2px;
+		   border: 1px solid grey;
+		   max-height: 300px;
+		   overflow:auto;
+		}
+		
+		ul.select li {
+		   padding: 2px 6px;
+		}
+		ul.select li:hover {
+			background-color: #ccc;
+		   cursor: pointer;
+		}
+		ul.select li.selected {
+		   background-color: blue;
+		   color: white;
+		}
+		#popup {
+		width:100%;
+		max-width: 450px;
+		height:850px;
+		padding:1px;
+		background-color:gainsboro;  
+		border-style : solid;	
+		position:sticky;
+		top : 1%;
+		margin-left: 0px;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		text-align: center;
+		display:none;
+		overflow: auto;
+		z-index: 300;
+		}
+		
+		#overlay {
+			background-color: rgba(128, 128, 128, 0.4);
+			z-index: 999;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: none;
+		}​
+		
+	</style>
+</head>
+<fieldset class="cbi-section" id="cbi-read">
+
+	<div id="popup">
+		<table width="390px" border="0">
+			<tr>
+				<td width="10%">&nbsp;</td>
+				<td width="80%"><div style="width: 100%;font-size: 25px;text-align: center"><%:Add an ISP to the Database%></div></td>
+				<td width="10%">&nbsp;</td>
+			</tr>
+			<tr>
+				<table width="360px">
+					<tr>
+						<td width="360px" bgcolor="#deb887" ><div style="font-size: 20px;text-align: center"><%:Country%></div>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ADFF2F">
+							<select style="width:360px; font-size: 18px" name="countrydrop2" id="drop2" onchange="cnty2select(this)">
+							</select>
+						</td>
+					</tr>
+				</table>
+				<table width="360px">
+					<tr>
+						<td width="360px" bgcolor="#deb887" ><div style="font-size: 18px;text-align: center"><%:ISP Name%></div>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="#ADFF2F"><input type="text" size="50" style="font-size: 18px;text-align: center" id="newisp"  maxlength="50" class="cbi-input-text"  ></input>
+						</td>
+					</tr>
+				</table>
+				<table width="360px">
+					<tr>
+						<td width="50px" bgcolor="#deb887" ><div style="font-size: 18px;text-align: center"><%:MNC%></div>
+						</td>
+						<td width="310px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:APN%></div></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ADFF2F"><input type="number" min="0" max="999" style="font-size: 18px;text-align: center" id="newmnc"  maxlength="4" class="cbi-input-text"  ></input>
+						</td>
+						<td bgcolor="#ADFF2F"><input type="text" style="font-size: 18px;text-align: center" maxlength="30" id="apnnew" class="cbi-input-text"  ></input>
+						</td>
+					</tr>
+				</table>
+				<table width="360px">
+					<tr>
+						<td width="50px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:PDP Context%></div></td>
+						<td width="200px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Protocol Type%></div></td>
+						<td width="100px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Authentication%></div></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ADFF2F"><input type="number" min="1" max="5" style="font-size: 18px;text-align: center" id="cidnew"  maxlength="1" class="cbi-input-text" value="1" ></input>
+						</td>
+						<td bgcolor="#ADFF2F" style="font-size: 18px;text-align: center" align="center">
+							<select id="protonew" onchange="autoenable(this)">
+							<option value="0" selected="selected"><%:Default%></option>
+							<option value="1"><%:IPv4%></option>
+							<option value="2"><%:IPv6%></option>
+							<option value="3"><%:IPv4+IPv6%></option>
+							</select>
+						</td>
+						<td bgcolor="#ADFF2F" style="font-size: 18px;text-align: center" align="center">
+							<select id="authnew" onchange="autoenable(this)">
+							<option value="0" selected="selected"><%:None%></option>
+							<option value="1"><%:PAP%></option>
+							<option value="2"><%:CHAP%></option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<table width="360px" border="0">
+					<tr>
+						<td width="180px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:User Name%></div></td>
+						<td width="180px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Password%></div></td>
+					</tr>
+					<tr>
+						<td bgcolor="#ADFF2F"><input type="text" style="font-size: 18px;text-align: center;width:150px" id="usernew" class="cbi-input-text" value="<%:None%>" ></input>
+						</td>
+						<td bgcolor="#ADFF2F"><input type="text" style="font-size: 18px;text-align: center;width:150px" id="passnew" class="cbi-input-text" value="<%:None%>" ></input>
+						</td>
+					</tr>
+				</table>
+			</tr>
+		</table>
+		<table border="0" width="360px">
+			<tr>
+				<td width="350px" align="center"><input type="button" class="button-62" value="<%:Save Changes%>" onclick="return save_new()" /></div></td>
+			</tr>
+		</table>
+		<table border="0" width="360px">
+			<tr>
+				<td width="350px" align="center"><input type="button" class="button-61" value="<%:Exit w/o Saving%>" onclick="return hidenew()" /></div></td>
+				
+			</tr>
+		</table>
+	</div>
+	<div class="overlay" id="overlay">	
+	</div>
+	<table width="350" border="0" id="countrytxt">
+		<tr>
+			<td width="20%"><div>&nbsp;</div></td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td><div align="center" style="font-size: 20px"><%:Country %></div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td>
+				<select style="width:380px; font-size: 18px" name="countrydrop" id="drop1" onchange="cntyselect(this)">
+				</select>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+	</table>
+
+	<table width="380" border="0" id="hlist">
+		<tr>
+			<td width="20%"><div align="center" style="font-size: 18px"><%:Providers%></div></td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td>
+				<ul class="select" id="hotList1" style="width:380px; font-size: 20px">
+				</ul>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<div style="color:white; visibility:hidden;display:none;width:300px" id="nselectisp" class="button-62" role="button" onclick="return nselection_isp()"><%:Select Current ISP%></div>
+			</td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+	</table>
+		<table width="380" border="0">
+		<tr>
+			<td width="10%"><div align="right"></div></td>
+			<td width="90%">
+				<ul id="noList1" style="width:380px; font-size: 18px; visibility:hidden;display:none">
+				<li>&nbsp;</li>
+				<li><%:No ISP Available%></li>
+				<li>&nbsp;</li>
+				</ul>
+			</td>
+		</tr>
+	<table>
+
+	<table width="360" border="0" id="editisp" >
+		<tr>
+			<td width="170px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Name%></div></td>
+			<td width="170px"  bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:MCC:MNC%></div></td>
+			<td width="20px"></td>
+		</tr>
+		<tr >
+			<td bgcolor="#ADFF2F" align="center"><input type="text" style="font-size: 18px;text-align: center" id="nameisp"  maxlength="15" class="cbi-input-text"  ></input>
+			</td>
+			<td bgcolor="#ADFF2F" align="center" id="mncisp" style="font-size: 18px" align="center"><div></div></td>
+			<td></td>
+		<tr>
+		
+		<tr>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:APN%></div></td>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:PDP Context%></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ADFF2F" align="center"><input type="text" style="font-size: 18px;text-align: center" maxlength="30" id="apnisp" class="cbi-input-text" ></input>
+			</td>
+			<td bgcolor="#ADFF2F" align="center"><input type="number" min="1" max="5" style="font-size: 18px;text-align: center" id="cidisp"  maxlength="1" class="cbi-input-text" ></input>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Protocol Type%></div></td>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Authentication%></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ADFF2F" align="center" style="font-size: 18px;text-align: center" align="center">
+				<select id="protoisp" onchange="autoenable(this)">
+				<option value="0" selected="selected"><%:Default%></option>
+				<option value="1"><%:IPv4%></option>
+				<option value="2"><%:IPv6%></option>
+				<option value="3"><%:IPv4+IPv6%></option>
+				</select>
+			</td>
+			<td bgcolor="#ADFF2F" align="center" style="font-size: 18px;text-align: center" align="center">
+				<select id="authisp" onchange="autoenable(this)">
+				<option value="0" selected="selected"><%:None%></option>
+				<option value="1"><%:PAP%></option>
+				<option value="2"><%:CHAP%></option>
+				</select>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:User Name%></div></td>
+			<td bgcolor="#deb887" style="font-size: 18px"><div align="center"><%:Password%></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td bgcolor="#ADFF2F" align="center"><input type="text" style="width: 140px;font-size: 18px;text-align: center" id="userisp"  maxlength="15" class="cbi-input-text"  ></input>
+			</td>
+			<td bgcolor="#ADFF2F" align="center"><input type="text" style="width: 140px;font-size: 18px;text-align: center" id="passisp"  maxlength="15" class="cbi-input-text"  ></input>
+			</td>
+			<td></td>
+		</tr>
+	</table>
+	<table width="360" border="0">
+		<tr>
+			<td width="12%" align="center"><input type="button" id="saveisp" class="button-62" value="<%:Save Current ISP Changes%>" onclick="return save_data()" style="width:340px" />	</td>
+			<td width="88%"></td>
+		</tr>
+		<tr>
+			<td align="center"><input type="button" id="deleteisp" class="button-61" value="<%:Delete Current ISP%>" onclick="return del_data()" /></div></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td align="center"><input type="button" id="addisp" class="button-61" value="<%:Add ISP%>" onclick="return shownew()" /></div></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<table width="380px" border="0">
+		<tr>
+			<td width="380px"><img src="<%=resource%>/icons/line.jpg" height="5px" width="380px"></td>
+		</tr>
+	</table>
+	
+	<table width="380" border="0">
+		<tr>
+			<td width="20%"><div align="center" style="font-size: 18px"><%:Export Database%></div></td>
+			<td width="80%"><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<div align="center" style="color:white;" id="ebutton" class="button-62" role="button" onclick="saveconf(this)"><%:Export Provider Database%></div>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="font-size: 18px"><div align="center"><%:Import Database%></div></td>
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td align="center"><input type="file" accept=".mccdata" id="ibutton" class="cbi-button  cbi-button-submit" onchange="return configup(this)" /></td> 
+			<td><div>&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td align="center">
+				<div style="color:white;visibility:hidden" id="mbutton" class="button-62" role="button" onclick="return movemcc()"><%:Import Provider Database%></div>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+
+<!--	<table id="cmdtxt" width="700"  border="0" style="display:table;visibility:hidden;display:none"> -->
+
+	<table id="cmdtxt" width="700"  border="0" style="display:table;visibility:hidden;display:none">
+		<tr>
+				<td width="100%">
+			<textarea readonly="readonly" name="attxt" id="attxt" rows="6" style="width: 600px;" maxlength="160"></textarea>
+			</td>
+		</tr>
+	</table>
+	
+</fieldset>
+
+</form>
+<%+footer%>

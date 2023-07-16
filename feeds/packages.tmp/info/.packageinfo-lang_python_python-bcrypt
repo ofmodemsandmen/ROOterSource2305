@@ -1,0 +1,51 @@
+Source-Makefile: feeds/packages/lang/python/python-bcrypt/Makefile
+Build-Depends: libffi/host python-cffi/host  
+
+Package: python3-bcrypt
+Submenu: Python
+Version: 3.2.2-1
+Depends: +libc +python3-light +python3-cffi
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Modern password hashing
+Maintainer: 
+Source: bcrypt-3.2.2.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Good password hashing for your software and your servers.
+https://github.com/pyca/bcrypt/
+
+@@
+
+Package: python3-bcrypt-src
+Submenu: Python
+Version: 3.2.2-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Modern password hashing (sources)
+Maintainer: 
+Source: bcrypt-3.2.2.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:       Good password hashing for your software and your servers.
+
+    This package contains the Python source files for python3-bcrypt.
+https://github.com/pyca/bcrypt/
+
+@@
+Config:
+    depends on PACKAGE_python3-bcrypt
+@@
+
+

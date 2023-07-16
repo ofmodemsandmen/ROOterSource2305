@@ -1,0 +1,17 @@
+#!/bin/sh
+
+while IFS= read -r line; do
+	read -r line
+	read -r line
+	host="$line"
+	break
+done < /etc/custom
+
+uci set system.@system[0].hostname="$host"
+uci commit system
+/etc/init.d/system restart
+
+# lang 'zh_cn'
+
+uci set luci.main.lang='en'
+uci commit luci

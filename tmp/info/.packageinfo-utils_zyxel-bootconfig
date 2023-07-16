@@ -1,0 +1,20 @@
+Source-Makefile: package/utils/zyxel-bootconfig/Makefile
+
+Package: zyxel-bootconfig
+Version: 1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Base system
+Repository: base
+Title: Utility for handling ZyXEL Bootconfig settings
+Maintainer: David Bauer <mail@david-bauer.net>
+Source: 
+Type: ipkg
+Description:  This package contains an utility that allows handling ZyXEL Bootconfig settings.
+David Bauer <mail@david-bauer.net>
+@@
+
+

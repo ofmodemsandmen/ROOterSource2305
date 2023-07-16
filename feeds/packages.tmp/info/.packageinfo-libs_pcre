@@ -1,0 +1,87 @@
+Source-Makefile: feeds/packages/libs/pcre/Makefile
+Build-Types: host
+
+Package: libpcre
+Version: 8.45-5
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: A Perl Compatible Regular Expression library
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.45.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: A Perl Compatible Regular Expression library
+https://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+Config:
+  source "feeds/packages/libs/pcre/Config.in"
+@@
+
+Package: libpcre16
+Version: 8.45-5
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: A Perl Compatible Regular Expression library (16bit support)
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.45.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: A Perl Compatible Regular Expression library (16bit support)
+https://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+Package: libpcre32
+Version: 8.45-5
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: A Perl Compatible Regular Expression library (32bit support)
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.45.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: A Perl Compatible Regular Expression library (32bit support)
+https://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+Package: libpcrecpp
+Version: 8.45-5
+Depends: +libc +libpcre +libstdcpp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: C++ wrapper for Perl Compatible Regular Expression library
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Source: pcre-8.45.tar.bz2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Type: ipkg
+Description: C++ wrapper for Perl Compatible Regular Expression library
+https://www.pcre.org/
+Thomas Heil <heil@terminal-consulting.de>
+@@
+
+

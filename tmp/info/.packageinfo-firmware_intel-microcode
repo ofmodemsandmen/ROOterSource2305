@@ -1,0 +1,21 @@
+Source-Makefile: package/firmware/intel-microcode/Makefile
+Build-Depends: iucode-tool/host
+
+Package: intel-microcode
+Version: 20230512-1
+Depends: +libc @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Title: Intel x86 CPU microcode
+Maintainer: 
+Source: intel-microcode_3.20230512.1.tar.xz
+Type: ipkg
+Description: Intel x86 CPU microcode
+@DEBIAN/pool/non-free-firmware/i/intel-microcode/
+
+@@
+
+

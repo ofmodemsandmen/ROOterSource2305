@@ -1,0 +1,730 @@
+Source-Makefile: target/linux/realtek/Makefile
+Target: realtek
+Target-Board: realtek
+Target-Name: Realtek MIPS
+Target-Arch: mips
+Target-Arch-Packages: mips_mips32
+Target-Features: gpio ramdisk squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
+CPU-Type: mips32
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Realtek RTL83xx based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  ethtool firewall4 ip-bridge ip-full kmod-gpio-button-hotplug kmod-nft-offload nftables odhcp6c tc-bpf uboot-envtools  
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target: realtek/rtl838x
+Target-Board: realtek
+Target-Name: Realtek MIPS RTL838X
+Target-Arch: mips
+Target-Arch-Packages: mips_4kec
+Target-Features: dt gpio mips16 ramdisk squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
+CPU-Type: 4kec
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Realtek RTL838x based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  ethtool firewall4 ip-bridge ip-full kmod-gpio-button-hotplug kmod-nft-offload nftables odhcp6c tc-bpf uboot-envtools  
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_allnet_all-sg8208m
+Target-Profile-Name: ALLNET ALL-SG8208M
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: allnet,all-sg8208m
+
+
+Target-Profile-Description:
+Build firmware images for ALLNET ALL-SG8208M
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_apresia_aplgs120gtss
+Target-Profile-Name: APRESIA ApresiaLightGS120GT-SS
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: apresia,aplgs120gtss
+
+
+Target-Profile-Description:
+Build firmware images for APRESIA ApresiaLightGS120GT-SS
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-10mp-f
+Target-Profile-Name: D-Link DGS-1210-10MP F
+Target-Profile-Packages:  realtek-poe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-10mp-f
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-10MP F
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-10p
+Target-Profile-Name: D-Link DGS-1210-10P
+Target-Profile-Packages:  lua-rs232 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-10p
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-10P
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-16
+Target-Profile-Name: D-Link DGS-1210-16
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-16
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-16
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-20
+Target-Profile-Name: D-Link DGS-1210-20
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-20
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-20
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-28
+Target-Profile-Name: D-Link DGS-1210-28
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-28
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-28
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-28mp-f
+Target-Profile-Name: D-Link DGS-1210-28MP F
+Target-Profile-Packages:  realtek-poe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-28mp-f
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-28MP F
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_engenius_ews2910p
+Target-Profile-Name: EnGenius EWS2910P
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,ews2910p
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius EWS2910P
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-8g
+Target-Profile-Name: HPE 1920-8G (JG920A)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-8g
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-8G (JG920A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-16g
+Target-Profile-Name: HPE 1920-16G (JG923A)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-16g
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-16G (JG923A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-24g
+Target-Profile-Name: HPE 1920-24G (JG924A)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-24g
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-24G (JG924A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_inaba_aml2-17gp
+Target-Profile-Name: INABA Abaniact AML2-17GP
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: inaba,aml2-17gp
+
+
+Target-Profile-Description:
+Build firmware images for INABA Abaniact AML2-17GP
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_iodata_bsh-g24mb
+Target-Profile-Name: I-O DATA BSH-G24MB
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: iodata,bsh-g24mb
+
+
+Target-Profile-Description:
+Build firmware images for I-O DATA BSH-G24MB
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_gs108t-v3
+Target-Profile-Name: NETGEAR GS108T v3
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,gs108t-v3
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR GS108T v3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_gs110tpp-v1
+Target-Profile-Name: NETGEAR GS110TPP v1
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,gs110tpp-v1
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR GS110TPP v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_gs308t-v1
+Target-Profile-Name: NETGEAR GS308T v1
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,gs308t-v1
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR GS308T v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_gs310tp-v1
+Target-Profile-Name: NETGEAR GS310TP v1
+Target-Profile-Packages:  lua-rs232 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,gs310tp-v1
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR GS310TP v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_panasonic_m16eg-pn28160k
+Target-Profile-Name: Panasonic Switch-M16eG PN28160K
+Target-Profile-Packages: kmod-i2c-mux-pca954x 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: panasonic,m16eg-pn28160k
+
+
+Target-Profile-Description:
+Build firmware images for Panasonic Switch-M16eG PN28160K
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_panasonic_m24eg-pn28240k
+Target-Profile-Name: Panasonic Switch-M24eG PN28240K
+Target-Profile-Packages: kmod-i2c-mux-pca954x 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: panasonic,m24eg-pn28240k
+
+
+Target-Profile-Description:
+Build firmware images for Panasonic Switch-M24eG PN28240K
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_panasonic_m8eg-pn28080k
+Target-Profile-Name: Panasonic Switch-M8eG PN28080K
+Target-Profile-Packages: kmod-i2c-mux-pca954x 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: panasonic,m8eg-pn28080k
+
+
+Target-Profile-Description:
+Build firmware images for Panasonic Switch-M8eG PN28080K
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_sg2008p-v1
+Target-Profile-Name: TP-Link SG2008P v1
+Target-Profile-Packages: kmod-hwmon-tps23861 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,sg2008p-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link SG2008P v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_sg2210p-v3
+Target-Profile-Name: TP-Link SG2210P v3
+Target-Profile-Packages: kmod-hwmon-tps23861 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,sg2210p-v3
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link SG2210P v3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-10hp
+Target-Profile-Name: ZyXEL GS1900-10HP
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-10hp
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-10HP
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-16
+Target-Profile-Name: ZyXEL GS1900-16
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-16
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-16
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-8
+Target-Profile-Name: ZyXEL GS1900-8
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-8
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-8
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-8hp-v1
+Target-Profile-Name: ZyXEL GS1900-8HP v1
+Target-Profile-Packages:  lua-rs232 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-8hp-v1
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-8HP v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-8hp-v2
+Target-Profile-Name: ZyXEL GS1900-8HP v2
+Target-Profile-Packages:  lua-rs232 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-8hp-v2
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-8HP v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-24-v1
+Target-Profile-Name: ZyXEL GS1900-24 v1
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-24-v1
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-24 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-24e
+Target-Profile-Name: ZyXEL GS1900-24E
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-24e
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-24E
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-24hp-v1
+Target-Profile-Name: ZyXEL GS1900-24HP v1
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-24hp-v1
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-24HP v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-24hp-v2
+Target-Profile-Name: ZyXEL GS1900-24HP v2
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-24hp-v2
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-24HP v2
+
+
+
+
+
+@@
+
+Target: realtek/rtl839x
+Target-Board: realtek
+Target-Name: Realtek MIPS RTL839X
+Target-Arch: mips
+Target-Arch-Packages: mips_24kc
+Target-Features: dt gpio mips16 ramdisk squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
+CPU-Type: 24kc
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Realtek RTL839x based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  ethtool firewall4 ip-bridge ip-full kmod-gpio-button-hotplug kmod-nft-offload nftables odhcp6c tc-bpf uboot-envtools  
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_d-link_dgs-1210-52
+Target-Profile-Name: D-Link DGS-1210-52
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: d-link,dgs-1210-52
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DGS-1210-52
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_gs750e
+Target-Profile-Name: NETGEAR GS750E
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,gs750e
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR GS750E
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_panasonic_m48eg-pn28480k
+Target-Profile-Name: Panasonic Switch-M48eG PN28480K
+Target-Profile-Packages: kmod-hwmon-gpiofan kmod-hwmon-lm75 kmod-i2c-mux-pca954x kmod-thermal 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: panasonic,m48eg-pn28480k
+
+
+Target-Profile-Description:
+Build firmware images for Panasonic Switch-M48eG PN28480K
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_sg2452p-v4
+Target-Profile-Name: TP-Link SG2452P v4
+Target-Profile-Packages: kmod-hwmon-gpiofan kmod-hwmon-tps23861 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,sg2452p-v4
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link SG2452P v4
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_gs1900-48
+Target-Profile-Name: ZyXEL GS1900-48
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,gs1900-48
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL GS1900-48
+
+
+
+
+
+@@
+
+Target: realtek/rtl930x
+Target-Board: realtek
+Target-Name: Realtek MIPS RTL930X
+Target-Arch: mips
+Target-Arch-Packages: mips_24kc
+Target-Features: dt gpio mips16 ramdisk squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
+CPU-Type: 24kc
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Realtek RTL930x based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  ethtool firewall4 ip-bridge ip-full kmod-gpio-button-hotplug kmod-nft-offload nftables odhcp6c tc-bpf uboot-envtools  
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+Target-Profile: DEVICE_zyxel_xgs1250-12
+Target-Profile-Name: Zyxel XGS1250-12
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,xgs1250-12
+
+
+Target-Profile-Description:
+Build firmware images for Zyxel XGS1250-12
+
+
+
+
+
+@@
+
+Target: realtek/rtl931x
+Target-Board: realtek
+Target-Name: Realtek MIPS RTL931X
+Target-Arch: mips
+Target-Arch-Packages: mips_24kc
+Target-Features: dt gpio mips16 ramdisk squashfs
+Target-Depends: 
+Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
+CPU-Type: 24kc
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: mips
+Target-Description:
+	Build firmware images for Realtek RTL931x based boards.
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail  ethtool firewall4 ip-bridge ip-full kmod-gpio-button-hotplug kmod-nft-offload nftables odhcp6c tc-bpf uboot-envtools  
+Target-Profile: Default
+Target-Profile-Priority: 1
+Target-Profile-Name: Default Profile
+Target-Profile-Packages:  
+Target-Profile-Description:
+	Default package set compatible with most boards.
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: package/firmware/cypress-nvram/Makefile
+
+Package: cypress-nvram-4339-sdio
+Version: 7
+Depends: +libc 
+Conflicts: brcmfmac-nvram-4339-sdio
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: BCM4339 SDIO NVRAM
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Source: 
+Type: ipkg
+Description: BCM4339 SDIO NVRAM
+Álvaro Fernández Rojas <noltari@gmail.com>
+@@
+
+

@@ -1,0 +1,56 @@
+Installation:
+
+Copy dtb from build_dir to bin/ and run tftpserver there:
+$ cp ./build_dir/target-aarch64_cortex-a72_musl/linux-mvebu_cortexa72/image-armada-7040-mochabin.dtb bin/targets/mvebu/cortexa72/
+$ in.tftpd -L -s bin/targets/mvebu/cortexa72/
+
+Connect to the device UART via microUSB port and power on the device.
+
+Power on the device and hit any key to stop the autoboot.
+
+Set serverip (host IP) and ipaddr (any free IP address on the same subnet), e.g:
+$ setenv serverip 192.168.1.10 # Host
+$ setenv ipaddr 192.168.1.15 # Device
+
+Set the ethernet device (Example for the 1G WAN):
+$ setenv ethact mvpp2-2
+
+Ping server to confirm network is working:
+$ ping $serverip
+Using mvpp2-2 device
+host 192.168.1.15 is alive
+
+Tftpboot the firmware:
+$ tftpboot $kernel_addr_r openwrt-mvebu-cortexa72-globalscale_mochabin-initramfs-kernel.bin
+$ tftpboot $fdt_addr_r image-armada-7040-mochabin.dtb
+
+Boot the image:
+$ booti $kernel_addr_r - $fdt_addr_r
+
+Once the initramfs is booted, transfer openwrt-mvebu-cortexa72-globalscale_mochabin-squashfs-sdcard.img.gz
+to /tmp dir on the device.
+
+Gunzip and dd the image:
+$ gunzip /tmp/openwrt-mvebu-cortexa72-globalscale_mochabin-squashfs-sdcard.img.gz
+$ dd if=/tmp/openwrt-mvebu-cortexa72-globalscale_mochabin-squashfs-sdcard.img of=/dev/mmcblk0 && sync
+
+Reboot the device.
+
+Hit any key to stop the autoboot.
+
+Reset U-boot env and set the bootcmd:
+$ env default -a
+$ setenv bootcmd 'load mmc 0 ${loadaddr} boot.scr && source ${loadaddr}'
+
+Optionally I would advise to edit the console env variable to remove earlycon as that
+causes the kernel to never use the driver for the serial console.
+Earlycon should be used only for debugging before the kernel can configure the console
+and will otherwise cause various issues with the console.
+
+$ setenv console 'console=ttyS0,115200'
+
+Save and reset
+$ saveenv
+$ reset
+
+OpenWrt should boot from eMMC now.

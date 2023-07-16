@@ -1,0 +1,304 @@
+Source-Makefile: feeds/luci/applications/luci-app-natmap/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-natmap
+Submenu: 3. Applications
+Version: x
+Depends: +libc +natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: LuCI Support for natmap
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: LuCI Support for natmap
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+Package: luci-i18n-natmap-cs
+Default: LUCI_LANG_cs||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - cs translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Čeština (Czech)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-da
+Default: LUCI_LANG_da||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - da translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Dansk (Danish)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-de
+Default: LUCI_LANG_de||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - de translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Deutsch (German)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-es
+Default: LUCI_LANG_es||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - es translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Español (Spanish)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-it
+Default: LUCI_LANG_it||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - it translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Italiano (Italian)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-nl
+Default: LUCI_LANG_nl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - nl translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Nederlands (Dutch)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-pl
+Default: LUCI_LANG_pl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - pl translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Polski (Polish)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-pt-br
+Default: LUCI_LANG_pt_BR||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - pt-br translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Português do Brasil (Brazilian Portuguese)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-ro
+Default: LUCI_LANG_ro||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - ro translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Română (Romanian)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-ru
+Default: LUCI_LANG_ru||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - ru translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Русский (Russian)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-sv
+Default: LUCI_LANG_sv||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - sv translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Svenska (Swedish)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-tr
+Default: LUCI_LANG_tr||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - tr translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Türkçe (Turkish)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - zh-cn translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - 简体中文 (Chinese Simplified)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+Package: luci-i18n-natmap-zh-tw
+Default: LUCI_LANG_zh_Hant||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - zh-tw translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - 繁體中文 (Chinese Traditional)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
+

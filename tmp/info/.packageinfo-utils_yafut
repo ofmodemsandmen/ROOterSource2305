@@ -1,0 +1,22 @@
+Source-Makefile: package/utils/yafut/Makefile
+
+Package: yafut
+Version: 2023-03-31-16435e89d449f953712983315e1a89cdb678620d-1
+Depends: +libc @NAND_SUPPORT
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Yet Another File UTility
+Maintainer: 
+Source: yafut-2023-03-31-16435e89d449f953712983315e1a89cdb678620d.tar.xz
+License: GPL-2.0
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   A program for copying files from/to Yaffs file systems from userspace.
+
+@@
+
+

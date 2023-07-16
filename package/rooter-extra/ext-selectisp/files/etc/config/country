@@ -1,0 +1,7 @@
+
+config general 'general'
+	option country '77'
+	option selected '0'
+	option isp '1'
+	option ispdata '~'
+	option password 'world'

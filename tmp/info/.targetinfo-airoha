@@ -1,0 +1,50 @@
+Source-Makefile: target/linux/airoha/Makefile
+Target: airoha
+Target-Board: airoha
+Target-Name: Airoha ARM
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a7
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk source-only squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a7
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
+Target: airoha/generic
+Target-Board: airoha
+Target-Name: Generic
+Target-Arch: arm
+Target-Arch-Packages: arm_cortex-a7
+Target-Features: arm_v7 dt gpio nand pci pcie ramdisk source-only squashfs usb
+Target-Depends: 
+Target-Optimization: -Os -pipe
+CPU-Type: cortex-a7
+Linux-Version: 5.15.118
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+
+@@
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
+Target-Profile: DEVICE_airoha_en7523-evb
+Target-Profile-Name: Airoha EN7523 Evaluation Board
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: airoha,en7523-evb
+
+
+Target-Profile-Description:
+Build firmware images for Airoha EN7523 Evaluation Board
+
+
+
+
+
+@@
+
+

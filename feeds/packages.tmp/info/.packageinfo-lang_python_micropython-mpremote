@@ -1,0 +1,55 @@
+Source-Makefile: feeds/packages/lang/python/micropython-mpremote/Makefile
+Build-Depends: python-hatchling/host python-hatch-requirements-txt/host python-hatch-vcs/host
+
+Package: micropython-mpremote
+Submenu: Python
+Version: 1.20.0-1
+Depends: +libc +python3-light +python3-urllib +python3-pyserial
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Interacting remotely with MicroPython devices
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: mpremote-1.20.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: This CLI tool provides an integrated set of utilities to remotely
+interact with and automate a MicroPython device over a serial
+connection.
+https://github.com/micropython/micropython
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: micropython-mpremote-src
+Submenu: Python
+Version: 1.20.0-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Interacting remotely with MicroPython devices (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: mpremote-1.20.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     This CLI tool provides an integrated set of utilities to remotely
+interact with and automate a MicroPython device over a serial
+connection.
+
+    This package contains the Python source files for micropython-mpremote.
+https://github.com/micropython/micropython
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_micropython-mpremote
+@@
+
+
