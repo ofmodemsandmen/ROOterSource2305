@@ -43,5 +43,16 @@
 		"mod": "ZBT-WG1608-32M",
 		"ext": "-upgrade.bin",
 		"addons": ["readme.pdf", "readmerecovery.txt"]
+	},
+	"Z8102": {
+		"details": "ZBT Z8102AX",
+		"type": "1",
+		"build": "2305",
+		"config": ".config_z8102",
+		"image": "openwrt-mediatek-filogic-z8102ax-squashfs-sysupgrade.bin",
+		"imagepath": "/mediatek/filogic/",
+		"mod": "ZBT-Z8102AX",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf"]
 	}
 }
