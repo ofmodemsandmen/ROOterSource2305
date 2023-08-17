@@ -241,7 +241,7 @@ detect_mac80211() {
 			set wireless.default_${name}.mode=ap
 			set wireless.default_${name}.ssid="$SSID"
 			set wireless.default_${name}.encryption=psk2
-			set wireless.default_${name}key="$PASSW"
+			set wireless.default_${name}.key="$PASSW"
 EOF
 		uci -q commit wireless
 	done
