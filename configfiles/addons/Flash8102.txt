@@ -1,0 +1,10 @@
+Flashing the ZBT Z8102AX
+========================
+
+Note : the current ROOter firmware does not have a working WAN.
+
+To flash from factory to ROOter go to the System->Backup/Flash
+menu and flash from there.
+
+Be sure to deselect Keep Settings and select Force Flash.
+

@@ -53,6 +53,6 @@
 		"imagepath": "/mediatek/filogic/",
 		"mod": "ZBT-Z8102AX",
 		"ext": "-upgrade.bin",
-		"addons": ["readme.pdf"]
+		"addons": ["Flash8102.txt"]
 	}
 }
