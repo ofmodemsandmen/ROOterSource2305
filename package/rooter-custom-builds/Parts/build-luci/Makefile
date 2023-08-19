@@ -14,7 +14,7 @@ define Package/build-luci
   SECTION:=utils
   CATEGORY:=ROOter
   SUBMENU:=BuildSections
-  DEPENDS:=+luci +luci-compat +ca-bundle +ca-certificates +libustream-wolfssl +464xlat 
+  DEPENDS:=+luci +luci-compat +ca-bundle +ca-certificates +464xlat 
   TITLE:=Luci packages
   PKGARCH:=all
 endef

@@ -14,7 +14,7 @@ define Package/build-wifi
   SECTION:=utils
   CATEGORY:=ROOter
   SUBMENU:=BuildSections
-  DEPENDS:=+luci-app-guestwifi +luci-app-hotspot +wpad
+  DEPENDS:=+luci-app-guestwifi +luci-app-hotspot
   TITLE:=Wifi packages
   PKGARCH:=all
 endef

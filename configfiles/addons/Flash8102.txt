@@ -4,6 +4,7 @@ Flashing the ZBT Z8102AX
 Note : due to problems with the WAN port the WAN has been moved
 	from the correct WAN port to the Ethernet port to it's left.
 	This leaves 3 Ethernet ports and a working WAN port.
+	See wan8102.jpg for details.
 
 To flash from factory to ROOter go to the System->Backup/Flash
 menu and flash from there.
