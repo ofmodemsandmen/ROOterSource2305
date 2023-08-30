@@ -1,7 +1,8 @@
 #!/bin/sh
 
-#cores="-j 7"
-cores=""
+#core="-j7"
+core=""
+
 DATE=$(date +%Y-%m-%d)
 routersjson="./router2305.json"
 templatefolder="template/"
@@ -82,6 +83,39 @@ buldimage() {
 						temp="${temp1%\"}"
 						model_image2="${temp#\"}"
 					;;
+					"5" )
+						temp1=$(jshon -e "$model_up" -e image1  < $routersjson)
+						temp="${temp1%\"}"
+						model_image1="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image2  < $routersjson)
+						temp="${temp1%\"}"
+						model_image2="${temp#\"}"
+						# add more here for X86 builds
+						temp1=$(jshon -e "$model_up" -e image3  < $routersjson)
+						temp="${temp1%\"}"
+						model_image3="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image4  < $routersjson)
+						temp="${temp1%\"}"
+						model_image4="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image5  < $routersjson)
+						temp="${temp1%\"}"
+						model_image5="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image6  < $routersjson)
+						temp="${temp1%\"}"
+						model_image6="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image7  < $routersjson)
+						temp="${temp1%\"}"
+						model_image7="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image8  < $routersjson)
+						temp="${temp1%\"}"
+						model_image8="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image9  < $routersjson)
+						temp="${temp1%\"}"
+						model_image9="${temp#\"}"
+						temp1=$(jshon -e "$model_up" -e image10  < $routersjson)
+						temp="${temp1%\"}"
+						model_image10="${temp#\"}"
+					;;
 				esac
 				
 				temp1=$(jshon -e "$model_up" -e config  < $routersjson)
@@ -103,8 +137,8 @@ buldimage() {
 					temp1=$(jshon -e "$model_up" -e package  < $routersjson)
 					temp="${temp1%\"}"
 					model_build="${temp#\"}"
-				fi	
-
+				fi
+				
 				model_pre=""
 				fnd=$(echo "$model_list" | grep "prescript")
 				if [ ! -z "$fnd" ]; then
@@ -113,7 +147,7 @@ buldimage() {
 					model_pre="${temp#\"}"
 					model_pre=$(echo $model_pre | sed 's!\\!!g')
 				fi
-
+				
 				model_post=""
 				fnd=$(echo "$model_list" | grep "postscript")
 				if [ ! -z "$fnd" ]; then
@@ -121,7 +155,7 @@ buldimage() {
 					temp="${temp1%\"}"
 					model_post="${temp#\"}"
 					model_post=$(echo $model_post | sed 's!\\!!g')
-				fi
+				fi			
 				
 				model_addons=""
 				fnd=$(echo "$model_list" | grep "addons")
@@ -300,17 +334,6 @@ buldimage() {
 		WPAD=$(cat "./.config" | grep "CONFIG_PACKAGE_wpad-mesh-openssl=y")
 		if [ ! -z $WPAD ]; then
 			sed -i -e 's/CONFIG_PACKAGE_wpad=y/# CONFIG_PACKAGE_wpad is not set/g' ./.config
-			sed -i -e 's/CONFIG_PACKAGE_wpad-mesh-mbedtls=y/# CONFIG_PACKAGE_wpad-mesh-mbedtls is not set/g' ./.config
-		fi
-		WPAD=$(cat "./.config" | grep "CONFIG_PACKAGE_wpad-openssl=y")
-		if [ ! -z $WPAD ]; then
-			sed -i -e 's/CONFIG_PACKAGE_wpad-basic-wolfssl=y/# CONFIG_PACKAGE_wpad-basic-wolfssl is not set/g' ./.config
-		fi
-		
-		LIBU=$(cat "./.config" | grep "CONFIG_PACKAGE_libustream-openssl=y")
-		if [ ! -z $LIBU ]; then
-			sed -i -e 's/CONFIG_DEFAULT_libustream-mbedtls=y//g' ./.config
-			sed -i -e 's/CONFIG_PACKAGE_libustream-mbedtls=y/# CONFIG_PACKAGE_libustream-mbedtls is not set/g' ./.config
 		fi
 		
 		WGET=$(cat "./.config" | grep "CONFIG_PACKAGE_wget ")
@@ -320,6 +343,10 @@ buldimage() {
 				sed -i -e 's/# CONFIG_PACKAGE_wget is not set/CONFIG_PACKAGE_wget=y/g' ./.config
 				make defconfig
 			fi
+		fi
+		UQMI=$(cat "./.config" | grep "CONFIG_PACKAGE_uqmi=y")
+		if [ ! -z $UQMI ]; then
+			sed -i -e 's/CONFIG_PACKAGE_uqmi=y/# CONFIG_PACKAGE_uqmi is not set/g' ./.config
 		fi
 
 	}
@@ -484,7 +511,7 @@ buldimage() {
 			fi
 			make defconfig
 			configfix
-			make $cores V=s
+			make $core V=s
 			cp ./bin/targets$model_imagepath$model_image ./images/$model_mod$END$model_ext
 			EX=$?
 			if [ $EX -ne 0 ]; then
@@ -504,7 +531,7 @@ buldimage() {
 						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter16 is not set/CONFIG_PACKAGE_ext-rooter16=y/g' ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image ./images/$model_mod"-full"$END$model_ext
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -526,7 +553,7 @@ buldimage() {
 						sed -i -e "s/# CONFIG_PACKAGE_$model_build16 is not set/CONFIG_PACKAGE_$model_build16=y/g" ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image ./images/$model_mod"-full"$END$model_ext
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -556,7 +583,7 @@ buldimage() {
 			fi
 			make defconfig
 			configfix
-			make $cores V=s
+			make $core V=s
 			cp ./bin/targets$model_imagepath$model_image1 ./images/$model_mod$END$model_ext1
 			EX=$?
 			if [ $EX -ne 0 ]; then
@@ -583,7 +610,7 @@ buldimage() {
 						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter16 is not set/CONFIG_PACKAGE_ext-rooter16=y/g' ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_mod"-full"$END$model_ext1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -612,7 +639,7 @@ buldimage() {
 						sed -i -e "s/# CONFIG_PACKAGE_$model_build16 is not set/CONFIG_PACKAGE_$model_build16=y/g" ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_mod"-full"$END$model_ext1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -649,7 +676,7 @@ buldimage() {
 			fi
 			make defconfig
 			configfix
-			make $cores V=s
+			make $core V=s
 			cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 			EX=$?
 			if [ $EX -ne 0 ]; then
@@ -680,7 +707,7 @@ buldimage() {
 						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter16 is not set/CONFIG_PACKAGE_ext-rooter16=y/g' ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -713,7 +740,7 @@ buldimage() {
 						sed -i -e "s/# CONFIG_PACKAGE_$model_build16 is not set/CONFIG_PACKAGE_$model_build16=y/g" ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -754,7 +781,7 @@ buldimage() {
 			fi
 			make defconfig
 			configfix
-			make $cores V=s
+			make $core V=s
 			cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 			EX=$?
 			if [ $EX -ne 0 ]; then
@@ -777,7 +804,7 @@ buldimage() {
 						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter16 is not set/CONFIG_PACKAGE_ext-rooter16=y/g' ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -802,7 +829,7 @@ buldimage() {
 						sed -i -e "s/# CONFIG_PACKAGE_$model_build16 is not set/CONFIG_PACKAGE_$model_build16=y/g" ./.config
 						make defconfig
 						configfix
-						make $cores V=s
+						make $core V=s
 						cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
 						EX=$?
 						if [ $EX -ne 0 ]; then
@@ -819,6 +846,59 @@ buldimage() {
 					fi
 				fi
 			fi
+		;;
+		"5" )
+			# special type for X86 - assume never going to make it to fit flash of 8 so always a "full".
+			# Also include packages, kernel, rootfs and all buildinfo
+			cp ./configfiles/$m_config ./.config
+			if [ $m_config = $templatefolder$model_config ]; then
+				if [ -z $model_build ]; then
+					if [ $model_flash = "8" ]; then
+						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter8-vpn is not set/CONFIG_PACKAGE_ext-rooter8-vpn=y/g' ./.config
+					else
+						#sed -i -e 's/# CONFIG_PACKAGE_ext-rooter-lite is not set/CONFIG_PACKAGE_ext-rooter-lite=y/g' ./.config
+						sed -i -e 's/# CONFIG_PACKAGE_ext-rooter16 is not set/CONFIG_PACKAGE_ext-rooter16=y/g' ./.config
+					fi
+				else
+					sed -i -e "s/# CONFIG_PACKAGE_$model_build is not set/CONFIG_PACKAGE_$model_build=y/g" ./.config
+				fi
+			fi
+			# full build both EFI and non
+			make defconfig
+			configfix
+			make $core V=s
+			cp ./bin/targets$model_imagepath$model_image1 ./images/$model_image1
+						# also do the EFI rootfs, kernel, etc
+						cp ./bin/targets$model_imagepath$model_image3 ./images/$model_image3
+						cp ./bin/targets$model_imagepath$model_image5 ./images/$model_image5
+						cp ./bin/targets$model_imagepath$model_image6 ./images/$model_image6
+						cp ./bin/targets$model_imagepath$model_image7 ./images/$model_image7
+						cp -r ./bin/targets$model_imagepath$model_image8 ./images/
+						cp ./bin/targets$model_imagepath$model_image9 ./images/$model_image9
+						cp ./bin/targets$model_imagepath$model_image10 ./images/
+			EX=$?
+			if [ $EX -ne 0 ]; then
+				echo "$EX $model_imagepath$model_image"
+				exit $EX
+			fi
+			copy_addons
+			cd ./images
+			gunzip $model_image1
+			mv $model_image2 $model_mod"-full"$END"-ext4.img"
+			gunzip $model_image3
+			mv $model_image4 $model_mod"-UEFI-full"$END"-ext4.img"
+			zip -r $zippassword $model_mod$END.zip $model_mod"-full"$END"-ext4.img" $model_mod"-UEFI-full"$END"-ext4.img" $model_image5 $model_image6 $model_image7 $model_image8 $model_image9 $model_image10
+			rm -f $model_mod"-full"$END"-ext4.img"
+			rm -f $model_mod"-UEFI-full"$END"-ext4.img"
+			rm -f $model_image5
+			rm -f $model_image6
+			rm -f $model_image7
+			rm -rf $model_image8
+			rm -f $model_image9
+			rm -f $model_image10
+			#
+			del_addons
+			cd ..
 		;;
 	esac
 }
@@ -881,5 +961,6 @@ else
 		fi
 	fi
 fi
+
 
 
