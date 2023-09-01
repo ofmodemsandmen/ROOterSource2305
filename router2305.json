@@ -97,7 +97,7 @@
 		"image9": "sha256sums",
 		"image10": "*.buildinfo",
 		"imagepath": "/x86/64/",
-		"mod": "x86-64-2305",
+		"mod": "x86-64",
 		"addons": ["readme.pdf"]
 	}
 }
