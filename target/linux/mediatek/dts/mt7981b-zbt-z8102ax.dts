@@ -77,6 +77,15 @@
 		enable-active-high;
 		regulator-boot-on;
 	};
+	
+	watchdog {
+		compatible = "linux,wdt-gpio";
+		gpios = <&pio 2 GPIO_ACTIVE_HIGH>;
+		hw_algo = "toggle";
+		/* hw_margin_ms is actually ~120s but driver limits it to 60s */
+		hw_margin_ms = <60000>;
+		always-running;
+	};
 };
 
 &eth {
