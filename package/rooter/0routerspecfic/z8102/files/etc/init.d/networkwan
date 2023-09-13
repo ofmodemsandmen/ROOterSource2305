@@ -1,0 +1,30 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2013 OpenWrt.org
+
+START=60
+USE_PROCD=1
+
+log() {
+	logger -t "networkwan" "$@"
+}
+
+start_service()
+{
+	mc=$(ifconfig br-lan)
+	mc=$(echo "$mc" | tr " " ",")
+	mac=$(echo $mc | cut -d, -f9)
+	mac=$(echo "$mac" | awk -F ":" '{print $1""$2""$3""$4""$5""$6 }'| tr a-z A-Z)
+	macdec=$( printf '%d\n' 0x$mac ) # convert to decimal
+	macadd=$( expr $macdec + 1 ) # add 1
+	machex=$( printf '%X\n' $macadd ) # convert to hex
+	macnew=$(echo $machex | sed 's/../&:/g;s/:$//')
+	uci set network.waneth1='device'
+	uci set network.waneth1.name='eth1'
+	uci set network.waneth1.macaddr=$macnew
+
+	uci set network.wan.device='eth1'
+	uci set network.wan6.device='eth1'
+	uci commit network
+	/etc/init.d/network restart
+	
+}

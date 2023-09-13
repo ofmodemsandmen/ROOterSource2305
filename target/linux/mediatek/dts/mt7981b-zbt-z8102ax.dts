@@ -199,10 +199,10 @@
 
 		port@3 {
 			reg = <3>;
-			label = "wan";
+			label = "lan4";
 			nvmem-cell-names = "mac-address";
 			nvmem-cells = <&macaddr_factory_004>;
-			mac-address-increment = <3>;
+			mac-address-increment = <2>;
 		};
 
 		port@6 {
