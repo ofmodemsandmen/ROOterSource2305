@@ -202,11 +202,13 @@ if [ ! -z "$fiveghz" ]; then
 		chn=$(echo $chn | tr -d "(")
 		chn=$(echo $chn | tr -d ")")
 		channel=$(echo $chn | cut -d, -f8)
-		cstr="Ch "$channel" ("$(echo $chn | cut -d, -f1)" "$(echo $chn | cut -d, -f2)")"
-		if [ -z "$chsel" ]; then
-			chsel=$channel"!$cstr"
-		else
-			chsel=$chsel"|"$channel"!$cstr"
+		if [ "$channel" -le 161 ]; then
+			cstr="Ch "$channel" ("$(echo $chn | cut -d, -f1)" "$(echo $chn | cut -d, -f2)")"
+			if [ -z "$chsel" ]; then
+				chsel=$channel"!$cstr"
+			else
+				chsel=$chsel"|"$channel"!$cstr"
+			fi
 		fi
 	done < /tmp/freqlist
 	echo "$chsel" >> /tmp/wifisettings
