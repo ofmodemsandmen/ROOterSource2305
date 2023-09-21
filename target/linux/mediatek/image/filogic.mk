@@ -402,3 +402,4 @@ endif
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
 TARGET_DEVICES += z8102ax
+ 
