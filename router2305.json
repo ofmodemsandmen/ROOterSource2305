@@ -53,7 +53,10 @@
 		"imagepath": "/mediatek/filogic/",
 		"mod": "ZBT-Z8102AX",
 		"ext": "-upgrade.bin",
-		"addons": ["Flash8102.txt", "SerialRecovery.zip"]
+		"addons": ["Flash8102.txt", "SerialRecovery.zip"],
+		"custom": {
+			"files": "/z8102/files/"
+		}
 	},
 	"MR8300": {
 		"details": "Linksys MR8300",
