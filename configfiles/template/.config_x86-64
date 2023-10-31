@@ -167,7 +167,7 @@ CONFIG_TARGET_IMAGES_GZIP=y
 # Image Options
 #
 CONFIG_TARGET_KERNEL_PARTSIZE=16
-CONFIG_TARGET_ROOTFS_PARTSIZE=512
+CONFIG_TARGET_ROOTFS_PARTSIZE=256
 CONFIG_TARGET_ROOTFS_PARTNAME=""
 # CONFIG_TARGET_ROOTFS_PERSIST_VAR is not set
 # end of Target Images
@@ -2423,9 +2423,19 @@ CONFIG_BUSYBOX_CONFIG_LOGGER=y
 # CONFIG_PACKAGE_busybox-selinux is not set
 # CONFIG_PACKAGE_ca-bundle is not set
 # CONFIG_PACKAGE_ca-certificates is not set
-CONFIG_PACKAGE_dnsmasq=y
+# CONFIG_PACKAGE_dnsmasq is not set
 # CONFIG_PACKAGE_dnsmasq-dhcpv6 is not set
-# CONFIG_PACKAGE_dnsmasq-full is not set
+CONFIG_PACKAGE_dnsmasq-full=y
+CONFIG_PACKAGE_dnsmasq_full_dhcp=y
+CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+CONFIG_PACKAGE_dnsmasq_full_dnssec=y
+CONFIG_PACKAGE_dnsmasq_full_auth=y
+CONFIG_PACKAGE_dnsmasq_full_ipset=y
+CONFIG_PACKAGE_dnsmasq_full_nftset=y
+CONFIG_PACKAGE_dnsmasq_full_conntrack=y
+CONFIG_PACKAGE_dnsmasq_full_noid=y
+# CONFIG_PACKAGE_dnsmasq_full_broken_rtc is not set
+CONFIG_PACKAGE_dnsmasq_full_tftp=y
 CONFIG_PACKAGE_dropbear=y
 
 #
@@ -3237,7 +3247,7 @@ CONFIG_PACKAGE_kmod-ipt-core=y
 # CONFIG_PACKAGE_kmod-ipt-ipp2p is not set
 # CONFIG_PACKAGE_kmod-ipt-iprange is not set
 # CONFIG_PACKAGE_kmod-ipt-ipsec is not set
-# CONFIG_PACKAGE_kmod-ipt-ipset is not set
+CONFIG_PACKAGE_kmod-ipt-ipset=y
 # CONFIG_PACKAGE_kmod-ipt-ipv4options is not set
 # CONFIG_PACKAGE_kmod-ipt-led is not set
 # CONFIG_PACKAGE_kmod-ipt-length2 is not set
@@ -3268,7 +3278,7 @@ CONFIG_PACKAGE_kmod-ipt-socket=m
 # CONFIG_PACKAGE_kmod-netatop is not set
 CONFIG_PACKAGE_kmod-nf-conncount=m
 CONFIG_PACKAGE_kmod-nf-conntrack=y
-# CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
 CONFIG_PACKAGE_kmod-nf-conntrack6=y
 CONFIG_PACKAGE_kmod-nf-flow=y
 CONFIG_PACKAGE_kmod-nf-ipt=y
@@ -3853,6 +3863,8 @@ CONFIG_PACKAGE_kmod-mt7921-firmware=y
 CONFIG_PACKAGE_kmod-mt7921e=y
 CONFIG_PACKAGE_kmod-mt7921s=y
 CONFIG_PACKAGE_kmod-mt7921u=y
+CONFIG_PACKAGE_kmod-mt792x-common=y
+CONFIG_PACKAGE_kmod-mt792x-usb=y
 # CONFIG_PACKAGE_kmod-mwifiex-pcie is not set
 # CONFIG_PACKAGE_kmod-mwifiex-sdio is not set
 # CONFIG_PACKAGE_kmod-mwl8k is not set
@@ -5095,7 +5107,7 @@ CONFIG_FFMPEG_X86ASM=y
 # CONFIG_PACKAGE_libgee is not set
 # CONFIG_PACKAGE_libgensio is not set
 # CONFIG_PACKAGE_libgensiocpp is not set
-# CONFIG_PACKAGE_libgmp is not set
+CONFIG_PACKAGE_libgmp=y
 # CONFIG_PACKAGE_libgpg-error is not set
 # CONFIG_PACKAGE_libgpgme is not set
 # CONFIG_PACKAGE_libgpgmepp is not set
@@ -5170,15 +5182,22 @@ CONFIG_PACKAGE_libmnl=y
 # CONFIG_PACKAGE_libnet-1.2.x is not set
 # CONFIG_PACKAGE_libnetconf2 is not set
 # CONFIG_PACKAGE_libnetfilter-acct is not set
-# CONFIG_PACKAGE_libnetfilter-conntrack is not set
+CONFIG_PACKAGE_libnetfilter-conntrack=y
 # CONFIG_PACKAGE_libnetfilter-cthelper is not set
 # CONFIG_PACKAGE_libnetfilter-cttimeout is not set
 # CONFIG_PACKAGE_libnetfilter-log is not set
 # CONFIG_PACKAGE_libnetfilter-queue is not set
 # CONFIG_PACKAGE_libnetsnmp is not set
-# CONFIG_PACKAGE_libnettle is not set
+CONFIG_PACKAGE_libnettle=y
+
+#
+# Configuration
+#
+# CONFIG_LIBNETTLE_MINI is not set
+# end of Configuration
+
 # CONFIG_PACKAGE_libnewt is not set
-# CONFIG_PACKAGE_libnfnetlink is not set
+CONFIG_PACKAGE_libnfnetlink=y
 CONFIG_PACKAGE_libnftnl=y
 # CONFIG_PACKAGE_libnghttp2 is not set
 # CONFIG_PACKAGE_libnl is not set
@@ -7131,6 +7150,7 @@ CONFIG_PACKAGE_extra-wifi=y
 # CONFIG_PACKAGE_ext-indro is not set
 # CONFIG_PACKAGE_ext-lte16 is not set
 # CONFIG_PACKAGE_ext-ltetest is not set
+# CONFIG_PACKAGE_ext-mesh-master is not set
 # CONFIG_PACKAGE_ext-mesh-node is not set
 # CONFIG_PACKAGE_ext-rbsxtr is not set
 # CONFIG_PACKAGE_ext-rooter-lite is not set
