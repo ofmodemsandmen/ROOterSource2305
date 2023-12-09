@@ -43,6 +43,10 @@ platform_pre_upgrade() {
 
 platform_do_upgrade() {
 	case "$(board_name)" in
+	arcadyan,aw1000|\
+	dynalink,dl-wrx36)
+		nand_do_upgrade "$1"
+		;;
 	buffalo,wxr-5950ax12)
 		CI_KERN_UBIPART="rootfs"
 		CI_ROOT_UBIPART="user_property"
@@ -50,9 +54,6 @@ platform_do_upgrade() {
 		nand_do_flash_file "$1" || nand_do_upgrade_failed
 		nand_do_restore_config || nand_do_upgrade_failed
 		buffalo_upgrade_optvol
-		;;
-	dynalink,dl-wrx36)
-		nand_do_upgrade "$1"
 		;;
 	edgecore,eap102)
 		active="$(fw_printenv -n active)"
