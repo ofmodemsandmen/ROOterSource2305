@@ -88,5 +88,18 @@
 		"imagepath": "/x86/64/",
 		"mod": "x86-64",
 		"addons": ["readme.pdf"]
+	},
+	"AW1000": {
+		"details": "Arcadyan AW1000",
+		"type": "2",
+		"build": "2305",
+		"config": ".config_aw1000",
+		"image1": "openwrt-ipq807x-generic-arcadyan_aw1000-squashfs-sysupgrade.bin",	
+		"image2": "openwrt-ipq807x-generic-arcadyan_aw1000-squashfs-factory.ubi",
+		"imagepath": "/ipq807x/generic/",
+		"mod": "Arcadyan-AW1000",
+		"ext1": "-upgrade.bin",
+		"ext2": "-factory.ubi",
+		"addons": ["readme.pdf"]
 	}
 }
