@@ -15,7 +15,7 @@ define Package/ext-custom-basic
   CATEGORY:=ROOter
   SUBMENU:=BuildSections
   DEPENDS:=+ext-rooter-basic +build-admin +build-iphone +build-luci \
-  		+build-openvpn +build-wifi +pingtest +ext-extra \
+  		+build-openvpn +build-wifi +pingtest +ext-extra +ethtool \
   		+luci-app-nft-qos +bwmon +ext-speedtest \
   		+luci-app-ddns +ddns-scripts +luci-app-wol +qfirehose +464xlat
   TITLE:=Custom Basic packages
