@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dd if=/dev/mtd3 bs=65536 skip=0 count=8 of=/tmp/factory-fixed
+mtd write /tmp/factory-fixed /dev/mtd3
+echo "0" > /etc/wreboot

@@ -88,5 +88,63 @@
 		"imagepath": "/x86/64/",
 		"mod": "x86-64",
 		"addons": ["readme.pdf"]
+	},
+	"WS1688-16": {
+		"details": "Huasifei WS1688AX-16",
+		"type": "1",
+		"build": "2102",
+		"package": "ext-huasifei",
+		"config": ".config_ws1688",
+		"image": "openwrt-ramips-mt7621-ws1688-squashfs-sysupgrade.bin",
+		"imagepath": "/ramips/mt7621/",
+		"mod": "Huasifei-WS1688AX-16",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf"],
+		"custom": {
+			"name": {
+				"model": "WS1688AX",
+				"hostname": "WS1688AX"
+			},
+			"wifi": {
+				"SSID2G": "wifi6-2.4g",
+				"SSID5G": "wifi6-5.8g",
+				"Password": ""
+			},
+			"image": {
+				"Material": "hua.png",
+				"Argon": "hua.png",
+				"Tomato": "hua.png"
+			},
+			"files": "/huasifei/files1688/"	
+		}
+	},
+	"WS1688-32": {
+		"details": "Huasifei WS1688AX-32",
+		"type": "1",
+		"build": "2102",
+		"package": "ext-huasifei",
+		"config": ".config_ws1688-32",
+		"image": "openwrt-ramips-mt7621-ws1688-32-squashfs-sysupgrade.bin",
+		"imagepath": "/ramips/mt7621/",
+		"mod": "Huasifei-WS1688AX-32",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf"],
+		"custom": {
+			"name": {
+				"model": "WS1688AX-32",
+				"hostname": "WS1688AX"
+			},
+			"wifi": {
+				"SSID2G": "wifi6-2.4g",
+				"SSID5G": "wifi6-5.8g",
+				"Password": ""
+			},
+			"image": {
+				"Material": "hua.png",
+				"Argon": "hua.png",
+				"Tomato": "hua.png"
+			},
+			"files": "/huasifei/files1688/"	
+		}
 	}
 }

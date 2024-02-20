@@ -2838,3 +2838,31 @@ define Device/zyxel_wsm20
   KERNEL_INITRAMFS := kernel-bin | lzma | fit lzma $$(KDIR)/image-$$(firstword $$(DEVICE_DTS)).dtb | znet-header V1.00(ABZF.0)C0
 endef
 TARGET_DEVICES += zyxel_wsm20
+
+define Device/ws1688
+  $(Device/dsa-migration)
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Huasifei
+  DEVICE_MODEL := WS1688
+  DEVICE_VARIANT := 16M
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3 \
+		kmod-usb-ledtrig-usbport \
+		kmod-mt7915e kmod-mt76 -wpad-wolfssl
+  SUPPORTED_DEVICES += ws1688 huasifei,ws1688
+endef
+TARGET_DEVICES += ws1688
+
+define Device/ws1688-32
+  $(Device/dsa-migration)
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 32128k
+  DEVICE_VENDOR := Huasifei
+  DEVICE_MODEL := WS1688-32
+  DEVICE_VARIANT := 32M
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3 \
+		kmod-usb-ledtrig-usbport \
+		kmod-mt7915e kmod-mt76 -wpad-wolfssl
+  SUPPORTED_DEVICES += ws1688-32 huasifei,ws1688-32
+endef
+TARGET_DEVICES += ws1688-32
