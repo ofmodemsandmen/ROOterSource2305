@@ -1,0 +1,23 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2013 OpenWrt.org
+
+START=20
+USE_PROCD=1
+
+log() {
+	modlog "ttlset" "$@"
+}
+
+start_service()
+{
+	finc=$(uci -q get firewall.include)
+	if [ -z "$finc" ]; then
+		uci add firewall include
+	fi
+	uci set firewall.@include[-1].enabled=1
+	uci set firewall.@include[-1].type='script'
+	uci set firewall.@include[-1].path='/etc/firewall.user'
+	uci set firewall.@include[-1].fw4_compatible=1
+	uci commit firewall
+	/etc/init.d/firewall restart
+}
