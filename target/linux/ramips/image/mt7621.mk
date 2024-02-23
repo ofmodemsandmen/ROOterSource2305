@@ -2848,7 +2848,7 @@ define Device/ws1688
   DEVICE_VARIANT := 16M
   DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3 \
 		kmod-usb-ledtrig-usbport \
-		kmod-mt7915e kmod-mt76 -wpad-wolfssl
+		kmod-mt7915e kmod-mt76 kmod-mt7915-firmware -wpad-wolfssl
   SUPPORTED_DEVICES += ws1688 huasifei,ws1688
 endef
 TARGET_DEVICES += ws1688
@@ -2862,7 +2862,7 @@ define Device/ws1688-32
   DEVICE_VARIANT := 32M
   DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3 \
 		kmod-usb-ledtrig-usbport \
-		kmod-mt7915e kmod-mt76 -wpad-wolfssl
+		kmod-mt7915e kmod-mt7915-firmware kmod-mt76 -wpad-wolfssl
   SUPPORTED_DEVICES += ws1688-32 huasifei,ws1688-32
 endef
 TARGET_DEVICES += ws1688-32
