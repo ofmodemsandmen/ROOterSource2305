@@ -10,7 +10,7 @@ log() {
 
 start_service()
 {
-	finc=$(uci -q get firewall.include)
+	finc=$(uci -q get firewall.@include[-1].enabled)
 	if [ -z "$finc" ]; then
 		uci add firewall include
 	fi
