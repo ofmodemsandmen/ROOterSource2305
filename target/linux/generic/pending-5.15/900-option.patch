@@ -10,7 +10,7 @@
  #define OPTION_VENDOR_ID			0x0AF0
  #define OPTION_PRODUCT_COLT			0x5000
  #define OPTION_PRODUCT_RICOLA			0x6000
-@@ -274,6 +277,8 @@
+@@ -283,6 +286,8 @@
  #define QUECTEL_PRODUCT_EM061K_LCN		0x6009
  #define QUECTEL_PRODUCT_EC200T			0x6026
  #define QUECTEL_PRODUCT_RM500K			0x7001
@@ -19,8 +19,10 @@
  
  #define CMOTECH_VENDOR_ID			0x16d8
  #define CMOTECH_PRODUCT_6001			0x6001
- @@ -625,6 +630,19 @@
-static const struct usb_device_id option_ids[] = {
+@@ -634,6 +639,19 @@
+ 
+ 
+ static const struct usb_device_id option_ids[] = {
 +	{ USB_DEVICE(MEIG_VENDOR_ID, MEIG_PRODUCT_f601) },
 +	{ USB_DEVICE(MEIG_VENDOR_ID, MEIG_PRODUCT_9025) },
 +	{ USB_DEVICE(0x03f0, 0x0e57)},
@@ -37,25 +39,7 @@ static const struct usb_device_id option_ids[] = {
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_COLT) },
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA) },
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA_LIGHT) },
- @@ -625,6 +630,19 @@
-static const struct usb_device_id option_ids[] = {
-+	{ USB_DEVICE(MEIG_VENDOR_ID, MEIG_PRODUCT_f601) },
-+	{ USB_DEVICE(MEIG_VENDOR_ID, MEIG_PRODUCT_9025) },
-+	{ USB_DEVICE(0x03f0, 0x0e57)},
-+	{ USB_DEVICE(QUALCOMM_VENDOR_ID, 0x5042),
-+	  .driver_info = RSVD(3) },
-+	{ USB_DEVICE(0x03f0, 0x9d1d), /* lt4120 (QMI) */
-+	.driver_info = NCTRL(0) | RSVD(1) },
-+	{ USB_DEVICE_INTERFACE_CLASS(0x03f0, 0x9e1d, 0xff), /* lt4120 (MBIM) */
-+	.driver_info = NCTRL(0) },
-+	{ USB_DEVICE_AND_INTERFACE_INFO(0x0e8d, 0x7127, 0xff, 0x00, 0x00),
-+ 	  .driver_info = RSVD(0) | RSVD(1) },
-+	{ USB_DEVICE_AND_INTERFACE_INFO(0x0e8d, 0x7126, 0xff, 0x00, 0x00),
-+ 	  .driver_info = RSVD(0) | RSVD(1) },
- 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_COLT) },
- 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA) },
- 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA_LIGHT) },
-@@ -1197,6 +1215,35 @@
+@@ -1219,6 +1237,34 @@
  	  .driver_info = RSVD(6) | ZLP },
  	{ USB_DEVICE_INTERFACE_CLASS(QUECTEL_VENDOR_ID, QUECTEL_PRODUCT_EM05G_SG, 0xff),
  	  .driver_info = RSVD(6) | ZLP },
@@ -87,11 +71,10 @@ static const struct usb_device_id option_ids[] = {
 +	 .driver_info = RSVD(4) | RSVD(5) },
 +	{ USB_DEVICE_INTERFACE_CLASS(0x161c, 0x9115, 0xff),
 +	 .driver_info = RSVD(4) | RSVD(5) },
-+	  
  	{ USB_DEVICE_AND_INTERFACE_INFO(QUECTEL_VENDOR_ID, QUECTEL_PRODUCT_EM060K, 0xff, 0x00, 0x40) },
  	{ USB_DEVICE_AND_INTERFACE_INFO(QUECTEL_VENDOR_ID, QUECTEL_PRODUCT_EM060K, 0xff, 0xff, 0x30) },
  	{ USB_DEVICE_AND_INTERFACE_INFO(QUECTEL_VENDOR_ID, QUECTEL_PRODUCT_EM060K, 0xff, 0xff, 0x40) },
-@@ -2309,12 +2356,19 @@
+@@ -2341,12 +2387,17 @@
  {
  	struct usb_interface_descriptor *iface_desc =
  				&serial->interface->cur_altsetting->desc;
@@ -101,11 +84,12 @@ static const struct usb_device_id option_ids[] = {
  	/* Never bind to the CD-Rom emulation interface	*/
  	if (iface_desc->bInterfaceClass == USB_CLASS_MASS_STORAGE)
  		return -ENODEV;
- 
-+		if (dev_desc->idVendor == cpu_to_le16(MEIG_VENDOR_ID) &&
+-
++	if (dev_desc->idVendor == cpu_to_le16(MEIG_VENDOR_ID) &&
 +	    (dev_desc->idProduct == cpu_to_le16(MEIG_PRODUCT_9025) ||
 +	    dev_desc->idProduct == cpu_to_le16(MEIG_PRODUCT_f601)) &&
 +		iface_desc->bInterfaceNumber >= 4)
 +			return -ENODEV;
-+
-		
+ 	/*
+ 	 * Don't bind reserved interfaces (like network ones) which often have
+ 	 * the same class/subclass/protocol as the serial interfaces.  Look at
