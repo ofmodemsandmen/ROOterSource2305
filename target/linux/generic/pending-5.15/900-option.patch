@@ -39,7 +39,7 @@
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_COLT) },
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA) },
  	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA_LIGHT) },
-@@ -1219,6 +1237,37 @@
+@@ -1219,6 +1237,39 @@
  	  .driver_info = RSVD(6) | ZLP },
  	{ USB_DEVICE_INTERFACE_CLASS(QUECTEL_VENDOR_ID, QUECTEL_PRODUCT_EM05G_SG, 0xff),
  	  .driver_info = RSVD(6) | ZLP },
@@ -59,6 +59,8 @@
 +	{ USB_DEVICE_INTERFACE_CLASS(TELIT_VENDOR_ID, 0x1204, 0xff),	/* Telit LE910Cx (MBIM) */
 +	  .driver_info = NCTRL(0) | RSVD(1) },
 +	{ USB_DEVICE(0x413c, 0x81d8),						/* Foxconn T77W968 */
++	.driver_info = RSVD(0) | RSVD(1) | RSVD(6) },
++	{ USB_DEVICE(0x413c, 0x81d9),						/* Foxconn DW5820e */
 +	.driver_info = RSVD(0) | RSVD(1) | RSVD(6) },
 +	{ USB_DEVICE(0x1bc7, 0x1910),						/* Ln960 */
 +	.driver_info = RSVD(0) | RSVD(1) | RSVD(6) },
