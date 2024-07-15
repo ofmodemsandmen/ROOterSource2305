@@ -212,5 +212,16 @@
 		"ext1": "-ext4.img",
 		"ext2": "-squashfs.img",
 		"addons": ["readme.pdf"]
+	},
+	"R8000": {
+		"details": "Netgear R8000",
+		"type": "1",
+		"build": "2203",
+		"config": ".config_r8000",
+		"image": "openwrt-bcm53xx-generic-netgear_r8000-squashfs.chk",	
+		"imagepath": "/bcm53xx/generic/",
+		"mod": "Netgear-R8000",
+		"ext": "-upgrade.chk",
+		"addons": ["readme.pdf"]
 	}
 }
