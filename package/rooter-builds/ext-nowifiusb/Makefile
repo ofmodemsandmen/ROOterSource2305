@@ -19,7 +19,7 @@ define Package/ext-nowifiusb
 		+luci-app-rootervpn +ext-wireguard \
 		+webconsole +bwmon +464xlat \
 		+iptables-mod-hashlimit \
-		+ca-bundle +ca-certificates +libustream-wolfssl \
+		+ca-bundle +ca-certificates \
 		+arc-storage \
 		+luci-app-sqm +kmod-sched-cake +luci-app-nft-qos \
 		+ext-command +ext-speedtest \
