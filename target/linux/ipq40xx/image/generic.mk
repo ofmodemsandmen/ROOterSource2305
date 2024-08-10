@@ -1191,15 +1191,3 @@ endef
 # Missing DSA Setup
 #TARGET_DEVICES += zyxel_wre6606
 
-define Device/zbt_wg156
-	$(call Device/FitImage)
-	DEVICE_VENDOR := ZBT
-	DEVICE_MODEL := WG156
-	DEVICE_VARIANT := 32M
-	BOARD_NAME := WG156
-	SOC := qcom-ipq4019
-	KERNEL_SIZE := 4096k
-	IMAGE_SIZE := 31232k
-	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
-endef
-TARGET_DEVICES += zbt_wg156
