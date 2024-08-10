@@ -99,7 +99,8 @@ ipq40xx_setup_interfaces()
 		ucidef_set_interfaces_lan_wan "ethernet1" "ethernet2"
 		;;
 	qxwlan,e2600ac-c1)
-		ucidef_set_interfaces_lan_wan "sw-eth1" "sw-eth2"
+		#ucidef_set_interfaces_lan_wan "sw-eth1" "sw-eth2"
+		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" "wan"
 		;;
 	qxwlan,e2600ac-c2)
 		ucidef_set_interfaces_lan_wan "sw-eth1 sw-eth2" "sw-eth3"

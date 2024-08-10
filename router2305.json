@@ -223,5 +223,16 @@
 		"mod": "Netgear-R8000",
 		"ext": "-upgrade.chk",
 		"addons": ["readme.pdf"]
+	},
+		"WG156": {
+		"details": "ZBT WG156",
+		"type": "1",
+		"build": "2102",
+		"config": ".config_wg156",
+		"image": "openwrt-ipq40xx-generic-qxwlan_e2600ac-c1-squashfs-sysupgrade.bin",	
+		"imagepath": "/ipq40xx/generic/",
+		"mod": "ZBT_WG156",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf"]
 	}
 }

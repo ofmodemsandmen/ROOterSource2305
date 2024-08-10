@@ -18,6 +18,13 @@
 		device_type = "memory";
 		reg = <0x80000000 0x10000000>; /* 256MB */
 	};
+	
+	aliases {
+		led-boot = &led_internet;
+		led-failsafe = &led_internet;
+		led-running = &led_internet;
+		led-upgrade = &led_internet;
+	};
 
 	soc {
 		rng@22000 {
@@ -119,36 +126,40 @@
 		leds {
 			compatible = "gpio-leds";
 
-			led1 {
-				label = "green:wlan0";
-				gpios = <&tlmm 50 GPIO_ACTIVE_LOW>;
+			led_internet: led-internet {
+				label = "internet";
+				gpios = <&tlmm 35 GPIO_ACTIVE_HIGH>;
+				default-state = "on";
 			};
 
-			led2 {
-				label = "green:wlan1";
-				gpios = <&tlmm 36 GPIO_ACTIVE_LOW>;
+			4g {
+				label = "4g";
+				gpios = <&tlmm 0 GPIO_ACTIVE_LOW>;
 			};
 
-			led3 {
-				label = "green:usb";
-				gpios = <&tlmm 32 GPIO_ACTIVE_LOW>;
-				trigger-sources = <&usb2_port1>, <&usb3_port1>, <&usb3_port2>;
-				linux,default-trigger = "usbport";
+			wifi0 {
+				label = "wifi0";
+				gpios = <&tlmm 43 GPIO_ACTIVE_LOW>;
 			};
 
-			led4 {
-				label = "green:ctrl1";
-				gpios = <&tlmm 51 GPIO_ACTIVE_LOW>;
+			wifi1 {
+				label = "wifi1";
+				gpios = <&tlmm 42 GPIO_ACTIVE_LOW>;
 			};
 
-			led5 {
-				label = "green:ctrl2";
-				gpios = <&tlmm 30 GPIO_ACTIVE_LOW>;
+			rssi1 {
+				label = "rssi1";
+				gpios = <&tlmm 41 GPIO_ACTIVE_LOW>;
 			};
-
-			led6 {
-				label = "green:ctrl3";
-				gpios = <&tlmm 31 GPIO_ACTIVE_LOW>;
+			
+			rssi2 {
+				label = "rssi2";
+				gpios = <&tlmm 48 GPIO_ACTIVE_LOW>;
+			};
+			
+			rssi3 {
+				label = "rssi3";
+				gpios = <&tlmm 34 GPIO_ACTIVE_LOW>;
 			};
 		};
 

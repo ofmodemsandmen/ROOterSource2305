@@ -1023,14 +1023,15 @@ endef
 TARGET_DEVICES += qcom_ap-dk04.1-c1
 
 define Device/qxwlan_e2600ac-c1
-	$(call Device/FitImage)
-	DEVICE_VENDOR := Qxwlan
-	DEVICE_MODEL := E2600AC
-	DEVICE_VARIANT := C1
+	$(call Device/FitzImage)
+	DEVICE_VENDOR := ZBT
+	DEVICE_MODEL := WG156
+	DEVICE_VARIANT := 32M
 	BOARD_NAME := e2600ac-c1
 	SOC := qcom-ipq4019
+	KERNEL_SIZE := 4096k
 	IMAGE_SIZE := 31232k
-	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
+	IMAGE/sysupgrade.bin := append-kernel | pad-to $$$$(KERNEL_SIZE) | append-rootfs | pad-rootfs | append-metadata
 endef
 TARGET_DEVICES += qxwlan_e2600ac-c1
 
@@ -1088,7 +1089,7 @@ define Device/tel_x1pro
 	DEFAULT := n
 endef
 # Missing DSA Setup
-#TARGET_DEVICES += tel_x1pro
+TARGET_DEVICES += tel_x1pro
 
 define Device/unielec_u4019-32m
 	$(call Device/FitImage)
@@ -1189,3 +1190,16 @@ define Device/zyxel_wre6606
 endef
 # Missing DSA Setup
 #TARGET_DEVICES += zyxel_wre6606
+
+define Device/zbt_wg156
+	$(call Device/FitImage)
+	DEVICE_VENDOR := ZBT
+	DEVICE_MODEL := WG156
+	DEVICE_VARIANT := 32M
+	BOARD_NAME := WG156
+	SOC := qcom-ipq4019
+	KERNEL_SIZE := 4096k
+	IMAGE_SIZE := 31232k
+	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
+endef
+TARGET_DEVICES += zbt_wg156

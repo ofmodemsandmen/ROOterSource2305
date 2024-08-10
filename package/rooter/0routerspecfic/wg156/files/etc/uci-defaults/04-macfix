@@ -1,0 +1,31 @@
+#!/bin/sh
+
+newsn=$(hexdump -C -s 0x6 /dev/mtd7 |sed -n "1p"|cut -c 9-28|sed 's/\ //g')
+mac=""
+be=0
+for i in 0 2 4 6 8 10
+do
+	if [ "$be" = "0" ]; then
+		mac=$mac${newsn:$i:2}
+		be="1"
+	else
+		mac=$mac":"${newsn:$i:2}
+	fi
+done
+
+macadd=$(( 0x$newsn + 1 ))
+wanmac=$(printf "%012x" $macadd | sed 's/../&:/g;s/:$//')
+macadd=$(( 0x$newsn + 2 ))
+w1mac=$(printf "%012x" $macadd | sed 's/../&:/g;s/:$//')
+macadd=$(( 0x$newsn + 3 ))
+w2mac=$(printf "%012x" $macadd | sed 's/../&:/g;s/:$//')
+
+
+uci set network.@device[0].macaddr="$mac"
+uci set network.wan.macaddr="$wanmac"
+uci commit network
+/etc/init.d/network restart
+uci set wireless.default_radio0.macaddr="$w1mac"
+uci set wireless.default_radio1.macaddr="$w2mac"
+uci commit wireless
+wifi
