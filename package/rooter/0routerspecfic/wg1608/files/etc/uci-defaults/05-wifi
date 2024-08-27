@@ -1,0 +1,10 @@
+#!/bin/sh
+
+uci set wireless.default_radio0.wpa_group_rekey='3200'
+uci set wireless.default_radio0.skip_inactivity_poll='1'
+uci set wireless.default_radio0.max_inactivity='30000'
+uci set wireless.default_radio1.wpa_group_rekey='3200'
+uci set wireless.default_radio1.skip_inactivity_poll='1'
+uci set wireless.default_radio1.max_inactivity='30000'
+uci commit wireless
+wifi
