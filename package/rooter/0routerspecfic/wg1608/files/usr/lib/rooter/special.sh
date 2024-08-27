@@ -1,5 +1,8 @@
 #!/bin/sh
 
+ifup wan
+exit 0
+
 LED=0
 SM=$(uci get system.wifi)
 if [ -z $SM ]; then
