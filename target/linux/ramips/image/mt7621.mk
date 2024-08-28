@@ -2718,6 +2718,19 @@ define Device/zbtlink_zbt-wg1608-32m
 endef
 TARGET_DEVICES += zbtlink_zbt-wg1608-32m
 
+define Device/zbtlink_zbt-wg259-16m
+  $(Device/dsa-migration)
+  $(Device/uimage-lzma-loader)
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Zbtlink
+  DEVICE_MODEL := ZBT-WG259
+  DEVICE_VARIANT := 16M
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-sdhci-mt7620 kmod-mt7603 kmod-mt76x2 \
+	kmod-usb3 kmod-usb-ledtrig-usbport kmod-mt76
+  SUPPORTED_DEVICES += zbt-wg259 zbt-wg259-16M
+endef
+TARGET_DEVICES += zbtlink_zbt-wg259-16m
+
 define Device/zbtlink_zbt-wg2626
   $(Device/dsa-migration)
   $(Device/uimage-lzma-loader)
