@@ -1,32 +1,31 @@
 Source-Makefile: feeds/packages/lang/python/python-execnet/Makefile
-Build-Depends: python-setuptools-scm/host
+Build-Depends: python-hatchling/host python-hatch-vcs/host
 
 Package: python3-execnet
 Submenu: Python
-Version: 1.8.0-2
-Depends: +libc +python3-light +python3-apipkg
+Version: 2.0.2-1
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Library for distributed interact mechanism
+Title: Rapid multi-Python deployment
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: execnet-1.8.0.tar.gz
+Source: execnet-2.0.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   The execnet provides a share-nothing model with channel-send/receive communication for
-  distributing execution across many Python interpreters across version, platform and network
-  barriers.complex functional testing for applications and libraries.
+Description: execnet provides carefully tested means to ad-hoc interact with Python
+interpreters across version, platform and network barriers.
 https://execnet.readthedocs.io
 Jan Pavlinec <jan.pavlinec1@gmail.com>
 @@
 
 Package: python3-execnet-src
 Submenu: Python
-Version: 1.8.0-2
+Version: 2.0.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,15 +33,14 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Library for distributed interact mechanism (sources)
+Title: Rapid multi-Python deployment (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: execnet-1.8.0.tar.gz
+Source: execnet-2.0.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       The execnet provides a share-nothing model with channel-send/receive communication for
-  distributing execution across many Python interpreters across version, platform and network
-  barriers.complex functional testing for applications and libraries.
+Description:     execnet provides carefully tested means to ad-hoc interact with Python
+interpreters across version, platform and network barriers.
 
     This package contains the Python source files for python3-execnet.
 https://execnet.readthedocs.io

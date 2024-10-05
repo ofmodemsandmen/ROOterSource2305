@@ -4,7 +4,7 @@ Build-Types: host
 
 Package: golang
 Submenu: Go
-Version: 1.20.5-1
+Version: 1.21.13-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +golang-src
 Conflicts: 
 Menu-Depends: 
@@ -14,9 +14,10 @@ Category: Languages
 Repository: base
 Title: Go programming language (compiler)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.20.5.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:golang:go
 Type: ipkg
 Description: The Go programming language is an open source project to make
 programmers more productive.
@@ -40,7 +41,7 @@ Config:
 
 Package: golang-doc
 Submenu: Go
-Version: 1.20.5-1
+Version: 1.21.13-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -50,9 +51,10 @@ Category: Languages
 Repository: base
 Title: Go programming language (documentation)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.20.5.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:golang:go
 Type: ipkg
 Description: The Go programming language is an open source project to make
 programmers more productive.
@@ -72,7 +74,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: golang-src
 Submenu: Go
-Version: 1.20.5-1
+Version: 1.21.13-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -82,9 +84,10 @@ Category: Languages
 Repository: base
 Title: Go programming language (source files)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: go1.20.5.src.tar.gz
+Source: go1.21.13.src.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:golang:go
 Type: ipkg
 Description: The Go programming language is an open source project to make
 programmers more productive.

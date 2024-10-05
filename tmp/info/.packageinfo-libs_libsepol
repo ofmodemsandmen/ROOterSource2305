@@ -13,6 +13,7 @@ Repository: base
 Title: SELinux binary policy manipulation library
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: libsepol-3.5.tar.gz
+CPE-ID: cpe:/a:selinuxproject:libsepol
 Type: ipkg
 Description: 	Libsepol is the binary policy manipulation library. It doesn't
 	depend upon or use any of the other SELinux components.
@@ -32,6 +33,7 @@ Repository: base
 Title: libsepol chkcon security context validation tool
 Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: libsepol-3.5.tar.gz
+CPE-ID: cpe:/a:selinuxproject:libsepol
 Type: ipkg
 Description: 	chkcon - determine if a security context is valid for a given binary policy
 http://selinuxproject.org/page/Main_Page

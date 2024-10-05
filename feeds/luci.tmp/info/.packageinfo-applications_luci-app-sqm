@@ -343,6 +343,25 @@ Description:     Translation for luci-app-sqm - 한국어 (Korean)
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
+Package: luci-i18n-sqm-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-sqm
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-sqm - lt translation
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-sqm - Lietuvių (Lithuanian)
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
 Package: luci-i18n-sqm-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: python3-trove-classifiers
 Submenu: Python
-Version: 2023.5.24-1
+Version: 2023.9.19-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Category: Languages
 Repository: base
 Title: Canonical source for classifiers on PyPI (pypi.org).
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: trove-classifiers-2023.5.24.tar.gz
+Source: trove-classifiers-2023.9.19.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -30,7 +30,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-trove-classifiers-src
 Submenu: Python
-Version: 2023.5.24-1
+Version: 2023.9.19-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -40,7 +40,7 @@ Category: Languages
 Repository: base
 Title: Canonical source for classifiers on PyPI (pypi.org). (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: trove-classifiers-2023.5.24.tar.gz
+Source: trove-classifiers-2023.9.19.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

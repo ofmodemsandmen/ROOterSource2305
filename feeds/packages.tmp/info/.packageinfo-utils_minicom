@@ -15,6 +15,7 @@ Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
 Source: minicom-2.8.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:minicom:minicom
 Type: ipkg
 Description: Terminal emulation program
 https://salsa.debian.org/minicom-team/minicom

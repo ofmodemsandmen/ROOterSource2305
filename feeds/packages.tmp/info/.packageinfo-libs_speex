@@ -12,6 +12,7 @@ Repository: base
 Title: Open source speech compression codec library
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Source: speex-1.2.1.tar.gz
+CPE-ID: cpe:/a:xiph:speex
 Type: ipkg
 Description: 	Open source patent-free speech compression codec library.
 	Speex is an Open Source/Free Software patent-free audio compression

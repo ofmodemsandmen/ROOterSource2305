@@ -361,6 +361,26 @@ Description:     Translation for luci-app-bmx7 - 한국어 (Korean)
 Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
 @@
 
+Package: luci-i18n-bmx7-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-bmx7
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-bmx7 - lt translation
+Maintainer: Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-bmx7 - Lietuvių (Lithuanian)
+Roger Pueyo <roger.pueyo@guifi.net> Pau Escrich <p4u@dabax.net>
+@@
+
 Package: luci-i18n-bmx7-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

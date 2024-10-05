@@ -3,7 +3,7 @@ Build-Depends: ncurses readline
 
 Package: bird2
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +libpthread
 Conflicts: bird1-ipv4 bird1-ipv6 bird4 bird6
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: The BIRD Internet Routing Daemon (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -39,7 +39,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2c
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +bird2 +libreadline +libncurses
 Conflicts: bird1c-ipv4 bird1c-ipv6 birdc4 birdc6
 Menu-Depends: 
@@ -49,7 +49,7 @@ Category: Network
 Repository: base
 Title: The BIRD command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -71,7 +71,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2cl
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +bird2
 Conflicts: bird1cl-ipv4 bird1cl-ipv6 birdcl4 birdcl6
 Menu-Depends: 
@@ -81,7 +81,7 @@ Category: Network
 Repository: base
 Title: The BIRD lightweight command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables

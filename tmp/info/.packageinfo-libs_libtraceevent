@@ -12,6 +12,7 @@ Repository: base
 Title: Linux kernel trace event library
 Maintainer: Nick Hainke <vincent@systemli.org>
 Source: libtraceevent-1.7.2.tar.gz
+ABI-Version: 0
 Type: ipkg
 Description: The libtraceevent library provides APIs to access kernel tracepoint events, located in
 the tracefs file system under the events directory.

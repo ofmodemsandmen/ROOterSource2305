@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/p910nd/Makefile
 
 Package: p910nd
 Submenu: Printing
-Version: 0.97-9
+Version: 0.97-14
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 

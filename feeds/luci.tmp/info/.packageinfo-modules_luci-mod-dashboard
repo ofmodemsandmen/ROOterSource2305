@@ -361,6 +361,26 @@ Description:     Translation for luci-mod-dashboard - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-dashboard-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dashboard
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dashboard - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dashboard - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-dashboard-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

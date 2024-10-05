@@ -14,6 +14,7 @@ Maintainer: Valentín Kivachuk <vk18496@gmail.com>
 Source: leptonica-1.80.0.tar.gz
 License: BSD-2-Clause
 LicenseFiles: leptonica-license.txt
+CPE-ID: cpe:/a:leptonica:leptonica
 Type: ipkg
 Description: A library for efficient image processing and image analysis operations
 http://www.leptonica.org/

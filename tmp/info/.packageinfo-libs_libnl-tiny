@@ -1,7 +1,7 @@
 Source-Makefile: package/libs/libnl-tiny/Makefile
 
 Package: libnl-tiny
-Version: 2023-04-02-11b7c5f0745af2637b48131287f28689bb80ed3e-1
+Version: 2023-07-27-bc92a280186f9becc53c0f17e4e43cfbdeec7e7b-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,9 @@ Category: Libraries
 Repository: base
 Title: netlink socket library
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: libnl-tiny-2023-04-02-11b7c5f0745af2637b48131287f28689bb80ed3e.tar.xz
+Source: libnl-tiny-2023-07-27-bc92a280186f9becc53c0f17e4e43cfbdeec7e7b.tar.xz
 License: LGPL-2.1
+ABI-Version: 1
 Type: ipkg
 Description:  This package contains a stripped down version of libnl
 Felix Fietkau <nbd@nbd.name>

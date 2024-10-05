@@ -3,7 +3,7 @@ Build-Depends: ustream-ssl
 
 Package: uhttpd
 Submenu: Web Servers/Proxies
-Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-1
+Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-2
 Depends: +libc +libubox +libblobmsg-json +libjson-script +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: uhttpd-mod-lua
 Submenu: Web Servers/Proxies
-Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-1
+Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-2
 Depends: +libc uhttpd +liblua
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: uhttpd-mod-ubus
 Submenu: Web Servers/Proxies
-Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-1
+Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-2
 Depends: +libc uhttpd +libubus +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
@@ -63,7 +63,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: uhttpd-mod-ucode
 Submenu: Web Servers/Proxies
-Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-1
+Version: 2023-06-25-34a8a74dbdec3c0de38abc1b08f6a73c51263792-2
 Depends: +libc uhttpd +libucode
 Conflicts: 
 Menu-Depends: 

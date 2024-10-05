@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-pbr
 Submenu: 3. Applications
-Version: 1.1.1-7
+Version: 1.1.6
 Depends: +libc +luci-base +jsonfilter +pbr
 Conflicts: 
 Menu-Depends: 
@@ -14,11 +14,18 @@ Repository: base
 Title: Policy Based Routing Service Web UI
 Maintainer: OpenWrt LuCI community
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Description:    Provides Web UI for Policy Based Routing Service.
-https://github.com/openwrt/luci
+https://github.com/stangri/luci-app-pbr/
 OpenWrt LuCI community
+@@
+Config:
+# shown in make menuconfig <Help>
+help
+	Policy Based Routing Service Web UI
+	.
+	Version: 1.1.6-20
 @@
 
 Package: luci-i18n-pbr-ar
@@ -34,7 +41,7 @@ Repository: base
 Title: luci-app-pbr - ar translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - العربية (Arabic)
@@ -54,7 +61,7 @@ Repository: base
 Title: luci-app-pbr - bg translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - български (Bulgarian)
@@ -74,7 +81,7 @@ Repository: base
 Title: luci-app-pbr - bn translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - বাংলা (Bengali)
@@ -94,7 +101,7 @@ Repository: base
 Title: luci-app-pbr - ca translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Català (Catalan)
@@ -114,7 +121,7 @@ Repository: base
 Title: luci-app-pbr - cs translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Čeština (Czech)
@@ -134,7 +141,7 @@ Repository: base
 Title: luci-app-pbr - da translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Dansk (Danish)
@@ -154,7 +161,7 @@ Repository: base
 Title: luci-app-pbr - de translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Deutsch (German)
@@ -174,7 +181,7 @@ Repository: base
 Title: luci-app-pbr - el translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Ελληνικά (Greek)
@@ -194,7 +201,7 @@ Repository: base
 Title: luci-app-pbr - es translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Español (Spanish)
@@ -214,7 +221,7 @@ Repository: base
 Title: luci-app-pbr - fi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Suomi (Finnish)
@@ -234,7 +241,7 @@ Repository: base
 Title: luci-app-pbr - fr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Français (French)
@@ -254,7 +261,7 @@ Repository: base
 Title: luci-app-pbr - he translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - עִבְרִית (Hebrew)
@@ -274,7 +281,7 @@ Repository: base
 Title: luci-app-pbr - hi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - हिंदी (Hindi)
@@ -294,7 +301,7 @@ Repository: base
 Title: luci-app-pbr - hu translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Magyar (Hungarian)
@@ -314,7 +321,7 @@ Repository: base
 Title: luci-app-pbr - it translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Italiano (Italian)
@@ -334,7 +341,7 @@ Repository: base
 Title: luci-app-pbr - ja translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - 日本語 (Japanese)
@@ -354,10 +361,30 @@ Repository: base
 Title: luci-app-pbr - ko translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - 한국어 (Korean)
+Stan Grishin <stangri@melmac.ca>
+@@
+
+Package: luci-i18n-pbr-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-pbr
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pbr - lt translation
+Maintainer: Stan Grishin <stangri@melmac.ca>
+Source: 
+License: AGPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pbr - Lietuvių (Lithuanian)
 Stan Grishin <stangri@melmac.ca>
 @@
 
@@ -374,7 +401,7 @@ Repository: base
 Title: luci-app-pbr - mr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Marāṭhī (Marathi)
@@ -394,7 +421,7 @@ Repository: base
 Title: luci-app-pbr - ms translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Bahasa Melayu (Malay)
@@ -414,7 +441,7 @@ Repository: base
 Title: luci-app-pbr - no translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Norsk (Norwegian)
@@ -434,7 +461,7 @@ Repository: base
 Title: luci-app-pbr - pl translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Polski (Polish)
@@ -454,7 +481,7 @@ Repository: base
 Title: luci-app-pbr - pt translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Português (Portuguese)
@@ -474,7 +501,7 @@ Repository: base
 Title: luci-app-pbr - pt-br translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Português do Brasil (Brazilian Portuguese)
@@ -494,7 +521,7 @@ Repository: base
 Title: luci-app-pbr - ro translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Română (Romanian)
@@ -514,7 +541,7 @@ Repository: base
 Title: luci-app-pbr - ru translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Русский (Russian)
@@ -534,7 +561,7 @@ Repository: base
 Title: luci-app-pbr - sk translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Slovenčina (Slovak)
@@ -554,7 +581,7 @@ Repository: base
 Title: luci-app-pbr - sv translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Svenska (Swedish)
@@ -574,7 +601,7 @@ Repository: base
 Title: luci-app-pbr - tr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Türkçe (Turkish)
@@ -594,7 +621,7 @@ Repository: base
 Title: luci-app-pbr - uk translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Українська (Ukrainian)
@@ -614,7 +641,7 @@ Repository: base
 Title: luci-app-pbr - vi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - Tiếng Việt (Vietnamese)
@@ -634,7 +661,7 @@ Repository: base
 Title: luci-app-pbr - zh-cn translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - 简体中文 (Chinese Simplified)
@@ -654,7 +681,7 @@ Repository: base
 Title: luci-app-pbr - zh-tw translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-pbr - 繁體中文 (Chinese Traditional)

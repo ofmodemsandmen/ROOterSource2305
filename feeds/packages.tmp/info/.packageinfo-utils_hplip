@@ -15,6 +15,7 @@ Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Source: hplip-3.21.6.tar.gz
 License: GPL-2.0 GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
+CPE-ID: cpe:/a:hp:linux_imaging_and_printing_project
 Type: ipkg
 Description: 	HPLIP is an HP developed solution for printing, scanning, and faxing with HP inkjet and laser based printers in Linux.
 
@@ -37,6 +38,7 @@ Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
 Source: hplip-3.21.6.tar.gz
 License: GPL-2.0 GPL-2.0-or-later
 LicenseFiles: COPYING LICENSE
+CPE-ID: cpe:/a:hp:linux_imaging_and_printing_project
 Type: ipkg
 Description: 	HPLIP is an HP developed solution for printing, scanning, and faxing with HP inkjet and laser based printers in Linux.
 

@@ -4,7 +4,7 @@ Build-Types: host
 
 Package: python3-cython
 Submenu: Python
-Version: 0.29.35-1
+Version: 0.29.36-1
 Depends: +libc +python3
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Languages
 Repository: base
 Title: Cython compiler for writing C extensions
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Cython-0.29.35.tar.gz
+Source: Cython-0.29.36.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -36,7 +36,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-cython-src
 Submenu: Python
-Version: 0.29.35-1
+Version: 0.29.36-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -46,7 +46,7 @@ Category: Languages
 Repository: base
 Title: Cython compiler for writing C extensions (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: Cython-0.29.35.tar.gz
+Source: Cython-0.29.36.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
 Type: ipkg

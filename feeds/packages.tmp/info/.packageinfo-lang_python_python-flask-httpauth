@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-flask-httpauth/Makefile
 
 Package: python3-flask-httpauth
 Submenu: Python
-Version: 4.2.0-1
+Version: 4.8.0-1
 Depends: +libc +python3-light +python3-flask
 Conflicts: 
 Menu-Depends: 
@@ -10,9 +10,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Basic and Digest HTTP authentication for Flask routes
+Title: HTTP authentication for Flask routes
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: Flask-HTTPAuth-4.2.0.tar.gz
+Source: Flask-HTTPAuth-4.8.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,7 +24,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-flask-httpauth-src
 Submenu: Python
-Version: 4.2.0-1
+Version: 4.8.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -32,9 +32,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Basic and Digest HTTP authentication for Flask routes (sources)
+Title: HTTP authentication for Flask routes (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: Flask-HTTPAuth-4.2.0.tar.gz
+Source: Flask-HTTPAuth-4.8.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

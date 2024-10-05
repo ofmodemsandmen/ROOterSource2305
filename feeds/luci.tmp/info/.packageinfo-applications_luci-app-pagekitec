@@ -343,6 +343,25 @@ Description:     Translation for luci-app-pagekitec - 한국어 (Korean)
 Karl Palsson <karlp@tweak.net.au>
 @@
 
+Package: luci-i18n-pagekitec-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-pagekitec
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-pagekitec - lt translation
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-pagekitec - Lietuvių (Lithuanian)
+Karl Palsson <karlp@tweak.net.au>
+@@
+
 Package: luci-i18n-pagekitec-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

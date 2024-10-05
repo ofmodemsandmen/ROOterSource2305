@@ -13,6 +13,7 @@ Title: C library to generate ICMP echo requests.
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: liboping-1.10.0.tar.bz2
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:noping:liboping
 Type: ipkg
 Description: C library to generate ICMP echo requests.
 https://noping.cc
@@ -32,6 +33,7 @@ Title: Send ICMP echo request to network hosts
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: liboping-1.10.0.tar.bz2
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:noping:liboping
 Type: ipkg
 Description: Send ICMP echo request to network hosts
 https://noping.cc
@@ -51,6 +53,7 @@ Title: Ncurses application to send ICMP echo request to network hosts
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: liboping-1.10.0.tar.bz2
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:noping:liboping
 Type: ipkg
 Description: Ncurses application to send ICMP echo request to network hosts
 https://noping.cc

@@ -14,6 +14,7 @@ Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: trusted-firmware-a-2.8.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Allwinner A64
 https://www.trustedfirmware.org/projects/tf-a/
@@ -35,6 +36,7 @@ Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: trusted-firmware-a-2.8.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Allwinner H6
 https://www.trustedfirmware.org/projects/tf-a/

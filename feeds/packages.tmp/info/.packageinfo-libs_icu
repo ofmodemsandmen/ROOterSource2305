@@ -17,6 +17,8 @@ Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
 Source: icu4c-73_2-src.tgz
 License: ICU
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:icu-project:international_components_for_unicode
+ABI-Version: 73
 Type: ipkg
 Description:   ICU is a mature, widely used set of C/C++ and Java libraries providing Unicode and Globalization support for software applications. ICU is widely portable and gives applications the same results on all platforms and between C/C++ and Java software.
   This package supports C/C++.
@@ -38,6 +40,8 @@ Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
 Source: icu4c-73_2-src.tgz
 License: ICU
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:icu-project:international_components_for_unicode
+ABI-Version: 73
 Type: ipkg
 Description:   ICU makes use of a wide variety of data tables to provide many of its services. Examples include converter mapping tables, collation rules, transliteration rules, break iterator rules and dictionaries, and other locale data.
   This package contains the complete data library provided by ICU.
@@ -60,6 +64,7 @@ Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
 Source: icu4c-73_2-src.tgz
 License: ICU
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:icu-project:international_components_for_unicode
 Type: ipkg
 Description:  This package provides tools for manipulating ICU data.
 http://icu-project.org

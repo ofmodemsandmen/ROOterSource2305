@@ -12,6 +12,7 @@ Repository: base
 Title: A portable command-line driven graphing utility
 Maintainer: Matteo Cicuttin <datafl4sh@toxicnet.eu>
 Source: gnuplot-5.4.2.tar.gz
+CPE-ID: cpe:/a:gnuplot_project:gnuplot
 Type: ipkg
 Description: A portable command-line driven graphing utility
 http://www.gnuplot.info/

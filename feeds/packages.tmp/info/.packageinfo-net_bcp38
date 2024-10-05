@@ -13,6 +13,7 @@ Repository: base
 Title: BCP38 compliance
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
 Source: 
+License: GPL-3.0-or-later
 Type: ipkg
 Description:  bcp38 implements IETF BCP38 for home routers.
  See https://tools.ietf.org/html/bcp38.

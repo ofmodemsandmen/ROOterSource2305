@@ -13,6 +13,7 @@ Title: libxdp - Library for use with XDP
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: xdp-tools-1.2.9.tar.gz
 License: LGPL-2.1 OR BSD-2-Clause
+ABI-Version: 129
 Type: ipkg
 Description: libxdp - library for attaching XDP programs and using AF_XDP sockets
 https://github.com/xdp-project/xdp-tools/

@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: node
 Submenu: Node.js
-Version: v18.16.1-1
+Version: v18.20.4-1
 Depends: +libc @HAS_FPU @(i386||x86_64||arm||aarch64||mipsel) +libstdcpp +libopenssl +zlib +libnghttp2 +libuv +libcares +libatomic +NODEJS_ICU_SYSTEM:icu +NODEJS_ICU_SYSTEM:icu-full-data
 Conflicts: 
 Menu-Depends: 
@@ -15,9 +15,10 @@ Category: Languages
 Repository: base
 Title: Node.js is a platform built on Chrome's JavaScript runtime
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v18.16.1.tar.xz
+Source: node-v18.20.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nodejs:node.js
 Type: ipkg
 Description:   Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses
   an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js'
@@ -53,7 +54,7 @@ Config:
 
 Package: node-npm
 Submenu: Node.js
-Version: v18.16.1-1
+Version: v18.20.4-1
 Depends: +libc +node
 Conflicts: 
 Menu-Depends: 
@@ -63,9 +64,10 @@ Category: Languages
 Repository: base
 Title: NPM stands for Node Package Manager
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>, Adrian Panella <ianchi74@outlook.com>
-Source: node-v18.16.1.tar.xz
+Source: node-v18.20.4.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nodejs:node.js
 Type: ipkg
 Description: 	NPM is the package manager for NodeJS
 https://www.npmjs.com/

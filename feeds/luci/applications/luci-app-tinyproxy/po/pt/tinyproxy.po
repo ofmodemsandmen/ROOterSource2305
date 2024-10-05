@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-26 19:03+0200\n"
-"PO-Revision-Date: 2022-06-12 16:30+0000\n"
+"PO-Revision-Date: 2024-07-20 20:09+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationstinyproxy/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:219
 msgid ""
@@ -134,7 +134,7 @@ msgstr "Configurações gerais"
 
 #: applications/luci-app-tinyproxy/root/usr/share/rpcd/acl.d/luci-app-tinyproxy.json:3
 msgid "Grant UCI access for luci-app-tinyproxy"
-msgstr "Conceder acesso UCI ao luci-app-tinyproxy"
+msgstr "Conceder UCI acesso ao luci-app-tinyproxy"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:97
 msgid "Group"
@@ -173,7 +173,7 @@ msgstr "Endereço de escuta"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:31
 msgid "Listen port"
-msgstr "Porta de escuta"
+msgstr "Porto de escuta"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:73
 msgid "Log file"
@@ -298,10 +298,10 @@ msgstr ""
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:234
 msgid ""
 "Specifies the upstream proxy to use for accessing the target host. Format is "
-"<code>address:port</code>"
+"<code>address:port</code> or <code>socks5 address:port</code>"
 msgstr ""
 "Especifica o proxy superior para usar quando acessar o alvo. Formato é "
-"<code>address:port</code>"
+"<code>address:port</code> or <code>socks5 address:port</code>"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:92
 msgid "Specifies the user name the Tinyproxy process is running as"

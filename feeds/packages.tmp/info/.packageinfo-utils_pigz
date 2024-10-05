@@ -15,6 +15,7 @@ Maintainer: Ken Wong <xinxijishuwyq@gmail.com>
 Source: pigz-2.7.tar.gz
 License: CUSTOM
 LicenseFiles: README
+CPE-ID: cpe:/a:zlib:pigz
 Type: ipkg
 Description: pigz
 https://zlib.net/pigz

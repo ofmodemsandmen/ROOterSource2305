@@ -3,7 +3,7 @@ Build-Depends: python3/host
 
 Package: kmod-openvswitch
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-lib-crc32c +kmod-mpls +kmod-nf-nat +IPV6:kmod-nf-nat6 +kmod-nf-conntrack +IPV6:kmod-nf-conntrack6 +kmod-nsh +kmod-ipt-conntrack-extra  
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch kernel datapath (upstream)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Kernel-Config: CONFIG_OPENVSWITCH
 Description: Open vSwitch kernel datapath (upstream)
@@ -23,7 +24,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-gre
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch +kmod-gre 
 Conflicts: 
 Menu-Depends: 
@@ -32,9 +33,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch GRE tunneling support (upstream)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Kernel-Config: CONFIG_OPENVSWITCH_GRE
 Description: Open vSwitch GRE tunneling support (upstream)
@@ -43,7 +45,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-vxlan
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch +kmod-vxlan 
 Conflicts: 
 Menu-Depends: 
@@ -52,9 +54,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch VXLAN tunneling support (upstream)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Kernel-Config: CONFIG_OPENVSWITCH_VXLAN
 Description: Open vSwitch VXLAN tunneling support (upstream)
@@ -63,7 +66,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-geneve
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch +kmod-geneve 
 Conflicts: 
 Menu-Depends: 
@@ -72,9 +75,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch Geneve tunneling support (upstream)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Kernel-Config: CONFIG_OPENVSWITCH_GENEVE
 Description: Open vSwitch Geneve tunneling support (upstream)
@@ -83,7 +87,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-lib-crc32c +kmod-nf-nat +IPV6:kmod-nf-nat6 +kmod-nf-conntrack +kmod-udptunnel4 +kmod-ipt-conntrack-extra  @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -92,9 +96,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch kernel datapath (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch kernel datapath (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -102,7 +107,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-gre-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch-intree +kmod-gre @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -111,9 +116,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch GRE tunneling support (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch GRE tunneling support (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -121,7 +127,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-vxlan-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch-intree +kmod-vxlan @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -130,9 +136,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch VXLAN tunneling support (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch VXLAN tunneling support (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -140,7 +147,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-geneve-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch-intree +kmod-geneve @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -149,9 +156,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch Geneve tunneling support (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch Geneve tunneling support (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -159,7 +167,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-stt-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch-intree @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -168,9 +176,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch STT tunneling support (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch STT tunneling support (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -178,7 +187,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: kmod-openvswitch-lisp-intree
 Submenu: Network Support
-Version: <LINUX_VERSION>+2.17.0-3
+Version: <LINUX_VERSION>+2.17.9-1
 Depends: +kmod-openvswitch-intree @IPV6 @DEVEL
 Conflicts: 
 Menu-Depends: 
@@ -187,9 +196,10 @@ Section: kernel
 Category: Kernel modules
 Title: Open vSwitch LISP tunneling support (in tree)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch LISP tunneling support (in tree)
 Yousong Zhou <yszhou4tech@gmail.com>
@@ -197,7 +207,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-libopenvswitch
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic +libopenssl +OPENVSWITCH_WITH_LIBUNBOUND:libunbound +!(arc||arceb):libunwind
 Conflicts: 
 Menu-Depends: 
@@ -207,9 +217,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (libopenvswitch.so)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (libopenvswitch.so)
@@ -219,7 +230,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-libofproto
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -229,9 +240,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (libofproto.so libsflow.so)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (libofproto.so libsflow.so)
@@ -241,7 +253,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-libovsdb
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic
 Conflicts: 
 Menu-Depends: 
@@ -251,9 +263,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (libovsdb.so)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (libovsdb.so)
@@ -263,7 +276,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-vswitchd
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic +openvswitch-libofproto +openvswitch-libopenvswitch
 Conflicts: 
 Menu-Depends: 
@@ -273,9 +286,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (ovs-vswitchd)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (ovs-vswitchd)
@@ -285,7 +299,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-ovsdb
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic +openvswitch-libopenvswitch +openvswitch-libovsdb
 Conflicts: 
 Menu-Depends: 
@@ -295,9 +309,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (ovsdb-server)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (ovsdb-server)
@@ -307,7 +322,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch-common
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +libatomic +openvswitch-libofproto +openvswitch-libopenvswitch +openvswitch-libovsdb
 Conflicts: 
 Menu-Depends: 
@@ -317,9 +332,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (common files)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Hidden: 1
 Description: Open vSwitch (common files)
@@ -329,7 +345,7 @@ Yousong Zhou <yszhou4tech@gmail.com>
 
 Package: openvswitch
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +coreutils +coreutils-sleep +kmod-openvswitch +libatomic +openvswitch-common +openvswitch-ovsdb +openvswitch-vswitchd +uuidgen
 Conflicts: 
 Menu-Depends: 
@@ -339,9 +355,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch
 https://www.openvswitch.org
@@ -353,7 +370,7 @@ source "feeds/packages/net/openvswitch/Config.in"
 
 Package: openvswitch-python3
 Submenu: Open vSwitch
-Version: 2.17.0-3
+Version: 2.17.9-1
 Depends: +libc +PACKAGE_openvswitch-python3:python3
 Conflicts: 
 Menu-Depends: 
@@ -363,9 +380,10 @@ Category: Network
 Repository: base
 Title: Open vSwitch (Python3 library)
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
-Source: openvswitch-2.17.0.tar.gz
+Source: openvswitch-2.17.9.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openvswitch:openvswitch
 Type: ipkg
 Description: Open vSwitch (Python3 library)
 https://www.openvswitch.org

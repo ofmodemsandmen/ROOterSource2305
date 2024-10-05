@@ -9,12 +9,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=msmtp
-PKG_VERSION:=1.8.19
+PKG_VERSION:=1.8.25
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=https://marlam.de/msmtp/releases
-PKG_HASH:=34a1e1981176874dbe4ee66ee0d9103c90989aa4dcdc4861e4de05ce7e44526b
+PKG_HASH:=2dfe1dbbb397d26fe0b0b6b2e9cd2efdf9d72dd42d18e70d7f363ada2652d738
 
 PKG_MAINTAINER:=
 PKG_LICENSE:=GPL-3.0-or-later

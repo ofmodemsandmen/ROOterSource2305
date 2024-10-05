@@ -14,6 +14,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: pkgconf-1.8.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:pkgconf:pkgconf
 Type: ipkg
 Description:   libpkgconf is a library which provides access to most of pkgconf’s
   functionality, to allow other tooling such as compilers and IDEs to
@@ -37,6 +38,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: pkgconf-1.8.0.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:pkgconf:pkgconf
 Type: ipkg
 Description:   pkgconf is a program which helps to configure compiler and linker flags
   for development frameworks. It is similar to pkg-config from

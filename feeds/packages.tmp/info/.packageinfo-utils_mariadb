@@ -19,6 +19,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -46,6 +47,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -83,6 +85,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -115,6 +118,7 @@ Require-User: mariadb=376:mariadb=376
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -141,6 +145,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -193,6 +198,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -217,6 +223,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -241,6 +248,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -265,6 +273,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -289,6 +298,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -313,6 +323,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -337,6 +348,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -361,6 +373,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -385,6 +398,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -409,6 +423,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -433,6 +448,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -457,6 +473,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -481,6 +498,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -505,6 +523,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -529,6 +548,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -553,6 +573,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -577,6 +598,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -601,6 +623,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -625,6 +648,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -649,6 +673,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -673,6 +698,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -697,6 +723,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -721,6 +748,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-10.9.3.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING THIRDPARTY
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 

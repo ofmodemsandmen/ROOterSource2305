@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/net-snmp/Makefile
 
 Package: libnetsnmp
-Version: 5.9.1-5
-Depends: +libc +libnl-tiny +libpci +libpcre
+Version: 5.9.1-7
+Depends: +libc +libnl-tiny +libpci +libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,6 +13,7 @@ Title: Open source SNMP implementation (libraries)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
  monitoring the health and welfare of network equipment (eg. routers),
@@ -26,7 +27,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmp-mibs
-Version: 5.9.1-5
+Version: 5.9.1-7
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -38,6 +39,7 @@ Title: Open source SNMP implementation (MIB-files)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
  monitoring the health and welfare of network equipment (eg. routers),
@@ -51,7 +53,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmp-utils
-Version: 5.9.1-5
+Version: 5.9.1-7
 Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -63,6 +65,7 @@ Title: Open source SNMP implementation (utilities)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
  monitoring the health and welfare of network equipment (eg. routers),
@@ -82,7 +85,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmpd
-Version: 5.9.1-5
+Version: 5.9.1-7
 Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -94,6 +97,7 @@ Title: Open source SNMP implementation (daemon)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
  monitoring the health and welfare of network equipment (eg. routers),
@@ -107,7 +111,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmpd-static
-Version: 5.9.1-5
+Version: 5.9.1-7
 Depends: +libc +snmpd
 Conflicts: 
 Menu-Depends: 
@@ -119,6 +123,7 @@ Title: Open source SNMP implementation (daemon)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Build-Only: 1
 Description: Open source SNMP implementation (daemon)
@@ -127,7 +132,7 @@ Stijn Tintel <stijn@linux-ipv6.be>
 @@
 
 Package: snmptrapd
-Version: 5.9.1-5
+Version: 5.9.1-7
 Depends: +libc +libnetsnmp
 Conflicts: 
 Menu-Depends: 
@@ -139,6 +144,7 @@ Title: Open source SNMP implementation (notification receiver)
 Maintainer: Stijn Tintel <stijn@linux-ipv6.be>
 Source: net-snmp-5.9.1.tar.gz
 License: MIT BSD-3-Clause-Clear
+CPE-ID: cpe:/a:net-snmp:net-snmp
 Type: ipkg
 Description:  Simple Network Management Protocol (SNMP) is a widely used protocol for
  monitoring the health and welfare of network equipment (eg. routers),

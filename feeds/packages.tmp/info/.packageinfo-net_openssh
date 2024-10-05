@@ -3,7 +3,7 @@ Build-Depends: OPENSSH_LIBFIDO2:libfido2
 
 Package: openssh-client
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Category: Network
 Repository: base
 Title: OpenSSH client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH client.
 https://www.openssh.com/
@@ -24,7 +25,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-moduli
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -34,9 +35,10 @@ Category: Network
 Repository: base
 Title: OpenSSH moduli file
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH server moduli file.
 https://www.openssh.com/
@@ -45,7 +47,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-client-utils
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +libopenssl +zlib +openssh-client +openssh-keygen
 Conflicts: 
 Menu-Depends: 
@@ -55,9 +57,10 @@ Category: Network
 Repository: base
 Title: OpenSSH client utilities
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH client utilities.
 https://www.openssh.com/
@@ -66,7 +69,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-keygen
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -76,9 +79,10 @@ Category: Network
 Repository: base
 Title: OpenSSH keygen
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH keygen.
 https://www.openssh.com/
@@ -87,7 +91,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-server
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +libopenssl +zlib +openssh-keygen +OPENSSH_LIBFIDO2:libfido2
 Conflicts: 
 Menu-Depends: 
@@ -99,9 +103,10 @@ Repository: base
 Title: OpenSSH server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH server.
 https://www.openssh.com/
@@ -113,7 +118,7 @@ Config:
 
 Package: openssh-server-pam
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +libopenssl +zlib +libpthread +openssh-keygen +libpam
 Conflicts: 
 Menu-Depends: 
@@ -125,9 +130,10 @@ Repository: base
 Title: OpenSSH server (with PAM support)
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: sshd=22:sshd=22
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH server (with PAM support).
 https://www.openssh.com/
@@ -136,7 +142,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-client
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -146,9 +152,10 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP client
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH SFTP client.
 https://www.openssh.com/
@@ -157,7 +164,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-server
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -167,9 +174,10 @@ Category: Network
 Repository: base
 Title: OpenSSH SFTP server
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description: OpenSSH SFTP server.
 https://www.openssh.com/
@@ -178,7 +186,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: openssh-sftp-avahi-service
 Submenu: SSH
-Version: 9.3p1-3
+Version: 9.8p1-1
 Depends: +libc +openssh-sftp-server +avahi-daemon
 Conflicts: 
 Menu-Depends: 
@@ -188,9 +196,10 @@ Category: Network
 Repository: base
 Title: OpenSSH (SFTP Avahi service)
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: openssh-9.3p1.tar.gz
+Source: openssh-9.8p1.tar.gz
 License: BSD ISC
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:openssh:openssh
 Type: ipkg
 Description:  This package contains the service definition for announcing
  SFTP support via mDNS/DNS-SD.

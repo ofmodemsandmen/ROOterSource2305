@@ -13,6 +13,7 @@ Title: userspace iSCSI target
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: tgt-1.0.86.tar.gz
 License: GPL-2.0-only
+CPE-ID: cpe:/a:zaal:tgt
 Type: ipkg
 Description: The Linux target framework (tgt) is a user space SCSI target framework
 that supports the iSCSI and iSER transport protocols and that also

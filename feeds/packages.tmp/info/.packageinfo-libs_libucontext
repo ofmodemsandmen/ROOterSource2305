@@ -1,0 +1,44 @@
+Source-Makefile: feeds/packages/libs/libucontext/Makefile
+
+Package: libucontext
+Version: 1.2-1
+Depends: +libc @USE_MUSL
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: libucontext is a library which provides the ucontext.h C API
+Maintainer: Volker Christian <me@vchrist.at>
+Source: libucontext-1.2.tar.gz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description:   Thie package is a development package aimed to be linked to
+  libraries/applications which need the SYS-V ucontext API.
+https://github.com/kaniini/libucontext
+Volker Christian <me@vchrist.at>
+@@
+
+Package: libucontext-tests
+Version: 1.2-1
+Depends: +libc libucontext
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Test applications for libucontext
+Maintainer: Volker Christian <me@vchrist.at>
+Source: libucontext-1.2.tar.gz
+License: ISC
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Test applications for libucontext
+https://github.com/kaniini/libucontext
+Volker Christian <me@vchrist.at>
+@@
+
+

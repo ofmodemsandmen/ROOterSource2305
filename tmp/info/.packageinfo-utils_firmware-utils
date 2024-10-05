@@ -1,0 +1,38 @@
+Source-Makefile: package/utils/firmware-utils/Makefile
+Build-Depends: openssl zlib
+
+Package: oseama
+Version: 2023-11-21-12bf1a99bd6eebae90caa144bb4d8b0cd763ff8f-1
+Depends: +libc @TARGET_bcm53xx
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Base system
+Repository: base
+Title: Firmware utility oseama
+Maintainer: 
+Source: firmware-utils-2023-11-21-12bf1a99bd6eebae90caa144bb4d8b0cd763ff8f.tar.xz
+Type: ipkg
+Description: Firmware utility oseama
+
+@@
+
+Package: otrx
+Version: 2023-11-21-12bf1a99bd6eebae90caa144bb4d8b0cd763ff8f-1
+Depends: +libc @(TARGET_bcm47xx||TARGET_bcm53xx)
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Base system
+Repository: base
+Title: Firmware utility otrx
+Maintainer: 
+Source: firmware-utils-2023-11-21-12bf1a99bd6eebae90caa144bb4d8b0cd763ff8f.tar.xz
+Type: ipkg
+Description: Firmware utility otrx
+
+@@
+
+

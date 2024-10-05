@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-03 07:17+0000\n"
-"Last-Translator: Francesco <formido82@gmail.com>\n"
+"PO-Revision-Date: 2024-02-13 17:54+0000\n"
+"Last-Translator: SKAL <sir_kalot@yahoo.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationslxc/it/>\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:18
 msgid ""
@@ -39,11 +39,11 @@ msgstr "URL contenitori"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:53
 msgid "Create"
-msgstr ""
+msgstr "Crea"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:41
 msgid "Create New Container"
-msgstr ""
+msgstr "Crea nuovo contenitore"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:133
 msgid "Delete"
@@ -51,21 +51,24 @@ msgstr "Elimina"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:31
 msgid "Enable SSL"
-msgstr ""
+msgstr "Abilita SSL"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:32
 msgid ""
 "Enable optional SSL encryption support. This requires additional packages "
 "like 'wget', 'ca-certificates', 'gnupg' and 'gnupg-utils'."
 msgstr ""
+"Abilita il supporto opzionale della crittografia SSL. Questo richiede "
+"pacchetti aggiuntivi come \"wget\", \"ca-certificates\", \"gnupg\" e \"gnupg-"
+"utils\"."
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:50
 msgid "Enter new name"
-msgstr ""
+msgstr "Inserire il nuovo nome"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:36
 msgid "Free Space Threshold"
-msgstr ""
+msgstr "Soglia di spazio libero"
 
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:42
 msgid "Free Temp Threshold"
@@ -78,7 +81,7 @@ msgstr ""
 #: applications/luci-app-lxc/luasrc/controller/lxc.lua:31
 #: applications/luci-app-lxc/luasrc/model/cbi/lxc.lua:17
 msgid "LXC Containers"
-msgstr ""
+msgstr "Contenitori LXC"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:73
 msgid "Loading"
@@ -111,8 +114,8 @@ msgstr "Stato"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:132
 msgid "Stop"
-msgstr "Arresta"
+msgstr "Ferma"
 
 #: applications/luci-app-lxc/luasrc/view/lxc.htm:46
 msgid "Template"
-msgstr ""
+msgstr "Modello"

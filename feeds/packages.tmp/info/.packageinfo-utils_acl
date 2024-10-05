@@ -15,6 +15,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: acl-2.3.1.tar.gz
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: doc/COPYING doc/COPYING.LGPL
+CPE-ID: cpe:/a:acl_project:acl
 Type: ipkg
 Description:   Access control list support
  This package provides ACL manipulation utilities
@@ -40,6 +41,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: acl-2.3.1.tar.gz
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: doc/COPYING doc/COPYING.LGPL
+CPE-ID: cpe:/a:acl_project:acl
 Type: ipkg
 Description:   Access control list support
  This package provides libacl

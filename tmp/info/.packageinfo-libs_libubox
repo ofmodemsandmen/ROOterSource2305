@@ -16,6 +16,7 @@ Title: Basic utility library
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libubox-2023-05-23-75a3b870cace1171faf57bd55e5a9a2f1564f757.tar.xz
 License: ISC
+ABI-Version: 20230523
 Type: ipkg
 Description: Basic utility library
 Felix Fietkau <nbd@nbd.name>
@@ -34,6 +35,7 @@ Title: blobmsg <-> json conversion library
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libubox-2023-05-23-75a3b870cace1171faf57bd55e5a9a2f1564f757.tar.xz
 License: ISC
+ABI-Version: 20230523
 Type: ipkg
 Description: blobmsg <-> json conversion library
 Felix Fietkau <nbd@nbd.name>
@@ -70,6 +72,7 @@ Title: Minimalistic JSON based scripting engine
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libubox-2023-05-23-75a3b870cace1171faf57bd55e5a9a2f1564f757.tar.xz
 License: ISC
+ABI-Version: 20230523
 Type: ipkg
 Description: Minimalistic JSON based scripting engine
 Felix Fietkau <nbd@nbd.name>

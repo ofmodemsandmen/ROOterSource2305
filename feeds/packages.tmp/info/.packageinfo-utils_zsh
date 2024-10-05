@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/zsh/Makefile
 
 Package: zsh
 Submenu: Shells
-Version: 5.9-1
-Depends: +libc +libcap +libncurses +libncursesw +libpcre +librt
+Version: 5.9-2
+Depends: +libc +libcap +libncurses +libncursesw +libpcre2 +librt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15,6 +15,7 @@ Maintainer: Vadim A. Misbakh-Soloviov <openwrt-zsh@mva.name>
 Source: zsh-5.9.tar.xz
 License: ZSH
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:zsh:zsh
 Type: ipkg
 Description:         Zsh is a UNIX command interpreter (shell) usable as an interactive
         login  shell  and  as a shell script command processor. Of the standard

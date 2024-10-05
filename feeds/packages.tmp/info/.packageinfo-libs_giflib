@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: giflib-5.2.1.tar.gz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:giflib_project:giflib
 Type: ipkg
 Description:   giflib is a library for reading and writing gif images.
   It is API and ABI compatible with libungif which was in wide use while
@@ -36,6 +37,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: giflib-5.2.1.tar.gz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:giflib_project:giflib
 Type: ipkg
 Description:   These are the utilities that come with giflib.
 https://sourceforge.net/projects/giflib

@@ -15,6 +15,8 @@ Maintainer:
 Source: fuse-2.9.9.tar.gz
 License: LGPL-2.1-only
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:fuse_project:fuse
+ABI-Version: 1
 Type: ipkg
 Description:  FUSE (Filesystem in UserSpacE)
  This package contains the FUSE shared libraries, needed by other programs.
@@ -39,6 +41,7 @@ Maintainer:
 Source: fuse-2.9.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:fuse_project:fuse
 Type: ipkg
 Description:  FUSE (Filesystem in UserSpacE)
  This package contains the FUSE utilities.

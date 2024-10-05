@@ -3,8 +3,8 @@ Build-Depends: unixodbc/host
 
 Package: python3-pyodbc
 Submenu: Python
-Version: 4.0.39-1
-Depends: +libc +unixodbc +python3-light +libstdcpp
+Version: 4.0.39-2
+Depends: +libc +unixodbc +python3-light +python3-decimal +python3-uuid +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Section: lang
 Category: Languages
 Repository: base
 Title: python3-pyodbc
-Maintainer: Daniel Golle <daniel@makrotopia.org>
+Maintainer: Jeffery To <jeffery.to@gmail.com>
 Source: pyodbc-4.0.39.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
@@ -22,7 +22,7 @@ Description: DB API Module for ODBC
 A Python DB API 2 module for ODBC. This project provides an up-to-date,
 convenient interface to ODBC using native data types like datetime and decimal.
 https://github.com/mkleehammer/pyodbc
-Daniel Golle <daniel@makrotopia.org>
+Jeffery To <jeffery.to@gmail.com>
 @@
 
 

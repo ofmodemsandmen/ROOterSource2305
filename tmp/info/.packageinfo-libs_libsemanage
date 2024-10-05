@@ -16,6 +16,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: libsemanage-3.5.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:libsemanage
 Type: ipkg
 Description: 	libsemanage is the policy management library. It uses
 	libsepol for binary policy manipulation and libselinux for

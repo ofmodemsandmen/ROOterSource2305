@@ -16,13 +16,14 @@ Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
 Source: pcre2-10.42.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre2
 Type: ipkg
 Description: A Perl Compatible Regular Expression library
 https://www.pcre.org/
 Shane Peelar <lookatyouhacker@gmail.com>
 @@
 Config:
-  source "package/libs/pcre2/Config.in"
+  source "feeds/base/libs/pcre2/Config.in"
 @@
 
 Package: libpcre2-16
@@ -39,6 +40,7 @@ Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
 Source: pcre2-10.42.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre2
 Type: ipkg
 Description: A Perl Compatible Regular Expression library (16bit support)
 https://www.pcre.org/
@@ -59,6 +61,7 @@ Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
 Source: pcre2-10.42.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre2
 Type: ipkg
 Description: A Perl Compatible Regular Expression library (32bit support)
 https://www.pcre.org/

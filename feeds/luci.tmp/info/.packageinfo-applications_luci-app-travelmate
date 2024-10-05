@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 Package: luci-app-travelmate
 Submenu: 3. Applications
 Version: x
-Depends: +libc +travelmate +luci-lib-jsonc
+Depends: +libc +travelmate
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -358,6 +358,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-travelmate - 한국어 (Korean)
+
+@@
+
+Package: luci-i18n-travelmate-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-travelmate
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-travelmate - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-travelmate - Lietuvių (Lithuanian)
 
 @@
 

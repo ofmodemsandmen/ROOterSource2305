@@ -14,6 +14,7 @@ Maintainer:
 Source: re2-2021-02-02.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+ABI-Version: 6
 Type: ipkg
 Description:   RE2 is a fast, safe, thread-friendly alternative to backtracking regular
   expression engines like those used in PCRE, Perl, and Python.

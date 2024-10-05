@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: frpc
 Submenu: Web Servers/Proxies
-Version: 0.48.0-1
+Version: 0.51.3-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: frpc - fast reverse proxy client
 Maintainer: Richard Yu <yurichard3839@gmail.com>
-Source: frp-0.48.0.tar.gz
+Source: frp-0.51.3.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ Richard Yu <yurichard3839@gmail.com>
 
 Package: frps
 Submenu: Web Servers/Proxies
-Version: 0.48.0-1
+Version: 0.51.3-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Network
 Repository: base
 Title: frps - fast reverse proxy server
 Maintainer: Richard Yu <yurichard3839@gmail.com>
-Source: frp-0.48.0.tar.gz
+Source: frp-0.51.3.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

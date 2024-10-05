@@ -15,6 +15,7 @@ Maintainer: Rafał Miłecki <rafal@milecki.pl>
 Source: trusted-firmware-a-2.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for BCM4908
 https://www.trustedfirmware.org/projects/tf-a/

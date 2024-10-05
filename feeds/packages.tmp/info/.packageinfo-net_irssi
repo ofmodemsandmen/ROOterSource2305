@@ -15,6 +15,7 @@ Maintainer: Peter Wagner <tripolar@gmx.at>
 Source: irssi-1.2.3.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:irssi:irssi
 Type: ipkg
 Description: 	Irssi is a terminal based IRC client for UNIX systems.
 https://irssi.org/

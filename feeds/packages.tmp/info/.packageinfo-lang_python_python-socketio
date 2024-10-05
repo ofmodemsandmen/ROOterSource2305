@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-socketio/Makefile
 
 Package: python3-socketio
 Submenu: Python
-Version: 5.2.1-1
-Depends: +libc +python3-light +python3-bidict +python3-engineio +python3-asyncio +python3-logging +python3-urllib
+Version: 5.8.0-1
+Depends: +libc +python3-light +python3-bidict +python3-engineio +python3-asyncio +python3-logging +python3-uuid
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Socket.IO server and client
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: python-socketio-5.2.1.tar.gz
+Source: python-socketio-5.8.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,7 +23,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-socketio-src
 Submenu: Python
-Version: 5.2.1-1
+Version: 5.8.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: base
 Title: Socket.IO server and client (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: python-socketio-5.2.1.tar.gz
+Source: python-socketio-5.8.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

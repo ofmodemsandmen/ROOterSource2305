@@ -13,6 +13,7 @@ Repository: base
 Title: A tool for managing Soft RAID under Linux
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: mdadm-4.2.tar.xz
+CPE-ID: cpe:/a:mdadm_project:mdadm
 Type: ipkg
 Description:  A tool for managing Linux Software RAID arrays.
  RAID 0, 1 and 10 support included.

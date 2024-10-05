@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/banip/Makefile
 
 Package: banip
-Version: 0.8.8-2
-Depends: +libc +jshn +jsonfilter +firewall4 +ca-bundle +logd +rpcd +rpcd-mod-rpcsys
+Version: 1.0.0-7
+Depends: +libc +jshn +jsonfilter +firewall4 +ca-bundle +rpcd +rpcd-mod-rpcsys
 Conflicts: 
 Menu-Depends: 
 Provides: 

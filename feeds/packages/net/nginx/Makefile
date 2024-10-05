@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=nginx
 PKG_VERSION:=1.25.0
-PKG_RELEASE:=2
+PKG_RELEASE:=4
 
 PKG_SOURCE:=nginx-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://nginx.org/download/
@@ -102,10 +102,7 @@ Package/nginx-ssl/description = $(Package/nginx/description) \
 define Package/nginx-full
   $(Package/nginx/default)
   TITLE += with ALL module selected
-  DEPENDS+=+libpcre +nginx-ssl-util +zlib +libxml2 \
-  +nginx-mod-ubus +nginx-mod-naxsi +nginx-mod-lua \
-  +nginx-mod-dav-ext +nginx-mod-stream +nginx-mod-headers-more \
-  +nginx-mod-brotli +nginx-mod-rtmp +nginx-mod-ts
+  DEPENDS+=+libpcre +nginx-ssl-util +zlib +libxml2
   EXTRA_DEPENDS:=nginx-ssl-util (>=1.5-1) (<2)
   VARIANT:=all-module
   PROVIDES += nginx-ssl
@@ -253,7 +250,7 @@ else
   ADDITIONAL_MODULES += --with-ipv6 --with-http_stub_status_module --with-http_flv_module \
 	--with-http_dav_module \
 	--with-http_auth_request_module --with-http_v2_module --with-http_realip_module \
-	--with-http_secure_link_module --with-http_sub_module \
+	--with-http_secure_link_module --with-http_sub_module
   config_files += koi-utf koi-win win-utf fastcgi_params uwsgi_params
 endif
 

@@ -343,6 +343,25 @@ Description:     Translation for luci-app-opkg - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-opkg-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-opkg
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-opkg - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-opkg - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-opkg-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

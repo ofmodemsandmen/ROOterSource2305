@@ -15,6 +15,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard chage utility. Normally, you would not use this
@@ -37,6 +38,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard chfn utility. Normally, you would not use this
@@ -59,6 +61,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard chgpasswd utility. Normally, you would not use this
@@ -81,6 +84,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard chpasswd utility. Normally, you would not use this
@@ -103,6 +107,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard chsh utility. Normally, you would not use this
@@ -125,6 +130,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard expiry utility. Normally, you would not use this
@@ -147,6 +153,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard faillog utility. Normally, you would not use this
@@ -169,6 +176,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard gpasswd utility. Normally, you would not use this
@@ -191,6 +199,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard groupadd utility. Normally, you would not use this
@@ -213,6 +222,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard groupdel utility. Normally, you would not use this
@@ -235,6 +245,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard groupmems utility. Normally, you would not use this
@@ -257,6 +268,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard groupmod utility. Normally, you would not use this
@@ -279,6 +291,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard groups utility. Normally, you would not use this
@@ -301,6 +314,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard grpck utility. Normally, you would not use this
@@ -323,6 +337,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard grpconv utility. Normally, you would not use this
@@ -345,6 +360,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard grpunconv utility. Normally, you would not use this
@@ -367,6 +383,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard lastlog utility. Normally, you would not use this
@@ -389,6 +406,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard login utility. Normally, you would not use this
@@ -411,6 +429,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard logoutd utility. Normally, you would not use this
@@ -433,6 +452,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard newgidmap utility. Normally, you would not use this
@@ -455,6 +475,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard newgrp utility. Normally, you would not use this
@@ -477,6 +498,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard newuidmap utility. Normally, you would not use this
@@ -499,6 +521,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard newusers utility. Normally, you would not use this
@@ -521,6 +544,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard nologin utility. Normally, you would not use this
@@ -543,6 +567,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard passwd utility. Normally, you would not use this
@@ -565,6 +590,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard pwck utility. Normally, you would not use this
@@ -587,6 +613,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard pwconv utility. Normally, you would not use this
@@ -609,6 +636,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard pwunconv utility. Normally, you would not use this
@@ -631,6 +659,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard su utility. Normally, you would not use this
@@ -653,6 +682,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard useradd utility. Normally, you would not use this
@@ -675,6 +705,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard userdel utility. Normally, you would not use this
@@ -697,6 +728,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard usermod utility. Normally, you would not use this
@@ -719,6 +751,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:     Full version of standard vipw utility. Normally, you would not use this
@@ -741,6 +774,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Description:   Full versions of standard shadow utilities. Normally, you would not
   use this package, since the functionality in BusyBox is more than
@@ -878,6 +912,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description: Shared definitions for the PLD Linux shadow utilities
@@ -899,6 +934,7 @@ Maintainer:
 Source: shadow-4.8.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:debian:shadow
 Type: ipkg
 Hidden: 1
 Description:   Full versions of standard shadow utilities. Normally, you would not

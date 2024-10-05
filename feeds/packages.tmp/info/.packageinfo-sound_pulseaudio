@@ -16,6 +16,7 @@ Require-User: pulse=51:pulse=51
 Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
+CPE-ID: cpe:/a:pulseaudio:pulseaudio
 Type: ipkg
 Description:   PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
 https://www.freedesktop.org/wiki/Software/PulseAudio/
@@ -38,6 +39,7 @@ Require-User: pulse=51:pulse=51
 Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
+CPE-ID: cpe:/a:pulseaudio:pulseaudio
 Type: ipkg
 Description:     PulseAudio (formerly Polypaudio) is a cross-platform, networked sound server.
   This package enables avahi,bluez and is compiled against dbus, sbc, and avahi.
@@ -60,6 +62,7 @@ Maintainer: Peter Wagner <tripolar@gmx.at>
 Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
+CPE-ID: cpe:/a:pulseaudio:pulseaudio
 Type: ipkg
 Description: Tools for Pulseaudio
 https://www.freedesktop.org/wiki/Software/PulseAudio/
@@ -80,6 +83,7 @@ Maintainer: Peter Wagner <tripolar@gmx.at>
 Source: pulseaudio-14.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: GPL LICENSE
+CPE-ID: cpe:/a:pulseaudio:pulseaudio
 Type: ipkg
 Description: Profiles for Pulseaudio
 https://www.freedesktop.org/wiki/Software/PulseAudio/

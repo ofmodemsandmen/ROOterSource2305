@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-18 20:32+0000\n"
-"Last-Translator: Marcin Net <marcin.net@linux.pl>\n"
+"PO-Revision-Date: 2024-02-07 11:04+0000\n"
+"Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnextdns/pl/>\n"
 "Language: pl\n"
@@ -9,11 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
-
-#: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:24
-msgid "Configuration"
-msgstr "Konfiguracja"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:23
 msgid "Configuration ID"
@@ -53,11 +49,15 @@ msgstr "Udziel dostępu do logread aplikacji LuCI nextdns"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:33
 msgid "Log Queries"
-msgstr "Loguj zapytania"
+msgstr "Rejestruj zapytania"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:34
 msgid "Log individual queries to system log."
 msgstr "Zapisywanie poszczególnych zapytań do dziennika systemowego."
+
+#: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:24
+msgid "Logs"
+msgstr "Dzienniki"
 
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:9
 #: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:3
@@ -67,10 +67,6 @@ msgstr "NextDNS"
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:10
 msgid "NextDNS Configuration."
 msgstr "Konfiguracja NextDNS."
-
-#: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/logread.js:15
-msgid "No nextdns related logs yet!"
-msgstr "Nie ma jeszcze logów związanych z nextdns!"
 
 #: applications/luci-app-nextdns/root/usr/share/luci/menu.d/luci-app-nextdns.json:15
 msgid "Overview"
@@ -83,9 +79,3 @@ msgstr "Raportuj informacje o kliencie"
 #: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/overview.js:24
 msgid "The ID of your NextDNS configuration."
 msgstr "Identyfikator konfiguracji NextDNS."
-
-#: applications/luci-app-nextdns/htdocs/luci-static/resources/view/nextdns/logread.js:24
-msgid "The syslog output, pre-filtered for nextdns related messages only."
-msgstr ""
-"Dane wyjściowe dziennika systemowego, wstępnie przefiltrowane, aby zawierały "
-"tylko informacje związane z nextdns."

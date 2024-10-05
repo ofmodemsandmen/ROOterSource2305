@@ -368,6 +368,26 @@ Description:     Translation for luci-app-privoxy - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-privoxy-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-privoxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-privoxy - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-privoxy - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-privoxy-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

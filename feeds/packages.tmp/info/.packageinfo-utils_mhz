@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/mhz/Makefile
 
 Package: mhz
-Version: 2023-06-17-11aac2399780a1f7ea9f007b14af0464797d5cf1-1
+Version: 2023-06-17-11aac2399780a1f7ea9f007b14af0464797d5cf1-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 

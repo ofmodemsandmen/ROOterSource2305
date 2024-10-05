@@ -2,9 +2,9 @@ Source-Makefile: feeds/routing/nodogsplash/Makefile
 
 Package: nodogsplash
 Submenu: Captive Portals
-Version: 5.0.0-1
-Depends: +libc +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
-Conflicts: nodogsplash2
+Version: 5.0.2-1
+Depends: +libc +libpthread +libmicrohttpd-no-ssl +iptables-nft +iptables-mod-nat-extra +iptables-mod-ipopt +iptables-mod-conntrack-extra
+Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
@@ -12,15 +12,13 @@ Category: Network
 Repository: base
 Title: Open public network gateway daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: nodogsplash-5.0.0.tar.gz
+Source: nodogsplash-5.0.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:   Nodogsplash is a Captive Portal that offers a simple way to
   provide restricted access to the Internet by showing a splash
   page to the user before Internet access is granted.
-  It also incorporates an API that allows the creation of
-  sophisticated authentication applications.
 https://github.com/nodogsplash/nodogsplash
 Moritz Warning <moritzwarning@web.de>
 @@

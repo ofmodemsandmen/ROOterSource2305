@@ -14,6 +14,7 @@ Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 Source: p11-kit-0.24.1.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:p11-kit_project:p11-kit
 Type: ipkg
 Description:   Provides a way to load and enumerate PKCS11 modules. Provides a
   standard configuration setup for installing PKCS11 modules in such a

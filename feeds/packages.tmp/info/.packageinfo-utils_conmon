@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/conmon/Makefile
 Build-Depends: libseccomp
 
 Package: conmon
-Version: 2.1.7-1
+Version: 2.1.8-1
 Depends: +libc @!arc +glib2 +BUILD_NLS:libintl-full +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Podman conmon
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: conmon-2.1.7.tar.gz
+Source: conmon-2.1.8.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

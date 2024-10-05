@@ -28,6 +28,9 @@ TARGET_DEVICES += ubnt_bullet-ac
 define Device/ubnt_bullet-m-xw
   $(Device/ubnt-xw)
   DEVICE_MODEL := Bullet M
+  DEVICE_ALT0_VENDOR := Ubiquiti
+  DEVICE_ALT0_MODEL := Rocket M
+  DEVICE_ALT0_VARIANT := XW
   DEVICE_PACKAGES += rssileds
   SUPPORTED_DEVICES += bullet-m-xw
 endef
@@ -158,6 +161,15 @@ define Device/ubnt_powerbeam-m5-xw
 endef
 TARGET_DEVICES += ubnt_powerbeam-m5-xw
 
+define Device/ubnt_powerbridge-m
+  $(Device/ubnt-xm)
+  SOC := ar7241
+  DEVICE_MODEL := PowerBridge M
+  DEVICE_PACKAGES += rssileds
+  SUPPORTED_DEVICES += bullet-m
+endef
+TARGET_DEVICES += ubnt_powerbridge-m
+
 define Device/ubnt_rocket-5ac-lite
   $(Device/ubnt-xc)
   SOC := qca9558
@@ -166,6 +178,15 @@ define Device/ubnt_rocket-5ac-lite
   DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca988x-ct
 endef
 TARGET_DEVICES += ubnt_rocket-5ac-lite
+
+define Device/ubnt_rocket-m
+  $(Device/ubnt-xm)
+  SOC := ar7241
+  DEVICE_MODEL := Rocket M
+  DEVICE_PACKAGES += rssileds
+  SUPPORTED_DEVICES += rocket-m
+endef
+TARGET_DEVICES += ubnt_rocket-m
 
 define Device/ubnt_routerstation_common
   DEVICE_PACKAGES := -kmod-ath9k -wpad-basic-mbedtls -uboot-envtools kmod-usb-ohci \
@@ -211,6 +232,13 @@ define Device/ubnt_routerstation-pro
 endef
 TARGET_DEVICES += ubnt_routerstation-pro
 
+define Device/ubnt_uk-ultra
+  $(Device/ubnt_unifiac)
+  DEVICE_MODEL := UniFi Swiss Army Knife Ultra
+  DEVICE_PACKAGES += rssileds -swconfig
+endef
+TARGET_DEVICES += ubnt_uk-ultra
+
 define Device/ubnt_unifi-ap
   $(Device/ubnt-bz)
   DEVICE_MODEL := UniFi AP
@@ -225,13 +253,6 @@ define Device/ubnt_unifi-ap-lr
   SUPPORTED_DEVICES += unifi ubnt,unifi ubnt,unifi-ap
 endef
 TARGET_DEVICES += ubnt_unifi-ap-lr
-
-define Device/ubnt_unifiac
-  DEVICE_VENDOR := Ubiquiti
-  SOC := qca9563
-  IMAGE_SIZE := 15488k
-  DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca988x-ct
-endef
 
 define Device/ubnt_unifiac-lite
   $(Device/ubnt_unifiac)

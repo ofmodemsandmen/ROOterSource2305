@@ -15,6 +15,7 @@ Maintainer: Phil Eichinger <phil@zankapfel.net>
 Source: mutt-2.1.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: GPL
+CPE-ID: cpe:/a:mutt:mutt
 Type: ipkg
 Description: 	Mutt is a small but very powerful text-based mail client for Unix
 	operating systems.

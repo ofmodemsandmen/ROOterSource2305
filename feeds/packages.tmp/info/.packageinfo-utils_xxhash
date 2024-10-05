@@ -12,8 +12,8 @@ Repository: base
 Title: Extremely fast hash algorithm
 Maintainer: Julien Malik <julien.malik@paraiso.me>
 Source: xxhash_0.8.1.tar.gz
-License: BSD-2-Clause,GPL-2.0-or-later
-LicenseFiles: LICENSE,cli/COPYING
+License: BSD-2-Clause GPL-2.0-or-later
+LicenseFiles: LICENSE cli/COPYING
 Type: ipkg
 Description:     xxHash is an Extremely fast Hash algorithm, running at RAM speed
   limits. It successfully completes the SMHasher test suite which
@@ -38,8 +38,8 @@ Repository: base
 Title: Extremely fast hash algorithm
 Maintainer: Julien Malik <julien.malik@paraiso.me>
 Source: xxhash_0.8.1.tar.gz
-License: BSD-2-Clause,GPL-2.0-or-later
-LicenseFiles: LICENSE,cli/COPYING
+License: BSD-2-Clause GPL-2.0-or-later
+LicenseFiles: LICENSE cli/COPYING
 Type: ipkg
 Description:     xxHash is an Extremely fast Hash algorithm, running at RAM speed
   limits. It successfully completes the SMHasher test suite which

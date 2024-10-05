@@ -12,6 +12,7 @@ Repository: base
 Title: A lightweight C library that eases the writing of UNIX daemons
 Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libdaemon-0.14.tar.gz
+CPE-ID: cpe:/a:libdaemon_project:libdaemon
 Type: ipkg
 Description: 	libdaemon is a lightweight C library that eases the writing of UNIX daemons.
 	It consists of the following parts:

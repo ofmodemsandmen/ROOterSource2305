@@ -3,7 +3,7 @@ Source-Makefile: package/network/utils/iptables/Makefile
 Package: libxtables
 Menu: 1
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +IPTABLES_CONNLABEL:libnetfilter-conntrack
 Conflicts: 
 Menu-Depends: 
@@ -14,6 +14,8 @@ Title: IPv4/IPv6 firewall - shared xtables library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 12
 Type: ipkg
 Description: IPv4/IPv6 firewall - shared xtables library
 https://netfilter.org/
@@ -29,7 +31,7 @@ Config:
 
 Package: libip4tc
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -40,6 +42,8 @@ Title: IPv4 firewall - shared libiptc library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 2
 Type: ipkg
 Description: IPv4 firewall - shared libiptc library
 https://netfilter.org/
@@ -48,7 +52,7 @@ https://netfilter.org/
 
 Package: libip6tc
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -59,6 +63,8 @@ Title: IPv6 firewall - shared libiptc library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 2
 Type: ipkg
 Description: IPv6 firewall - shared libiptc library
 https://netfilter.org/
@@ -67,7 +73,7 @@ https://netfilter.org/
 
 Package: libiptext
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -78,6 +84,8 @@ Title: IPv4 firewall - shared libiptext library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 0
 Type: ipkg
 Description: IPv4 firewall - shared libiptext library
 https://netfilter.org/
@@ -86,7 +94,7 @@ https://netfilter.org/
 
 Package: libiptext6
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -97,6 +105,8 @@ Title: IPv6 firewall - shared libiptext library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 0
 Type: ipkg
 Description: IPv6 firewall - shared libiptext library
 https://netfilter.org/
@@ -105,7 +115,7 @@ https://netfilter.org/
 
 Package: libiptext-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -116,6 +126,8 @@ Title: IPv4/IPv6 firewall - shared libiptext nft library
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
+ABI-Version: 0
 Type: ipkg
 Description: IPv4/IPv6 firewall - shared libiptext nft library
 https://netfilter.org/
@@ -124,7 +136,7 @@ https://netfilter.org/
 
 Package: xtables-legacy
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +kmod-ipt-core +libip4tc +IPV6:libip6tc +libiptext +IPV6:libiptext6 +libxtables
 Conflicts: 
 Menu-Depends: 
@@ -135,6 +147,7 @@ Title: IP firewall administration tool
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: IP firewall administration tool
 https://netfilter.org/
@@ -143,7 +156,7 @@ https://netfilter.org/
 
 Package: xtables-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libnftnl +libiptext +IPV6:libiptext6 +libiptext-nft +kmod-nft-compat
 Conflicts: 
 Menu-Depends: 
@@ -154,6 +167,7 @@ Title: IP firewall administration tool nft
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: IP firewall administration tool nft
 https://netfilter.org/
@@ -162,7 +176,7 @@ https://netfilter.org/
 
 Package: arptables-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +kmod-nft-arp +xtables-nft +kmod-arptables
 Conflicts: 
 Menu-Depends: 
@@ -173,6 +187,7 @@ Title: ARP firewall administration tool nft
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: ARP firewall administration tool nft
 https://netfilter.org/
@@ -181,7 +196,7 @@ https://netfilter.org/
 
 Package: ebtables-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +kmod-nft-bridge +xtables-nft +kmod-ebtables
 Conflicts: 
 Menu-Depends: 
@@ -192,6 +207,7 @@ Title: Bridge firewall administration tool nft
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Bridge firewall administration tool nft
 https://netfilter.org/
@@ -200,7 +216,7 @@ https://netfilter.org/
 
 Package: iptables-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +kmod-ipt-core +xtables-nft
 Conflicts: 
 Menu-Depends: 
@@ -211,6 +227,7 @@ Title: IP firewall administration tool nft
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Extra iptables nftables nft binaries.
   iptables-nft
@@ -224,7 +241,7 @@ https://netfilter.org/
 
 Package: iptables-zz-legacy
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +xtables-legacy
 Conflicts: 
 Menu-Depends: 
@@ -235,6 +252,7 @@ Title: IP firewall administration tool
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: IP firewall administration tool.
 
@@ -279,7 +297,7 @@ https://netfilter.org/
 
 Package: iptables-mod-conntrack-extra
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-conntrack-extra
 Conflicts: 
 Menu-Depends: 
@@ -290,6 +308,7 @@ Title: Extra connection tracking extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Extra iptables extensions for connection tracking.
 
@@ -310,7 +329,7 @@ https://netfilter.org/
 Package: iptables-mod-conntrack-label
 Submenu: Firewall
 Default: y if IPTABLES_CONNLABEL
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-conntrack-label @IPTABLES_CONNLABEL
 Conflicts: 
 Menu-Depends: 
@@ -321,6 +340,7 @@ Title: Connection tracking labeling extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Match and set label(s) on connection tracking entries
 
@@ -333,7 +353,7 @@ https://netfilter.org/
 
 Package: iptables-mod-extra
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-extra
 Conflicts: 
 Menu-Depends: 
@@ -344,6 +364,7 @@ Title: Other extra iptables extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Other extra iptables extensions.
 
@@ -360,7 +381,7 @@ https://netfilter.org/
 
 Package: iptables-mod-physdev
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-physdev
 Conflicts: 
 Menu-Depends: 
@@ -371,6 +392,7 @@ Title: physdev iptables extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: The iptables physdev match.
 https://netfilter.org/
@@ -379,7 +401,7 @@ https://netfilter.org/
 
 Package: iptables-mod-filter
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-filter
 Conflicts: 
 Menu-Depends: 
@@ -390,6 +412,7 @@ Title: Content inspection extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for packet content inspection.
 Includes support for:
@@ -404,7 +427,7 @@ https://netfilter.org/
 
 Package: iptables-mod-ipopt
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-ipopt
 Conflicts: 
 Menu-Depends: 
@@ -415,6 +438,7 @@ Title: IP/Packet option extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for matching/changing IP packet options.
 
@@ -439,7 +463,7 @@ https://netfilter.org/
 
 Package: iptables-mod-ipsec
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-ipsec
 Conflicts: 
 Menu-Depends: 
@@ -450,6 +474,7 @@ Title: IPsec extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for matching ipsec traffic.
 
@@ -464,7 +489,7 @@ https://netfilter.org/
 
 Package: iptables-mod-nat-extra
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-nat-extra
 Conflicts: 
 Menu-Depends: 
@@ -475,6 +500,7 @@ Title: Extra NAT extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for extra NAT targets.
 
@@ -487,7 +513,7 @@ https://netfilter.org/
 
 Package: iptables-mod-iprange
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-iprange
 Conflicts: 
 Menu-Depends: 
@@ -498,6 +524,7 @@ Title: IP range extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for matching ip ranges.
 
@@ -510,7 +537,7 @@ https://netfilter.org/
 
 Package: iptables-mod-cluster
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-cluster
 Conflicts: 
 Menu-Depends: 
@@ -521,6 +548,7 @@ Title: Match cluster extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for matching cluster.
 
@@ -544,7 +572,7 @@ https://netfilter.org/
 
 Package: iptables-mod-clusterip
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-clusterip
 Conflicts: 
 Menu-Depends: 
@@ -555,6 +583,7 @@ Title: Clusterip extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for CLUSTERIP.
  The CLUSTERIP target allows you to build load-balancing clusters of
@@ -570,7 +599,7 @@ https://netfilter.org/
 
 Package: iptables-mod-hashlimit
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-hashlimit
 Conflicts: 
 Menu-Depends: 
@@ -581,6 +610,7 @@ Title: hashlimit matching
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for hashlimit matching
 
@@ -593,7 +623,7 @@ https://netfilter.org/
 
 Package: iptables-mod-rpfilter
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-rpfilter
 Conflicts: 
 Menu-Depends: 
@@ -604,6 +634,7 @@ Title: rpfilter iptables extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for reverse path filter test on a packet
 
@@ -616,7 +647,7 @@ https://netfilter.org/
 
 Package: iptables-mod-led
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-led
 Conflicts: 
 Menu-Depends: 
@@ -627,6 +658,7 @@ Title: LED trigger iptables extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extension for triggering a LED.
 
@@ -639,7 +671,7 @@ https://netfilter.org/
 
 Package: iptables-mod-socket
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-socket
 Conflicts: 
 Menu-Depends: 
@@ -650,6 +682,7 @@ Title: Socket match iptables extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Socket match iptables extensions.
 
@@ -662,7 +695,7 @@ https://netfilter.org/
 
 Package: iptables-mod-tproxy
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-tproxy
 Conflicts: 
 Menu-Depends: 
@@ -673,6 +706,7 @@ Title: Transparent proxy iptables extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Transparent proxy iptables extensions.
 
@@ -685,7 +719,7 @@ https://netfilter.org/
 
 Package: iptables-mod-tee
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-tee
 Conflicts: 
 Menu-Depends: 
@@ -696,6 +730,7 @@ Title: TEE iptables extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: TEE iptables extensions.
 
@@ -708,7 +743,7 @@ https://netfilter.org/
 
 Package: iptables-mod-u32
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-u32
 Conflicts: 
 Menu-Depends: 
@@ -719,6 +754,7 @@ Title: U32 iptables extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: U32 iptables extensions.
 
@@ -731,7 +767,7 @@ https://netfilter.org/
 
 Package: iptables-mod-nflog
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-nfnetlink-log +kmod-ipt-nflog
 Conflicts: 
 Menu-Depends: 
@@ -742,6 +778,7 @@ Title: Netfilter NFLOG target
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description:  iptables extension for user-space logging via NFNETLINK.
 
@@ -754,7 +791,7 @@ https://netfilter.org/
 
 Package: iptables-mod-trace
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-debug
 Conflicts: 
 Menu-Depends: 
@@ -765,6 +802,7 @@ Title: Netfilter TRACE target
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description:  iptables extension for TRACE target
 
@@ -777,7 +815,7 @@ https://netfilter.org/
 
 Package: iptables-mod-nfqueue
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-nfnetlink-queue +kmod-ipt-nfqueue
 Conflicts: 
 Menu-Depends: 
@@ -788,6 +826,7 @@ Title: Netfilter NFQUEUE target
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description:  iptables extension for user-space queuing via NFNETLINK.
 
@@ -800,7 +839,7 @@ https://netfilter.org/
 
 Package: iptables-mod-checksum
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-checksum
 Conflicts: 
 Menu-Depends: 
@@ -811,6 +850,7 @@ Title: IP CHECKSUM target extension
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extension for the CHECKSUM calculation target
 https://netfilter.org/
@@ -819,7 +859,7 @@ https://netfilter.org/
 
 Package: ip6tables-nft
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc @IPV6 +kmod-ip6tables +xtables-nft
 Conflicts: 
 Menu-Depends: 
@@ -830,6 +870,7 @@ Title: IP firewall administration tool nft
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: Extra ip6tables nftables nft binaries.
   ip6tables-nft
@@ -843,7 +884,7 @@ https://netfilter.org/
 
 Package: ip6tables-zz-legacy
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc @IPV6 +kmod-ip6tables +xtables-legacy
 Conflicts: 
 Menu-Depends: 
@@ -854,6 +895,7 @@ Title: IPv6 firewall administration tool
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: IPv6 firewall administration tool
 https://netfilter.org/
@@ -862,7 +904,7 @@ https://netfilter.org/
 
 Package: ip6tables-extra
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ip6tables-extra
 Conflicts: 
 Menu-Depends: 
@@ -873,6 +915,7 @@ Title: IPv6 header matching modules
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables header matching modules for IPv6
 https://netfilter.org/
@@ -881,7 +924,7 @@ https://netfilter.org/
 
 Package: ip6tables-mod-nat
 Submenu: Firewall
-Version: 1.8.8-1
+Version: 1.8.8-2
 Depends: +libc +libxtables +kmod-ipt-nat6
 Conflicts: 
 Menu-Depends: 
@@ -892,6 +935,7 @@ Title: IPv6 NAT extensions
 Maintainer: 
 Source: iptables-1.8.8.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:iptables
 Type: ipkg
 Description: iptables extensions for IPv6-NAT targets.
 https://netfilter.org/

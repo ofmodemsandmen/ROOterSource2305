@@ -15,6 +15,7 @@ Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Source: spice-0.15.0.tar.bz2
 License: LGPL-2.1-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:spice_project:spice
 Type: ipkg
 Description: SPICE server library
 https://www.spice-space.org/index.html

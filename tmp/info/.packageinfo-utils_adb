@@ -12,6 +12,7 @@ Repository: base
 Title: Android Debug Bridge CLI tool
 Maintainer: Henryk Heisig <hyniu@o2.pl>
 Source: adb-6fe92d1a3fb17545d82d020a3c995f32e6b71f9d.tar.xz
+CPE-ID: cpe:/a:google:android_debug_bridge
 Type: ipkg
 Description:  Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device.
 http://tools.android.com/

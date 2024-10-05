@@ -4,7 +4,7 @@ Build-Types: host
 
 Package: python3-hatchling
 Submenu: Python
-Version: 1.17.1-1
+Version: 1.18.0-1
 Depends: +libc +python3-light +python3-email +python3-editables +python3-packaging +python3-pathspec +python3-pluggy +python3-trove-classifiers
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Languages
 Repository: base
 Title: Modern, extensible Python build backend
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hatchling-1.17.1.tar.gz
+Source: hatchling-1.18.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -26,7 +26,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-hatchling-src
 Submenu: Python
-Version: 1.17.1-1
+Version: 1.18.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: Modern, extensible Python build backend (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: hatchling-1.17.1.tar.gz
+Source: hatchling-1.18.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg

@@ -361,6 +361,26 @@ Description:     Translation for luci-app-frpc - 한국어 (Korean)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
+Package: luci-i18n-frpc-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-frpc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-frpc - lt translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-frpc - Lietuvių (Lithuanian)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
 Package: luci-i18n-frpc-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

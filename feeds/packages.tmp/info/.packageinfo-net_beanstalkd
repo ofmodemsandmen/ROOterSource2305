@@ -14,6 +14,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: beanstalkd-v1.13.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:wildbit:beanstalkd
 Type: ipkg
 Description:  Beanstalk is a simple, fast work queue.
 Philip Prindeville <philipp@redfish-solutions.com>

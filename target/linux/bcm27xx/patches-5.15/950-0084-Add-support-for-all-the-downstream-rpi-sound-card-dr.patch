@@ -14186,7 +14186,7 @@ Signed-off-by: Joerg Schambacher <joerg@hifiberry.com>
  config SND_SOC_RT5631
  	tristate "Realtek ALC5631/RT5631 CODEC"
  	depends on I2C
-@@ -1437,6 +1452,9 @@ config SND_SOC_TFA9879
+@@ -1438,6 +1453,9 @@ config SND_SOC_TFA9879
  	tristate "NXP Semiconductors TFA9879 amplifier"
  	depends on I2C
  
@@ -14196,7 +14196,7 @@ Signed-off-by: Joerg Schambacher <joerg@hifiberry.com>
  config SND_SOC_TFA989X
  	tristate "NXP/Goodix TFA989X (TFA1) amplifiers"
  	depends on I2C
-@@ -1943,4 +1961,8 @@ config SND_SOC_LPASS_TX_MACRO
+@@ -1944,4 +1962,8 @@ config SND_SOC_LPASS_TX_MACRO
  	select REGMAP_MMIO
  	tristate "Qualcomm TX Macro in LPASS(Low Power Audio SubSystem)"
  
@@ -16797,7 +16797,7 @@ Signed-off-by: Joerg Schambacher <joerg@hifiberry.com>
 +#endif  /* _TAS5713_H */
 --- a/sound/soc/soc-core.c
 +++ b/sound/soc/soc-core.c
-@@ -1231,7 +1231,7 @@ found:
+@@ -1234,7 +1234,7 @@ found:
   * Returns 0 on success, otherwise a negative error code.
   */
  int snd_soc_runtime_set_dai_fmt(struct snd_soc_pcm_runtime *rtd,
@@ -16806,7 +16806,7 @@ Signed-off-by: Joerg Schambacher <joerg@hifiberry.com>
  {
  	struct snd_soc_dai *cpu_dai;
  	struct snd_soc_dai *codec_dai;
-@@ -1240,7 +1240,15 @@ int snd_soc_runtime_set_dai_fmt(struct s
+@@ -1243,7 +1243,15 @@ int snd_soc_runtime_set_dai_fmt(struct s
  	int ret;
  
  	for_each_rtd_codec_dais(rtd, i, codec_dai) {
@@ -16823,7 +16823,7 @@ Signed-off-by: Joerg Schambacher <joerg@hifiberry.com>
  		if (ret != 0 && ret != -ENOTSUPP)
  			return ret;
  	}
-@@ -1249,8 +1257,21 @@ int snd_soc_runtime_set_dai_fmt(struct s
+@@ -1252,8 +1260,21 @@ int snd_soc_runtime_set_dai_fmt(struct s
  	 * Flip the polarity for the "CPU" end of a CODEC<->CODEC link
  	 * the component which has non_legacy_dai_naming is Codec
  	 */

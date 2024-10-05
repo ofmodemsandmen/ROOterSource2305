@@ -15,6 +15,7 @@ Maintainer:
 Source: libidn2-2.3.4.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYINGv2
+CPE-ID: cpe:/a:gnu:libidn2
 Type: ipkg
 Description:   Libidn2 is a free software implementation of IDNA2008,
   Punycode and TR46 in library form. It contains
@@ -42,6 +43,7 @@ Maintainer:
 Source: libidn2-2.3.4.tar.gz
 License: LGPL-3.0-or-later
 LicenseFiles: COPYING.LESSERv3
+CPE-ID: cpe:/a:gnu:libidn2
 Type: ipkg
 Description:   Libidn2 is a free software implementation of IDNA2008,
   Punycode and TR46 in library form. It contains

@@ -1,0 +1,45 @@
+Source-Makefile: feeds/packages/libs/gperftools/Makefile
+
+Package: gperftools-headers
+Version: 2.15-1
+Depends: +libc @!mips @!mipsel @!powerpc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Gperftools Headers
+Maintainer: John Audia <therealgraysky@proton.me>
+Source: gperftools-2.15.tar.gz
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Gperftools is a collection of a high-performance multi-threaded malloc() implementation, plus some pretty nifty performance analysis tools.
+  This package contains the headers.
+https://github.com/gperftools/gperftools
+John Audia <therealgraysky@proton.me>
+@@
+
+Package: gperftools-runtime
+Version: 2.15-1
+Depends: +libc +libunwind +libstdcpp @!mips @!mipsel @!powerpc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Repository: base
+Title: Gperftools Runtime
+Maintainer: John Audia <therealgraysky@proton.me>
+Source: gperftools-2.15.tar.gz
+License: BSD-3-Clause
+LicenseFiles: COPYING
+Type: ipkg
+Description:   Gperftools is a collection of a high-performance multi-threaded malloc() implementation, plus some pretty nifty performance analysis tools.
+  This package contains the shared objects and bins.
+https://github.com/gperftools/gperftools
+John Audia <therealgraysky@proton.me>
+@@
+
+

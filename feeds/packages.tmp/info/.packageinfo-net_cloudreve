@@ -3,7 +3,7 @@ Build-Depends: golang/host node/host node-yarn/host
 
 Package: cloudreve
 Submenu: Cloud Manager
-Version: 3.8.0-1
+Version: 3.8.3-1
 Depends: +libc @(aarch64||arm||i386||i686||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: A project helps you build your own cloud in minutes
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: cloudreve-3.8.0.tar.xz
+Source: cloudreve-3.8.3.tar.xz
 License: GPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg

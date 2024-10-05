@@ -19,6 +19,7 @@ Maintainer: Jeffery To <jeffery.to@gmail.com>
 Source: micropython-1.20.0.tar.xz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:micropython:micropython
 Type: ipkg
 Description: MicroPython is a lean and efficient implementation of the Python 3
 programming language that includes a small subset of the Python standard
@@ -46,6 +47,7 @@ Maintainer: Jeffery To <jeffery.to@gmail.com>
 Source: micropython-1.20.0.tar.xz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:micropython:micropython
 Type: ipkg
 Description: MicroPython is a lean and efficient implementation of the Python 3
 programming language that includes a small subset of the Python standard

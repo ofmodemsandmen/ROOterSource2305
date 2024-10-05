@@ -16,6 +16,7 @@ Maintainer:
 Source: ncurses-6.4.tar.gz
 License: MIT
 LicenseFiles: README
+CPE-ID: cpe:/a:gnu:ncurses
 Type: ipkg
 Description: Terminal Info Database (ncurses)
 http://www.gnu.org/software/ncurses/
@@ -36,6 +37,8 @@ Maintainer:
 Source: ncurses-6.4.tar.gz
 License: MIT
 LicenseFiles: README
+CPE-ID: cpe:/a:gnu:ncurses
+ABI-Version: 6
 Type: ipkg
 Description: Terminal handling library (Unicode)
 http://www.gnu.org/software/ncurses/
@@ -57,6 +60,7 @@ Maintainer:
 Source: ncurses-6.4.tar.gz
 License: MIT
 LicenseFiles: README
+CPE-ID: cpe:/a:gnu:ncurses
 Type: ipkg
 Description: Development files for the ncurses library
 

@@ -15,6 +15,7 @@ Maintainer: Julen Landa Alustiza <julen@zokormazo.info>
 Source: bwm-ng-0.6.3.tar.gz
 License: GPL2-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bwm-ng_project:bwm-ng
 Type: ipkg
 Description:   Bandwidth Monitor NG is a small and simple console-based live
   network and disk io bandwidth monitor.

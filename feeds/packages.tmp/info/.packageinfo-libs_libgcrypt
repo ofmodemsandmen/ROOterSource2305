@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: libgcrypt-1.10.2.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:gnupg:libgcrypt
 Type: ipkg
 Description:  This is a general purpose cryptographic library based on the code from
  GnuPG. It provides functions for all cryptograhic building blocks:

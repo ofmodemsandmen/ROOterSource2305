@@ -18,6 +18,7 @@ Title: The FRRouting (FRR) Software Routing Suite
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description:   FRRouting is free software that implements and manages various IPv4 and IPv6
   routing protocols.
@@ -43,6 +44,7 @@ Title: zebra library
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: zebra library
 https://www.frrouting.org/
@@ -66,6 +68,7 @@ Title: Python reload tool
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: Python reload tool
 https://www.frrouting.org/
@@ -87,6 +90,7 @@ Title: frr watchdog
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: frr watchdog
 https://www.frrouting.org/
@@ -108,6 +112,7 @@ Title: Zebra daemon
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: Zebra daemon
 https://www.frrouting.org/
@@ -128,6 +133,7 @@ Title: integrated shell for frr routing software
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: integrated shell for frr routing software
 https://www.frrouting.org/
@@ -148,6 +154,7 @@ Title: babeld routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: babeld routing engine
 https://www.frrouting.org/
@@ -168,6 +175,7 @@ Title: bfdd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: bfdd routing engine
 https://www.frrouting.org/
@@ -188,6 +196,7 @@ Title: bgpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: bgpd routing engine
 https://www.frrouting.org/
@@ -208,6 +217,7 @@ Title: eigrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: eigrpd routing engine
 https://www.frrouting.org/
@@ -228,6 +238,7 @@ Title: fabricd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: fabricd routing engine
 https://www.frrouting.org/
@@ -248,6 +259,7 @@ Title: isisd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: isisd routing engine
 https://www.frrouting.org/
@@ -268,6 +280,7 @@ Title: ldpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: ldpd routing engine
 https://www.frrouting.org/
@@ -288,6 +301,7 @@ Title: nhrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: nhrpd routing engine
 https://www.frrouting.org/
@@ -308,6 +322,7 @@ Title: ospfd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: ospfd routing engine
 https://www.frrouting.org/
@@ -328,6 +343,7 @@ Title: ospf6d routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: ospf6d routing engine
 https://www.frrouting.org/
@@ -348,6 +364,7 @@ Title: pathd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: pathd routing engine
 https://www.frrouting.org/
@@ -368,6 +385,7 @@ Title: pbrd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: pbrd routing engine
 https://www.frrouting.org/
@@ -388,6 +406,7 @@ Title: pimd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: pimd routing engine
 https://www.frrouting.org/
@@ -408,6 +427,7 @@ Title: ripd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: ripd routing engine
 https://www.frrouting.org/
@@ -428,6 +448,7 @@ Title: ripngd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: ripngd routing engine
 https://www.frrouting.org/
@@ -448,6 +469,7 @@ Title: staticd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: staticd routing engine
 https://www.frrouting.org/
@@ -468,6 +490,7 @@ Title: vrrpd routing engine
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: frr-2023-05-12.tar.gz
 License: GPL-2.0-only LGPL-2.1-only
+CPE-ID: cpe:/a:ffrouting:ffrouting
 Type: ipkg
 Description: vrrpd routing engine
 https://www.frrouting.org/

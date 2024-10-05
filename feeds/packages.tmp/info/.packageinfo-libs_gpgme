@@ -12,8 +12,9 @@ Repository: base
 Title: GnuPG Made Easy (GPGME) library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: gpgme-1.18.0.tar.bz2
-License: GPL-3.0-or-later
+License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:gpgme
 Type: ipkg
 Description: GnuPG Made Easy (GPGME) is a library designed to make access to GnuPG
 easier for applications. It provides a High-Level Crypto API for
@@ -37,8 +38,9 @@ Repository: base
 Title: GnuPG Made Easy (GPGME) library (C++)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: gpgme-1.18.0.tar.bz2
-License: GPL-3.0-or-later
+License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:gpgme
 Type: ipkg
 Description: GnuPG Made Easy (GPGME) library (C++)
 https://gnupg.org/software/gpgme/index.html

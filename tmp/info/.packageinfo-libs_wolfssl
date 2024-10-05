@@ -4,7 +4,7 @@ Build-Depends: libtool
 Package: libwolfssl
 Menu: 1
 Submenu: SSL
-Version: 5.5.4-stable-4
+Version: 5.7.2-stable-1
 Depends: +libc +WOLFSSL_HAS_DEVCRYPTO:kmod-cryptodev +WOLFSSL_HAS_AFALG:kmod-crypto-user
 Conflicts: libwolfsslcpu-crypto
 Menu-Depends: 
@@ -16,9 +16,11 @@ Category: Libraries
 Repository: base
 Title: wolfSSL library
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.4-stable.tar.gz
+Source: wolfssl-5.7.2-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
+CPE-ID: cpe:/a:wolfssl:wolfssl
+ABI-Version: 5.7.2.d242c60a7dbe0db779052245b6687e31
 Type: ipkg
 Description: wolfSSL (formerly CyaSSL) is an SSL library optimized for small
 footprint, both on disk and for memory use.
@@ -26,12 +28,12 @@ http://www.wolfssl.com/
 Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 Config:
-	source "package/libs/wolfssl/Config.in"
+	source "feeds/base/libs/wolfssl/Config.in"
 @@
 
 Package: libwolfsslcpu-crypto
 Submenu: SSL
-Version: 5.5.4-stable-4
+Version: 5.7.2-stable-1
 Depends: +libc @((aarch64||x86_64)&&(m||!TARGET_bcm27xx))
 Conflicts: 
 Menu-Depends: 
@@ -42,9 +44,11 @@ Category: Libraries
 Repository: base
 Title: wolfSSL library with AES CPU instructions
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.4-stable.tar.gz
+Source: wolfssl-5.7.2-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
+CPE-ID: cpe:/a:wolfssl:wolfssl
+ABI-Version: 5.7.2.d242c60a7dbe0db779052245b6687e31
 Type: ipkg
 Description: wolfSSL (formerly CyaSSL) is an SSL library optimized for small
 footprint, both on disk and for memory use.
@@ -66,7 +70,7 @@ Config:
 
 Package: libwolfssl-benchmark
 Submenu: SSL
-Version: 5.5.4-stable-4
+Version: 5.7.2-stable-1
 Depends: +libc libwolfssl
 Conflicts: 
 Menu-Depends: 
@@ -76,9 +80,10 @@ Category: Libraries
 Repository: base
 Title: wolfSSL Benchmark Utility
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: wolfssl-5.5.4-stable.tar.gz
+Source: wolfssl-5.7.2-stable.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSING COPYING
+CPE-ID: cpe:/a:wolfssl:wolfssl
 Type: ipkg
 Description: This is the wolfssl benchmark utility.
 http://www.wolfssl.com/

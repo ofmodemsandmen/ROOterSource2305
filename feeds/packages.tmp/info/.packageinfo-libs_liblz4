@@ -16,6 +16,8 @@ Maintainer: Darik Horn <dajhorn@vanadac.com>
 Source: lz4-1.9.4.tar.gz
 License: BSD-2-Clause
 LicenseFiles: LICENSE lib/LICENSE
+CPE-ID: cpe:/a:lz4_project:lz4
+ABI-Version: 1
 Type: ipkg
 Description:   LZ4 is a compression codec that features a very fast encoder and an
   even faster decoder. This package provides the liblz4 shared library.
@@ -41,6 +43,7 @@ Maintainer: Darik Horn <dajhorn@vanadac.com>
 Source: lz4-1.9.4.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE programs/COPYING
+CPE-ID: cpe:/a:lz4_project:lz4
 Type: ipkg
 Description:   LZ4 - Fast real-time compression algorithm.
   This package provides the lz4 binaries.

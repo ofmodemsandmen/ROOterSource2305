@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/dawn/Makefile
 
 Package: dawn
-Version: 2022-07-24-9e8060ea0908a1092cb07efead1226f494884a71-3
+Version: 2023-05-14-e036905ae3a5d079f899bbe46461fc78b4566349-1
 Depends: +libc +libubus +libubox +libblobmsg-json +libuci +libgcrypt +libiwinfo +umdns
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: Decentralized wifi controller
 Maintainer: Nick Hainke <vincent@systemli.org>
-Source: dawn-2022-07-24-9e8060ea0908a1092cb07efead1226f494884a71.tar.xz
+Source: dawn-2023-05-14-e036905ae3a5d079f899bbe46461fc78b4566349.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
 Type: ipkg

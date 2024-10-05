@@ -343,6 +343,25 @@ Description:     Translation for luci-app-minidlna - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-minidlna-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-minidlna
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-minidlna - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-minidlna - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-minidlna-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

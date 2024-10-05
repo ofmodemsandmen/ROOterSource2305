@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/ntpd/Makefile
 
 Package: ntpd
 Submenu: Time Synchronization
-Version: 4.2.8p15-4
+Version: 4.2.8p17-1
 Depends: +libc +libopenssl +libpthread +libcap +ntp-utils
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Repository: base
 Title: ISC ntp server
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Require-User: ntp=123:ntp=123
-Source: ntp-4.2.8p15.tar.gz
-License: Unique
+Source: ntp-4.2.8p17.tar.gz
+License: NTP
 LicenseFiles: COPYRIGHT html/copyright.html
+CPE-ID: cpe:/a:ntp:ntp
 Type: ipkg
 Description:  The ISC ntp suite is a collection of tools used to synchronize the
  system clock with remote NTP time servers and run/monitor local NTP
@@ -28,7 +29,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntpdate
 Submenu: Time Synchronization
-Version: 4.2.8p15-4
+Version: 4.2.8p17-1
 Depends: +libc +libopenssl +libpthread +libcap
 Conflicts: 
 Menu-Depends: 
@@ -38,9 +39,10 @@ Category: Network
 Repository: base
 Title: ISC ntp date
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p15.tar.gz
-License: Unique
+Source: ntp-4.2.8p17.tar.gz
+License: NTP
 LicenseFiles: COPYRIGHT html/copyright.html
+CPE-ID: cpe:/a:ntp:ntp
 Type: ipkg
 Description:  The ISC ntp suite is a collection of tools used to synchronize the
  system clock with remote NTP time servers and run/monitor local NTP
@@ -53,7 +55,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntp-utils
 Submenu: Time Synchronization
-Version: 4.2.8p15-4
+Version: 4.2.8p17-1
 Depends: +libc +libopenssl +libpthread +libcap +libevent2-pthreads
 Conflicts: 
 Menu-Depends: 
@@ -63,9 +65,10 @@ Category: Network
 Repository: base
 Title: ISC ntp utilities
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p15.tar.gz
-License: Unique
+Source: ntp-4.2.8p17.tar.gz
+License: NTP
 LicenseFiles: COPYRIGHT html/copyright.html
+CPE-ID: cpe:/a:ntp:ntp
 Type: ipkg
 Description:  The ISC ntp suite is a collection of tools used to synchronize the
  system clock with remote NTP time servers and run/monitor local NTP
@@ -78,7 +81,7 @@ Peter Wagner <tripolar@gmx.at>
 
 Package: ntp-keygen
 Submenu: Time Synchronization
-Version: 4.2.8p15-4
+Version: 4.2.8p17-1
 Depends: +libc +libopenssl +libpthread +libcap +libevent2-core
 Conflicts: 
 Menu-Depends: 
@@ -88,9 +91,10 @@ Category: Network
 Repository: base
 Title: ISC ntp keygen
 Maintainer: Peter Wagner <tripolar@gmx.at>
-Source: ntp-4.2.8p15.tar.gz
-License: Unique
+Source: ntp-4.2.8p17.tar.gz
+License: NTP
 LicenseFiles: COPYRIGHT html/copyright.html
+CPE-ID: cpe:/a:ntp:ntp
 Type: ipkg
 Description:  The ISC ntp suite is a collection of tools used to synchronize the
  system clock with remote NTP time servers and run/monitor local NTP

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-17 11:53+0000\n"
-"Last-Translator: Daniele Olivo <daniele.olivo1996@gmail.com>\n"
+"PO-Revision-Date: 2024-07-03 10:09+0000\n"
+"Last-Translator: moreno <morenomatassini95@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdynapoint/it/>\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:90
 msgid "Activate this wVIF if status is:"
@@ -52,34 +52,38 @@ msgstr "DynaPoint"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:54
 msgid "Dynamic Access Point Manager"
-msgstr ""
+msgstr "Gestore punti di accesso dinamici"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:67
 msgid "Enabled"
-msgstr "Abilitato"
+msgstr "Abilita"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:27
 msgid ""
 "Failure counter after how many failed download attempts, the state is "
 "considered as offline"
 msgstr ""
+"Contatore errori dopo quanti tentativi di download falliti, lo stato è "
+"considerato offline"
 
 #: applications/luci-app-dynapoint/root/usr/share/rpcd/acl.d/luci-app-dynapoint.json:3
 msgid "Grant UCI access for luci-app-dynapoint"
-msgstr ""
+msgstr "Concedi l'accesso UCI per luci-app-dynapoint"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:56
 msgid "List of Wireless Virtual Interfaces (wVIF)"
-msgstr ""
+msgstr "Elenco di interfacce virtuali wireless (wVIF)"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:20
 msgid "List of host addresses"
-msgstr ""
+msgstr "Elenco di indirizzi host"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:20
 msgid ""
 "List of host addresses (url or IP) to track and request http headers from"
 msgstr ""
+"Elenco di indirizzi host (url o IP) per monitorare e richiedere le "
+"intestazioni http da"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:85
 msgid "Mode"
@@ -107,7 +111,7 @@ msgstr "Sezione Software"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:27
 msgid "Switch_to_offline threshold"
-msgstr ""
+msgstr "Soglia Switch_to_offline"
 
 #: applications/luci-app-dynapoint/luasrc/model/cbi/dynapoint.lua:23
 msgid "Test-run interval"

@@ -14,6 +14,7 @@ Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
 Source: radsecproxy-1.9.1.tar.gz
 License: BSD-3-CLAUSE
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:uninett:radsecproxy
 Type: ipkg
 Description:   A generic radius proxy for UDP/TLS (RadSec)
 https://radsecproxy.github.io/

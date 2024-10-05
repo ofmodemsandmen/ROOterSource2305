@@ -14,6 +14,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: Apache Portable Runtime Utility Library
 http://apr.apache.org/
@@ -34,6 +35,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - OpenSSL driver
 http://apr.apache.org/
@@ -54,6 +56,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - MySQL driver
 http://apr.apache.org/
@@ -74,6 +77,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - ODBC driver
 http://apr.apache.org/
@@ -94,6 +98,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - PostgreSQL driver
 http://apr.apache.org/
@@ -114,6 +119,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - SQLite3 driver
 http://apr.apache.org/
@@ -134,6 +140,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - GDBM dbm driver
 http://apr.apache.org/
@@ -154,6 +161,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-util-1.6.1.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:apr-util
 Type: ipkg
 Description: libaprutil - LDAP driver
 http://apr.apache.org/

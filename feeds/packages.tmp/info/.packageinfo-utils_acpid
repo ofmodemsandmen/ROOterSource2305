@@ -14,6 +14,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: acpid-2.0.34.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tedfelix:acpid
 Type: ipkg
 Description:   The ACPI Daemon (acpid) With Netlink Support
 https://sourceforge.net/projects/acpid2/

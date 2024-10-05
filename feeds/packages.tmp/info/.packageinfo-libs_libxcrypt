@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libxcrypt/Makefile
 
 Package: libxcrypt
-Version: 4.4.33-1
+Version: 4.4.36-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Extended crypt library
 Maintainer: 
-Source: libxcrypt-4.4.33.tar.xz
+Source: libxcrypt-4.4.36.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
 Type: ipkg

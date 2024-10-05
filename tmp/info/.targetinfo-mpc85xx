@@ -8,7 +8,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -128,7 +128,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -209,6 +209,22 @@ Build firmware images for Extreme Networks WS-AP3825i
 
 @@
 
+Target-Profile: DEVICE_hpe_msm460
+Target-Profile-Name: Hewlett-Packard MSM460
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,msm460
+
+
+Target-Profile-Description:
+Build firmware images for Hewlett-Packard MSM460
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_ocedo_panda
 Target-Profile-Name: OCEDO Panda
 Target-Profile-Packages: kmod-rtc-ds1307 
@@ -234,7 +250,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:

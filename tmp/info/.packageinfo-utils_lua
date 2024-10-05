@@ -2,7 +2,7 @@ Source-Makefile: package/utils/lua/Makefile
 Build-Types: host
 
 Package: liblua
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -15,6 +15,8 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lua-5.1.5.tar.gz
 License: MIT
 LicenseFiles: COPYRIGHT
+CPE-ID: cpe:/a:lua:lua
+ABI-Version: 5.1.5
 Type: ipkg
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
@@ -26,7 +28,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: lua
 Submenu: Lua
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: +libc +liblua
 Conflicts: 
 Menu-Depends: 
@@ -39,6 +41,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lua-5.1.5.tar.gz
 License: MIT
 LicenseFiles: COPYRIGHT
+CPE-ID: cpe:/a:lua:lua
 Type: ipkg
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
@@ -50,7 +53,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: luac
 Submenu: Lua
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: +libc +liblua
 Conflicts: 
 Menu-Depends: 
@@ -63,6 +66,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lua-5.1.5.tar.gz
 License: MIT
 LicenseFiles: COPYRIGHT
+CPE-ID: cpe:/a:lua:lua
 Type: ipkg
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 
@@ -74,7 +78,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: lua-examples
 Submenu: Lua
-Version: 5.1.5-10
+Version: 5.1.5-11
 Depends: +libc lua
 Conflicts: 
 Menu-Depends: 
@@ -87,6 +91,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lua-5.1.5.tar.gz
 License: MIT
 LicenseFiles: COPYRIGHT
+CPE-ID: cpe:/a:lua:lua
 Type: ipkg
 Description:  Lua is a powerful light-weight programming language designed for extending 
  applications. Lua is also frequently used as a general-purpose, stand-alone 

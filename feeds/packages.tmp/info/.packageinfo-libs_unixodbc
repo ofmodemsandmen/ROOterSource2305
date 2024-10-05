@@ -16,6 +16,7 @@ Title: unixODBC (libraries)
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: unixODBC-2.3.9.tar.gz
 License: prog GPL libs LGPL
+CPE-ID: cpe:/a:unixodbc:unixodbc
 Type: ipkg
 Description:   unixODBC is an Open Source ODBC sub-system and an ODBC SDK for Linux,
   Mac OSX, and UNIX.
@@ -37,6 +38,7 @@ Title: unixODBC Tools
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: unixODBC-2.3.9.tar.gz
 License: prog GPL libs LGPL
+CPE-ID: cpe:/a:unixodbc:unixodbc
 Type: ipkg
 Description:   Command Line Tools to help install a driver and work with SQL.
 http://www.unixodbc.org
@@ -57,6 +59,7 @@ Title: Postgresql driver for ODBC
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: unixODBC-2.3.9.tar.gz
 License: prog GPL libs LGPL
+CPE-ID: cpe:/a:unixodbc:unixodbc
 Type: ipkg
 Description: 	Postgresql driver for ODBC.
 http://www.unixodbc.org

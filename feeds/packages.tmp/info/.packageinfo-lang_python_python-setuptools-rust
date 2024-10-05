@@ -1,0 +1,56 @@
+Source-Makefile: feeds/packages/lang/python/python-setuptools-rust/Makefile
+Build-Depends/host: python3/host python-build/host python-installer/host python-wheel/host python-setuptools-scm/host python-semantic-version/host python-typing-extensions/host rust/host
+Build-Types: host
+
+Package: python3-setuptools-rust
+Submenu: Python
+Version: 1.7.0-2
+Depends: +libc +python3-light +python3-logging +python3-semantic-version +python3-setuptools +python3-typing-extensions +rust
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Setuptools Rust extension plugin
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: setuptools-rust-1.7.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description: setuptools-rust is a plugin for setuptools to build Rust Python
+extensions implemented with PyO3 or rust-cpython.
+https://github.com/PyO3/setuptools-rust
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-setuptools-rust-src
+Submenu: Python
+Version: 1.7.0-2
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Setuptools Rust extension plugin (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: setuptools-rust-1.7.0.tar.gz
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Build-Only: 1
+Description:     setuptools-rust is a plugin for setuptools to build Rust Python
+extensions implemented with PyO3 or rust-cpython.
+
+    This package contains the Python source files for python3-setuptools-rust.
+https://github.com/PyO3/setuptools-rust
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-setuptools-rust
+@@
+
+

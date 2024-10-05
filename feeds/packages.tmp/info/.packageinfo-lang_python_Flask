@@ -15,6 +15,7 @@ Maintainer: Michal Vasilek <michal.vasilek@nic.cz>
 Source: Flask-2.0.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
+CPE-ID: cpe:/a:palletsprojects:flask
 Type: ipkg
 Description:   Flask is a microframework for Python based on Werkzeug, Jinja 2 and good
   intentions. And before you ask: It.s BSD licensed!
@@ -37,6 +38,7 @@ Maintainer: Michal Vasilek <michal.vasilek@nic.cz>
 Source: Flask-2.0.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
+CPE-ID: cpe:/a:palletsprojects:flask
 Type: ipkg
 Description:       Flask is a microframework for Python based on Werkzeug, Jinja 2 and good
   intentions. And before you ask: It.s BSD licensed!

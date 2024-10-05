@@ -8,7 +8,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1995,6 +1995,22 @@ Target-Profile-SupportedDevices: hiwifi,hc6361
 
 Target-Profile-Description:
 Build firmware images for HiWiFi HC6361
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_huawei_ap5030dn
+Target-Profile-Name: Huawei AP5030DN
+Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: huawei,ap5030dn
+
+
+Target-Profile-Description:
+Build firmware images for Huawei AP5030DN
 
 
 
@@ -5461,6 +5477,23 @@ Build firmware images for Ubiquiti Bullet AC
 @@
 
 Target-Profile: DEVICE_ubnt_bullet-m-xw
+Target-Profile-Name: Ubiquiti Rocket M XW (Ubiquiti Bullet M XW)
+Target-Profile-Packages: kmod-usb2 rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,bullet-m-xw bullet-m-xw
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti Bullet M XW
+Alternative device titles:
+- Ubiquiti Rocket M XW
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_bullet-m-xw
 Target-Profile-Name: Ubiquiti Bullet M XW
 Target-Profile-Packages: kmod-usb2 rssileds 
 Target-Profile-hasImageMetadata: 1
@@ -5469,7 +5502,8 @@ Target-Profile-SupportedDevices: ubnt,bullet-m-xw bullet-m-xw
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti Bullet M XW
-
+Alternative device titles:
+- Ubiquiti Rocket M XW
 
 
 
@@ -5732,6 +5766,22 @@ Build firmware images for Ubiquiti PowerBeam M5 XW
 
 @@
 
+Target-Profile: DEVICE_ubnt_powerbridge-m
+Target-Profile-Name: Ubiquiti PowerBridge M XM
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,powerbridge-m bullet-m
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti PowerBridge M XM
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_ubnt_rocket-5ac-lite
 Target-Profile-Name: Ubiquiti Rocket 5AC Lite
 Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
@@ -5741,6 +5791,22 @@ Target-Profile-SupportedDevices: ubnt,rocket-5ac-lite
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti Rocket 5AC Lite
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_rocket-m
+Target-Profile-Name: Ubiquiti Rocket M XM
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,rocket-m rocket-m
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti Rocket M XM
 
 
 
@@ -5773,6 +5839,22 @@ Target-Profile-SupportedDevices: ubnt,routerstation-pro
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti RouterStation Pro
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_uk-ultra
+Target-Profile-Name: Ubiquiti UniFi Swiss Army Knife Ultra
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct rssileds -swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,uk-ultra
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi Swiss Army Knife Ultra
 
 
 
@@ -5933,7 +6015,7 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6014,6 +6096,22 @@ Target-Profile-SupportedDevices: mikrotik,routerboard-922uags-5hpacd rb-922uags-
 
 Target-Profile-Description:
 Build firmware images for MikroTik RouterBOARD 922UAGS-5HPacD
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mikrotik_routerboard-951g-2hnd
+Target-Profile-Name: MikroTik RouterBOARD 951G-2HnD
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mikrotik,routerboard-951g-2hnd rb-951g-2hnd
+
+
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD 951G-2HnD
 
 
 
@@ -6222,7 +6320,7 @@ Target-Features: dt gpio mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6773,7 +6871,7 @@ Target-Features: dt gpio low_mem mips16 pci ramdisk small_flash squashfs usb usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -7865,38 +7963,6 @@ Target-Profile-SupportedDevices: ubnt,nanostation-loco-m bullet-m
 Target-Profile-Default: n
 Target-Profile-Description:
 Build firmware images for Ubiquiti Nanostation Loco M XM
-
-
-
-
-
-@@
-
-Target-Profile: DEVICE_ubnt_powerbridge-m
-Target-Profile-Name: Ubiquiti PowerBridge M XM
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: ubnt,powerbridge-m bullet-m
-
-
-Target-Profile-Description:
-Build firmware images for Ubiquiti PowerBridge M XM
-
-
-
-
-
-@@
-
-Target-Profile: DEVICE_ubnt_rocket-m
-Target-Profile-Name: Ubiquiti Rocket M XM
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: ubnt,rocket-m rocket-m
-
-
-Target-Profile-Description:
-Build firmware images for Ubiquiti Rocket M XM
 
 
 

@@ -8,7 +8,7 @@ Target-Features: dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -113,7 +113,7 @@ Build firmware images for Netgear WAX218
 
 Target-Profile: DEVICE_prpl_haze
 Target-Profile-Name: prpl Foundation Haze
-Target-Profile-Packages:  ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci 
+Target-Profile-Packages:  ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci mkf2fs f2fsck kmod-fs-f2fs kmod-leds-lp5562 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: prpl,haze
 

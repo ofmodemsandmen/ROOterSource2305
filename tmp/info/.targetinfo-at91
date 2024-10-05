@@ -8,7 +8,7 @@ Target-Features: ext4 gpio squashfs targz ubifs usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: arm_v7 dt ext4 fpu gpio pcmcia rtc squashfs targz ubifs usbgadg
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -57,7 +57,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs targz ubifs usb us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a5+vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -186,7 +186,7 @@ Target-Features: dt ext4 gpio rtc squashfs targz ubifs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

@@ -14,6 +14,7 @@ Maintainer: Nicholas Smith <nicholas@nbembedded.com>
 Source: libmbim-1.28.4.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:freedesktop:libmbim
 Type: ipkg
 Description:   Helper library to talk to MBIM enabled modems.
   Add mbim-utils for extra utilities.
@@ -35,6 +36,7 @@ Maintainer: Nicholas Smith <nicholas@nbembedded.com>
 Source: libmbim-1.28.4.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:freedesktop:libmbim
 Type: ipkg
 Description: Utilities to talk to MBIM enabled modems
 https://www.freedesktop.org/wiki/Software/libmbim

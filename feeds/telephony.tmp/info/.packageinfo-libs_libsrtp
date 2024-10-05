@@ -15,6 +15,7 @@ Maintainer: Jiri Slachta <jiri@slachta.eu>
 Source: libsrtp-2.4.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+ABI-Version: 1
 Type: ipkg
 Description: Open-source implementation of the Secure Real-time Transport
 Protocol (SRTP) originally authored by Cisco Systems, Inc.

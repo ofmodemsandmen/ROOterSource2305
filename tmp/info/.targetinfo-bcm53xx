@@ -8,7 +8,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -33,7 +33,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -47,6 +47,22 @@ Target-Profile-Description:
 	Package set compatible with any hardware using Broadcom BCM47xx or
 	BCM535x SoCs with an ARM CPU like the BCM4707, BCM4708, BCM4709,
 	BCM53010
+@@
+
+Target-Profile: DEVICE_asus_rt-ac3100
+Target-Profile-Name: ASUS RT-AC3100
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366b1-pcie wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: asus,rt-ac3100
+
+
+Target-Profile-Description:
+Build firmware images for ASUS RT-AC3100
+
+
+
+
+
 @@
 
 Target-Profile: DEVICE_asus_rt-ac56u
@@ -498,6 +514,40 @@ Build firmware images for SmartRG SR400ac
 @@
 
 Target-Profile: DEVICE_phicomm_k3
+Target-Profile-Name: Wavlink QUANTUM DAX (PHICOMM K3)
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: phicomm,k3
+
+
+Target-Profile-Description:
+Build firmware images for PHICOMM K3
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
+
+
+
+@@
+
+Target-Profile: DEVICE_phicomm_k3
+Target-Profile-Name: Wavlink WL-WN538A8 (PHICOMM K3)
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: phicomm,k3
+
+
+Target-Profile-Description:
+Build firmware images for PHICOMM K3
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
+
+
+
+@@
+
+Target-Profile: DEVICE_phicomm_k3
 Target-Profile-Name: PHICOMM K3
 Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
 Target-Profile-hasImageMetadata: 0
@@ -506,8 +556,9 @@ Target-Profile-SupportedDevices: phicomm,k3
 
 Target-Profile-Description:
 Build firmware images for PHICOMM K3
-
-
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
 
 
 

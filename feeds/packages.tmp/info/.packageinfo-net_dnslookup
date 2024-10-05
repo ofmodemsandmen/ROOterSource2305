@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: dnslookup
 Submenu: IP Addresses and Names
-Version: 1.9.1-1
+Version: 1.9.2-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Network
 Repository: base
 Title: Simple command line utility to make DNS lookups to the specified server
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: dnslookup-1.9.1.tar.gz
+Source: dnslookup-1.9.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

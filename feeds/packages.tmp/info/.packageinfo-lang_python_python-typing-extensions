@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: python3-typing-extensions
 Submenu: Python
-Version: 4.6.3-1
+Version: 4.8.0-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Category: Languages
 Repository: base
 Title: Backported and Experimental Type Hints
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: typing_extensions-4.6.3.tar.gz
+Source: typing_extensions-4.8.0.tar.gz
 License: Python-2.0.1 0BSD
 LicenseFiles: LICENSE
 Type: ipkg
@@ -33,7 +33,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-typing-extensions-src
 Submenu: Python
-Version: 4.6.3-1
+Version: 4.8.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -43,7 +43,7 @@ Category: Languages
 Repository: base
 Title: Backported and Experimental Type Hints (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: typing_extensions-4.6.3.tar.gz
+Source: typing_extensions-4.8.0.tar.gz
 License: Python-2.0.1 0BSD
 LicenseFiles: LICENSE
 Type: ipkg

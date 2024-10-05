@@ -15,6 +15,8 @@ Maintainer:
 Source: fuse-3.10.5.tar.xz
 License: LGPL-2.1-only
 LicenseFiles: LGPL2.txt
+CPE-ID: cpe:/a:fuse_project:fuse
+ABI-Version: 3
 Type: ipkg
 Description:  fuse3 (Filesystem in UserSpacE)
  This package contains the fuse3 shared libraries, needed by other programs.
@@ -38,6 +40,7 @@ Maintainer:
 Source: fuse-3.10.5.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:fuse_project:fuse
 Type: ipkg
 Description:  fuse3 (Filesystem in UserSpacE)
  This package contains the FUSE utilities.

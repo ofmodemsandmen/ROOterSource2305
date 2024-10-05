@@ -17,6 +17,7 @@ Title: Routing control utility (minimal)
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Routing control utility (minimal)
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -38,6 +39,7 @@ Title: Routing control utility (full)
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Routing control utility (full)
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -59,6 +61,7 @@ Title: Traffic control module - iptables action
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Traffic control module - iptables action
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -81,6 +84,7 @@ Title: Traffic control utility (minimal)
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Traffic control utility (minimal)
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -102,6 +106,7 @@ Title: Traffic control utility (bpf)
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Traffic control utility (bpf)
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -123,6 +128,7 @@ Title: Traffic control utility (full)
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Traffic control utility (full)
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -143,6 +149,7 @@ Title: General netlink utility frontend
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: General netlink utility frontend
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -163,6 +170,7 @@ Title: Bridge configuration utility from iproute2
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Bridge configuration utility from iproute2
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -183,6 +191,7 @@ Title: Socket statistics utility
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Socket statistics utility
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -203,6 +212,7 @@ Title: Network statistics utility
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Network statistics utility
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -223,6 +233,7 @@ Title: Network devlink utility
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Network devlink utility
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
@@ -243,6 +254,7 @@ Title: Network rdma utility
 Maintainer: Russell Senior <russell@personaltelco.net>
 Source: iproute2-6.3.0.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iproute2_project:iproute2
 Type: ipkg
 Description: Network rdma utility
 http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2

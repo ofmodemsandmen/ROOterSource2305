@@ -16,6 +16,7 @@ Maintainer: Morteza Milani <milani@pichak.co>
 Source: LuaJIT-2.1.0-beta3.tar.gz
 License: MIT
 LicenseFiles: COPYRIGHT
+CPE-ID: cpe:/a:luajit:luajit
 Type: ipkg
 Description:  LuaJIT is a Just-In-Time (JIT) compiler for the Lua programming language. *** Requires GCC Multilib on host system to build! ***
 https://www.luajit.org

@@ -17,6 +17,7 @@ Maintainer: Nuno Goncalves <nunojpg@gmail.com>
 Source: tcsh-6.22.04.tar.gz
 License: BSD-3-Clause
 LicenseFiles: Copyright
+CPE-ID: cpe:/a:tcsh:tcsh
 Type: ipkg
 Description: 	Tcsh is an enhanced, but completely compatible
 	version of the Berkeley UNIX C shell (csh). It

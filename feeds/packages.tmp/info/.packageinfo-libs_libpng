@@ -13,6 +13,8 @@ Title: A PNG format files handling library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: libpng-1.6.39.tar.xz
 License: Libpng GPL-2.0-or-later BSD-3-Clause
+LicenseFiles: LICENSE contrib/gregbook/COPYING contrib/gregbook/LICENSE
+CPE-ID: cpe:/a:libpng:libpng
 Type: ipkg
 Description: A PNG format files handling library
 http://www.libpng.org/pub/png/libpng.html

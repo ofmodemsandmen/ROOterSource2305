@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 Package: luci-theme-material
 Submenu: 4. Themes
 Version: x
-Depends: +libc 
+Depends: +libc +luci-base
 Conflicts: 
 Menu-Depends: 
 Provides: 

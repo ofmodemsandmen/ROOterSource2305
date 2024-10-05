@@ -1,7 +1,7 @@
 Source-Makefile: package/network/services/odhcpd/Makefile
 
 Package: odhcpd
-Version: 2023-06-24-52112643308bb02a3b4fa2894dd7d4340ba4a237-1
+Version: 2023-10-24-d8118f6e76e5519881f9a37137c3a06b3cb60fd2-1
 Depends: +libc +libubox +libuci +libubus +libnl-tiny
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: OpenWrt DHCPv6(-PD)/RA Server & Relay and DHCPv4 server
 Maintainer: Hans Dedecker <dedeckeh@gmail.com>
-Source: odhcpd-2023-06-24-52112643308bb02a3b4fa2894dd7d4340ba4a237.tar.xz
+Source: odhcpd-2023-10-24-d8118f6e76e5519881f9a37137c3a06b3cb60fd2.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   odhcpd is a daemon for serving and relaying IP management protocols to
@@ -37,7 +37,7 @@ endmenu
 @@
 
 Package: odhcpd-ipv6only
-Version: 2023-06-24-52112643308bb02a3b4fa2894dd7d4340ba4a237-1
+Version: 2023-10-24-d8118f6e76e5519881f9a37137c3a06b3cb60fd2-1
 Depends: +libc +libubox +libuci +libubus +libnl-tiny @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +48,7 @@ Category: Network
 Repository: base
 Title: OpenWrt DHCPv6(-PD)/RA Server & Relay
 Maintainer: Hans Dedecker <dedeckeh@gmail.com>
-Source: odhcpd-2023-06-24-52112643308bb02a3b4fa2894dd7d4340ba4a237.tar.xz
+Source: odhcpd-2023-10-24-d8118f6e76e5519881f9a37137c3a06b3cb60fd2.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   odhcpd is a daemon for serving and relaying IP management protocols to

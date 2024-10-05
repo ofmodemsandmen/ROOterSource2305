@@ -12,7 +12,7 @@ Repository: base
 Title: Base64 Encoding/Decoding Routines
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: libb64-2.0.0.tar.gz
-License: PublicDomain
+License: Public-Domain
 LicenseFiles: LICENSE.md
 Type: ipkg
 Build-Only: 1

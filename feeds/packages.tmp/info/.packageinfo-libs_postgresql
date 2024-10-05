@@ -16,6 +16,7 @@ Title: PostgreSQL client library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
+CPE-ID: cpe:/a:postgresql:postgresql
 Type: ipkg
 Description: PostgreSQL client library.
 http://www.postgresql.org/
@@ -36,6 +37,7 @@ Title: Command Line Interface (CLI) to PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
+CPE-ID: cpe:/a:postgresql:postgresql
 Type: ipkg
 Description: Command Line Interface (CLI) to PostgreSQL databases.
 http://www.postgresql.org/
@@ -56,6 +58,7 @@ Title: Command Line extras for PostgreSQL databases
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
+CPE-ID: cpe:/a:postgresql:postgresql
 Type: ipkg
 Description: Command Line extras for PostgreSQL databases.
 http://www.postgresql.org/
@@ -77,6 +80,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Require-User: postgres=5432:postgres=5432
 Source: postgresql-15.1.tar.bz2
 License: PostgreSQL
+CPE-ID: cpe:/a:postgresql:postgresql
 Type: ipkg
 Description: PostgreSQL databases Server.
 http://www.postgresql.org/

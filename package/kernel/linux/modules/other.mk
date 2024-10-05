@@ -780,6 +780,18 @@ endef
 $(eval $(call KernelPackage,rtc-s35390a))
 
 
+define KernelPackage/mfd
+  SUBMENU:=$(OTHER_MENU)
+  TITLE:=Multifunction device drivers
+  HIDDEN:=1
+  KCONFIG:=CONFIG_MFD_CORE
+  FILES:=$(LINUX_DIR)/drivers/mfd/mfd-core.ko
+  AUTOLOAD:=$(call AutoLoad,10,mfd-core)
+endef
+
+$(eval $(call KernelPackage,mfd))
+
+
 define KernelPackage/mtdtests
   SUBMENU:=$(OTHER_MENU)
   TITLE:=MTD subsystem tests
@@ -792,6 +804,7 @@ define KernelPackage/mtdtests
 	$(LINUX_DIR)/drivers/mtd/tests/mtd_speedtest.ko \
 	$(LINUX_DIR)/drivers/mtd/tests/mtd_stresstest.ko \
 	$(LINUX_DIR)/drivers/mtd/tests/mtd_subpagetest.ko \
+	$(LINUX_DIR)/drivers/mtd/tests/mtd_test.ko \
 	$(LINUX_DIR)/drivers/mtd/tests/mtd_torturetest.ko
 endef
 
@@ -1013,31 +1026,33 @@ define KernelPackage/zram/description
 endef
 
 define KernelPackage/zram/config
-  choice
-    prompt "ZRAM Default compressor"
-    default ZRAM_DEF_COMP_LZORLE
+  if PACKAGE_kmod-zram
+    choice
+      prompt "ZRAM Default compressor"
+      default ZRAM_DEF_COMP_LZORLE
 
-  config ZRAM_DEF_COMP_LZORLE
+    config ZRAM_DEF_COMP_LZORLE
             bool "lzo-rle"
             select PACKAGE_kmod-lib-lzo
 
-  config ZRAM_DEF_COMP_LZO
+    config ZRAM_DEF_COMP_LZO
             bool "lzo"
             select PACKAGE_kmod-lib-lzo
 
-  config ZRAM_DEF_COMP_LZ4
+    config ZRAM_DEF_COMP_LZ4
             bool "lz4"
             select PACKAGE_kmod-lib-lz4
 
-  config ZRAM_DEF_COMP_LZ4HC
+    config ZRAM_DEF_COMP_LZ4HC
             bool "lz4-hc"
             select PACKAGE_kmod-lib-lz4hc
 
-  config ZRAM_DEF_COMP_ZSTD
+    config ZRAM_DEF_COMP_ZSTD
             bool "zstd"
             select PACKAGE_kmod-lib-zstd
 
-  endchoice
+    endchoice
+  endif
 endef
 
 $(eval $(call KernelPackage,zram))

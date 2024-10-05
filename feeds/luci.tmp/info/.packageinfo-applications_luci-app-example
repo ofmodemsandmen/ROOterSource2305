@@ -77,4 +77,23 @@ Description:     Translation for luci-app-example - Français (French)
 
 @@
 
+Package: luci-i18n-example-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-example
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-example - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-example - Lietuvių (Lithuanian)
+
+@@
+
 

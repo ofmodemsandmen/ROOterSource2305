@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Docker Compose
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: v2.18.1.tar.gz
+Source: compose-v2.18.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

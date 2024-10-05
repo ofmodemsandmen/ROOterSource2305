@@ -15,6 +15,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: pcre-8.45.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre
 Type: ipkg
 Description: A Perl Compatible Regular Expression library
 https://www.pcre.org/
@@ -38,6 +39,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: pcre-8.45.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre
 Type: ipkg
 Description: A Perl Compatible Regular Expression library (16bit support)
 https://www.pcre.org/
@@ -58,6 +60,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: pcre-8.45.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre
 Type: ipkg
 Description: A Perl Compatible Regular Expression library (32bit support)
 https://www.pcre.org/
@@ -78,6 +81,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: pcre-8.45.tar.bz2
 License: BSD-3-Clause
 LicenseFiles: LICENCE
+CPE-ID: cpe:/a:pcre:pcre
 Type: ipkg
 Description: C++ wrapper for Perl Compatible Regular Expression library
 https://www.pcre.org/

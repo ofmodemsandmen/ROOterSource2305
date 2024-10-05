@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: sox-14.4.2.tar.bz2
 License: LGPL-2.1 GPL-2.0
 LicenseFiles: COPYING LICENSE.LGPL LICENSE.GPL
+CPE-ID: cpe:/a:sound_exchange_project:sound_exchange
 Type: ipkg
 Description: 	SoX is a command line utility that can convert various formats
 	of computer audio files in to other formats. It can also apply

@@ -4,7 +4,7 @@ Build-Types: host
 
 Package: python3-pathspec
 Submenu: Python
-Version: 0.11.1-1
+Version: 0.11.2-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Languages
 Repository: base
 Title: gitignore style pattern matching of file paths
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: pathspec-0.11.1.tar.gz
+Source: pathspec-0.11.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -29,7 +29,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-pathspec-src
 Submenu: Python
-Version: 0.11.1-1
+Version: 0.11.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -39,7 +39,7 @@ Category: Languages
 Repository: base
 Title: gitignore style pattern matching of file paths (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: pathspec-0.11.1.tar.gz
+Source: pathspec-0.11.2.tar.gz
 License: MPL-2.0
 LicenseFiles: LICENSE
 Type: ipkg

@@ -14,6 +14,7 @@ Title: HTTP/1.1 client library
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: uclient-2023-04-13-007d945467499f43656b141171d31f5643b83a6c.tar.xz
 License: ISC
+ABI-Version: 20201210
 Type: ipkg
 Description: HTTP/1.1 client library
 Felix Fietkau <nbd@nbd.name>

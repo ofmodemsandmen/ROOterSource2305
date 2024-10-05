@@ -16,6 +16,7 @@ Require-User: turnserver=379:turnserver=379
 Source: coturn-4.6.1.tar.gz
 License: BSD-COTURN-CITRIX COMBINED-CITRIX-VIVOCHA-BSD MIT-HASH
 LicenseFiles: LICENSE src/apps/relay/dbdrivers/* src/server/ns_turn_khash.h
+CPE-ID: cpe:/a:coturn_project:coturn
 Type: ipkg
 Description: The TURN Server is a VoIP media traffic NAT traversal server and
 gateway. It can be used as a general-purpose network traffic TURN server

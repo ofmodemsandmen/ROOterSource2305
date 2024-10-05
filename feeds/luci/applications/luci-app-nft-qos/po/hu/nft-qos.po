@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-12 12:55+0000\n"
-"Last-Translator: Tudós Péter <tudi.sk@gmail.com>\n"
+"PO-Revision-Date: 2024-08-18 14:10+0000\n"
+"Last-Translator: hmzs <hmzs@1szer1.hu>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsnft-qos/hu/>\n"
 "Language: hu\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 5.7\n"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:136
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:155
@@ -20,7 +20,7 @@ msgstr "Bájt összesen"
 msgid "Collecting data..."
 msgstr "Adatok összegyűjtése…"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:229
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:225
 msgid "Comment"
 msgstr "Megjegyzés"
 
@@ -72,7 +72,7 @@ msgstr "Alapértelmezett érték a feltöltési aránynál"
 msgid "Download Bandwidth (Mbps)"
 msgstr "Letöltési sávszélesség (Mbps)"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:252
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:248
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:135
 msgid "Download Rate"
 msgstr "Letöltési arány"
@@ -92,18 +92,18 @@ msgstr "A funkció engedélyezése"
 
 #: applications/luci-app-nft-qos/root/usr/share/rpcd/acl.d/luci-app-nft-qos.json:3
 msgid "Grant UCI access for luci-app-nft-qos"
-msgstr ""
+msgstr "UCI jogosultság adása a luci-app-nft-qos számára"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:130
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:163
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:244
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:240
 msgid "Hostname"
 msgstr "Gépnév"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:134
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:153
 msgid "IP Address"
-msgstr "IP cím"
+msgstr "IP-cím"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:135
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:168
@@ -122,27 +122,23 @@ msgstr "Korlátozás engedélyezése"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:33
 msgid "Limit Rate by IP Address"
-msgstr ""
+msgstr "Sebesség korlátozás IP-cím alapján"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:34
 msgid "Limit Rate by Mac Address"
-msgstr ""
+msgstr "Sebesség korlátozás MAC-cím alapján"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:239
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:235
 msgid "Limit Traffic Rate By Mac Address"
-msgstr ""
+msgstr "Forgalmi arány korlátozás MAC-cím alapján"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:44
 msgid "Limit Type"
-msgstr "Korlát típusa"
+msgstr "Korlátozás típusa"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:177
-msgid "MAC (optional)"
-msgstr "MAC (elhagyható)"
-
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:248
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:244
 msgid "MAC Address"
-msgstr "MAC cím"
+msgstr "MAC-cím"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:48
 msgid "MB"
@@ -155,7 +151,7 @@ msgstr "NFT-QoS beállítások"
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:116
 msgid "Network Interface for Traffic Shaping, e.g. br-lan, eth0.1, eth0, etc."
 msgstr ""
-"Hálózati csatoló a forgalom formálásához, például br-lan, eth0.1, eth0, stb."
+"Hálózati csatoló a forgalom alakításához, például br-lan, eth0.1, eth0, stb."
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:87
 msgid "Network to be applied, e.g. 192.168.1.0/24, 10.2.0.0/16, etc."
@@ -174,22 +170,22 @@ msgstr "Nincs elérhető információ"
 msgid "Packets Total"
 msgstr "Csomagok összesen"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:212
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:208
 msgid "Priority"
 msgstr "Prioritás"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:204
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:200
 msgid "Protocol"
-msgstr "Protokol"
+msgstr "Protokoll"
 
 #: applications/luci-app-nft-qos/luasrc/controller/nft-qos.lua:21
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:24
 msgid "QoS over Nftables"
-msgstr "QoS Nftables fölött"
+msgstr "Nftables-es QoS"
 
 #: applications/luci-app-nft-qos/luasrc/controller/nft-qos.lua:13
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:144
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:181
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:177
 msgid "Rate"
 msgstr "Arány"
 
@@ -205,7 +201,7 @@ msgstr "Valós idejű arány"
 msgid "Realtime Upload Rate"
 msgstr "Valós idejű feltöltési arány"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:226
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:222
 msgid "Service"
 msgstr "Szolgáltatás"
 
@@ -219,11 +215,11 @@ msgstr "Statikus QoS feltöltési arány"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:87
 msgid "Target Network (IPv4/MASK)"
-msgstr "Célhálózat (IPv4/MASZK)"
+msgstr "IPv4 célhálózat (IPv4/maszk)"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:93
 msgid "Target Network6 (IPv6/MASK)"
-msgstr "Célhálózat 6 (IPv6/MASZK)"
+msgstr "IPv6 célhálózat (IPv6/maszk)"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:127
 msgid "This page gives an overview over currently download/upload rate."
@@ -232,9 +228,9 @@ msgstr ""
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:35
 msgid "Traffic Priority"
-msgstr ""
+msgstr "Forgalomprioritás"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:199
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:195
 msgid "Traffic Priority Settings"
 msgstr "Forgalomprioritás beállításai"
 
@@ -243,9 +239,9 @@ msgid "Type of Limit Rate"
 msgstr "Arány korlátozásának típusa"
 
 #: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:149
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:186
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:257
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:268
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:182
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:253
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:264
 msgid "Unit"
 msgstr "Mértékegység"
 
@@ -253,7 +249,7 @@ msgstr "Mértékegység"
 msgid "Upload Bandwidth (Mbps)"
 msgstr "Feltöltési sávszélesség (Mbps)"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:263
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:259
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:154
 msgid "Upload Rate"
 msgstr "Feltöltési arány"
@@ -262,9 +258,9 @@ msgstr "Feltöltési arány"
 msgid "White List for Limit Rate"
 msgstr "Fehérlista az arány korlátázásához"
 
-#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:226
+#: applications/luci-app-nft-qos/luasrc/model/cbi/nft-qos/nft-qos.lua:222
 msgid "e.g. https, 23, (separator is comma)"
-msgstr "például https, 23, (vesszővel elválasztva)"
+msgstr "például.: https, 23, (vesszővel elválasztva)"
 
 #: applications/luci-app-nft-qos/luasrc/view/nft-qos/rate.htm:44
 msgid "kB"

@@ -13,6 +13,7 @@ Title: API to receive to-be-logged packets from the kernel nfnetlink_log subsyst
 Maintainer: Yousong Zhou <yszhou4tech@gmail.com>
 Source: libnetfilter_log-1.0.2.tar.bz2
 License: GPL-2.0+
+ABI-Version: 1
 Type: ipkg
 Description:  libnetfilter_log is a userspace library providing interface to packets that
  have been logged by the kernel packet filter. It is is part of a system that

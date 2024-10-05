@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-07-18 03:20+0000\n"
+"PO-Revision-Date: 2024-05-25 19:30+0000\n"
 "Last-Translator: Hulen <shift0106@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationstinyproxy/zh_Hant/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:219
 msgid ""
@@ -151,11 +151,11 @@ msgstr ""
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:39
 msgid "Listen address"
-msgstr "監聽地址"
+msgstr "監聽位址"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:31
 msgid "Listen port"
-msgstr "監聽埠"
+msgstr "監聽連接埠"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:73
 msgid "Log file"
@@ -167,7 +167,7 @@ msgstr "用於轉儲郵件的日誌文件"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:80
 msgid "Log level"
-msgstr "日誌級別"
+msgstr "紀錄級別"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:81
 msgid "Logging verbosity of the Tinyproxy process"
@@ -269,8 +269,10 @@ msgstr "指定運行Tinyproxy程序的群組名稱"
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:234
 msgid ""
 "Specifies the upstream proxy to use for accessing the target host. Format is "
-"<code>address:port</code>"
-msgstr "指定用於存取目標主機的上游代理。格式為<code>位址：埠號 </code>"
+"<code>address:port</code> or <code>socks5 address:port</code>"
+msgstr ""
+"指定用於存取目標主機的上游代理。格式為<code>位址：埠號 </code> 或 "
+"<code>socks5 位址：埠號 </code>"
 
 #: applications/luci-app-tinyproxy/luasrc/model/cbi/tinyproxy.lua:92
 msgid "Specifies the user name the Tinyproxy process is running as"

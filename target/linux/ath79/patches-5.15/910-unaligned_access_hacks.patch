@@ -86,7 +86,7 @@ SVN-Revision: 35130
  	} while (word != stop);
  
  	return csum_fold(csum);
-@@ -182,73 +186,6 @@ static inline __sum16 ip_compute_csum(co
+@@ -182,74 +186,6 @@ static inline __sum16 ip_compute_csum(co
  	return csum_fold(csum_partial(buff, len, 0));
  }
  
@@ -152,7 +152,8 @@ SVN-Revision: 35130
 -	"	.set	pop"
 -	: "=&r" (sum), "=&r" (tmp)
 -	: "r" (saddr), "r" (daddr),
--	  "0" (htonl(len)), "r" (htonl(proto)), "r" (sum));
+-	  "0" (htonl(len)), "r" (htonl(proto)), "r" (sum)
+-	: "memory");
 -
 -	return csum_fold(sum);
 -}
@@ -258,7 +259,7 @@ SVN-Revision: 35130
  #include <linux/uaccess.h>
  #include <linux/ipv6.h>
  #include <linux/icmpv6.h>
-@@ -944,10 +945,10 @@ static void tcp_v6_send_response(const s
+@@ -943,10 +944,10 @@ static void tcp_v6_send_response(const s
  	topt = (__be32 *)(t1 + 1);
  
  	if (tsecr) {
@@ -336,9 +337,9 @@ SVN-Revision: 35130
  #endif /* _LINUX_TYPES_H */
 --- a/net/ipv4/af_inet.c
 +++ b/net/ipv4/af_inet.c
-@@ -1477,8 +1477,8 @@ struct sk_buff *inet_gro_receive(struct
+@@ -1490,8 +1490,8 @@ struct sk_buff *inet_gro_receive(struct
  	if (unlikely(ip_fast_csum((u8 *)iph, 5)))
- 		goto out_unlock;
+ 		goto out;
  
 -	id = ntohl(*(__be32 *)&iph->id);
 -	flush = (u16)((ntohl(*(__be32 *)iph) ^ skb_gro_len(skb)) | (id & ~IP_DF));
@@ -349,7 +350,7 @@ SVN-Revision: 35130
  	list_for_each_entry(p, head, list) {
 --- a/net/ipv4/tcp_output.c
 +++ b/net/ipv4/tcp_output.c
-@@ -610,48 +610,53 @@ static void tcp_options_write(__be32 *pt
+@@ -609,48 +609,53 @@ static void tcp_options_write(__be32 *pt
  	u16 options = opts->options;	/* mungable copy */
  
  	if (unlikely(OPTION_MD5 & options)) {
@@ -426,7 +427,7 @@ SVN-Revision: 35130
  	}
  
  	if (unlikely(opts->num_sack_blocks)) {
-@@ -659,16 +664,17 @@ static void tcp_options_write(__be32 *pt
+@@ -658,16 +663,17 @@ static void tcp_options_write(__be32 *pt
  			tp->duplicate_sack : tp->selective_acks;
  		int this_sack;
  
@@ -450,7 +451,7 @@ SVN-Revision: 35130
  		}
  
  		tp->rx_opt.dsack = 0;
-@@ -681,13 +687,14 @@ static void tcp_options_write(__be32 *pt
+@@ -680,13 +686,14 @@ static void tcp_options_write(__be32 *pt
  
  		if (foc->exp) {
  			len = TCPOLEN_EXP_FASTOPEN_BASE + foc->len;
@@ -578,7 +579,7 @@ SVN-Revision: 35130
  			goto next_ht;
 --- a/net/ipv6/ip6_offload.c
 +++ b/net/ipv6/ip6_offload.c
-@@ -241,7 +241,7 @@ INDIRECT_CALLABLE_SCOPE struct sk_buff *
+@@ -240,7 +240,7 @@ INDIRECT_CALLABLE_SCOPE struct sk_buff *
  			continue;
  
  		iph2 = (struct ipv6hdr *)(p->data + off);
@@ -589,15 +590,15 @@ SVN-Revision: 35130
  		 * XXX skbs on the gro_list have all been parsed and pulled
 --- a/include/net/addrconf.h
 +++ b/include/net/addrconf.h
-@@ -47,7 +47,7 @@ struct prefix_info {
+@@ -52,7 +52,7 @@ struct prefix_info {
  	__be32			reserved2;
  
  	struct in6_addr		prefix;
 -};
 +} __attribute__((packed, aligned(2)));
  
- #include <linux/ipv6.h>
- #include <linux/netdevice.h>
+ /* rfc4861 4.6.2: IPv6 PIO is 32 bytes in size */
+ static_assert(sizeof(struct prefix_info) == 32);
 --- a/include/net/inet_ecn.h
 +++ b/include/net/inet_ecn.h
 @@ -138,9 +138,9 @@ static inline int IP6_ECN_set_ce(struct
@@ -654,7 +655,7 @@ SVN-Revision: 35130
  		return false;
  
  	return true;
-@@ -750,13 +754,13 @@ static inline void ipv6_addr_set_v4mappe
+@@ -746,13 +750,13 @@ static inline void ipv6_addr_set_v4mappe
   */
  static inline int __ipv6_addr_diff32(const void *token1, const void *token2, int addrlen)
  {
@@ -670,7 +671,7 @@ SVN-Revision: 35130
  		if (xb)
  			return i * 32 + 31 - __fls(ntohl(xb));
  	}
-@@ -950,17 +954,18 @@ static inline u32 ip6_multipath_hash_fie
+@@ -946,17 +950,18 @@ static inline u32 ip6_multipath_hash_fie
  static inline void ip6_flow_hdr(struct ipv6hdr *hdr, unsigned int tclass,
  				__be32 flowlabel)
  {
@@ -737,7 +738,7 @@ SVN-Revision: 35130
  				       | TCPOLEN_TIMESTAMP))
 --- a/net/xfrm/xfrm_input.c
 +++ b/net/xfrm/xfrm_input.c
-@@ -166,8 +166,8 @@ int xfrm_parse_spi(struct sk_buff *skb,
+@@ -167,8 +167,8 @@ int xfrm_parse_spi(struct sk_buff *skb,
  	if (!pskb_may_pull(skb, hlen))
  		return -EINVAL;
  
@@ -750,7 +751,7 @@ SVN-Revision: 35130
  EXPORT_SYMBOL(xfrm_parse_spi);
 --- a/net/ipv4/tcp_input.c
 +++ b/net/ipv4/tcp_input.c
-@@ -4152,14 +4152,16 @@ static bool tcp_parse_aligned_timestamp(
+@@ -4201,14 +4201,16 @@ static bool tcp_parse_aligned_timestamp(
  {
  	const __be32 *ptr = (const __be32 *)(th + 1);
  
@@ -857,7 +858,7 @@ SVN-Revision: 35130
  
 --- a/net/ipv4/tcp_offload.c
 +++ b/net/ipv4/tcp_offload.c
-@@ -223,7 +223,7 @@ struct sk_buff *tcp_gro_receive(struct l
+@@ -226,7 +226,7 @@ struct sk_buff *tcp_gro_receive(struct l
  
  		th2 = tcp_hdr(p);
  
@@ -866,7 +867,7 @@ SVN-Revision: 35130
  			NAPI_GRO_CB(p)->same_flow = 0;
  			continue;
  		}
-@@ -241,8 +241,8 @@ found:
+@@ -244,8 +244,8 @@ found:
  		  ~(TCP_FLAG_CWR | TCP_FLAG_FIN | TCP_FLAG_PSH));
  	flush |= (__force int)(th->ack_seq ^ th2->ack_seq);
  	for (i = sizeof(*th); i < thlen; i += 4)

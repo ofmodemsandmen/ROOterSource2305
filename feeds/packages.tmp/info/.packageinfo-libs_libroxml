@@ -14,6 +14,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libroxml-3.0.2.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: License.txt
+ABI-Version: 2
 Type: ipkg
 Description: Minimum, easy-to-use, C implementation for xml file parsing
 http://www.libroxml.net/

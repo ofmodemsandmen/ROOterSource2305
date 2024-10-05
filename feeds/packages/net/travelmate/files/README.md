@@ -32,7 +32,7 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 * status & debug logging to syslog
 
 ## Prerequisites
-* [OpenWrt](https://openwrt.org), only compatible with the forthcoming stable 20.x or the latest OpenWrt snapshot
+* [OpenWrt](https://openwrt.org), tested/compatible with current stable 23.x and latest OpenWrt snapshot
 * 'dnsmasq' as dns backend
 * 'iwinfo' for wlan scanning
 * 'curl' for connection checking and all kinds of captive portal magic, e.g. cp detection and auto-logins
@@ -43,9 +43,8 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 
 ## Installation & Usage
 * **Please note:** before you start with travelmate ...
-    * you should setup at least one Access Point, ideally on a separate radio,
-    * if you're updating from a former 1.x release, please use the '--force-reinstall --force-maintainer' options in opkg,
-    * and remove any existing travelmate related uplink stations in your wireless config manually
+    * setup at least one AP, ideally on a separate radio
+    * if you're using a single radio unit set the AP channel to 'auto'
 * download [travelmate](https://downloads.openwrt.org/snapshots/packages/x86_64/packages)
 * download [luci-app-travelmate](https://downloads.openwrt.org/snapshots/packages/x86_64/luci)
 * install both packages (_opkg install travelmate_, _opkg install luci-app-travelmate_)
@@ -55,7 +54,7 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 * happy traveling ...
 
 ## Travelmate config options
-* usually the pre-configured travelmate setup works quite well and no manual config overrides are needed, all listed options apply to the 'global' section:
+* usually the pre-configured travelmate setup works quite well and no manual config overrides are needed, all listed options apply to the 'global' section:  
 
 | Option             | Default                            | Description/Valid Values                                                                              |
 | :----------------- | :--------------------------------- | :---------------------------------------------------------------------------------------------------- |
@@ -74,7 +73,6 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 | trm_maxwait        | 30                                 | how long should travelmate wait for a successful wlan uplink connection                               |
 | trm_timeout        | 60                                 | overall retry timeout in seconds                                                                      |
 | trm_maxautoadd     | 5                                  | limit the max. number of automatically added open uplinks. To disable this limitation set it to '0'   |
-| trm_maxscan        | 10                                 | limit nearby scan results to process only the strongest uplinks                                       |
 | trm_captiveurl     | http://detectportal.firefox.com    | pre-configured provider URLs that will be used for connectivity- and captive portal checks            |
 | trm_useragent      | Mozilla/5.0 ...                    | pre-configured user agents that will be used for connectivity- and captive portal checks              |
 | trm_nice           | 0, normal priority                 | change the priority of the travelmate background processing                                           |
@@ -83,8 +81,11 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 | trm_mailsender     | no-reply@travelmate                | e-mail sender address for travelmate notifications                                                    |
 | trm_mailtopic      | travelmate connection to '<sta>'   | topic for travelmate notification E-Mails                                                             |
 | trm_mailprofile    | trm_notify                         | profile used by 'msmtp' for travelmate notification E-Mails                                           |
+| trm_stdvpnservice  | -, not set                         | standard vpn service which will be automatically added to new STA profiles                            |
+| trm_stdvpniface    | -, not set                         | standard vpn interface which will be automatically added to new STA profiles                          |
   
-* per uplink exist an additional 'uplink' section in the travelmate config, with the following options:
+
+* per uplink exist an additional 'uplink' section in the travelmate config, with the following options:  
 
 | Option             | Default                            | Description/Valid Values                                                                              |
 | :----------------- | :--------------------------------- | :---------------------------------------------------------------------------------------------------- |
@@ -102,15 +103,21 @@ To avoid these kind of deadlocks, travelmate will set all station interfaces to 
 | vpn                | 0, disabled                        | automatically handle VPN (re-) connections                                                            |
 | vpnservice         | -, not set                         | reference the already configured 'wireguard' or 'openvpn' client instance as vpn provider             |
 | vpniface           | -, not set                         | the logical vpn interface, e.g. 'wg0' or 'tun0'                                                       |
-  
+
 
 ## VPN client setup
-Please follow one of the following guides to get a working vpn client setup on your travel router:
+Please read one of the following guides to get a working vpn client setup on your travel router:
 
 * [Wireguard client setup guide](https://openwrt.org/docs/guide-user/services/vpn/wireguard/client)
-* [OpenVPN client setup guide](https://openwrt.org/docs/guide-user/services/vpn/openvpn/client)
+* [OpenVPN client setup guide](https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci)
 
-Once your vpn client connection is running, you can reference to that setup in travelmate to handle VPN (re-) connections automatically.
+**Please note:** Make sure to uncheck the "Bring up on boot" option during vpn interface setup, so that netifd doesn't interfere with travelmate.  
+Also please prevent potential vpn protocol autostarts, e.g. add in newer openvpn uci configs an additional 'globals' section:  
+<pre><code>
+config globals 'globals'
+        option autostart '0'
+</code></pre>
+Once your vpn client connection setup is correct, you can reference to that config in travelmate to handle VPN (re-) connections automatically.
 
 ## E-Mail setup
 To use E-Mail notifications you have to setup the package 'msmtp'.  
@@ -161,18 +168,18 @@ Hopefully more scripts for different captive portals will be provided by the com
 
 **receive travelmate runtime information:**
 <pre><code>
-root@2go_ar750s:~# /etc/init.d/travelmate status
+root@2go:~# /etc/init.d/travelmate status
 ::: travelmate runtime information
-  + travelmate_status  : connected (net ok/100)
-  + travelmate_version : 2.0.0
-  + station_id         : radio1/WIFIonICE/-
-  + station_mac        : B2:9D:F5:96:86:A4
-  + station_interface  : trm_wwan
+  + travelmate_status  : connected (net ok/51)
+  + travelmate_version : 2.1.1
+  + station_id         : radio0/403 Forbidden/00:0C:46:24:50:00
+  + station_mac        : 94:83:C4:24:0E:4F
+  + station_interfaces : trm_wwan, wg0
   + wpa_flags          : sae: ✔, owe: ✔, eap: ✔, suiteb192: ✔
   + run_flags          : captive: ✔, proactive: ✔, netcheck: ✘, autoadd: ✘, randomize: ✔
-  + ext_hooks          : ntp: ✔, vpn: ✘, mail: ✘
-  + last_run           : 2020.09.10-15:21:19
-  + system             : GL.iNet GL-AR750S (NOR/NAND), OpenWrt SNAPSHOT r14430-2dda301d40
+  + ext_hooks          : ntp: ✔, vpn: ✔, mail: ✘
+  + last_run           : 2023.10.21-14:29:14
+  + system             : GL.iNet GL-A1300, OpenWrt SNAPSHOT r24187-bb8fd41f9a
 </code></pre>
 
 To debug travelmate runtime problems, please always enable the 'trm\_debug' flag, restart travelmate and check the system log afterwards (_logread -e "trm-"_)
@@ -182,7 +189,17 @@ Please join the travelmate discussion in this [forum thread](https://forum.lede-
 
 ## Removal
 * stop the travelmate daemon with _/etc/init.d/travelmate stop_
-* optional: remove the travelmate package (_opkg remove luci-app-travelmate_, _opkg remove travelmate_)
+* remove the travelmate package (_opkg remove luci-app-travelmate_, _opkg remove travelmate_)
+
+## Donations
+You like this project - is there a way to donate? Generally speaking "No" - I have a well-paying full-time job and my OpenWrt projects are just a hobby of mine in my spare time.  
+
+If you still insist to donate some bucks ...  
+* I would be happy if you put your money in kind into other, social projects in your area, e.g. a children's hospice
+* Let's meet and invite me for a coffee if you are in my area, the “Markgräfler Land” in southern Germany or in Switzerland (Basel)
+* Send your money to my [PayPal account](https://www.paypal.me/DirkBrenken) and I will collect your donations over the year to support various social projects in my area
+
+No matter what you decide - thank you very much for your support!  
 
 Have fun!  
 Dirk  

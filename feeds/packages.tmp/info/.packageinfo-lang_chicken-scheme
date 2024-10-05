@@ -14,6 +14,7 @@ Maintainer: Jeronimo Pellegrini <j_p@aleph0.info>
 Source: chicken-5.2.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+ABI-Version: 11
 Type: ipkg
 Description:   Chicken is an implementation of the Scheme language. It is portable, efficient, and supports 
   the R5RS and R7RS (work in progress) standards, and many extensions.
@@ -39,6 +40,7 @@ Maintainer: Jeronimo Pellegrini <j_p@aleph0.info>
 Source: chicken-5.2.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+ABI-Version: 11
 Type: ipkg
 Description:   Chicken is an implementation of the Scheme language. It is portable, efficient, and supports 
   the R5RS and R7RS (work in progress) standards, and many extensions.

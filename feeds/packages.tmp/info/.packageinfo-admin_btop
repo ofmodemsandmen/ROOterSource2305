@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/admin/btop/Makefile
 
 Package: btop
-Version: 1.2.13-2
+Version: 1.3.2-1
 Depends: +libc +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Administration
 Repository: base
 Title: A monitor of resources
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: btop-1.2.13.tar.gz
+Source: btop-1.3.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

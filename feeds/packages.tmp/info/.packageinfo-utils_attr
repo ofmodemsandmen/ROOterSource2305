@@ -15,6 +15,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: attr-2.5.1.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: doc/COPYING
+CPE-ID: cpe:/a:attr_project:attr
 Type: ipkg
 Description:   Extended attributes support
  This package provides xattr manipulation utilities
@@ -40,6 +41,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: attr-2.5.1.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: doc/COPYING.LGPL
+CPE-ID: cpe:/a:attr_project:attr
 Type: ipkg
 Description:   Extended attributes support
  This package provides libattr

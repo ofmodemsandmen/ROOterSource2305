@@ -15,6 +15,7 @@ Maintainer: Wojciech Dubowik <Wojciech.Dubowik@westermo.com>
 Source: linuxptp-3.1.1.tgz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:linuxptp_project:linuxptp
 Type: ipkg
 Description:  The PTP daemon (PTPd) implements version 2 of the Precision Time Protocol (PTP)
  as defined by the IEEE 1588-2008 standard.

@@ -4,7 +4,7 @@ Build-Depends/host: python3/host rpcsvc-proto/host perl/host perl-parse-yapp/hos
 Build-Types: host
 
 Package: samba4-libs
-Version: 4.18.0-1
+Version: 4.18.8-1
 Depends: +libc +libtirpc +libreadline +libpopt +libcap +zlib +libgnutls +libtasn1 +libuuid +libopenssl +libpthread +KERNEL_IO_URING:liburing +PACKAGE_libpam:libpam +SAMBA4_SERVER_VFS:attr +SAMBA4_SERVER_AVAHI:libavahi-client +SAMBA4_SERVER_AD_DC:python3-cryptodome +SAMBA4_SERVER_AD_DC:python3-markdown +SAMBA4_SERVER_AD_DC:python3-dns +SAMBA4_SERVER_AD_DC:libopenldap +SAMBA4_SERVER_AD_DC:jansson +SAMBA4_SERVER_AD_DC:libarchive +SAMBA4_SERVER_AD_DC:acl +SAMBA4_SERVER_AD_DC:attr
 Conflicts: 
 Menu-Depends: 
@@ -12,19 +12,20 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.18.0 libs
+Title: Samba 4.18.8 libs
 Maintainer: 
-Source: samba-4.18.0.tar.gz
+Source: samba-4.18.8.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:samba:samba
 Type: ipkg
-Description: Samba 4.18.0 libs
+Description: Samba 4.18.8 libs
 https://www.samba.org/
 
 @@
 
 Package: samba4-server
-Version: 4.18.0-1
+Version: 4.18.8-1
 Depends: +libc +samba4-libs
 Conflicts: samba36-server
 Menu-Depends: 
@@ -32,11 +33,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.18.0 server
+Title: Samba 4.18.8 server
 Maintainer: 
-Source: samba-4.18.0.tar.gz
+Source: samba-4.18.8.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:samba:samba
 Type: ipkg
 Description:   installs: smbd (nmbd) smbpasswd pdbedit testparm (nmblookup) (smbcacls sharesec)
             (samba samba-tool ntlm_auth samba-gpupdate samba_dnsupdate samba_kcc samba_spnupdate samba_upgradedns samba_downgrade_db)
@@ -51,7 +53,7 @@ Config:
 @@
 
 Package: samba4-client
-Version: 4.18.0-1
+Version: 4.18.8-1
 Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -59,11 +61,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.18.0 client
+Title: Samba 4.18.8 client
 Maintainer: 
-Source: samba-4.18.0.tar.gz
+Source: samba-4.18.8.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:samba:samba
 Type: ipkg
 Description:   installs: cifsdd smbclient smbget
 
@@ -73,7 +76,7 @@ https://www.samba.org/
 @@
 
 Package: samba4-admin
-Version: 4.18.0-1
+Version: 4.18.8-1
 Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -81,11 +84,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.18.0 admin tools
+Title: Samba 4.18.8 admin tools
 Maintainer: 
-Source: samba-4.18.0.tar.gz
+Source: samba-4.18.8.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:samba:samba
 Type: ipkg
 Description:   installs: net smbcontrol profiles rpcclient dbwrap_tool eventlogadm
             ldbadd ldbdel ldbedit ldbmodify ldbrename ldbsearch
@@ -97,7 +101,7 @@ https://www.samba.org/
 @@
 
 Package: samba4-utils
-Version: 4.18.0-1
+Version: 4.18.8-1
 Depends: +libc +samba4-libs
 Conflicts: 
 Menu-Depends: 
@@ -105,11 +109,12 @@ Provides:
 Section: net
 Category: Network
 Repository: base
-Title: Samba 4.18.0 utils
+Title: Samba 4.18.8 utils
 Maintainer: 
-Source: samba-4.18.0.tar.gz
+Source: samba-4.18.8.tar.gz
 License: GPL-3.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:samba:samba
 Type: ipkg
 Description:   installs: smbstatus smbtree mvxattr smbtar (smbcquotas)
 

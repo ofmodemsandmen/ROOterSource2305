@@ -12,7 +12,7 @@ Repository: base
 Title: Small Cron daemon providing a cron.d directory other packages can install their crontabs into
 Maintainer: 
 Source: 
-License: BSD-2-clause
+License: BSD-2-Clause
 Type: ipkg
 Description: Small Cron daemon providing a cron.d directory other packages can install their crontabs into
 

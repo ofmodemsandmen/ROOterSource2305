@@ -15,6 +15,7 @@ Title: Intel microcode loader
 Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
 Source: iucode-tool_2.3.1.tar.xz
 License: GPL-2.0
+CPE-ID: cpe:/a:iucode-tool_project:iucode-tool
 Type: ipkg
 Description: Intel microcode loader
 https://gitlab.com/iucode-tool/releases/raw/latest

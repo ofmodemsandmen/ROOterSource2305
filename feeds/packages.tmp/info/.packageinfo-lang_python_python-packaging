@@ -5,8 +5,8 @@ Build-Types: host
 
 Package: python3-packaging
 Submenu: Python
-Version: 23.1-1
-Depends: +libc +python3-light +python3-logging +python3-urllib
+Version: 23.2-1
+Depends: +libc +python3-light +python3-email +python3-logging +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -15,7 +15,7 @@ Category: Languages
 Repository: base
 Title: Core utilities for Python packages
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: packaging-23.1.tar.gz
+Source: packaging-23.2.tar.gz
 License: Apache-2.0 BSD-2-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
 Type: ipkg
@@ -27,7 +27,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-packaging-src
 Submenu: Python
-Version: 23.1-1
+Version: 23.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Category: Languages
 Repository: base
 Title: Core utilities for Python packages (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: packaging-23.1.tar.gz
+Source: packaging-23.2.tar.gz
 License: Apache-2.0 BSD-2-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
 Type: ipkg

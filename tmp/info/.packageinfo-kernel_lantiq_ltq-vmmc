@@ -11,6 +11,7 @@ Section: kernel
 Category: Kernel modules
 Title: TAPI LL driver for Voice Macro
 Maintainer: John Crispin <john@phrozen.org>
+Require-User: :vmmc=386
 Source: drv_vmmc-1.9.0.tar.bz2
 Type: ipkg
 Description: 	Voice Subsystem Low Level Driver for Danube, AR9, VR9 device families
@@ -18,7 +19,7 @@ http://www.lantiq.com/
 John Crispin <john@phrozen.org>
 @@
 Config:
-	source "package/kernel/lantiq/ltq-vmmc/Config.in"
+	source "feeds/base/kernel/lantiq/ltq-vmmc/Config.in"
 @@
 
 

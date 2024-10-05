@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: socat-1.7.4.4.tar.bz2
 License: GPL-2.0-or-later OpenSSL
 LicenseFiles: COPYING COPYING.OpenSSL
+CPE-ID: cpe:/a:dest-unreach:socat
 Type: ipkg
 Description: 	SoCat (for SOcket CAT) establishes two bidirectional byte streams and
 	transfers data between them.

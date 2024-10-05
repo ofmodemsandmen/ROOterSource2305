@@ -2,19 +2,20 @@ Source-Makefile: feeds/packages/lang/python/python-cryptodome/Makefile
 
 Package: python3-cryptodome
 Submenu: Python
-Version: 3.9.7-4
-Depends: +libc +libgmp +python3
+Version: 3.18.0-1
+Depends: +libc +libgmp +python3-light +python3-cffi
 Conflicts: 
 Menu-Depends: 
 Provides: python3-crypto
-Section: lang-python
+Section: lang
 Category: Languages
 Repository: base
-Title: A self-contained cryptographic library for Python
+Title: Self-contained cryptographic library
 Maintainer: Richard Yu <yurichard3839@gmail.com>
-Source: pycryptodome-3.9.7.tar.gz
-License: BSD-2-Clause
+Source: pycryptodome-3.18.0.tar.gz
+License: Public-Domain BSD-2-Clause
 LicenseFiles: LICENSE.rst
+CPE-ID: cpe:/a:pycryptodome:pycryptodome
 Type: ipkg
 Description: PyCryptodome is a self-contained Python package of low-level
 cryptographic primitives.
@@ -24,19 +25,20 @@ Richard Yu <yurichard3839@gmail.com>
 
 Package: python3-cryptodome-src
 Submenu: Python
-Version: 3.9.7-4
+Version: 3.18.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Section: lang-python
+Section: lang
 Category: Languages
 Repository: base
-Title: A self-contained cryptographic library for Python (sources)
+Title: Self-contained cryptographic library (sources)
 Maintainer: Richard Yu <yurichard3839@gmail.com>
-Source: pycryptodome-3.9.7.tar.gz
-License: BSD-2-Clause
+Source: pycryptodome-3.18.0.tar.gz
+License: Public-Domain BSD-2-Clause
 LicenseFiles: LICENSE.rst
+CPE-ID: cpe:/a:pycryptodome:pycryptodome
 Type: ipkg
 Description:     PyCryptodome is a self-contained Python package of low-level
 cryptographic primitives.

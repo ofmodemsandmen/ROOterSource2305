@@ -1,8 +1,9 @@
 Source-Makefile: package/libs/libxml2/Makefile
+Build-Depends/host: libiconv-full/host
 Build-Types: host
 
 Package: libxml2
-Version: 2.11.4-1
+Version: 2.12.5-1
 Depends: +libc +libpthread +zlib +BUILD_NLS:libiconv-full
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +13,10 @@ Category: Libraries
 Repository: base
 Title: Gnome XML library
 Maintainer: 
-Source: libxml2-2.11.4.tar.xz
+Source: libxml2-2.12.5.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxml2
 Type: ipkg
 Description:  A library for manipulating XML and HTML resources.
 http://xmlsoft.org/
@@ -23,7 +25,7 @@ http://xmlsoft.org/
 
 Package: libxml2-dev
 Submenu: Libraries
-Version: 2.11.4-1
+Version: 2.12.5-1
 Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -33,9 +35,10 @@ Category: Development
 Repository: base
 Title: Development files for libxml2
 Maintainer: 
-Source: libxml2-2.11.4.tar.xz
+Source: libxml2-2.12.5.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxml2
 Type: ipkg
 Description:   A library for manipulating XML and HTML resources.
 
@@ -45,7 +48,7 @@ http://xmlsoft.org/
 @@
 
 Package: libxml2-utils
-Version: 2.11.4-1
+Version: 2.12.5-1
 Depends: +libc +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -55,9 +58,10 @@ Category: Utilities
 Repository: base
 Title: XML command line utilities (xmllint...)
 Maintainer: 
-Source: libxml2-2.11.4.tar.xz
+Source: libxml2-2.12.5.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxml2
 Type: ipkg
 Description:   This package contains the binaries xmllint and xmlcatalog
   from libxml2, a library for manipulating XML and HTML resources.

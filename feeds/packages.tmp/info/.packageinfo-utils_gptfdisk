@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/gptfdisk/Makefile
 
 Package: gdisk
 Submenu: Disc
-Version: 1.0.9-1
+Version: 1.0.10-1
 Depends: +libc +libstdcpp +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for interactive use
 Maintainer: 
-Source: gptfdisk-1.0.9.tar.gz
+Source: gptfdisk-1.0.10.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +23,7 @@ https://www.rodsbooks.com/gdisk
 
 Package: cgdisk
 Submenu: Disc
-Version: 1.0.9-1
+Version: 1.0.10-1
 Depends: +libc +libstdcpp +libuuid +libncursesw
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for interactive use
 Maintainer: 
-Source: gptfdisk-1.0.9.tar.gz
+Source: gptfdisk-1.0.10.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -44,7 +44,7 @@ https://www.rodsbooks.com/gdisk
 
 Package: sgdisk
 Submenu: Disc
-Version: 1.0.9-1
+Version: 1.0.10-1
 Depends: +libc +libstdcpp +libuuid +libpopt
 Conflicts: 
 Menu-Depends: 
@@ -54,7 +54,7 @@ Category: Utilities
 Repository: base
 Title: GPT aware disk manipulation utility for scripting use
 Maintainer: 
-Source: gptfdisk-1.0.9.tar.gz
+Source: gptfdisk-1.0.10.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -65,7 +65,7 @@ https://www.rodsbooks.com/gdisk
 
 Package: fixparts
 Submenu: Disc
-Version: 1.0.9-1
+Version: 1.0.10-1
 Depends: +libc +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -75,7 +75,7 @@ Category: Utilities
 Repository: base
 Title: A utility to fix corrupted MBR partitions
 Maintainer: 
-Source: gptfdisk-1.0.9.tar.gz
+Source: gptfdisk-1.0.10.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

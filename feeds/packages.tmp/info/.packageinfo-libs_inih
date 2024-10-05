@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/inih/Makefile
 
 Package: libinih
-Version: r56-1
+Version: r58-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Simple .INI file parser in C
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: inih-r56.tar.gz
+Source: inih-r58.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -26,7 +26,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: libinireader
-Version: r56-1
+Version: r58-1
 Depends: +libc +libinih +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Libraries
 Repository: base
 Title: C++ library and API for inih
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: inih-r56.tar.gz
+Source: inih-r58.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
 Type: ipkg

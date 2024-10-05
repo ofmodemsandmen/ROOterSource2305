@@ -1,8 +1,10 @@
 Source-Makefile: feeds/packages/lang/python/python-markupsafe/Makefile
+Build-Depends/host: python3/host python-build/host python-installer/host python-wheel/host
+Build-Types: host
 
 Package: python3-markupsafe
 Submenu: Python
-Version: 2.1.2-1
+Version: 2.1.3-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +13,8 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Safely add untrusted strings to HTML/XML markup
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: MarkupSafe-2.1.2.tar.gz
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: MarkupSafe-2.1.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
 Type: ipkg
@@ -22,12 +24,12 @@ replaced so that they display as the actual characters. This mitigates
 injection attacks, meaning untrusted user input can safely be displayed
 on a page.
 https://palletsprojects.com/p/markupsafe/
-Daniel Golle <daniel@makrotopia.org>
+Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-markupsafe-src
 Submenu: Python
-Version: 2.1.2-1
+Version: 2.1.3-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,8 +38,8 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Safely add untrusted strings to HTML/XML markup (sources)
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: MarkupSafe-2.1.2.tar.gz
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: MarkupSafe-2.1.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.rst
 Type: ipkg
@@ -49,7 +51,7 @@ on a page.
 
     This package contains the Python source files for python3-markupsafe.
 https://palletsprojects.com/p/markupsafe/
-Daniel Golle <daniel@makrotopia.org>
+Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-markupsafe

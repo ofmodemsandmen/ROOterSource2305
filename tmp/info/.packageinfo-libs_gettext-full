@@ -1,6 +1,6 @@
 Source-Makefile: package/libs/gettext-full/Makefile
 Build-Depends: gettext-full/host libunistring libxml2
-Build-Depends/host: gperf/host libunistring/host libxml2/host
+Build-Depends/host: gperf/host libiconv-full/host libunistring/host libxml2/host
 Build-Types: host
 
 Package: libintl-full
@@ -16,6 +16,8 @@ Title: GNU Internationalization library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: gettext-0.21.1.tar.xz
 License: GPL-3.0-or-later
+CPE-ID: cpe:/a:gnu:gettext
+ABI-Version: 8
 Type: ipkg
 Description: GNU Internationalization library
 http://www.gnu.org/software/gettext/

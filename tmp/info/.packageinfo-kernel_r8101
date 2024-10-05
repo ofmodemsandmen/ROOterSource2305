@@ -1,0 +1,21 @@
+Source-Makefile: package/kernel/r8101/Makefile
+
+Package: kmod-r8101
+Submenu: Network Devices
+Version: <LINUX_VERSION>+1.039.00-2
+Depends: @PCI_SUPPORT +kmod-libphy
+Conflicts: 
+Menu-Depends: 
+Provides: kmod-r8169
+Section: kernel
+Category: Kernel modules
+Title: Realtek RTL8101 PCI Fast Ethernet driver
+Maintainer: Alvaro Fernandez Rojas <noltari@gmail.com>
+Source: r8101-1.039.00.tar.bz2
+License: GPLv2
+Type: ipkg
+Description: Realtek RTL8101 PCI Fast Ethernet driver
+Alvaro Fernandez Rojas <noltari@gmail.com>
+@@
+
+

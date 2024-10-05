@@ -8,7 +8,7 @@ Target-Features: audio ext4 gpio rootfs-part squashfs virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: um
 Target-Description:

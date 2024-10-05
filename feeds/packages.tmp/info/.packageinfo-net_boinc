@@ -15,6 +15,7 @@ Require-User: boinc:boinc
 Source: boinc-7.16.16.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rom_walton:boinc
 Type: ipkg
 Description:   The Berkeley Open Infrastructure for Network Computing (BOINC) is a
   software platform for distributed computing: several initiatives of

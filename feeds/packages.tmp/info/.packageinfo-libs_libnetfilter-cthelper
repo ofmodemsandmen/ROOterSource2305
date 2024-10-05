@@ -13,6 +13,8 @@ Title: API to the in-kernel connection tracking helper infrastructure
 Maintainer: 
 Source: libnetfilter_cthelper-1.0.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:netfilter:libnetfilter_cthelper
+ABI-Version: 0
 Type: ipkg
 Description:  libnetfilter_cthelper is a userspace library providing a programming
  interface (API) to the in-kernel connection tracking helpers. 

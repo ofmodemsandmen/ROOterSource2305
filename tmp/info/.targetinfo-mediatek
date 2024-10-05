@@ -8,7 +8,7 @@ Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ram
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separ
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -56,6 +56,54 @@ Target-Profile-SupportedDevices: buffalo,wsr-2533dhp2
 
 Target-Profile-Description:
 Build firmware images for Buffalo WSR-2533DHP2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_buffalo_wsr-3200ax4s
+Target-Profile-Name: Buffalo WSR-3200AX4S
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: buffalo,wsr-3200ax4s
+
+
+Target-Profile-Description:
+Build firmware images for Buffalo WSR-3200AX4S
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_eagle-pro-ai-m32-a1
+Target-Profile-Name: D-Link EAGLE PRO AI M32 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,eagle-pro-ai-m32-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link EAGLE PRO AI M32 A1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_eagle-pro-ai-r32-a1
+Target-Profile-Name: D-Link EAGLE PRO AI R32 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,eagle-pro-ai-r32-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link EAGLE PRO AI R32 A1
 
 
 
@@ -260,14 +308,14 @@ Build firmware images for TOTOLINK A8000RU
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1
-Target-Profile-Name: Ubiquiti UniFi 6 LR v1
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v1
 Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1 ubnt,unifi-6-lr
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v1
+Build firmware images for Ubiquiti UniFi U6 Long-Range v1
 
 
 
@@ -276,14 +324,14 @@ Build firmware images for Ubiquiti UniFi 6 LR v1
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1-ubootmod
-Target-Profile-Name: Ubiquiti UniFi 6 LR v1 U-Boot mod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v1 U-Boot mod
 Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1-ubootmod ubnt,unifi-6-lr-ubootmod
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
+Build firmware images for Ubiquiti UniFi U6 Long-Range v1 U-Boot mod
 
 
 
@@ -292,14 +340,14 @@ Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2
-Target-Profile-Name: Ubiquiti UniFi 6 LR v2
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v2
 Target-Profile-Packages: kmod-mt7915-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v2
+Build firmware images for Ubiquiti UniFi U6 Long-Range v2
 
 
 
@@ -308,14 +356,46 @@ Build firmware images for Ubiquiti UniFi 6 LR v2
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2-ubootmod
-Target-Profile-Name: Ubiquiti UniFi 6 LR v2 U-Boot mod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v2 U-Boot mod
 Target-Profile-Packages: kmod-mt7915-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2-ubootmod
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v2 U-Boot mod
+Build firmware images for Ubiquiti UniFi U6 Long-Range v2 U-Boot mod
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v3
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v3
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v3
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6 Long-Range v3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v3-ubootmod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v3 U-Boot mod
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v3-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6 Long-Range v3 U-Boot mod
 
 
 
@@ -366,7 +446,7 @@ Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -430,7 +510,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -469,6 +549,90 @@ Build firmware images for ipTIME A6004MX
 
 @@
 
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6400 v3 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6410 v2 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6470 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6250 v2
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_tplink_eap225-v5
+Target-Profile-Name: TP-Link EAP225 v5
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,eap225-v5
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EAP225 v5
+
+
+
+
+
+@@
+
 Target: mediatek/filogic
 Target-Board: mediatek
 Target-Name: Filogic 8x0 (MT798x)
@@ -478,13 +642,125 @@ Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separ
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for MediaTek Filogic ARM based boards.
 @@
-Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-crypto-hw-safexcel kmod-mt7915e wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-phy-aquantia kmod-crypto-hw-safexcel kmod-mt7915e wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_acelink_ew-7886cax
+Target-Profile-Name: Acelink EW-7886CAX
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: acelink,ew-7886cax
+
+
+Target-Profile-Description:
+Build firmware images for Acelink EW-7886CAX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_acer_predator-w6
+Target-Profile-Name: Acer Predator W6
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware kmod-mt7916-firmware mt7986-wo-firmware e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: acer,predator-w6
+
+
+Target-Profile-Description:
+Build firmware images for Acer Predator W6
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8612
+Target-Profile-Name: Adtran SDG-8612
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8612
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8612
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8614
+Target-Profile-Name: Adtran SDG-8614
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8614
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8614
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8622
+Target-Profile-Name: Adtran SDG-8622
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8622
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8622
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8632
+Target-Profile-Name: Adtran SDG-8632
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8632
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8632
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_rt-ax59u
+Target-Profile-Name: ASUS RT-AX59U
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,rt-ax59u
+
+
+Target-Profile-Description:
+Build firmware images for ASUS RT-AX59U
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_asus_tuf-ax4200
 Target-Profile-Name: ASUS TUF-AX4200
 Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
@@ -494,6 +770,22 @@ Target-Profile-SupportedDevices: asus,tuf-ax4200
 
 Target-Profile-Description:
 Build firmware images for ASUS TUF-AX4200
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_tuf-ax6000
+Target-Profile-Name: ASUS TUF-AX6000
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,tuf-ax6000
+
+
+Target-Profile-Description:
+Build firmware images for ASUS TUF-AX6000
 
 
 
@@ -517,15 +809,143 @@ Build firmware images for Bananapi BPi-R3
 
 @@
 
+Target-Profile: DEVICE_cetron_ct3003
+Target-Profile-Name: Cetron CT3003
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cetron,ct3003 mediatek,mt7981-spim-snand-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Cetron CT3003
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cmcc_rax3000m
+Target-Profile-Name: CMCC RAX3000M
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cmcc,rax3000m
+
+
+Target-Profile-Description:
+Build firmware images for CMCC RAX3000M
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comfast_cf-e393ax
+Target-Profile-Name: Comfast CF-E393AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-e393ax
+
+
+Target-Profile-Description:
+Build firmware images for Comfast CF-E393AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_confiabits_mt7981
+Target-Profile-Name: Confiabits MT7981
+Target-Profile-Packages: kmod-usb3 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: confiabits,mt7981 mediatek,mt7981-spim-snand-2500wan-gmac2-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Confiabits MT7981
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_m3000-v1
+Target-Profile-Name: Cudy M3000 v1
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,m3000-v1 R37
+
+
+Target-Profile-Description:
+Build firmware images for Cudy M3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_re3000-v1
+Target-Profile-Name: Cudy RE3000 v1
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,re3000-v1 R36
+
+
+Target-Profile-Description:
+Build firmware images for Cudy RE3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_tr3000-v1
+Target-Profile-Name: Cudy TR3000 v1
+Target-Profile-Packages: kmod-usb3 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,tr3000-v1 R47
+
+
+Target-Profile-Description:
+Build firmware images for Cudy TR3000 v1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_wr3000-v1
 Target-Profile-Name: Cudy WR3000 v1
-Target-Profile-Packages: kmod-mt7981-firmware 
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cudy,wr3000-v1 R31
 
 
 Target-Profile-Description:
 Build firmware images for Cudy WR3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_aquila-pro-ai-m30-a1
+Target-Profile-Name: D-Link AQUILA PRO AI M30 A1
+Target-Profile-Packages: kmod-leds-gca230718 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,aquila-pro-ai-m30-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link AQUILA PRO AI M30 A1
 
 
 
@@ -549,15 +969,79 @@ Build firmware images for GL.iNet GL-MT3000
 
 @@
 
-Target-Profile: DEVICE_netgear_wax220
-Target-Profile-Name: Netgear WAX220
-Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile: DEVICE_glinet_gl-mt6000
+Target-Profile-Name: GL.iNet GL-MT6000
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: netgear,wax220
+Target-Profile-SupportedDevices: glinet,gl-mt6000
 
 
 Target-Profile-Description:
-Build firmware images for Netgear WAX220
+Build firmware images for GL.iNet GL-MT6000
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_h3c_magic-nx30-pro
+Target-Profile-Name: H3C Magic NX30 Pro
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: h3c,magic-nx30-pro
+
+
+Target-Profile-Description:
+Build firmware images for H3C Magic NX30 Pro
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_jcg_q30-pro
+Target-Profile-Name: JCG Q30 PRO
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jcg,q30-pro
+
+
+Target-Profile-Description:
+Build firmware images for JCG Q30 PRO
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_jdcloud_re-cp-03
+Target-Profile-Name: JDCloud RE-CP-03
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jdcloud,re-cp-03
+
+
+Target-Profile-Description:
+Build firmware images for JDCloud RE-CP-03
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7981-rfb
+Target-Profile-Name: MediaTek MT7981 rfb
+Target-Profile-Packages: kmod-mt7981-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7981-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MT7981 rfb
 
 
 
@@ -597,15 +1081,63 @@ Build firmware images for MediaTek MTK7986 rfbb AP
 
 @@
 
-Target-Profile: DEVICE_mediatek_mt7988a-rfb-nand
-Target-Profile-Name: MediaTek MT7988a nand rfb
-Target-Profile-Packages:  
+Target-Profile: DEVICE_mediatek_mt7988a-rfb
+Target-Profile-Name: MediaTek MT7988A rfb
+Target-Profile-Packages: kmod-sfp 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7988a-rfb
 
 
 Target-Profile-Description:
-Build firmware images for MediaTek MT7988a nand rfb
+Build firmware images for MediaTek MT7988A rfb
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mercusys_mr90x-v1
+Target-Profile-Name: MERCUSYS MR90X v1
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mercusys,mr90x-v1
+
+
+Target-Profile-Description:
+Build firmware images for MERCUSYS MR90X v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netcore_n60
+Target-Profile-Name: Netcore N60
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netcore,n60
+
+
+Target-Profile-Description:
+Build firmware images for Netcore N60
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wax220
+Target-Profile-Name: NETGEAR WAX220
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,wax220
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR WAX220
 
 
 
@@ -622,6 +1154,22 @@ Target-Profile-SupportedDevices: qihoo,360t7
 
 Target-Profile-Description:
 Build firmware images for Qihoo 360T7
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_routerich_ax3000
+Target-Profile-Name: Routerich AX3000
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: routerich,ax3000 mediatek,mt7981-spim-snand-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Routerich AX3000
 
 
 
@@ -677,6 +1225,118 @@ Build firmware images for TP-Link TL-XDR6088
 
 @@
 
+Target-Profile: DEVICE_ubnt_unifi-6-plus
+Target-Profile-Name: Ubiquiti UniFi U6+
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-plus
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6+
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7981-01-emmc
+Target-Profile-Name: Unielec U7981-01 (EMMC)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7981-01-emmc
+
+
+Target-Profile-Description:
+Build firmware images for Unielec U7981-01 (EMMC)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7981-01-nand
+Target-Profile-Name: Unielec U7981-01 (NAND)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7981-01-nand
+
+
+Target-Profile-Description:
+Build firmware images for Unielec U7981-01 (NAND)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-ax3000t
+Target-Profile-Name: Xiaomi Mi Router AX3000T
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-ax3000t
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router AX3000T
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-ax3000t-ubootmod
+Target-Profile-Name: Xiaomi Mi Router AX3000T (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-ax3000t-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router AX3000T (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-wr30u-stock
+Target-Profile-Name: Xiaomi Mi Router WR30U (stock layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-wr30u-stock
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router WR30U (stock layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-wr30u-ubootmod
+Target-Profile-Name: Xiaomi Mi Router WR30U (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-wr30u-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router WR30U (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_xiaomi_redmi-router-ax6000-stock
 Target-Profile-Name: Xiaomi Redmi Router AX6000 (stock layout)
 Target-Profile-Packages: kmod-leds-ws2812b kmod-mt7986-firmware mt7986-wo-firmware 
@@ -709,15 +1369,111 @@ Build firmware images for Xiaomi Redmi Router AX6000 (OpenWrt U-Boot layout)
 
 @@
 
+Target-Profile: DEVICE_yuncore_ax835
+Target-Profile-Name: YunCore AX835
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: yuncore,ax835 mediatek,mt7981-spim-nor-rfb
+
+
+Target-Profile-Description:
+Build firmware images for YunCore AX835
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zbtlink_zbt-z8102ax
+Target-Profile-Name: Zbtlink ZBT-Z8102AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 kmod-usb-net-qmi-wwan kmod-usb-serial-option 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zbtlink,zbt-z8102ax
+
+
+Target-Profile-Description:
+Build firmware images for Zbtlink ZBT-Z8102AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zbtlink_zbt-z8103ax
+Target-Profile-Name: Zbtlink ZBT-Z8103AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zbtlink,zbt-z8103ax
+
+
+Target-Profile-Description:
+Build firmware images for Zbtlink ZBT-Z8103AX
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zyxel_ex5601-t0-stock
-Target-Profile-Name: Zyxel EX5601-T0  (stock layout)
-Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-Name: Zyxel EX5601-T0 (stock layout)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware kmod-usb3 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7986a-rfb-snand
 
 
 Target-Profile-Description:
-Build firmware images for Zyxel EX5601-T0  (stock layout)
+Build firmware images for Zyxel EX5601-T0 (stock layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_ex5601-t0-ubootmod
+Target-Profile-Name: Zyxel EX5601-T0 (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,ex5601-t0-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Zyxel EX5601-T0 (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_ex5700-telenor
+Target-Profile-Name: ZyXEL EX5700 (Telenor)
+Target-Profile-Packages: kmod-mt7916-firmware kmod-ubootenv-nvram kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,ex5700-telenor
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL EX5700 (Telenor)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_nwa50ax-pro
+Target-Profile-Name: ZyXEL NWA50AX Pro
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware zyxel-bootconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,nwa50ax-pro
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL NWA50AX Pro
 
 
 

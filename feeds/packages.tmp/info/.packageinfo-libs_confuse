@@ -14,6 +14,7 @@ Maintainer:
 Source: confuse-3.3.tar.xz
 License: ISC
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libconfuse_project:libconfuse
 Type: ipkg
 Description: 	libConfuse is a configuration file parser library, licensed under the
 	terms of the ISC license, and written in C. It supports sections and

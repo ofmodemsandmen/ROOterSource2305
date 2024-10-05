@@ -15,6 +15,7 @@ Title: mDNS client utilities
 Maintainer: 
 Source: mDNSResponder-IETF104.tar.gz
 License: Apache-2.0
+CPE-ID: cpe:/a:apple:mdnsresponder
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables
   automatic discovery of computers, devices, and services on
@@ -45,6 +46,7 @@ Title: mDNS server daemon
 Maintainer: 
 Source: mDNSResponder-IETF104.tar.gz
 License: Apache-2.0
+CPE-ID: cpe:/a:apple:mdnsresponder
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables
   automatic discovery of computers, devices, and services on
@@ -69,6 +71,7 @@ Title: mDNS suite (meta)
 Maintainer: 
 Source: mDNSResponder-IETF104.tar.gz
 License: Apache-2.0
+CPE-ID: cpe:/a:apple:mdnsresponder
 Type: ipkg
 Description:   Bonjour, also known as zero-configuration networking, enables
   automatic discovery of computers, devices, and services on

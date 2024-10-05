@@ -11,14 +11,15 @@ Section: lang
 Category: Languages
 Repository: base
 Title: HTTP library for Python
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: requests-2.30.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:python:requests
 Type: ipkg
 Description:   Requests is the only Non-GMO HTTP library for Python, safe for human consumption
 https://requests.readthedocs.io
-Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Josef Schlehofer <pepe.schlehofer@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 
 Package: python3-requests-src
@@ -32,16 +33,17 @@ Section: lang
 Category: Languages
 Repository: base
 Title: HTTP library for Python (sources)
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: requests-2.30.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:python:requests
 Type: ipkg
 Description:       Requests is the only Non-GMO HTTP library for Python, safe for human consumption
 
     This package contains the Python source files for python3-requests.
 https://requests.readthedocs.io
-Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
+Josef Schlehofer <pepe.schlehofer@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-requests

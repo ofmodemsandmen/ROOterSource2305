@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: faad2-2.10.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:audiocoding:freeware_advanced_audio_decoder_2
 Type: ipkg
 Description: 	FAAD2 is the fastest ISO AAC audio decoder available.
 	FAAD2 correctly decodes all MPEG-4 and MPEG-2 MAIN,
@@ -38,6 +39,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: faad2-2.10.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:audiocoding:freeware_advanced_audio_decoder_2
 Type: ipkg
 Description: 	FAAD2 is the fastest ISO AAC audio decoder available.
 	FAAD2 correctly decodes all MPEG-4 and MPEG-2 MAIN,

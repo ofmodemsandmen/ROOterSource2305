@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libmad-0.16.3.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:underbit:mad_libmad
 Type: ipkg
 Description: 	MAD is a high-quality MPEG audio decoder. It currently supports
 	MPEG-1 and the MPEG-2 extension to lower sampling frequencies,

@@ -15,6 +15,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   tcpbridge is a tool for selectively briding network traffic across two
   interfaces and optionally modifying the packets in between
@@ -37,6 +38,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   tcpcapinfo is a tool for decoding the structure of a pcap(3) file with a
   focus on finding broken pcap files and determining how two related pcap
@@ -60,6 +62,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   This program, 'tcpliveplay' replays a captured set of packets using new TCP
   connections with the captured TCP payloads against a remote host in order
@@ -83,6 +86,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   tcpprep is a ``pcap(3)'' file pre-processor which creates a cache file
   which provides "rules" for ``tcprewrite(1)'' and ``tcpreplay(1)'' on how to
@@ -106,6 +110,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   tcpreplay is a tool for replaying network traffic from files saved with
   tcpdump or other tools which write pcap(3) files.
@@ -128,6 +133,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   tcpreplay-edit includes all the functionality of both tcpreplay
   and tcprewrite.
@@ -150,6 +156,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   Rewrite/edit the packets in a pcap file
 http://tcpreplay.appneta.com/
@@ -171,6 +178,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: tcpreplay-4.4.3.tar.xz
 License: GPL-3.0
 LicenseFiles: docs/LICENSE
+CPE-ID: cpe:/a:broadcom:tcpreplay
 Type: ipkg
 Description:   Tcpreplay is a suite of free Open Source utilities for
   editing and replaying previously captured network traffic.

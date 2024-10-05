@@ -11,12 +11,12 @@ Provides:
 Section: luci
 Category: LuCI
 Repository: base
-Title: Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+Title: Support for DHCPv6/6in4/6to4/6rd/DS-Lite/IPIP6
 Maintainer: OpenWrt LuCI community
 Source: 
 License: Apache-2.0
 Type: ipkg
-Description: Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+Description: Support for DHCPv6/6in4/6to4/6rd/DS-Lite/IPIP6
 https://github.com/openwrt/luci
 OpenWrt LuCI community
 @@

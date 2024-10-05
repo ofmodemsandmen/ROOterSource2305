@@ -14,8 +14,9 @@ Repository: base
 Title: The GD graphics library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: libgd-2.3.3.tar.xz
-License: MIT
+License: GD
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libgd:libgd
 Type: ipkg
 Description:   GD is an open source code library for the dynamic creation of images by
   programmers. GD creates PNG, JPEG and GIF images, among other formats.
@@ -52,8 +53,9 @@ Repository: base
 Title: The GD graphics library (full)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: libgd-2.3.3.tar.xz
-License: MIT
+License: GD
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libgd:libgd
 Type: ipkg
 Description:     GD is an open source code library for the dynamic creation of images by
   programmers. GD creates PNG, JPEG and GIF images, among other formats.

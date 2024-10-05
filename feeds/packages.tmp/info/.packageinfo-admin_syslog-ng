@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/admin/syslog-ng/Makefile
 Build-Depends: HOST_OS_MACOS:fakeuname/host 
 
 Package: syslog-ng
-Version: 4.2.0-1
-Depends: +libc +libpcre +glib2 +libopenssl +libpthread +librt +zlib +libdbi +libjson-c +libcurl +libuuid +SYSLOGNG_LOGROTATE:logrotate
+Version: 4.7.1-1
+Depends: +libc +libpcre2 +glib2 +libopenssl +libpthread +librt +libdbi +libjson-c +libcurl +libuuid +SYSLOGNG_LOGROTATE:logrotate +LIBCURL_ZLIB:zlib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,16 +11,17 @@ Section: admin
 Category: Administration
 Repository: base
 Title: A powerful syslog daemon
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: syslog-ng-4.2.0.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: syslog-ng-4.7.1.tar.gz
 License: LGPL-2.1-or-later GPL-2.0-or-later
 LicenseFiles: COPYING LGPL.txt GPL.txt
+CPE-ID: cpe:/a:balabit:syslog-ng
 Type: ipkg
 Description:   syslog-ng reads and logs messages to the system console, log
   files, other machines and/or users as specified by its
   configuration file.
 https://www.syslog-ng.com/products/open-source-log-management/
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 Config:
 config SYSLOGNG_LOGROTATE

@@ -12,7 +12,9 @@ Repository: base
 Title: Utilities for Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: nss-3.89.1.tar.gz
+License: MPL-2.0
 LicenseFiles: nss/COPYING
+CPE-ID: cpe:/a:mozilla:network_security_services
 Type: ipkg
 Description: Utilities for Mozilla's SSL and TLS implementation
 https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS
@@ -32,7 +34,9 @@ Repository: base
 Title: Mozilla's SSL and TLS implementation
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: nss-3.89.1.tar.gz
+License: MPL-2.0
 LicenseFiles: nss/COPYING
+CPE-ID: cpe:/a:mozilla:network_security_services
 Type: ipkg
 Description:   Network Security Services (NSS) is a set of libraries designed to support
   cross-platform development of security-enabled client and server applications.

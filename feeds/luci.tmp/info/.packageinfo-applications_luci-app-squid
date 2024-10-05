@@ -361,6 +361,26 @@ Description:     Translation for luci-app-squid - 한국어 (Korean)
 Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
+Package: luci-i18n-squid-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-squid
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-squid - lt translation
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-squid - Lietuvių (Lithuanian)
+Marko Ratkaj <marko.ratkaj@sartura.hr>
+@@
+
 Package: luci-i18n-squid-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

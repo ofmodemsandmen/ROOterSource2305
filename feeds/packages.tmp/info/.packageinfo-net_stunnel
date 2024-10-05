@@ -14,6 +14,7 @@ Maintainer: Florian Eckert <fe@dev.tdt.de>
 Source: stunnel-5.67.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING.md COPYRIGHT.md
+CPE-ID: cpe:/a:stunnel:stunnel
 Type: ipkg
 Description: 	Stunnel is a program that allows you to encrypt arbitrary TCP
 	connections inside SSL (Secure Sockets Layer) available on both Unix

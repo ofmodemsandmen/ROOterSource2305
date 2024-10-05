@@ -15,6 +15,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: audit-2.8.5.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:linux_audit_project:linux_audit
 Type: ipkg
 Description: 	This package contains the audit shared library.
 http://people.redhat.com/sgrubb/audit/

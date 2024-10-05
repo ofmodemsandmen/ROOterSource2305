@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2022-06-10 13:18+0000\n"
+"PO-Revision-Date: 2024-03-10 22:01+0000\n"
 "Last-Translator: Matthaiks <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsupnp/pl/>\n"
@@ -9,9 +9,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:182
 msgid ""
@@ -37,6 +37,10 @@ msgstr "Ustawienia zaawansowane"
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:131
 msgid "Advertise as IGDv1 device instead of IGDv2"
 msgstr "Rozgłaszanie jako urządzenie IGDv1 zamiast jako IGDv2"
+
+#: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:203
+msgid "Allow"
+msgstr "Zezwól"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:128
 msgid "Allow adding forwards only to requesting ip addresses"
@@ -78,6 +82,10 @@ msgstr "Komentarz"
 msgid "Delete"
 msgstr "Usuń"
 
+#: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:204
+msgid "Deny"
+msgstr "Odmów"
+
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/status/include/80_upnp.js:48
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:88
 msgid "Description"
@@ -97,7 +105,7 @@ msgstr "Włącz tryb IGDv1"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:125
 msgid "Enable NAT-PMP functionality"
-msgstr "Włącz funkcjonalność NAT-PMP"
+msgstr "Włącz funkcjonalność NAT‑PMP"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:124
 msgid "Enable UPnP functionality"
@@ -105,7 +113,7 @@ msgstr "Włącz funkcjonalność UPnP"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:133
 msgid "Enable additional logging"
-msgstr "Włącz rozszerzone raportowanie"
+msgstr "Włącz dodatkowe rejestrowanie"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:127
 msgid "Enable secure mode"
@@ -126,7 +134,7 @@ msgstr "Ustawienia główne"
 
 #: applications/luci-app-upnp/root/usr/share/rpcd/acl.d/luci-app-upnp.json:3
 msgid "Grant access to upnp procedures"
-msgstr "Udziel dostępu do procedur UPNP"
+msgstr "Udziel dostępu do procedur UPnP"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/status/include/80_upnp.js:46
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:86
@@ -159,7 +167,7 @@ msgstr "Port"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:164
 msgid "Presentation URL"
-msgstr "URL prezentacji"
+msgstr "Adres URL prezentacji"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/status/include/80_upnp.js:43
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:83
@@ -185,7 +193,7 @@ msgstr "Port STUN"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:121
 msgid "Start UPnP and NAT-PMP service"
-msgstr "Uruchom usługi UPnP i NAT-PMP"
+msgstr "Uruchom usługi UPnP i NAT‑PMP"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/status/include/80_upnp.js:70
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:66

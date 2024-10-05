@@ -15,6 +15,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+ABI-Version: 6
 Type: ipkg
 Description: Library for Flash-Friendly File System (F2FS) tools
 Felix Fietkau <nbd@nbd.name>
@@ -35,6 +37,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
+ABI-Version: 6
 Type: ipkg
 Description: Library for Flash-Friendly File System (F2FS) tools with SELinux support
 Felix Fietkau <nbd@nbd.name>
@@ -56,6 +60,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Utility for creating a Flash-Friendly File System (F2FS)
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git
@@ -78,6 +83,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Utility for creating a Flash-Friendly File System (F2FS) with SELinux support
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git
@@ -100,6 +106,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Utility for checking/repairing a Flash-Friendly File System (F2FS)
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git
@@ -122,6 +129,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Utility for checking/repairing a Flash-Friendly File System (F2FS) with SELinux support
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git
@@ -144,6 +152,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Tools for Flash-Friendly File System (F2FS)
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git
@@ -166,6 +175,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: f2fs-tools-1.16.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:f2fs-tools_project:f2fs-tools
 Type: ipkg
 Description: Tools for Flash-Friendly File System (F2FS) with SELinux support
 http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git

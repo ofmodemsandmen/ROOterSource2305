@@ -15,6 +15,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: libsoup-3.4.2.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnome:libsoup
 Type: ipkg
 Description: libsoup3
 https://wiki.gnome.org/Projects/libsoup

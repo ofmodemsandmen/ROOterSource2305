@@ -361,6 +361,26 @@ Description:     Translation for luci-app-acme - 한국어 (Korean)
 Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
+Package: luci-i18n-acme-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-acme
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-acme - lt translation
+Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-acme - Lietuvių (Lithuanian)
+Toke Høiland-Jørgensen <toke@toke.dk>
+@@
+
 Package: luci-i18n-acme-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

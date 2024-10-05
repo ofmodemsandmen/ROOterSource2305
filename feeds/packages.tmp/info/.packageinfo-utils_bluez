@@ -14,6 +14,7 @@ Maintainer:
 Source: bluez-5.66.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bluez:bluez
 Type: ipkg
 Description: Bluetooth library
 http://www.bluez.org/
@@ -34,6 +35,7 @@ Maintainer:
 Source: bluez-5.66.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bluez:bluez
 Type: ipkg
 Description: Bluetooth utilities
 http://www.bluez.org/
@@ -54,6 +56,7 @@ Maintainer:
 Source: bluez-5.66.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bluez:bluez
 Type: ipkg
 Description: Bluetooth utilities
 http://www.bluez.org/
@@ -74,6 +77,7 @@ Maintainer:
 Source: bluez-5.66.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bluez:bluez
 Type: ipkg
 Description: Bluetooth additional utilities
 http://www.bluez.org/
@@ -94,6 +98,7 @@ Maintainer:
 Source: bluez-5.66.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bluez:bluez
 Type: ipkg
 Description: Bluetooth daemon
 http://www.bluez.org/

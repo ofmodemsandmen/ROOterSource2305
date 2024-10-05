@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nmap/Makefile
 
 Package: nmap
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libstdcpp +zlib +libpcre
 Conflicts: 
 Menu-Depends: 
@@ -16,6 +16,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Utility for network exploration or security auditing
 https://nmap.org/
@@ -24,7 +25,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: nmap-ssl
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libstdcpp +zlib +libpcre +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -38,6 +39,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Nmap (with OpenSSL support)
 https://nmap.org/
@@ -46,7 +48,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: nmap-full
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libstdcpp +zlib +libpcre +libopenssl +liblua5.3 +libssh2
 Conflicts: 
 Menu-Depends: 
@@ -60,6 +62,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Nmap (with OpenSSL and scripting support)
 https://nmap.org/
@@ -68,7 +71,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: ncat
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap
 Conflicts: 
 Menu-Depends: 
@@ -82,6 +85,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Much-improved reimplementation of Netcat
 https://nmap.org/
@@ -90,7 +94,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: ncat-ssl
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -104,6 +108,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Ncat (with OpenSSL support)
 https://nmap.org/
@@ -112,7 +117,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: ncat-full
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libopenssl +liblua5.3
 Conflicts: 
 Menu-Depends: 
@@ -126,6 +131,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Ncat (with OpenSSL and scripting support)
 https://nmap.org/
@@ -134,7 +140,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: nping
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libpthread +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -148,6 +154,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Network packet generation tool / ping utility
 https://nmap.org/
@@ -156,7 +163,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: nping-ssl
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +libpcap +libpthread +libstdcpp +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -170,6 +177,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Nping (with OpenSSL support)
 https://nmap.org/
@@ -178,7 +186,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: ndiff
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc +python3-light +python3-xml
 Conflicts: 
 Menu-Depends: 
@@ -191,6 +199,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description: Utility to compare the results of Nmap scans
 https://nmap.org/
@@ -199,7 +208,7 @@ Nuno Gonçalves <nunojpg@gmail.com>
 
 Package: ndiff-src
 Submenu: NMAP Suite
-Version: 7.93-2
+Version: 7.93-3
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -212,6 +221,7 @@ Maintainer: Nuno Gonçalves <nunojpg@gmail.com>
 Source: nmap-7.93.tar.bz2
 License: NPSL-0.94-or-NPSL-0.95
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:nmap:nmap
 Type: ipkg
 Description:     	Utility to compare the results of Nmap scans
 

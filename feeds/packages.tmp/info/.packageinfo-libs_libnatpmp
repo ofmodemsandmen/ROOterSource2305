@@ -14,6 +14,7 @@ Maintainer:
 Source: libnatpmp-20150609.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+ABI-Version: 1
 Type: ipkg
 Description:     libnatpmp is an attempt to make a portable and fully compliant implementation
   of the protocol for the client side. It is based on non blocking sockets and

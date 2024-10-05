@@ -14,6 +14,7 @@ Maintainer: Ye Holmes <yeholmes@outlook.com>
 Source: openpgm-release-5-3-128.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: openpgm/pgm/LICENSE
+CPE-ID: cpe:/a:openpgm:openpgm
 Type: ipkg
 Description:   OpenPGM is a library implementing the PGM reliable multicast
   network protocol. For more information about OpenPGM, see:

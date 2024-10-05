@@ -61,6 +61,26 @@ Description:     Translation for luci-app-smartdns - Español (Spanish)
 Nick Peng <pymumu@gmail.com>
 @@
 
+Package: luci-i18n-smartdns-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-smartdns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-smartdns - lt translation
+Maintainer: Nick Peng <pymumu@gmail.com>
+Source: 
+License: GPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-smartdns - Lietuvių (Lithuanian)
+Nick Peng <pymumu@gmail.com>
+@@
+
 Package: luci-i18n-smartdns-zh-cn
 Default: LUCI_LANG_zh_Hans||(ALL&&m)
 Version: x

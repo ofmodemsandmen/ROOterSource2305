@@ -2,7 +2,7 @@ Source-Makefile: package/network/services/hostapd/Makefile
 
 Package: hostapd-common
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -12,8 +12,9 @@ Category: Network
 Repository: base
 Title: hostapd/wpa_supplicant common support files
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: hostapd/wpa_supplicant common support files
 Felix Fietkau <nbd@nbd.name>
@@ -21,8 +22,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
 Provides: hostapd
@@ -33,8 +34,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (built-in full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
@@ -44,8 +46,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-basic
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: hostapd
 Menu-Depends: 
 Provides: hostapd
@@ -56,8 +58,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (WPA-PSK, 11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -66,8 +69,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-basic-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-basic-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-basic-openssl:libopenssl
 Conflicts: hostapd hostapd-basic
 Menu-Depends: 
 Provides: hostapd
@@ -78,8 +81,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (WPA-PSK, 11r and 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -88,8 +92,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-basic-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-basic-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-basic-wolfssl:libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl
 Menu-Depends: 
 Provides: hostapd
@@ -100,8 +104,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (WPA-PSK, 11r and 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -110,8 +115,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-basic-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-basic-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-basic-mbedtls:libmbedtls
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl
 Menu-Depends: 
 Provides: hostapd
@@ -122,8 +127,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (WPA-PSK, 11r and 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator with WPA-PSK, 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -132,8 +138,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-mini
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls
 Menu-Depends: 
 Provides: hostapd
@@ -144,8 +150,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (WPA-PSK only)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator (WPA-PSK only).
 http://hostap.epitest.fi/
@@ -154,8 +161,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-openssl:libopenssl +PACKAGE_hostapd-openssl:libopenssl-legacy
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini
 Menu-Depends: 
 Provides: hostapd
@@ -166,8 +173,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (OpenSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
@@ -177,8 +185,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-wolfssl:libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl
 Menu-Depends: 
 Provides: hostapd
@@ -189,8 +197,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (wolfSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
@@ -200,8 +209,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_hostapd-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_hostapd-mbedtls:libmbedtls
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl
 Menu-Depends: 
 Provides: hostapd
@@ -212,8 +221,9 @@ Repository: base
 Title: IEEE 802.1x Authenticator (mbedTLS full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
@@ -223,8 +233,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls 
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -235,8 +245,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (built-in full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
@@ -246,8 +257,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-mesh-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-openssl:libopenssl +PACKAGE_wpad-mesh-openssl:libopenssl-legacy
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad  wpad
 Menu-Depends: 
 Provides: hostapd wpa-supplicant wpa-supplicant-mesh wpad-mesh
@@ -258,8 +269,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (OpenSSL, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
 http://hostap.epitest.fi/
@@ -268,8 +280,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-mesh-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-wolfssl:libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl  wpad wpad-mesh-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant wpa-supplicant-mesh wpad-mesh
@@ -280,8 +292,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (wolfSSL, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
 http://hostap.epitest.fi/
@@ -290,8 +303,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-mesh-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpad-mesh-mbedtls:libmbedtls
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant wpa-supplicant-mesh wpad-mesh
@@ -302,8 +315,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (mbedTLS, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (with 802.11s mesh and SAE support).
 http://hostap.epitest.fi/
@@ -312,8 +326,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-basic
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -324,8 +338,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (WPA-PSK, 11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -334,8 +349,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-basic-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-basic-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-basic-openssl:libopenssl +PACKAGE_wpad-basic-openssl:libopenssl-legacy
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -346,8 +361,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (OpenSSL, 11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -356,8 +372,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-basic-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-basic-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-basic-wolfssl:libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -368,8 +384,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (wolfSSL, 11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -378,8 +395,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-basic-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-basic-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-basic-mbedtls:libmbedtls
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -390,8 +407,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (mbedTLS, 11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a basic IEEE 802.1x/WPA Authenticator and Supplicant with WPA-PSK, SAE (WPA3-Personal), 802.11r and 802.11w support.
 http://hostap.epitest.fi/
@@ -400,8 +418,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-mini
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -412,8 +430,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (WPA-PSK only)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
 http://hostap.epitest.fi/
@@ -422,8 +441,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-openssl:libopenssl +PACKAGE_wpad-openssl:libopenssl-legacy
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -434,8 +453,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (OpenSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
@@ -445,8 +465,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-wolfssl:libwolfssl
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -457,8 +477,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (wolfSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
@@ -468,8 +489,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpad-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpad-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpad-mbedtls:libmbedtls
 Conflicts: hostapd hostapd-basic hostapd-basic-openssl hostapd-basic-wolfssl hostapd-basic-mbedtls hostapd-mini hostapd-openssl hostapd-wolfssl hostapd-mbedtls wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl  wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl
 Menu-Depends: 
 Provides: hostapd wpa-supplicant
@@ -480,8 +501,9 @@ Repository: base
 Title: IEEE 802.1x Auth/Supplicant (mbedTLS full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
@@ -491,8 +513,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -503,21 +525,22 @@ Repository: base
 Title: WPA Supplicant (built-in full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (built-in full)
 http://hostap.epitest.fi/wpa_supplicant/
 Felix Fietkau <nbd@nbd.name>
 @@
 Config:
-	source "package/network/services/hostapd/Config.in"
+	source "feeds/base/network/services/hostapd/Config.in"
 @@
 
 Package: wpa-supplicant-mesh-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-openssl:libopenssl +PACKAGE_wpa-supplicant-mesh-openssl:libopenssl-legacy
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant
 Menu-Depends: 
 Provides: wpa-supplicant wpa-supplicant-mesh
@@ -528,8 +551,9 @@ Repository: base
 Title: WPA Supplicant (OpenSSL, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (OpenSSL, 11s, SAE)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -538,8 +562,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-mesh-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-wolfssl:libwolfssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl
 Menu-Depends: 
 Provides: wpa-supplicant wpa-supplicant-mesh
@@ -550,8 +574,9 @@ Repository: base
 Title: WPA Supplicant (wolfSSL, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (wolfSSL, 11s, SAE)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -560,8 +585,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-mesh-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211 @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json @(!TARGET_uml||BROKEN) +PACKAGE_wpa-supplicant-mesh-mbedtls:libmbedtls
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl
 Menu-Depends: 
 Provides: wpa-supplicant wpa-supplicant-mesh
@@ -572,8 +597,9 @@ Repository: base
 Title: WPA Supplicant (mbedTLS, 11s, SAE)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (mbedTLS, 11s, SAE)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -582,8 +608,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-basic
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -594,8 +620,9 @@ Repository: base
 Title: WPA Supplicant (11r, 11w)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (11r, 11w)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -604,8 +631,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-mini
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls wpa-supplicant-basic
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -616,8 +643,9 @@ Repository: base
 Title: WPA Supplicant (minimal)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (minimal)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -626,8 +654,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-p2p
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus @PACKAGE_kmod-cfg80211
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls wpa-supplicant-basic wpa-supplicant-mini
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -638,8 +666,9 @@ Repository: base
 Title: WPA Supplicant (Wi-Fi P2P support)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (Wi-Fi P2P support)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -648,8 +677,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpa-supplicant-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpa-supplicant-openssl:libopenssl +PACKAGE_wpa-supplicant-openssl:libopenssl-legacy
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls wpa-supplicant-basic wpa-supplicant-mini wpa-supplicant-p2p
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -660,8 +689,9 @@ Repository: base
 Title: WPA Supplicant (OpenSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (OpenSSL full)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -670,8 +700,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpa-supplicant-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpa-supplicant-wolfssl:libwolfssl
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls wpa-supplicant-basic wpa-supplicant-mini wpa-supplicant-p2p wpa-supplicant-openssl
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -682,8 +712,9 @@ Repository: base
 Title: WPA Supplicant (wolfSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (wolfSSL full)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -692,8 +723,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-supplicant-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +hostapd-common +libubus +PACKAGE_wpa-supplicant-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +hostapd-common +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_wpa-supplicant-mbedtls:libmbedtls
 Conflicts: wpad wpad-mesh-openssl wpad-mesh-wolfssl wpad-mesh-mbedtls wpad-basic wpad-basic-openssl wpad-basic-wolfssl wpad-basic-mbedtls wpad-mini wpad-openssl wpad-wolfssl wpad-mbedtls wpa-supplicant wpa-supplicant-mesh-openssl wpa-supplicant-mesh-wolfssl wpa-supplicant-mesh-mbedtls wpa-supplicant-basic wpa-supplicant-mini wpa-supplicant-p2p wpa-supplicant-openssl wpa-supplicant-wolfssl
 Menu-Depends: 
 Provides: wpa-supplicant
@@ -704,8 +735,9 @@ Repository: base
 Title: WPA Supplicant (mbedTLS full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Require-User: network=101:network=101
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant (mbedTLS full)
 http://hostap.epitest.fi/wpa_supplicant/
@@ -714,7 +746,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: wpa-cli
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
 Depends: +libc @PACKAGE_wpad||PACKAGE_wpad-mesh-openssl||PACKAGE_wpad-mesh-wolfssl||PACKAGE_wpad-mesh-mbedtls||PACKAGE_wpad-basic||PACKAGE_wpad-basic-openssl||PACKAGE_wpad-basic-wolfssl||PACKAGE_wpad-basic-mbedtls||PACKAGE_wpad-mini||PACKAGE_wpad-openssl||PACKAGE_wpad-wolfssl||PACKAGE_wpad-mbedtls||PACKAGE_wpa-supplicant||PACKAGE_wpa-supplicant-mesh-openssl||PACKAGE_wpa-supplicant-mesh-wolfssl||PACKAGE_wpa-supplicant-mesh-mbedtls||PACKAGE_wpa-supplicant-basic||PACKAGE_wpa-supplicant-mini||PACKAGE_wpa-supplicant-p2p||PACKAGE_wpa-supplicant-openssl||PACKAGE_wpa-supplicant-wolfssl||PACKAGE_wpa-supplicant-mbedtls
 Conflicts: 
 Menu-Depends: 
@@ -725,8 +757,9 @@ Category: Network
 Repository: base
 Title: WPA Supplicant command line control utility
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: WPA Supplicant command line control utility
 Felix Fietkau <nbd@nbd.name>
@@ -734,7 +767,7 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: hostapd-utils
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
 Depends: +libc @PACKAGE_hostapd||PACKAGE_hostapd-basic||PACKAGE_hostapd-basic-openssl||PACKAGE_hostapd-basic-wolfssl||PACKAGE_hostapd-basic-mbedtls||PACKAGE_hostapd-mini||PACKAGE_hostapd-openssl||PACKAGE_hostapd-wolfssl||PACKAGE_hostapd-mbedtls||PACKAGE_wpad||PACKAGE_wpad-mesh-openssl||PACKAGE_wpad-mesh-wolfssl||PACKAGE_wpad-mesh-mbedtls||PACKAGE_wpad-basic||PACKAGE_wpad-basic-openssl||PACKAGE_wpad-basic-wolfssl||PACKAGE_wpad-basic-mbedtls||PACKAGE_wpad-mini||PACKAGE_wpad-openssl||PACKAGE_wpad-wolfssl||PACKAGE_wpad-mbedtls
 Conflicts: 
 Menu-Depends: 
@@ -745,8 +778,9 @@ Category: Network
 Repository: base
 Title: IEEE 802.1x Authenticator (utils)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description:  This package contains a command line utility to control the
  IEEE 802.1x/WPA/EAP/RADIUS Authenticator.
@@ -756,8 +790,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: eapol-test
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +libubus
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -767,8 +801,9 @@ Category: Network
 Repository: base
 Title: 802.1x auth test utility (built-in full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: 802.1x auth test utility (built-in full)
 Felix Fietkau <nbd@nbd.name>
@@ -776,8 +811,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: eapol-test-openssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +libubus +PACKAGE_eapol-test-openssl:libopenssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_eapol-test-openssl:libopenssl +PACKAGE_eapol-test-openssl:libopenssl-legacy
 Conflicts: eapol-test eapol-test-wolfssl
 Menu-Depends: 
 Provides: eapol-test
@@ -787,8 +822,9 @@ Category: Network
 Repository: base
 Title: 802.1x auth test utility (OpenSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: 802.1x auth test utility (OpenSSL full)
 Felix Fietkau <nbd@nbd.name>
@@ -796,8 +832,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: eapol-test-wolfssl
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +libubus +PACKAGE_eapol-test-wolfssl:libwolfssl
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_eapol-test-wolfssl:libwolfssl
 Conflicts: eapol-test
 Menu-Depends: 
 Provides: eapol-test
@@ -807,8 +843,9 @@ Category: Network
 Repository: base
 Title: 802.1x auth test utility (wolfSSL full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: 802.1x auth test utility (wolfSSL full)
 Felix Fietkau <nbd@nbd.name>
@@ -816,8 +853,8 @@ Felix Fietkau <nbd@nbd.name>
 
 Package: eapol-test-mbedtls
 Submenu: WirelessAPD
-Version: 2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42-1.2
-Depends: +libc +PACKAGE_kmod-cfg80211:libnl-tiny +libubus +PACKAGE_eapol-test-mbedtls:libmbedtls
+Version: 2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c-8
+Depends: +libc +libnl-tiny +ucode +libubus +libucode +ucode-mod-fs +ucode-mod-nl80211 +ucode-mod-rtnl +ucode-mod-ubus +ucode-mod-uloop +libblobmsg-json +PACKAGE_eapol-test-mbedtls:libmbedtls
 Conflicts: eapol-test eapol-test-wolfssl
 Menu-Depends: 
 Provides: eapol-test
@@ -827,8 +864,9 @@ Category: Network
 Repository: base
 Title: 802.1x auth test utility (mbedTLS full)
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: hostapd-2023-03-29-bb945b98fefc64887dffb40773a19d77585cee42.tar.xz
+Source: hostapd-2023-09-08-e5ccbfc69ecf297590341ae8b461edba9d8e964c.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: 802.1x auth test utility (mbedTLS full)
 Felix Fietkau <nbd@nbd.name>

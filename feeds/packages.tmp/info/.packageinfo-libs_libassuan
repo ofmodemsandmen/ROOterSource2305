@@ -12,8 +12,8 @@ Repository: base
 Title: GnuPG IPC library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: libassuan-2.5.5.tar.bz2
-License: GPL-3.0-or-later
-LicenseFiles: COPYING
+License: LGPL-2.1-or-later
+LicenseFiles: COPYING COPYING.LIB
 Type: ipkg
 Description: Libassuan is a small library implementing the so-called Assuan
 protocol. This protocol is used for IPC between most newer GnuPG

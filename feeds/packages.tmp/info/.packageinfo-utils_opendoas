@@ -12,7 +12,7 @@ Repository: base
 Title: Portable OpenBSD doas to execute commands as another user
 Maintainer: Michal Vasilek <michal.vasilek@nic.cz>
 Source: opendoas-6.8.2.tar.xz
-License: ISC, BSD-3-Clause
+License: ISC BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:  OpenDoas: a portable version of OpenBSD's doas command

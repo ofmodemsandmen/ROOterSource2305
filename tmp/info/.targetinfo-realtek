@@ -8,7 +8,7 @@ Target-Features: gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -32,7 +32,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -200,6 +200,38 @@ Target-Profile-SupportedDevices: hpe,1920-8g
 
 Target-Profile-Description:
 Build firmware images for HPE 1920-8G (JG920A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-8g-poe-65w
+Target-Profile-Name: HPE 1920-8G-PoE+ 65W (JG921A)
+Target-Profile-Packages:  realtek-poe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-8g-poe-65w
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-8G-PoE+ 65W (JG921A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-8g-poe-180w
+Target-Profile-Name: HPE 1920-8G-PoE+ 180W (JG922A)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-8g-poe-180w hpe_1920-8g-poe
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-8G-PoE+ 180W (JG922A)
 
 
 
@@ -568,7 +600,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -672,7 +704,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -712,7 +744,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

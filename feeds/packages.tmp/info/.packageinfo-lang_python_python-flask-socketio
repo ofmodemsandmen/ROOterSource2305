@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-flask-socketio/Makefile
 
 Package: python3-flask-socketio
 Submenu: Python
-Version: 5.3.1-1
+Version: 5.3.5-1
 Depends: +libc +python3-light +python3-flask +python3-socketio
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Socket.IO integration for Flask
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: Flask-SocketIO-5.3.1.tar.gz
+Source: Flask-SocketIO-5.3.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,7 +24,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-flask-socketio-src
 Submenu: Python
-Version: 5.3.1-1
+Version: 5.3.5-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Languages
 Repository: base
 Title: Socket.IO integration for Flask (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: Flask-SocketIO-5.3.1.tar.gz
+Source: Flask-SocketIO-5.3.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

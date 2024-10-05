@@ -4,7 +4,7 @@ Build-Depends/host: yaml/host
 Build-Types: host
 
 Package: libruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc +libpthread +librt +libgmp +zlib
 Conflicts: 
 Menu-Depends: 
@@ -14,9 +14,11 @@ Category: Libraries
 Repository: base
 Title: Ruby scripting language (shared library)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
+ABI-Version: 3.2
 Type: ipkg
 Description: Ruby scripting language (shared library)
 http://www.ruby-lang.org/
@@ -25,7 +27,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc +libruby
 Conflicts: 
 Menu-Depends: 
@@ -35,9 +37,10 @@ Category: Languages
 Repository: base
 Title: Ruby scripting language (interpreter)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:  Ruby is the interpreted scripting language for quick and easy
  object-oriented programming.  It has many features to process text files
@@ -60,7 +63,7 @@ Config:
 
 Package: ruby-dev
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc +libruby ruby
 Conflicts: 
 Menu-Depends: 
@@ -70,9 +73,10 @@ Category: Languages
 Repository: base
 Title: Ruby scripting language (dev files)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:   Header files for compiling extension modules for the Ruby 3.2
 http://www.ruby-lang.org/
@@ -81,7 +85,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-abbrev
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -91,9 +95,10 @@ Category: Languages
 Repository: base
 Title: Ruby Calculates the set of unambiguous abbreviations for a given set of strings
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Calculates the set of unambiguous abbreviations for a given set of strings.
  
@@ -109,7 +114,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-base64
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -119,9 +124,10 @@ Category: Languages
 Repository: base
 Title: Ruby Encode and decode base64
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Encode and decode base64.
  
@@ -137,7 +143,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-benchmark
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -147,9 +153,10 @@ Category: Languages
 Repository: base
 Title: Ruby Performance benchmarking library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Performance benchmarking library.
  
@@ -166,7 +173,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-bigdecimal
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -176,9 +183,10 @@ Category: Languages
 Repository: base
 Title: Ruby Arbitrary-precision decimal floating-point library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Arbitrary-precision decimal floating-point library.
  
@@ -195,7 +203,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-bundler
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-erb +ruby-irb +ruby-logger +ruby-open-uri +ruby-readline +ruby-yaml
 Conflicts: 
 Menu-Depends: 
@@ -205,9 +213,10 @@ Category: Languages
 Repository: base
 Title: Ruby Manage dependencies
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Manage dependencies.
 
@@ -217,7 +226,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-cgi
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-pstore +ruby-securerandom +ruby-shellwords +ruby-stringio +ruby-tempfile
 Conflicts: 
 Menu-Depends: 
@@ -227,9 +236,10 @@ Category: Languages
 Repository: base
 Title: Ruby CGI support toolkit
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby CGI support toolkit.
  
@@ -247,7 +257,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-continuation
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -257,9 +267,10 @@ Category: Languages
 Repository: base
 Title: Ruby Similar to C setjmp/longjmp with extra states
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Similar to C setjmp/longjmp with extra states.
  
@@ -273,7 +284,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-coverage
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -283,9 +294,10 @@ Category: Languages
 Repository: base
 Title: Ruby Coverage measurement
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Coverage measurement.
  
@@ -300,7 +312,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-csv
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-date +ruby-english +ruby-forwardable +ruby-stringio +ruby-strscan
 Conflicts: 
 Menu-Depends: 
@@ -310,9 +322,10 @@ Category: Languages
 Repository: base
 Title: Ruby CSV Reading and Writing
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby CSV Reading and Writing.
  
@@ -328,7 +341,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-date
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -338,9 +351,10 @@ Category: Languages
 Repository: base
 Title: Ruby Comparable module for handling dates
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Comparable module for handling dates.
  
@@ -356,7 +370,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-debug
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-base64 +ruby-irb +ruby-mkmf +ruby-objspace +ruby-readline
 Conflicts: 
 Menu-Depends: 
@@ -366,9 +380,10 @@ Category: Languages
 Repository: base
 Title: Ruby generic command line interface for ruby-debug
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby generic command line interface for ruby-debug.
  
@@ -392,7 +407,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-delegate
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -402,9 +417,10 @@ Category: Languages
 Repository: base
 Title: Ruby lib to delegate method calls to an object
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby lib to delegate method calls to an object.
  
@@ -421,7 +437,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-did-you-mean
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-rbconfig
 Conflicts: 
 Menu-Depends: 
@@ -431,9 +447,10 @@ Category: Languages
 Repository: base
 Title: Ruby did you mean? experience
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby did you mean? experience.
  
@@ -450,7 +467,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-digest
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +RUBY_DIGEST_USE_OPENSSL:libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -460,9 +477,10 @@ Category: Languages
 Repository: base
 Title: Ruby Digest Library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:  Provides digest* files. Can be configured to use OpenSSL or
  bundled hash functions.
@@ -494,7 +512,7 @@ Config:
 
 Package: ruby-drb
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-monitor +ruby-observer +ruby-openssl +ruby-singleton +ruby-tmpdir
 Conflicts: 
 Menu-Depends: 
@@ -504,9 +522,10 @@ Category: Languages
 Repository: base
 Title: Ruby distributed object system
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby distributed object system.
  
@@ -522,7 +541,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-enc
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -532,9 +551,10 @@ Category: Languages
 Repository: base
 Title: Ruby character re-coding library charset (small subset)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby character re-coding library charset (small subset).
  
@@ -551,7 +571,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-enc-extra
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc
 Conflicts: 
 Menu-Depends: 
@@ -561,9 +581,10 @@ Category: Languages
 Repository: base
 Title: Ruby character re-coding library charset (extra subset)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby character re-coding library charset (extra subset).
  
@@ -584,7 +605,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-english
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -594,9 +615,10 @@ Category: Languages
 Repository: base
 Title: Ruby Reference some global vars as english variables
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Reference some global vars as english variables.
  
@@ -611,7 +633,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-erb
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-gems
 Conflicts: 
 Menu-Depends: 
@@ -621,9 +643,10 @@ Category: Languages
 Repository: base
 Title: Ruby (embedded interpreter)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby (embedded interpreter).
 
@@ -633,7 +656,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-error_highlight
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -643,9 +666,10 @@ Category: Languages
 Repository: base
 Title: Ruby Fine-grained error location in backtrace
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Fine-grained error location in backtrace.
  
@@ -661,7 +685,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-etc
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -671,9 +695,10 @@ Category: Languages
 Repository: base
 Title: Ruby Access info typically stored in /etc
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Access info typically stored in /etc.
  
@@ -688,7 +713,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-expect
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -698,9 +723,10 @@ Category: Languages
 Repository: base
 Title: Ruby Expect-like for IO
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Expect-like for IO.
  
@@ -714,7 +740,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-fcntl
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -724,9 +750,10 @@ Category: Languages
 Repository: base
 Title: Ruby Loads constants defined in the OS fcntl.h C header file
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Loads constants defined in the OS fcntl.h C header file.
  
@@ -741,7 +768,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-fiddle
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +libffi
 Conflicts: 
 Menu-Depends: 
@@ -751,9 +778,10 @@ Category: Languages
 Repository: base
 Title: Ruby Libffi wrapper for Ruby
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Libffi wrapper for Ruby.
  
@@ -770,7 +798,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-fileutils
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc +ruby-etc +ruby-rbconfig +ruby-socket
 Conflicts: 
 Menu-Depends: 
@@ -780,9 +808,10 @@ Category: Languages
 Repository: base
 Title: Ruby File utility methods for copying moving removing etc
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby File utility methods for copying moving removing etc.
  
@@ -798,7 +827,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-find
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc
 Conflicts: 
 Menu-Depends: 
@@ -808,9 +837,10 @@ Category: Languages
 Repository: base
 Title: Ruby top-down traversal of a set of file paths
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby top-down traversal of a set of file paths.
  
@@ -825,7 +855,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-forwardable
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -835,9 +865,10 @@ Category: Languages
 Repository: base
 Title: Ruby delegation of methods to a object
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby delegation of methods to a object.
  
@@ -853,7 +884,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-gems
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-json +ruby-net-http +ruby-open3 +ruby-pathname +ruby-psych +ruby-rake
 Conflicts: 
 Menu-Depends: 
@@ -863,9 +894,10 @@ Category: Languages
 Repository: base
 Title: Ruby gems packet management
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby gems packet management.
 
@@ -875,7 +907,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-getoptlong
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -885,9 +917,10 @@ Category: Languages
 Repository: base
 Title: Ruby implementation of getoptLong
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby implementation of getoptLong.
  
@@ -904,7 +937,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-io-console
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -914,9 +947,10 @@ Category: Languages
 Repository: base
 Title: Ruby Console interface
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Console interface.
  
@@ -932,7 +966,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-io-nonblock
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -942,9 +976,10 @@ Category: Languages
 Repository: base
 Title: Ruby Non-blocking mode with IO class
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Non-blocking mode with IO class.
  
@@ -959,7 +994,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-io-wait
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -969,9 +1004,10 @@ Category: Languages
 Repository: base
 Title: Ruby Waits until IO is readable or writable without blocking
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Waits until IO is readable or writable without blocking.
  
@@ -986,7 +1022,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-ipaddr
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-socket
 Conflicts: 
 Menu-Depends: 
@@ -996,9 +1032,10 @@ Category: Languages
 Repository: base
 Title: Ruby Set of methods to manipulate an IP address
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Set of methods to manipulate an IP address.
  
@@ -1013,7 +1050,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-irb
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-gems +ruby-reline +ruby-ripper
 Conflicts: 
 Menu-Depends: 
@@ -1023,9 +1060,10 @@ Category: Languages
 Repository: base
 Title: Ruby (interactive shell)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby (interactive shell).
 
@@ -1035,7 +1073,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-json
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-date +ruby-ostruct
 Conflicts: 
 Menu-Depends: 
@@ -1045,9 +1083,10 @@ Category: Languages
 Repository: base
 Title: Ruby JSON Implementation for Ruby
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby JSON Implementation for Ruby.
  
@@ -1071,7 +1110,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-logger
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-monitor +ruby-rbconfig
 Conflicts: 
 Menu-Depends: 
@@ -1081,9 +1120,10 @@ Category: Languages
 Repository: base
 Title: Ruby logger and syslog library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby logger and syslog library.
  
@@ -1099,7 +1139,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-matrix
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1109,9 +1149,10 @@ Category: Languages
 Repository: base
 Title: Ruby implementation of Matrix and Vector classes
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby implementation of Matrix and Vector classes.
  
@@ -1130,7 +1171,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-minitest
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-gems +ruby-mutex_m
 Conflicts: 
 Menu-Depends: 
@@ -1140,9 +1181,10 @@ Category: Languages
 Repository: base
 Title: Ruby Gem minitest
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Gem minitest.
  
@@ -1163,7 +1205,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-mjit
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-fiddle
 Conflicts: 
 Menu-Depends: 
@@ -1173,9 +1215,10 @@ Category: Languages
 Repository: base
 Title: Ruby Method Based Just-in-Time Compiler
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Method Based Just-in-Time Compiler.
  
@@ -1189,7 +1232,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-mkmf
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-shellwords +ruby-tmpdir
 Conflicts: 
 Menu-Depends: 
@@ -1199,9 +1242,10 @@ Category: Languages
 Repository: base
 Title: Ruby makefile library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby makefile library.
  
@@ -1215,7 +1259,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-monitor
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1225,9 +1269,10 @@ Category: Languages
 Repository: base
 Title: Ruby Object or module methods are executed with mutual exclusion
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Object or module methods are executed with mutual exclusion.
  
@@ -1242,7 +1287,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-mutex_m
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1252,9 +1297,10 @@ Category: Languages
 Repository: base
 Title: Ruby extend objects to be handled like a Mutex
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby extend objects to be handled like a Mutex.
  
@@ -1269,7 +1315,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-ftp
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-monitor +ruby-net-protocol +ruby-openssl +ruby-time
 Conflicts: 
 Menu-Depends: 
@@ -1279,9 +1325,10 @@ Category: Languages
 Repository: base
 Title: Ruby FTP lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby FTP lib.
  
@@ -1301,7 +1348,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-http
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-cgi +ruby-net-protocol +ruby-resolv +ruby-strscan +ruby-uri +ruby-zlib
 Conflicts: 
 Menu-Depends: 
@@ -1311,9 +1358,10 @@ Category: Languages
 Repository: base
 Title: Ruby HTTP lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby HTTP lib.
  
@@ -1331,7 +1379,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-imap
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-json +ruby-monitor +ruby-net-protocol +ruby-openssl +ruby-strscan
 Conflicts: 
 Menu-Depends: 
@@ -1341,9 +1389,10 @@ Category: Languages
 Repository: base
 Title: Ruby IMAP lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby IMAP lib.
  
@@ -1363,7 +1412,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-pop
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-net-protocol +ruby-openssl
 Conflicts: 
 Menu-Depends: 
@@ -1373,9 +1422,10 @@ Category: Languages
 Repository: base
 Title: Ruby POP3 lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby POP3 lib.
  
@@ -1395,7 +1445,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-protocol
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-socket +ruby-timeout
 Conflicts: 
 Menu-Depends: 
@@ -1405,9 +1455,10 @@ Category: Languages
 Repository: base
 Title: Ruby Abstract for net-* clients
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Abstract for net-* clients.
  
@@ -1422,7 +1473,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-net-smtp
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-net-protocol +ruby-openssl
 Conflicts: 
 Menu-Depends: 
@@ -1432,9 +1483,10 @@ Category: Languages
 Repository: base
 Title: Ruby SMTP lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby SMTP lib.
  
@@ -1454,7 +1506,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-nkf
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc
 Conflicts: 
 Menu-Depends: 
@@ -1464,9 +1516,10 @@ Category: Languages
 Repository: base
 Title: Ruby Network Kanji Filter
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Network Kanji Filter.
  
@@ -1482,7 +1535,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-objspace
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-tempfile
 Conflicts: 
 Menu-Depends: 
@@ -1492,9 +1545,10 @@ Category: Languages
 Repository: base
 Title: Ruby Routines to interact with the garbage collection facility
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Routines to interact with the garbage collection facility.
  
@@ -1510,7 +1564,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-observer
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1520,9 +1574,10 @@ Category: Languages
 Repository: base
 Title: Ruby Observer design pattern
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Observer design pattern.
  
@@ -1539,7 +1594,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-open-uri
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-net-ftp +ruby-net-http
 Conflicts: 
 Menu-Depends: 
@@ -1549,9 +1604,10 @@ Category: Languages
 Repository: base
 Title: Ruby Wrapper for Net::HTTP Net::HTTPS and Net::
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Wrapper for Net::HTTP Net::HTTPS and Net::.
  
@@ -1566,7 +1622,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-open3
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1576,9 +1632,10 @@ Category: Languages
 Repository: base
 Title: Ruby popen with stderr
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby popen with stderr.
  
@@ -1595,7 +1652,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-openssl
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-digest +ruby-enc +ruby-io-nonblock +ruby-ipaddr +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -1605,9 +1662,10 @@ Category: Languages
 Repository: base
 Title: Ruby SSL TLS and general purpose cryptography
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby SSL TLS and general purpose cryptography.
  
@@ -1624,7 +1682,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-optparse
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc-extra +ruby-pp +ruby-shellwords +ruby-time +ruby-uri
 Conflicts: 
 Menu-Depends: 
@@ -1634,9 +1692,10 @@ Category: Languages
 Repository: base
 Title: Ruby command-line option analysis
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby command-line option analysis.
  
@@ -1653,7 +1712,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-ostruct
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1663,9 +1722,10 @@ Category: Languages
 Repository: base
 Title: Ruby build custom data structures
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby build custom data structures.
  
@@ -1681,7 +1741,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-pathname
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-fileutils +ruby-find
 Conflicts: 
 Menu-Depends: 
@@ -1691,9 +1751,10 @@ Category: Languages
 Repository: base
 Title: Ruby Pathname lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Pathname lib.
  
@@ -1709,7 +1770,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-powerassert
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-irb
 Conflicts: 
 Menu-Depends: 
@@ -1719,9 +1780,10 @@ Category: Languages
 Repository: base
 Title: Ruby Gem power_assert
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Gem power_assert.
  
@@ -1742,7 +1804,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-pp
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-etc +ruby-io-console +ruby-prettyprint
 Conflicts: 
 Menu-Depends: 
@@ -1752,9 +1814,10 @@ Category: Languages
 Repository: base
 Title: Ruby Pretty print objects
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Pretty print objects.
  
@@ -1769,7 +1832,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-prettyprint
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1779,9 +1842,10 @@ Category: Languages
 Repository: base
 Title: Ruby PrettyPrint library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby PrettyPrint library.
  
@@ -1796,7 +1860,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-prime
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-forwardable +ruby-singleton
 Conflicts: 
 Menu-Depends: 
@@ -1806,9 +1870,10 @@ Category: Languages
 Repository: base
 Title: Ruby Prime numbers and factorization library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Prime numbers and factorization library.
  
@@ -1828,7 +1893,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-pstore
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-digest +ruby-enc
 Conflicts: 
 Menu-Depends: 
@@ -1838,9 +1903,10 @@ Category: Languages
 Repository: base
 Title: Ruby file based persistence
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby file based persistence.
  
@@ -1857,7 +1923,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-psych
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-bigdecimal +ruby-date +ruby-enc +ruby-forwardable +ruby-stringio +libyaml
 Conflicts: 
 Menu-Depends: 
@@ -1867,9 +1933,10 @@ Category: Languages
 Repository: base
 Title: Ruby YAML parser and emitter
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby YAML parser and emitter.
  
@@ -1886,7 +1953,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-pty
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1896,9 +1963,10 @@ Category: Languages
 Repository: base
 Title: Ruby Creates and manages pseudo terminals
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Creates and manages pseudo terminals.
  
@@ -1912,7 +1980,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-racc
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-forwardable +ruby-optparse +ruby-rbconfig +ruby-stringio
 Conflicts: 
 Menu-Depends: 
@@ -1922,9 +1990,10 @@ Category: Languages
 Repository: base
 Title: Ruby LALR parser generator
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby LALR parser generator.
 
@@ -1934,7 +2003,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rake
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-fileutils +ruby-monitor +ruby-optparse +ruby-ostruct +ruby-set +ruby-singleton
 Conflicts: 
 Menu-Depends: 
@@ -1944,9 +2013,10 @@ Category: Languages
 Repository: base
 Title: Ruby Rake (make replacement)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Rake (make replacement).
 
@@ -1956,7 +2026,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-random_formatter
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1966,9 +2036,10 @@ Category: Languages
 Repository: base
 Title: Ruby Formats generated random numbers in many manners
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Formats generated random numbers in many manners.
  
@@ -1982,7 +2053,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rbconfig
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -1992,9 +2063,10 @@ Category: Languages
 Repository: base
 Title: Ruby RbConfig
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby RbConfig.
  
@@ -2009,7 +2081,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rbs
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-logger +ruby-mkmf +ruby-rdoc
 Conflicts: 
 Menu-Depends: 
@@ -2019,9 +2091,10 @@ Category: Languages
 Repository: base
 Title: Ruby RBS provides syntax and semantics definition for the Ruby Signature language
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby RBS provides syntax and semantics definition for the Ruby Signature language.
 
@@ -2031,7 +2104,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rdoc
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-did-you-mean +ruby-erb +ruby-racc +ruby-ripper +ruby-yaml
 Conflicts: 
 Menu-Depends: 
@@ -2041,9 +2114,10 @@ Category: Languages
 Repository: base
 Title: Ruby RDoc produces HTML and command-line documentation for Ruby projects
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby RDoc produces HTML and command-line documentation for Ruby projects.
 
@@ -2053,7 +2127,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-readline-ext
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +libncurses +libreadline
 Conflicts: 
 Menu-Depends: 
@@ -2063,9 +2137,10 @@ Category: Languages
 Repository: base
 Title: Ruby support for native GNU readline
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby support for native GNU readline.
  
@@ -2081,7 +2156,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-readline
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-reline
 Conflicts: 
 Menu-Depends: 
@@ -2091,9 +2166,10 @@ Category: Languages
 Repository: base
 Title: Ruby loads readline-ext(native) or reline(ruby)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby loads readline-ext(native) or reline(ruby).
  
@@ -2109,7 +2185,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-reline
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-fiddle +ruby-forwardable +ruby-io-console +ruby-tempfile +ruby-timeout
 Conflicts: 
 Menu-Depends: 
@@ -2119,9 +2195,10 @@ Category: Languages
 Repository: base
 Title: Ruby alternative to readline-ext in pure ruby
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby alternative to readline-ext in pure ruby.
  
@@ -2138,7 +2215,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-resolv
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-securerandom +ruby-timeout
 Conflicts: 
 Menu-Depends: 
@@ -2148,9 +2225,10 @@ Category: Languages
 Repository: base
 Title: Ruby DNS resolver library
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby DNS resolver library.
  
@@ -2169,7 +2247,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-resolv-replace
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-resolv
 Conflicts: 
 Menu-Depends: 
@@ -2179,9 +2257,10 @@ Category: Languages
 Repository: base
 Title: Ruby Replace Socket DNS with Resolv
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Replace Socket DNS with Resolv.
  
@@ -2196,7 +2275,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rexml
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc +ruby-forwardable +ruby-pp +ruby-set +ruby-stringio +ruby-strscan
 Conflicts: 
 Menu-Depends: 
@@ -2206,9 +2285,10 @@ Category: Languages
 Repository: base
 Title: Ruby XML toolkit
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby XML toolkit.
  
@@ -2233,7 +2313,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rinda
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-drb +ruby-forwardable
 Conflicts: 
 Menu-Depends: 
@@ -2243,9 +2323,10 @@ Category: Languages
 Repository: base
 Title: Ruby Linda paradigm implementation
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Linda paradigm implementation.
  
@@ -2260,7 +2341,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-ripper
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2270,9 +2351,10 @@ Category: Languages
 Repository: base
 Title: Ruby script parser
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby script parser.
  
@@ -2288,7 +2370,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-rss
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-english +ruby-nkf +ruby-open-uri +ruby-rexml
 Conflicts: 
 Menu-Depends: 
@@ -2298,9 +2380,10 @@ Category: Languages
 Repository: base
 Title: Ruby RSS toolkit
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby RSS toolkit.
  
@@ -2325,7 +2408,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-ruby2_keywords
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2335,9 +2418,10 @@ Category: Languages
 Repository: base
 Title: Ruby Placeholder to satisfy dependencies on ruby2_keywords
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Placeholder to satisfy dependencies on ruby2_keywords.
  
@@ -2352,7 +2436,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-securerandom
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-openssl +ruby-random_formatter
 Conflicts: 
 Menu-Depends: 
@@ -2362,9 +2446,10 @@ Category: Languages
 Repository: base
 Title: Ruby Secure random number generators
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Secure random number generators.
  
@@ -2379,7 +2464,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-set
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-tsort
 Conflicts: 
 Menu-Depends: 
@@ -2389,9 +2474,10 @@ Category: Languages
 Repository: base
 Title: Ruby Set collection
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Set collection.
  
@@ -2407,7 +2493,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-shellwords
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2417,9 +2503,10 @@ Category: Languages
 Repository: base
 Title: Ruby Manipulate strings as Bourne Shell
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Manipulate strings as Bourne Shell.
  
@@ -2434,7 +2521,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-singleton
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2444,9 +2531,10 @@ Category: Languages
 Repository: base
 Title: Ruby Singleton pattern
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Singleton pattern.
  
@@ -2463,7 +2551,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-socket
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-io-wait
 Conflicts: 
 Menu-Depends: 
@@ -2473,9 +2561,10 @@ Category: Languages
 Repository: base
 Title: Ruby socket support
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby socket support.
  
@@ -2490,7 +2579,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-stringio
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2500,9 +2589,10 @@ Category: Languages
 Repository: base
 Title: Ruby Pseudo `IO` class from/to `String`
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Pseudo `IO` class from/to `String`.
  
@@ -2517,7 +2607,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-strscan
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2527,9 +2617,10 @@ Category: Languages
 Repository: base
 Title: Ruby Lexical scanning operations on a String
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Lexical scanning operations on a String.
  
@@ -2544,7 +2635,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-syntax_suggest
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-optparse +ruby-pathname +ruby-ripper +ruby-stringio +ruby-timeout +ruby-tmpdir
 Conflicts: 
 Menu-Depends: 
@@ -2554,9 +2645,10 @@ Category: Languages
 Repository: base
 Title: Ruby Find missing end syntax errors
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Find missing end syntax errors.
  
@@ -2572,7 +2664,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-syslog
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-logger
 Conflicts: 
 Menu-Depends: 
@@ -2582,9 +2674,10 @@ Category: Languages
 Repository: base
 Title: Ruby Syslog Lib
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Syslog Lib.
  
@@ -2600,7 +2693,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-tempfile
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-delegate +ruby-tmpdir
 Conflicts: 
 Menu-Depends: 
@@ -2610,9 +2703,10 @@ Category: Languages
 Repository: base
 Title: Ruby Manages temporary files
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Manages temporary files.
  
@@ -2627,7 +2721,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-testunit
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-csv +ruby-debug +ruby-erb +ruby-powerassert +ruby-rexml +ruby-yaml
 Conflicts: 
 Menu-Depends: 
@@ -2637,9 +2731,10 @@ Category: Languages
 Repository: base
 Title: Ruby Gem test-unit
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Gem test-unit.
  
@@ -2661,7 +2756,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-time
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-date
 Conflicts: 
 Menu-Depends: 
@@ -2671,9 +2766,10 @@ Category: Languages
 Repository: base
 Title: Ruby Extends Time with additional methods for parsing and converting Times
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Extends Time with additional methods for parsing and converting Times.
  
@@ -2688,7 +2784,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-timeout
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2698,9 +2794,10 @@ Category: Languages
 Repository: base
 Title: Ruby Auto-terminate potentially long-running operations
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Auto-terminate potentially long-running operations.
  
@@ -2717,7 +2814,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-tmpdir
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-fileutils
 Conflicts: 
 Menu-Depends: 
@@ -2727,9 +2824,10 @@ Category: Languages
 Repository: base
 Title: Ruby Get temp dir path
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Get temp dir path.
  
@@ -2744,7 +2842,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-tsort
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2754,9 +2852,10 @@ Category: Languages
 Repository: base
 Title: Ruby Topological sorting using Tarjan s algorithm
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Topological sorting using Tarjan s algorithm.
  
@@ -2771,7 +2870,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-typeprof
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-coverage +ruby-rbs
 Conflicts: 
 Menu-Depends: 
@@ -2781,9 +2880,10 @@ Category: Languages
 Repository: base
 Title: Ruby A type analysis tool for Ruby code based on abstract interpretation
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby A type analysis tool for Ruby code based on abstract interpretation.
 
@@ -2793,7 +2893,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-unicodenormalize
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc +ruby-enc-extra
 Conflicts: 
 Menu-Depends: 
@@ -2803,9 +2903,10 @@ Category: Languages
 Repository: base
 Title: Ruby String additions for Unicode normalization
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby String additions for Unicode normalization.
  
@@ -2819,7 +2920,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-un
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-irb +ruby-mkmf
 Conflicts: 
 Menu-Depends: 
@@ -2829,9 +2930,10 @@ Category: Languages
 Repository: base
 Title: Ruby Utilities to replace common UNIX commands in Makefiles
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Utilities to replace common UNIX commands in Makefiles.
  
@@ -2846,7 +2948,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-uri
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-enc
 Conflicts: 
 Menu-Depends: 
@@ -2856,9 +2958,10 @@ Category: Languages
 Repository: base
 Title: Ruby library to handle URI
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby library to handle URI.
  
@@ -2875,7 +2978,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-weakref
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-delegate
 Conflicts: 
 Menu-Depends: 
@@ -2885,9 +2988,10 @@ Category: Languages
 Repository: base
 Title: Ruby Weak reference to be garbage collected
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby Weak reference to be garbage collected.
  
@@ -2902,7 +3006,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-yaml
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-pstore +ruby-psych
 Conflicts: 
 Menu-Depends: 
@@ -2912,9 +3016,10 @@ Category: Languages
 Repository: base
 Title: Ruby YAML toolkit
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby YAML toolkit.
  
@@ -2931,7 +3036,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-zlib
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby
 Conflicts: 
 Menu-Depends: 
@@ -2941,9 +3046,10 @@ Category: Languages
 Repository: base
 Title: Ruby compression/decompression library interface
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Description:       This package contains the ruby compression/decompression library interface.
  
@@ -2958,7 +3064,7 @@ Luiz Angelo Daros de Luca <luizluca@gmail.com>
 
 Package: ruby-stdlib
 Submenu: Ruby
-Version: 3.2.2-1
+Version: 3.2.5-1
 Depends: +libc ruby +ruby-abbrev +ruby-base64 +ruby-benchmark +ruby-bigdecimal +ruby-bundler +ruby-cgi +ruby-continuation +ruby-coverage +ruby-csv +ruby-date +ruby-debug +ruby-delegate +ruby-did-you-mean +ruby-digest +ruby-drb +ruby-enc +ruby-enc-extra +ruby-english +ruby-erb +ruby-error_highlight +ruby-etc +ruby-expect +ruby-fcntl +ruby-fiddle +ruby-fileutils +ruby-find +ruby-forwardable +ruby-gems +ruby-getoptlong +ruby-io-console +ruby-io-nonblock +ruby-io-wait +ruby-ipaddr +ruby-irb +ruby-json +ruby-logger +ruby-matrix +ruby-minitest +ruby-mjit +ruby-mkmf +ruby-monitor +ruby-mutex_m +ruby-net-ftp +ruby-net-http +ruby-net-imap +ruby-net-pop +ruby-net-protocol +ruby-net-smtp +ruby-nkf +ruby-objspace +ruby-observer +ruby-open-uri +ruby-open3 +ruby-openssl +ruby-optparse +ruby-ostruct +ruby-pathname +ruby-powerassert +ruby-pp +ruby-prettyprint +ruby-prime +ruby-pstore +ruby-psych +ruby-pty +ruby-racc +ruby-rake +ruby-random_formatter +ruby-rbconfig +ruby-rbs +ruby-rdoc +ruby-readline-ext +ruby-readline +ruby-reline +ruby-resolv +ruby-resolv-replace +ruby-rexml +ruby-rinda +ruby-ripper +ruby-rss +ruby-ruby2_keywords +ruby-securerandom +ruby-set +ruby-shellwords +ruby-singleton +ruby-socket +ruby-stringio +ruby-strscan +ruby-syntax_suggest +ruby-syslog +ruby-tempfile +ruby-testunit +ruby-time +ruby-timeout +ruby-tmpdir +ruby-tsort +ruby-typeprof +ruby-unicodenormalize +ruby-un +ruby-uri +ruby-weakref +ruby-yaml +ruby-zlib
 Conflicts: 
 Menu-Depends: 
@@ -2968,9 +3074,10 @@ Category: Languages
 Repository: base
 Title: Ruby standard libraries (metadata for all stdlib subsets)
 Maintainer: Luiz Angelo Daros de Luca <luizluca@gmail.com>
-Source: ruby-3.2.2.tar.xz
+Source: ruby-3.2.5.tar.xz
 License: BSD-2-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:ruby-lang:ruby
 Type: ipkg
 Hidden: 1
 Description:  This metapackage currently install all ruby-* packages,

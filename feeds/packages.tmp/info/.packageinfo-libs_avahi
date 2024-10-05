@@ -15,6 +15,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -49,6 +50,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -83,6 +85,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -117,6 +120,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -161,6 +165,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -198,6 +203,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -234,6 +240,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -267,6 +274,7 @@ Require-User: avahi=105:avahi=105
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -298,6 +306,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -329,6 +338,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates
@@ -360,6 +370,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: avahi-0.8.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:avahi:avahi
 Type: ipkg
 Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
  implementation (library). It facilitates

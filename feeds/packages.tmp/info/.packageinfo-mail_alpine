@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/mail/alpine/Makefile
 
 Package: alpine
-Version: 2.25-2
+Version: 2.25-3
 Depends: +libc +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -26,7 +26,7 @@ Antti Seppälä <a.seppala@gmail.com>
 @@
 
 Package: alpine-nossl
-Version: 2.25-2
+Version: 2.25-3
 Depends: +libc +libopenssl +libncurses +libpthread +libpam +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full @BROKEN
 Conflicts: 
 Menu-Depends: 

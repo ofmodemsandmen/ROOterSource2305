@@ -14,6 +14,8 @@ Title: SQLite (v3.x) database engine (library)
 Maintainer: 
 Source: sqlite-autoconf-3410200.tar.gz
 License: PUBLICDOMAIN
+CPE-ID: cpe:/a:sqlite:sqlite
+ABI-Version: 0
 Type: ipkg
 Description:  SQLite is a small C library that implements a self-contained, embeddable,
  zero-configuration SQL database engine.
@@ -40,6 +42,7 @@ Title: SQLite (v3.x) database engine (cli)
 Maintainer: 
 Source: sqlite-autoconf-3410200.tar.gz
 License: PUBLICDOMAIN
+CPE-ID: cpe:/a:sqlite:sqlite
 Type: ipkg
 Description:  SQLite is a small C library that implements a self-contained, embeddable,
  zero-configuration SQL database engine.

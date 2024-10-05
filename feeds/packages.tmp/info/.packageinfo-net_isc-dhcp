@@ -16,6 +16,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides a means for relaying DHCP and BOOTP requests from a subnet to which
  no DHCP server is directly connected to one or more DHCP servers on other
@@ -41,6 +42,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  implements the Dynamic Host Configuration Protocol (DHCP) and the Internet
  Bootstrap Protocol (BOOTP).
@@ -64,6 +66,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  implements the Dynamic Host Configuration Protocol (DHCP) and the Internet
  Bootstrap Protocol (BOOTP).
@@ -87,6 +90,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides a means for configuring one or more network interfaces using the
  Dynamic Host Configuration Protocol, BOOTP protocol, or if these protocols
@@ -112,6 +116,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides an interactive way to connect to, query, and possibly change, the ISC
  DHCP Server's state via OMAPI, the Object Management API.
@@ -136,6 +141,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides a means for relaying DHCP and BOOTP requests from a subnet to which
  no DHCP server is directly connected to one or more DHCP servers on other
@@ -161,6 +167,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  implements the Dynamic Host Configuration Protocol (DHCP) and the Internet
  Bootstrap Protocol (BOOTP).
@@ -185,6 +192,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides a means for configuring one or more network interfaces using the
  Dynamic Host Configuration Protocol, BOOTP protocol, or if these protocols
@@ -210,6 +218,7 @@ Maintainer: Philip Prindeville <philipp@redfish-solutions.com>
 Source: dhcp-4.4.3-P1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:isc:dhcp
 Type: ipkg
 Description:  provides an interactive way to connect to, query, and possibly change, the ISC
  DHCP Server's state via OMAPI, the Object Management API.

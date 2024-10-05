@@ -14,6 +14,7 @@ Maintainer: Paul Wassi <p.wassi@gmx.at>
 Source: libcap-2.69.tar.xz
 License: GPL-2.0-only
 LicenseFiles: License
+CPE-ID: cpe:/a:libcap_project:libcap
 Type: ipkg
 Description: Linux capabilities library library
 https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/
@@ -34,6 +35,7 @@ Maintainer: Paul Wassi <p.wassi@gmx.at>
 Source: libcap-2.69.tar.xz
 License: GPL-2.0-only
 LicenseFiles: License
+CPE-ID: cpe:/a:libcap_project:libcap
 Type: ipkg
 Description:     Linux capabilities
   .

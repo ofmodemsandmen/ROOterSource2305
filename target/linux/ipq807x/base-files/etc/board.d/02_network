@@ -11,7 +11,6 @@ ipq807x_setup_interfaces()
 	local board="$1"
 
 	case "$board" in
-	arcadyan,aw1000|\
 	buffalo,wxr-5950ax12|\
 	dynalink,dl-wrx36|\
 	xiaomi,ax9000)

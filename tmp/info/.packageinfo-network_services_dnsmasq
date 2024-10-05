@@ -1,7 +1,7 @@
 Source-Makefile: package/network/services/dnsmasq/Makefile
 
 Package: dnsmasq
-Version: 2.89-4
+Version: 2.90-2
 Depends: +libc +libubus
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Repository: base
 Title: DNS and DHCP server
 Maintainer: 
 Require-User: dnsmasq=453:dnsmasq=453
-Source: dnsmasq-2.89.tar.xz
+Source: dnsmasq-2.90.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:thekelleys:dnsmasq
 Type: ipkg
 Description:   It is intended to provide coupled DNS and DHCP service to a LAN.
 http://www.thekelleys.org.uk/dnsmasq/
@@ -23,7 +24,7 @@ http://www.thekelleys.org.uk/dnsmasq/
 @@
 
 Package: dnsmasq-dhcpv6
-Version: 2.89-4
+Version: 2.90-2
 Depends: +libc +libubus @IPV6
 Conflicts: 
 Menu-Depends: 
@@ -35,9 +36,10 @@ Repository: base
 Title: DNS and DHCP server (with DHCPv6 support)
 Maintainer: 
 Require-User: dnsmasq=453:dnsmasq=453
-Source: dnsmasq-2.89.tar.xz
+Source: dnsmasq-2.90.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:thekelleys:dnsmasq
 Type: ipkg
 Description:   It is intended to provide coupled DNS and DHCP service to a LAN.
 
@@ -47,7 +49,7 @@ http://www.thekelleys.org.uk/dnsmasq/
 @@
 
 Package: dnsmasq-full
-Version: 2.89-4
+Version: 2.90-2
 Depends: +libc +libubus +PACKAGE_dnsmasq_full_dnssec:libnettle +PACKAGE_dnsmasq_full_ipset:kmod-ipt-ipset +PACKAGE_dnsmasq_full_conntrack:libnetfilter-conntrack +PACKAGE_dnsmasq_full_nftset:nftables-json
 Conflicts: 
 Menu-Depends: 
@@ -59,9 +61,10 @@ Repository: base
 Title: DNS and DHCP server (with DNSSEC, DHCPv6, Auth DNS, IPset, Nftset, Conntrack, NO_ID enabled by default)
 Maintainer: 
 Require-User: dnsmasq=453:dnsmasq=453
-Source: dnsmasq-2.89.tar.xz
+Source: dnsmasq-2.90.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:thekelleys:dnsmasq
 Type: ipkg
 Description:   It is intended to provide coupled DNS and DHCP service to a LAN.
 

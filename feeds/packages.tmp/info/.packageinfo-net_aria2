@@ -16,6 +16,7 @@ Require-User: aria2=6800:aria2=6800
 Source: aria2-1.36.0.tar.xz
 License: GPLv2
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tatsuhiro_tsujikawa:aria2
 Type: ipkg
 Description:   aria2 is a lightweight multi-protocol & multi-source command-line download
   utility

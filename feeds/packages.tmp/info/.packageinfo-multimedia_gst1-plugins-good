@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -37,6 +38,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -60,6 +62,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -83,6 +86,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -106,6 +110,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -129,6 +134,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -152,6 +158,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -175,6 +182,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -198,6 +206,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -221,6 +230,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -244,6 +254,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -267,6 +278,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -290,6 +302,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -313,6 +326,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -336,6 +350,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -359,6 +374,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -382,6 +398,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -405,6 +422,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -428,6 +446,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -451,6 +470,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -474,6 +494,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -497,6 +518,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -520,6 +542,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -543,6 +566,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -566,6 +590,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -589,6 +614,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -612,6 +638,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -635,6 +662,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -658,6 +686,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -681,6 +710,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -704,6 +734,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -727,6 +758,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -750,6 +782,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -773,6 +806,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -796,6 +830,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -819,6 +854,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -842,6 +878,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -865,6 +902,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -888,6 +926,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -911,6 +950,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -934,6 +974,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -957,6 +998,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -980,6 +1022,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1003,6 +1046,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1026,6 +1070,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1049,6 +1094,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1072,6 +1118,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1095,6 +1142,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1118,6 +1166,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1141,6 +1190,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1164,6 +1214,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1187,6 +1238,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1210,6 +1262,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1233,6 +1286,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1256,6 +1310,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1279,6 +1334,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:     GStreamer open source multimedia framework
@@ -1302,6 +1358,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Description: GStreamer plugins collection (good)
 https://gstreamer.freedesktop.org/
@@ -1506,6 +1563,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org> Ted Hess <thess@kitschensync.net>
 Source: gst-plugins-good-1.20.5.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gstreamer:good_plug-ins
 Type: ipkg
 Hidden: 1
 Description:  GStreamer open source multimedia framework

@@ -1,29 +1,31 @@
 Source-Makefile: feeds/packages/lang/python/python-colorama/Makefile
+Build-Depends: python-hatchling/host
 
 Package: python3-colorama
 Submenu: Python
-Version: 0.4.1-2
-Depends: +libc +python3
+Version: 0.4.6-1
+Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: colorama
+Title: Cross-platform colored terminal text
 Maintainer: Daniel Danzberger <daniel@dd-wrt.com>
-Source: colorama-0.4.1.tar.gz
-License: MIT
+Source: colorama-0.4.6.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE.txt
 Type: ipkg
-Description: Makes ANSI escape character sequences
-(for producing colored terminal text and cursor positioning) work under MS Windows.
+Description: Makes ANSI escape character sequences (for producing colored terminal
+text and cursor positioning) work under MS Windows.
 https://github.com/tartley/colorama
 Daniel Danzberger <daniel@dd-wrt.com>
 @@
 
 Package: python3-colorama-src
 Submenu: Python
-Version: 0.4.1-2
+Version: 0.4.6-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,13 +33,14 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: colorama (sources)
+Title: Cross-platform colored terminal text (sources)
 Maintainer: Daniel Danzberger <daniel@dd-wrt.com>
-Source: colorama-0.4.1.tar.gz
-License: MIT
+Source: colorama-0.4.6.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:     Makes ANSI escape character sequences
-(for producing colored terminal text and cursor positioning) work under MS Windows.
+Description:     Makes ANSI escape character sequences (for producing colored terminal
+text and cursor positioning) work under MS Windows.
 
     This package contains the Python source files for python3-colorama.
 https://github.com/tartley/colorama

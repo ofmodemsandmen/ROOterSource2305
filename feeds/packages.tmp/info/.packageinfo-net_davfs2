@@ -15,6 +15,7 @@ Maintainer: Federico Di Marco <fededim@gmail.com>
 Source: davfs2-1.6.1.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:davfs2:davfs2
 Type: ipkg
 Description:  Web Distributed Authoring and Versioning (WebDAV), an extension to the HTTP-protocol,
  allows authoring of resources on a remote web server.davfs2 provides the ability to

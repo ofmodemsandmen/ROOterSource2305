@@ -15,6 +15,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ethtool-6.3.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:kernel:ethtool
 Type: ipkg
 Description:  ethtool is a small utility for examining and tuning your ethernet-based
  network interface
@@ -37,6 +38,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ethtool-6.3.tar.xz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:kernel:ethtool
 Type: ipkg
 Description:  ethtool is a small utility for examining and tuning your ethernet-based
  network interface

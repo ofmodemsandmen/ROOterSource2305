@@ -14,6 +14,7 @@ Maintainer: Jakov Smolic <jakov.smolic@sartura.hr>
 Source: libyang-2.0.112.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:cesnet:libyang
 Type: ipkg
 Description:  libyang is YANG data modelling language parser and toolkit written (and providing API) in C.
  The library is used e.g. in libnetconf2, Netopeer2 or sysrepo projects.
@@ -35,6 +36,7 @@ Maintainer: Jakov Smolic <jakov.smolic@sartura.hr>
 Source: libyang-2.0.112.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:cesnet:libyang
 Type: ipkg
 Description: YANG data modeling language utility
 https://github.com/CESNET/libyang

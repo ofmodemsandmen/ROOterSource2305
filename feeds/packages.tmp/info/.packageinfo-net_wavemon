@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/wavemon/Makefile
 
 Package: wavemon
 Submenu: Wireless
-Version: 0.9.3-1
-Depends: +libc +libncurses +libpthread +libnl-genl
+Version: 0.9.5-1
+Depends: +libc +libncurses +libpthread +libnl-genl +libnl-cli
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: N-curses based wireless network devices monitor
 Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
-Source: wavemon-0.9.3.tar.gz
+Source: wavemon-0.9.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

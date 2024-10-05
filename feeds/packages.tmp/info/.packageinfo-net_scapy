@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: scapy-2.5.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:scapy:scapy
 Type: ipkg
 Description:   Scapy is a powerful interactive packet manipulation program built on top
   of the Python interpreter. It can be used to forge or decode packets of
@@ -37,6 +38,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: scapy-2.5.0.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:scapy:scapy
 Type: ipkg
 Description:       Scapy is a powerful interactive packet manipulation program built on top
   of the Python interpreter. It can be used to forge or decode packets of

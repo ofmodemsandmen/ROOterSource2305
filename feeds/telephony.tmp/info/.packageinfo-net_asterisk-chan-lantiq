@@ -2,7 +2,7 @@ Source-Makefile: feeds/telephony/net/asterisk-chan-lantiq/Makefile
 
 Package: asterisk-chan-lantiq
 Submenu: Telephony Lantiq
-Version: 2021-09-11-2f029ec8778420538c8151c6aceba0f7b44b07c9-1
+Version: 2021-09-11-2f029ec8778420538c8151c6aceba0f7b44b07c9-4
 Depends: +libc +asterisk +kmod-ltq-vmmc
 Conflicts: 
 Menu-Depends: 
@@ -11,6 +11,7 @@ Section: net
 Category: Network
 Title: Lantiq channel driver
 Maintainer: Jiri Slachta <jiri@slachta.eu>
+Require-User: asterisk=385::vmmc=386
 Source: asterisk-chan-lantiq-2021-09-11-2f029ec8778420538c8151c6aceba0f7b44b07c9.tar.xz
 License: GPL-2.0
 Type: ipkg

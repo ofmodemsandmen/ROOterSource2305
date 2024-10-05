@@ -1,7 +1,7 @@
 Source-Makefile: package/devel/perf/Makefile
 
 Package: perf
-Version: <LINUX_VERSION>-4
+Version: <LINUX_VERSION>-5
 Depends: +libc +libelf +libdw +PACKAGE_libunwind:libunwind +libpthread +librt +objdump @!IN_SDK @KERNEL_PERF_EVENTS +PACKAGE_libbfd:libbfd +PACKAGE_libopcodes:libopcodes
 Conflicts: 
 Menu-Depends: 

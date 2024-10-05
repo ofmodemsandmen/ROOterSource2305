@@ -361,6 +361,26 @@ Description:     Translation for luci-app-aria2 - 한국어 (Korean)
 Xingwang Liao <kuoruan@gmail.com>
 @@
 
+Package: luci-i18n-aria2-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-aria2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-aria2 - lt translation
+Maintainer: Xingwang Liao <kuoruan@gmail.com>
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-aria2 - Lietuvių (Lithuanian)
+Xingwang Liao <kuoruan@gmail.com>
+@@
+
 Package: luci-i18n-aria2-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

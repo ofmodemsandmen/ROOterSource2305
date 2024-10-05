@@ -3,7 +3,7 @@ Build-Depends/host: bzip2/host
 Build-Types: host
 
 Package: bsdiff
-Version: 4.3-1
+Version: 4.3-2
 Depends: +libc +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -15,6 +15,7 @@ Title: Binary diff tool
 Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: bsdiff-4.3.tar.gz
 License: BSD-2-Clause
+CPE-ID: cpe:/a:daemonology:bsdiff
 Type: ipkg
 Description: Binary diff tool
 https://www.daemonology.net/bsdiff/
@@ -22,7 +23,7 @@ Hauke Mehrtens <hauke@hauke-m.de>
 @@
 
 Package: bspatch
-Version: 4.3-1
+Version: 4.3-2
 Depends: +libc +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -34,6 +35,7 @@ Title: Binary patch tool
 Maintainer: Hauke Mehrtens <hauke@hauke-m.de>
 Source: bsdiff-4.3.tar.gz
 License: BSD-2-Clause
+CPE-ID: cpe:/a:daemonology:bsdiff
 Type: ipkg
 Description: Binary patch tool
 https://www.daemonology.net/bsdiff/

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/natmap/Makefile
 
 Package: natmap
-Version: 20230519-1
+Version: 20240813-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: TCP/UDP port mapping tool for full cone NAT
 Maintainer: Richard Yu <yurichard3839@gmail.com>, Ray Wang <r@hev.cc>
-Source: natmap-20230519.tar.gz
+Source: natmap-20240813.tar.gz
 License: MIT
 LicenseFiles: License
 Type: ipkg

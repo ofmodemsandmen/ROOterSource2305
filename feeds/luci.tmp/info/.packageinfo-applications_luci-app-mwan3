@@ -361,6 +361,26 @@ Description:     Translation for luci-app-mwan3 - 한국어 (Korean)
 Florian Eckert <fe@dev.tdt.de>
 @@
 
+Package: luci-i18n-mwan3-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-mwan3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-mwan3 - lt translation
+Maintainer: Florian Eckert <fe@dev.tdt.de>
+Source: 
+License: GPLv2
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-mwan3 - Lietuvių (Lithuanian)
+Florian Eckert <fe@dev.tdt.de>
+@@
+
 Package: luci-i18n-mwan3-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

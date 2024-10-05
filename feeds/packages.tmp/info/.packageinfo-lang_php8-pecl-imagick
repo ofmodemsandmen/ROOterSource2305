@@ -16,6 +16,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: imagick-3.7.0.tgz
 License: PHP-3.01
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:php:imagick
 Type: ipkg
 Description: Image Processing (ImageMagick binding)
 http://pecl.php.net/

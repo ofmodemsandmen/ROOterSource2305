@@ -8,7 +8,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: arm_v7 dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -390,6 +390,40 @@ Build firmware images for Edgecore ECW5211
 
 @@
 
+Target-Profile: DEVICE_engenius_eap1300
+Target-Profile-Name: EnGenius EAP1300EXT (EnGenius EAP1300)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,eap1300
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius EAP1300
+Alternative device titles:
+- EnGenius EAP1300EXT
+
+
+
+
+@@
+
+Target-Profile: DEVICE_engenius_eap1300
+Target-Profile-Name: EnGenius EAP1300
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,eap1300
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius EAP1300
+Alternative device titles:
+- EnGenius EAP1300EXT
+
+
+
+
+@@
+
 Target-Profile: DEVICE_extreme-networks_ws-ap3915i
 Target-Profile-Name: Extreme Networks WS-AP3915i
 Target-Profile-Packages:  
@@ -584,11 +618,11 @@ Build firmware images for Luma Home WRTQ-329ACN
 
 Target-Profile: DEVICE_meraki_mr33
 Target-Profile-Name: Cisco Meraki MR33
-Target-Profile-Packages: -swconfig ath10k-firmware-qca9887-ct 
+Target-Profile-Packages: ath10k-firmware-qca9887-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr33
 
-Target-Profile-Default: n
+
 Target-Profile-Description:
 Build firmware images for Cisco Meraki MR33
 
@@ -600,11 +634,11 @@ Build firmware images for Cisco Meraki MR33
 
 Target-Profile: DEVICE_meraki_mr74
 Target-Profile-Name: Cisco Meraki MR74
-Target-Profile-Packages: -swconfig ath10k-firmware-qca9887-ct 
+Target-Profile-Packages: ath10k-firmware-qca9887-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr74
 
-Target-Profile-Default: n
+
 Target-Profile-Description:
 Build firmware images for Cisco Meraki MR74
 
@@ -934,6 +968,22 @@ Build firmware images for Sony NCP-HG100/Cellular
 
 @@
 
+Target-Profile: DEVICE_teltonika_rutx50
+Target-Profile-Name: Teltonika RUTX50
+Target-Profile-Packages: ipq-wifi-teltonika_rutx kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: teltonika,rutx50
+
+
+Target-Profile-Description:
+Build firmware images for Teltonika RUTX50
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_wallys_dr40x9
 Target-Profile-Name: Wallys DR40X9
 Target-Profile-Packages: ipq-wifi-wallys_dr40x9 
@@ -982,9 +1032,57 @@ Build firmware images for ZTE MF286D
 
 @@
 
+Target-Profile: DEVICE_zte_mf287plus
+Target-Profile-Name: ZTE MF287Plus
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287plus 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287plus
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287Plus
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf287
+Target-Profile-Name: ZTE MF287
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf287pro
+Target-Profile-Name: ZTE MF287Pro
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287plus 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287pro
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287Pro
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zte_mf289f
 Target-Profile-Name: ZTE MF289F
-Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ath10k-firmware-qca9984-ct 
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf289f ath10k-firmware-qca9984-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zte,mf289f
 
@@ -1023,7 +1121,7 @@ Target-Features: arm_v7 boot-part dt emmc fpu gpio nand pci pcie ramdisk rootfs-
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -1055,7 +1153,7 @@ Target-Features: arm_v7 dt fpu gpio minor nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

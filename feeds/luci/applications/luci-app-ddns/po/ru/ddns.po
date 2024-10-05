@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: ddns\n"
 "POT-Creation-Date: 2017-10-17 21:00+0300\n"
-"PO-Revision-Date: 2023-04-10 02:49+0000\n"
+"PO-Revision-Date: 2024-01-23 10:05+0000\n"
 "Last-Translator: st7105 <st7105@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/ru/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -28,7 +28,7 @@ msgstr "Добавить новую службу..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
-msgstr "Расширенные настройки"
+msgstr "Дополнительные настройки"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
@@ -237,15 +237,15 @@ msgstr "Включить безопасное соединение с прова
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
-msgstr "Включен"
+msgstr "Включено"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:949
 msgid "Error"
 msgstr "Ошибка"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1024
-msgid "Error Retry Counter"
-msgstr "Счётчик попыток повтора при ошибке"
+msgid "Error Max Retry Counter"
+msgstr "Ошибка Максимальный счетчик повторных попыток"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1034
 msgid "Error Retry Interval"
@@ -569,7 +569,8 @@ msgstr ""
 "'Зарегистрированного IP-адреса'."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1025
-msgid "On Error the script will stop execution after given number of retrys."
+msgid ""
+"On Error the script will stop execution after the given number of retries."
 msgstr ""
 "При ошибке скрипт остановит выполнение после заданного количества повторных "
 "попыток."
@@ -706,11 +707,11 @@ msgstr "Запустить DDNS"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:272
 msgid "State"
-msgstr "Указывать"
+msgstr "Состояние"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1103
 msgid "Status"
-msgstr "Состояние"
+msgstr "Статус"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:419
 msgid "Status directory"
@@ -741,7 +742,7 @@ msgid "The default setting of '0' will retry infinitely."
 msgstr "Значение по умолчанию '0' используется для бесконечного повтора."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1035
-msgid "The interval between which each succesive retry will commence."
+msgid "The interval between which each successive retry commences."
 msgstr "Интервал между последовательными попытками."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
@@ -785,7 +786,7 @@ msgstr "URL для обнаружения"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1141
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/status/include/70_ddns.js:38
 msgid "Unknown"
-msgstr "Неизвестно"
+msgstr "Неизвестный"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:301
 msgid "Update DDns Services List"

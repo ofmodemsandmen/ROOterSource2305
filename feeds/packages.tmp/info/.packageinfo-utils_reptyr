@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/reptyr/Makefile
 
 Package: reptyr
-Version: 0.8.0-5
+Version: 0.10.0-1
 Depends: +libc @!(arc||mips||mipsel||mips64||mips64el)
 Conflicts: 
 Menu-Depends: 
@@ -10,8 +10,8 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Tool for reparenting running programs
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: reptyr-0.8.0.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: reptyr-0.10.0.tar.gz
 License: MIT
 LicenseFiles: COPYING
 Type: ipkg
@@ -20,7 +20,7 @@ Description:   reptyr is a utility for taking an existing running program and at
   leave and don't want to interrupt it? Just start a screen, use reptyr to
   grab it, and then kill the ssh session and head on home.
 https://github.com/nelhage/reptyr
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 

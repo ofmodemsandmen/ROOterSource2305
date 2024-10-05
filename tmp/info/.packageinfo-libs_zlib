@@ -14,6 +14,7 @@ Maintainer:
 Source: zlib-1.2.13.tar.xz
 License: Zlib
 LicenseFiles: README
+CPE-ID: cpe:/a:gnu:zlib
 Type: ipkg
 Description:  zlib is a lossless data-compression library.
  This package includes the shared library.
@@ -21,7 +22,7 @@ http://www.zlib.net/
 
 @@
 Config:
-	source "package/libs/zlib/Config.in"
+	source "feeds/base/libs/zlib/Config.in"
 @@
 
 Package: zlib-dev
@@ -39,6 +40,7 @@ Maintainer:
 Source: zlib-1.2.13.tar.xz
 License: Zlib
 LicenseFiles: README
+CPE-ID: cpe:/a:gnu:zlib
 Type: ipkg
 Description:  zlib is a lossless data-compression library.
  This package includes the development support files.

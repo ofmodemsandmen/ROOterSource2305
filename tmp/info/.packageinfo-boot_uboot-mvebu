@@ -3,7 +3,7 @@ Build-Types: host
 
 Package: u-boot-clearfog
 Default: y if (TARGET_mvebu_cortexa9_Default || TARGET_mvebu_cortexa9_DEVICE_solidrun_clearfog-base-a1 || TARGET_mvebu_cortexa9_DEVICE_solidrun_clearfog-pro-a1 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_solidrun_clearfog-base-a1 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_solidrun_clearfog-pro-a1)
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa9
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for SolidRun ClearFog A1
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -27,7 +27,7 @@ Build-Types: host
 
 Package: u-boot-helios4
 Default: y if (TARGET_mvebu_cortexa9_Default || TARGET_mvebu_cortexa9_DEVICE_kobol_helios4 || TARGET_DEVICE_mvebu_cortexa9_DEVICE_kobol_helios4)
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa9
 Conflicts: 
 Menu-Depends: 
@@ -37,7 +37,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Kobol Helios 4
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -51,7 +51,7 @@ Build-Types: host
 
 Package: u-boot-omnia
 Default: y if (TARGET_mvebu_cortexa9_Default || TARGET_mvebu_cortexa9_DEVICE_cznic_turris-omnia || TARGET_DEVICE_mvebu_cortexa9_DEVICE_cznic_turris-omnia)
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa9
 Conflicts: 
 Menu-Depends: 
@@ -61,7 +61,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Turris Omnia
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -74,7 +74,7 @@ http://www.denx.de/wiki/U-Boot
 Build-Types: host
 
 Package: u-boot-espressobin
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -84,7 +84,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Marvell ESPRESSObin
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -97,7 +97,7 @@ http://www.denx.de/wiki/U-Boot
 Build-Types: host
 
 Package: u-boot-uDPU
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -107,7 +107,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Methode uDPU
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin
@@ -120,7 +120,7 @@ http://www.denx.de/wiki/U-Boot
 Build-Types: host
 
 Package: u-boot-eDPU
-Version: 2023.01-1
+Version: 2023.07.02-1
 Depends: +libc @!IN_SDK @TARGET_mvebu_cortexa53
 Conflicts: 
 Menu-Depends: 
@@ -130,7 +130,7 @@ Section: boot
 Category: Boot Loaders
 Title: U-Boot for Methode eDPU
 Maintainer: 
-Source: u-boot-2023.01.tar.bz2
+Source: u-boot-2023.07.02.tar.bz2
 License: GPL-2.0 GPL-2.0+
 LicenseFiles: Licenses/README
 Type: bin

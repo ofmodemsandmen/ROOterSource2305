@@ -343,6 +343,25 @@ Description:     Translation for luci-app-shairplay - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-shairplay-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-shairplay
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-shairplay - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-shairplay - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-shairplay-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

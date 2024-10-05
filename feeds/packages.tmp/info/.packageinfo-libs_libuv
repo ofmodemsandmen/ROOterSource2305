@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libuv/Makefile
 
 Package: libuv
-Version: 1.45.0-1
+Version: 1.48.0-1
 Depends: +libc +libpthread +librt
 Conflicts: 
 Menu-Depends: 
@@ -11,9 +11,11 @@ Category: Libraries
 Repository: base
 Title: Cross-platform asychronous I/O library
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: libuv-v1.45.0.tar.gz
+Source: libuv-v1.48.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libuv_project:libuv
+ABI-Version: 1
 Type: ipkg
 Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
  was primarily developed for use by Node.js, but it's also used by Luvit, Julia,

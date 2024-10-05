@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/libpfring/Makefile
 
 Package: libpfring
-Version: 8.0.0-1
+Version: 8.4.0-2
 Depends: +libc +kmod-pf-ring +libpcap +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: Library for PR_RING (package process framework)
 Maintainer: Banglang Huang <banglang.huang@foxmail.com>
-Source: libpfring-8.0.0.tar.gz
+Source: libpfring-8.4.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ Banglang Huang <banglang.huang@foxmail.com>
 
 Package: kmod-pf-ring
 Submenu: Network Support
-Version: <LINUX_VERSION>+8.0.0-1
+Version: <LINUX_VERSION>+8.4.0-2
 Depends: 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Section: kernel
 Category: Kernel modules
 Title: PF_RING Kernel driver
 Maintainer: Banglang Huang <banglang.huang@foxmail.com>
-Source: libpfring-8.0.0.tar.gz
+Source: libpfring-8.4.0.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description:   Kernel module for libpf-ring package

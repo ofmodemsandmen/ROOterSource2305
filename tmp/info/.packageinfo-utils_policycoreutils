@@ -18,6 +18,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: SELinux policy utility common files
 http://selinuxproject.org/page/Main_Page
@@ -38,6 +39,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -62,6 +64,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -86,6 +89,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -110,6 +114,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -134,6 +139,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -158,6 +164,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -182,6 +189,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -206,6 +214,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -230,6 +239,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -254,6 +264,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -278,6 +289,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -302,6 +314,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use
@@ -326,6 +339,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: policycoreutils-3.5.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:selinuxproject:policycoreutils
 Type: ipkg
 Description: Policycoreutils is a collection of policy utilities
 (originally the "core" set of utilities needed to use

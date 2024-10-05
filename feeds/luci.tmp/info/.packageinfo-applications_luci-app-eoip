@@ -21,6 +21,26 @@ https://github.com/openwrt/luci
 OpenWrt LuCI community
 @@
 
+Package: luci-i18n-eoip-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-eoip
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-eoip - lt translation
+Maintainer: Bogdan Shatik <bogdikxxx@mail.ru>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-eoip - Lietuvių (Lithuanian)
+Bogdan Shatik <bogdikxxx@mail.ru>
+@@
+
 Package: luci-i18n-eoip-ru
 Default: LUCI_LANG_ru||(ALL&&m)
 Version: x

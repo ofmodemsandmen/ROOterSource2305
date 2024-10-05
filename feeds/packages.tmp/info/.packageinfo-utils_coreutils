@@ -15,6 +15,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:  Full versions of standard GNU utilities. If an equivalent Busybox applet is
  available, you should consider compiling that instead as Busybox applets are
@@ -37,6 +38,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU base32 utility.
 http://www.gnu.org/software/coreutils/
@@ -57,6 +59,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU base64 utility.
 http://www.gnu.org/software/coreutils/
@@ -77,6 +80,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU basename utility.
 http://www.gnu.org/software/coreutils/
@@ -97,6 +101,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU basenc utility.
 http://www.gnu.org/software/coreutils/
@@ -117,6 +122,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU b2sum utility.
 http://www.gnu.org/software/coreutils/
@@ -137,6 +143,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU cat utility.
 http://www.gnu.org/software/coreutils/
@@ -157,6 +164,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU chcon utility.
 http://www.gnu.org/software/coreutils/
@@ -177,6 +185,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU chgrp utility.
 http://www.gnu.org/software/coreutils/
@@ -197,6 +206,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU chmod utility.
 http://www.gnu.org/software/coreutils/
@@ -217,6 +227,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU chown utility.
 http://www.gnu.org/software/coreutils/
@@ -237,6 +248,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU chroot utility.
 http://www.gnu.org/software/coreutils/
@@ -257,6 +269,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU cksum utility.
 http://www.gnu.org/software/coreutils/
@@ -277,6 +290,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU comm utility.
 http://www.gnu.org/software/coreutils/
@@ -297,6 +311,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU cp utility.
 http://www.gnu.org/software/coreutils/
@@ -317,6 +332,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU csplit utility.
 http://www.gnu.org/software/coreutils/
@@ -337,6 +353,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU cut utility.
 http://www.gnu.org/software/coreutils/
@@ -357,6 +374,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU date utility.
 http://www.gnu.org/software/coreutils/
@@ -377,6 +395,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU dd utility.
 http://www.gnu.org/software/coreutils/
@@ -397,6 +416,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU df utility.
 http://www.gnu.org/software/coreutils/
@@ -417,6 +437,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU dir utility.
 http://www.gnu.org/software/coreutils/
@@ -437,6 +458,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU dircolors utility.
 http://www.gnu.org/software/coreutils/
@@ -457,6 +479,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU dirname utility.
 http://www.gnu.org/software/coreutils/
@@ -477,6 +500,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU du utility.
 http://www.gnu.org/software/coreutils/
@@ -497,6 +521,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU echo utility.
 http://www.gnu.org/software/coreutils/
@@ -517,6 +542,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU env utility.
 http://www.gnu.org/software/coreutils/
@@ -537,6 +563,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU expand utility.
 http://www.gnu.org/software/coreutils/
@@ -557,6 +584,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU expr utility.
 http://www.gnu.org/software/coreutils/
@@ -577,6 +605,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU factor utility.
 http://www.gnu.org/software/coreutils/
@@ -597,6 +626,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU false utility.
 http://www.gnu.org/software/coreutils/
@@ -617,6 +647,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU fmt utility.
 http://www.gnu.org/software/coreutils/
@@ -637,6 +668,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU fold utility.
 http://www.gnu.org/software/coreutils/
@@ -657,6 +689,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU groups utility.
 http://www.gnu.org/software/coreutils/
@@ -677,6 +710,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU head utility.
 http://www.gnu.org/software/coreutils/
@@ -697,6 +731,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU hostid utility.
 http://www.gnu.org/software/coreutils/
@@ -717,6 +752,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU id utility.
 http://www.gnu.org/software/coreutils/
@@ -737,6 +773,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU install utility.
 http://www.gnu.org/software/coreutils/
@@ -757,6 +794,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU join utility.
 http://www.gnu.org/software/coreutils/
@@ -777,6 +815,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU kill utility.
 http://www.gnu.org/software/coreutils/
@@ -797,6 +836,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU link utility.
 http://www.gnu.org/software/coreutils/
@@ -817,6 +857,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU ln utility.
 http://www.gnu.org/software/coreutils/
@@ -837,6 +878,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU logname utility.
 http://www.gnu.org/software/coreutils/
@@ -857,6 +899,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU ls utility.
 http://www.gnu.org/software/coreutils/
@@ -877,6 +920,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU md5sum utility.
 http://www.gnu.org/software/coreutils/
@@ -897,6 +941,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU mkdir utility.
 http://www.gnu.org/software/coreutils/
@@ -917,6 +962,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU mkfifo utility.
 http://www.gnu.org/software/coreutils/
@@ -937,6 +983,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU mknod utility.
 http://www.gnu.org/software/coreutils/
@@ -957,6 +1004,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU mktemp utility.
 http://www.gnu.org/software/coreutils/
@@ -977,6 +1025,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU mv utility.
 http://www.gnu.org/software/coreutils/
@@ -997,6 +1046,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU nice utility.
 http://www.gnu.org/software/coreutils/
@@ -1017,6 +1067,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU nl utility.
 http://www.gnu.org/software/coreutils/
@@ -1037,6 +1088,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU nohup utility.
 http://www.gnu.org/software/coreutils/
@@ -1057,6 +1109,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU nproc utility.
 http://www.gnu.org/software/coreutils/
@@ -1077,6 +1130,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU numfmt utility.
 http://www.gnu.org/software/coreutils/
@@ -1097,6 +1151,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU od utility.
 http://www.gnu.org/software/coreutils/
@@ -1117,6 +1172,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU paste utility.
 http://www.gnu.org/software/coreutils/
@@ -1137,6 +1193,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU pathchk utility.
 http://www.gnu.org/software/coreutils/
@@ -1157,6 +1214,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU pinky utility.
 http://www.gnu.org/software/coreutils/
@@ -1177,6 +1235,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU pr utility.
 http://www.gnu.org/software/coreutils/
@@ -1197,6 +1256,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU printenv utility.
 http://www.gnu.org/software/coreutils/
@@ -1217,6 +1277,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU printf utility.
 http://www.gnu.org/software/coreutils/
@@ -1237,6 +1298,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU ptx utility.
 http://www.gnu.org/software/coreutils/
@@ -1257,6 +1319,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU pwd utility.
 http://www.gnu.org/software/coreutils/
@@ -1277,6 +1340,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU readlink utility.
 http://www.gnu.org/software/coreutils/
@@ -1297,6 +1361,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU realpath utility.
 http://www.gnu.org/software/coreutils/
@@ -1317,6 +1382,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU rm utility.
 http://www.gnu.org/software/coreutils/
@@ -1337,6 +1403,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU rmdir utility.
 http://www.gnu.org/software/coreutils/
@@ -1357,6 +1424,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU runcon utility.
 http://www.gnu.org/software/coreutils/
@@ -1377,6 +1445,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU seq utility.
 http://www.gnu.org/software/coreutils/
@@ -1397,6 +1466,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sha1sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1417,6 +1487,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sha224sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1437,6 +1508,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sha256sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1457,6 +1529,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sha384sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1477,6 +1550,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sha512sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1497,6 +1571,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU shred utility.
 http://www.gnu.org/software/coreutils/
@@ -1517,6 +1592,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU shuf utility.
 http://www.gnu.org/software/coreutils/
@@ -1537,6 +1613,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sleep utility.
 http://www.gnu.org/software/coreutils/
@@ -1557,6 +1634,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sort utility.
 http://www.gnu.org/software/coreutils/
@@ -1577,6 +1655,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU split utility.
 http://www.gnu.org/software/coreutils/
@@ -1597,6 +1676,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU stat utility.
 http://www.gnu.org/software/coreutils/
@@ -1617,6 +1697,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU stdbuf utility.
 http://www.gnu.org/software/coreutils/
@@ -1637,6 +1718,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU stty utility.
 http://www.gnu.org/software/coreutils/
@@ -1657,6 +1739,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sum utility.
 http://www.gnu.org/software/coreutils/
@@ -1677,6 +1760,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU sync utility.
 http://www.gnu.org/software/coreutils/
@@ -1697,6 +1781,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tac utility.
 http://www.gnu.org/software/coreutils/
@@ -1717,6 +1802,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tail utility.
 http://www.gnu.org/software/coreutils/
@@ -1737,6 +1823,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tee utility.
 http://www.gnu.org/software/coreutils/
@@ -1757,6 +1844,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU test utility.
 http://www.gnu.org/software/coreutils/
@@ -1777,6 +1865,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU timeout utility.
 http://www.gnu.org/software/coreutils/
@@ -1797,6 +1886,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU touch utility.
 http://www.gnu.org/software/coreutils/
@@ -1817,6 +1907,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tr utility.
 http://www.gnu.org/software/coreutils/
@@ -1837,6 +1928,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU true utility.
 http://www.gnu.org/software/coreutils/
@@ -1857,6 +1949,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU truncate utility.
 http://www.gnu.org/software/coreutils/
@@ -1877,6 +1970,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tsort utility.
 http://www.gnu.org/software/coreutils/
@@ -1897,6 +1991,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU tty utility.
 http://www.gnu.org/software/coreutils/
@@ -1917,6 +2012,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU uname utility.
 http://www.gnu.org/software/coreutils/
@@ -1937,6 +2033,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU unexpand utility.
 http://www.gnu.org/software/coreutils/
@@ -1957,6 +2054,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU uniq utility.
 http://www.gnu.org/software/coreutils/
@@ -1977,6 +2075,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU unlink utility.
 http://www.gnu.org/software/coreutils/
@@ -1997,6 +2096,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU uptime utility.
 http://www.gnu.org/software/coreutils/
@@ -2017,6 +2117,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU users utility.
 http://www.gnu.org/software/coreutils/
@@ -2037,6 +2138,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU vdir utility.
 http://www.gnu.org/software/coreutils/
@@ -2057,6 +2159,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU wc utility.
 http://www.gnu.org/software/coreutils/
@@ -2077,6 +2180,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU who utility.
 http://www.gnu.org/software/coreutils/
@@ -2097,6 +2201,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU whoami utility.
 http://www.gnu.org/software/coreutils/
@@ -2117,6 +2222,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: coreutils-9.3.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:coreutils
 Type: ipkg
 Description:   Full version of standard GNU yes utility.
 http://www.gnu.org/software/coreutils/

@@ -14,6 +14,8 @@ Maintainer:
 Source: keyutils-1.6.3.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE.LGPL
+CPE-ID: cpe:/a:keyutils_project:keyutils
+ABI-Version: 1
 Type: ipkg
 Description: Key utilities library
 https://people.redhat.com/dhowells/keyutils/
@@ -35,6 +37,7 @@ Maintainer:
 Source: keyutils-1.6.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE.GPL
+CPE-ID: cpe:/a:keyutils_project:keyutils
 Type: ipkg
 Description:   Key utilities
 
@@ -55,6 +58,7 @@ Maintainer:
 Source: keyutils-1.6.3.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE.GPL
+CPE-ID: cpe:/a:keyutils_project:keyutils
 Type: ipkg
 Description: keyctl
 

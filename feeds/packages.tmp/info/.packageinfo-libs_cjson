@@ -14,6 +14,7 @@ Maintainer: Karl Palsson <karlp@etactica.com>
 Source: cJSON-1.7.15.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:cjson_project:cjson
 Type: ipkg
 Description:  Ultralightweight JSON parser in ANSI C.
 cJSON aims to be the dumbest possible parser that you can get your

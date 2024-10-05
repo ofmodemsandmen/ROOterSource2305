@@ -343,6 +343,25 @@ Description:     Translation for luci-app-wol - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-wol-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-wol
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-wol - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-wol - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-wol-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

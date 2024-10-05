@@ -15,6 +15,7 @@ Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
 Source: gpsd-3.25.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gpsd_project:gpsd
 Type: ipkg
 Description:     gpsd is a userland daemon acting as a translator between GPS and AIS receivers
   and their clients. gpsd listens on port 2947 for clients requesting
@@ -42,6 +43,7 @@ Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
 Source: gpsd-3.25.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gpsd_project:gpsd
 Type: ipkg
 Description:     gpsd is a userland daemon acting as a translator between GPS and AIS receivers
   and their clients. gpsd listens on port 2947 for clients requesting
@@ -70,6 +72,7 @@ Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
 Source: gpsd-3.25.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gpsd_project:gpsd
 Type: ipkg
 Description:     gpsd is a userland daemon acting as a translator between GPS and AIS receivers
   and their clients. gpsd listens on port 2947 for clients requesting
@@ -97,6 +100,8 @@ Maintainer: Pushpal Sidhu <psidhu.devel@gmail.com>
 Source: gpsd-3.25.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gpsd_project:gpsd
+ABI-Version: 30
 Type: ipkg
 Description:     gpsd is a userland daemon acting as a translator between GPS and AIS receivers
   and their clients. gpsd listens on port 2947 for clients requesting

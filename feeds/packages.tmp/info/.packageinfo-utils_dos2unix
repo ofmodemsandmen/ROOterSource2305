@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/dos2unix/Makefile
 
 Package: dos2unix
-Version: 7.5.0-1
+Version: 7.5.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Text file format converters (dos2unix)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: dos2unix-7.5.0.tar.gz
+Source: dos2unix-7.5.2.tar.gz
 License: BSD-2-Clause
 LicenseFiles: COPYING.txt
 Type: ipkg
@@ -24,7 +24,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 @@
 
 Package: unix2dos
-Version: 7.5.0-1
+Version: 7.5.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Utilities
 Repository: base
 Title: Text file format converters (unix2dos)
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: dos2unix-7.5.0.tar.gz
+Source: dos2unix-7.5.2.tar.gz
 License: BSD-2-Clause
 LicenseFiles: COPYING.txt
 Type: ipkg

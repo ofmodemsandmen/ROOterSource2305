@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/pdns-recursor/Makefile
 
 Package: pdns-recursor
 Submenu: IP Addresses and Names
-Version: 4.8.4-1
+Version: 4.8.8-1
 Depends: +libc +boost +boost-context +boost-filesystem +libatomic +liblua +libopenssl +libfstrm +libcurl
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,8 @@ Repository: base
 Title: PowerDNS Recursor
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Require-User: pdns:pdns
-Source: pdns-recursor-4.8.4.tar.bz2
+Source: pdns-recursor-4.8.8.tar.bz2
+CPE-ID: cpe:/a:powerdns:recursor
 Type: ipkg
 Description:   High-performance resolving name server, utilizing multiple
   processor and including Lua scripting capabilities.

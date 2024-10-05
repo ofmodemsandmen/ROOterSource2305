@@ -15,6 +15,7 @@ Maintainer: Uwe Kleine-König <uwe+openwrt@kleine-koenig.org>
 Source: iodine-0.7.0.tar.gz
 License: ISC
 LicenseFiles: README
+CPE-ID: cpe:/a:kryo:iodine
 Type: ipkg
 Description:  iodine client version
 http://code.kryo.se/iodine/
@@ -36,6 +37,7 @@ Maintainer: Uwe Kleine-König <uwe+openwrt@kleine-koenig.org>
 Source: iodine-0.7.0.tar.gz
 License: ISC
 LicenseFiles: README
+CPE-ID: cpe:/a:kryo:iodine
 Type: ipkg
 Description:  iodine server version
 http://code.kryo.se/iodine/

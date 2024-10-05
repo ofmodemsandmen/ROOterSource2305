@@ -14,6 +14,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:i2c-tools_project:i2c-tools
 Type: ipkg
 Description:  This package contains i2c functionality needed by i2c-tools.
 https://i2c.wiki.kernel.org/index.php/I2C_Tools
@@ -34,6 +35,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:i2c-tools_project:i2c-tools
 Type: ipkg
 Description:  This package contains an heterogeneous set of I2C tools for Linux. These tools
  were originally part of the lm-sensors package.
@@ -56,6 +58,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: i2c-tools-4.3.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:i2c-tools_project:i2c-tools
 Type: ipkg
 Description:  This package contain the Python3 bindings for Linux SMBus access through i2c-dev.
 https://i2c.wiki.kernel.org/index.php/I2C_Tools

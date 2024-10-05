@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-pyopenssl/Makefile
 
 Package: python3-pyopenssl
 Submenu: Python
-Version: 21.0.0-1
-Depends: +libc +python3-light +python3-cryptography +python3-six
+Version: 23.2.0-1
+Depends: +libc +python3-light +python3-openssl +python3-cryptography
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,9 +12,10 @@ Category: Languages
 Repository: base
 Title: OpenSSL wrapper
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: pyOpenSSL-21.0.0.tar.gz
+Source: pyOpenSSL-23.2.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:pyopenssl_project:pyopenssl
 Type: ipkg
 Description: Python wrapper module around the OpenSSL library
 https://pyopenssl.org/
@@ -23,7 +24,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-pyopenssl-src
 Submenu: Python
-Version: 21.0.0-1
+Version: 23.2.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -33,9 +34,10 @@ Category: Languages
 Repository: base
 Title: OpenSSL wrapper (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: pyOpenSSL-21.0.0.tar.gz
+Source: pyOpenSSL-23.2.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:pyopenssl_project:pyopenssl
 Type: ipkg
 Description:     Python wrapper module around the OpenSSL library
 

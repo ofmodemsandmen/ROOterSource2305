@@ -16,6 +16,7 @@ Maintainer:
 Source: xfsprogs-6.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSES/GPL-2.0
+CPE-ID: cpe:/a:sgi:xfsprogs
 Type: ipkg
 Description: Utilities for changing parameters of an XFS filesystems
 https://xfs.org/
@@ -37,6 +38,7 @@ Maintainer:
 Source: xfsprogs-6.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSES/GPL-2.0
+CPE-ID: cpe:/a:sgi:xfsprogs
 Type: ipkg
 Description: Utility for creating XFS filesystems
 https://xfs.org/
@@ -58,6 +60,7 @@ Maintainer:
 Source: xfsprogs-6.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSES/GPL-2.0
+CPE-ID: cpe:/a:sgi:xfsprogs
 Type: ipkg
 Description: Utilities for checking and repairing XFS filesystems
 https://xfs.org/
@@ -79,6 +82,7 @@ Maintainer:
 Source: xfsprogs-6.2.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: LICENSES/GPL-2.0
+CPE-ID: cpe:/a:sgi:xfsprogs
 Type: ipkg
 Description: Utility for increasing the size of XFS filesystems
 https://xfs.org/

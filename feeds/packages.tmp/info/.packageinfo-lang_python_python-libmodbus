@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-libmodbus/Makefile
 
 Package: python3-libmodbus
 Submenu: Python
-Version: 0.5.0-2
+Version: 0.6.2-1
 Depends: +libc +libmodbus +python3-light +python3-cffi
 Conflicts: 
 Menu-Depends: 
@@ -10,14 +10,41 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: pylibmodbus
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: pylibmodbus-0.5.0.tar.gz
+Title: Wrapper for libmodbus
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: pylibmodbus-0.6.2.tar.gz
 License: BSD-3-Clause
+LicenseFiles: LICENSE
 Type: ipkg
 Description: 	Python Interface for libmodbus written with CFFI.
-https://pypi.org/project/pylibmodbus
-Daniel Golle <daniel@makrotopia.org>
+https://github.com/stephane/pylibmodbus
+Jeffery To <jeffery.to@gmail.com>
+@@
+
+Package: python3-libmodbus-src
+Submenu: Python
+Version: 0.6.2-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Repository: base
+Title: Wrapper for libmodbus (sources)
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: pylibmodbus-0.6.2.tar.gz
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Type: ipkg
+Description:     	Python Interface for libmodbus written with CFFI.
+
+    This package contains the Python source files for python3-libmodbus.
+https://github.com/stephane/pylibmodbus
+Jeffery To <jeffery.to@gmail.com>
+@@
+Config:
+    depends on PACKAGE_python3-libmodbus
 @@
 
 

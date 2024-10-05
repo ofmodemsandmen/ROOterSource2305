@@ -361,6 +361,26 @@ Description:     Translation for luci-app-ddns - 한국어 (Korean)
 Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
+Package: luci-i18n-ddns-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-ddns
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ddns - lt translation
+Maintainer: Ansuel Smith <ansuelsmth@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ddns - Lietuvių (Lithuanian)
+Ansuel Smith <ansuelsmth@gmail.com>
+@@
+
 Package: luci-i18n-ddns-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

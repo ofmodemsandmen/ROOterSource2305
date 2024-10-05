@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/mg/Makefile
 
 Package: mg
 Submenu: Editors
-Version: 7.0-1
-Depends: +libc +libncurses +libpcre
+Version: 7.3-2
+Depends: +libc +libncurses +libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: microscopic EMACS style editor
 Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
-Source: mg-7.0.tar.gz
+Source: mg-7.3.tar.gz
 License: PUBLICDOMAIN ISC BSD VARIOUS
 LicenseFiles: README.md
 Type: ipkg

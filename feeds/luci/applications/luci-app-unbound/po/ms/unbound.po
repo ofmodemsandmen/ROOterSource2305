@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-16 23:25+0000\n"
-"Last-Translator: Pusak Hitam <thegame.gamesky@gmail.com>\n"
+"PO-Revision-Date: 2024-01-21 20:36+0000\n"
+"Last-Translator: Abdul Muizz Bin Abdul Jalil <abmuizz@gmail.com>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsunbound/ms/>\n"
 "Language: ms\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:160
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:53
@@ -76,10 +76,10 @@ msgid "Choose Unbounds listening port"
 msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:238
-msgid "Chose the IP versions used upstream and downstream"
+msgid "Choose the IP versions used upstream and downstream"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:64
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:65
 msgid "Connect to servers using TLS"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgstr ""
 msgid "DNS Plugin"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:63
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:64
 msgid "DNS over TLS"
 msgstr ""
 
@@ -129,7 +129,7 @@ msgstr ""
 msgid "Directed Zone"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:85
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:86
 msgid "Directory only part of URL"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Domain Insecure"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:80
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:81
 msgid "Domain name to verify TLS certificate"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:39
 msgid "Enable"
-msgstr ""
+msgstr "Pemboleh"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:102
 msgid "Enable DNS64"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:29
 msgid "Enabled"
-msgstr ""
+msgstr "Dibolehkan"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:297
 msgid "Extended Statistics"
@@ -276,7 +276,7 @@ msgstr ""
 msgid "Forward TLS"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:60
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:61
 msgid "Forward to upstream nameservers (ISP)"
 msgstr ""
 
@@ -483,8 +483,8 @@ msgstr ""
 msgid "Passive"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:68
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:74
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:69
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:75
 msgid "Port servers will receive queries on"
 msgstr ""
 
@@ -557,11 +557,11 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:67
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:68
 msgid "Server Port"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:73
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:74
 msgid "Server TLS Port"
 msgstr ""
 
@@ -619,7 +619,7 @@ msgstr ""
 msgid "Stub (forced recursion)"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:79
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:80
 msgid "TLS Name Index"
 msgstr ""
 
@@ -700,7 +700,7 @@ msgstr ""
 msgid "Undefined"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:59
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:60
 msgid "Use 'resolv.conf.auto'"
 msgstr ""
 
@@ -732,7 +732,7 @@ msgstr ""
 msgid "Zone (Domain) names included in this zone combination"
 msgstr ""
 
-#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:84
+#: applications/luci-app-unbound/luasrc/model/cbi/unbound/zone-details.lua:85
 msgid "Zone Download URL"
 msgstr ""
 
@@ -756,7 +756,7 @@ msgstr ""
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:124
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/configure.lua:307
 msgid "default"
-msgstr ""
+msgstr "mungkir"
 
 #: applications/luci-app-unbound/luasrc/model/cbi/unbound/zones.lua:175
 msgid "download from <var>%s</var>"

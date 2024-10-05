@@ -14,6 +14,7 @@ Maintainer: Fam Zheng <fam@euphon.net>
 Source: oath-toolkit-2.6.5.tar.gz
 License: LGPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:nongnu:oath_toolkit
 Type: ipkg
 Description:   The OATH Toolkit provide components for building one-time password
   authentication systems. It contains shared libraries, command line
@@ -37,6 +38,7 @@ Maintainer: Fam Zheng <fam@euphon.net>
 Source: oath-toolkit-2.6.5.tar.gz
 License: LGPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:nongnu:oath_toolkit
 Type: ipkg
 Description:   The OATH Toolkit provide components for building one-time password
   authentication systems. It contains shared libraries, command line
@@ -60,6 +62,7 @@ Maintainer: Fam Zheng <fam@euphon.net>
 Source: oath-toolkit-2.6.5.tar.gz
 License: LGPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:nongnu:oath_toolkit
 Type: ipkg
 Description:   The OATH Toolkit provide components for building one-time password
   authentication systems. It contains shared libraries, command line

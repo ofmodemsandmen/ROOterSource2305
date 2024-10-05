@@ -1,10 +1,10 @@
 Source-Makefile: feeds/packages/libs/libmariadb/Makefile
-Build-Depends: curl
+Build-Depends: curl USE_MUSL:libucontext
 
 Package: libmariadb
 Menu: 1
 Submenu: Database
-Version: 3.1.18-1
+Version: 3.1.18-2
 Depends: +libc +BUILD_NLS:libiconv-full +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -17,6 +17,8 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-connector-c-3.1.18-src.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:mariadb:mariadb
+ABI-Version: 3
 Type: ipkg
 Description: MariaDB is a very fast and robust SQL database server.
 
@@ -28,7 +30,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: libmariadb-plugin-auth-gssapi-client
 Submenu: Database
-Version: 3.1.18-1
+Version: 3.1.18-2
 Depends: +libc libmariadb +PACKAGE_libmariadb-plugin-auth-gssapi-client:krb5-libs
 Conflicts: 
 Menu-Depends: 
@@ -41,6 +43,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-connector-c-3.1.18-src.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 
@@ -52,7 +55,7 @@ Michal Hrusecky <Michal@Hrusecky.net>
 
 Package: libmariadb-plugin-remote-io
 Submenu: Database
-Version: 3.1.18-1
+Version: 3.1.18-2
 Depends: +libc libmariadb +PACKAGE_libmariadb-plugin-remote-io:libcurl
 Conflicts: 
 Menu-Depends: 
@@ -65,6 +68,7 @@ Maintainer: Michal Hrusecky <Michal@Hrusecky.net>
 Source: mariadb-connector-c-3.1.18-src.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:mariadb:mariadb
 Type: ipkg
 Description:     MariaDB is a very fast and robust SQL database server.
 

@@ -13,6 +13,7 @@ Title: Utilities for ubi info/debug
 Maintainer: John Crispin <john@phrozen.org>
 Source: mtd-utils-2.1.5.tar.bz2
 License: GPLv2
+CPE-ID: cpe:/a:mtd-utils_project:mtd-utils
 Type: ipkg
 Description:   Utilities for manipulating memory technology devices.
 http://www.linux-mtd.infradead.org/
@@ -31,6 +32,7 @@ Title: Utilities for nand flash erase/read/write/test
 Maintainer: John Crispin <john@phrozen.org>
 Source: mtd-utils-2.1.5.tar.bz2
 License: GPLv2
+CPE-ID: cpe:/a:mtd-utils_project:mtd-utils
 Type: ipkg
 Description:   Utilities for NAND devices.
 http://www.linux-mtd.infradead.org/

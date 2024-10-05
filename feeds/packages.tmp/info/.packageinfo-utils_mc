@@ -15,6 +15,7 @@ Title: Midnight Commander - a powerful visual file manager
 Maintainer: 
 Source: mc-4.8.27.tar.xz
 License: GPL-3.0-or-later
+CPE-ID: cpe:/a:midnight_commander:midnight_commander
 Type: ipkg
 Description: GNU Midnight Commander is a visual file manager.
 It's a feature rich full-screen text mode application that allows you to copy,
@@ -41,6 +42,7 @@ Title: Midnight Commander - a powerful visual file manager - skins
 Maintainer: 
 Source: mc-4.8.27.tar.xz
 License: GPL-3.0-or-later
+CPE-ID: cpe:/a:midnight_commander:midnight_commander
 Type: ipkg
 Description: Midnight Commander - a powerful visual file manager - skins
 https://www.midnight-commander.org/

@@ -38,7 +38,7 @@ http://kernel.org/pub/linux/kernel/people/horms/kexec-tools/
 
 @@
 Config:
-	source "package/boot/kexec-tools/Config.in"
+	source "feeds/base/boot/kexec-tools/Config.in"
 @@
 
 Package: kdump

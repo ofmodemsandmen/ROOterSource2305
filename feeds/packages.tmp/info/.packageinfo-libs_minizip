@@ -14,6 +14,7 @@ Maintainer: David Woodhouse <dwmw2@infradead.org>
 Source: minizip-ng-3.0.4.tar.gz
 License: Zlib
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:zlib-ng:minizip-ng
 Type: ipkg
 Description:   minizip is a zip manipulation library written in C that is supported on Windows, macOS, and Linux
 https://github.com/nmoinvaz/minizip

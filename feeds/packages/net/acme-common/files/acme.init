@@ -39,24 +39,46 @@ load_options() {
 	export domains
 	export main_domain
 	main_domain="$(first_arg $domains)"
-	config_get keylength "$section" keylength ec-256
-	export keylength
+	config_get keylength "$section" keylength
+	if [ "$keylength" ]; then
+		log warn "Option \"keylength\" is deprecated, please use key_type (e.g., ec256, rsa2048) instead."
+		case $keylength in
+		ec-*) key_type=${keylength/-/} ;;
+		*) key_type=rsa$keylength ;;
+		esac
+	else
+		config_get key_type "$section" key_type ec256
+	fi
+	export key_type
 	config_get dns "$section" dns
 	export dns
 	config_get acme_server "$section" acme_server
 	export acme_server
 	config_get days "$section" days
 	export days
-	config_get standalone "$section" standalone 0
-	export standalone
+	config_get standalone "$section" standalone
+	[ -n "$standalone" ] && log warn "Option \"standalone\" is deprecated."
 	config_get dns_wait "$section" dns_wait
 	export dns_wait
-
 	config_get webroot "$section" webroot
 	export webroot
 	if [ "$webroot" ]; then
 		log warn "Option \"webroot\" is deprecated, please remove it and change your web server's config so it serves ACME challenge requests from $CHALLENGE_DIR."
 	fi
+
+	config_get validation_method "$section" validation_method
+	# if validation_method isn't set then guess it
+	if [ -z "$validation_method" ]; then
+		if [ -n "$dns" ]; then
+			validation_method="dns"
+		elif [ "$standalone" = 1 ]; then
+			validation_method="standalone"
+		else
+			validation_method="webroot"
+		fi
+		log warn "Please set \"option validation_method $validation_method\"."
+	fi
+	export validation_method
 }
 
 first_arg() {
@@ -70,11 +92,11 @@ get_cert() {
 	[ "$enabled" = 1 ] || return
 
 	load_options "$section"
-	if [ -z "$dns" ] && [ "$standalone" = 0 ]; then
+	if [ "$validation_method" = "webroot" ]; then
 		mkdir -p "$CHALLENGE_DIR"
 	fi
 
-	if [ "$standalone" = 1 ] && [ -z "$NFT_HANDLE" ]; then
+	if [ "$validation_method" = "standalone" ] && [ -z "$NFT_HANDLE" ]; then
 		if ! NFT_HANDLE=$(nft -a -e insert rule inet fw4 input tcp dport 80 counter accept comment ACME | grep -o 'handle [0-9]\+'); then
 			return 1
 		fi

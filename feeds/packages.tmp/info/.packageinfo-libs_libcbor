@@ -14,6 +14,7 @@ Maintainer: Linos Giannopoulos <linosgian00+openwrt@gmail.com>
 Source: libcbor-0.8.0.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+ABI-Version: 0
 Type: ipkg
 Description:  libcbor is a C library for parsing and generating CBOR, the general-purpose schema-less binary data format.
 https://github.com/PJK/libcbor

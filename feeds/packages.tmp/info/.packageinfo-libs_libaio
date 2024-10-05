@@ -14,6 +14,7 @@ Maintainer:
 Source: libaio-0.3.113.tar.gz
 License: LGPL-2.1-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libaio_project:libaio
 Type: ipkg
 Description: Linux kernel AIO interface access library
 http://lse.sourceforge.net/io/aio.html

@@ -245,6 +245,24 @@ function has_peerdns(proto) {
 	return false;
 }
 
+function has_sourcefilter(proto) {
+	switch (proto) {
+	case '3g':
+	case 'dhcpv6':
+	case 'directip':
+	case 'mbim':
+	case 'ncm':
+	case 'ppp':
+	case 'pppoa':
+	case 'pppoe':
+	case 'pptp':
+	case 'qmi':
+		return true;
+	}
+
+	return false;
+}
+
 var cbiRichListValue = form.ListValue.extend({
 	renderWidget: function(section_id, option_index, cfgvalue) {
 		var choices = this.transformChoices();
@@ -454,12 +472,20 @@ return view.extend({
 	render: function(data) {
 		var netifdVersion = (data[3] || '').match(/Version: ([^\n]+)/);
 
+
+
+
+
 		if (netifdVersion && netifdVersion[1] >= "2021-05-26") {
 			if (this.interfaceBridgeWithIfnameSections().length)
 				return this.handleBridgeMigration();
 			else if (this.deviceWithIfnameSections().length || this.interfaceWithIfnameSections().length)
 				return this.handleIfnameMigration();
 		}
+
+
+
+
 
 		var dslModemType = data[0],
 		    netDevs = data[1],
@@ -537,6 +563,11 @@ return view.extend({
 				tdEl.lastChild.childNodes[3].disabled = true;
 			}
 
+			if (dynamic) {
+				//disable the 'Edit' button on dynamic interfaces
+				tdEl.lastChild.childNodes[2].disabled = true;
+			}
+
 			return tdEl;
 		};
 
@@ -588,6 +619,10 @@ return view.extend({
 				o.nobridges = false;
 				o.optional = false;
 				o.network = ifc.getName();
+				o.exclude = '@' + ifc.getName();
+
+				o = s.taboption('general', form.Flag, 'disabled', _('Disable this interface'));
+				o.modalonly = true;
 
 				o = s.taboption('general', form.Flag, 'auto', _('Bring up on boot'));
 				o.modalonly = true;
@@ -740,12 +775,35 @@ return view.extend({
 						var hybrid_downstream_desc = _('Operate in <em>relay mode</em> if a designated master interface is configured and active, otherwise fall back to <em>server mode</em>.'),
 						    ndp_downstream_desc = _('Operate in <em>relay mode</em> if a designated master interface is configured and active, otherwise disable <abbr title="Neighbour Discovery Protocol">NDP</abbr> proxying.'),
 						    hybrid_master_desc = _('Operate in <em>relay mode</em> if an upstream IPv6 prefix is present, otherwise disable service.'),
+						    ra_server_allowed = true,
 						    checked = this.formvalue(section_id),
 						    dhcpv6 = this.section.getOption('dhcpv6').getUIElement(section_id),
 						    ndp = this.section.getOption('ndp').getUIElement(section_id),
 						    ra = this.section.getOption('ra').getUIElement(section_id);
 
-						if (checked == '1' || protoval != 'static') {
+						/* Assume that serving RAs by default is fine, but disallow it for certain
+						   interface protocols such as DHCP, DHCPv6 or the various PPP flavors.
+						   The intent is to only allow RA serving for interface protocols doing
+						   some kind of static IP config over something resembling a layer 2
+						   ethernet device. */
+						switch (protoval) {
+						case 'dhcp':
+						case 'dhcpv6':
+						case '3g':
+						case 'l2tp':
+						case 'ppp':
+						case 'pppoa':
+						case 'pppoe':
+						case 'pptp':
+						case 'pppossh':
+						case 'ipip':
+						case 'gre':
+						case 'grev6':
+							ra_server_allowed = false;
+							break;
+						}
+
+						if (checked == '1' || !ra_server_allowed) {
 							dhcpv6.node.querySelector('li[data-value="server"]').setAttribute('unselectable', '');
 
 							if (dhcpv6.getValue() == 'server')
@@ -763,7 +821,7 @@ return view.extend({
 							ndp.node.querySelector('li[data-value="hybrid"] > div > span').innerHTML = hybrid_master_desc;
 						}
 						else {
-							if (protoval == 'static') {
+							if (ra_server_allowed) {
 								dhcpv6.node.querySelector('li[data-value="server"]').removeAttribute('unselectable');
 								ra.node.querySelector('li[data-value="server"]').removeAttribute('unselectable');
 							}
@@ -944,7 +1002,7 @@ return view.extend({
 					so.value('hybrid', _('hybrid mode'), ' ');
 
 
-					so = ss.taboption('ipv6', form.Flag, 'ndproxy_routing', _('Learn routes'), _('Setup routes for proxied IPv6 neighbours.'));
+					so = ss.taboption('ipv6', form.Flag, 'ndproxy_routing', _('Learn routes'), _('Set up routes for proxied IPv6 neighbours.'));
 					so.default = so.enabled;
 					so.depends('ndp', 'relay');
 					so.depends('ndp', 'hybrid');
@@ -952,6 +1010,18 @@ return view.extend({
 					so = ss.taboption('ipv6', form.Flag, 'ndproxy_slave', _('NDP-Proxy slave'), _('Set interface as NDP-Proxy external slave. Default is off.'));
 					so.depends({ ndp: 'relay', master: '0' });
 					so.depends({ ndp: 'hybrid', master: '0' });
+
+					so = ss.taboption('ipv6', form.Value, 'preferred_lifetime', _('IPv6 Prefix Lifetime'), _('Preferred lifetime for a prefix.'));
+					so.optional = true;
+					so.placeholder = '12h';
+					so.value('5m', _('5m (5 minutes)'));
+					so.value('3h', _('3h (3 hours)'));
+					so.value('12h', _('12h (12 hours - default)'));
+					so.value('7d', _('7d (7 days)'));
+
+					//This is a ra_* setting, but its placement is more logical/findable under IPv6 settings.
+					so = ss.taboption('ipv6', form.Flag, 'ra_useleasetime', _('Follow IPv4 Lifetime'), _('DHCPv4 <code>leasetime</code> is used as limit and preferred lifetime of the IPv6 prefix.'));
+					so.optional = true;
 				}
 
 				ifc.renderFormOptions(s);
@@ -993,7 +1063,7 @@ return view.extend({
 				for (var i = 0; i < rtTables.length; i++)
 					o.value(rtTables[i][1], '%s (%d)'.format(rtTables[i][1], rtTables[i][0]));
 
-				if (protoval == 'dhcpv6') {
+				if (has_sourcefilter(protoval)) {
 					o = nettools.replaceOption(s, 'advanced', form.Flag, 'sourcefilter', _('IPv6 source routing'), _('Automatically handle multiple uplink interfaces using source-based policy routing.'));
 					o.default = o.enabled;
 				}
@@ -1509,21 +1579,27 @@ return view.extend({
 			s.anonymous = true;
 
 			o = s.option(form.ListValue, 'annex', _('Annex'));
-			o.value('a', _('Annex A + L + M (all)'));
-			o.value('b', _('Annex B (all)'));
-			o.value('j', _('Annex J (all)'));
-			o.value('m', _('Annex M (all)'));
-			o.value('bdmt', _('Annex B G.992.1'));
-			o.value('b2', _('Annex B G.992.3'));
-			o.value('b2p', _('Annex B G.992.5'));
+			if (dslModemType == 'vdsl') {
+				o.value('a', _('ADSL (all variants) Annex A/L/M + VDSL2 Annex A/B/C'));
+				o.value('b', _('ADSL (all variants) Annex B + VDSL2 Annex A/B/C'));
+				o.value('j', _('ADSL (all variants) Annex B/J + VDSL2 Annex A/B/C'));
+			} else {
+				o.value('a', _('ADSL (all variants) Annex A/L/M'));
+				o.value('b', _('ADSL (all variants) Annex B'));
+				o.value('j', _('ADSL (all variants) Annex B/J'));
+			}
+			o.value('m', _('ADSL (all variants) Annex M'));
 			o.value('at1', _('ANSI T1.413'));
-			o.value('admt', _('Annex A G.992.1'));
-			o.value('alite', _('Annex A G.992.2'));
-			o.value('a2', _('Annex A G.992.3'));
-			o.value('a2p', _('Annex A G.992.5'));
-			o.value('l', _('Annex L G.992.3 POTS 1'));
-			o.value('m2', _('Annex M G.992.3'));
-			o.value('m2p', _('Annex M G.992.5'));
+			o.value('admt', _('ADSL (G.992.1) Annex A'));
+			o.value('bdmt', _('ADSL (G.992.1) Annex B'));
+			o.value('alite', _('Splitterless ADSL (G.992.2) Annex A'));
+			o.value('a2', _('ADSL2 (G.992.3) Annex A'));
+			o.value('b2', _('ADSL2 (G.992.3) Annex B'));
+			o.value('l', _('ADSL2 (G.992.3) Annex L'));
+			o.value('m2', _('ADSL2 (G.992.3) Annex M'));
+			o.value('a2p', _('ADSL2+ (G.992.5) Annex A'));
+			o.value('b2p', _('ADSL2+ (G.992.5) Annex B'));
+			o.value('m2p', _('ADSL2+ (G.992.5) Annex M'));
 
 			o = s.option(form.ListValue, 'tone', _('Tone'));
 			o.value('', _('auto'));

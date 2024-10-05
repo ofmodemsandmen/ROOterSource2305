@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-10 22:06+0000\n"
-"Last-Translator: Jirka_1277 <j.pinkava@centrum.cz>\n"
+"PO-Revision-Date: 2023-09-27 19:02+0000\n"
+"Last-Translator: David Rapaň <david@rapan.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/cs/>\n"
 "Language: cs\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.1-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -473,10 +473,6 @@ msgstr ""
 msgid "No Query results!"
 msgstr "Žádné výsledky dotazu!"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:21
-msgid "No adblock related logs yet!"
-msgstr "Zatím nejsou k dispozici žádné protokolové záznamy ohledně adblocku!"
-
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
 msgid "Overview"
 msgstr "Přehled"
@@ -588,7 +584,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:288
 msgid "Restart"
-msgstr ""
+msgstr "Restart"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:96
 msgid "Result"
@@ -704,10 +700,6 @@ msgstr ""
 msgid "The minutes portion (opt., range: 0-59)"
 msgstr ""
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:28
-msgid "The syslog output, pre-filtered for adblock related messages only."
-msgstr "Předfiltrovaný výstup syslog pouze se záznamy souvisejícími s adblock."
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:435
 msgid "Third instance"
 msgstr ""
@@ -768,6 +760,8 @@ msgid "Unable to save changes: %s"
 msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:588
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:604
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:620
 msgid "Variants"
 msgstr ""
 

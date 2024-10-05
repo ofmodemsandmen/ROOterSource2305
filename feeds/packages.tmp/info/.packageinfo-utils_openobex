@@ -14,6 +14,7 @@ Maintainer:
 Source: openobex-1.7.2-Source.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:openobex:openobex
 Type: ipkg
 Description: Open Source impl of the OBject EXchange protocol (meta)
 https://www.gitorious.org/openobex
@@ -34,6 +35,7 @@ Maintainer:
 Source: openobex-1.7.2-Source.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:openobex:openobex
 Type: ipkg
 Description: Open Source impl of the OBject EXchange protocol (apps)
 https://www.gitorious.org/openobex
@@ -54,6 +56,7 @@ Maintainer:
 Source: openobex-1.7.2-Source.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:openobex:openobex
 Type: ipkg
 Description: Open Source impl of the OBject EXchange protocol (library)
 https://www.gitorious.org/openobex

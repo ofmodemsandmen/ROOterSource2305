@@ -15,6 +15,7 @@ Maintainer: Curtis Jiang <jqqqqqqqqqq@gmail.com>, Hao Dong <halbertdong@gmail.co
 Source: fish-3.5.0.tar.xz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:fishshell:fish
 Type: ipkg
 Description:   Fish is a smart and user-friendly command line shell for OS X, Linux, and the
   rest of the family. Fish includes features like syntax highlighting,

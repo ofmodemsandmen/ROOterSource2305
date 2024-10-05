@@ -12,14 +12,14 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Calculations for the position of the sun and moon
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
 Source: astral-3.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Astral is a python module for calculating the times of various aspects of the sun and moon.
 https://github.com/sffjunkie/astral
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: python3-astral-src
@@ -33,7 +33,7 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Calculations for the position of the sun and moon (sources)
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
 Source: astral-3.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
@@ -42,7 +42,7 @@ Description:     Astral is a python module for calculating the times of various 
 
     This package contains the Python source files for python3-astral.
 https://github.com/sffjunkie/astral
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-astral

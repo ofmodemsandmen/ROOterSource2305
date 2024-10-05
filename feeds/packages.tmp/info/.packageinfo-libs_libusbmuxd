@@ -13,6 +13,7 @@ Repository: base
 Title: USB multiplexing daemon library
 Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libusbmuxd-2.0.2.tar.bz2
+CPE-ID: cpe:/a:libimobiledevice:libusbmuxd
 Type: ipkg
 Description:     This daemon is in charge of multiplexing connections over USB to an iPhone or
   iPod touch. To users, it means you can sync your music, contacts, photos, etc.
@@ -39,6 +40,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libusbmuxd-2.0.2.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libimobiledevice:libusbmuxd
 Type: ipkg
 Description:     This daemon is in charge of multiplexing connections over USB to an iPhone or
   iPod touch. To users, it means you can sync your music, contacts, photos, etc.

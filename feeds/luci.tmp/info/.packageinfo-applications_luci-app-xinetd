@@ -39,4 +39,23 @@ Description:     Translation for luci-app-xinetd - Deutsch (German)
 Helge Mader <ma@dev.tdt.de>
 @@
 
+Package: luci-i18n-xinetd-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-xinetd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-xinetd - lt translation
+Maintainer: Helge Mader <ma@dev.tdt.de>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-xinetd - Lietuvių (Lithuanian)
+Helge Mader <ma@dev.tdt.de>
+@@
+
 

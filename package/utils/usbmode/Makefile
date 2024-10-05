@@ -65,7 +65,7 @@ define Package/usb-modeswitch/install
 	$(INSTALL_DIR) $(1)/etc/hotplug.d/usb $(1)/etc/init.d $(1)/sbin
 	perl $(PKG_BUILD_DIR)/convert-modeswitch.pl \
 		$(PKG_BUILD_DIR)/$(PKG_DATA_PATH)/usb_modeswitch.d/* \
-		> $(1)/etc/usb-mode1.json
+		> $(1)/etc/usb-mode.json
 
 	$(CP) $(PKG_INSTALL_DIR)/usr/sbin/usbmode $(1)/sbin/
 endef

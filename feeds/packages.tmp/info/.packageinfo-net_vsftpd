@@ -15,6 +15,7 @@ Title: Fast and secure FTP server (no TLS)
 Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
 Source: vsftpd-3.0.5.tar.gz
 License: GPLv2
+CPE-ID: cpe:/a:vsftpd_project:vsftpd
 Type: ipkg
 Description: Fast and secure FTP server (no TLS)
 https://security.appspot.com/vsftpd.html
@@ -36,6 +37,7 @@ Title: Fast and secure FTP server (TLS)
 Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
 Source: vsftpd-3.0.5.tar.gz
 License: GPLv2
+CPE-ID: cpe:/a:vsftpd_project:vsftpd
 Type: ipkg
 Description: Fast and secure FTP server (TLS)
 https://security.appspot.com/vsftpd.html

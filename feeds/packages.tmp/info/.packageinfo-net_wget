@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/wget/Makefile
 
 Package: wget-ssl
 Submenu: File Transfer
-Version: 1.21.3-2
-Depends: +libc +libpcre +zlib +libopenssl +librt
+Version: 1.21.4-1
+Depends: +libc +libpcre2 +zlib +libopenssl +librt
 Conflicts: 
 Menu-Depends: 
 Provides: gnu-wget wget
@@ -13,9 +13,10 @@ Category: Network
 Repository: base
 Title: Non-interactive network downloader (with SSL support)
 Maintainer: 
-Source: wget-1.21.3.tar.gz
+Source: wget-1.21.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:wget
 Type: ipkg
 Description:  Wget is a network utility to retrieve files from the Web using http
  and ftp, the two most widely used Internet protocols. It works
@@ -30,8 +31,8 @@ https://www.gnu.org/software/wget/index.html
 
 Package: wget-nossl
 Submenu: File Transfer
-Version: 1.21.3-2
-Depends: +libc +libpcre +zlib
+Version: 1.21.4-1
+Depends: +libc +libpcre2 +zlib
 Conflicts: 
 Menu-Depends: 
 Provides: gnu-wget wget
@@ -41,9 +42,10 @@ Category: Network
 Repository: base
 Title: Non-interactive network downloader (without SSL support)
 Maintainer: 
-Source: wget-1.21.3.tar.gz
+Source: wget-1.21.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:wget
 Type: ipkg
 Description:  Wget is a network utility to retrieve files from the Web using http
  and ftp, the two most widely used Internet protocols. It works

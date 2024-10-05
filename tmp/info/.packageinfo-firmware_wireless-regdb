@@ -1,7 +1,7 @@
 Source-Makefile: package/firmware/wireless-regdb/Makefile
 
 Package: wireless-regdb
-Version: 2023.05.03-1
+Version: 2024.07.04-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,10 +11,12 @@ Category: Firmware
 Repository: base
 Title: Wireless Regulatory Database
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: wireless-regdb-2023.05.03.tar.xz
+Source: wireless-regdb-2024.07.04.tar.xz
+License: ISC
+LicenseFiles: LICENSE
 Type: ipkg
 Description: Wireless Regulatory Database
-https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/wireless-regdb.git/
+https://git.kernel.org/pub/scm/linux/kernel/git/wens/wireless-regdb.git/
 Felix Fietkau <nbd@nbd.name>
 @@
 

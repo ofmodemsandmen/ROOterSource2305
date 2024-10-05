@@ -13,6 +13,8 @@ Title: A low-level library for netfilter related kernel/userspace communication
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: libnfnetlink-1.0.2.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:netfilter:libnfnetlink
+ABI-Version: 0
 Type: ipkg
 Description:  libnfnetlink is is the low-level library for netfilter related kernel/userspace communication.
  It provides a generic messaging infrastructure for in-kernel netfilter subsystems

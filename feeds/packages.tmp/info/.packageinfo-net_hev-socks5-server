@@ -1,0 +1,23 @@
+Source-Makefile: feeds/packages/net/hev-socks5-server/Makefile
+
+Package: hev-socks5-server
+Version: 2.6.7-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: A high-performance socks5 server for Unix
+Maintainer: Ray Wang <r@hev.cc>
+Source: hev-socks5-server-2.6.7.tar.gz
+License: MIT
+LicenseFiles: License
+Type: ipkg
+Description: A high-performance socks5 server for Unix
+https://github.com/heiher/hev-socks5-server
+Ray Wang <r@hev.cc>
+@@
+
+

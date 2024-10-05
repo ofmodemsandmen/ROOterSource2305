@@ -1,10 +1,10 @@
 Source-Makefile: feeds/packages/lang/python/python-editables/Makefile
-Build-Depends/host: python3/host python-build/host python-installer/host python-wheel/host
+Build-Depends/host: python3/host python-build/host python-installer/host python-flit-core/host
 Build-Types: host
 
 Package: python3-editables
 Submenu: Python
-Version: 0.3-1
+Version: 0.5-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Category: Languages
 Repository: base
 Title: Editable installations
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: editables-0.3.tar.gz
+Source: editables-0.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -31,7 +31,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-editables-src
 Submenu: Python
-Version: 0.3-1
+Version: 0.5-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -41,7 +41,7 @@ Category: Languages
 Repository: base
 Title: Editable installations (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: editables-0.3.tar.gz
+Source: editables-0.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg

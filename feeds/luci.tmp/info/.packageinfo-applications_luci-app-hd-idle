@@ -210,6 +210,25 @@ Description:     Translation for luci-app-hd-idle - 日本語 (Japanese)
 
 @@
 
+Package: luci-i18n-hd-idle-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-hd-idle
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-hd-idle - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-hd-idle - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-hd-idle-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x

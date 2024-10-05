@@ -15,6 +15,7 @@ Maintainer: Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 Source: refpolicy-2.20200229.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tresys:refpolicy
 Type: ipkg
 Description: 	The SELinux Reference Policy project (refpolicy) is a
 	complete SELinux policy that can be used as the system

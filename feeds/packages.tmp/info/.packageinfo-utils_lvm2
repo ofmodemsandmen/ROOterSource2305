@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/lvm2/Makefile
 
 Package: libdevmapper
-Version: 1.02.187
+Version: 1.02.197
 Depends: +libc +kmod-dm +libpthread +libuuid +librt +libblkid
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.17.tgz
+Source: LVM2.2.03.23.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
 Type: ipkg
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
@@ -23,7 +24,7 @@ Daniel Golle <daniel@makrotopia.org>
 @@
 
 Package: libdevmapper-selinux
-Version: 1.02.187
+Version: 1.02.197
 Depends: +libc +kmod-dm +libpthread +libuuid +librt +libblkid +libselinux
 Conflicts: 
 Menu-Depends: 
@@ -34,9 +35,10 @@ Category: Libraries
 Repository: base
 Title: The Linux Kernel Device Mapper userspace library
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.17.tgz
+Source: LVM2.2.03.23.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
 Type: ipkg
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
@@ -48,7 +50,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2
 Submenu: Disc
-Version: 2.03.17-1
+Version: 2.03.23-1
 Depends: +libc +libreadline +libncurses +libaio +libdevmapper
 Conflicts: 
 Menu-Depends: 
@@ -59,9 +61,10 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.17.tgz
+Source: LVM2.2.03.23.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
 Type: ipkg
 Description:  LVM2 refers to a new userspace toolset that provide logical volume management
  facilities on linux. It is reasonably backwards-compatible with the original
@@ -72,7 +75,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: lvm2-selinux
 Submenu: Disc
-Version: 2.03.17-1
+Version: 2.03.23-1
 Depends: +libc +libreadline +libncurses +libaio +libdevmapper-selinux
 Conflicts: 
 Menu-Depends: 
@@ -83,9 +86,10 @@ Category: Utilities
 Repository: base
 Title: The Linux Logical Volume Manager
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: LVM2.2.03.17.tgz
+Source: LVM2.2.03.23.tgz
 License: GPL-2.0 LGPL-2.1
 LicenseFiles: COPYING COPYING.lib
+CPE-ID: cpe:/a:heinz_mauelshagen:lvm2
 Type: ipkg
 Description:  LVM2 refers to a new userspace toolset that provide logical volume management
  facilities on linux. It is reasonably backwards-compatible with the original

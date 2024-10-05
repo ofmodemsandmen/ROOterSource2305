@@ -343,6 +343,25 @@ Description:     Translation for luci-app-rp-pppoe-server - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-rp-pppoe-server-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-rp-pppoe-server
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-rp-pppoe-server - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-rp-pppoe-server - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-rp-pppoe-server-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

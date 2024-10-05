@@ -2,7 +2,7 @@ Source-Makefile: package/utils/bcm27xx-userland/Makefile
 
 Package: bcm27xx-userland
 Default: y if TARGET_bcm27xx
-Version: c4fd1b8986c6d6d4ae5cd51e65a8bbeb495dfa4e-1
+Version: 96a7334ae9d5fc9db7ac92e59852377df63f1848-1
 Depends: +libc @TARGET_bcm27xx
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Section: utils
 Category: Utilities
 Title: BCM27xx userland tools
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bcm27xx-userland-c4fd1b8986c6d6d4ae5cd51e65a8bbeb495dfa4e.tar.gz
+Source: bcm27xx-userland-96a7334ae9d5fc9db7ac92e59852377df63f1848.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Type: ipkg
@@ -21,7 +21,7 @@ Description:   BCM27xx userland tools including vcgencmd and tvservice.
 
 Package: bcm27xx-userland-dev
 Submenu: Libraries
-Version: c4fd1b8986c6d6d4ae5cd51e65a8bbeb495dfa4e-1
+Version: 96a7334ae9d5fc9db7ac92e59852377df63f1848-1
 Depends: +libc @TARGET_bcm27xx +bcm27xx-userland
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Section: devel
 Category: Development
 Title: Development files of BCM27xx userland tools
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
-Source: bcm27xx-userland-c4fd1b8986c6d6d4ae5cd51e65a8bbeb495dfa4e.tar.gz
+Source: bcm27xx-userland-96a7334ae9d5fc9db7ac92e59852377df63f1848.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENCE
 Type: ipkg

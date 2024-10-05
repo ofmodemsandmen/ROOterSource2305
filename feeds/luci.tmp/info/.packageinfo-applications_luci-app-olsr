@@ -4,7 +4,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 Package: luci-app-olsr
 Submenu: 3. Applications
 Version: x
-Depends: +libc +luci-compat +olsrd +olsrd-mod-jsoninfo +luci-lib-json +luci-lua-runtime
+Depends: +libc +olsrd
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -340,6 +340,25 @@ Source:
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-olsr - 한국어 (Korean)
+
+@@
+
+Package: luci-i18n-olsr-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-olsr
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-olsr - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-olsr - Lietuvių (Lithuanian)
 
 @@
 

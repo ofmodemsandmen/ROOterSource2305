@@ -2,7 +2,7 @@ Source-Makefile: feeds/telephony/libs/sofia-sip/Makefile
 
 Package: sofia-sip
 Submenu: Telephony
-Version: 1.13.14-1
+Version: 1.13.17-1
 Depends: +libc +libopenssl +zlib
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Libraries
 Repository: base
 Title: Sofia-SIP open-source SIP User-Agent library
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: sofia-sip-1.13.14.tar.gz
+Source: sofia-sip-1.13.17.tar.gz
 License: LGPL-2.1+
 LicenseFiles: COPYING
+ABI-Version: 0
 Type: ipkg
 Description: Sofia-SIP is an open-source SIP User-Agent library, compliant with the
 IETF RFC3261 specification (see the feature table). It can be used as a

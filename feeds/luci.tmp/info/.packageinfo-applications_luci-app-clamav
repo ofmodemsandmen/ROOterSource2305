@@ -361,6 +361,26 @@ Description:     Translation for luci-app-clamav - 한국어 (Korean)
 Marko Ratkaj <marko.ratkaj@sartura.hr>
 @@
 
+Package: luci-i18n-clamav-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-clamav
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-clamav - lt translation
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-clamav - Lietuvių (Lithuanian)
+Marko Ratkaj <marko.ratkaj@sartura.hr>
+@@
+
 Package: luci-i18n-clamav-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

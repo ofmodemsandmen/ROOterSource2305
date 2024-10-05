@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/nano/Makefile
 
 Package: nano
 Submenu: Editors
-Version: 7.2-2
+Version: 8.2-1
 Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -14,9 +14,10 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (minimal features)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-7.2.tar.xz
+Source: nano-8.2.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:nano
 Type: ipkg
 Description:   Nano is a small and simple text editor for use on the terminal.
 
@@ -31,7 +32,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 
 Package: nano-plus
 Submenu: Editors
-Version: 7.2-2
+Version: 8.2-1
 Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -42,9 +43,10 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (more features, Unicode)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-7.2.tar.xz
+Source: nano-8.2.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:nano
 Type: ipkg
 Description:   nano-plus - Additional features enabled, larger size than default nano.
   (multibuffer, Unicode/UTF-8, help, justify, nanorc, some key bindings)
@@ -62,7 +64,7 @@ Hannu Nyman <hannu.nyman@iki.fi>
 
 Package: nano-full
 Submenu: Editors
-Version: 7.2-2
+Version: 8.2-1
 Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -73,9 +75,10 @@ Category: Utilities
 Repository: base
 Title: GNU nano text editor (all features, Unicode)
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: nano-7.2.tar.xz
+Source: nano-8.2.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:nano
 Type: ipkg
 Description:   nano-full - all features, including syntax highlighting (also uci),
   multibuffer, Unicode/UTF-8, nanorc, some key bindings.

@@ -14,6 +14,7 @@ Title: OWFS - fuse file system
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -48,6 +49,7 @@ Title: OWFS - shell utilities
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -82,6 +84,7 @@ Title: OWFS - network server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -116,6 +119,7 @@ Title: OWFS - http server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -150,6 +154,7 @@ Title: OWFS - ftp server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -184,6 +189,7 @@ Title: OWFS - common shared library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual
@@ -221,6 +227,7 @@ Title: OWFS - C-API library
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: owfs-3.2p4.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:owfs:owfs
 Type: ipkg
 Description:     OWFS is a suite of programs that designed to make the 1-wire bus and its
   devices easily accessible. The underlying principle is to create a virtual

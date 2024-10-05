@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nextdns/Makefile
 Build-Depends: golang/host
 
 Package: nextdns
-Version: 1.39.4-1
+Version: 1.43.5-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.39.4.tar.gz
+Source: nextdns-1.43.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,7 +23,7 @@ Olivier Poitrey <rs@nextdns.io>
 
 Package: golang-github-nextdns-nextdns-dev
 Submenu: Go
-Version: 1.39.4-1
+Version: 1.43.5-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +33,7 @@ Category: Languages
 Repository: base
 Title: NextDNS DNS over HTTPS Proxy (source files)
 Maintainer: Olivier Poitrey <rs@nextdns.io>
-Source: nextdns-1.39.4.tar.gz
+Source: nextdns-1.43.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

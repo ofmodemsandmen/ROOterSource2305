@@ -13,6 +13,7 @@ Title: A configuration editing tool
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: augeas-1.12.0.tar.gz
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:augeas:augeas
 Type: ipkg
 Description:   Augeas is a configuration editing tool.
   It parses configuration files in their
@@ -36,6 +37,7 @@ Title: Augeas lenses
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: augeas-1.12.0.tar.gz
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:augeas:augeas
 Type: ipkg
 Description: Augeas lenses
 http://augeas.net
@@ -55,6 +57,7 @@ Title: Augeas lenses tests
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: augeas-1.12.0.tar.gz
 License: LGPL-2.1-or-later
+CPE-ID: cpe:/a:augeas:augeas
 Type: ipkg
 Description:   Set of tests for official Augeas lenses.
 http://augeas.net

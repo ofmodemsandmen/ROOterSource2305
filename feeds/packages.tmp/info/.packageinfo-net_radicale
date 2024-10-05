@@ -16,6 +16,7 @@ Require-User: radicale=5232:radicale=5232
 Source: Radicale-1.1.7.tar.gz
 License: GPL-3.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:radicale:radicale
 Type: ipkg
 Description:   The Radicale Project is a CalDAV (calendar) and CardDAV (contact) server.  It
   aims to be a light solution, easy to use, easy to install, easy to configure.
@@ -40,6 +41,7 @@ Maintainer:
 Source: Radicale-1.1.7.tar.gz
 License: GPL-3.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:radicale:radicale
 Type: ipkg
 Description:       The Radicale Project is a CalDAV (calendar) and CardDAV (contact) server.  It
   aims to be a light solution, easy to use, easy to install, easy to configure.

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/sound/mpd/Makefile
 
 Package: mpd-full
-Version: 0.23.11-1
+Version: 0.23.13-1
 Depends: +libc +zlib +libcurl +libpthread +libmpdclient +boost +BUILD_NLS:libiconv-full +libfmt +AUDIO_SUPPORT:alsa-lib +libexpat +libflac +libid3tag +libfaad2 +libopus +AUDIO_SUPPORT:pulseaudio +libvorbis +libmms +libnpupnp +libshout +yajl +libffmpeg +lame-lib +libsoxr +!BUILD_PATENTED:libmad
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Repository: base
 Title: Music Player Daemon (full)
 Maintainer: 
 Require-User: mpd:mpd
-Source: mpd-0.23.11.tar.xz
+Source: mpd-0.23.13.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -28,7 +28,7 @@ https://www.musicpd.org/
 @@
 
 Package: mpd-mini
-Version: 0.23.11-1
+Version: 0.23.13-1
 Depends: +libc +zlib +libcurl +libpthread +libmpdclient +boost +BUILD_NLS:libiconv-full +libfmt +AUDIO_SUPPORT:alsa-lib +libexpat +libflac +libid3tag +libfaad2 +libopus +libmad +libvorbisidec
 Conflicts: 
 Menu-Depends: 
@@ -40,7 +40,7 @@ Repository: base
 Title: Music Player Daemon (mini)
 Maintainer: 
 Require-User: mpd:mpd
-Source: mpd-0.23.11.tar.xz
+Source: mpd-0.23.13.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -56,7 +56,7 @@ https://www.musicpd.org/
 @@
 
 Package: mpd-avahi-service
-Version: 0.23.11-1
+Version: 0.23.13-1
 Depends: +libc +zlib +libcurl +libpthread +libmpdclient +boost +BUILD_NLS:libiconv-full +libfmt +AUDIO_SUPPORT:alsa-lib +libexpat +libflac +libid3tag +libfaad2 +libopus +avahi-dbus-daemon
 Conflicts: 
 Menu-Depends: 
@@ -67,7 +67,7 @@ Repository: base
 Title: Music Player Daemon (Avahi service)
 Maintainer: 
 Require-User: mpd:mpd
-Source: mpd-0.23.11.tar.xz
+Source: mpd-0.23.13.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

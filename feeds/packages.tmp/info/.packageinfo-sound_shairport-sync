@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/sound/shairport-sync/Makefile
 
 Package: shairport-sync-openssl
-Version: 3.3.9-1
+Version: 3.3.9-2
 Depends: +libc @AUDIO_SUPPORT +libpthread +alsa-lib +libconfig +libdaemon +libpopt +libopenssl +libavahi-client +libsoxr
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,7 @@ Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 
 Package: shairport-sync-mbedtls
-Version: 3.3.9-1
+Version: 3.3.9-2
 Depends: +libc @AUDIO_SUPPORT +libpthread +alsa-lib +libconfig +libdaemon +libpopt +libmbedtls +libavahi-client +libsoxr
 Conflicts: 
 Menu-Depends: 
@@ -58,7 +58,7 @@ Ted Hess <thess@kitschensync.net>, Mike Brady <mikebrady@eircom.net>
 @@
 
 Package: shairport-sync-mini
-Version: 3.3.9-1
+Version: 3.3.9-2
 Depends: +libc @AUDIO_SUPPORT +libpthread +alsa-lib +libconfig +libdaemon +libpopt +libmbedtls
 Conflicts: 
 Menu-Depends: 

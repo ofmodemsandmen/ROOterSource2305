@@ -343,6 +343,25 @@ Description:     Translation for luci-app-lxc - 한국어 (Korean)
 Petar Koretic <petar.koretic@sartura.hr>
 @@
 
+Package: luci-i18n-lxc-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-lxc
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-lxc - lt translation
+Maintainer: Petar Koretic <petar.koretic@sartura.hr>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-lxc - Lietuvių (Lithuanian)
+Petar Koretic <petar.koretic@sartura.hr>
+@@
+
 Package: luci-i18n-lxc-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

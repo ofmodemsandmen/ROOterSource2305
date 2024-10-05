@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/utils/podman/Makefile
 Build-Depends: golang/host protobuf/host btrfs-progs
 
 Package: podman
-Version: 4.5.1-1
-Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +conmon +libgpgme +libseccomp +nsenter +zoneinfo-simple +kmod-veth +slirp4netns +netavark +aardvark-dns +PODMAN_SELINUX_SUPPORT:libselinux
+Version: 4.8.0-1
+Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +conmon +libgpgme +libseccomp +nsenter +zoneinfo-simple +kmod-veth +slirp4netns +netavark +aardvark-dns +catatonit +crun +PODMAN_SELINUX_SUPPORT:libselinux
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: Podman
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: podman-4.5.1.tar.gz
+Source: podman-4.8.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

@@ -343,6 +343,25 @@ Description:     Translation for luci-app-dump1090 - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-dump1090-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-dump1090
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dump1090 - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dump1090 - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-dump1090-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

@@ -14,6 +14,7 @@ Maintainer: Marcin Jurkowski <marcin1j@gmail.com>
 Source: mini-snmpd-1.6.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:minisnmpd_project:minisnmpd
 Type: ipkg
 Description: A tiny SNMP server for embedded systems
 http://troglobit.github.io/mini-snmpd.html

@@ -13,6 +13,7 @@ Title: Simple interprocess messaging system (library)
 Maintainer: 
 Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
+CPE-ID: cpe:/a:freedesktop:dbus
 Type: ipkg
 Description: Simple interprocess messaging system (library)
 https://dbus.freedesktop.org/
@@ -32,6 +33,7 @@ Title: Simple interprocess messaging system (daemon)
 Maintainer: 
 Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
+CPE-ID: cpe:/a:freedesktop:dbus
 Type: ipkg
 Description: Simple interprocess messaging system (daemon)
 https://dbus.freedesktop.org/
@@ -54,6 +56,7 @@ Title: Simple interprocess messaging system (utilities)
 Maintainer: 
 Source: dbus-1.13.18.tar.xz
 License: AFL-2.1
+CPE-ID: cpe:/a:freedesktop:dbus
 Type: ipkg
 Description: Simple interprocess messaging system (utilities)
 https://dbus.freedesktop.org/

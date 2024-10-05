@@ -9,7 +9,7 @@
 #include <dt-bindings/input/input.h>
 
 / {
-	model = "ZBT WG156 32M";
+	model = "Qxwlan E2600AC c1";
 	compatible = "qxwlan,e2600ac-c1";
 };
 
@@ -119,52 +119,18 @@
 	status = "okay";
 };
 
-&swport1 {
-	status = "okay";
-};
-
-&swport2 {
-	status = "okay";
-};
-
-&swport3 {
-	status = "okay";
-};
-
 &swport4 {
 	status = "okay";
+	label = "sw-eth1";
+
+	nvmem-cell-names = "mac-address";
+	nvmem-cells = <&macaddr_gmac0>;
 };
 
 &swport5 {
 	status = "okay";
-};
 
-&ethphy0 {
-	qcom,single-led-1000;
-	qcom,single-led-100;
-	qcom,single-led-10;
-};
-
-&ethphy1 {
-	qcom,single-led-1000;
-	qcom,single-led-100;
-	qcom,single-led-10;
-};
-
-&ethphy2 {
-	qcom,single-led-1000;
-	qcom,single-led-100;
-	qcom,single-led-10;
-};
-
-&ethphy3 {
-	qcom,single-led-1000;
-	qcom,single-led-100;
-	qcom,single-led-10;
-};
-
-&ethphy4 {
-	qcom,single-led-1000;
-	qcom,single-led-100;
-	qcom,single-led-10;
+	label = "sw-eth2";
+	nvmem-cell-names = "mac-address";
+	nvmem-cells = <&macaddr_gmac1>;
 };

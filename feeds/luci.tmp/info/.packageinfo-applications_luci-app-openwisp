@@ -41,4 +41,24 @@ Description:     Translation for luci-app-openwisp - Español (Spanish)
 Nicholas Smith <nicholas@nbembedded.com>
 @@
 
+Package: luci-i18n-openwisp-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-openwisp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-openwisp - lt translation
+Maintainer: Nicholas Smith <nicholas@nbembedded.com>
+Source: 
+License: GPL-2.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-openwisp - Lietuvių (Lithuanian)
+Nicholas Smith <nicholas@nbembedded.com>
+@@
+
 

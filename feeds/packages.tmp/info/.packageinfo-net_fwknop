@@ -15,6 +15,7 @@ Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:cipherdyne:fwknop
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -47,6 +48,7 @@ Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:cipherdyne:fwknop
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a
@@ -76,6 +78,7 @@ Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
 Source: fwknop-2.6.10.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:cipherdyne:fwknop
 Type: ipkg
 Description:     Fwknop implements an authorization scheme known as Single Packet Authorization
   (SPA) for Linux systems running iptables.  This mechanism requires only a

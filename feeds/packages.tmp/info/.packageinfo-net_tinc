@@ -16,6 +16,7 @@ Maintainer: Erwan Mas <erwan@mas.nom.fr>
 Source: tinc-1.1pre18.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tinc-vpn:tinc
 Type: ipkg
 Description:   tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and
   encryption to create a secure private network between hosts on the Internet.

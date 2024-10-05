@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/mail/postfix/Makefile
 
 Package: postfix
 Menu: 1
-Version: 3.5.8-3
-Depends: +libc +POSTFIX_CDB:tinycdb +POSTFIX_TLS:libopenssl +POSTFIX_SASL:libsasl2 +POSTFIX_LDAP:libopenldap +POSTFIX_DB:libdb47 +POSTFIX_SQLITE:libsqlite3 +POSTFIX_MYSQL:libmysqlclient +POSTFIX_PGSQL:libpq +POSTFIX_EAI:icu +POSTFIX_PCRE:libpcre
+Version: 3.8.2-2
+Depends: +libc +POSTFIX_CDB:tinycdb +POSTFIX_TLS:libopenssl +POSTFIX_SASL:libsasl2 +POSTFIX_LDAP:libopenldap +POSTFIX_DB:libdb47 +POSTFIX_SQLITE:libsqlite3 +POSTFIX_MYSQL:libmysqlclient +POSTFIX_PGSQL:libpq +POSTFIX_EAI:icu +POSTFIX_PCRE:libpcre2
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,9 +13,10 @@ Repository: base
 Title: Postfix Mail Transmit Agent
 Maintainer: Denis Shulyaka <Shulyaka@gmail.com>
 Require-User: postfix=25:postfix=25 postdrop=26:postdrop=26
-Source: postfix-3.5.8.tar.gz
+Source: postfix-3.8.2.tar.gz
 License: IPL-1.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:postfix:postfix
 Type: ipkg
 Description:  Postfix is Wietse Venema's mailer that started life as an alternative to the widely-used Sendmail program. Postfix attempts to be fast, easy to administer, and secure, while at the same time being sendmail compatible enough to not upset existing users. Thus, the outside has a sendmail-ish flavor, but the inside is completely different.
 http://www.postfix.org/

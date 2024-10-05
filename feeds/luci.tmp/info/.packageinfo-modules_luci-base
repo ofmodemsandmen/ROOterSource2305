@@ -37,7 +37,7 @@ Config:
    menu "Translations"
 
      config LUCI_LANG_ar
-	   tristate "Arabic (ar)" 
+	   tristate "Arabic (ar)"  
 
      config LUCI_LANG_bg
 	   tristate "Bulgarian (bg)" 
@@ -86,6 +86,9 @@ Config:
 
      config LUCI_LANG_ko
 	   tristate "Korean (ko)" 
+
+     config LUCI_LANG_lt
+	   tristate "Lithuanian (lt)" 
 
      config LUCI_LANG_mr
 	   tristate "Marathi (mr)" 
@@ -475,6 +478,26 @@ License: MIT
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-base - 한국어 (Korean)
+
+@@
+
+Package: luci-i18n-base-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-base
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-base - lt translation
+Maintainer: 
+Source: 
+License: MIT
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-base - Lietuvių (Lithuanian)
 
 @@
 

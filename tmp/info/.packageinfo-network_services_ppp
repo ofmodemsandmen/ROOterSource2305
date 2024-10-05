@@ -15,6 +15,7 @@ Title: PPP daemon
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains the PPP (Point-to-Point Protocol) daemon.
 https://ppp.samba.org/
@@ -35,6 +36,7 @@ Title: PPP daemon (with multilink support)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: PPP daemon (with multilink support)
 https://ppp.samba.org/
@@ -54,6 +56,7 @@ Title: PPPoA plugin
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains a PPPoA (PPP over ATM) plugin for ppp.
 https://ppp.samba.org/
@@ -73,6 +76,7 @@ Title: PPPoE plugin
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
 https://ppp.samba.org/
@@ -92,6 +96,7 @@ Title: RADIUS plugin
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains a RADIUS (Remote Authentication Dial-In User Service)
 plugin for ppp.
@@ -112,6 +117,7 @@ Title: PPPoL2TP plugin
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains a PPPoL2TP (PPP over L2TP) plugin for ppp.
 https://ppp.samba.org/
@@ -131,6 +137,7 @@ Title: PPtP plugin
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains a PPtP plugin for ppp.
 https://ppp.samba.org/
@@ -150,6 +157,7 @@ Title: pap/chap secret from filedescriptor
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package allows to pass the PAP/CHAP secret from a filedescriptor.
 Eliminates the need for a secrets file.
@@ -170,6 +178,7 @@ Title: Establish conversation with a modem
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains an utility to establish conversation with other PPP servers
 (via a modem).
@@ -190,6 +199,7 @@ Title: Read PPP record file
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains an utility to read PPP record file.
 https://ppp.samba.org/
@@ -209,6 +219,7 @@ Title: Report PPP statistics
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This package contains an utility to report PPP statistics.
 https://ppp.samba.org/
@@ -228,6 +239,7 @@ Title: Perform a PPPoE-discovery process
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: ppp-2.4.9.git-2021-01-04.tar.xz
 License: BSD-4-Clause
+CPE-ID: cpe:/a:samba:ppp
 Type: ipkg
 Description: This tool performs the same discovery process as pppoe, but does
 not initiate a session. Can be useful to debug pppoe.

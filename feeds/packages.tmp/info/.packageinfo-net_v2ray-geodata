@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/v2ray-geodata/Makefile
 
 Package: v2ray-geoip
 Submenu: IP Addresses and Names
-Version: 202306150049-1
+Version: 202409120050-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -23,7 +23,7 @@ Tianling Shen <cnsztl@immortalwrt.org>
 
 Package: v2ray-geosite
 Submenu: IP Addresses and Names
-Version: 20230620033122-1
+Version: 20240914091803-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -38,6 +38,27 @@ License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description: Geosite List for V2Ray
+https://www.v2fly.org
+Tianling Shen <cnsztl@immortalwrt.org>
+@@
+
+Package: v2ray-geosite-ir
+Submenu: IP Addresses and Names
+Version: 202409160034-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: xray-geosite-ir
+Section: net
+Category: Network
+Repository: base
+Title: Iran Geosite List for V2Ray
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Source: 
+License: MIT
+LicenseFiles: LICENSE
+Type: ipkg
+Description: Iran Geosite List for V2Ray
 https://www.v2fly.org
 Tianling Shen <cnsztl@immortalwrt.org>
 @@

@@ -1,7 +1,7 @@
 Source-Makefile: package/network/config/firewall4/Makefile
 
 Package: firewall4
-Version: 2023-03-23-04a06bd70b9808b14444cae81a2faba4708ee231-1
+Version: 2023-09-01-598d9fbb5179667aa0c525040eaa41bc7f2dc015-1
 Depends: +libc +kmod-nft-core +kmod-nft-fib +kmod-nft-offload +kmod-nft-nat +nftables-json +ucode +ucode-mod-fs +ucode-mod-ubus +ucode-mod-uci
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt 4th gen firewall
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: firewall4-2023-03-23-04a06bd70b9808b14444cae81a2faba4708ee231.tar.xz
+Source: firewall4-2023-09-01-598d9fbb5179667aa0c525040eaa41bc7f2dc015.tar.xz
 License: ISC
 Type: ipkg
 Description:  This package provides an nftables-based implementation of the UCI firewall

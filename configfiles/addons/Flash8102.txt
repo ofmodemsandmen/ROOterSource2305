@@ -1,8 +1,33 @@
 Flashing the ZBT Z8102AX
 ========================
+There are two different versions of the Z8102AX that require different firmware.
+You can not tell which version you have by looking at the case or the
+board inside.
+
+The only way to tell is to check for a bootloader Recovery GUI. To do this :
+
+1. Power down the router and hold in the Reset button.
+2. While holding in the button power up the router again.
+3. Hold the button in for 10 seconds and then release.
+4. Use your browser to go to 192.168.1.1
+5. If you see a GUI that is for flashing firmware then you have the V2 model.
+	If there is no GUI and the router continues to boot up normally
+	you have the V1 model.
+	
+Choose the correct firmware from the ZBT-Z8102AX-V1 folder for the V1 model
+and from the ZBT-Z8102AX-V2 folder for the V2 model.
+
+Be sure to only use the correct firmware as flashing the V2 firmware on
+the V1 router will brick it and require a Serial cable to recover it.
+Because the V2 router has a Recovery GUI it can be used to recover from
+an incorrect firmware.
+
 
 To flash from factory to ROOter go to the System->Backup/Flash
 menu and flash from there.
+
+If your router has the Intelligent Router factory firmware then you
+have to use the Recovery GUI from above to flash it.
 
 Be sure to deselect Keep Settings and select Force Flash.
 

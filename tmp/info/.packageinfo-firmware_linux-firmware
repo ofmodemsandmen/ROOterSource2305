@@ -1,7 +1,7 @@
 Source-Makefile: package/firmware/linux-firmware/Makefile
 
 Package: rs9113-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Firmware
 Repository: base
 Title: RedPine Signals rs9113 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RedPine Signals rs9113 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -19,7 +19,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wl12xx-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -29,7 +29,8 @@ Category: Firmware
 Repository: base
 Title: TI WL12xx firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.ti-connectivity
 Type: ipkg
 Description: TI WL12xx firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -37,7 +38,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wl18xx-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -47,7 +48,8 @@ Category: Firmware
 Repository: base
 Title: TI WL18xx firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.ti-connectivity
 Type: ipkg
 Description: TI WL18xx firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -55,7 +57,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ti-3410-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -65,7 +67,7 @@ Category: Firmware
 Repository: base
 Title: TI 3410 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: TI 3410 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -73,7 +75,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ti-5052-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -83,7 +85,7 @@ Category: Firmware
 Repository: base
 Title: TI 5052 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: TI 5052 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -91,7 +93,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: edgeport-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -101,807 +103,15 @@ Category: Firmware
 Repository: base
 Title: USB Inside Out Edgeport Serial Driver firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: USB Inside Out Edgeport Serial Driver firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
-Package: eip197-mini-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Inside Secure EIP197 mini firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Inside Secure EIP197 mini firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: ath11k-firmware-qca6390
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: QCA6390 ath11k firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: QCA6390 ath11k firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: ath11k-firmware-wcn6750
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: WCN6750 ath11k firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: WCN6750 ath11k firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: ath11k-firmware-wcn6855
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: WCN6855 ath11k firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: WCN6855 ath11k firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: ibt-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel bluetooth firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel bluetooth firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwl3945-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel IWL3945 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel IWL3945 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwl4965-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel IWL4965 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel IWL4965 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl100
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 100 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 100 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl1000
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 1000 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 1000 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl105
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 105 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 105 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl135
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 135 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 135 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl2000
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 2200 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 2200 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl2030
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino Wireless-N 2230 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino Wireless-N 2230 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl3160
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 3160 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 3160 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl3168
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 3168 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 3168 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl5000
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 5100AGN 5300AGN and 5350AGN firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 5100AGN 5300AGN and 5350AGN firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl5150
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless Wi-Fi 5150AGN firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless Wi-Fi 5150AGN firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl6000g2
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino 6300 and 6200 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino 6300 and 6200 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl6000g2a
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino 6205 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino 6205 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl6000g2b
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino 6230 1030 130 and 6235 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino 6230 1030 130 and 6235 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl6050
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Centrino 6150 and 6250 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Centrino 6150 and 6250 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl7260
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 7260 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 7260 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl7265
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 7265 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 7265 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl7265d
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 7265D and 3165 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 7265D and 3165 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl8260c
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 8260 and 4165 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 8260 and 4165 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl8265
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 8265 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 8265 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl9000
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 9000 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 9000 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-iwl9260
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel Wireless 9260 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel Wireless 9260 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-ax200
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel AX200 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel AX200 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: iwlwifi-firmware-ax210
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel AX210 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel AX210 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: e100-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Intel e100
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Intel e100
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7601u-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: MediaTek MT7601U firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: MediaTek MT7601U firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rt2800-pci-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Ralink RT28xx/3xxx PCI/SoC firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Ralink RT28xx/3xxx PCI/SoC firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rt2800-usb-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Ralink RT28xx/3xxx USB firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Ralink RT28xx/3xxx USB firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rt61-pci-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Ralink RT2561 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Ralink RT2561 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: rt73-usb-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Ralink RT2573 firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Ralink RT2573 firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7622bt-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: mt7622bt firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: mt7622bt firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7921bt-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: mt7921bt firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: mt7921bt firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7922bt-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: mt7922bt firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: mt7922bt firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7981-wo-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: MT7981 offload firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: MT7981 offload firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: mt7986-wo-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: MT7986 offload firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: MT7986 offload firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: amd64-microcode
-Version: 20230515-1
-Depends: +libc @TARGET_x86
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: AMD64 CPU microcode
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: AMD64 CPU microcode
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: amdgpu-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: AMDGPU Video Driver firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: AMDGPU Video Driver firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
-Package: radeon-firmware
-Version: 20230515-1
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: firmware
-Category: Firmware
-Repository: base
-Title: Radeon Video Driver firmware
-Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
-Type: ipkg
-Description: Radeon Video Driver firmware
-http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
-Felix Fietkau <nbd@nbd.name>
-@@
-
 Package: ar3k-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -911,7 +121,8 @@ Category: Firmware
 Repository: base
 Title: ath3k firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ar3k
 Type: ipkg
 Description: ath3k firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -919,7 +130,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath6k-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -929,7 +140,7 @@ Category: Firmware
 Repository: base
 Title: AR600X firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: AR600X firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -937,7 +148,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath9k-htc-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -947,7 +158,8 @@ Category: Firmware
 Repository: base
 Title: AR9271/AR7010 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.open-ath9k-htc-firmware
 Type: ipkg
 Description: AR9271/AR7010 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -955,7 +167,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: carl9170-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -965,7 +177,8 @@ Category: Firmware
 Repository: base
 Title: AR9170 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: carl9170fw/GPL
 Type: ipkg
 Description: AR9170 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -973,7 +186,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: wil6210-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -983,15 +196,837 @@ Category: Firmware
 Repository: base
 Title: wil6210 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: wil6210 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
 Felix Fietkau <nbd@nbd.name>
 @@
 
+Package: ibt-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel bluetooth firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel bluetooth firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwl3945-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel IWL3945 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel IWL3945 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwl4965-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel IWL4965 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel IWL4965 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl100
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 100 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 100 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl1000
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 1000 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 1000 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl105
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 105 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 105 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl135
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 135 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 135 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl2000
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 2200 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 2200 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl2030
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino Wireless-N 2230 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino Wireless-N 2230 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl3160
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 3160 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 3160 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl3168
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 3168 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 3168 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl5000
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 5100AGN 5300AGN and 5350AGN firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 5100AGN 5300AGN and 5350AGN firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl5150
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless Wi-Fi 5150AGN firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless Wi-Fi 5150AGN firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl6000g2
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino 6300 and 6200 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino 6300 and 6200 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl6000g2a
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino 6205 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino 6205 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl6000g2b
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino 6230 1030 130 and 6235 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino 6230 1030 130 and 6235 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl6050
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Centrino 6150 and 6250 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Centrino 6150 and 6250 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl7260
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 7260 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 7260 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl7265
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 7265 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 7265 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl7265d
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 7265D and 3165 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 7265D and 3165 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl8260c
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 8260 and 4165 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 8260 and 4165 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl8265
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 8265 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 8265 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl9000
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 9000 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 9000 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-iwl9260
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel Wireless 9260 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel Wireless 9260 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-ax200
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel AX200 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel AX200 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-ax201
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel AX201 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel AX201 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: iwlwifi-firmware-ax210
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel AX210 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel AX210 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: e100-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Intel e100
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Intel e100
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: eip197-mini-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Inside Secure EIP197 mini firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Inside Secure EIP197 mini firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7601u-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: MediaTek MT7601U firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: MediaTek MT7601U firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rt2800-pci-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Ralink RT28xx/3xxx PCI/SoC firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Ralink RT28xx/3xxx PCI/SoC firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rt2800-usb-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Ralink RT28xx/3xxx USB firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Ralink RT28xx/3xxx USB firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rt61-pci-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Ralink RT2561 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Ralink RT2561 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: rt73-usb-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Ralink RT2573 firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+Type: ipkg
+Description: Ralink RT2573 firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7622bt-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: mt7622bt firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: mt7622bt firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7921bt-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: mt7921bt firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: mt7921bt firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7922bt-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: mt7922bt firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: mt7922bt firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7981-wo-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: MT7981 offload firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: MT7981 offload firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: mt7986-wo-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: MT7986 offload firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.mediatek
+Type: ipkg
+Description: MT7986 offload firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: amd64-microcode
+Version: 20230804-1
+Depends: +libc @TARGET_x86
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: AMD64 CPU microcode
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.amd-ucode
+Type: ipkg
+Description: AMD64 CPU microcode
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: amdgpu-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: AMDGPU Video Driver firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.amdgpura
+Type: ipkg
+Description: AMDGPU Video Driver firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: radeon-firmware
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: Radeon Video Driver firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.radeon
+Type: ipkg
+Description: Radeon Video Driver firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ath11k-firmware-qca6390
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: QCA6390 ath11k firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.atheros_firmware
+Type: ipkg
+Description: QCA6390 ath11k firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ath11k-firmware-wcn6750
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: WCN6750 ath11k firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.atheros_firmware
+Type: ipkg
+Description: WCN6750 ath11k firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
+Package: ath11k-firmware-wcn6855
+Version: 20230804-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: firmware
+Category: Firmware
+Repository: base
+Title: WCN6855 ath11k firmware
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.atheros_firmware
+Type: ipkg
+Description: WCN6855 ath11k firmware
+http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
+Felix Fietkau <nbd@nbd.name>
+@@
+
 Package: r8152-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1001,7 +1036,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8152 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8152 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1009,7 +1044,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: r8169-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1019,7 +1054,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8169 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8169 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1027,7 +1062,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8188eu-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1037,7 +1072,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8188EU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8188EU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1045,7 +1081,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8192ce-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1055,7 +1091,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8192CE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8192CE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1063,7 +1099,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8192cu-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1073,7 +1109,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8192CU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8192CU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1081,7 +1118,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8192de-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1091,7 +1128,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8192DE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8192DE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1099,7 +1137,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8192eu-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1109,7 +1147,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8192EU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8192EU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1117,7 +1156,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8192se-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1127,7 +1166,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8192SE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8192SE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1135,7 +1175,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8723au-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1145,7 +1185,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8723AU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8723AU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1153,7 +1194,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8723bu-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1163,7 +1204,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8723BU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8723BU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1171,7 +1213,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8761a-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1181,7 +1223,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8761A firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8761A firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1189,7 +1231,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8761b-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1199,7 +1241,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8761B firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8761B firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1207,7 +1249,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8761bu-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1217,7 +1259,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8761BU firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8761BU firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1225,7 +1267,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8821ae-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1235,7 +1277,8 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8821AE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.rtlwifi_firmware.txt
 Type: ipkg
 Description: RealTek RTL8821AE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1243,7 +1286,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8822be-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1253,7 +1296,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8822BE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8822BE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1261,7 +1304,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: rtl8822ce-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1271,7 +1314,7 @@ Category: Firmware
 Repository: base
 Title: RealTek RTL8822CE firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: RealTek RTL8822CE firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1279,7 +1322,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: aircard-pcmcia-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1289,7 +1332,7 @@ Category: Firmware
 Repository: base
 Title: Sierra Wireless Aircard 555/7xx/8x0 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: Sierra Wireless Aircard 555/7xx/8x0 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1297,7 +1340,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: mwl8k-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1307,7 +1350,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8366/8687 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8366/8687 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1315,7 +1359,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: mwifiex-pcie-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1325,7 +1369,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8897 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8897 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1333,7 +1378,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: mwifiex-sdio-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1343,7 +1388,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8887/8997 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8887/8997 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1351,7 +1397,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libertas-usb-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1361,7 +1407,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8388/8682 USB firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8388/8682 USB firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1369,7 +1416,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libertas-sdio-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1379,7 +1426,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8385/8686/8688 SDIO firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8385/8686/8688 SDIO firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1387,7 +1435,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: libertas-spi-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1397,7 +1445,8 @@ Category: Firmware
 Repository: base
 Title: Marvell 8686 SPI firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.Marvell
 Type: ipkg
 Description: Marvell 8686 SPI firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1405,7 +1454,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca4019
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1415,7 +1464,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca4019 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca4019 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1423,7 +1473,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca4019
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1433,7 +1483,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca4019 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca4019 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1441,7 +1492,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca9377
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1451,7 +1502,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9377 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9377 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1459,7 +1511,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca9377
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca9377
 Conflicts: 
 Menu-Depends: 
@@ -1469,7 +1521,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9377 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9377 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1477,7 +1530,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca9887
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1487,7 +1540,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9887 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9887 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1495,7 +1549,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca9887
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca9887
 Conflicts: 
 Menu-Depends: 
@@ -1505,7 +1559,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9887 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9887 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1513,7 +1568,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca9888
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1523,7 +1578,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9888 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9888 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1531,7 +1587,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca9888
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca9888
 Conflicts: 
 Menu-Depends: 
@@ -1541,7 +1597,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9888 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9888 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1549,7 +1606,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca988x
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1559,7 +1616,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca988x board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca988x board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1567,7 +1625,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca988x
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca988x
 Conflicts: 
 Menu-Depends: 
@@ -1577,7 +1635,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca988x firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca988x firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1585,7 +1644,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca6174
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1595,7 +1654,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca6174 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca6174 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1603,7 +1663,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca99x0
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1613,7 +1673,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca99x0 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca99x0 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1621,7 +1682,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca99x0
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca99x0
 Conflicts: 
 Menu-Depends: 
@@ -1631,7 +1692,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca99x0 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca99x0 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1639,7 +1701,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-board-qca9984
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1649,7 +1711,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9984 board firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9984 board firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1657,7 +1720,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: ath10k-firmware-qca9984
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc +ath10k-board-qca9984
 Conflicts: 
 Menu-Depends: 
@@ -1667,7 +1730,8 @@ Category: Firmware
 Repository: base
 Title: ath10k qca9984 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENSE.QualcommAtheros_ath10k
 Type: ipkg
 Description: ath10k qca9984 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1675,7 +1739,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-4339-sdio
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1685,7 +1749,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom 4339 FullMAC SDIO firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.cypressb
 Type: ipkg
 Description: Broadcom 4339 FullMAC SDIO firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1693,7 +1758,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-43602a1-pcie
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1703,7 +1768,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom 43602a1 FullMAC PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom 43602a1 FullMAC PCIe firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1711,7 +1777,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-4366b1-pcie
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1721,7 +1787,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom 4366b1 FullMAC PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom 4366b1 FullMAC PCIe firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1729,7 +1796,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-4366c0-pcie
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1739,7 +1806,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom 4366c0 FullMAC PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom 4366c0 FullMAC PCIe firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1747,7 +1815,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-4329-sdio
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1757,7 +1825,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM4329 FullMac SDIO firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom BCM4329 FullMac SDIO firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1765,7 +1834,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-nvram-43430-sdio
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1775,7 +1844,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM43430 SDIO NVRAM
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom BCM43430 SDIO NVRAM
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1783,7 +1853,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-43430a0-sdio
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1793,7 +1863,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM43430a0 FullMac SDIO firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom BCM43430a0 FullMac SDIO firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1801,7 +1872,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-nvram-43455-sdio
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1811,7 +1882,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM43455 SDIO NVRAM
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom BCM43455 SDIO NVRAM
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1819,7 +1891,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmfmac-firmware-usb
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1829,7 +1901,7 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM43xx fullmac USB firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: Broadcom BCM43xx fullmac USB firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1837,7 +1909,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: brcmsmac-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1847,7 +1919,8 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM43xx softmac PCIe firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
+LicenseFiles: LICENCE.broadcom_bcm43xx
 Type: ipkg
 Description: Broadcom BCM43xx softmac PCIe firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1855,7 +1928,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: bnx2-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1865,7 +1938,7 @@ Category: Firmware
 Repository: base
 Title: Broadcom BCM5706/5708/5709/5716 firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: Broadcom BCM5706/5708/5709/5716 firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git
@@ -1873,7 +1946,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: bnx2x-firmware
-Version: 20230515-1
+Version: 20230804-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1883,7 +1956,7 @@ Category: Firmware
 Repository: base
 Title: =QLogic 5771x/578xx firmware
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: linux-firmware-20230515.tar.xz
+Source: linux-firmware-20230804.tar.xz
 Type: ipkg
 Description: =QLogic 5771x/578xx firmware
 http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git

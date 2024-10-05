@@ -14,6 +14,7 @@ Maintainer: Charles Southerland <charlie@stuphlabs.com>
 Source: yajl-2.1.0.tar.xz
 License: ISC
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:yajl_project:yajl
 Type: ipkg
 Description:   Yet Another JSON Library. YAJL is a small event-driven (SAX-style)
 JSON parser written in ANSI C, and a small validating JSON generator.

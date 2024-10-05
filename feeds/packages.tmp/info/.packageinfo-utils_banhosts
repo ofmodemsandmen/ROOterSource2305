@@ -12,6 +12,7 @@ Repository: base
 Title: List of advertising domains
 Maintainer: Matteo Croce <matteo@openwrt.org>
 Source: 
+License: GPL-2.0
 Type: ipkg
 Description: List of domains serving advertising and malicious content to easily block them
 http://winhelp2002.mvps.org/

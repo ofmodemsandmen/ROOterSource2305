@@ -3,8 +3,8 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-https-dns-proxy
 Submenu: 3. Applications
-Version: 2022-10-15-14
-Depends: +libc +luci-compat +luci-base +https-dns-proxy +luci-lua-runtime
+Version: 2023.12.26
+Depends: +libc +luci-base +https-dns-proxy
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,11 +14,18 @@ Repository: base
 Title: DNS Over HTTPS Proxy Web UI
 Maintainer: OpenWrt LuCI community
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Description:    Provides Web UI for DNS Over HTTPS Proxy
-https://github.com/openwrt/luci
+https://github.com/stangri/luci-app-https-dns-proxy/
 OpenWrt LuCI community
+@@
+Config:
+# shown in make menuconfig <Help>
+help
+	DNS Over HTTPS Proxy Web UI
+	.
+	Version: 2023.12.26-1
 @@
 
 Package: luci-i18n-https-dns-proxy-ar
@@ -34,7 +41,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ar translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - العربية (Arabic)
@@ -54,7 +61,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - bg translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - български (Bulgarian)
@@ -74,7 +81,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - bn translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - বাংলা (Bengali)
@@ -94,7 +101,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ca translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Català (Catalan)
@@ -114,7 +121,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - cs translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Čeština (Czech)
@@ -134,7 +141,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - da translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Dansk (Danish)
@@ -154,7 +161,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - de translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Deutsch (German)
@@ -174,7 +181,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - el translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Ελληνικά (Greek)
@@ -194,7 +201,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - es translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Español (Spanish)
@@ -214,7 +221,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - fi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Suomi (Finnish)
@@ -234,7 +241,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - fr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Français (French)
@@ -254,7 +261,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - he translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - עִבְרִית (Hebrew)
@@ -274,7 +281,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - hi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - हिंदी (Hindi)
@@ -294,7 +301,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - hu translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Magyar (Hungarian)
@@ -314,7 +321,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - it translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Italiano (Italian)
@@ -334,7 +341,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ja translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - 日本語 (Japanese)
@@ -354,10 +361,30 @@ Repository: base
 Title: luci-app-https-dns-proxy - ko translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - 한국어 (Korean)
+Stan Grishin <stangri@melmac.ca>
+@@
+
+Package: luci-i18n-https-dns-proxy-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-https-dns-proxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-https-dns-proxy - lt translation
+Maintainer: Stan Grishin <stangri@melmac.ca>
+Source: 
+License: AGPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-https-dns-proxy - Lietuvių (Lithuanian)
 Stan Grishin <stangri@melmac.ca>
 @@
 
@@ -374,7 +401,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - mr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Marāṭhī (Marathi)
@@ -394,7 +421,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ms translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Bahasa Melayu (Malay)
@@ -414,10 +441,30 @@ Repository: base
 Title: luci-app-https-dns-proxy - no translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Norsk (Norwegian)
+Stan Grishin <stangri@melmac.ca>
+@@
+
+Package: luci-i18n-https-dns-proxy-nl
+Default: LUCI_LANG_nl||(ALL&&m)
+Version: x
+Depends: +libc luci-app-https-dns-proxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-https-dns-proxy - nl translation
+Maintainer: Stan Grishin <stangri@melmac.ca>
+Source: 
+License: AGPL-3.0-or-later
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-https-dns-proxy - Nederlands (Dutch)
 Stan Grishin <stangri@melmac.ca>
 @@
 
@@ -434,7 +481,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - pl translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Polski (Polish)
@@ -454,7 +501,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - pt translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Português (Portuguese)
@@ -474,7 +521,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - pt-br translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Português do Brasil (Brazilian Portuguese)
@@ -494,7 +541,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ro translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Română (Romanian)
@@ -514,7 +561,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - ru translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Русский (Russian)
@@ -534,7 +581,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - sk translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Slovenčina (Slovak)
@@ -554,7 +601,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - sv translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Svenska (Swedish)
@@ -574,7 +621,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - tr translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Türkçe (Turkish)
@@ -594,7 +641,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - uk translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Українська (Ukrainian)
@@ -614,7 +661,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - vi translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - Tiếng Việt (Vietnamese)
@@ -634,7 +681,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - zh-cn translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - 简体中文 (Chinese Simplified)
@@ -654,7 +701,7 @@ Repository: base
 Title: luci-app-https-dns-proxy - zh-tw translation
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-https-dns-proxy - 繁體中文 (Chinese Traditional)

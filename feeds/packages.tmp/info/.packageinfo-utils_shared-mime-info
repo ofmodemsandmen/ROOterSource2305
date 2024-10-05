@@ -1,8 +1,9 @@
 Source-Makefile: feeds/packages/utils/shared-mime-info/Makefile
+Build-Depends: gettext-full/host
 
 Package: shared-mime-info
-Version: 2.1-2
-Depends: +libc +glib2 +libxml2
+Version: 2.4-2
+Depends: +libc +glib2 +libxml2 +libstdcpp
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: MIME-type information
 Maintainer: W. Michael Petullo <mike@flyn.org>
-Source: shared-mime-info-2.1.tar.bz2
+Source: shared-mime-info-2.4.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

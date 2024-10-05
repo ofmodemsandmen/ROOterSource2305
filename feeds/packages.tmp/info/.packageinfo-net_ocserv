@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/ocserv/Makefile
 
 Package: ocserv
 Submenu: VPN
-Version: 1.1.7-2
-Depends: +libc +OCSERV_RADIUS:libradcli +OCSERV_HTTP_PARSER:libhttp-parser +OCSERV_SECCOMP:libseccomp +libgnutls +certtool +libncurses +libreadline +OCSERV_PAM:libpam +OCSERV_PROTOBUF:libprotobuf-c +OCSERV_LIBOATH:liboath +libev +kmod-tun
+Version: 1.3.0-2
+Depends: +libc +OCSERV_RADIUS:libradcli +OCSERV_SECCOMP:libseccomp +libgnutls +certtool +libncurses +libreadline +OCSERV_PAM:libpam +OCSERV_PROTOBUF:libprotobuf-c +OCSERV_LIBOATH:liboath +libev +kmod-tun
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Repository: base
 Title: OpenConnect VPN server
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 Require-User: ocserv=72:ocserv=72
-Source: ocserv-1.1.7.tar.xz
+Source: ocserv-1.3.0.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

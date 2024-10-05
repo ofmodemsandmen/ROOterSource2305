@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/nginx/Makefile
 
 Package: nginx-ssl
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +libopenssl +libpthread +NGINX_PCRE:libpcre +NGINX_PCRE:nginx-ssl-util +!NGINX_PCRE:nginx-ssl-util-nopcre +NGINX_HTTP_GZIP:zlib +NGINX_DAV:libxml2
 Conflicts: nginx-full
 Menu-Depends: 
@@ -15,6 +15,7 @@ Title: Nginx web server with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with SSL support enabled. To enable additional module select them in the nginx default configuration menu.
 http://nginx.org/
@@ -26,8 +27,8 @@ Config:
 
 Package: nginx-full
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
-Depends: +libc +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +libxml2 +nginx-mod-ubus +nginx-mod-naxsi +nginx-mod-lua +nginx-mod-dav-ext +nginx-mod-stream +nginx-mod-headers-more +nginx-mod-brotli +nginx-mod-rtmp +nginx-mod-ts
+Version: 1.25.0-4
+Depends: +libc +libopenssl +libpthread +libpcre +nginx-ssl-util +zlib +libxml2
 Conflicts: 
 Menu-Depends: 
 Provides:  nginx-ssl
@@ -39,6 +40,7 @@ Title: Nginx web server with ALL module selected
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev. This variant is compiled with ALL module selected.
 http://nginx.org/
@@ -47,7 +49,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-luci
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +uwsgi +uwsgi-luci-support +nginx +nginx-mod-ubus
 Conflicts: 
 Menu-Depends: 
@@ -59,6 +61,7 @@ Title: Support file for Nginx
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:  Support file for LuCI in nginx. Include custom nginx configuration, autostart script for uwsgi.
 http://nginx.org/
@@ -67,7 +70,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-lua
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl +luajit
 Conflicts: 
 Menu-Depends: 
@@ -79,6 +82,7 @@ Title: Nginx lua module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Enable Lua module
 http://nginx.org/
@@ -87,7 +91,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-stream
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl +@NGINX_STREAM_CORE_MODULE
 Conflicts: 
 Menu-Depends: 
@@ -99,6 +103,7 @@ Title: Nginx stream module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Add support for NGINX request streaming.
 http://nginx.org/
@@ -107,7 +112,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-ubus
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl +libubus +libjson-c +libblobmsg-json +@NGINX_UBUS
 Conflicts: 
 Menu-Depends: 
@@ -119,6 +124,7 @@ Title: Nginx ubus module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Enable UBUS api support directly from the server.
 http://nginx.org/
@@ -127,7 +133,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-dav-ext
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl +@NGINX_DAV +libxml2
 Conflicts: 
 Menu-Depends: 
@@ -139,6 +145,7 @@ Title: Nginx dav-ext module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Enable the WebDAV methods PROPFIND OPTIONS LOCK UNLOCK.
 http://nginx.org/
@@ -147,7 +154,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-headers-more
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -159,6 +166,7 @@ Title: Nginx headers-more module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Set and clear input and output headers...more than "add"!
 http://nginx.org/
@@ -167,7 +175,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-rtmp
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -179,6 +187,7 @@ Title: Nginx rtmp module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Add support for NGINX-based Media Streaming Server module. DASH enhanced - https://github.com/ut0mt8/nginx-rtmp-module
 http://nginx.org/
@@ -187,7 +196,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-ts
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -199,6 +208,7 @@ Title: Nginx  ts module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:     Add support for MPEG-TS Live Module module.
 http://nginx.org/
@@ -207,7 +217,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-brotli
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -219,6 +229,7 @@ Title: Nginx Brotli module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:    Add support for brotli compression module.
 http://nginx.org/
@@ -227,7 +238,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 
 Package: nginx-mod-naxsi
 Submenu: Web Servers/Proxies
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -239,6 +250,7 @@ Title: Nginx naxsi module
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:    Enable NAXSI module.
 http://nginx.org/
@@ -246,7 +258,7 @@ Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: nginx
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-ssl
 Conflicts: 
 Menu-Depends: 
@@ -258,13 +270,14 @@ Title: Dummy package for transition when upgrading.
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description:  nginx is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev.
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 @@
 
 Package: nginx-mod-luci-ssl
-Version: 1.25.0-2
+Version: 1.25.0-4
 Depends: +libc +nginx-mod-luci
 Conflicts: 
 Menu-Depends: 
@@ -276,6 +289,7 @@ Title: Dummy package for transition when upgrading.
 Maintainer: Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>
 Source: nginx-1.25.0.tar.gz
 License: 2-clause BSD-like license
+CPE-ID: cpe:/a:nginx:nginx
 Type: ipkg
 Description: Dummy package for transition when upgrading.
 Thomas Heil <heil@terminal-consulting.de> Ansuel Smith <ansuelsmth@gmail.com>

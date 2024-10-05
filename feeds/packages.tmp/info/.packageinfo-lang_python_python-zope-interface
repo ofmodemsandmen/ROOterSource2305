@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-zope-interface/Makefile
 
 Package: python3-zope-interface
 Submenu: Python
-Version: 6.0-1
-Depends: +libc +python3-light
+Version: 6.1-1
+Depends: +libc +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Interfaces for Python
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: zope.interface-6.0.tar.gz
+Source: zope.interface-6.1.tar.gz
 License: ZPL-2.1
 LicenseFiles: LICENSE.txt
 Type: ipkg
@@ -26,7 +26,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-zope-interface-src
 Submenu: Python
-Version: 6.0-1
+Version: 6.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: Interfaces for Python (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: zope.interface-6.0.tar.gz
+Source: zope.interface-6.1.tar.gz
 License: ZPL-2.1
 LicenseFiles: LICENSE.txt
 Type: ipkg

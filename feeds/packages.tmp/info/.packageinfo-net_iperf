@@ -13,6 +13,7 @@ Title: Internet Protocol bandwidth measuring tool
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: iperf-2.1.9.tar.gz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:iperf_project:iperf
 Type: ipkg
 Description:  Iperf is a modern alternative for measuring TCP and UDP bandwidth
  performance, allowing the tuning of various parameters and

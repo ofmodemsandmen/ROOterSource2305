@@ -15,7 +15,7 @@ Repository: base
 Title: rpcgen and rpcsvc proto.x files from glibc
 Maintainer: 
 Source: rpcsvc-proto-1.4.3.tar.xz
-License: BSD-3-clause
+License: BSD-3-Clause
 LicenseFiles: COPYING
 Type: ipkg
 Build-Only: 1

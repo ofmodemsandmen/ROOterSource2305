@@ -343,6 +343,25 @@ Description:     Translation for luci-app-ahcp - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-ahcp-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-ahcp
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ahcp - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ahcp - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-ahcp-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

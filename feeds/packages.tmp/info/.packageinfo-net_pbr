@@ -2,11 +2,11 @@ Source-Makefile: feeds/packages/net/pbr/Makefile
 
 Package: pbr
 Submenu: Routing and Redirection
-Version: 1.1.1-7
-Depends: +libc +ip-full +jshn +jsonfilter +resolveip +kmod-nft-core +kmod-nft-nat +nftables-json
-Conflicts: vpnbypass vpn-policy-routing
+Version: 1.1.6-20
+Depends: +libc +ip-full +jshn +jsonfilter +resolveip +!BUSYBOX_DEFAULT_AWK:gawk +!BUSYBOX_DEFAULT_GREP:grep +!BUSYBOX_DEFAULT_SED:sed +kmod-nft-core +kmod-nft-nat +nftables-json
+Conflicts: 
 Menu-Depends: 
-Provides: vpnbypass vpn-policy-routing
+Provides: pbr
 Build-Variant: nftables
 Default-Variant: nftables
 Section: net
@@ -15,19 +15,19 @@ Repository: base
 Title: Policy Based Routing Service with nft/nft set support
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
-Description: This service enables policy-based routing for WAN interfaces and various VPN tunnels.
-This version supports OpenWrt with both firewall3/ipset/iptables and firewall4/nft.
-https://docs.openwrt.melmac.net/pbr/
+Description:     This service enables policy-based routing for WAN interfaces and various VPN tunnels.
+  This version supports OpenWrt (23.05 and newer) with firewall4/nft.
+https://github.com/stangri/pbr/
 Stan Grishin <stangri@melmac.ca>
 @@
 
 Package: pbr-iptables
 Submenu: Routing and Redirection
-Version: 1.1.1-7
-Depends: +libc +ip-full +jshn +jsonfilter +resolveip +ipset +iptables +kmod-ipt-ipset +iptables-mod-ipopt
-Conflicts: vpnbypass vpn-policy-routing
+Version: 1.1.6-20
+Depends: +libc +ip-full +jshn +jsonfilter +resolveip +!BUSYBOX_DEFAULT_AWK:gawk +!BUSYBOX_DEFAULT_GREP:grep +!BUSYBOX_DEFAULT_SED:sed +ipset +iptables +kmod-ipt-ipset +iptables-mod-ipopt
+Conflicts: 
 Menu-Depends: 
 Provides: pbr
 Build-Variant: iptables
@@ -37,11 +37,11 @@ Repository: base
 Title: Policy Based Routing Service with iptables/ipset support
 Maintainer: Stan Grishin <stangri@melmac.ca>
 Source: 
-License: GPL-3.0-or-later
+License: AGPL-3.0-or-later
 Type: ipkg
-Description: This service enables policy-based routing for WAN interfaces and various VPN tunnels.
-This version supports OpenWrt with firewall3/ipset/iptables.
-https://docs.openwrt.melmac.net/pbr/
+Description:     This service enables policy-based routing for WAN interfaces and various VPN tunnels.
+  This version supports OpenWrt (22.03 and older) with firewall3/ipset/iptables.
+https://github.com/stangri/pbr/
 Stan Grishin <stangri@melmac.ca>
 @@
 

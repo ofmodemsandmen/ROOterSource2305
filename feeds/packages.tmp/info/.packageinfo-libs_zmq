@@ -15,6 +15,7 @@ Maintainer: Dirk Chang <dirk@kooiot.com>
 Source: zeromq-4.3.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENCE.txt
+CPE-ID: cpe:/a:zeromq:libzmq
 Type: ipkg
 Description:  This package contains the ZeroMQ messaging engine shared library.
 http://www.zeromq.org/
@@ -42,6 +43,7 @@ Maintainer: Dirk Chang <dirk@kooiot.com>
 Source: zeromq-4.3.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENCE.txt
+CPE-ID: cpe:/a:zeromq:libzmq
 Type: ipkg
 Description:   This package contains the ZeroMQ messaging engine shared library.
  Includes CurveZMQ security by libsodium.

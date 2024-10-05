@@ -11,7 +11,7 @@ MOD_TYPE='engine'; MOD_NAME='padlock'; MOD_DIR='/usr/lib/engines-3' OSSL_PKG='li
 Package: libopenssl
 Menu: 1
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc +OPENSSL_WITH_COMPRESSION:zlib +OPENSSL_ENGINE_BUILTIN_AFALG:kmod-crypto-user +OPENSSL_ENGINE_BUILTIN_DEVCRYPTO:kmod-cryptodev +OPENSSL_ENGINE_BUILTIN_PADLOCK:kmod-crypto-hw-padlock +(arm||armeb||mips||mipsel||powerpc||arc):libatomic
 Conflicts: 
 Menu-Depends: 
@@ -21,9 +21,11 @@ Category: Libraries
 Repository: base
 Title: Open source SSL toolkit (libraries)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
+ABI-Version: 3
 Type: ipkg
 Description: The OpenSSL Project is a collaborative effort to develop a robust,
 commercial-grade, full-featured, and Open Source toolkit implementing the
@@ -34,12 +36,12 @@ http://www.openssl.org/
 Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 Config:
-source "package/libs/openssl/Config.in"
+source "feeds/base/libs/openssl/Config.in"
 @@
 
 Package: libopenssl-conf
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -49,9 +51,10 @@ Category: Libraries
 Repository: base
 Title: /etc/ssl/openssl.cnf config file
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: The OpenSSL Project is a collaborative effort to develop a robust,
 commercial-grade, full-featured, and Open Source toolkit implementing the
@@ -64,7 +67,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-afalg
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc libopenssl +libopenssl-conf @OPENSSL_ENGINE @KERNEL_AIO +PACKAGE_libopenssl-afalg:kmod-crypto-user @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -74,9 +77,10 @@ Category: Libraries
 Repository: base
 Title: AFALG hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: This package adds an engine that enables hardware acceleration
 through the AF_ALG kernel interface.
@@ -89,7 +93,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-devcrypto
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc libopenssl +libopenssl-conf @OPENSSL_ENGINE +PACKAGE_libopenssl-devcrypto:kmod-cryptodev @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -99,9 +103,10 @@ Category: Libraries
 Repository: base
 Title: /dev/crypto hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: This package adds an engine that enables hardware acceleration
 through the /dev/crypto kernel interface.
@@ -114,7 +119,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-legacy
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc libopenssl +libopenssl-conf
 Conflicts: 
 Menu-Depends: 
@@ -124,9 +129,10 @@ Category: Libraries
 Repository: base
 Title: OpenSSL legacy provider
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: The OpenSSL legacy provider supplies OpenSSL implementations of algorithms that
 have been deemed legacy. Such algorithms have commonly fallen out of use, have
@@ -138,7 +144,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 
 Package: libopenssl-padlock
 Submenu: SSL
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc libopenssl +libopenssl-conf @OPENSSL_ENGINE @TARGET_x86 +PACKAGE_libopenssl-padlock:kmod-crypto-hw-padlock @!OPENSSL_ENGINE_BUILTIN
 Conflicts: 
 Menu-Depends: 
@@ -148,9 +154,10 @@ Category: Libraries
 Repository: base
 Title: VIA Padlock hardware acceleration engine
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: This package adds an engine that enables VIA Padlock hardware acceleration.
 See https://www.openssl.org/docs/man3.0/man5/config.html#Engine-Configuration
@@ -161,7 +168,7 @@ Eneas U de Queiroz <cotequeiroz@gmail.com>
 @@
 
 Package: openssl-util
-Version: 3.0.9-2
+Version: 3.0.15-1
 Depends: +libc +libopenssl +libopenssl-conf
 Conflicts: 
 Menu-Depends: 
@@ -171,9 +178,10 @@ Category: Utilities
 Repository: base
 Title: Open source SSL toolkit (utility)
 Maintainer: Eneas U de Queiroz <cotequeiroz@gmail.com>
-Source: openssl-3.0.9.tar.gz
+Source: openssl-3.0.15.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:openssl:openssl
 Type: ipkg
 Description: The OpenSSL Project is a collaborative effort to develop a robust,
 commercial-grade, full-featured, and Open Source toolkit implementing the

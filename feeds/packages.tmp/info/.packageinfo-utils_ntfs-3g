@@ -15,6 +15,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
+CPE-ID: cpe:/a:tuxera:ntfs-3g
 Type: ipkg
 Description:   Ntfs-3g is a NTFS driver, which can create, remove, rename,
   move files, directories, hard links, and streams. It can read
@@ -61,6 +62,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
+CPE-ID: cpe:/a:tuxera:ntfs-3g
 Type: ipkg
 Description:   Contains:
    - lowntfs-3g
@@ -89,6 +91,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: ntfs-3g_ntfsprogs-2022.5.17.tgz
 License: GPL-2.0-only LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LIB
+CPE-ID: cpe:/a:tuxera:ntfs-3g
 Type: ipkg
 Description:   Suite of NTFS utilities for doing neat things with NTFS.
   Contains:

@@ -1,9 +1,11 @@
 Source-Makefile: feeds/packages/lang/python/python-babel/Makefile
+Build-Depends/host: python3/host python-build/host python-installer/host python-wheel/host
+Build-Types: host
 
 Package: python3-babel
 Submenu: Python
-Version: 2.9.1-1
-Depends: +libc +python3-cgi +python3-decimal +python3-distutils +python3-email +python3-light +python3-pytz +python3-urllib
+Version: 2.12.1-1
+Depends: +libc +python3-decimal +python3-distutils +python3-email +python3-light +python3-logging +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,21 +13,21 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Internationalization utilities
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: Babel-2.9.1.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: Babel-2.12.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   Babel is an integrated collection of utilities that assist in
   internationalizing and localizing Python applications
   with an emphasis on web-based applications.
-https://babel.pocoo.org/en/latest/
-Josef Schlehofer <josef.schlehofer@nic.cz>
+https://babel.pocoo.org/
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: python3-babel-src
 Submenu: Python
-Version: 2.9.1-1
+Version: 2.12.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,8 +36,8 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Internationalization utilities (sources)
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: Babel-2.9.1.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: Babel-2.12.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
@@ -44,8 +46,8 @@ Description:       Babel is an integrated collection of utilities that assist in
   with an emphasis on web-based applications.
 
     This package contains the Python source files for python3-babel.
-https://babel.pocoo.org/en/latest/
-Josef Schlehofer <josef.schlehofer@nic.cz>
+https://babel.pocoo.org/
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-babel

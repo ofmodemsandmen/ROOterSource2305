@@ -13,6 +13,8 @@ Title: API to the in-kernel connection tracking timeout infrastructure
 Maintainer: 
 Source: libnetfilter_cttimeout-1.0.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:netfilter:libnetfilter_cttimeout
+ABI-Version: 1
 Type: ipkg
 Description:  libnetfilter_cttimeout is a userspace library providing a programming
  interface (API) to the in-kernel connection tracking timeout handling.

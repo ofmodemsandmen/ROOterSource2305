@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-gnupg/Makefile
 
 Package: python3-gnupg
 Submenu: Python
-Version: 0.4.7-1
-Depends: +libc +gnupg +python3-light +python3-logging
+Version: 0.5.1-1
+Depends: +libc +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,10 +11,11 @@ Section: lang
 Category: Languages
 Repository: base
 Title: A wrapper for GnuPG
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.7.tar.gz
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: python-gnupg-0.5.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:python:python-gnupg
 Type: ipkg
 Description:   The gnupg module allows Python programs to make use of the
   functionality provided by the GNU Privacy Guard (abbreviated GPG or
@@ -22,13 +23,13 @@ Description:   The gnupg module allows Python programs to make use of the
   data, digitally sign documents and verify digital signatures, manage
   (generate, list and delete) encryption keys, using Public Key
   Infrastructure (PKI) encryption technology based on OpenPGP.
-https://docs.red-dove.com/python-gnupg/
-Daniel Golle <daniel@makrotopia.org>
+https://github.com/vsajip/python-gnupg
+Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-gnupg-src
 Submenu: Python
-Version: 0.4.7-1
+Version: 0.5.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -37,10 +38,11 @@ Section: lang
 Category: Languages
 Repository: base
 Title: A wrapper for GnuPG (sources)
-Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: python-gnupg-0.4.7.tar.gz
+Maintainer: Jeffery To <jeffery.to@gmail.com>
+Source: python-gnupg-0.5.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:python:python-gnupg
 Type: ipkg
 Description:       The gnupg module allows Python programs to make use of the
   functionality provided by the GNU Privacy Guard (abbreviated GPG or
@@ -50,8 +52,8 @@ Description:       The gnupg module allows Python programs to make use of the
   Infrastructure (PKI) encryption technology based on OpenPGP.
 
     This package contains the Python source files for python3-gnupg.
-https://docs.red-dove.com/python-gnupg/
-Daniel Golle <daniel@makrotopia.org>
+https://github.com/vsajip/python-gnupg
+Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-gnupg

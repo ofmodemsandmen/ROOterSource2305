@@ -15,6 +15,7 @@ Maintainer: Jean-Michel Julien <jean-michel.julien@trilliantinc.com>
 Source: poco-1.11.0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:pocoproject:poco
 Type: ipkg
 Description:   POrtable COmponents, a modern and powerful open source C++ class libraries
   and frameworks for building network and internet-based applications that
@@ -38,6 +39,7 @@ Maintainer: Jean-Michel Julien <jean-michel.julien@trilliantinc.com>
 Source: poco-1.11.0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:pocoproject:poco
 Type: ipkg
 Description:   POrtable COmponents, a modern and powerful open source C++ class libraries
   and frameworks for building network and internet-based applications that

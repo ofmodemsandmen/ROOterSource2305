@@ -1,18 +1,18 @@
 Source-Makefile: feeds/packages/utils/tang/Makefile
 
 Package: tang
-Version: 12-2
-Depends: +libc +libhttp-parser +jose +bash
+Version: 14-4
+Depends: +libc +libhttp-parser +jose
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: utils
 Category: Extra packages
 Repository: base
-Title: tang v12 - daemon for binding data to the presence of a third party
+Title: tang v14 - daemon for binding data to the presence of a third party
 Maintainer: Tibor Dudlák <tibor.dudlak@gmail.com>
 Require-User: tang:tang
-Source: tang-12.tar.xz
+Source: tang-14.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

@@ -14,6 +14,9 @@ Repository: base
 Title: Vi IMproved - enhanced vi editor (Tiny)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Tiny build)
@@ -34,6 +37,9 @@ Repository: base
 Title: Vi IMproved - enhanced vi editor (Normal)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Normal build)
@@ -54,6 +60,9 @@ Repository: base
 Title: Vi IMproved - enhanced vi editor (Big)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Big build)
@@ -74,6 +83,9 @@ Repository: base
 Title: Vi IMproved - enhanced vi editor (runtime files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Runtime files)
@@ -94,6 +106,9 @@ Repository: base
 Title: Vi IMproved - enhanced vi editor (help files)
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  Vim is an almost compatible version of the UNIX editor Vi.
  (Help files)
@@ -113,6 +128,9 @@ Repository: base
 Title: make a hexdump or do the reverse
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: vim-9.0.tar.bz2
+License: Vim
+LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vim:vim
 Type: ipkg
 Description:  xxd creates a hex dump of a given file or standard input, it can also convert
  a hex dump back to its original binary form.

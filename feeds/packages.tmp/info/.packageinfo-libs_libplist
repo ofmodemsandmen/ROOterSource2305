@@ -13,6 +13,7 @@ Repository: base
 Title: Apple property list library
 Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libplist-2.2.0.tar.bz2
+CPE-ID: cpe:/a:libimobiledevice:libplist
 Type: ipkg
 Description:     A library to handle Apple Property List format whereas it's binary or XML
 https://www.libimobiledevice.org/
@@ -34,6 +35,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libplist-2.2.0.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libimobiledevice:libplist
 Type: ipkg
 Description:     A library to handle Apple Property List format whereas it's binary or XML
   This package contains the libplist utilities.

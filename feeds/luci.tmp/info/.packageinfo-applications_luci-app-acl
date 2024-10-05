@@ -343,6 +343,25 @@ Description:     Translation for luci-app-acl - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-acl-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-acl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-acl - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-acl - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-acl-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

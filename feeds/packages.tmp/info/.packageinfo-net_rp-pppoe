@@ -16,6 +16,7 @@ Maintainer:
 Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
+CPE-ID: cpe:/a:roaring_penguin:pppoe
 Type: ipkg
 Description:   Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
   a DSL "modem" whose Internet service provider uses PPPoE.
@@ -41,6 +42,7 @@ Maintainer:
 Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
+CPE-ID: cpe:/a:roaring_penguin:pppoe
 Type: ipkg
 Description:   Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
   a DSL "modem" whose Internet service provider uses PPPoE.
@@ -65,6 +67,7 @@ Maintainer:
 Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
+CPE-ID: cpe:/a:roaring_penguin:pppoe
 Type: ipkg
 Description:   Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
   a DSL "modem" whose Internet service provider uses PPPoE.
@@ -89,6 +92,7 @@ Maintainer:
 Source: rp-pppoe-3.15.tar.gz
 License: LGPL-2.0-or-later
 LicenseFiles: doc/LICENSE
+CPE-ID: cpe:/a:roaring_penguin:pppoe
 Type: ipkg
 Description:   Dubbed RP-PPPoE, this open-source product is ideal for Linux users with
   a DSL "modem" whose Internet service provider uses PPPoE.

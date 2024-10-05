@@ -41,4 +41,24 @@ Description:     Translation for luci-app-mosquitto - Español (Spanish)
 Karl Palsson <karlp@etactica.com>
 @@
 
+Package: luci-i18n-mosquitto-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-mosquitto
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-mosquitto - lt translation
+Maintainer: Karl Palsson <karlp@etactica.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-mosquitto - Lietuvių (Lithuanian)
+Karl Palsson <karlp@etactica.com>
+@@
+
 

@@ -36,17 +36,14 @@
 
 		led_internet: internet {
 			label = "green:internet";
-			gpios = <&gpio 24 GPIO_ACTIVE_LOW>;
+			gpios = <&gpio 12 GPIO_ACTIVE_LOW>;
 		};
 
-		signal {
-			label = "green:signal";
+		wwan {
+			label = "green:wwan";
 			gpios = <&gpio 10 GPIO_ACTIVE_LOW>;
-		};
-		
-		globe {
-			label = "green:globe";
-			gpios = <&gpio 12 GPIO_ACTIVE_LOW>;
+			linux,default-trigger = "usbport";
+			trigger-sources = <&hub_port2>;
 		};
 
 		wifi5g {

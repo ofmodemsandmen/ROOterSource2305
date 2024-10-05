@@ -14,6 +14,8 @@ Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
 Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
+CPE-ID: cpe:/a:libcoap:libcoap
+ABI-Version: 3
 Type: ipkg
 Description:   Constrained Application Protocol (RFC 7252) library
 https://libcoap.net/
@@ -34,6 +36,7 @@ Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
 Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
+CPE-ID: cpe:/a:libcoap:libcoap
 Type: ipkg
 Description:   Constrained Application Protocol (RFC7252) client tool
 Anton Glukhov <anton.a.glukhov@gmail.com>
@@ -53,6 +56,7 @@ Maintainer: Anton Glukhov <anton.a.glukhov@gmail.com>
 Source: libcoap-4.3.0.tar.gz
 License: GPL-2.0-or-later BSD-2-Clause
 LicenseFiles: COPYING LICENSE.GPL LICENSE.BSD
+CPE-ID: cpe:/a:libcoap:libcoap
 Type: ipkg
 Description:   Constrained Application Protocol (RFC 7252) server and resource directory server
 Anton Glukhov <anton.a.glukhov@gmail.com>

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/fail2ban/Makefile
 Build-Depends/host: 2to3/host
 
 Package: fail2ban
-Version: 0.11.2-8
+Version: 0.11.2-9
 Depends: +libc +iptables +python3-light +python3-ctypes +python3-distutils +python3-email +python3-logging +python3-sqlite3 +python3-urllib +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
@@ -15,6 +15,7 @@ Maintainer: Gerald Kerma <gandalf@gk2.net>
 Source: fail2ban-0.11.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:fail2ban:fail2ban
 Type: ipkg
 Description:   Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts.
 https://www.fail2ban.org/
@@ -22,7 +23,7 @@ Gerald Kerma <gandalf@gk2.net>
 @@
 
 Package: fail2ban-src
-Version: 0.11.2-8
+Version: 0.11.2-9
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -35,6 +36,7 @@ Maintainer: Gerald Kerma <gandalf@gk2.net>
 Source: fail2ban-0.11.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:fail2ban:fail2ban
 Type: ipkg
 Description:       Fail2Ban scans log files like /var/log/auth.log and bans IP addresses conducting too many failed login attempts.
 

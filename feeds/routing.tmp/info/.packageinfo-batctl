@@ -1,7 +1,7 @@
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -26,7 +26,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -51,7 +51,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 

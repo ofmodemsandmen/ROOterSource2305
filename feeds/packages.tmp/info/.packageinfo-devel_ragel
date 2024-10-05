@@ -1,0 +1,25 @@
+Source-Makefile: feeds/packages/devel/ragel/Makefile
+Build-Types: host
+
+Package: ragel
+Version: 6.10-1
+Depends: +libc 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: devel
+Category: Development
+Repository: base
+Title: Compiles finite state machines from regular languages into executable code
+Maintainer: John Audia <therealgraysky@proton.me>
+Source: ragel-6.10.tar.gz
+License: GPL-2.0-only
+LicenseFiles: COPYING
+Type: ipkg
+Build-Only: 1
+Description: Compiles finite state machines from regular languages into executable code
+https://www.colm.net/open-source/ragel/
+John Audia <therealgraysky@proton.me>
+@@
+
+

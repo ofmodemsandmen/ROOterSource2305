@@ -12,8 +12,8 @@ Repository: base
 Title: LiSt Open Files - a diagnostic tool
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: lsof_4.94.0.linux.tar.bz2
-License: Unique
-LicenseFiles: 00README
+License: lsof
+LicenseFiles: COPYING
 Type: ipkg
 Description: LiSt Open Files - a diagnostic tool
 http://people.freebsd.org/~abe/

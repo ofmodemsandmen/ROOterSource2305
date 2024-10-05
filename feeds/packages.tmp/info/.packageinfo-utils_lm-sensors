@@ -13,6 +13,8 @@ Title: libsensors
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lm-sensors-3.6.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
+CPE-ID: cpe:/a:lm_sensors:lm_sensors
+ABI-Version: 5
 Type: ipkg
 Description:  lm-sensors libraries
 https://hwmon.wiki.kernel.org/lm_sensors
@@ -32,6 +34,7 @@ Title: lm-sensors
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lm-sensors-3.6.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
+CPE-ID: cpe:/a:lm_sensors:lm_sensors
 Type: ipkg
 Description:  utility to read hardware sensor data
 https://hwmon.wiki.kernel.org/lm_sensors
@@ -51,6 +54,7 @@ Title: lm-sensors-detect
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lm-sensors-3.6.0.tar.gz
 License: GPL-2.0-or-later LGPL-2.1-or-later
+CPE-ID: cpe:/a:lm_sensors:lm_sensors
 Type: ipkg
 Description:  script to autodetect sensor hardware
 https://hwmon.wiki.kernel.org/lm_sensors

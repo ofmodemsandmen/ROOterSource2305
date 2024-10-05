@@ -8,7 +8,7 @@ Target-Features: boot-part ext4 fpu gpio nand pcie rootfs-part squashfs ubifs us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: boot-part display dt ext4 fpu gpio nand pci pcie rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -287,15 +287,15 @@ Build firmware images for NXP LX2160A-RDB Rev2.0 silicon SD Card Boot
 
 @@
 
-Target-Profile: DEVICE_traverse_ls1043
-Target-Profile-Name: Traverse LS1043 Boards
-Target-Profile-Packages:  layerscape-fman uboot-envtools kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
+Target-Profile: DEVICE_traverse_ten64_mtd
+Target-Profile-Name: Traverse Ten64 (NAND boot)
+Target-Profile-Packages:  uboot-envtools kmod-rtc-rx8025 kmod-sfp kmod-i2c-mux-pca954x restool 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: traverse,ls1043s traverse,ls1043v
+Target-Profile-SupportedDevices: traverse,ten64
 
 
 Target-Profile-Description:
-Build images for Traverse LS1043 boards. This generates a single image capable of booting on any of the boards in this family.
+Generate images for booting from NAND/ubifs on Traverse Ten64 (LS1088A) family boards. For disk (NVMe/USB/SD) boot, use the armvirt target instead.
 
 
 
@@ -312,7 +312,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

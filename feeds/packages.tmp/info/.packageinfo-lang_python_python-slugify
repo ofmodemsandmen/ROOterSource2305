@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-slugify/Makefile
 
 Package: python3-slugify
 Submenu: Python
-Version: 4.0.1-1
-Depends: +libc +python3-light +python3-codecs +python3-setuptools +python3-text-unidecode
+Version: 8.0.1-1
+Depends: +libc +python3-light +python3-codecs +python3-text-unidecode
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,19 +11,19 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Slugify application that handles Unicode
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: python-slugify-4.0.1.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: python-slugify-8.0.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   A Python slugify application that handles unicode.
 https://github.com/un33k/python-slugify
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: python3-slugify-src
 Submenu: Python
-Version: 4.0.1-1
+Version: 8.0.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -32,8 +32,8 @@ Section: lang
 Category: Languages
 Repository: base
 Title: Slugify application that handles Unicode (sources)
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: python-slugify-4.0.1.tar.gz
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: python-slugify-8.0.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -41,7 +41,7 @@ Description:       A Python slugify application that handles unicode.
 
     This package contains the Python source files for python3-slugify.
 https://github.com/un33k/python-slugify
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-slugify

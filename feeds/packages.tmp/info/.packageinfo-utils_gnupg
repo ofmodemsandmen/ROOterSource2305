@@ -16,6 +16,7 @@ Maintainer:
 Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description:  GnuPG is GNU's tool for secure communication and data storage.
  It can be used to encrypt data and to create digital signatures.
@@ -43,6 +44,7 @@ Maintainer:
 Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description:  GPGv is a stripped down version of GnuPG that only checks signatures.
  .
@@ -67,6 +69,7 @@ Maintainer:
 Source: gnupg-1.4.23.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description:  Key management utilies for GnuPG.
  This package is needed to import keys from a keyserver.

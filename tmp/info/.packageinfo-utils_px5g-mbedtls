@@ -2,7 +2,7 @@ Source-Makefile: package/utils/px5g-mbedtls/Makefile
 
 Package: px5g-mbedtls
 Submenu: Encryption
-Version: 9
+Version: 10
 Depends: +libc +libmbedtls
 Conflicts: 
 Menu-Depends: 
@@ -24,7 +24,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: px5g-standalone
 Submenu: Encryption
-Version: 9
+Version: 10
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 

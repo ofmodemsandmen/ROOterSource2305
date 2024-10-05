@@ -3,19 +3,22 @@ Build-Depends: boost
 
 Package: dnsdist
 Submenu: IP Addresses and Names
-Version: 1.8.0-1
-Depends: +libc +DNSDIST_DNS_OVER_HTTPS:libh2o-evloop +DNSDIST_DNS_OVER_HTTPS_OUTGOING:libnghttp2 +DNSDIST_GNUTLS:libgnutls +DNSDIST_OPENSSL:libopenssl +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_RE2:re2 +DNSDIST_DNSTAP:libfstrm +DNSDIST_SODIUM:libsodium +libatomic +libcap +libedit +libstdcpp +lmdb +luajit +tinycdb
+Version: 1.9.4-1
+Depends: +libc +ca-bundle +libatomic +libcap +libstdcpp +luajit +DNSDIST_LIBEDIT:libedit +DNSDIST_DNSTAP:libfstrm +DNSDIST_GNUTLS:libgnutls +DNSDIST_DNS_OVER_HTTPS:libnghttp2 +DNSDIST_NET_SNMP:libnetsnmp +DNSDIST_OPENSSL:libopenssl +DNSDIST_SODIUM:libsodium +DNSDIST_LMDB:lmdb +DNSDIST_CDB:tinycdb +DNSDIST_RE2:re2
 Conflicts: 
 Menu-Depends: 
-Provides: 
+Provides: dnsdist
+Build-Variant: mini
 Section: net
 Category: Network
 Repository: base
-Title: dnsdist DNS-, DOS- and abuse-aware loadbalancer
+Title: dnsdist DNS-, DOS- and abuse-aware loadbalancer - minimal version with a restricted feature set
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
-Source: dnsdist-1.8.0.tar.bz2
+Require-User: dnsdist:dnsdist
+Source: dnsdist-1.9.4.tar.bz2
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:dnsdist
 Type: ipkg
 Description:   dnsdist is a highly DNS-, DoS- and abuse-aware loadbalancer. Its goal in life
   is to route traffic to the best server, delivering top performance to legitimate
@@ -24,74 +27,33 @@ https://dnsdist.org/
 Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 Config:
-menu "Configuration"
-	depends on PACKAGE_dnsdist
+  source "feeds/packages/net/dnsdist/Config.in"
+@@
 
-	comment "SSL Support"
-	choice
-		prompt "Selected SSL library"
-		default DNSDIST_OPENSSL
-
-		config DNSDIST_OPENSSL
-			bool "OpenSSL"
-
-		config DNSDIST_GNUTLS
-			bool "GnuTLS"
-
-		config DNSDIST_NOSSL
-			bool "No SSL support"
-
-	endchoice
-
-	comment "DNS over HTTPS/TLS Support"
-	depends on !DNSDIST_NOSSL
-
-	config DNSDIST_DNS_OVER_HTTPS
-	depends on DNSDIST_OPENSSL
-	depends on !DNSDIST_NOSSL
-		bool "DNS over HTTPS Support"
-		help
-			"Enables DNS over HTTPS Support for dnsdist"
-		default y
-
-	config DNSDIST_DNS_OVER_HTTPS_OUTGOING
-	depends on !DNSDIST_NOSSL
-		bool "Outgoing DNS over HTTPS Support"
-		help
-			"Enables Outgoing DNS over HTTPS Support for dnsdist"
-		default y
-
-	config DNSDIST_DNS_OVER_TLS
-	depends on !DNSDIST_NOSSL
-		bool "DNS over TLS Support"
-		help
-			"Enabled DNS over TLS Support for dnsdist"
-		default y
-
-	config DNSDIST_NET_SNMP
-		bool "Net-SNMP support"
-		help
-			"Enable Net-SNMP support for dnsdist"
-		default y
-
-	config DNSDIST_RE2
-		bool "RE2 support"
-		help
-			"Enable RE2 support for dnsdist"
-		default y
-
-	config DNSDIST_DNSTAP
-		bool "DNSTAP support"
-		help
-			"Enable DNSTAP support for dnsdist"
-		default y
-
-	config DNSDIST_SODIUM
-		bool "Build with libsodium"
-		help
-			"Build with libsodium - for encrypted console connections, and DNSCrypt"
-		default y
-endmenu
+Package: dnsdist-full
+Submenu: IP Addresses and Names
+Version: 1.9.4-1
+Depends: +libc +ca-bundle +libatomic +libcap +libstdcpp +luajit +libedit +libfstrm +libgnutls +libnetsnmp +libnghttp2 +libopenssl +libsodium +lmdb +tinycdb +re2
+Conflicts: 
+Menu-Depends: 
+Provides: dnsdist
+Build-Variant: full
+Section: net
+Category: Network
+Repository: base
+Title: dnsdist DNS-, DOS- and abuse-aware loadbalancer - full version with all the features built in
+Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
+Require-User: dnsdist:dnsdist
+Source: dnsdist-1.9.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:dnsdist
+Type: ipkg
+Description:   dnsdist is a highly DNS-, DoS- and abuse-aware loadbalancer. Its goal in life
+  is to route traffic to the best server, delivering top performance to legitimate
+  users while shunting or blocking abusive traffic.
+https://dnsdist.org/
+Peter van Dijk <peter.van.dijk@powerdns.com>
 @@
 
 

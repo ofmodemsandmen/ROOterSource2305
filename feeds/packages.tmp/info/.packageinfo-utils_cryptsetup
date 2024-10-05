@@ -3,7 +3,7 @@ Build-Depends: !USE_GLIBC:argp-standalone
 
 Package: cryptsetup
 Submenu: Encryption
-Version: 2.6.0-2
+Version: 2.7.1-1
 Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full +libblkid +libuuid +libpopt +lvm2 +libdevmapper +libjson-c +@KERNEL_DIRECT_IO +kmod-crypto-user
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.6.0.tar.xz
+Source: cryptsetup-2.7.1.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:cryptsetup_project:cryptsetup
 Type: ipkg
 Description:   Cryptsetup is utility used to conveniently setup disk encryption based on DMCrypt kernel module.
 https://gitlab.com/cryptsetup/cryptsetup/
@@ -24,7 +25,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: cryptsetup-ssh
 Submenu: Encryption
-Version: 2.6.0-2
+Version: 2.7.1-1
 Depends: +libc +cryptsetup +PACKAGE_cryptsetup-ssh:libssh
 Conflicts: 
 Menu-Depends: 
@@ -34,9 +35,10 @@ Category: Utilities
 Repository: base
 Title: Cryptsetup SSH token
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: cryptsetup-2.6.0.tar.xz
+Source: cryptsetup-2.7.1.tar.xz
 License: GPL-2.0-or-later LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:cryptsetup_project:cryptsetup
 Type: ipkg
 Description:   Experimental SSH token support for cryptsetup.
 https://gitlab.com/cryptsetup/cryptsetup/

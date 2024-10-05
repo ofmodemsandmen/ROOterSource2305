@@ -13,6 +13,7 @@ Repository: base
 Title: A caching web proxy
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>
 Source: polipo-1.1.1.tar.gz
+CPE-ID: cpe:/a:pps.jussieu:polipo
 Type: ipkg
 Description:  Polipo is a small and fast caching web proxy (a web cache, an HTTP proxy,
  a proxy server). While Polipo was designed to be used by one person or a

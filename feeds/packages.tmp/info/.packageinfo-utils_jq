@@ -13,6 +13,7 @@ Title: Lightweight and flexible command-line JSON processor.
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: jq-1.6.tar.xz
 License: BSD
+CPE-ID: cpe:/a:jqlang:jq
 Type: ipkg
 Description: 	Lightweight and flexible command-line JSON processor.
 https://stedolan.github.io/jq/

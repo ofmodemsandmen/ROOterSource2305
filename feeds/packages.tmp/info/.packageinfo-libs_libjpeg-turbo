@@ -14,6 +14,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libjpeg-turbo-2.1.4.tar.gz
 License: BSD-3-Clause IJG zlib
 LicenseFiles: LICENSE.md
+CPE-ID: cpe:/a:libjpeg-turbo:libjpeg-turbo
 Type: ipkg
 Description: 	libjpeg-turbo is a speed focused fork of libjpeg.
 https://www.libjpeg-turbo.org/
@@ -35,6 +36,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: libjpeg-turbo-2.1.4.tar.gz
 License: BSD-3-Clause IJG zlib
 LicenseFiles: LICENSE.md
+CPE-ID: cpe:/a:libjpeg-turbo:libjpeg-turbo
 Type: ipkg
 Description: 	These are the JPEG utilities that come with libjpeg-turbo.
 https://www.libjpeg-turbo.org/

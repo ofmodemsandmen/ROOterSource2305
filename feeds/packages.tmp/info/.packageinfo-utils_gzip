@@ -14,6 +14,7 @@ Title: gzip (GNU zip) is a compression utility.
 Maintainer: Christian Beier <dontmind@freeshell.org>
 Source: gzip-1.12.tar.xz
 License: GPL-3.0-or-later
+CPE-ID: cpe:/a:gnu:gzip
 Type: ipkg
 Description: 	gzip (GNU zip) is a compression utility designed to be a replacement for compress.
 https://www.gnu.org/software/gzip/

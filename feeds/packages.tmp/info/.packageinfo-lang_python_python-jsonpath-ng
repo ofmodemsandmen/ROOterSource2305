@@ -2,26 +2,34 @@ Source-Makefile: feeds/packages/lang/python/python-jsonpath-ng/Makefile
 
 Package: python3-jsonpath-ng
 Submenu: Python
-Version: 1.5.2-1
-Depends: +libc +python3-ply +python3-six +python3-decorator
+Version: 1.5.3-1
+Depends: +libc +python3-light +python3-logging +python3-ply +python3-six +python3-decorator
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: python3-jsonpath-ng
+Title: Standard compliant implementation of JSONPath
 Maintainer: Karel Kočí <cynerd@email.cz>
-Source: jsonpath-ng-1.5.2.tar.gz
+Source: jsonpath-ng-1.5.3.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
 Type: ipkg
-Description: python3-jsonpath-ng
+Description: A final implementation of JSONPath for Python that aims to be standard
+compliant, including arithmetic and binary comparison operators, as
+defined in the original JSONPath proposal.
+
+This packages merges both jsonpath-rw and jsonpath-rw-ext and provides
+several AST API enhancements, such as the ability to update or removes
+nodes in the tree.
 https://github.com/h2non/jsonpath-ng
 Karel Kočí <cynerd@email.cz>
 @@
 
 Package: python3-jsonpath-ng-src
 Submenu: Python
-Version: 1.5.2-1
+Version: 1.5.3-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -29,11 +37,19 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: python3-jsonpath-ng (sources)
+Title: Standard compliant implementation of JSONPath (sources)
 Maintainer: Karel Kočí <cynerd@email.cz>
-Source: jsonpath-ng-1.5.2.tar.gz
+Source: jsonpath-ng-1.5.3.tar.gz
+License: Apache-2.0
+LicenseFiles: LICENSE
 Type: ipkg
-Description:     	python3-jsonpath-ng
+Description:     A final implementation of JSONPath for Python that aims to be standard
+compliant, including arithmetic and binary comparison operators, as
+defined in the original JSONPath proposal.
+
+This packages merges both jsonpath-rw and jsonpath-rw-ext and provides
+several AST API enhancements, such as the ability to update or removes
+nodes in the tree.
 
     This package contains the Python source files for python3-jsonpath-ng.
 https://github.com/h2non/jsonpath-ng

@@ -12,6 +12,8 @@ Repository: base
 Title: System CA certificates as a bundle
 Maintainer: 
 Source: ca-certificates_20230311.tar.xz
+License: GPL-2.0-or-later MPL-2.0
+LicenseFiles: debian/copyright
 Type: ipkg
 Description: System CA certificates as a bundle
 
@@ -29,6 +31,8 @@ Repository: base
 Title: System CA certificates
 Maintainer: 
 Source: ca-certificates_20230311.tar.xz
+License: GPL-2.0-or-later MPL-2.0
+LicenseFiles: debian/copyright
 Type: ipkg
 Description: System CA certificates
 

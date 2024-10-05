@@ -16,6 +16,7 @@ Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
 Source: mtr-0.95.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:matt_kimball_and_roger_wolff:mtr
 Type: ipkg
 Description: Full screen ncurses traceroute tool Without JSON
 https://www.bitwizard.nl/mtr/
@@ -37,6 +38,7 @@ Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
 Source: mtr-0.95.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:matt_kimball_and_roger_wolff:mtr
 Type: ipkg
 Description: Full screen ncurses traceroute tool With JSON
 https://www.bitwizard.nl/mtr/

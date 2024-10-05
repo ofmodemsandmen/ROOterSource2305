@@ -15,6 +15,7 @@ Maintainer: Christian Beier <cb@shoutrlabs.com>
 Source: logrotate-3.17.0.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gentoo:logrotate
 Type: ipkg
 Description:  logrotate is designed to ease administration of systems that generate large
  numbers of log files. It allows auto-matic rotation, compression, removal and

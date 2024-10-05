@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/wsdd2/Makefile
 
 Package: wsdd2
 Submenu: IP Addresses and Names
-Version: 2022-04-25-e37443ac4c757dbf14167ec3f754ebe88244ad4b-3
+Version: 2023-12-21-b676d8ac8f1aef792cb0761fb68a0a589ded3207-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: Web Services for Devices (WSD) daemon
 Maintainer: 
-Source: wsdd2-2022-04-25-e37443ac4c757dbf14167ec3f754ebe88244ad4b.tar.xz
+Source: wsdd2-2023-12-21-b676d8ac8f1aef792cb0761fb68a0a589ded3207.tar.xz
 License: GPL-3.0-only
 LicenseFiles: COPYING
 Type: ipkg

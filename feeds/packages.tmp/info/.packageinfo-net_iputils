@@ -14,6 +14,7 @@ Maintainer: Noah Meyerhans <frodo@morgul.net>
 Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:iputils_project:iputils
 Type: ipkg
 Description:   Send ICMP_ECHOREQUEST packets to IP hosts and report on replies
 https://github.com/iputils/iputils
@@ -37,6 +38,7 @@ Maintainer: Noah Meyerhans <frodo@morgul.net>
 Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:iputils_project:iputils
 Type: ipkg
 Description:   Send ARP REQUEST packets to a neighbor host
 https://github.com/iputils/iputils
@@ -57,6 +59,7 @@ Maintainer: Noah Meyerhans <frodo@morgul.net>
 Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:iputils_project:iputils
 Type: ipkg
 Description:   Measure the clock difference between two hosts
 https://github.com/iputils/iputils
@@ -77,6 +80,7 @@ Maintainer: Noah Meyerhans <frodo@morgul.net>
 Source: iputils-20211215.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:iputils_project:iputils
 Type: ipkg
 Description:   trace network path to a host, discovering PMTU
 https://github.com/iputils/iputils

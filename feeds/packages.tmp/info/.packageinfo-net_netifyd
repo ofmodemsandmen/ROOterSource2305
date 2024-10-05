@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/net/netifyd/Makefile
 
 Package: netifyd
-Version: 2023-03-03-v4.4.1-1
-Depends: +libc +ca-bundle +libcurl +libmnl +libnetfilter-conntrack +libpcap +zlib +libpthread @!USE_UCLIBC +libstdcpp
+Version: 2023-08-10-v4.4.7-1
+Depends: +libc +ca-bundle +libatomic +libcurl +libmnl +libnetfilter-conntrack +libpcap +zlib +libpthread @!USE_UCLIBC +libstdcpp +NETIFYD_WITH_LOCAL_LIBGCRYPT:libgcrypt
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: Netify Agent
 Maintainer: Darryl Sokoloski <darryl@egloo.ca>
-Source: netifyd-2023-03-03-v4.4.1.tar.xz
+Source: netifyd-2023-08-10-v4.4.7.tar.xz
 License: GPL-3.0-or-later
 Type: ipkg
 Description: The Netify Agent is a deep-packet inspection server which detects network
@@ -21,6 +21,9 @@ server.  Flow metadata, network statistics, and detection classifications are
 JSON encoded for easy consumption by third-party applications.
 http://www.netify.ai/
 Darryl Sokoloski <darryl@egloo.ca>
+@@
+Config:
+	source "feeds/packages/net/netifyd/Config.in"
 @@
 
 

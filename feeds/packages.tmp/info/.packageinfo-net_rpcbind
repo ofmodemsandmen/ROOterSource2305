@@ -14,6 +14,7 @@ Maintainer:
 Require-User: rpc=65533:rpc=65533
 Source: rpcbind-1.2.6.tar.bz2
 License: BSD-3-Clause
+CPE-ID: cpe:/a:rpcbind_project:rpcbind
 Type: ipkg
 Description:   The rpcbind utility is a server that converts RPC program numbers into universal addresses.
   It must be running on the host to be able to make RPC calls on a server on that machine.

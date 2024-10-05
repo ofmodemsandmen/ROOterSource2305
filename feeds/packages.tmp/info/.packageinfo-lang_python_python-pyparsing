@@ -1,8 +1,9 @@
 Source-Makefile: feeds/packages/lang/python/python-pyparsing/Makefile
+Build-Depends: python-flit-core/host
 
 Package: python3-pyparsing
 Submenu: Python
-Version: 2.4.7-2
+Version: 3.1.1-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10,9 +11,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Library for constructing grammar directly in python
+Title: Define and execute parsing grammars
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: pyparsing-2.4.7.tar.gz
+Source: pyparsing-3.1.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -27,7 +28,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-pyparsing-src
 Submenu: Python
-Version: 2.4.7-2
+Version: 3.1.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -35,9 +36,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Library for constructing grammar directly in python (sources)
+Title: Define and execute parsing grammars (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: pyparsing-2.4.7.tar.gz
+Source: pyparsing-3.1.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

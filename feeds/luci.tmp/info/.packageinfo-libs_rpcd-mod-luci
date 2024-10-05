@@ -2,7 +2,7 @@ Source-Makefile: feeds/luci/libs/rpcd-mod-luci/Makefile
 Build-Depends: iwinfo
 
 Package: rpcd-mod-luci
-Version: 20230123-1
+Version: 20240305-1
 Depends: +libc +rpcd +libubox +libubus +libnl-tiny
 Conflicts: 
 Menu-Depends: 

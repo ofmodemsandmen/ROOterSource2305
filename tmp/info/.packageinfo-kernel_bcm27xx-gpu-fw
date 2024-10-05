@@ -2,7 +2,7 @@ Source-Makefile: package/kernel/bcm27xx-gpu-fw/Makefile
 
 Package: bcm27xx-gpu-fw
 Default: y if TARGET_bcm27xx
-Version: 2022-05-16-3673be308132de102fdff491d1333d9d0f823557
+Version: 2024-01-11-0968de28716a9b1f106b8492646d0ed0a2800152
 Depends: +libc @TARGET_bcm27xx
 Conflicts: 
 Menu-Depends: 

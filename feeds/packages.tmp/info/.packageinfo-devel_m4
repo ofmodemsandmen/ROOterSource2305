@@ -13,6 +13,7 @@ Title: m4
 Maintainer: Heinrich Schuchardt <xypron.glpk@gmx.de>
 Source: m4-1.4.19.tar.xz
 License: GPL-3.0-or-later
+CPE-ID: cpe:/a:gnu:m4
 Type: ipkg
 Description:   GNU M4 is an implementation of the traditional Unix macro processor.
   It is used by GNU Autoconf and Automake.

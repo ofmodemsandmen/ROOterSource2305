@@ -14,6 +14,7 @@ Maintainer: Michele Primavera <primavera@elmod.it>
 Source: libopen62541-1.3.6.tar.xz
 License: MPL-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:open62541:open62541
 Type: ipkg
 Description:  open62541 (http://open62541.org) is an open source and free implementation of
  OPC UA (OPC Unified Architecture) written in the common subset of the C99 and

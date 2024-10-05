@@ -11,14 +11,14 @@ Section: lang
 Category: Languages
 Repository: base
 Title: ItsDangerous
-Maintainer: Daniel Golle <daniel@makrotopia.org>
+Maintainer: Jeffery To <jeffery.to@gmail.com>
 Source: itsdangerous-2.1.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
 Type: ipkg
 Description:   Various helpers to pass trusted data to untrusted environments and back.
 https://palletsprojects.com/p/itsdangerous/
-Daniel Golle <daniel@makrotopia.org>
+Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-itsdangerous-src
@@ -32,7 +32,7 @@ Section: lang
 Category: Languages
 Repository: base
 Title: ItsDangerous (sources)
-Maintainer: Daniel Golle <daniel@makrotopia.org>
+Maintainer: Jeffery To <jeffery.to@gmail.com>
 Source: itsdangerous-2.1.2.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
@@ -41,7 +41,7 @@ Description:       Various helpers to pass trusted data to untrusted environment
 
     This package contains the Python source files for python3-itsdangerous.
 https://palletsprojects.com/p/itsdangerous/
-Daniel Golle <daniel@makrotopia.org>
+Jeffery To <jeffery.to@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-itsdangerous

@@ -13,6 +13,7 @@ Title: debugging and profiling tools for Linux
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: 	Valgrind is an award-winning suite of tools for debugging and
 	profiling Linux programs. With the tools that come with Valgrind,
@@ -37,6 +38,7 @@ Title: debugging and profiling tools for Linux (cache profiling)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (cache profiling)
 http://www.valgrind.org
@@ -56,6 +58,7 @@ Title: debugging and profiling tools for Linux (callgraph profiling)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (callgraph profiling)
 http://www.valgrind.org
@@ -75,6 +78,7 @@ Title: debugging and profiling tools for Linux (thread error detection)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (thread error detection)
 http://www.valgrind.org
@@ -94,6 +98,7 @@ Title: debugging and profiling tools for Linux (heap profiling)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (heap profiling)
 http://www.valgrind.org
@@ -113,6 +118,7 @@ Title: debugging and profiling tools for Linux (thread debugging)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (thread debugging)
 http://www.valgrind.org
@@ -132,6 +138,7 @@ Title: debugging and profiling tools for Linux (GDB interface)
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: valgrind-3.21.0.tar.bz2
 License: GPL-2.0+
+CPE-ID: cpe:/a:valgrind:valgrind
 Type: ipkg
 Description: debugging and profiling tools for Linux (GDB interface)
 http://www.valgrind.org

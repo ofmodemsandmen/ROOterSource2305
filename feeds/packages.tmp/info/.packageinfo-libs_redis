@@ -15,6 +15,7 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: redis-6.2.6.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:redis:redis
 Type: ipkg
 Build-Only: 1
 Description:   Redis is an open source, BSD licensed, advanced key-value cache and store.
@@ -39,6 +40,7 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: redis-6.2.6.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:redis:redis
 Type: ipkg
 Description: Redis server
 https://redis.io
@@ -60,6 +62,7 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: redis-6.2.6.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:redis:redis
 Type: ipkg
 Description: Redis cli
 https://redis.io
@@ -81,6 +84,7 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: redis-6.2.6.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:redis:redis
 Type: ipkg
 Description: Redis utilities
 https://redis.io

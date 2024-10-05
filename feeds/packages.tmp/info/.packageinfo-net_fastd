@@ -16,9 +16,10 @@ Maintainer: Matthias Schiffer <mschiffer@universe-factory.net>
 Source: fastd-22.tar.xz
 License: BSD-2-Clause LGPL-2.1-or-later
 LicenseFiles: COPYRIGHT src/dep/libmnl/COPYING
+CPE-ID: cpe:/a:fastd_project:fastd
 Type: ipkg
 Description: Fast and secure tunneling daemon, which is optimized on small code size and few dependencies
-https://github.com/NeoRaider/fastd/
+https://github.com/neocturne/fastd/
 Matthias Schiffer <mschiffer@universe-factory.net>
 @@
 Config:

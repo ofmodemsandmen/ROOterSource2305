@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-04-16 06:28+0000\n"
-"Last-Translator: Hulen <shift0106@gmail.com>\n"
+"PO-Revision-Date: 2024-01-06 10:09+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "openwrt/luciapplicationsadblock/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -14,11 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
-msgstr "動作"
+msgstr "操作"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:233
 msgid "Active Sources"
@@ -476,10 +476,6 @@ msgstr "手動覆蓋所選下載工具的預先設定下載選項。"
 msgid "No Query results!"
 msgstr "查詢結果為空！"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:21
-msgid "No adblock related logs yet!"
-msgstr "尚無與 Adblock 相關的日誌！"
-
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
 msgid "Overview"
 msgstr "概覽"
@@ -644,11 +640,11 @@ msgstr "設定一個新的廣告攔截工作"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:432
 msgid "Set the dns backend instance used by adblock."
-msgstr "設定 adblock 所用的 dns 後端實例。"
+msgstr "設定 adblock 所用的 DNS 後端實例。"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:297
 msgid "Settings"
-msgstr "設置"
+msgstr "設定"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:549
 msgid "Sources (Size, Focus)"
@@ -711,10 +707,6 @@ msgstr "小時 (必須。取值範圍：0-23)"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:51
 msgid "The minutes portion (opt., range: 0-59)"
 msgstr "分鐘 (可選。取值範圍：0-59)"
-
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:28
-msgid "The syslog output, pre-filtered for adblock related messages only."
-msgstr "系統日誌輸出（預先篩選出只與 Adblock 相關的訊息）。"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:435
 msgid "Third instance"
@@ -782,6 +774,8 @@ msgid "Unable to save changes: %s"
 msgstr "無法儲存變更（訊息：%s）"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:588
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:604
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:620
 msgid "Variants"
 msgstr "變體"
 

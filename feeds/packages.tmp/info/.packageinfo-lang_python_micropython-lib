@@ -3,7 +3,7 @@ Build-Depends: python3/host
 
 Package: micropython-lib
 Submenu: Python
-Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-1
+Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-2
 Depends: +libc +micropython
 Conflicts: 
 Menu-Depends: 
@@ -27,7 +27,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: micropython-lib-src
 Submenu: Python
-Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-1
+Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -51,8 +51,8 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: micropython-lib-unix
 Submenu: Python
-Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-1
-Depends: +libc +micropython +libpcre +librt +libsqlite3
+Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-2
+Depends: +libc +micropython +libpcre2 +librt +libsqlite3
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,7 +75,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: micropython-lib-unix-src
 Submenu: Python
-Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-1
+Version: 20230522-7128d423c2e7c0309ac17a1e6ba873b909b24fcc-2
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 

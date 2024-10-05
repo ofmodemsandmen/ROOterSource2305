@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/apfree-wifidog/Makefile
 
 Package: apfree-wifidog
 Submenu: Captive Portals
-Version: 6.02.1939-6
-Depends: +libc +zlib +libjson-c +libevent2 +libevent2-openssl +libuci
+Version: 7.08.2035-1
+Depends: +libc +zlib +libjson-c +libevent2 +libevent2-openssl +libuci +openssl-util +libnetfilter-queue
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: Apfree's wireless captive portal solution
 Maintainer: Dengfeng Liu <liudf0716@gmail.com>
-Source: apfree-wifidog-6.02.1939.tar.xz
+Source: apfree-wifidog-7.08.2035.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

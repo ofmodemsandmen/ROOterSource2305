@@ -13,7 +13,7 @@ Repository: base
 Title: Zone Information (simple)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (simple)
 Vladimir Ulrich <admin@evl.su>
@@ -32,7 +32,7 @@ Repository: base
 Title: Zone Information (core)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (core)
 Vladimir Ulrich <admin@evl.su>
@@ -51,7 +51,7 @@ Repository: base
 Title: Zone Information (Africa)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Africa)
 Vladimir Ulrich <admin@evl.su>
@@ -70,7 +70,7 @@ Repository: base
 Title: Zone Information (America North/South)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (America North/South)
 Vladimir Ulrich <admin@evl.su>
@@ -89,7 +89,7 @@ Repository: base
 Title: Zone Information (Arctic, Antarctic)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Arctic, Antarctic)
 Vladimir Ulrich <admin@evl.su>
@@ -108,7 +108,7 @@ Repository: base
 Title: Zone Information (Asia)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Asia)
 Vladimir Ulrich <admin@evl.su>
@@ -127,7 +127,7 @@ Repository: base
 Title: Zone Information (Atlantic Ocean)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Atlantic Ocean)
 Vladimir Ulrich <admin@evl.su>
@@ -146,7 +146,7 @@ Repository: base
 Title: Zone Information (Australia-NZ)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Australia-NZ)
 Vladimir Ulrich <admin@evl.su>
@@ -165,7 +165,7 @@ Repository: base
 Title: Zone Information (Pacific Ocean)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Pacific Ocean)
 Vladimir Ulrich <admin@evl.su>
@@ -184,7 +184,7 @@ Repository: base
 Title: Zone Information (Europe)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Europe)
 Vladimir Ulrich <admin@evl.su>
@@ -203,7 +203,7 @@ Repository: base
 Title: Zone Information (Indian Ocean)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (Indian Ocean)
 Vladimir Ulrich <admin@evl.su>
@@ -222,7 +222,7 @@ Repository: base
 Title: Zone Information (all zones)
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Source: tzdata2023c.tar.gz
-License: Public Domain
+License: Public-Domain
 Type: ipkg
 Description: Zone Information (all zones)
 Vladimir Ulrich <admin@evl.su>

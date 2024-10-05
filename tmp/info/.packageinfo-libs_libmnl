@@ -13,6 +13,8 @@ Title: Minimalistic user-space library for Netlink
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: libmnl-1.0.5.tar.bz2
 License: LGPL-2.1+
+CPE-ID: cpe:/a:netfilter:libmnl
+ABI-Version: 0
 Type: ipkg
 Description:  libmnl is a minimalistic user-space library oriented to Netlink developers.
  There are a lot of common tasks in parsing, validating, constructing of

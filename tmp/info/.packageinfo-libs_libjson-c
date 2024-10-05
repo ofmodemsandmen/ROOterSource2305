@@ -15,6 +15,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: json-c-0.16-nodoc.tar.gz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:json-c:json-c
+ABI-Version: 5
 Type: ipkg
 Description:  This package contains a library for javascript object notation backends.
 https://json-c.github.io/json-c/

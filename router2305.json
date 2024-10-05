@@ -26,7 +26,6 @@
 		"type": "1",
 		"build": "2305",
 		"config": ".config_wg1602-32",
-		"prescript": "/target/linux/ramips/wg1602.sh 16",
 		"image": "openwrt-ramips-mt7621-zbtlink_zbt-wg1602-v04-32m-squashfs-sysupgrade.bin",
 		"imagepath": "/ramips/mt7621/",
 		"mod": "ZBT-WG1602-32",
@@ -256,5 +255,15 @@
 		"mod": "ZBT-WG1608-16",
 		"ext": "-upgrade.bin",
 		"addons": ["readme.pdf", "readmerecovery.txt"]
+	},
+	"MT6000": {
+		"details": "Gl.iNet MT6000",
+		"type": "1",
+		"build": "2305",
+		"config": ".config_mt6000",
+		"image": "openwrt-mediatek-filogic-glinet_gl-mt6000-squashfs-sysupgrade.bin",
+		"imagepath": "/mediatek/filogic/",
+		"mod": "GliNet_MT6000",
+		"ext": "-upgrade.bin"
 	}
 }

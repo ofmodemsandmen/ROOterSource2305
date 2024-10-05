@@ -361,6 +361,26 @@ Description:     Translation for luci-app-ser2net - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-ser2net-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-ser2net
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ser2net - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ser2net - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-ser2net-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

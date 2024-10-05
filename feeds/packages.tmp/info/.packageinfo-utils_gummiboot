@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/gummiboot/Makefile
 Build-Depends: gnu-efi
 
 Package: gummiboot
-Version: 48.1-1
+Version: 48.1-2
 Depends: +libc @TARGET_x86_64 +libblkid
 Conflicts: 
 Menu-Depends: 

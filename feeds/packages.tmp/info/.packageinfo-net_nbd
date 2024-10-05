@@ -13,6 +13,7 @@ Title: Network Block Device utilities
 Maintainer: Marcin Jurkowski <marcin1j@gmail.com>
 Source: nbd-3.19.tar.xz
 License: GPL-2.0-or-later
+CPE-ID: cpe:/a:network_block_device_project:network_block_device
 Type: ipkg
 Description:   This package contains the network block device client.
 http://nbd.sourceforge.net
@@ -32,6 +33,7 @@ Title: Network Block Device Server
 Maintainer: Marcin Jurkowski <marcin1j@gmail.com>
 Source: nbd-3.19.tar.xz
 License: GPL-2.0-or-later
+CPE-ID: cpe:/a:network_block_device_project:network_block_device
 Type: ipkg
 Description:   This package contains the network block device server.
 http://nbd.sourceforge.net

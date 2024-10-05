@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: libpsl-0.21.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+ABI-Version: 5
 Type: ipkg
 Description:   C library to handle the Public Suffix List
 https://github.com/rockdaboot/libpsl

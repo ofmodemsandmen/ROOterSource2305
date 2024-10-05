@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/rtl_433/Makefile
 
 Package: rtl_433
-Version: 22.11-1
+Version: 23.11-1
 Depends: +libc +librtlsdr +rtl-sdr +libtool-bin
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Utilities
 Repository: base
 Title: Generic radio frequency data receiver
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: rtl_433-22.11.tar.gz
+Source: rtl_433-23.11.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rtl_433_project:rtl_433
 Type: ipkg
 Description:   rtl_433 (despite the name) is a generic data receiver, mainly for the 433.92 MHz, 868 MHz (SRD), 315 MHz, 345 MHz, and 915 MHz ISM bands.
 
@@ -24,7 +25,7 @@ Jasper Scholte <NightNL@outlook.com>
 @@
 
 Package: rtl_433-ssl
-Version: 22.11-1
+Version: 23.11-1
 Depends: +libc +librtlsdr +rtl-sdr +libtool-bin +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -35,9 +36,10 @@ Category: Utilities
 Repository: base
 Title: Generic radio frequency data receiver (with SSL support)
 Maintainer: Jasper Scholte <NightNL@outlook.com>
-Source: rtl_433-22.11.tar.gz
+Source: rtl_433-23.11.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rtl_433_project:rtl_433
 Type: ipkg
 Description:     rtl_433 (despite the name) is a generic data receiver, mainly for the 433.92 MHz, 868 MHz (SRD), 315 MHz, 345 MHz, and 915 MHz ISM bands.
 

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/rtl-sdr/Makefile
 
 Package: rtl-sdr
-Version: 0.6.0-3
+Version: 2.0.1-1
 Depends: +libc +librt +libpthread +librtlsdr
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Software Defined Radio with Realtek RTL2832U
 Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
-Source: rtl-sdr-0.6.0.tar.xz
+Source: rtl-sdr-2.0.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -24,7 +24,7 @@ Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
 @@
 
 Package: librtlsdr
-Version: 0.6.0-3
+Version: 2.0.1-1
 Depends: +libc +libusb-1.0
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Libraries
 Repository: base
 Title: Software Defined Radio with Realtek RTL2832U shared library library
 Maintainer: Vasilis Tsiligiannis <b_tsiligiannis@silverton.gr>
-Source: rtl-sdr-0.6.0.tar.xz
+Source: rtl-sdr-2.0.1.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

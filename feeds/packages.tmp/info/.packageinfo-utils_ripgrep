@@ -15,6 +15,7 @@ Maintainer: Luca Barbato <lu_zero@luminem.org>
 Source: ripgrep-13.0.0.tar.gz
 License: MIT Unlicense
 LicenseFiles: LICENSE-MIT UNLICENSE
+CPE-ID: cpe:/a:ripgrep_project:ripgrep
 Type: ipkg
 Description:   ripgrep (rg) recursively searches directories for a regex pattern
   while respecting your gitignore

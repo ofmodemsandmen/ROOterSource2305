@@ -8,11 +8,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=django
-PKG_VERSION:=4.2.1
+PKG_VERSION:=4.2.11
 PKG_RELEASE:=1
 
 PYPI_NAME:=Django
-PKG_HASH:=7efa6b1f781a6119a10ac94b4794ded90db8accbe7802281cd26f8664ffed59c
+PKG_HASH:=6e6ff3db2d8dd0c986b4eec8554c8e4f919b5c1ff62a5b4390c17aff2ed6e5c4
 
 PKG_MAINTAINER:=Alexandru Ardelean <ardeleanalex@gmail.com>, Peter Stadler <peter.stadler@student.uibk.ac.at>
 PKG_LICENSE:=BSD-3-Clause

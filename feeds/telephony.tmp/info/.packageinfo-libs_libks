@@ -2,7 +2,7 @@ Source-Makefile: feeds/telephony/libs/libks/Makefile
 
 Package: libks
 Submenu: Telephony
-Version: 1.8.2-1
+Version: 2.0.2-1
 Depends: +libc +libatomic +libopenssl +libuuid
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Libraries
 Repository: base
 Title: Foundational support for SignalWire C products
 Maintainer: Sebastian Kemper <sebastian_ml@gmx.net>
-Source: libks-1.8.2.tar.gz
+Source: libks-2.0.2.tar.gz
 License: BSD-1-Clause BSD-3-Clause ISC MIT PUBLICDOMAIN twofish
 LicenseFiles: copyright
+ABI-Version: 2
 Type: ipkg
 Description: Foundational support for SignalWire C products
 https://github.com/signalwire/libks

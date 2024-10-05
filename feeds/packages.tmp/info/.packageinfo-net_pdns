@@ -14,6 +14,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (geoip)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -39,6 +42,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (mysql)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -64,6 +70,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (odbc)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -89,6 +98,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (pgsql)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -114,6 +126,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (sqlite3)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -139,6 +154,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (ldap)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -164,6 +182,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (lua2)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -189,6 +210,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (pipe)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -214,6 +238,9 @@ Repository: base
 Title: PowerDNS Authoritative Server (remote)
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Hidden: 1
 Description:    PowerDNS is a versatile nameserver which supports a large number
@@ -239,6 +266,9 @@ Repository: base
 Title: PowerDNS Authoritative Server
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational
@@ -300,6 +330,9 @@ Repository: base
 Title: Tools for DNS debugging by PowerDNS
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational
@@ -336,6 +369,9 @@ Repository: base
 Title: Redistribute zones via AXFR and IXFR
 Maintainer: Peter van Dijk <peter.van.dijk@powerdns.com>
 Source: pdns-4.7.4.tar.bz2
+License: GPL-2.0-only
+LicenseFiles: COPYING
+CPE-ID: cpe:/a:powerdns:authoritative
 Type: ipkg
 Description:   PowerDNS is a versatile nameserver which supports a large number
   of different backends ranging from simple zonefiles to relational

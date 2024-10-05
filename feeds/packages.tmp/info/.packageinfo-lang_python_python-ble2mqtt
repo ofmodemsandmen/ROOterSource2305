@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-ble2mqtt/Makefile
 
 Package: python3-ble2mqtt
 Submenu: Python
-Version: 0.1.7-2
+Version: 0.2.2-1
 Depends: +libc +python3-light +python3-aio-mqtt-mod +python3-asyncio +python3-bleak +python3-logging +python3-uuid
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Bluetooth to MQTT bridge
 Maintainer: Quintin Hill <stuff@quintin.me.uk>
-Source: ble2mqtt-0.1.7.tar.gz
+Source: ble2mqtt-0.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,7 +24,7 @@ Quintin Hill <stuff@quintin.me.uk>
 
 Package: python3-ble2mqtt-src
 Submenu: Python
-Version: 0.1.7-2
+Version: 0.2.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Languages
 Repository: base
 Title: Bluetooth to MQTT bridge (sources)
 Maintainer: Quintin Hill <stuff@quintin.me.uk>
-Source: ble2mqtt-0.1.7.tar.gz
+Source: ble2mqtt-0.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

@@ -8,7 +8,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rootfs-part rtc sour
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -32,7 +32,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rootfs-part rtc sour
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-28 10:31+0000\n"
-"Last-Translator: oneforfun <svens.local.hosted@gmail.com>\n"
+"PO-Revision-Date: 2024-07-17 22:44+0000\n"
+"Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssmartdns/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:792
 msgid "Additional Args for upstream dns servers"
@@ -19,11 +19,13 @@ msgstr "Zusätzliche Argumente für Upstream-DNS-Server"
 msgid ""
 "Additional Flags for rules, read help on domain-rule for more information."
 msgstr ""
+"Zusätzliche Flags für Regeln. Weitere Informationen finden Sie in der Hilfe "
+"zu Domänenregeln."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:885
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1089
 msgid "Additional Rule Flag"
-msgstr ""
+msgstr "Zusätzliches Regel-Flag"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:346
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:479
@@ -36,6 +38,7 @@ msgstr "Zusätzliche Server Parameter"
 msgid ""
 "Additional server args, refer to the help description of the bind option."
 msgstr ""
+"Zusätzliche Server-Argumente, siehe die Hilfebeschreibung der Option bind."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:132
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:639
@@ -60,23 +63,23 @@ msgstr "Setze automatisch als Upstream von dnsmasq when sich der Port ändert."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:229
 msgid "Bind Device"
-msgstr ""
+msgstr "Bind-Gerät"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:234
 msgid "Bind Device Name"
-msgstr ""
+msgstr "Bind-Gerätename"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:998
 msgid "Block domain"
-msgstr ""
+msgstr "Domain blockieren"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:998
 msgid "Block domain."
-msgstr ""
+msgstr "Domain blockieren."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:262
 msgid "Cache Persist"
-msgstr ""
+msgstr "Cache Speicher"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:258
 msgid "Cache Size"
@@ -84,7 +87,7 @@ msgstr "Zwischenspeichergröße"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:121
 msgid "Collecting data ..."
-msgstr "Sammle Daten..."
+msgstr "Sammeln von Daten ..."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1100
 msgid ""
@@ -96,15 +99,15 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:929
 msgid "Configure block domain list."
-msgstr ""
+msgstr "Block-Domänenliste konfigurieren."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:950
 msgid "Configure domain rule list."
-msgstr ""
+msgstr "Konfigurieren der Domänenregel-Liste."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:900
 msgid "Configure forwarding domain name list."
-msgstr ""
+msgstr "Konfigurieren der Liste der Weiterleitungsdomänennamen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:137
 msgid "Custom Settings"
@@ -112,11 +115,11 @@ msgstr "Benutzerdefinierte Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:805
 msgid "DNS Block Setting"
-msgstr ""
+msgstr "DNS Block Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:804
 msgid "DNS Forwarding Setting"
-msgstr ""
+msgstr "DNS-Weiterleitungseinstellung"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:648
 msgid "DNS Server Name"
@@ -124,12 +127,12 @@ msgstr "DNS Server Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:675
 msgid "DNS Server group"
-msgstr ""
+msgstr "DNS-Servergruppe"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:813
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:967
 msgid "DNS Server group belongs to, such as office, home."
-msgstr ""
+msgstr "DNS Server zu dem die Gruppe gehört. Bsp.: Büro, Zu Hause."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:651
 msgid "DNS Server ip"
@@ -149,19 +152,19 @@ msgstr "DNS Domain Ergebnisspeichergröße"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:487
 msgid "DNS64"
-msgstr ""
+msgstr "DNS64"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:134
 msgid "DNS64 Server Settings"
-msgstr ""
+msgstr "DNS64 Server Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:560
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:76
 msgid "Dnsmasq Forwarded To Smartdns Failure"
-msgstr ""
+msgstr "Dnsmasq weitergeleitet zu Smartdns Fehler"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:719
 msgid "Do not check certificate."
@@ -179,30 +182,30 @@ msgstr "Domain Adresse"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:900
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:929
 msgid "Domain List"
-msgstr ""
+msgstr "Domänen Liste"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:891
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:921
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:991
 msgid "Domain List File"
-msgstr ""
+msgstr "Domänen Liste Datei"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:806
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:949
 msgid "Domain Rule List"
-msgstr ""
+msgstr "Domänen Regel Liste"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:965
 msgid "Domain Rule Name"
-msgstr ""
+msgstr "Domänen Regel Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:800
 msgid "Domain Rules"
-msgstr ""
+msgstr "Domänen Regeln"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:800
 msgid "Domain Rules Settings"
-msgstr ""
+msgstr "Domänen Regeln Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:324
 msgid "Domain TTL"
@@ -230,17 +233,20 @@ msgstr "An smartdns spenden"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:526
 msgid "Download Files"
-msgstr ""
+msgstr "Download Dateien"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:135
 msgid "Download Files Setting"
-msgstr ""
+msgstr "Download Datei Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:135
 msgid ""
 "Download domain list files for domain-rule and include config files, please "
 "refresh the page after download to take effect."
 msgstr ""
+"Domänen Listen Dateien herunterladen für Domänen Regeln und "
+"Konfigurationsdateien einschließen. Bitte die Seite nach dem Download neu "
+"laden damit es wirksam wird."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:240
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1007
@@ -252,11 +258,11 @@ msgstr "Dual-Stack-IP-Auswahl"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:642
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:959
 msgid "Enable"
-msgstr "aktivieren"
+msgstr "Aktivieren"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:495
 msgid "Enable Auto Update"
-msgstr ""
+msgstr "Auto Update einschalten"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:241
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1008
@@ -274,7 +280,7 @@ msgstr "Aktiviere TCP DNS Server"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:495
 msgid "Enable daily auto update."
-msgstr ""
+msgstr "Tägliches auto update einschalten."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:247
 msgid "Enable domain prefetch, accelerate domain response speed."
@@ -292,27 +298,27 @@ msgstr "Aktivieren oder deaktivieren des Smartdns-Servers"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:694
 msgid "Exclude DNS Server from default group."
-msgstr ""
+msgstr "DNS Server von der standard Gruppe ausschließen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:694
 msgid "Exclude Default Group"
-msgstr ""
+msgstr "Standard Gruppe ausschließen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:215
 msgid "Fastest IP"
-msgstr ""
+msgstr "Schnellste IP"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:216
 msgid "Fastest Response"
-msgstr ""
+msgstr "Schnellste Antwort"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:535
 msgid "File Name"
-msgstr ""
+msgstr "Dateiname"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:554
 msgid "File Type"
-msgstr ""
+msgstr "Dateityp"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:702
 msgid "Filtering IP with blacklist"
@@ -320,7 +326,7 @@ msgstr "Filtern von IP mit negativ-Liste"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:214
 msgid "First Ping"
-msgstr ""
+msgstr "erster Ping"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:272
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:436
@@ -386,13 +392,13 @@ msgstr "IPV6-Server"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:846
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1062
 msgid "IPset Name"
-msgstr ""
+msgstr "IPset Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:440
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:846
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1062
 msgid "IPset name."
-msgstr ""
+msgstr "IPset Name."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1138
 msgid "If you like this software, please buy me a cup of coffee."
@@ -402,25 +408,30 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:353
 msgid "Include Config Files<br>/etc/smartdns/conf.d"
-msgstr ""
+msgstr "Config Dateien einschließen<br>/etc/smartdns/conf.d"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:354
 msgid ""
 "Include other config files from /etc/smartdns/conf.d or custom path, can be "
 "downloaded from the download page."
 msgstr ""
+"Andere Konfigurationsdateien aus /etc/smartdns/conf.d oder einem "
+"benutzerdefinierten Pfad können von der Download-Seite heruntergeladen "
+"werden."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:283
 msgid "Ipset name, Add domain result to ipset when speed check fails."
 msgstr ""
+"Ipset-Name, Domänenergebnis zu ipset hinzufügen, wenn "
+"Geschwindigkeitsprüfung fehlschlägt."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:527
 msgid "List of files to download."
-msgstr ""
+msgstr "Liste der Dateien zum Herunterladen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:229
 msgid "Listen only on the specified interfaces."
-msgstr ""
+msgstr "Nur an den angegebenen Schnittstellen lauschen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:153
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:377
@@ -429,23 +440,23 @@ msgstr "Lokaler Port"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:624
 msgid "Log File"
-msgstr ""
+msgstr "Protokolldatei"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:608
 msgid "Log Level"
-msgstr ""
+msgstr "Protokollierungslevel"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:620
 msgid "Log Number"
-msgstr ""
+msgstr "Protokollnummer"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:604
 msgid "Log Size"
-msgstr ""
+msgstr "Log Größe"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:757
 msgid "Marking Packets"
-msgstr ""
+msgstr "Pakete Markieren"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:337
 msgid "Maximum TTL for all domain result."
@@ -459,20 +470,20 @@ msgstr "Minimale TTL für alle Ergebnisse der Domäne."
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:865
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1068
 msgid "NFTset Name"
-msgstr ""
+msgstr "NFTset Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:316
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:471
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:877
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1081
 msgid "NFTset name format error, format: [#[4|6]:[family#table#set]]"
-msgstr ""
+msgstr "NFTset-Namensformatfehler, Format: [#[4|6]:[family#table#set]]"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:459
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:865
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1068
 msgid "NFTset name, format: [#[4|6]:[family#table#set]]"
-msgstr ""
+msgstr "NFTset-Name, Format: [#[4|6]:[family#table#set]]"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:66
 msgid "NOT RUNNING"
@@ -480,25 +491,27 @@ msgstr "LÄUFT NICHT"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:234
 msgid "Name of device name listen on."
-msgstr ""
+msgstr "Name des Geräts, auf das gehört werden soll."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:304
 msgid ""
 "Nftset name, Add domain result to nftset when speed check fails, format: "
 "[#[4|6]:[family#table#set]]"
 msgstr ""
+"Nftset-Name, Hinzufügen des Domänenergebnisses zum Nftset, wenn die "
+"Geschwindigkeitsprüfung fehlschlägt, Format: [#[4|6]:[family#table#set]]"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1014
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:282
 msgid "No Speed IPset Name"
-msgstr ""
+msgstr "Keine Geschwindigkeit IPset-Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:303
 msgid "No Speed NFTset Name"
-msgstr ""
+msgstr "Keine Geschwindigkeit NFTset Name"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:718
 msgid "No check certificate"
@@ -508,32 +521,33 @@ msgstr "Kein Check der Zertifikate"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1000
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1025
 msgid "None"
-msgstr ""
+msgstr "Keine"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:784
 msgid "Only socks5 proxy support udp server."
-msgstr ""
+msgstr "Nur der Socks5 Proxy unterstützt einen udp-Server."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:780
 msgid "Please set proxy server first."
-msgstr ""
+msgstr "Bitte stelle zuerst den Proxy-Server ein."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:567
 msgid "Proxy Server"
-msgstr ""
+msgstr "Proxy-Server"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:136
 msgid "Proxy Server Settings"
-msgstr ""
+msgstr "Proxy Server Einstellungen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:567
 msgid "Proxy Server URL, format: [socks5|http]://user:pass@ip:port."
-msgstr ""
+msgstr "Proxy-Server-URL, Format: [socks5|http]://user:pass@ip:port."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:575
 msgid ""
 "Proxy server URL format error, format: [socks5|http]://user:pass@ip:port."
 msgstr ""
+"Proxyserver-URL-Formatfehler, Format: [socks5|http]://user:pass@ip:port."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:390
 msgid "Query DNS through specific dns server group, such as office, home."
@@ -555,7 +569,7 @@ msgstr "Maximale Antwort-TTL für alle Domänen-Ergebnisse."
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1150
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1151
 msgid "Report bugs"
-msgstr ""
+msgstr "Bugs melden"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:267
 msgid "Resolve Local Hostnames"
@@ -567,7 +581,7 @@ msgstr "Lokale Hostnamen durch Lesen der Dnsmasq-Lease-Datei auflösen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:209
 msgid "Response Mode"
-msgstr ""
+msgstr "Antwortmodus"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1174
 msgid "Restart"
@@ -586,7 +600,6 @@ msgid "Serve expired"
 msgstr "Serve abgelaufen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:389
-#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:675
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:813
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:967
 msgid "Server Group"
@@ -595,7 +608,7 @@ msgstr "Servergruppe"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:833
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:987
 msgid "Server Group %s not exists"
-msgstr ""
+msgstr "Server-Gruppe %s nicht vorhanden"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:147
 msgid "Server Name"
@@ -607,7 +620,7 @@ msgstr "Spezifische Domänen-IP-Adresse einstellen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:806
 msgid "Set Specific domain rule list."
-msgstr ""
+msgstr "Liste der spezifischen Domänenregeln festlegen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:808
 msgid "Set Specific ip blacklist."
@@ -619,7 +632,7 @@ msgstr "TLS-Hostname zur Überprüfung einstellen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:758
 msgid "Set mark on packets."
-msgstr ""
+msgstr "Markierung der Pakete setzen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:738
 msgid ""
@@ -632,6 +645,8 @@ msgstr ""
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:728
 msgid "Sets the server name indication for query. '-' for disable SNI name."
 msgstr ""
+"Legt die Angabe des Servernamens für die Abfrage fest. '-' für SNI-Name "
+"deaktivieren."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:128
 msgid "Settings"
@@ -729,6 +744,9 @@ msgid ""
 "Smartdns response mode, First Ping: return the first ping IP, Fastest IP: "
 "return the fastest IP, Fastest Response: return the fastest DNS response."
 msgstr ""
+"Smartdns-Antwortmodus, First Ping: Rückgabe der ersten Ping-IP, Schnellste "
+"IP: Rückgabe der schnellsten IP, Schnellste Antwort: Rückgabe der "
+"schnellsten DNS-Antwort."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:147
 msgid "Smartdns server name"
@@ -737,7 +755,7 @@ msgstr "Smartdns-Servername"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:169
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1016
 msgid "Smartdns speed check mode."
-msgstr ""
+msgstr "Smartdns-Geschwindigkeitsprüfungsmodus."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1119
 msgid ""
@@ -753,12 +771,12 @@ msgstr ""
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:169
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1016
 msgid "Speed Check Mode"
-msgstr ""
+msgstr "Geschwindigkeitsüberprüfungsmodus"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:202
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1050
 msgid "Speed check mode is invalid."
-msgstr ""
+msgstr "Geschwindigkeitsprüfmodus ist ungültig."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:219
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:384
@@ -768,7 +786,7 @@ msgstr "TCP-Server"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:196
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1044
 msgid "TCP port is empty"
-msgstr ""
+msgstr "TCP-Port ist leer"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:708
 msgid "TLS Hostname Verify"
@@ -792,31 +810,31 @@ msgstr "Technische Unterstützung"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:539
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:548
 msgid "URL format error, format: http:// or https://"
-msgstr ""
+msgstr "URL-Formatfehler, Format: http:// oder https://"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:523
 msgid "Update"
-msgstr ""
+msgstr "Aktualisierung"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:514
 msgid "Update Files"
-msgstr ""
+msgstr "Update-Dateien"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:500
 msgid "Upload Config File"
-msgstr ""
+msgstr "Konfigurationsdatei Hochladen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:507
 msgid "Upload Domain List File"
-msgstr ""
+msgstr "Domainlisten-Datei Hochladen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:508
 msgid "Upload domain list file to /etc/smartdns/domain-set"
-msgstr ""
+msgstr "Domainlisten-Datei zu /etc/smartdns/domain-set Hochladen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:892
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:992
@@ -824,14 +842,16 @@ msgid ""
 "Upload domain list file, or configure auto download from Download File "
 "Setting page."
 msgstr ""
+"Domainlisten-Datei Hochladen oder Autiomatischen Download von "
+"Dateieinstellungsseite Konfigurieren."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:921
 msgid "Upload domain list file."
-msgstr ""
+msgstr "Domainlisten-Datei Hochladen."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:501
 msgid "Upload smartdns config file to /etc/smartdns/conf.d"
-msgstr ""
+msgstr "Smartdns Konfigurationsdatei zu /etc/smartdns/conf.d hochladen"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:631
 msgid "Upstream Servers"
@@ -848,11 +868,11 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:765
 msgid "Use Proxy"
-msgstr ""
+msgstr "Proxy verwenden"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:766
 msgid "Use proxy to connect to upstream DNS server."
-msgstr ""
+msgstr "Proxy für die Verbindung zu einem Upstream DNS-Server verwenden."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:747
 msgid ""
@@ -867,10 +887,11 @@ msgstr ""
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:262
 msgid "Write cache to disk on exit and load on startup."
 msgstr ""
+"Cache beim Beenden auf die Festplatte schreiben und beim Starten laden."
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1013
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:172
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:213
@@ -878,37 +899,29 @@ msgstr ""
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1012
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1020
 msgid "default"
-msgstr ""
+msgstr "Standard"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:555
 msgid "domain list (/etc/smartdns/domain-set)"
-msgstr ""
+msgstr "Domain-Liste (/etc/smartdns/domain-set)"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:670
 msgid "https"
 msgstr "https"
 
-#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:651
-msgid "ip"
-msgstr "IP"
-
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:295
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:452
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:858
 msgid "ipset name format error, format: [#[4|6]:]ipsetname"
-msgstr ""
+msgstr "Fehler des ipset-Namensformats, format: [#[4|6]:]ipsetname"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1143
 msgid "open website"
 msgstr "Webseite öffnen"
 
-#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:656
-msgid "port"
-msgstr "Port"
-
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:556
 msgid "smartdns config (/etc/smartdns/conf.d)"
-msgstr ""
+msgstr "Smartdns Konfiguration (/etc/smartdns/conf.d)"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:585
 msgid "smartdns custom settings"
@@ -923,7 +936,6 @@ msgid "tls"
 msgstr "tls"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:554
-#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:665
 msgid "type"
 msgstr "Typ"
 

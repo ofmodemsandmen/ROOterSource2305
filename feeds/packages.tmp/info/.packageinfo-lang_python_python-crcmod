@@ -7,7 +7,7 @@ Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Section: lang-python
+Section: lang
 Category: Languages
 Repository: base
 Title: python3-crcmod
@@ -28,7 +28,7 @@ Depends: +libc
 Conflicts: 
 Menu-Depends: 
 Provides: 
-Section: lang-python
+Section: lang
 Category: Languages
 Repository: base
 Title: python3-crcmod (sources)

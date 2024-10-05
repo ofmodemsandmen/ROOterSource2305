@@ -14,6 +14,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Source: apr-1.7.0.tar.bz2
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:portable_runtime
 Type: ipkg
 Description: Apache Portable Runtime Library
 https://apr.apache.org/

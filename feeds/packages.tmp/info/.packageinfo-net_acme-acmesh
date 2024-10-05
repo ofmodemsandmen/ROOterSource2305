@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/acme-acmesh/Makefile
 
 Package: acme-acmesh
-Version: 3.0.6-1
+Version: 3.0.7-2
 Depends: +libc +acme-common +wget-ssl +ca-bundle +openssl-util +socat
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: ACME client acme.sh wrapper script
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-acmesh-3.0.6.tar.gz
+Source: acme-acmesh-3.0.7.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg
@@ -21,7 +21,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 @@
 
 Package: acme-acmesh-dnsapi
-Version: 3.0.6-1
+Version: 3.0.7-2
 Depends: +libc +acme-acmesh
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Network
 Repository: base
 Title: DNS API integration for ACME (Letsencrypt) client
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: acme-acmesh-3.0.6.tar.gz
+Source: acme-acmesh-3.0.7.tar.gz
 License: GPL-3.0-only
 LicenseFiles: LICENSE.md
 Type: ipkg

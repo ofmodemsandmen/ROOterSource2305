@@ -14,6 +14,7 @@ Title: Easy administration of git repositories
 Maintainer: 
 Require-User: git=382:git=382
 Source: gitolite-3.6.11.tar.gz
+CPE-ID: cpe:/a:sitaram_chamarty:gitolite
 Type: ipkg
 Description:   Gitolite is a system for managing access to git repositories.
   See https://openwrt.org/docs/guide-user/services/gitolite for a guide

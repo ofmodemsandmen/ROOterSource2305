@@ -3,7 +3,7 @@ Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:lu
 
 Package: luci-app-dockerman
 Submenu: 3. Applications
-Version: v0.5.13-20230114
+Version: v0.5.13-20240317
 Depends: +libc @(aarch64||arm||x86_64) +luci-compat +luci-lib-docker +docker +ttyd +luci-lua-runtime
 Conflicts: 
 Menu-Depends: 
@@ -358,6 +358,26 @@ License: AGPL-3.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-app-dockerman - 한국어 (Korean)
+lisaac <lisaac.cn@gmail.com> Florian Eckert <fe@dev.tdt.de>
+@@
+
+Package: luci-i18n-dockerman-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-dockerman
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dockerman - lt translation
+Maintainer: lisaac <lisaac.cn@gmail.com> Florian Eckert <fe@dev.tdt.de>
+Source: 
+License: AGPL-3.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dockerman - Lietuvių (Lithuanian)
 lisaac <lisaac.cn@gmail.com> Florian Eckert <fe@dev.tdt.de>
 @@
 

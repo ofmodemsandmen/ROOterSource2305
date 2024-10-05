@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitchensync.net>, Ian Leonard <antonlacon@gmail.com>
 Source: opus-1.3.1.tar.gz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opus-codec:opus
 Type: ipkg
 Description:  Opus is a totally open, royalty-free, highly versatile audio codec. Opus is
  unmatched for interactive speech and music transmission over the Internet, but

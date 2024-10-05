@@ -1,10 +1,10 @@
 Source-Makefile: feeds/packages/lang/python/python-cryptography/Makefile
-Build-Depends: libffi/host python-cffi/host  
+Build-Depends: libffi/host python-cffi/host python-setuptools-rust/host
 
 Package: python3-cryptography
 Submenu: Python
-Version: 3.4.8-3
-Depends: +libc +libopenssl +python3-light +python3-email +python3-openssl +python3-urllib +python3-cffi +python3-six
+Version: 41.0.7-1
+Depends: +libc +libopenssl +libopenssl-legacy +python3-light +python3-email +python3-urllib +python3-cffi @(aarch64||arm||i386||i686||mips||mipsel||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64)
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,20 +13,21 @@ Category: Languages
 Repository: base
 Title: Cryptographic recipes and primitives
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: cryptography-3.4.8.tar.gz
+Source: cryptography-41.0.7.tar.gz
 License: Apache-2.0 BSD-3-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
+CPE-ID: cpe:/a:cryptography_project:cryptography
 Type: ipkg
 Description: cryptography is a package which provides cryptographic recipes and
-primitives to Python developers.  Our goal is for it to be your "cryptographic
-standard library". It supports Python 2.6-2.7, Python 3.3+, and PyPy 2.6+.
+primitives to Python developers. Our goal is for it to be your
+"cryptographic standard library".
 https://github.com/pyca/cryptography
 Jeffery To <jeffery.to@gmail.com>
 @@
 
 Package: python3-cryptography-src
 Submenu: Python
-Version: 3.4.8-3
+Version: 41.0.7-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,13 +37,14 @@ Category: Languages
 Repository: base
 Title: Cryptographic recipes and primitives (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: cryptography-3.4.8.tar.gz
+Source: cryptography-41.0.7.tar.gz
 License: Apache-2.0 BSD-3-Clause
 LicenseFiles: LICENSE.APACHE LICENSE.BSD
+CPE-ID: cpe:/a:cryptography_project:cryptography
 Type: ipkg
 Description:     cryptography is a package which provides cryptographic recipes and
-primitives to Python developers.  Our goal is for it to be your "cryptographic
-standard library". It supports Python 2.6-2.7, Python 3.3+, and PyPy 2.6+.
+primitives to Python developers. Our goal is for it to be your
+"cryptographic standard library".
 
     This package contains the Python source files for python3-cryptography.
 https://github.com/pyca/cryptography

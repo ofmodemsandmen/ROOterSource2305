@@ -8,25 +8,39 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ucode
-PKG_RELEASE:=1
+PKG_RELEASE:=3
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=https://github.com/jow-/ucode.git
-PKG_SOURCE_DATE:=2023-04-03
-PKG_SOURCE_VERSION:=5163867269fc04fa01ec5e9f8df3384c933339f2
-PKG_MIRROR_HASH:=e82922ff59d6f899d9434bf79f2e6e4add0b7b0466355755fc83d4b5a0aeebfb
+PKG_SOURCE_DATE:=2024-07-11
+PKG_SOURCE_VERSION:=1a8a0bcf725520820802ad433db22d8f64fbed6c
+PKG_MIRROR_HASH:=ccacb0efe909248230fb0953433a74a2251ac0069d25a731b128e0ee8d6afeb3
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 PKG_LICENSE:=ISC
 
-PKG_ABI_VERSION:=20220812
+PKG_ABI_VERSION:=20230711
+HOST_BUILD_DEPENDS:=libjson-c/host
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/host-build.mk
 include $(INCLUDE_DIR)/cmake.mk
 
-CMAKE_OPTIONS += -DSOVERSION=$(PKG_ABI_VERSION)
+CMAKE_OPTIONS += \
+	-DSOVERSION=$(PKG_ABI_VERSION)
+
 CMAKE_HOST_OPTIONS += \
-	-DSOVERSION=$(PKG_ABI_VERSION) \
+	-DCMAKE_SKIP_RPATH=FALSE \
+	-DCMAKE_INSTALL_RPATH="${STAGING_DIR_HOSTPKG}/lib"
+
+ifeq ($(HOST_OS),Darwin)
+  CMAKE_HOST_OPTIONS += \
+	-DCMAKE_MACOSX_RPATH=1
+else
+  CMAKE_HOST_OPTIONS += \
+	-DUSE_RPATH="${STAGING_DIR_HOSTPKG}/lib"
+endif
+
+CMAKE_HOST_OPTIONS += \
 	-DFS_SUPPORT=ON \
 	-DMATH_SUPPORT=ON \
 	-DNL80211_SUPPORT=OFF \
@@ -35,7 +49,9 @@ CMAKE_HOST_OPTIONS += \
 	-DSTRUCT_SUPPORT=ON \
 	-DUBUS_SUPPORT=OFF \
 	-DUCI_SUPPORT=OFF \
-	-DULOOP_SUPPORT=OFF
+	-DULOOP_SUPPORT=OFF \
+	-DDEBUG_SUPPORT=ON \
+	-DLOG_SUPPORT=OFF
 
 
 define Package/ucode/default
@@ -70,105 +86,29 @@ define Package/libucode/description
  The libucode package provides the shared runtime library for the ucode interpreter.
 endef
 
+# 1: name
+# 2: cmake symbol
+# 3: depends
+# 4: description
+define UcodeModule
+  UCODE_MODULES += ucode-mod-$(strip $(1))
+  CMAKE_OPTIONS += -D$(strip $(2))=$(if $(CONFIG_PACKAGE_ucode-mod-$(strip $(1))),ON,OFF)
+  PKG_CONFIG_DEPENDS += CONFIG_PACKAGE_ucode-mod-$(strip $(1))
 
-define Package/ucode-mod-fs
+ define Package/ucode-mod-$(strip $(1))
   $(Package/ucode/default)
-  TITLE+= (filesystem module)
-  DEPENDS:=ucode
-endef
+  TITLE+= ($(strip $(1)) module)
+  DEPENDS:=+ucode $(3)
+ endef
 
-define Package/ucode-mod-fs/description
- The filesystem plugin module allows interaction with the local file system.
-endef
+ define Package/ucode-mod-$(strip $(1))/description
+ $(strip $(4))
+ endef
 
-
-define Package/ucode-mod-math
-  $(Package/ucode/default)
-  TITLE+= (math module)
-  DEPENDS:=ucode
-endef
-
-define Package/ucode-mod-math/description
- The math plugin provides access to various <math.h> procedures.
-endef
-
-
-define Package/ucode-mod-nl80211
-  $(Package/ucode/default)
-  TITLE+= (nl80211 module)
-  DEPENDS:=ucode +libnl-tiny +libubox
-endef
-
-define Package/ucode-mod-nl80211/description
- The nl80211 plugin provides access to the Linux wireless 802.11 netlink API.
-endef
-
-
-define Package/ucode-mod-resolv
-  $(Package/ucode/default)
-  TITLE+= (resolv module)
-  DEPENDS:=ucode
-endef
-
-define Package/ucode-mod-resolv/description
- The resolv plugin implements simple DNS resolving.
-endef
-
-
-define Package/ucode-mod-rtnl
-  $(Package/ucode/default)
-  TITLE+= (rtnl module)
-  DEPENDS:=ucode +libnl-tiny +libubox
-endef
-
-define Package/ucode-mod-rtnl/description
- The rtnl plugin provides access to the Linux routing netlink API.
-endef
-
-
-define Package/ucode-mod-struct
-  $(Package/ucode/default)
-  TITLE+= (struct module)
-  DEPENDS:=ucode
-endef
-
-define Package/ucode-mod-struct/description
- The struct plugin implements Python 3 compatible struct.pack/unpack functionality.
-endef
-
-
-define Package/ucode-mod-ubus
-  $(Package/ucode/default)
-  TITLE+= (ubus module)
-  DEPENDS:=ucode +libubus +libblobmsg-json
-endef
-
-define Package/ucode-mod-ubus/description
- The ubus module allows ucode template scripts to enumerate and invoke ubus
- procedures.
-endef
-
-
-define Package/ucode-mod-uci
-  $(Package/ucode/default)
-  TITLE+= (uci module)
-  DEPENDS:=ucode +libuci
-endef
-
-define Package/ucode-mod-uci/description
- The uci module allows templates to read and modify uci configuration.
-endef
-
-
-define Package/ucode-mod-uloop
-  $(Package/ucode/default)
-  TITLE+= (uloop module)
-  DEPENDS:=ucode +libubox
-endef
-
-define Package/ucode-mod-uloop/description
- The uloop module allows ucode scripts to interact with OpenWrt uloop event
- loop implementation.
+ define Package/ucode-mod-$(strip $(1))/install
+	$(INSTALL_DIR) $$(1)/usr/lib/ucode
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/$(strip $(1)).so $$(1)/usr/lib/ucode/
+ endef
 endef
 
 
@@ -189,60 +129,55 @@ define Package/libucode/install
 	$(CP) $(PKG_INSTALL_DIR)/usr/lib/libucode.so.* $(1)/usr/lib/
 endef
 
-define Package/ucode-mod-fs/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/fs.so $(1)/usr/lib/ucode/
-endef
 
-define Package/ucode-mod-math/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/math.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	debug, DEBUG_SUPPORT, +libubox +libucode, \
+	The debug plugin module provides runtime debugging and introspection facilities.))
 
-define Package/ucode-mod-nl80211/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/nl80211.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	fs, FS_SUPPORT, , \
+	The filesystem plugin module allows interaction with the local file system.))
 
-define Package/ucode-mod-resolv/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/resolv.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	log, LOG_SUPPORT, +libubox, \
+	The log plugin module provides access to the syslog and libubox ulog APIs.))
 
-define Package/ucode-mod-rtnl/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/rtnl.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	math, MATH_SUPPORT, , \
+	The math plugin provides access to various <math.h> procedures.))
 
-define Package/ucode-mod-struct/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/struct.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	nl80211, NL80211_SUPPORT, +libnl-tiny +libubox, \
+	The nl80211 plugin provides access to the Linux wireless 802.11 netlink API.))
 
-define Package/ucode-mod-ubus/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/ubus.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	resolv, RESOLV_SUPPORT, , \
+	The resolv plugin implements simple DNS resolving.))
 
-define Package/ucode-mod-uci/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/uci.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	rtnl, RTNL_SUPPORT, +libnl-tiny +libubox, \
+	The rtnl plugin provides access to the Linux routing netlink API.))
 
-define Package/ucode-mod-uloop/install
-	$(INSTALL_DIR) $(1)/usr/lib/ucode
-	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/ucode/uloop.so $(1)/usr/lib/ucode/
-endef
+$(eval $(call UcodeModule, \
+	struct, STRUCT_SUPPORT, , \
+	The struct plugin implements Python 3 compatible struct.pack/unpack functionality.))
+
+$(eval $(call UcodeModule, \
+	ubus, UBUS_SUPPORT, +libubus +libblobmsg-json, \
+	The ubus module allows ucode template scripts to enumerate and invoke ubus procedures.))
+
+$(eval $(call UcodeModule, \
+	uci, UCI_SUPPORT, +libuci, \
+	The uci module allows templates to read and modify uci configuration.))
+
+$(eval $(call UcodeModule, \
+	uloop, ULOOP_SUPPORT, +libubox, \
+	The uloop module allows ucode scripts to interact with OpenWrt uloop event loop implementation.))
 
 $(eval $(call BuildPackage,libucode))
 $(eval $(call BuildPackage,ucode))
-$(eval $(call BuildPackage,ucode-mod-fs))
-$(eval $(call BuildPackage,ucode-mod-math))
-$(eval $(call BuildPackage,ucode-mod-nl80211))
-$(eval $(call BuildPackage,ucode-mod-resolv))
-$(eval $(call BuildPackage,ucode-mod-rtnl))
-$(eval $(call BuildPackage,ucode-mod-struct))
-$(eval $(call BuildPackage,ucode-mod-ubus))
-$(eval $(call BuildPackage,ucode-mod-uci))
-$(eval $(call BuildPackage,ucode-mod-uloop))
+
+$(foreach mod,$(UCODE_MODULES), \
+	$(eval $(call BuildPackage,$(mod))))
+
 $(eval $(call HostBuild))

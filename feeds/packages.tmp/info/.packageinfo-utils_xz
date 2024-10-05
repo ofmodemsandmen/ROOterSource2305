@@ -3,7 +3,7 @@ Source-Makefile: feeds/packages/utils/xz/Makefile
 Package: xz-utils
 Menu: 1
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Category: Utilities
 Repository: base
 Title: XZ Utils (meta)
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description: XZ Utils (meta)
 https://tukaani.org/xz
@@ -24,7 +25,7 @@ https://tukaani.org/xz
 
 Package: liblzma
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc +libpthread
 Conflicts: 
 Menu-Depends: 
@@ -34,9 +35,10 @@ Category: Libraries
 Repository: base
 Title: liblzma library from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description: liblzma library from XZ Utils
 https://tukaani.org/xz
@@ -45,7 +47,7 @@ https://tukaani.org/xz
 
 Package: lzmadec
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -55,9 +57,10 @@ Category: Utilities
 Repository: base
 Title: lzmadec utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: lzmadec 
 https://tukaani.org/xz
@@ -66,7 +69,7 @@ https://tukaani.org/xz
 
 Package: lzmainfo
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -76,9 +79,10 @@ Category: Utilities
 Repository: base
 Title: lzmainfo utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: lzmainfo 
 https://tukaani.org/xz
@@ -87,7 +91,7 @@ https://tukaani.org/xz
 
 Package: xz
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -97,9 +101,10 @@ Category: Utilities
 Repository: base
 Title: xz utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xz  lzcat lzma unlzma unxz xzcat
 https://tukaani.org/xz
@@ -108,7 +113,7 @@ https://tukaani.org/xz
 
 Package: xzdec
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +liblzma
 Conflicts: 
 Menu-Depends: 
@@ -118,9 +123,10 @@ Category: Utilities
 Repository: base
 Title: xzdec utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xzdec 
 https://tukaani.org/xz
@@ -129,7 +135,7 @@ https://tukaani.org/xz
 
 Package: xzdiff
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -139,9 +145,10 @@ Category: Utilities
 Repository: base
 Title: xzdiff utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xzdiff  lzcmp lzdiff xzcmp
 https://tukaani.org/xz
@@ -150,7 +157,7 @@ https://tukaani.org/xz
 
 Package: xzgrep
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -160,9 +167,10 @@ Category: Utilities
 Repository: base
 Title: xzgrep utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xzgrep  lzegrep lzfgrep lzgrep xzegrep xzfgrep
 https://tukaani.org/xz
@@ -171,7 +179,7 @@ https://tukaani.org/xz
 
 Package: xzless
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -181,9 +189,10 @@ Category: Utilities
 Repository: base
 Title: xzless utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xzless  lzless
 https://tukaani.org/xz
@@ -192,7 +201,7 @@ https://tukaani.org/xz
 
 Package: xzmore
 Submenu: Compression
-Version: 5.4.2-1
+Version: 5.4.6-1
 Depends: +libc xz-utils +xz
 Conflicts: 
 Menu-Depends: 
@@ -202,9 +211,10 @@ Category: Utilities
 Repository: base
 Title: xzmore utility from XZ Utils
 Maintainer: 
-Source: xz-5.4.2.tar.bz2
+Source: xz-5.4.6.tar.bz2
 License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tukaani:xz
 Type: ipkg
 Description:    Contains: xzmore  lzmore
 https://tukaani.org/xz

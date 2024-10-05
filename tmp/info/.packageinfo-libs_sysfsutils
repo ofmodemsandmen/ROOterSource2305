@@ -15,6 +15,8 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: sysfsutils-2.1.0.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING cmd/GPL lib/LGPL
+CPE-ID: cpe:/a:sysfsutils_project:sysfsutils
+ABI-Version: 2
 Type: ipkg
 Description: The library's purpose is to provide a consistant and stable interface for
 querying system device information exposed through sysfs.
@@ -37,6 +39,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: sysfsutils-2.1.0.tar.gz
 License: LGPL-2.1
 LicenseFiles: COPYING cmd/GPL lib/LGPL
+CPE-ID: cpe:/a:sysfsutils_project:sysfsutils
 Type: ipkg
 Description: A utility built upon libsysfs that lists devices by bus, class, and topology.
 http://linux-diag.sourceforge.net/Sysfsutils.html

@@ -13,6 +13,7 @@ Title: NDP Library
 Maintainer: Thomas Guyot-Sionnest <tguyot@gmail.com>
 Source: libndp-1.7.tar.gz
 License: LGPL-2.1
+CPE-ID: cpe:/a:libndp:libndp
 Type: ipkg
 Description:     Library for Neighbor Discovery Protocol
 https://github.com/jpirko/libndp/
@@ -32,6 +33,7 @@ Title: NDP Tool
 Maintainer: Thomas Guyot-Sionnest <tguyot@gmail.com>
 Source: libndp-1.7.tar.gz
 License: LGPL-2.1
+CPE-ID: cpe:/a:libndp:libndp
 Type: ipkg
 Description:     Tool for Neighbor Discovery Protocol
 https://github.com/jpirko/libndp/

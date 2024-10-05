@@ -17,6 +17,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -43,6 +44,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -69,6 +71,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -95,6 +98,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -121,6 +125,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -148,6 +153,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -176,6 +182,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -202,6 +209,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -229,6 +237,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -254,6 +263,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -280,6 +290,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -306,6 +317,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -332,6 +344,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -357,6 +370,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -382,6 +396,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -407,6 +422,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution
@@ -435,6 +451,7 @@ Maintainer: Arnaud Sautaux <arnaud.sautaux@infoteam.ch>
 Source: otp_src_24.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:erlang:erlang
 Type: ipkg
 Description:  Erlang/OTP is a general-purpose programming language and runtime
  environment. Erlang has built-in support for concurrency, distribution

@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/sms-tool/Makefile
 
 Package: sms-tool
-Version: 2022-03-21-f07699ab5189656f595ffa75872c8938bf4b40ac-1
+Version: 2023-09-21-1b6ca03284fd65db8799dbf7c6224210093786b0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: SMS tool for 3G/4G modems
 Maintainer: Andrey Butirsky <butirsky@gmail.com>
-Source: sms-tool-2022-03-21-f07699ab5189656f595ffa75872c8938bf4b40ac.tar.xz
+Source: sms-tool-2023-09-21-1b6ca03284fd65db8799dbf7c6224210093786b0.tar.xz
 License: Apache-2.0
 LicenseFiles: LICENSE-2.0.txt
 Type: ipkg

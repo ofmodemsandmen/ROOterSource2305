@@ -1,7 +1,7 @@
 Source-Makefile: package/network/utils/iwinfo/Makefile
 
 Package: libiwinfo
-Version: 2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da-1
+Version: 2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922-1
 Depends: +libc +libnl-tiny +libuci +libubus +libiwinfo-data
 Conflicts: 
 Menu-Depends: 
@@ -11,8 +11,9 @@ Category: Libraries
 Repository: base
 Title: Generalized Wireless Information Library (iwinfo)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da.tar.xz
+Source: libiwinfo-2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922.tar.xz
 License: GPL-2.0
+ABI-Version: 20230701
 Type: ipkg
 Description:   Wireless information library with simplified API for nl80211
   and wext driver interfaces.
@@ -21,7 +22,7 @@ Jo-Philipp Wich <jo@mein.io>
 
 Package: libiwinfo-lua
 Submenu: Lua
-Version: 2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da-1
+Version: 2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922-1
 Depends: +libc +libiwinfo +liblua
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +32,7 @@ Category: Languages
 Repository: base
 Title: libiwinfo Lua binding
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da.tar.xz
+Source: libiwinfo-2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   This is the Lua binding for the iwinfo library. It provides access to all enabled
@@ -40,7 +41,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: libiwinfo-data
-Version: 2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da-1
+Version: 2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -50,7 +51,7 @@ Category: Extra packages
 Repository: base
 Title: libiwinfo Lua binding
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da.tar.xz
+Source: libiwinfo-2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922.tar.xz
 License: GPL-2.0
 Type: ipkg
 Hidden: 1
@@ -59,7 +60,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: iwinfo
-Version: 2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da-1
+Version: 2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922-1
 Depends: +libc +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -69,7 +70,7 @@ Category: Utilities
 Repository: base
 Title: Generalized Wireless Information utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: libiwinfo-2023-05-17-c9f5c3f7b50d146f18be1458ab5591defc0af6da.tar.xz
+Source: libiwinfo-2023-07-01-ca79f64154b107f192ec3c1ba631816cb8b07922.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description:   Command line frontend for the wireless information library.

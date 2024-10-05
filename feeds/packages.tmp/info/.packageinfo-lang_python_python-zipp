@@ -3,8 +3,8 @@ Build-Depends: python-setuptools-scm/host
 
 Package: python3-zipp
 Submenu: Python
-Version: 3.4.1-2
-Depends: +libc +python3-light
+Version: 3.16.2-1
+Depends: +libc +python3-light +python3-urllib
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: base
 Title: Zipfile object wrapper
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: zipp-3.4.1.tar.gz
+Source: zipp-3.16.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -24,7 +24,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-zipp-src
 Submenu: Python
-Version: 3.4.1-2
+Version: 3.16.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -34,7 +34,7 @@ Category: Languages
 Repository: base
 Title: Zipfile object wrapper (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: zipp-3.4.1.tar.gz
+Source: zipp-3.16.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

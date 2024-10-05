@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/devel/delve/Makefile
 Build-Depends: golang/host
 
 Package: delve
-Version: 1.20.1-1
+Version: 1.23.0-1
 Depends: +libc @(aarch64||i386||x86_64)
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Development
 Repository: base
 Title: Debugger for the Go programming language
 Maintainer: Niels Widger <niels@qacafe.com>
-Source: delve-1.20.1.tar.gz
+Source: delve-1.23.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

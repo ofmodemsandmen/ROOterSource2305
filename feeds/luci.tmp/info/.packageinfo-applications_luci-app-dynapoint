@@ -361,6 +361,26 @@ Description:     Translation for luci-app-dynapoint - 한국어 (Korean)
 Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
 @@
 
+Package: luci-i18n-dynapoint-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-dynapoint
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-dynapoint - lt translation
+Maintainer: Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-dynapoint - Lietuvių (Lithuanian)
+Tobias Ilte <tobias.ilte@campus.tu-berlin.de>
+@@
+
 Package: luci-i18n-dynapoint-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

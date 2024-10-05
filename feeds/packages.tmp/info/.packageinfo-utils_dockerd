@@ -3,7 +3,7 @@ Build-Depends: golang/host
 
 Package: dockerd
 Menu: 1
-Version: 24.0.2-1
+Version: 27.1.1-1
 Depends: +libc @(aarch64||arm||i386||i686||mips||mips64||mips64el||mipsel||powerpc64||riscv64||x86_64) +ca-certificates +containerd +iptables +iptables-mod-extra +IPV6:ip6tables +IPV6:kmod-ipt-nat6 +KERNEL_SECCOMP:libseccomp +kmod-ipt-nat +kmod-ipt-physdev +kmod-nf-ipvs +kmod-veth +tini +uci-firewall @!(mips||mipsel)
 Conflicts: 
 Menu-Depends: 
@@ -14,7 +14,7 @@ Repository: base
 Title: Docker Community Edition Daemon
 Maintainer: Gerard Ryan <G.M0N3Y.2503@gmail.com>
 Require-User: docker:docker
-Source: dockerd-24.0.2.tar.gz
+Source: dockerd-27.1.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg

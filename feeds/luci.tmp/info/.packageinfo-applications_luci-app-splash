@@ -343,6 +343,25 @@ Description:     Translation for luci-app-splash - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-splash-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-splash
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-splash - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-splash - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-splash-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

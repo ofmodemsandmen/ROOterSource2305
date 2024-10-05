@@ -15,6 +15,7 @@ Maintainer: Rosen Penev <rosenp@gmail.com>
 Source: usbmuxd-1.1.1.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING.GPLv2
+CPE-ID: cpe:/a:libimobiledevice:usbmuxd
 Type: ipkg
 Description:   This daemon is in charge of multiplexing connections over USB to an iPhone or
   iPod touch. To users, it means you can sync your music, contacts, photos, etc.

@@ -21,4 +21,24 @@ https://github.com/openwrt/luci
 OpenWrt LuCI community
 @@
 
+Package: luci-i18n-snmpd-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-snmpd
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-snmpd - lt translation
+Maintainer: Karl Palsson <karlp@etactica.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-snmpd - Lietuvių (Lithuanian)
+Karl Palsson <karlp@etactica.com>
+@@
+
 

@@ -1,9 +1,10 @@
 Source-Makefile: feeds/packages/multimedia/tvheadend/Makefile
+Build-Depends: gettext-full/host
 
 Package: tvheadend
 Menu: 1
-Version: 2022-11-20-3
-Depends: +libc +librt +libffi +libopenssl +BUILD_NLS:libiconv-full +zlib +TVHEADEND_AVAHI_SUPPORT:libavahi-client +TVHEADEND_REGEX_PCRE:libpcre +TVHEADEND_REGEX_PCRE2:libpcre2 +BUILD_PATENTED&&TVHEADEND_CSA:libdvbcsa
+Version: 2023-06-05-2
+Depends: +libc +librt +libffi +libopenssl +BUILD_NLS:libiconv-full +zlib +TVHEADEND_AVAHI_SUPPORT:libavahi-client +TVHEADEND_REGEX_PCRE2:libpcre2 +BUILD_PATENTED&&TVHEADEND_CSA:libdvbcsa
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,7 +14,7 @@ Repository: base
 Title: TV streaming server
 Maintainer: Marius Dinu <m95d+git@psihoexpert.ro>
 Require-User: tvheadend:dvb
-Source: tvheadend-2022-11-20.tar.xz
+Source: tvheadend-2023-06-05.tar.xz
 License: GPL-3.0
 LicenseFiles: LICENSE.md
 Type: ipkg

@@ -15,6 +15,7 @@ Maintainer: Nikil Mehta <nikil.mehta@gmail.com>
 Source: bitlbee-3.6.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:bitlbee:bitlbee
 Type: ipkg
 Description: 	This program can be used as an IRC server which forwards everything you
 	say to people on other chat networks: Jabber (which includes Google Talk

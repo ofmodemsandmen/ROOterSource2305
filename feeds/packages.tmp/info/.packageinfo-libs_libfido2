@@ -14,6 +14,7 @@ Maintainer: Linos Giannopoulos <linosgian00+openwrt@gmail.com>
 Source: libfido2-1.12.0.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+ABI-Version: 1
 Type: ipkg
 Description:  libfido2 provides library functionality and command-line tools to communicate with a FIDO device over USB, and to verify attestation and assertion signatures.
 

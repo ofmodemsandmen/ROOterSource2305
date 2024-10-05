@@ -15,6 +15,7 @@ Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
 Source: tar-1.34.tar.xz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:tar
 Type: ipkg
 Description: 	Tar is a program for packaging a set of files as a
 	single archive in tar format.

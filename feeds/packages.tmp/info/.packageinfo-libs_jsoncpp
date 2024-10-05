@@ -14,6 +14,7 @@ Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
 Source: jsoncpp-1.9.5.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:jsoncpp_project:jsoncpp
 Type: ipkg
 Description:   JsonCpp is a C++ library that allows manipulating
   JSON values, including serialization and

@@ -15,6 +15,7 @@ Maintainer:
 Source: miniupnpc-2.2.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:miniupnp_project:miniupnpc
 Type: ipkg
 Description: Lightweight UPnP client
 https://miniupnp.tuxfamily.org
@@ -35,6 +36,7 @@ Maintainer:
 Source: miniupnpc-2.2.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:miniupnp_project:miniupnpc
 Type: ipkg
 Description: Lightweight UPnP library
 https://miniupnp.tuxfamily.org

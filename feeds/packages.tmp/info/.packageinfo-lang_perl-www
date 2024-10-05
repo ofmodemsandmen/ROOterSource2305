@@ -15,6 +15,7 @@ Maintainer: Marcel Denia <naoir@gmx.net>
 Source: libwww-perl-6.43.tar.gz
 License: GPL-1.0-or-later Artistic-1.0-Perl
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:search.cpan:libwww-perl
 Type: ipkg
 Description: WWW client/server library for Perl (aka LWP)
 https://search.cpan.org/dist/libwww-perl/

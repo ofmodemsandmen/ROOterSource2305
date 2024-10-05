@@ -361,6 +361,26 @@ Description:     Translation for luci-app-vnstat2 - 한국어 (Korean)
 Jan Hoffmann <jan@3e8.eu>
 @@
 
+Package: luci-i18n-vnstat2-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-vnstat2
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-vnstat2 - lt translation
+Maintainer: Jan Hoffmann <jan@3e8.eu>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-vnstat2 - Lietuvių (Lithuanian)
+Jan Hoffmann <jan@3e8.eu>
+@@
+
 Package: luci-i18n-vnstat2-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

@@ -198,7 +198,7 @@ var cbiFlagTristate = form.ListValue.extend({
 			this.vallist[0] = sysdef ? _('automatic (enabled)') : _('automatic (disabled)');
 		}
 
-		return this.super('renderWidget', [section_id, option_index, cfgvalue]);
+		return this.super('renderWidget', [section_id, option_index, cfgvalue ? cfgvalue + '!' : null]);
 	}
 });
 
@@ -704,7 +704,7 @@ return baseclass.extend({
 		o = this.replaceOption(s, 'devadvanced', cbiFlagTristate, 'sendredirects', _('Send ICMP redirects'));
 		o.sysfs = '/proc/sys/net/ipv4/conf/%s/send_redirects'.format(devname || 'default');
 
-		o = this.replaceOption(s, 'devadvanced', cbiFlagTristate, 'arp_accept ', _('Honor gratuitous ARP'), _('When enabled, new ARP table entries are added from received gratuitous APR requests or replies, otherwise only preexisting table entries are updated, but no new hosts are learned.'));
+		o = this.replaceOption(s, 'devadvanced', cbiFlagTristate, 'arp_accept', _('Honor gratuitous ARP'), _('When enabled, new ARP table entries are added from received gratuitous APR requests or replies, otherwise only preexisting table entries are updated, but no new hosts are learned.'));
 		o.sysfs = '/proc/sys/net/ipv4/conf/%s/arp_accept'.format(devname || 'default');
 
 		o = this.replaceOption(s, 'devadvanced', cbiFlagTristate, 'drop_gratuitous_arp', _('Drop gratuitous ARP'), _('Drop all gratuitous ARP frames, for example if there’s a known good ARP proxy on the network and such frames need not be used or in the case of 802.11, must not be used to prevent attacks.'));
@@ -724,7 +724,6 @@ return baseclass.extend({
 
 		o = this.replaceOption(s, 'devgeneral', cbiFlagTristate, 'ipv6', _('Enable IPv6'));
 		o.sysfs = '!/proc/sys/net/ipv6/conf/%s/disable_ipv6'.format(devname || 'default');
-		o.migrate = false;
 
 		o = this.replaceOption(s, 'devadvanced', cbiFlagTristate, 'ip6segmentrouting', _('Enable IPv6 segment routing'));
 		o.sysfs = '/proc/sys/net/ipv6/conf/%s/seg6_enabled'.format(devname || 'default');
@@ -918,6 +917,15 @@ return baseclass.extend({
 
 				return this.redraw();
 			}, this));
+		};
+
+		ss.handleRemove = function(section_id) {
+			this.map.data.remove('network', section_id);
+			s.map.addedVLANs = (s.map.addedVLANs || []).filter(function(sid) {
+				return sid != section_id;
+			});
+
+			return this.redraw();
 		};
 
 		o = ss.option(form.Value, 'vlan', _('VLAN ID'));

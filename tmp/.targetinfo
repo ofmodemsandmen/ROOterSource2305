@@ -8,7 +8,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie ramdisk source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie ramdisk source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -58,7 +58,7 @@ Target-Features: dt fpu gpio pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -74,7 +74,7 @@ Target-Features: dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -215,7 +215,7 @@ Target-Features: boot-part dt ext4 fpu gpio pci pcie ramdisk rootfs-part squashf
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=464fp
 CPU-Type: 464fp
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -276,7 +276,7 @@ Target-Features: display dt gpio source-only usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=archs
 CPU-Type: archs
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -292,7 +292,7 @@ Target-Features: display dt ext4 gpio ramdisk source-only usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -matomic -mcpu=archs
 CPU-Type: archs
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arc
 Target-Description:
@@ -317,7 +317,7 @@ Target-Features: boot-part cpiogz dt ext4 fpu gpio pci pcie ramdisk rootfs-part 
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -333,7 +333,7 @@ Target-Features: boot-part cpiogz display dt ext4 fpu gpio pci pcie ramdisk root
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -342,7 +342,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe mkf2fs e2fsprogs blkid 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic EFI Boot
-Target-Profile-Packages:  kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x partx-utils kmod-wdt-sp805 kmod-mvneta kmod-mvpp2 kmod-fsl-dpaa1-net kmod-fsl-dpaa2-net kmod-fsl-enetc-net kmod-dwmac-imx kmod-fsl-fec kmod-thunderx-net kmod-dwmac-rockchip kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g kmod-atlantic 
+Target-Profile-Packages:  kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x partx-utils kmod-wdt-sp805 kmod-mvneta kmod-mvpp2 kmod-fsl-dpaa1-net kmod-fsl-dpaa2-net kmod-fsl-enetc-net kmod-dwmac-imx kmod-fsl-fec kmod-thunderx-net kmod-dwmac-rockchip kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g kmod-sfp kmod-atlantic kmod-bcmgenet kmod-octeontx2-net kmod-renesas-net-avb kmod-phy-realtek kmod-phy-smsc 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: 
 
@@ -365,7 +365,7 @@ Target-Features: arm_v7 boot-part cpiogz dt ext4 fpu gpio pci pcie ramdisk rootf
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -374,7 +374,7 @@ Target-Description:
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe mkf2fs e2fsprogs blkid 
 Target-Profile: DEVICE_generic
 Target-Profile-Name: Generic EFI Boot
-Target-Profile-Packages:  kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x partx-utils kmod-wdt-sp805 kmod-mvneta kmod-mvpp2 kmod-fsl-dpaa1-net kmod-fsl-dpaa2-net kmod-fsl-enetc-net kmod-dwmac-imx kmod-fsl-fec kmod-thunderx-net kmod-dwmac-rockchip kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g kmod-atlantic 
+Target-Profile-Packages:  kmod-amazon-ena kmod-e1000e kmod-vmxnet3 kmod-rtc-rx8025 kmod-i2c-mux-pca954x kmod-gpio-pca953x partx-utils kmod-wdt-sp805 kmod-mvneta kmod-mvpp2 kmod-fsl-dpaa1-net kmod-fsl-dpaa2-net kmod-fsl-enetc-net kmod-dwmac-imx kmod-fsl-fec kmod-thunderx-net kmod-dwmac-rockchip kmod-dwmac-sun8i kmod-phy-aquantia kmod-phy-broadcom kmod-phy-marvell kmod-phy-marvell-10g kmod-sfp kmod-atlantic kmod-bcmgenet kmod-octeontx2-net kmod-renesas-net-avb kmod-phy-realtek kmod-phy-smsc 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: 
 
@@ -399,7 +399,7 @@ Target-Features: ext4 gpio squashfs targz ubifs usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -415,7 +415,7 @@ Target-Features: arm_v7 dt ext4 fpu gpio pcmcia rtc squashfs targz ubifs usbgadg
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -448,7 +448,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rtc squashfs targz ubifs usb us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a5+vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -577,7 +577,7 @@ Target-Features: dt ext4 gpio rtc squashfs targz ubifs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -916,7 +916,7 @@ Target-Features: gpio low_mem pci small_flash source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -940,7 +940,7 @@ Target-Features: gpio low_mem pci small_flash source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1062,7 +1062,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -1078,7 +1078,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -3049,6 +3049,22 @@ Target-Profile-SupportedDevices: hiwifi,hc6361
 
 Target-Profile-Description:
 Build firmware images for HiWiFi HC6361
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_huawei_ap5030dn
+Target-Profile-Name: Huawei AP5030DN
+Target-Profile-Packages: ath10k-firmware-qca988x-ct kmod-ath10k-ct 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: huawei,ap5030dn
+
+
+Target-Profile-Description:
+Build firmware images for Huawei AP5030DN
 
 
 
@@ -6515,6 +6531,23 @@ Build firmware images for Ubiquiti Bullet AC
 @@
 
 Target-Profile: DEVICE_ubnt_bullet-m-xw
+Target-Profile-Name: Ubiquiti Rocket M XW (Ubiquiti Bullet M XW)
+Target-Profile-Packages: kmod-usb2 rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,bullet-m-xw bullet-m-xw
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti Bullet M XW
+Alternative device titles:
+- Ubiquiti Rocket M XW
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_bullet-m-xw
 Target-Profile-Name: Ubiquiti Bullet M XW
 Target-Profile-Packages: kmod-usb2 rssileds 
 Target-Profile-hasImageMetadata: 1
@@ -6523,7 +6556,8 @@ Target-Profile-SupportedDevices: ubnt,bullet-m-xw bullet-m-xw
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti Bullet M XW
-
+Alternative device titles:
+- Ubiquiti Rocket M XW
 
 
 
@@ -6786,6 +6820,22 @@ Build firmware images for Ubiquiti PowerBeam M5 XW
 
 @@
 
+Target-Profile: DEVICE_ubnt_powerbridge-m
+Target-Profile-Name: Ubiquiti PowerBridge M XM
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,powerbridge-m bullet-m
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti PowerBridge M XM
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_ubnt_rocket-5ac-lite
 Target-Profile-Name: Ubiquiti Rocket 5AC Lite
 Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct 
@@ -6795,6 +6845,22 @@ Target-Profile-SupportedDevices: ubnt,rocket-5ac-lite
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti Rocket 5AC Lite
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_rocket-m
+Target-Profile-Name: Ubiquiti Rocket M XM
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,rocket-m rocket-m
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti Rocket M XM
 
 
 
@@ -6827,6 +6893,22 @@ Target-Profile-SupportedDevices: ubnt,routerstation-pro
 
 Target-Profile-Description:
 Build firmware images for Ubiquiti RouterStation Pro
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_uk-ultra
+Target-Profile-Name: Ubiquiti UniFi Swiss Army Knife Ultra
+Target-Profile-Packages: kmod-ath10k-ct ath10k-firmware-qca988x-ct rssileds -swconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,uk-ultra
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi Swiss Army Knife Ultra
 
 
 
@@ -6987,7 +7069,7 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -7068,6 +7150,22 @@ Target-Profile-SupportedDevices: mikrotik,routerboard-922uags-5hpacd rb-922uags-
 
 Target-Profile-Description:
 Build firmware images for MikroTik RouterBOARD 922UAGS-5HPacD
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mikrotik_routerboard-951g-2hnd
+Target-Profile-Name: MikroTik RouterBOARD 951G-2HnD
+Target-Profile-Packages:  kmod-usb-ohci kmod-usb2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mikrotik,routerboard-951g-2hnd rb-951g-2hnd
+
+
+Target-Profile-Description:
+Build firmware images for MikroTik RouterBOARD 951G-2HnD
 
 
 
@@ -7276,7 +7374,7 @@ Target-Features: dt gpio mips16 nand pci ramdisk squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -7827,7 +7925,7 @@ Target-Features: dt gpio low_mem mips16 pci ramdisk small_flash squashfs usb usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -8926,38 +9024,6 @@ Build firmware images for Ubiquiti Nanostation Loco M XM
 
 @@
 
-Target-Profile: DEVICE_ubnt_powerbridge-m
-Target-Profile-Name: Ubiquiti PowerBridge M XM
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: ubnt,powerbridge-m bullet-m
-
-
-Target-Profile-Description:
-Build firmware images for Ubiquiti PowerBridge M XM
-
-
-
-
-
-@@
-
-Target-Profile: DEVICE_ubnt_rocket-m
-Target-Profile-Name: Ubiquiti Rocket M XM
-Target-Profile-Packages: kmod-usb2 kmod-usb-ohci rssileds 
-Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: ubnt,rocket-m rocket-m
-
-
-Target-Profile-Description:
-Build firmware images for Ubiquiti Rocket M XM
-
-
-
-
-
-@@
-
 
 Source-Makefile: target/linux/bcm27xx/Makefile
 Target: bcm27xx
@@ -8969,7 +9035,7 @@ Target-Features: audio boot-part display ext4 fpu gpio rootfs-part rtc squashfs 
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -8982,11 +9048,11 @@ Target-Board: bcm27xx
 Target-Name: BCM2708 boards (32 bit)
 Target-Arch: arm
 Target-Arch-Packages: arm_arm1176jzf-s_vfp
-Target-Features: audio boot-part display dt ext4 fpu gpio rootfs-part rtc squashfs usb usbgadget
+Target-Features: arm_v6 audio boot-part display dt ext4 fpu gpio rootfs-part rtc squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm1176jzf-s+vfp
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -9019,7 +9085,7 @@ Target-Features: arm_v7 audio boot-part display dt ext4 fpu gpio pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -9087,7 +9153,7 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci rootfs-part rtc sq
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -9138,7 +9204,7 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -9173,7 +9239,7 @@ Target-Features: gpio pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -9189,7 +9255,7 @@ Target-Features: gpio pci pcmcia squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -9456,7 +9522,7 @@ Target-Features: gpio mips16 pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -10384,7 +10450,7 @@ Target-Features: gpio low_mem pci pcmcia small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -10968,7 +11034,7 @@ Target-Features: dt gpio nand squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -10984,7 +11050,7 @@ Target-Features: dt gpio nand squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -11050,7 +11116,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -11075,7 +11141,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie pwm squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -11089,6 +11155,22 @@ Target-Profile-Description:
 	Package set compatible with any hardware using Broadcom BCM47xx or
 	BCM535x SoCs with an ARM CPU like the BCM4707, BCM4708, BCM4709,
 	BCM53010
+@@
+
+Target-Profile: DEVICE_asus_rt-ac3100
+Target-Profile-Name: ASUS RT-AC3100
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366b1-pcie wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: asus,rt-ac3100
+
+
+Target-Profile-Description:
+Build firmware images for ASUS RT-AC3100
+
+
+
+
+
 @@
 
 Target-Profile: DEVICE_asus_rt-ac56u
@@ -11540,6 +11622,40 @@ Build firmware images for SmartRG SR400ac
 @@
 
 Target-Profile: DEVICE_phicomm_k3
+Target-Profile-Name: Wavlink QUANTUM DAX (PHICOMM K3)
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: phicomm,k3
+
+
+Target-Profile-Description:
+Build firmware images for PHICOMM K3
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
+
+
+
+@@
+
+Target-Profile: DEVICE_phicomm_k3
+Target-Profile-Name: Wavlink WL-WN538A8 (PHICOMM K3)
+Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
+Target-Profile-hasImageMetadata: 0
+Target-Profile-SupportedDevices: phicomm,k3
+
+
+Target-Profile-Description:
+Build firmware images for PHICOMM K3
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
+
+
+
+@@
+
+Target-Profile: DEVICE_phicomm_k3
 Target-Profile-Name: PHICOMM K3
 Target-Profile-Packages: wpad-basic-mbedtls kmod-brcmfmac brcmfmac-firmware-4366c0-pcie kmod-usb-ohci kmod-usb2 kmod-phy-bcm-ns-usb2 kmod-usb-ledtrig-usbport kmod-usb3 kmod-phy-bcm-ns-usb3 iwinfo
 Target-Profile-hasImageMetadata: 0
@@ -11548,8 +11664,9 @@ Target-Profile-SupportedDevices: phicomm,k3
 
 Target-Profile-Description:
 Build firmware images for PHICOMM K3
-
-
+Alternative device titles:
+- Wavlink QUANTUM DAX
+- Wavlink WL-WN538A8
 
 
 
@@ -11582,7 +11699,7 @@ Target-Features: atm dt gpio pci pcie pcmcia squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -11608,7 +11725,7 @@ Target-Features: atm dt gpio pci pcie pcmcia squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -13346,7 +13463,7 @@ Target-Features: atm dt gpio nand pci pcie pcmcia squashfs usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15209,7 +15326,7 @@ Target-Features: gpio squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15234,7 +15351,7 @@ Target-Features: dt gpio pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15274,7 +15391,7 @@ Target-Features: dt gpio nand pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15378,7 +15495,7 @@ Target-Features: dt gpio low_mem pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15418,7 +15535,7 @@ Target-Features: dt gpio nand pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15474,7 +15591,7 @@ Target-Features: dt gpio nand pci squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15626,7 +15743,7 @@ Target-Features: dt gpio nand pci pcie squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -15732,7 +15849,7 @@ Target-Features: boot-part display dt ext4 gpio pci rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: fa526
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15748,7 +15865,7 @@ Target-Features: boot-part display dt ext4 gpio pci rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: fa526
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15846,7 +15963,7 @@ Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pcie rootfs-par
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15870,7 +15987,7 @@ Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pcie rootfs-par
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -15910,7 +16027,7 @@ Target-Features: arm_v7 audio boot-part display dt fpu gpio nand pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+neon
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -16016,7 +16133,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -16032,7 +16149,7 @@ Target-Features: arm_v7 dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -16398,6 +16515,40 @@ Build firmware images for Edgecore ECW5211
 
 @@
 
+Target-Profile: DEVICE_engenius_eap1300
+Target-Profile-Name: EnGenius EAP1300EXT (EnGenius EAP1300)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,eap1300
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius EAP1300
+Alternative device titles:
+- EnGenius EAP1300EXT
+
+
+
+
+@@
+
+Target-Profile: DEVICE_engenius_eap1300
+Target-Profile-Name: EnGenius EAP1300
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: engenius,eap1300
+
+
+Target-Profile-Description:
+Build firmware images for EnGenius EAP1300
+Alternative device titles:
+- EnGenius EAP1300EXT
+
+
+
+
+@@
+
 Target-Profile: DEVICE_extreme-networks_ws-ap3915i
 Target-Profile-Name: Extreme Networks WS-AP3915i
 Target-Profile-Packages:  
@@ -16592,11 +16743,11 @@ Build firmware images for Luma Home WRTQ-329ACN
 
 Target-Profile: DEVICE_meraki_mr33
 Target-Profile-Name: Cisco Meraki MR33
-Target-Profile-Packages: -swconfig ath10k-firmware-qca9887-ct 
+Target-Profile-Packages: ath10k-firmware-qca9887-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr33
 
-Target-Profile-Default: n
+
 Target-Profile-Description:
 Build firmware images for Cisco Meraki MR33
 
@@ -16608,11 +16759,11 @@ Build firmware images for Cisco Meraki MR33
 
 Target-Profile: DEVICE_meraki_mr74
 Target-Profile-Name: Cisco Meraki MR74
-Target-Profile-Packages: -swconfig ath10k-firmware-qca9887-ct 
+Target-Profile-Packages: ath10k-firmware-qca9887-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: meraki,mr74
 
-Target-Profile-Default: n
+
 Target-Profile-Description:
 Build firmware images for Cisco Meraki MR74
 
@@ -16942,6 +17093,22 @@ Build firmware images for Sony NCP-HG100/Cellular
 
 @@
 
+Target-Profile: DEVICE_teltonika_rutx50
+Target-Profile-Name: Teltonika RUTX50
+Target-Profile-Packages: ipq-wifi-teltonika_rutx kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: teltonika,rutx50
+
+
+Target-Profile-Description:
+Build firmware images for Teltonika RUTX50
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_wallys_dr40x9
 Target-Profile-Name: Wallys DR40X9
 Target-Profile-Packages: ipq-wifi-wallys_dr40x9 
@@ -16990,9 +17157,57 @@ Build firmware images for ZTE MF286D
 
 @@
 
+Target-Profile: DEVICE_zte_mf287plus
+Target-Profile-Name: ZTE MF287Plus
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287plus 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287plus
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287Plus
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf287
+Target-Profile-Name: ZTE MF287
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zte_mf287pro
+Target-Profile-Name: ZTE MF287Pro
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf287plus 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zte,mf287pro
+
+
+Target-Profile-Description:
+Build firmware images for ZTE MF287Pro
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zte_mf289f
 Target-Profile-Name: ZTE MF289F
-Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ath10k-firmware-qca9984-ct 
+Target-Profile-Packages: kmod-usb-net-qmi-wwan kmod-usb-serial-option uqmi ipq-wifi-zte_mf289f ath10k-firmware-qca9984-ct 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: zte,mf289f
 
@@ -17031,7 +17246,7 @@ Target-Features: arm_v7 boot-part dt emmc fpu gpio nand pci pcie ramdisk rootfs-
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17063,7 +17278,7 @@ Target-Features: arm_v7 dt fpu gpio minor nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17243,7 +17458,7 @@ Target-Features: arm_v7 dt fpu gpio pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17259,7 +17474,7 @@ Target-Features: arm_v7 dt fpu gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17725,7 +17940,7 @@ Target-Features: arm_v7 boot-part dt emmc fpu gpio pci pcie ramdisk rootfs-part 
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a15+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -17775,7 +17990,7 @@ Target-Features: dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -17791,7 +18006,7 @@ Target-Features: dt emmc fpu gpio nand pci pcie ramdisk rtc squashfs usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -17880,7 +18095,7 @@ Build firmware images for Netgear WAX218
 
 Target-Profile: DEVICE_prpl_haze
 Target-Profile-Name: prpl Foundation Haze
-Target-Profile-Packages:  ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci 
+Target-Profile-Packages:  ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci mkf2fs f2fsck kmod-fs-f2fs kmod-leds-lp5562 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: prpl,haze
 
@@ -17985,7 +18200,7 @@ Target-Features: dt gpio nand pci ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -18001,7 +18216,7 @@ Target-Features: dt gpio nand pci ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -18405,7 +18620,7 @@ Target-Features: dt gpio mips16 squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -18417,11 +18632,11 @@ Target-Board: lantiq
 Target-Name: XRX200
 Target-Arch: mips
 Target-Arch-Packages: mips_24kc
-Target-Features: atm dt gpio mips16 nand pci pcie ramdisk source-only squashfs usb
+Target-Features: atm dt gpio mips16 nand pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -18986,7 +19201,7 @@ Target-Features: atm dt gpio mips16 nand pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -19610,7 +19825,7 @@ Target-Features: atm dt gpio mips16 pci ramdisk small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -19785,7 +20000,7 @@ Target-Features: dt gpio mips16 nand source-only squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20001,7 +20216,7 @@ Target-Features: atm dt gpio mips16 small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20059,7 +20274,7 @@ Target-Features: boot-part ext4 fpu gpio nand pcie rootfs-part squashfs ubifs us
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -20075,7 +20290,7 @@ Target-Features: boot-part display dt ext4 fpu gpio nand pci pcie rootfs-part rt
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -20338,15 +20553,15 @@ Build firmware images for NXP LX2160A-RDB Rev2.0 silicon SD Card Boot
 
 @@
 
-Target-Profile: DEVICE_traverse_ls1043
-Target-Profile-Name: Traverse LS1043 Boards
-Target-Profile-Packages:  layerscape-fman uboot-envtools kmod-i2c-mux-pca954x kmod-hwmon-core kmod-gpio-pca953x kmod-input-gpio-keys-polled kmod-rtc-isl1208 
+Target-Profile: DEVICE_traverse_ten64_mtd
+Target-Profile-Name: Traverse Ten64 (NAND boot)
+Target-Profile-Packages:  uboot-envtools kmod-rtc-rx8025 kmod-sfp kmod-i2c-mux-pca954x restool 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: traverse,ls1043s traverse,ls1043v
+Target-Profile-SupportedDevices: traverse,ten64
 
 
 Target-Profile-Description:
-Build images for Traverse LS1043 boards. This generates a single image capable of booting on any of the boards in this family.
+Generate images for booting from NAND/ubifs on Traverse Ten64 (LS1088A) family boards. For disk (NVMe/USB/SD) boot, use the armvirt target instead.
 
 
 
@@ -20363,7 +20578,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio nand pci pcie rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -20429,7 +20644,7 @@ Target-Features: cpiogz dt ext4 gpio pci ramdisk rtc squashfs targz usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -20445,7 +20660,7 @@ Target-Features: cpiogz dt ext4 gpio mips16 pci ramdisk rtc source-only squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20462,7 +20677,7 @@ Target-Features: cpiogz dt ext4 gpio mips16 pci ramdisk rtc squashfs targz usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20479,7 +20694,7 @@ Target-Features: cpiogz dt ext4 gpio pci ramdisk rtc source-only squashfs targz 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips64r2 -mtune=mips64r2 -mabi=64
 CPU-Type: mips64r2
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20496,7 +20711,7 @@ Target-Features: cpiogz dt ext4 gpio pci ramdisk rtc source-only squashfs targz 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips64r2 -mtune=mips64r2 -mabi=64
 CPU-Type: mips64r2
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -20515,7 +20730,7 @@ Target-Features: dt-overlay emmc fpu gpio nand pci pcie rootfs-part separate_ram
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -20531,7 +20746,7 @@ Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separ
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -20563,6 +20778,54 @@ Target-Profile-SupportedDevices: buffalo,wsr-2533dhp2
 
 Target-Profile-Description:
 Build firmware images for Buffalo WSR-2533DHP2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_buffalo_wsr-3200ax4s
+Target-Profile-Name: Buffalo WSR-3200AX4S
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: buffalo,wsr-3200ax4s
+
+
+Target-Profile-Description:
+Build firmware images for Buffalo WSR-3200AX4S
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_eagle-pro-ai-m32-a1
+Target-Profile-Name: D-Link EAGLE PRO AI M32 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,eagle-pro-ai-m32-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link EAGLE PRO AI M32 A1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_eagle-pro-ai-r32-a1
+Target-Profile-Name: D-Link EAGLE PRO AI R32 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,eagle-pro-ai-r32-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link EAGLE PRO AI R32 A1
 
 
 
@@ -20767,14 +21030,14 @@ Build firmware images for TOTOLINK A8000RU
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1
-Target-Profile-Name: Ubiquiti UniFi 6 LR v1
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v1
 Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1 ubnt,unifi-6-lr
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v1
+Build firmware images for Ubiquiti UniFi U6 Long-Range v1
 
 
 
@@ -20783,14 +21046,14 @@ Build firmware images for Ubiquiti UniFi 6 LR v1
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v1-ubootmod
-Target-Profile-Name: Ubiquiti UniFi 6 LR v1 U-Boot mod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v1 U-Boot mod
 Target-Profile-Packages: kmod-mt7915-firmware kmod-leds-ubnt-ledbar 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v1-ubootmod ubnt,unifi-6-lr-ubootmod
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
+Build firmware images for Ubiquiti UniFi U6 Long-Range v1 U-Boot mod
 
 
 
@@ -20799,14 +21062,14 @@ Build firmware images for Ubiquiti UniFi 6 LR v1 U-Boot mod
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2
-Target-Profile-Name: Ubiquiti UniFi 6 LR v2
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v2
 Target-Profile-Packages: kmod-mt7915-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v2
+Build firmware images for Ubiquiti UniFi U6 Long-Range v2
 
 
 
@@ -20815,14 +21078,46 @@ Build firmware images for Ubiquiti UniFi 6 LR v2
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lr-v2-ubootmod
-Target-Profile-Name: Ubiquiti UniFi 6 LR v2 U-Boot mod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v2 U-Boot mod
 Target-Profile-Packages: kmod-mt7915-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v2-ubootmod
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 LR v2 U-Boot mod
+Build firmware images for Ubiquiti UniFi U6 Long-Range v2 U-Boot mod
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v3
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v3
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v3
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6 Long-Range v3
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_ubnt_unifi-6-lr-v3-ubootmod
+Target-Profile-Name: Ubiquiti UniFi U6 Long-Range v3 U-Boot mod
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-lr-v3-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6 Long-Range v3 U-Boot mod
 
 
 
@@ -20873,7 +21168,7 @@ Target-Features: arm_v7 display dt dt-overlay emmc fpu gpio nand pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -20937,7 +21232,7 @@ Target-Features: arm_v7 dt gpio nand pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -20976,6 +21271,90 @@ Build firmware images for ipTIME A6004MX
 
 @@
 
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6400 v3 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6410 v2 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6470 (NETGEAR EX6250 v2)
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_netgear_ex6250-v2
+Target-Profile-Name: NETGEAR EX6250 v2
+Target-Profile-Packages: uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,ex6250-v2
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EX6250 v2
+Alternative device titles:
+- NETGEAR EX6400 v3
+- NETGEAR EX6410 v2
+- NETGEAR EX6470
+
+
+@@
+
+Target-Profile: DEVICE_tplink_eap225-v5
+Target-Profile-Name: TP-Link EAP225 v5
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,eap225-v5
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EAP225 v5
+
+
+
+
+
+@@
+
 Target: mediatek/filogic
 Target-Board: mediatek
 Target-Name: Filogic 8x0 (MT798x)
@@ -20985,13 +21364,125 @@ Target-Features: dt dt-overlay emmc fpu gpio nand pci pcie rootfs-part rtc separ
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
 	Build firmware images for MediaTek Filogic ARM based boards.
 @@
-Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-crypto-hw-safexcel kmod-mt7915e wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail kmod-phy-aquantia kmod-crypto-hw-safexcel kmod-mt7915e wpad-basic-mbedtls uboot-envtools dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe kmod-leds-gpio kmod-gpio-button-hotplug iwinfo
+Target-Profile: DEVICE_acelink_ew-7886cax
+Target-Profile-Name: Acelink EW-7886CAX
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: acelink,ew-7886cax
+
+
+Target-Profile-Description:
+Build firmware images for Acelink EW-7886CAX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_acer_predator-w6
+Target-Profile-Name: Acer Predator W6
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware kmod-mt7916-firmware mt7986-wo-firmware e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: acer,predator-w6
+
+
+Target-Profile-Description:
+Build firmware images for Acer Predator W6
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8612
+Target-Profile-Name: Adtran SDG-8612
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8612
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8612
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8614
+Target-Profile-Name: Adtran SDG-8614
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8614
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8614
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8622
+Target-Profile-Name: Adtran SDG-8622
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8622
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8622
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_smartrg_sdg-8632
+Target-Profile-Name: Adtran SDG-8632
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-hwmon-pwmfan kmod-mt7986-firmware mt7986-wo-firmware kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: smartrg,sdg-8632
+
+
+Target-Profile-Description:
+Build firmware images for Adtran SDG-8632
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_rt-ax59u
+Target-Profile-Name: ASUS RT-AX59U
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,rt-ax59u
+
+
+Target-Profile-Description:
+Build firmware images for ASUS RT-AX59U
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_asus_tuf-ax4200
 Target-Profile-Name: ASUS TUF-AX4200
 Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
@@ -21001,6 +21492,22 @@ Target-Profile-SupportedDevices: asus,tuf-ax4200
 
 Target-Profile-Description:
 Build firmware images for ASUS TUF-AX4200
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_asus_tuf-ax6000
+Target-Profile-Name: ASUS TUF-AX6000
+Target-Profile-Packages: kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: asus,tuf-ax6000
+
+
+Target-Profile-Description:
+Build firmware images for ASUS TUF-AX6000
 
 
 
@@ -21024,15 +21531,143 @@ Build firmware images for Bananapi BPi-R3
 
 @@
 
+Target-Profile: DEVICE_cetron_ct3003
+Target-Profile-Name: Cetron CT3003
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cetron,ct3003 mediatek,mt7981-spim-snand-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Cetron CT3003
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cmcc_rax3000m
+Target-Profile-Name: CMCC RAX3000M
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cmcc,rax3000m
+
+
+Target-Profile-Description:
+Build firmware images for CMCC RAX3000M
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comfast_cf-e393ax
+Target-Profile-Name: Comfast CF-E393AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-e393ax
+
+
+Target-Profile-Description:
+Build firmware images for Comfast CF-E393AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_confiabits_mt7981
+Target-Profile-Name: Confiabits MT7981
+Target-Profile-Packages: kmod-usb3 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: confiabits,mt7981 mediatek,mt7981-spim-snand-2500wan-gmac2-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Confiabits MT7981
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_m3000-v1
+Target-Profile-Name: Cudy M3000 v1
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,m3000-v1 R37
+
+
+Target-Profile-Description:
+Build firmware images for Cudy M3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_re3000-v1
+Target-Profile-Name: Cudy RE3000 v1
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,re3000-v1 R36
+
+
+Target-Profile-Description:
+Build firmware images for Cudy RE3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_tr3000-v1
+Target-Profile-Name: Cudy TR3000 v1
+Target-Profile-Packages: kmod-usb3 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,tr3000-v1 R47
+
+
+Target-Profile-Description:
+Build firmware images for Cudy TR3000 v1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_wr3000-v1
 Target-Profile-Name: Cudy WR3000 v1
-Target-Profile-Packages: kmod-mt7981-firmware 
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: cudy,wr3000-v1 R31
 
 
 Target-Profile-Description:
 Build firmware images for Cudy WR3000 v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_aquila-pro-ai-m30-a1
+Target-Profile-Name: D-Link AQUILA PRO AI M30 A1
+Target-Profile-Packages: kmod-leds-gca230718 kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,aquila-pro-ai-m30-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link AQUILA PRO AI M30 A1
 
 
 
@@ -21056,15 +21691,79 @@ Build firmware images for GL.iNet GL-MT3000
 
 @@
 
-Target-Profile: DEVICE_netgear_wax220
-Target-Profile-Name: Netgear WAX220
-Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile: DEVICE_glinet_gl-mt6000
+Target-Profile-Name: GL.iNet GL-MT6000
+Target-Profile-Packages: e2fsprogs f2fsck mkf2fs kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
 Target-Profile-hasImageMetadata: 1
-Target-Profile-SupportedDevices: netgear,wax220
+Target-Profile-SupportedDevices: glinet,gl-mt6000
 
 
 Target-Profile-Description:
-Build firmware images for Netgear WAX220
+Build firmware images for GL.iNet GL-MT6000
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_h3c_magic-nx30-pro
+Target-Profile-Name: H3C Magic NX30 Pro
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: h3c,magic-nx30-pro
+
+
+Target-Profile-Description:
+Build firmware images for H3C Magic NX30 Pro
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_jcg_q30-pro
+Target-Profile-Name: JCG Q30 PRO
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jcg,q30-pro
+
+
+Target-Profile-Description:
+Build firmware images for JCG Q30 PRO
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_jdcloud_re-cp-03
+Target-Profile-Name: JDCloud RE-CP-03
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware e2fsprogs f2fsck mkf2fs 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: jdcloud,re-cp-03
+
+
+Target-Profile-Description:
+Build firmware images for JDCloud RE-CP-03
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mediatek_mt7981-rfb
+Target-Profile-Name: MediaTek MT7981 rfb
+Target-Profile-Packages: kmod-mt7981-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mediatek,mt7981-rfb
+
+
+Target-Profile-Description:
+Build firmware images for MediaTek MT7981 rfb
 
 
 
@@ -21104,15 +21803,63 @@ Build firmware images for MediaTek MTK7986 rfbb AP
 
 @@
 
-Target-Profile: DEVICE_mediatek_mt7988a-rfb-nand
-Target-Profile-Name: MediaTek MT7988a nand rfb
-Target-Profile-Packages:  
+Target-Profile: DEVICE_mediatek_mt7988a-rfb
+Target-Profile-Name: MediaTek MT7988A rfb
+Target-Profile-Packages: kmod-sfp 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7988a-rfb
 
 
 Target-Profile-Description:
-Build firmware images for MediaTek MT7988a nand rfb
+Build firmware images for MediaTek MT7988A rfb
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_mercusys_mr90x-v1
+Target-Profile-Name: MERCUSYS MR90X v1
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: mercusys,mr90x-v1
+
+
+Target-Profile-Description:
+Build firmware images for MERCUSYS MR90X v1
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netcore_n60
+Target-Profile-Name: Netcore N60
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netcore,n60
+
+
+Target-Profile-Description:
+Build firmware images for Netcore N60
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_wax220
+Target-Profile-Name: NETGEAR WAX220
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,wax220
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR WAX220
 
 
 
@@ -21129,6 +21876,22 @@ Target-Profile-SupportedDevices: qihoo,360t7
 
 Target-Profile-Description:
 Build firmware images for Qihoo 360T7
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_routerich_ax3000
+Target-Profile-Name: Routerich AX3000
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: routerich,ax3000 mediatek,mt7981-spim-snand-rfb
+
+
+Target-Profile-Description:
+Build firmware images for Routerich AX3000
 
 
 
@@ -21184,6 +21947,118 @@ Build firmware images for TP-Link TL-XDR6088
 
 @@
 
+Target-Profile: DEVICE_ubnt_unifi-6-plus
+Target-Profile-Name: Ubiquiti UniFi U6+
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: ubnt,unifi-6-plus
+
+
+Target-Profile-Description:
+Build firmware images for Ubiquiti UniFi U6+
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7981-01-emmc
+Target-Profile-Name: Unielec U7981-01 (EMMC)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7981-01-emmc
+
+
+Target-Profile-Description:
+Build firmware images for Unielec U7981-01 (EMMC)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_unielec_u7981-01-nand
+Target-Profile-Name: Unielec U7981-01 (NAND)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 e2fsprogs f2fsck mkf2fs fdisk partx-utils 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: unielec,u7981-01-nand
+
+
+Target-Profile-Description:
+Build firmware images for Unielec U7981-01 (NAND)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-ax3000t
+Target-Profile-Name: Xiaomi Mi Router AX3000T
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-ax3000t
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router AX3000T
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-ax3000t-ubootmod
+Target-Profile-Name: Xiaomi Mi Router AX3000T (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-ax3000t-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router AX3000T (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-wr30u-stock
+Target-Profile-Name: Xiaomi Mi Router WR30U (stock layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-wr30u-stock
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router WR30U (stock layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_xiaomi_mi-router-wr30u-ubootmod
+Target-Profile-Name: Xiaomi Mi Router WR30U (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: xiaomi,mi-router-wr30u-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Xiaomi Mi Router WR30U (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_xiaomi_redmi-router-ax6000-stock
 Target-Profile-Name: Xiaomi Redmi Router AX6000 (stock layout)
 Target-Profile-Packages: kmod-leds-ws2812b kmod-mt7986-firmware mt7986-wo-firmware 
@@ -21216,15 +22091,111 @@ Build firmware images for Xiaomi Redmi Router AX6000 (OpenWrt U-Boot layout)
 
 @@
 
+Target-Profile: DEVICE_yuncore_ax835
+Target-Profile-Name: YunCore AX835
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: yuncore,ax835 mediatek,mt7981-spim-nor-rfb
+
+
+Target-Profile-Description:
+Build firmware images for YunCore AX835
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zbtlink_zbt-z8102ax
+Target-Profile-Name: Zbtlink ZBT-Z8102AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware kmod-usb3 kmod-usb-net-qmi-wwan kmod-usb-serial-option 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zbtlink,zbt-z8102ax
+
+
+Target-Profile-Description:
+Build firmware images for Zbtlink ZBT-Z8102AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zbtlink_zbt-z8103ax
+Target-Profile-Name: Zbtlink ZBT-Z8103AX
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zbtlink,zbt-z8103ax
+
+
+Target-Profile-Description:
+Build firmware images for Zbtlink ZBT-Z8103AX
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zyxel_ex5601-t0-stock
-Target-Profile-Name: Zyxel EX5601-T0  (stock layout)
-Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-Name: Zyxel EX5601-T0 (stock layout)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware kmod-usb3 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mediatek,mt7986a-rfb-snand
 
 
 Target-Profile-Description:
-Build firmware images for Zyxel EX5601-T0  (stock layout)
+Build firmware images for Zyxel EX5601-T0 (stock layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_ex5601-t0-ubootmod
+Target-Profile-Name: Zyxel EX5601-T0 (OpenWrt U-Boot layout)
+Target-Profile-Packages: kmod-mt7986-firmware mt7986-wo-firmware kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,ex5601-t0-ubootmod
+
+
+Target-Profile-Description:
+Build firmware images for Zyxel EX5601-T0 (OpenWrt U-Boot layout)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_ex5700-telenor
+Target-Profile-Name: ZyXEL EX5700 (Telenor)
+Target-Profile-Packages: kmod-mt7916-firmware kmod-ubootenv-nvram kmod-usb3 kmod-mt7986-firmware mt7986-wo-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,ex5700-telenor
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL EX5700 (Telenor)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_zyxel_nwa50ax-pro
+Target-Profile-Name: ZyXEL NWA50AX Pro
+Target-Profile-Packages: kmod-mt7981-firmware mt7981-wo-firmware zyxel-bootconfig 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: zyxel,nwa50ax-pro
+
+
+Target-Profile-Description:
+Build firmware images for ZyXEL NWA50AX Pro
 
 
 
@@ -21243,7 +22214,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -21259,7 +22230,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -21363,7 +22334,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -21444,6 +22415,22 @@ Build firmware images for Extreme Networks WS-AP3825i
 
 @@
 
+Target-Profile: DEVICE_hpe_msm460
+Target-Profile-Name: Hewlett-Packard MSM460
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,msm460
+
+
+Target-Profile-Description:
+Build firmware images for Hewlett-Packard MSM460
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_ocedo_panda
 Target-Profile-Name: OCEDO Panda
 Target-Profile-Packages: kmod-rtc-ds1307 
@@ -21469,7 +22456,7 @@ Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=8548
 CPU-Type: 8548
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -21511,7 +22498,7 @@ Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdis
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -21527,7 +22514,7 @@ Target-Features: arm_v7 boot-part dt fpu gpio legacy-sdcard nand pci pcie ramdis
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22036,7 +23023,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -22268,7 +23255,7 @@ Target-Features: arm_v7 boot-part dt ext4 fpu gpio legacy-sdcard nand pci pcie r
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a72
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -22409,7 +23396,7 @@ Build firmware images for SolidRun Clearfog GT-8K
 
 Target-Profile: DEVICE_iei_puzzle-m901
 Target-Profile-Name: iEi Puzzle-M901
-Target-Profile-Packages:  
+Target-Profile-Packages:  kmod-rtc-ds1307 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: iei,puzzle-m901
 
@@ -22425,7 +23412,7 @@ Build firmware images for iEi Puzzle-M901
 
 Target-Profile: DEVICE_iei_puzzle-m902
 Target-Profile-Name: iEi Puzzle-M902
-Target-Profile-Packages:  
+Target-Profile-Packages:  kmod-rtc-ds1307 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: iei,puzzle-m902
 
@@ -22446,73 +23433,79 @@ Target-Board: mxs
 Target-Name: Freescale i.MX23/i.MX28
 Target-Arch: arm
 Target-Arch-Packages: arm_arm926ej-s
-Target-Features: dt ext4 gpio rtc usb usbgadget
+Target-Features: dt ext4 gpio rtc usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 	Support for Freescale i.MX23/i.MX28 boards
 @@
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
-Target-Profile: duckbill
-Target-Profile-Name: I2SE Duckbill boards
-Target-Profile-Packages:  -dnsmasq -firewall -ppp -ip6tables -iptables -6relayd -mtd uboot-envtools kmod-leds-gpio -kmod-ipt-nathelper uboot-mxs-duckbill 
-Target-Profile-Description:
-	I2SE's Duckbill devices
-@@
-
-Target-Profile: olinuxino-maxi
-Target-Profile-Name: Olimex OLinuXino Maxi/Mini boards
-Target-Profile-Packages:  imx-bootlets uboot-mxs-mx23_olinuxino kmod-usb-net-smsc95xx kmod-pinctrl-mcp23s08-i2c kmod-pinctrl-mcp23s08-spi kmod-leds-gpio kmod-sound-core 
-Target-Profile-Description:
-	Olimex OLinuXino Maxi/Mini boards
-@@
-
-Target-Profile: olinuxino-micro
-Target-Profile-Name: Olimex OLinuXino Micro/Nano boards
-Target-Profile-Packages:  imx-bootlets uboot-mxs-mx23_olinuxino kmod-pinctrl-mcp23s08-spi kmod-pinctrl-mcp23s08-i2c kmod-leds-gpio 
-Target-Profile-Description:
-	Olimex OLinuXino Micro/Nano boards
-@@
-
 Target: mxs/generic
 Target-Board: mxs
 Target-Name: Generic
 Target-Arch: arm
 Target-Arch-Packages: arm_arm926ej-s
-Target-Features: dt ext4 gpio rtc usb usbgadget
+Target-Features: dt ext4 gpio rtc usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
 	Support for Freescale i.MX23/i.MX28 boards
 @@
 Default-Packages: base-files ca-bundle dropbear fstools libc libgcc libustream-mbedtls logd mtd netifd opkg uci uclient-fetch urandom-seed urngd busybox procd procd-ujail dnsmasq firewall4 nftables kmod-nft-offload odhcp6c odhcpd-ipv6only ppp ppp-mod-pppoe 
-Target-Profile: duckbill
-Target-Profile-Name: I2SE Duckbill boards
-Target-Profile-Packages:  -dnsmasq -firewall -ppp -ip6tables -iptables -6relayd -mtd uboot-envtools kmod-leds-gpio -kmod-ipt-nathelper uboot-mxs-duckbill 
+Target-Profile: DEVICE_i2se_duckbill
+Target-Profile-Name: I2SE Duckbill
+Target-Profile-Packages: -dnsmasq -firewall -ppp -ip6tables -iptables -6relayd -mtd uboot-envtools kmod-leds-gpio -kmod-ipt-nathelper 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: i2se,duckbill
+
+
 Target-Profile-Description:
-	I2SE's Duckbill devices
+Build firmware images for I2SE Duckbill
+
+
+
+
+
 @@
 
-Target-Profile: olinuxino-maxi
-Target-Profile-Name: Olimex OLinuXino Maxi/Mini boards
-Target-Profile-Packages:  imx-bootlets uboot-mxs-mx23_olinuxino kmod-usb-net-smsc95xx kmod-pinctrl-mcp23s08-i2c kmod-pinctrl-mcp23s08-spi kmod-leds-gpio kmod-sound-core 
+Target-Profile: DEVICE_olinuxino_maxi
+Target-Profile-Name: Olimex OLinuXino Maxi
+Target-Profile-Packages: kmod-usb-net-smsc95xx kmod-pinctrl-mcp23s08-i2c kmod-pinctrl-mcp23s08-spi kmod-leds-gpio kmod-sound-core 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: olimex,imx23-olinuxino
+
+
 Target-Profile-Description:
-	Olimex OLinuXino Maxi/Mini boards
+Build firmware images for Olimex OLinuXino Maxi
+
+
+
+
+
 @@
 
-Target-Profile: olinuxino-micro
-Target-Profile-Name: Olimex OLinuXino Micro/Nano boards
-Target-Profile-Packages:  imx-bootlets uboot-mxs-mx23_olinuxino kmod-pinctrl-mcp23s08-spi kmod-pinctrl-mcp23s08-i2c kmod-leds-gpio 
+Target-Profile: DEVICE_olinuxino_micro
+Target-Profile-Name: Olimex OLinuXino Micro
+Target-Profile-Packages: kmod-pinctrl-mcp23s08-spi kmod-pinctrl-mcp23s08-i2c kmod-leds-gpio 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: olimex,imx23-olinuxino
+
+
 Target-Profile-Description:
-	Olimex OLinuXino Micro/Nano boards
+Build firmware images for Olimex OLinuXino Micro
+
+
+
+
+
 @@
 
 
@@ -22526,7 +23519,7 @@ Target-Features: dt gpio pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -march=octeon+ -mabi=64
 CPU-Type: octeonplus
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22549,7 +23542,7 @@ Target-Features: dt gpio pci pcie ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -march=octeon+ -mabi=64
 CPU-Type: octeonplus
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -22686,7 +23679,7 @@ Target-Features: dt fpu gpio pci pcie ramdisk rtc squashfs targz usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -22702,7 +23695,7 @@ Target-Features: dt fpu gpio pci pcie ramdisk rtc squashfs targz usb virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -22720,7 +23713,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rootfs-part rtc sour
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22744,7 +23737,7 @@ Target-Features: arm_v7 audio display dt ext4 fpu gpio nand rootfs-part rtc sour
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22834,7 +23827,7 @@ Target-Features: dt gpio ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22850,7 +23843,7 @@ Target-Features: dt gpio ramdisk rtc source-only squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: arm926ej-s
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22886,11 +23879,11 @@ Target-Board: oxnas
 Target-Name: OX820/NAS782x
 Target-Arch: arm
 Target-Arch-Packages: arm_mpcore
-Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs ubifs usb
+Target-Features: arm_v6 dt gpio nand pci pcie ramdisk rtc squashfs ubifs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: mpcore
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -22996,7 +23989,7 @@ Target-Features: dt fpu gpio mips16 nand squashfs targz usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc+24kf
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23020,7 +24013,7 @@ Target-Features: dt fpu gpio mips16 nand squashfs targz usb usbgadget
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc+24kf
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23080,7 +24073,7 @@ Target-Features: boot-part display dt ext4 fpu gpio legacy-sdcard pci powerpc64 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=e5500
 CPU-Type: e5500
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -23096,7 +24089,7 @@ Target-Features: boot-part display dt ext4 fpu gpio legacy-sdcard pci powerpc64 
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=e5500
 CPU-Type: e5500
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: powerpc
 Target-Description:
@@ -23132,7 +24125,7 @@ Target-Features: gpio squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23148,7 +24141,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -23443,6 +24436,22 @@ Build firmware images for D-Link DIR-510L
 
 @@
 
+Target-Profile: DEVICE_dlink_dir-806a-b1
+Target-Profile-Name: D-Link DIR-806A B1
+Target-Profile-Packages:  kmod-mt76x0e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,dir-806a-b1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DIR-806A B1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_dlink_dir-810l
 Target-Profile-Name: D-Link DIR-810L
 Target-Profile-Packages: kmod-mt76x0e 
@@ -23644,6 +24653,22 @@ Target-Profile-SupportedDevices: dovado,tiny-ac tiny-ac
 
 Target-Profile-Description:
 Build firmware images for Dovado Tiny AC
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_edimax_br-6208ac-v2
+Target-Profile-Name: Edimax BR-6208AC V2
+Target-Profile-Packages: kmod-mt76x2 kmod-mt76x0e kmod-phy-realtek kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: edimax,br-6208ac-v2
+
+
+Target-Profile-Description:
+Build firmware images for Edimax BR-6208AC V2
 
 
 
@@ -23877,7 +24902,7 @@ Build firmware images for HiWiFi HC5761
 
 Target-Profile: DEVICE_hiwifi_hc5861
 Target-Profile-Name: HiWiFi HC5861
-Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-phy-realtek kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hiwifi,hc5861 hc5861
 
@@ -24629,6 +25654,74 @@ Build firmware images for RAVPower RP-WD03
 
 @@
 
+Target-Profile: DEVICE_rostelecom_rt-fl-1
+Target-Profile-Name: Sercomm RT-FL-1 (Rostelecom RT-FL-1)
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fl-1
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FL-1
+Alternative device titles:
+- Sercomm RT-FL-1
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_rt-fl-1
+Target-Profile-Name: Rostelecom RT-FL-1
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fl-1
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FL-1
+Alternative device titles:
+- Sercomm RT-FL-1
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_s1010
+Target-Profile-Name: Sercomm S1010.RT (Rostelecom S1010)
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,s1010
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom S1010
+Alternative device titles:
+- Sercomm S1010.RT
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_s1010
+Target-Profile-Name: Rostelecom S1010
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,s1010
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom S1010
+Alternative device titles:
+- Sercomm S1010.RT
+
+
+
+
+@@
+
 Target-Profile: DEVICE_sanlinking_d240
 Target-Profile-Name: Sanlinking Technologies D240
 Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 
@@ -25264,7 +26357,7 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -25296,6 +26389,22 @@ Target-Profile-SupportedDevices: afoundry,ew1200 ew1200
 
 Target-Profile-Description:
 Build firmware images for AFOUNDRY EW1200
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_alfa-network_ax1800rm
+Target-Profile-Name: ALFA Network AX1800RM
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: alfa-network,ax1800rm
+
+
+Target-Profile-Description:
+Build firmware images for ALFA Network AX1800RM
 
 
 
@@ -25665,6 +26774,40 @@ Build firmware images for Beeline SmartBox GIGA
 
 @@
 
+Target-Profile: DEVICE_beeline_smartbox-pro
+Target-Profile-Name: Sercomm S1500 AWI (Beeline SmartBox PRO)
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: beeline,smartbox-pro
+
+
+Target-Profile-Description:
+Build firmware images for Beeline SmartBox PRO
+Alternative device titles:
+- Sercomm S1500 AWI
+
+
+
+
+@@
+
+Target-Profile: DEVICE_beeline_smartbox-pro
+Target-Profile-Name: Beeline SmartBox PRO
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: beeline,smartbox-pro
+
+
+Target-Profile-Description:
+Build firmware images for Beeline SmartBox PRO
+Alternative device titles:
+- Sercomm S1500 AWI
+
+
+
+
+@@
+
 Target-Profile: DEVICE_beeline_smartbox-turbo
 Target-Profile-Name: Beeline SmartBox TURBO
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware kmod-usb3 
@@ -25795,6 +26938,38 @@ Build firmware images for BOLT Arion
 
 @@
 
+Target-Profile: DEVICE_comfast_cf-e390ax
+Target-Profile-Name: ComFast CF-E390AX
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-e390ax
+
+
+Target-Profile-Description:
+Build firmware images for ComFast CF-E390AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comfast_cf-ew72-v2
+Target-Profile-Name: ComFast CF-EW72 V2
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-ew72-v2
+
+
+Target-Profile-Description:
+Build firmware images for ComFast CF-EW72 V2
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_m1800
 Target-Profile-Name: Cudy M1800
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
@@ -25843,6 +27018,22 @@ Build firmware images for Cudy WR1300 v2
 
 @@
 
+Target-Profile: DEVICE_cudy_wr1300-v3
+Target-Profile-Name: Cudy WR1300 v3
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,wr1300-v3 cudy,wr1300 R30
+
+
+Target-Profile-Description:
+Build firmware images for Cudy WR1300 v3
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_wr2100
 Target-Profile-Name: Cudy WR2100
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware -uboot-envtools 
@@ -25884,6 +27075,22 @@ Target-Profile-SupportedDevices: cudy,x6-v2 cudy,x6 R30
 
 Target-Profile-Description:
 Build firmware images for Cudy X6 v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_covr-x1860-a1
+Target-Profile-Name: D-Link COVR-X1860 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,covr-x1860-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link COVR-X1860 A1
 
 
 
@@ -27257,15 +28464,31 @@ Build firmware images for MediaTek MT7621 EVB
 
 @@
 
+Target-Profile: DEVICE_meig_slt866
+Target-Profile-Name: MeiG SLT866
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap kmod-usb-net-qmi-wwan kmod-usb-serial-option kmod-usb3 kmod-usb-net-rndis 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: meig,slt866
+
+
+Target-Profile-Description:
+Build firmware images for MeiG SLT866
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_mercusys_mr70x-v1
-Target-Profile-Name: Mercusys MR70X v1
+Target-Profile-Name: MERCUSYS MR70X v1
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mercusys,mr70x-v1
 
 
 Target-Profile-Description:
-Build firmware images for Mercusys MR70X v1
+Build firmware images for MERCUSYS MR70X v1
 
 
 
@@ -27396,6 +28619,57 @@ Target-Profile-Description:
 Build firmware images for MTS WG430223
 
 
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX11 v2 (NETGEAR EAX12)
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX15 v2 (NETGEAR EAX12)
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX12
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
 
 
 
@@ -27792,6 +29066,40 @@ Build firmware images for Renkforce WS-WN530HP3-A
 
 @@
 
+Target-Profile: DEVICE_rostelecom_rt-fe-1a
+Target-Profile-Name: Sercomm RT-FE-1A (Rostelecom RT-FE-1A)
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fe-1a
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FE-1A
+Alternative device titles:
+- Sercomm RT-FE-1A
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_rt-fe-1a
+Target-Profile-Name: Rostelecom RT-FE-1A
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fe-1a
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FE-1A
+Alternative device titles:
+- Sercomm RT-FE-1A
+
+
+
+
+@@
+
 Target-Profile: DEVICE_rostelecom_rt-sf-1
 Target-Profile-Name: Rostelecom RT-SF-1
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware kmod-usb3 
@@ -28128,6 +29436,22 @@ Build firmware images for TP-Link EAP235-Wall v1
 
 @@
 
+Target-Profile: DEVICE_tplink_eap613-v1
+Target-Profile-Name: TP-Link EAP613 v1
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,eap613-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EAP613 v1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_eap615-wall-v1
 Target-Profile-Name: TP-Link EAP615-Wall v1
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
@@ -28187,6 +29511,22 @@ Target-Profile-SupportedDevices: tplink,er605-v2
 
 Target-Profile-Description:
 Build firmware images for TP-Link ER605 v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_ex220-v1
+Target-Profile-Name: TP-Link EX220 v1
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,ex220-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EX220 v1
 
 
 
@@ -28341,14 +29681,14 @@ Alternative device titles:
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lite
-Target-Profile-Name: Ubiquiti UniFi 6 Lite
+Target-Profile-Name: Ubiquiti UniFi U6 Lite
 Target-Profile-Packages:  kmod-mt7603 kmod-mt7915-firmware -uboot-envtools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lite
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 Lite
+Build firmware images for Ubiquiti UniFi U6 Lite
 
 
 
@@ -28542,6 +29882,40 @@ Target-Profile-SupportedDevices: wevo,w2914ns-v2 w2914nsv2
 Target-Profile-Description:
 Build firmware images for WeVO W2914NS v2
 
+
+
+
+
+@@
+
+Target-Profile: DEVICE_wifire_s1500-nbn
+Target-Profile-Name: Sercomm S1500 BUC (WiFire S1500.NBN)
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: wifire,s1500-nbn
+
+
+Target-Profile-Description:
+Build firmware images for WiFire S1500.NBN
+Alternative device titles:
+- Sercomm S1500 BUC
+
+
+
+
+@@
+
+Target-Profile: DEVICE_wifire_s1500-nbn
+Target-Profile-Name: WiFire S1500.NBN
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: wifire,s1500-nbn
+
+
+Target-Profile-Description:
+Build firmware images for WiFire S1500.NBN
+Alternative device titles:
+- Sercomm S1500 BUC
 
 
 
@@ -28870,6 +30244,56 @@ Build firmware images for YunCore FAP690
 
 @@
 
+Target-Profile: DEVICE_yuncore_g720
+Target-Profile-Name: YunCore G720
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: yuncore,g720 mt7621-rfb-ax-nor
+
+
+Target-Profile-Description:
+Build firmware images for YunCore G720
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_z-router_zr-2660
+Target-Profile-Name: Routerich AX1800 (Z-ROUTER ZR-2660)
+Target-Profile-Packages:  kmod-mt7915-firmware kmod-usb3 -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: z-router,zr-2660
+
+
+Target-Profile-Description:
+Build firmware images for Z-ROUTER ZR-2660
+Alternative device titles:
+- Routerich AX1800
+
+
+
+
+@@
+
+Target-Profile: DEVICE_z-router_zr-2660
+Target-Profile-Name: Z-ROUTER ZR-2660
+Target-Profile-Packages:  kmod-mt7915-firmware kmod-usb3 -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: z-router,zr-2660
+
+
+Target-Profile-Description:
+Build firmware images for Z-ROUTER ZR-2660
+Alternative device titles:
+- Routerich AX1800
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zbtlink_zbt-we1326
 Target-Profile-Name: Wiflyer WF3526-P (Zbtlink ZBT-WE1326)
 Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 -uboot-envtools 
@@ -29169,7 +30593,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -29437,6 +30861,22 @@ Target-Profile-Description:
 Build firmware images for COMFAST CF-WR758AC V2
 Alternative device titles:
 - Joowin JW-WR758AC V2
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_tr1200-v1
+Target-Profile-Name: Cudy TR1200 v1
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-mt7615e kmod-mt7663-firmware-ap 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,tr1200-v1 R46
+
+
+Target-Profile-Description:
+Build firmware images for Cudy TR1200 v1
+
 
 
 
@@ -30988,7 +32428,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -31132,7 +32572,7 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -32894,7 +34334,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33088,7 +34528,7 @@ Target-Features: gpio ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33112,7 +34552,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=4kec
 CPU-Type: 4kec
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33280,6 +34720,38 @@ Target-Profile-SupportedDevices: hpe,1920-8g
 
 Target-Profile-Description:
 Build firmware images for HPE 1920-8G (JG920A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-8g-poe-65w
+Target-Profile-Name: HPE 1920-8G-PoE+ 65W (JG921A)
+Target-Profile-Packages:  realtek-poe 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-8g-poe-65w
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-8G-PoE+ 65W (JG921A)
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_hpe_1920-8g-poe-180w
+Target-Profile-Name: HPE 1920-8G-PoE+ 180W (JG922A)
+Target-Profile-Packages:  
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: hpe,1920-8g-poe-180w hpe_1920-8g-poe
+
+
+Target-Profile-Description:
+Build firmware images for HPE 1920-8G-PoE+ 180W (JG922A)
 
 
 
@@ -33648,7 +35120,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33752,7 +35224,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33792,7 +35264,7 @@ Target-Features: dt gpio mips16 ramdisk squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -33818,7 +35290,7 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie rootfs-part squa
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -33834,7 +35306,7 @@ Target-Features: audio boot-part display dt ext4 fpu gpio pci pcie rootfs-part r
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=generic
 CPU-Type: generic
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -33981,7 +35453,7 @@ Target-Features: dt ext4 gpio pci pcie rtc usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mabi=lp64d -march=rv64imafdc
 CPU-Type: riscv64
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: riscv
 Target-Description:
@@ -33998,7 +35470,7 @@ Target-Features: dt ext4 gpio pci pcie rtc usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mabi=lp64d -march=rv64imafdc
 CPU-Type: riscv64
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: riscv
 Target-Description:
@@ -34049,7 +35521,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: xscale
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -34073,7 +35545,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a8+vfpv3
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -34193,7 +35665,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a7+neon-vfpv4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -34667,7 +36139,7 @@ Target-Features: arm_v7 display dt ext4 fpu gpio rootfs-part rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mcpu=cortex-a53
 CPU-Type: cortex-a53
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm64
 Target-Description:
@@ -34869,7 +36341,7 @@ Target-Features: arm_v7 audio boot-part display dt ext4 fpu gpio pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -34885,7 +36357,7 @@ Target-Features: arm_v7 audio boot-part display dt ext4 fpu gpio pci pcie rootfs
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+vfpv3-d16
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -34919,7 +36391,7 @@ Target-Features: audio ext4 gpio rootfs-part squashfs virtio
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: um
 Target-Description:
@@ -34937,7 +36409,7 @@ Target-Features: boot-part display ext4 fpu gpio pci pcmcia rootfs-part rtc squa
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -34953,7 +36425,7 @@ Target-Features: audio boot-part display ext4 fpu gpio pci pcie pcmcia rootfs-pa
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium4
 CPU-Type: pentium4
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -34987,7 +36459,7 @@ Target-Features: boot-part display ext4 fpu gpio pci pcie pcmcia rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -35020,7 +36492,7 @@ Target-Features: boot-part display ext4 fpu gpio pci pcmcia rootfs-part rtc squa
 Target-Depends: 
 Target-Optimization: -Os -pipe -march=pentium-mmx
 CPU-Type: pentium-mmx
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -35068,7 +36540,7 @@ Target-Features: boot-part display ext4 fpu gpio pci pcie pcmcia rootfs-part rtc
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: 
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: x86
 Target-Description:
@@ -35102,7 +36574,7 @@ Target-Features: arm_v7 boot-part display dt fpu gpio pci rootfs-part rtc squash
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+neon
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:
@@ -35118,7 +36590,7 @@ Target-Features: arm_v7 boot-part display dt fpu gpio pci rootfs-part rtc squash
 Target-Depends: 
 Target-Optimization: -Os -pipe
 CPU-Type: cortex-a9+neon
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: arm
 Target-Description:

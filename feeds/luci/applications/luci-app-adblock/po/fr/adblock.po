@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-01-13 20:18+0000\n"
-"Last-Translator: slundi <slundi@gmail.com>\n"
+"PO-Revision-Date: 2024-02-01 22:49+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -257,7 +257,7 @@ msgstr "Domaines"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:407
 msgid "Don't check SSL server certificates during download."
 msgstr ""
-"Ne pas vérifier les certificats SSL du serveur pendant le téléchargement."
+"Ignorer la vérification des certificats serveur pendant le téléchargement."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:407
 msgid "Download Insecure"
@@ -281,7 +281,7 @@ msgstr "Nombre de notifications par e-mail"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:523
 msgid "E-Mail Profile"
-msgstr "Courriel du profil"
+msgstr "Courriel"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:364
 msgid "E-Mail Receiver Address"
@@ -380,7 +380,7 @@ msgstr "Zones sources du pare-feu qui doivent être forcées localement."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:433
 msgid "First instance (default)"
-msgstr "Première instance (par défaut)"
+msgstr "Première instance (défaut)"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:452
 msgid "Flush DNS Cache"
@@ -415,7 +415,7 @@ msgstr ""
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:299
 msgid "General Settings"
-msgstr "Paramètres généraux"
+msgstr "Réglages généraux"
 
 #: applications/luci-app-adblock/root/usr/share/rpcd/acl.d/luci-app-adblock.json:3
 msgid "Grant access to LuCI app adblock"
@@ -490,20 +490,16 @@ msgid ""
 "Manually override the pre-configured download options for the selected "
 "download utility."
 msgstr ""
-"Remplacer manuellement les options de téléchargement préconfigurées pour "
-"l'utilitaire de téléchargement sélectionné."
+"Outrepasse les options de téléchargement préconfigurées pour l'utilitaire de "
+"téléchargement choisi."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:124
 msgid "No Query results!"
 msgstr "Aucun résultat de recherche !"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:21
-msgid "No adblock related logs yet!"
-msgstr "Pas encore de journaux liés à l'adblock !"
-
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
 msgid "Overview"
-msgstr "Aperçu"
+msgstr "Vue d'ensemble"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:523
 msgid "Profile used by 'msmtp' for adblock notification E-Mails."
@@ -574,7 +570,7 @@ msgstr "Actualisation..."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:352
 msgid "Relax SafeSearch"
-msgstr "Relax SafeSearch"
+msgstr "Assouplir SafeSearch"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:281
 msgid "Reload"
@@ -590,7 +586,7 @@ msgstr "Signaler le nombre de blocs"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:500
 msgid "Report Chunk Size"
-msgstr "Rapporter la taille des blocs"
+msgstr "Rapporter la taille des partitions"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:491
 msgid "Report Directory"
@@ -746,11 +742,6 @@ msgstr "La répartition des heures (req., plage : 0-23)"
 msgid "The minutes portion (opt., range: 0-59)"
 msgstr "La répartition des minutes (req., plage : 0-59)"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:28
-msgid "The syslog output, pre-filtered for adblock related messages only."
-msgstr ""
-"La sortie syslog, pré-filtrée pour les messages liés à adblock uniquement."
-
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:435
 msgid "Third instance"
 msgstr "Troisième instance"
@@ -825,6 +816,8 @@ msgid "Unable to save changes: %s"
 msgstr "Impossible de sauvegarder les modifications : %s"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:588
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:604
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:620
 msgid "Variants"
 msgstr "Variantes"
 
@@ -864,7 +857,7 @@ msgstr "taille max. des résultats"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:150
 msgid "max. top statistics"
-msgstr "Statistiques principales max."
+msgstr "stats max principales"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:424
 msgid "raw (/tmp)"

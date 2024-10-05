@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-setuptools/Makefile
 
 Package: python3-pkg-resources
 Submenu: Python
-Version: 67.8.0-1
+Version: 68.2.2-1
 Depends: +libc +python3-light +python3-email +python3-logging +python3-urllib
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Languages
 Repository: base
 Title: Package resource API
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: setuptools-67.8.0.tar.gz
+Source: setuptools-68.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -30,7 +30,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-setuptools
 Submenu: Python
-Version: 67.8.0-1
+Version: 68.2.2-1
 Depends: +libc +python3 +python3-pkg-resources
 Conflicts: 
 Menu-Depends: 
@@ -40,7 +40,7 @@ Category: Languages
 Repository: base
 Title: Fully-featured library to package Python projects
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: setuptools-67.8.0.tar.gz
+Source: setuptools-68.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -58,7 +58,7 @@ Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-pkg-resources-src
 Submenu: Python
-Version: 67.8.0-1
+Version: 68.2.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -68,7 +68,7 @@ Category: Languages
 Repository: base
 Title: Package resource API (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: setuptools-67.8.0.tar.gz
+Source: setuptools-68.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -91,7 +91,7 @@ Config:
 
 Package: python3-setuptools-src
 Submenu: Python
-Version: 67.8.0-1
+Version: 68.2.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -101,7 +101,7 @@ Category: Languages
 Repository: base
 Title: Fully-featured library to package Python projects (sources)
 Maintainer: Jeffery To <jeffery.to@gmail.com>
-Source: setuptools-67.8.0.tar.gz
+Source: setuptools-68.2.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

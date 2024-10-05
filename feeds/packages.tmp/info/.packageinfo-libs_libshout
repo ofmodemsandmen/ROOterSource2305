@@ -15,6 +15,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libshout-2.4.6.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libshout:libshout
 Type: ipkg
 Description:    libshout allows applications to easily communicate and broadcast
  to an Icecast streaming media server. It handles the socket connections,
@@ -42,6 +43,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libshout-2.4.6.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libshout:libshout
 Type: ipkg
 Description:    libshout allows applications to easily communicate and broadcast
  to an Icecast streaming media server. It handles the socket connections,
@@ -69,6 +71,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libshout-2.4.6.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libshout:libshout
 Type: ipkg
 Description:  libshout allows applications to easily communicate and broadcast
  to an Icecast streaming media server. It handles the socket connections,

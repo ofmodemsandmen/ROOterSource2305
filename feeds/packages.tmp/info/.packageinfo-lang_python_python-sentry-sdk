@@ -2,28 +2,28 @@ Source-Makefile: feeds/packages/lang/python/python-sentry-sdk/Makefile
 
 Package: python3-sentry-sdk
 Submenu: Python
-Version: 1.5.4-1
-Depends: +libc +python3-certifi +python3-light +python3-logging +python3-urllib3
+Version: 1.29.2-1
+Depends: +libc +python3 +python3-certifi +python3-urllib3
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Python Client for Sentry
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: sentry-sdk-1.5.4.tar.gz
-License: BSD-2-Clause
+Title: Client for Sentry
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: sentry-sdk-1.29.2.tar.gz
+License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   Python Sentry-Python is an SDK for Sentry.
+Description: This is the official Python SDK for Sentry.
 https://github.com/getsentry/sentry-python
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: python3-sentry-sdk-src
 Submenu: Python
-Version: 1.5.4-1
+Version: 1.29.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,17 +31,17 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python Client for Sentry (sources)
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
-Source: sentry-sdk-1.5.4.tar.gz
-License: BSD-2-Clause
+Title: Client for Sentry (sources)
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
+Source: sentry-sdk-1.29.2.tar.gz
+License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       Python Sentry-Python is an SDK for Sentry.
+Description:     This is the official Python SDK for Sentry.
 
     This package contains the Python source files for python3-sentry-sdk.
 https://github.com/getsentry/sentry-python
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 Config:
     depends on PACKAGE_python3-sentry-sdk

@@ -15,6 +15,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin (512MB)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -37,6 +38,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB 1CS)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -59,6 +61,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (1GB, 2CS)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -81,6 +84,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin V3-V5 (2GB)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -103,6 +107,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin V7 (1GB)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -125,6 +130,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Marvell ESPRESSObin V7 (2GB)
 https://www.trustedfirmware.org/projects/tf-a/
@@ -147,6 +153,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Methode uDPU
 https://www.trustedfirmware.org/projects/tf-a/
@@ -169,6 +176,7 @@ Maintainer: Vladimir Vid <vladimir.vid@sartura.hr>
 Source: trusted-firmware-a-2.7.tar.gz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for Methode eDPU
 https://www.trustedfirmware.org/projects/tf-a/

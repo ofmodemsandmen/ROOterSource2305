@@ -17,6 +17,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description: 	ZNC is an IRC bouncer with many advanced features like detaching,
 	multiple users, per channel playback buffer, SSL, IPv6, transparent DCC
@@ -44,6 +45,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Log user connects and disconnects and failed logins to file or syslog.
 https://znc.in/
@@ -66,6 +68,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Provides bouncer-side command alias support.
 https://znc.in/
@@ -88,6 +91,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Reattaches you to channels on activity.
 https://znc.in/
@@ -110,6 +114,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Cycles a channel when you are the only one in there and you don't have op.
 https://znc.in/
@@ -132,6 +137,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Auto op the good guys.
 https://znc.in/
@@ -154,6 +160,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Gives a automatic reply if someone messages you if you are away.
 https://znc.in/
@@ -176,6 +183,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Autovoices everyone who joins some channel.
 https://znc.in/
@@ -198,6 +206,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Change your nick while you are away.
 https://znc.in/
@@ -220,6 +229,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Stores messages while away, also auto away.
 https://znc.in/
@@ -242,6 +252,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module blocks the server's Message of the Day.
 https://znc.in/
@@ -264,6 +275,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Blocks certain users from using ZNC saying their account was disabled.
 https://znc.in/
@@ -286,6 +298,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Bounces dcc transfers through the znc server instead of sending them directly to the user.
 https://znc.in/
@@ -308,6 +321,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Add nick changes, joins, parts, topic changes etc. to your playback buffer.
 https://znc.in/
@@ -330,6 +344,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Use a SSL certificate for connecting to a server.
 https://znc.in/
@@ -352,6 +367,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module allows users to log in to ZNC via SSL client keys.
 https://znc.in/
@@ -374,6 +390,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Keeping config up to date when user joins and parts.
 https://znc.in/
@@ -396,6 +413,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module keeps the buffer until the next message from the client.
 https://znc.in/
@@ -418,6 +436,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Notify about new incoming connections to your user.
 https://znc.in/
@@ -440,6 +459,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Allows you to add/remove/edit users and settings on the fly via IRC messages.
 https://znc.in/
@@ -462,6 +482,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Encryption for channel/private messages.
 https://znc.in/
@@ -484,6 +505,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module tries to block ctcp floods.
 https://znc.in/
@@ -506,6 +528,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Allows you to transfer files to and from ZNC.
 https://znc.in/
@@ -528,6 +551,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module will kick your client from all channels where you are, in case if ZNC disconnects from server.
 https://znc.in/
@@ -550,6 +574,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Block IPs for some time after a failed login.
 https://znc.in/
@@ -572,6 +597,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module detaches you from channels which are flooded.
 https://znc.in/
@@ -594,6 +620,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Places the ident of a user to a file when they are trying to connect.
 https://znc.in/
@@ -616,6 +643,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Allow users to authenticate via IMAP.
 https://znc.in/
@@ -638,6 +666,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Tries to get you your primary nick.
 https://znc.in/
@@ -660,6 +689,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Implements auto-rejoin-on-kick.
 https://znc.in/
@@ -682,6 +712,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Logs when a user last logged in to ZNC.
 https://znc.in/
@@ -704,6 +735,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module displays a list of all open sockets in ZNC.
 https://znc.in/
@@ -726,6 +758,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Log conversations to file.
 https://znc.in/
@@ -748,6 +781,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Sends 422 to clients when they login.
 https://znc.in/
@@ -770,6 +804,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module fakes the online status of ZNC-*users.
 https://znc.in/
@@ -792,6 +827,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Auths you with NickServ.
 https://znc.in/
@@ -814,6 +850,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This modules stores and displays short notes using a key/note pairs and shows them to you on connect.
 https://znc.in/
@@ -836,6 +873,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Sends a notice to all admins when a user logs in or out.
 https://znc.in/
@@ -858,6 +896,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Performs commands on connect.
 https://znc.in/
@@ -880,6 +919,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    View all of the raw traffic.
 https://znc.in/
@@ -902,6 +942,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Routes back answers to the right client when connected with multiple clients.
 https://znc.in/
@@ -924,6 +965,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    The SASL module allows you to authenticate to an IRC network via SASL.
 https://znc.in/
@@ -946,6 +988,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Saves your channel buffers into an encrypted file so they can survive restarts and reboots.
 https://znc.in/
@@ -968,6 +1011,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    SSL (encrypted) DCC chats.
 https://znc.in/
@@ -990,6 +1034,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Allows you to send raw traffic to IRC from other users.
 https://znc.in/
@@ -1012,6 +1057,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    This module will automatically set you away on IRC while you are disconnected from the bouncer.
 https://znc.in/
@@ -1034,6 +1080,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Have your unix shell in a query window right inside of your IRC client.
 https://znc.in/
@@ -1056,6 +1103,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Keeps you sticked to specific channels.
 https://znc.in/
@@ -1078,6 +1126,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Monitor activity for specific text patterns from specific users and have the text sent to a special query window.
 https://znc.in/
@@ -1100,6 +1149,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Avoid repetitive playback buffers on re-connect with supported clients (e.g. mutter, colluquy)
 https://znc.in/
@@ -1122,6 +1172,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Send push notification to connected and configured devices. Refer to project Documentation
    on how to setup.
@@ -1145,6 +1196,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:    Allows you to add/remove/edit users and settings on the fly via a web browser.
 https://znc.in/
@@ -1167,6 +1219,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:     dark-clouds webskin for webadmin
 https://znc.in/
@@ -1189,6 +1242,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:     forest webskin for webadmin
 https://znc.in/
@@ -1211,6 +1265,7 @@ Require-User: znc:znc
 Source: znc-1.8.2.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:znc:znc
 Type: ipkg
 Description:     ice webskin for webadmin
 https://znc.in/

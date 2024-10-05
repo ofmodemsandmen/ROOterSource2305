@@ -154,6 +154,10 @@
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+* {
+	scroll-margin-top: 40px;
+}
+
 *, *::before, *::after {
 	margin: 0;
 	padding: 0;
@@ -1712,12 +1716,14 @@ body.modal-overlay-active #modal_overlay {
 	color: var(--on-primary-color);
 }
 
-.cbi-dropdown[open] > ul.dropdown > li.focus {
+.cbi-dropdown[open] > ul.dropdown > li.focus,
+.cbi-dropdown[open] > ul.dropdown > li:hover {
 	background: var(--primary-color-low);
 	color: var(--on-primary-color);
 }
 
-.cbi-dropdown[open] > ul.dropdown > li[selected].focus {
+.cbi-dropdown[open] > ul.dropdown > li[selected].focus,
+.cbi-dropdown[open] > ul.dropdown > li[selected]:hover {
 	background: linear-gradient(90deg, var(--primary-color-medium) 50%, var(--primary-color-low));
 }
 
@@ -1967,6 +1973,7 @@ form.inline { display: inline; margin-bottom: 0; }
 	width: 100%;
 	color: var(--text-color-highest);
 	margin-bottom: 18px;
+	font-family: monospace;
 }
 
 .cbi-section-table .tr:hover .td,
@@ -2553,4 +2560,20 @@ div.cbi-value var.cbi-tooltip-container,
 
 [data-page="admin-system-admin-sshkeys"] .cbi-dynlist {
 	max-width: none;
+}
+
+[data-darkmode="true"] [data-page="admin-status-channel_analysis"] #view> div > div > div > div > div[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-load"] #view > div[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-bandwidth"] #view > div > div > div > div[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-wireless"] #view > div > div > div > div[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view > div[style] {
+	background-color: var(--background-color-high)!important;
+}
+
+[data-darkmode="true"] [data-page="admin-status-channel_analysis"] #view> div > div > div > div > div > svg > line[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-load"] #view > div > svg > line[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-bandwidth"] #view > div > div > div > div > svg > line[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-wireless"] #view > div > div > div > div > svg > line[style],
+[data-darkmode="true"] [data-page="admin-status-realtime-connections"] #view > div > svg > line[style] {
+	stroke: #fff!important;
 }

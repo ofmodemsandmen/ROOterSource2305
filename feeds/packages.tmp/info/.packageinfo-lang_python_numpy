@@ -16,6 +16,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: numpy-1.24.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:numpy:numpy
 Type: ipkg
 Description: NumPy is the fundamental package for array computing with Python.
 
@@ -52,6 +53,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: numpy-1.24.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:numpy:numpy
 Type: ipkg
 Description:     NumPy is the fundamental package for array computing with Python.
 

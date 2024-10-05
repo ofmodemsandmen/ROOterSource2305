@@ -14,6 +14,7 @@ Maintainer:
 Source: libmd-1.0.4.tar.xz
 License: BSD-3-Clause
 LicenseFiles: COPYING
+ABI-Version: 0
 Type: ipkg
 Description:   This library provides message digest functions found on BSD systems either
   on their libc or libmd libraries and lacking on others like GNU systems,

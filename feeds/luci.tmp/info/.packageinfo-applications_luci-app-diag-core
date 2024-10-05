@@ -210,6 +210,25 @@ Description:     Translation for luci-app-diag-core - 日本語 (Japanese)
 
 @@
 
+Package: luci-i18n-diag-core-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-diag-core
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-diag-core - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-diag-core - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-diag-core-ms
 Default: LUCI_LANG_ms||(ALL&&m)
 Version: x

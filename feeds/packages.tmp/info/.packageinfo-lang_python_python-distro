@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-distro/Makefile
 
 Package: python3-distro
 Submenu: Python
-Version: 1.7.0-1
+Version: 1.8.0-1
 Depends: +libc +python3-light +python3-logging
 Conflicts: 
 Menu-Depends: 
@@ -10,21 +10,21 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Distro - an OS platform information API
+Title: OS platform information API
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: distro-1.7.0.tar.gz
+Source: distro-1.8.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   A much more elaborate, renewed alternative implementation for Python's
-  platform.linux_distribution()
+Description: distro provides information about the OS distribution it runs on, such
+as a reliable machine-readable ID, or version information.
 https://github.com/python-distro/distro
 Javier Marcet <javier@marcet.info>
 @@
 
 Package: python3-distro-src
 Submenu: Python
-Version: 1.7.0-1
+Version: 1.8.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -32,14 +32,14 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Distro - an OS platform information API (sources)
+Title: OS platform information API (sources)
 Maintainer: Javier Marcet <javier@marcet.info>
-Source: distro-1.7.0.tar.gz
+Source: distro-1.8.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       A much more elaborate, renewed alternative implementation for Python's
-  platform.linux_distribution()
+Description:     distro provides information about the OS distribution it runs on, such
+as a reliable machine-readable ID, or version information.
 
     This package contains the Python source files for python3-distro.
 https://github.com/python-distro/distro

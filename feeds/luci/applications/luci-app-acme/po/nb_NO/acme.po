@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-28 10:31+0000\n"
+"PO-Revision-Date: 2024-03-27 16:13+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsacme/nb_NO/>\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:17
 msgid "ACME certificates"
@@ -20,15 +20,16 @@ msgstr ""
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:26
 msgid "ACME global config"
-msgstr ""
+msgstr "ACME global konfigurasjon"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:144
 msgid "ACME server URL"
-msgstr ""
+msgstr "URL til ACME-serveren"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:29
+#, fuzzy
 msgid "Account email"
-msgstr ""
+msgstr "E-postadresse for konto"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:44
 msgid "Advanced Settings"
@@ -36,7 +37,7 @@ msgstr "Avanserte innstillinger"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:37
 msgid "Certificate config"
-msgstr ""
+msgstr "Sertifikatkonfigurasjon"
 
 #: applications/luci-app-acme/htdocs/luci-static/resources/view/acme.js:124
 msgid "Challenge Alias"

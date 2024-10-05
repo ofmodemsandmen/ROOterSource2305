@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/hwdata/Makefile
 
 Package: pciids
-Version: 0.359-1
+Version: 0.379-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: PCI ID list
 Maintainer: 
-Source: hwdata-0.359.tar.gz
+Source: hwdata-0.379.tar.gz
 License: GPL-2.0-or-later  XFree86-1.0
 LicenseFiles: LICENSE
 Type: ipkg
@@ -21,7 +21,7 @@ https://github.com/vcrhonek/hwdata
 @@
 
 Package: usbids
-Version: 0.359-1
+Version: 0.379-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Utilities
 Repository: base
 Title: USB ID list
 Maintainer: 
-Source: hwdata-0.359.tar.gz
+Source: hwdata-0.379.tar.gz
 License: GPL-2.0-or-later  XFree86-1.0
 LicenseFiles: LICENSE
 Type: ipkg

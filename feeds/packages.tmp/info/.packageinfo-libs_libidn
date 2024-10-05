@@ -15,6 +15,7 @@ Maintainer:
 Source: libidn-1.41.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later LGPL-2.1-or-later LGPL-3.0-or-later Apache-2.0
 LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java/LICENSE-2.0.txt
+CPE-ID: cpe:/a:gnu:libidn
 Type: ipkg
 Description:   GNU Libidn is a fully documented implementation of the Stringprep,
   Punycode and IDNA specifications. Libidn's purpose is to encode and
@@ -40,6 +41,7 @@ Maintainer:
 Source: libidn-1.41.tar.gz
 License: GPL-2.0-or-later GPL-3.0-or-later LGPL-2.1-or-later LGPL-3.0-or-later Apache-2.0
 LicenseFiles: COPYING COPYINGv2 COPYINGv3 COPYING.LESSERv2 COPYING.LESSERv3 java/LICENSE-2.0.txt
+CPE-ID: cpe:/a:gnu:libidn
 Type: ipkg
 Description:   GNU Libidn is a fully documented implementation of the Stringprep,
   Punycode and IDNA specifications. Libidn's purpose is to encode and

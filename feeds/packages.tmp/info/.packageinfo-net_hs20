@@ -14,6 +14,7 @@ Title: Hotspot 2.0 OSU common files
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: hostapd-2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: Hotspot 2.0 OSU common files
 
@@ -36,6 +37,7 @@ Title: Hotspot 2.0 OSU client
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: hostapd-2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: Hotspot 2.0 OSU client
 
@@ -57,6 +59,7 @@ Title: Hotspot 2.0 OSU server
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: hostapd-2020-06-08-5a8b366233f5585e68a4ffbb604fbb4a848eb325.tar.xz
 License: BSD-3-Clause
+CPE-ID: cpe:/a:w1.fi:hostapd
 Type: ipkg
 Description: Hotspot 2.0 OSU server
 

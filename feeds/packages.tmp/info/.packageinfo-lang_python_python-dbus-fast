@@ -3,7 +3,7 @@ Build-Depends: python-poetry-core/host python-cython/host python-wheel/host
 
 Package: python3-dbus-fast
 Submenu: Python
-Version: 1.86.0-1
+Version: 2.21.1-1
 Depends: +libc +python3-light +python3-async-timeout +python3-asyncio +python3-logging +python3-urllib +python3-xml
 Conflicts: 
 Menu-Depends: 
@@ -13,7 +13,7 @@ Category: Languages
 Repository: base
 Title: A faster version of dbus-next
 Maintainer: Quintin Hill <stuff@quintin.me.uk>
-Source: dbus_fast-1.86.0.tar.gz
+Source: dbus_fast-2.21.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,7 +26,7 @@ Quintin Hill <stuff@quintin.me.uk>
 
 Package: python3-dbus-fast-src
 Submenu: Python
-Version: 1.86.0-1
+Version: 2.21.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: A faster version of dbus-next (sources)
 Maintainer: Quintin Hill <stuff@quintin.me.uk>
-Source: dbus_fast-1.86.0.tar.gz
+Source: dbus_fast-2.21.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-ifaddr/Makefile
 
 Package: python3-ifaddr
 Submenu: Python
-Version: 0.1.7-1
+Version: 0.2.0-1
 Depends: +libc +python3-light +python3-ctypes
 Conflicts: 
 Menu-Depends: 
@@ -10,20 +10,21 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Enumerate IP addresses on network adapters
+Title: Network interface and IP address enumeration library
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: ifaddr-0.1.7.tar.gz
+Source: ifaddr-0.2.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:   ifaddr is a small Python library that allows you to find all the IPv4 and IPv6 addresses of the computer.
+Description: ifaddr is a small Python library that allows you to find all the
+Ethernet and IP addresses of the computer.
 https://github.com/pydron/ifaddr
 Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 Package: python3-ifaddr-src
 Submenu: Python
-Version: 0.1.7-1
+Version: 0.2.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,13 +32,14 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Enumerate IP addresses on network adapters (sources)
+Title: Network interface and IP address enumeration library (sources)
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: ifaddr-0.1.7.tar.gz
+Source: ifaddr-0.2.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:       ifaddr is a small Python library that allows you to find all the IPv4 and IPv6 addresses of the computer.
+Description:     ifaddr is a small Python library that allows you to find all the
+Ethernet and IP addresses of the computer.
 
     This package contains the Python source files for python3-ifaddr.
 https://github.com/pydron/ifaddr

@@ -15,6 +15,7 @@ Maintainer:
 Source: rsyslog-8.2110.0.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rsyslog:rsyslog
 Type: ipkg
 Description: Enhanced system logging and kernel message trapping daemons
 https://www.rsyslog.com/

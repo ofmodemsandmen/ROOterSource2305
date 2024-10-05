@@ -8,7 +8,7 @@ Target-Features: gpio squashfs
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32 -mtune=mips32
 CPU-Type: mips32
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -24,7 +24,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -319,6 +319,22 @@ Build firmware images for D-Link DIR-510L
 
 @@
 
+Target-Profile: DEVICE_dlink_dir-806a-b1
+Target-Profile-Name: D-Link DIR-806A B1
+Target-Profile-Packages:  kmod-mt76x0e 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,dir-806a-b1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link DIR-806A B1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_dlink_dir-810l
 Target-Profile-Name: D-Link DIR-810L
 Target-Profile-Packages: kmod-mt76x0e 
@@ -520,6 +536,22 @@ Target-Profile-SupportedDevices: dovado,tiny-ac tiny-ac
 
 Target-Profile-Description:
 Build firmware images for Dovado Tiny AC
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_edimax_br-6208ac-v2
+Target-Profile-Name: Edimax BR-6208AC V2
+Target-Profile-Packages: kmod-mt76x2 kmod-mt76x0e kmod-phy-realtek kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: edimax,br-6208ac-v2
+
+
+Target-Profile-Description:
+Build firmware images for Edimax BR-6208AC V2
 
 
 
@@ -753,7 +785,7 @@ Build firmware images for HiWiFi HC5761
 
 Target-Profile: DEVICE_hiwifi_hc5861
 Target-Profile-Name: HiWiFi HC5861
-Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport 
+Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-phy-realtek kmod-usb-ledtrig-usbport 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: hiwifi,hc5861 hc5861
 
@@ -1505,6 +1537,74 @@ Build firmware images for RAVPower RP-WD03
 
 @@
 
+Target-Profile: DEVICE_rostelecom_rt-fl-1
+Target-Profile-Name: Sercomm RT-FL-1 (Rostelecom RT-FL-1)
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fl-1
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FL-1
+Alternative device titles:
+- Sercomm RT-FL-1
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_rt-fl-1
+Target-Profile-Name: Rostelecom RT-FL-1
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fl-1
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FL-1
+Alternative device titles:
+- Sercomm RT-FL-1
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_s1010
+Target-Profile-Name: Sercomm S1010.RT (Rostelecom S1010)
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,s1010
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom S1010
+Alternative device titles:
+- Sercomm S1010.RT
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_s1010
+Target-Profile-Name: Rostelecom S1010
+Target-Profile-Packages: kmod-mt76x2 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,s1010
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom S1010
+Alternative device titles:
+- Sercomm S1010.RT
+
+
+
+
+@@
+
 Target-Profile: DEVICE_sanlinking_d240
 Target-Profile-Name: Sanlinking Technologies D240
 Target-Profile-Packages: kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 
@@ -2140,7 +2240,7 @@ Target-Features: dt gpio minor mips16 nand pci ramdisk rtc squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -2172,6 +2272,22 @@ Target-Profile-SupportedDevices: afoundry,ew1200 ew1200
 
 Target-Profile-Description:
 Build firmware images for AFOUNDRY EW1200
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_alfa-network_ax1800rm
+Target-Profile-Name: ALFA Network AX1800RM
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: alfa-network,ax1800rm
+
+
+Target-Profile-Description:
+Build firmware images for ALFA Network AX1800RM
 
 
 
@@ -2541,6 +2657,40 @@ Build firmware images for Beeline SmartBox GIGA
 
 @@
 
+Target-Profile: DEVICE_beeline_smartbox-pro
+Target-Profile-Name: Sercomm S1500 AWI (Beeline SmartBox PRO)
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: beeline,smartbox-pro
+
+
+Target-Profile-Description:
+Build firmware images for Beeline SmartBox PRO
+Alternative device titles:
+- Sercomm S1500 AWI
+
+
+
+
+@@
+
+Target-Profile: DEVICE_beeline_smartbox-pro
+Target-Profile-Name: Beeline SmartBox PRO
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: beeline,smartbox-pro
+
+
+Target-Profile-Description:
+Build firmware images for Beeline SmartBox PRO
+Alternative device titles:
+- Sercomm S1500 AWI
+
+
+
+
+@@
+
 Target-Profile: DEVICE_beeline_smartbox-turbo
 Target-Profile-Name: Beeline SmartBox TURBO
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware kmod-usb3 
@@ -2671,6 +2821,38 @@ Build firmware images for BOLT Arion
 
 @@
 
+Target-Profile: DEVICE_comfast_cf-e390ax
+Target-Profile-Name: ComFast CF-E390AX
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-e390ax
+
+
+Target-Profile-Description:
+Build firmware images for ComFast CF-E390AX
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_comfast_cf-ew72-v2
+Target-Profile-Name: ComFast CF-EW72 V2
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: comfast,cf-ew72-v2
+
+
+Target-Profile-Description:
+Build firmware images for ComFast CF-EW72 V2
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_m1800
 Target-Profile-Name: Cudy M1800
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
@@ -2719,6 +2901,22 @@ Build firmware images for Cudy WR1300 v2
 
 @@
 
+Target-Profile: DEVICE_cudy_wr1300-v3
+Target-Profile-Name: Cudy WR1300 v3
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,wr1300-v3 cudy,wr1300 R30
+
+
+Target-Profile-Description:
+Build firmware images for Cudy WR1300 v3
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_cudy_wr2100
 Target-Profile-Name: Cudy WR2100
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware -uboot-envtools 
@@ -2760,6 +2958,22 @@ Target-Profile-SupportedDevices: cudy,x6-v2 cudy,x6 R30
 
 Target-Profile-Description:
 Build firmware images for Cudy X6 v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_dlink_covr-x1860-a1
+Target-Profile-Name: D-Link COVR-X1860 A1
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: dlink,covr-x1860-a1
+
+
+Target-Profile-Description:
+Build firmware images for D-Link COVR-X1860 A1
 
 
 
@@ -4133,15 +4347,31 @@ Build firmware images for MediaTek MT7621 EVB
 
 @@
 
+Target-Profile: DEVICE_meig_slt866
+Target-Profile-Name: MeiG SLT866
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap kmod-usb-net-qmi-wwan kmod-usb-serial-option kmod-usb3 kmod-usb-net-rndis 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: meig,slt866
+
+
+Target-Profile-Description:
+Build firmware images for MeiG SLT866
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_mercusys_mr70x-v1
-Target-Profile-Name: Mercusys MR70X v1
+Target-Profile-Name: MERCUSYS MR70X v1
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: mercusys,mr70x-v1
 
 
 Target-Profile-Description:
-Build firmware images for Mercusys MR70X v1
+Build firmware images for MERCUSYS MR70X v1
 
 
 
@@ -4272,6 +4502,57 @@ Target-Profile-Description:
 Build firmware images for MTS WG430223
 
 
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX11 v2 (NETGEAR EAX12)
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX15 v2 (NETGEAR EAX12)
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
+
+
+
+@@
+
+Target-Profile: DEVICE_netgear_eax12
+Target-Profile-Name: NETGEAR EAX12
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: netgear,eax12
+
+
+Target-Profile-Description:
+Build firmware images for NETGEAR EAX12
+Alternative device titles:
+- NETGEAR EAX11 v2
+- NETGEAR EAX15 v2
 
 
 
@@ -4668,6 +4949,40 @@ Build firmware images for Renkforce WS-WN530HP3-A
 
 @@
 
+Target-Profile: DEVICE_rostelecom_rt-fe-1a
+Target-Profile-Name: Sercomm RT-FE-1A (Rostelecom RT-FE-1A)
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fe-1a
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FE-1A
+Alternative device titles:
+- Sercomm RT-FE-1A
+
+
+
+
+@@
+
+Target-Profile: DEVICE_rostelecom_rt-fe-1a
+Target-Profile-Name: Rostelecom RT-FE-1A
+Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: rostelecom,rt-fe-1a
+
+
+Target-Profile-Description:
+Build firmware images for Rostelecom RT-FE-1A
+Alternative device titles:
+- Sercomm RT-FE-1A
+
+
+
+
+@@
+
 Target-Profile: DEVICE_rostelecom_rt-sf-1
 Target-Profile-Name: Rostelecom RT-SF-1
 Target-Profile-Packages: kmod-mt7603 kmod-mt7615-firmware kmod-usb3 
@@ -5004,6 +5319,22 @@ Build firmware images for TP-Link EAP235-Wall v1
 
 @@
 
+Target-Profile: DEVICE_tplink_eap613-v1
+Target-Profile-Name: TP-Link EAP613 v1
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,eap613-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EAP613 v1
+
+
+
+
+
+@@
+
 Target-Profile: DEVICE_tplink_eap615-wall-v1
 Target-Profile-Name: TP-Link EAP615-Wall v1
 Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
@@ -5063,6 +5394,22 @@ Target-Profile-SupportedDevices: tplink,er605-v2
 
 Target-Profile-Description:
 Build firmware images for TP-Link ER605 v2
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_tplink_ex220-v1
+Target-Profile-Name: TP-Link EX220 v1
+Target-Profile-Packages: kmod-mt7915-firmware -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: tplink,ex220-v1
+
+
+Target-Profile-Description:
+Build firmware images for TP-Link EX220 v1
 
 
 
@@ -5217,14 +5564,14 @@ Alternative device titles:
 @@
 
 Target-Profile: DEVICE_ubnt_unifi-6-lite
-Target-Profile-Name: Ubiquiti UniFi 6 Lite
+Target-Profile-Name: Ubiquiti UniFi U6 Lite
 Target-Profile-Packages:  kmod-mt7603 kmod-mt7915-firmware -uboot-envtools 
 Target-Profile-hasImageMetadata: 1
 Target-Profile-SupportedDevices: ubnt,unifi-6-lite
 
 
 Target-Profile-Description:
-Build firmware images for Ubiquiti UniFi 6 Lite
+Build firmware images for Ubiquiti UniFi U6 Lite
 
 
 
@@ -5418,6 +5765,40 @@ Target-Profile-SupportedDevices: wevo,w2914ns-v2 w2914nsv2
 Target-Profile-Description:
 Build firmware images for WeVO W2914NS v2
 
+
+
+
+
+@@
+
+Target-Profile: DEVICE_wifire_s1500-nbn
+Target-Profile-Name: Sercomm S1500 BUC (WiFire S1500.NBN)
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: wifire,s1500-nbn
+
+
+Target-Profile-Description:
+Build firmware images for WiFire S1500.NBN
+Alternative device titles:
+- Sercomm S1500 BUC
+
+
+
+
+@@
+
+Target-Profile: DEVICE_wifire_s1500-nbn
+Target-Profile-Name: WiFire S1500.NBN
+Target-Profile-Packages: kmod-mt76x2 kmod-usb3 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: wifire,s1500-nbn
+
+
+Target-Profile-Description:
+Build firmware images for WiFire S1500.NBN
+Alternative device titles:
+- Sercomm S1500 BUC
 
 
 
@@ -5746,6 +6127,56 @@ Build firmware images for YunCore FAP690
 
 @@
 
+Target-Profile: DEVICE_yuncore_g720
+Target-Profile-Name: YunCore G720
+Target-Profile-Packages: kmod-mt7915-firmware 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: yuncore,g720 mt7621-rfb-ax-nor
+
+
+Target-Profile-Description:
+Build firmware images for YunCore G720
+
+
+
+
+
+@@
+
+Target-Profile: DEVICE_z-router_zr-2660
+Target-Profile-Name: Routerich AX1800 (Z-ROUTER ZR-2660)
+Target-Profile-Packages:  kmod-mt7915-firmware kmod-usb3 -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: z-router,zr-2660
+
+
+Target-Profile-Description:
+Build firmware images for Z-ROUTER ZR-2660
+Alternative device titles:
+- Routerich AX1800
+
+
+
+
+@@
+
+Target-Profile: DEVICE_z-router_zr-2660
+Target-Profile-Name: Z-ROUTER ZR-2660
+Target-Profile-Packages:  kmod-mt7915-firmware kmod-usb3 -uboot-envtools 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: z-router,zr-2660
+
+
+Target-Profile-Description:
+Build firmware images for Z-ROUTER ZR-2660
+Alternative device titles:
+- Routerich AX1800
+
+
+
+
+@@
+
 Target-Profile: DEVICE_zbtlink_zbt-we1326
 Target-Profile-Name: Wiflyer WF3526-P (Zbtlink ZBT-WE1326)
 Target-Profile-Packages: kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 -uboot-envtools 
@@ -6045,7 +6476,7 @@ Target-Features: dt gpio mips16 pci ramdisk squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -6313,6 +6744,22 @@ Target-Profile-Description:
 Build firmware images for COMFAST CF-WR758AC V2
 Alternative device titles:
 - Joowin JW-WR758AC V2
+
+
+
+
+@@
+
+Target-Profile: DEVICE_cudy_tr1200-v1
+Target-Profile-Name: Cudy TR1200 v1
+Target-Profile-Packages: kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport kmod-mt7615e kmod-mt7663-firmware-ap 
+Target-Profile-hasImageMetadata: 1
+Target-Profile-SupportedDevices: cudy,tr1200-v1 R46
+
+
+Target-Profile-Description:
+Build firmware images for Cudy TR1200 v1
+
 
 
 
@@ -7864,7 +8311,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -8008,7 +8455,7 @@ Target-Features: dt gpio mips16 ramdisk small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc
 CPU-Type: 24kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:
@@ -9770,7 +10217,7 @@ Target-Features: dt gpio mips16 pci small_flash squashfs usb
 Target-Depends: 
 Target-Optimization: -Os -pipe -mno-branch-likely -mips32r2 -mtune=74kc
 CPU-Type: 74kc
-Linux-Version: 5.15.118
+Linux-Version: 5.15.167
 Linux-Release: 1
 Linux-Kernel-Arch: mips
 Target-Description:

@@ -15,6 +15,7 @@ Maintainer:
 Source: libosip2-5.3.0.tar.gz
 License: LGPL-2.1+
 LicenseFiles: COPYING
+ABI-Version: 15
 Type: ipkg
 Description:  GNU oSIP library, a Session Initiation Protocol (SIP) implementation.
 http://www.gnu.org/software/osip/

@@ -16,6 +16,7 @@ Maintainer: Jiri Slachta <jiri@slachta.eu>
 Source: libxslt-1.1.37.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxslt
 Type: ipkg
 Description:  A library for XML transformation using XSLT.
 http://xmlsoft.org/XSLT/
@@ -36,6 +37,7 @@ Maintainer: Jiri Slachta <jiri@slachta.eu>
 Source: libxslt-1.1.37.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxslt
 Type: ipkg
 Description:  An extension for XSLT.
 http://xmlsoft.org/XSLT/EXSLT/
@@ -56,6 +58,7 @@ Maintainer: Jiri Slachta <jiri@slachta.eu>
 Source: libxslt-1.1.37.tar.xz
 License: MIT
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:xmlsoft:libxslt
 Type: ipkg
 Description:  XSLT XML transformation utility.
 http://xmlsoft.org/XSLT/

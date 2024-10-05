@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-engineio/Makefile
 
 Package: python3-engineio
 Submenu: Python
-Version: 4.1.0-1
+Version: 4.5.1-1
 Depends: +libc +python3-light +python3-asyncio +python3-logging +python3-openssl +python3-urllib
 Conflicts: 
 Menu-Depends: 
@@ -10,11 +10,12 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Engine.IO server
+Title: Engine.IO server and client
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: python-engineio-4.1.0.tar.gz
+Source: python-engineio-4.5.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:python-engineio_project:python-engineio
 Type: ipkg
 Description:   Python implementation of the Engine.IO realtime client and server.
 https://github.com/miguelgrinberg/python-engineio
@@ -23,7 +24,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>
 
 Package: python3-engineio-src
 Submenu: Python
-Version: 4.1.0-1
+Version: 4.5.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,11 +32,12 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Engine.IO server (sources)
+Title: Engine.IO server and client (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: python-engineio-4.1.0.tar.gz
+Source: python-engineio-4.5.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:python-engineio_project:python-engineio
 Type: ipkg
 Description:       Python implementation of the Engine.IO realtime client and server.
 

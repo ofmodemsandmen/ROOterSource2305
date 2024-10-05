@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: dovecot-2.3-pigeonhole-0.5.20.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING COPYING.LGPL
+CPE-ID: cpe:/a:dovecot:pigeonhole
 Type: ipkg
 Description:   Pigeonhole provides mail filtering facilities for Dovecot using the Sieve
   (RFC 5228) language.

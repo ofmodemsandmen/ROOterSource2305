@@ -12,16 +12,17 @@ Section: lang
 Category: Languages
 Repository: base
 Title: C-sharp like language for the GObject system
-Maintainer: 
+Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: vala-0.56.3.tar.xz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnome:vala
 Type: ipkg
 Build-Only: 1
 Description:   Vala is a C-sharp like language for the GObject system. This package contains
   the Vala-to-C compiler for host.
 https://wiki.gnome.org/Projects/Vala
-
+W. Michael Petullo <mike@flyn.org>
 @@
 
 

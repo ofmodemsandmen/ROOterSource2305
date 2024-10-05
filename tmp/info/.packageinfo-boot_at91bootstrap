@@ -13,6 +13,7 @@ Category: Boot Loaders
 Title: .AT91Bootstrap for AT91SAM9X5-EK board (NandFlash)
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .AT91Bootstrap for AT91SAM9X5-EK board (NandFlash)
@@ -34,6 +35,7 @@ Category: Boot Loaders
 Title: .AT91Bootstrap for AT91SAM9X5-EK board (SDcard)
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .AT91Bootstrap for AT91SAM9X5-EK board (SDcard)
@@ -55,6 +57,7 @@ Category: Boot Loaders
 Title: .AT91Bootstrap for SAM9X60-EK board (NandFlash)
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .AT91Bootstrap for SAM9X60-EK board (NandFlash)
@@ -76,6 +79,7 @@ Category: Boot Loaders
 Title: .AT91Bootstrap for SAM9X60-EK board (SDcard)
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .AT91Bootstrap for SAM9X60-EK board (SDcard)
@@ -97,6 +101,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -118,6 +123,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -139,6 +145,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -160,6 +167,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -181,6 +189,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -202,6 +211,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -223,6 +233,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -244,6 +255,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -265,6 +277,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -286,6 +299,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -307,6 +321,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -328,6 +343,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -349,6 +365,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -370,6 +387,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -391,6 +409,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -412,6 +431,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .
@@ -433,6 +453,7 @@ Category: Boot Loaders
 Title: .
 Maintainer: 
 Source: at91bootstrap-v4.0.3.tar.xz
+CPE-ID: cpe:/a:linux4sam:at91bootstrap
 Type: bin
 Hidden: 1
 Description: .

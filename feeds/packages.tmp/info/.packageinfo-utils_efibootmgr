@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/efibootmgr/Makefile
 
 Package: efibootmgr
-Version: 18-1
-Depends: +libc @TARGET_x86_64 +efivar +libpopt
+Version: 18-2
+Depends: +libc @(TARGET_x86_64||TARGET_armsr_armv8) +efivar +libpopt
 Conflicts: 
 Menu-Depends: 
 Provides: 

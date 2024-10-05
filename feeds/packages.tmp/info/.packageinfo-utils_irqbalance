@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/utils/irqbalance/Makefile
 Build-Depends: glib2
 
 Package: irqbalance
-Version: 1.9.2-2
+Version: 1.9.4-1
 Depends: +libc +BUILD_NLS:libiconv-full +BUILD_NLS:libintl-full
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Utilities
 Repository: base
 Title: IRQ usage balancing for multi-core systems
 Maintainer: Hannu Nyman <hannu.nyman@iki.fi>
-Source: irqbalance-1.9.2.tar.xz
+Source: irqbalance-1.9.4.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

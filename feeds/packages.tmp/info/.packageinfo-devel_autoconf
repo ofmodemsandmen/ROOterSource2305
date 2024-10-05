@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/devel/autoconf/Makefile
 
 Package: autoconf
-Version: 2.70-2
+Version: 2.72-1
 Depends: +libc +m4 +perl +perlbase-data +perlbase-file +perlbase-getopt +perlbase-dynaloader +perlbase-text
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Development
 Repository: base
 Title: autoconf
 Maintainer: Heinrich Schuchardt <xypron.glpk@gmx.de>
-Source: autoconf-2.70.tar.xz
+Source: autoconf-2.72.tar.xz
 License: GPL-3.0-or-later
 Type: ipkg
 Description:   Autoconf is an extensible package of M4 macros that produce shell scripts to

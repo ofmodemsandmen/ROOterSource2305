@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/libs/file/Makefile
 
 Package: file
-Version: 5.41-2
+Version: 5.44-1
 Depends: +libc +libmagic
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: File type determination utility
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: file-5.41.tar.gz
+Source: file-5.44.tar.gz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg
@@ -21,7 +21,7 @@ Marko Ratkaj <markoratkaj@gmail.com>
 @@
 
 Package: libmagic
-Version: 5.41-2
+Version: 5.44-1
 Depends: +libc +zlib +liblzma +libbz2
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Libraries
 Repository: base
 Title: File type determination library
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
-Source: file-5.41.tar.gz
+Source: file-5.44.tar.gz
 License: BSD-2-Clause
 LicenseFiles: COPYING
 Type: ipkg

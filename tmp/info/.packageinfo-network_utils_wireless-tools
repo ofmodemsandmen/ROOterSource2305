@@ -13,6 +13,8 @@ Title: Library for manipulating Linux Wireless Extensions
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: wireless_tools.29.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:wireless_tools_project:wireless_tools
+ABI-Version: 29
 Type: ipkg
 Description:  This package contains a library for manipulating
  "Linux Wireless Extensions".
@@ -33,6 +35,7 @@ Title: Tools for manipulating Linux Wireless Extensions
 Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: wireless_tools.29.tar.gz
 License: GPL-2.0
+CPE-ID: cpe:/a:wireless_tools_project:wireless_tools
 Type: ipkg
 Description:  This package contains a collection of tools for configuring wireless
  adapters implementing the "Linux Wireless Extensions".

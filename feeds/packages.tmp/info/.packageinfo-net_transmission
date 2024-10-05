@@ -3,8 +3,8 @@ Build-Depends: libb64 node/host
 
 Package: transmission-daemon
 Submenu: BitTorrent
-Version: 4.0.3-2
-Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls
+Version: 4.0.6-1
+Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_MBEDTLS:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -14,9 +14,10 @@ Repository: base
 Title: BitTorrent client
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Require-User: transmission=224:transmission=224
-Source: transmission-4.0.3.tar.xz
+Source: transmission-4.0.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:transmissionbt:transmission
 Type: ipkg
 Description:  Transmission is a simple BitTorrent client.
  It features a very simple, intuitive interface
@@ -28,8 +29,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: transmission-cli
 Submenu: BitTorrent
-Version: 4.0.3-2
-Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls
+Version: 4.0.6-1
+Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_MBEDTLS:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -38,9 +39,10 @@ Category: Network
 Repository: base
 Title: BitTorrent client (utilities)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: transmission-4.0.3.tar.xz
+Source: transmission-4.0.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:transmissionbt:transmission
 Type: ipkg
 Description:  CLI utilities for transmission.
 https://www.transmissionbt.com
@@ -49,8 +51,8 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: transmission-remote
 Submenu: BitTorrent
-Version: 4.0.3-2
-Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls
+Version: 4.0.6-1
+Depends: +libc +libatomic +libcurl +libdeflate +libdht +libevent2 +libevent2-pthreads +libminiupnpc +libnatpmp +libpthread +libpsl +librt +libutp +zlib +LIBCURL_NOSSL:libmbedtls +LIBCURL_GNUTLS:libmbedtls +LIBCURL_MBEDTLS:libmbedtls
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -59,9 +61,10 @@ Category: Network
 Repository: base
 Title: BitTorrent client (remote)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: transmission-4.0.3.tar.xz
+Source: transmission-4.0.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:transmissionbt:transmission
 Type: ipkg
 Description:  CLI remote interface for transmission.
 https://www.transmissionbt.com
@@ -70,7 +73,7 @@ Daniel Golle <daniel@makrotopia.org>
 
 Package: transmission-web
 Submenu: BitTorrent
-Version: 4.0.3-2
+Version: 4.0.6-1
 Depends: +libc +transmission-daemon
 Conflicts: 
 Menu-Depends: 
@@ -80,9 +83,10 @@ Category: Network
 Repository: base
 Title: BitTorrent client (webinterface)
 Maintainer: Daniel Golle <daniel@makrotopia.org>
-Source: transmission-4.0.3.tar.xz
+Source: transmission-4.0.6.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:transmissionbt:transmission
 Type: ipkg
 Description:  Webinterface resources for transmission.
 https://www.transmissionbt.com

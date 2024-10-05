@@ -14,6 +14,7 @@ Maintainer:
 Source: taglib-1.13.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LGPL
+CPE-ID: cpe:/a:taglib:taglib
 Type: ipkg
 Description:   TagLib is a library for reading and editing the metadata of several
   popular audio formats. Currently it supports both ID3v1 and ID3v2 for

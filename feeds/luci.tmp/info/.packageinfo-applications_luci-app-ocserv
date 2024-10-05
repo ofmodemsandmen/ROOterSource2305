@@ -343,6 +343,25 @@ Description:     Translation for luci-app-ocserv - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-ocserv-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-ocserv
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-ocserv - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-ocserv - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-ocserv-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

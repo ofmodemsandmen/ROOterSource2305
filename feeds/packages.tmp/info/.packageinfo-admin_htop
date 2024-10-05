@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/admin/htop/Makefile
 Build-Depends: HTOP_LMSENSORS:lm-sensors
 
 Package: htop
-Version: 3.2.2-1
+Version: 3.3.0-1
 Depends: +libc +libncurses
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Administration
 Repository: base
 Title: Interactive processes viewer
 Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: htop-3.2.2.tar.gz
+Source: htop-3.3.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:htop:htop
 Type: ipkg
 Description:  Htop is an ncursed-based process viewer similar to top, but
  it allows to scroll the list vertically and horizontally to

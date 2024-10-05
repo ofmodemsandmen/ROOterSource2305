@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-06 12:52+0000\n"
-"Last-Translator: xtz1983 <xtz1983@gmail.com>\n"
+"PO-Revision-Date: 2024-01-06 10:10+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsadblock/nl/>\n"
 "Language: nl\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/dnsreport.js:272
 msgid "Action"
@@ -490,10 +490,6 @@ msgstr ""
 msgid "No Query results!"
 msgstr "Geen zoekresultaat gevonden!"
 
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:21
-msgid "No adblock related logs yet!"
-msgstr "Nog geen adblock gerelateerde logs!"
-
 #: applications/luci-app-adblock/root/usr/share/luci/menu.d/luci-app-adblock.json:19
 msgid "Overview"
 msgstr "Overzicht"
@@ -662,7 +658,7 @@ msgstr "Stel een nieuwe adblock-taak in"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:432
 msgid "Set the dns backend instance used by adblock."
-msgstr "Stel de dns-backend-instantie in die wordt gebruikt door adblock."
+msgstr "Stel de DNS-backend-instantie in die wordt gebruikt door adblock."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:297
 msgid "Settings"
@@ -730,12 +726,6 @@ msgstr "Het urengedeelte (req., bereik: 0-23)"
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:51
 msgid "The minutes portion (opt., range: 0-59)"
 msgstr "Het minutengedeelte (opt., bereik: 0-59)"
-
-#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/logread.js:28
-msgid "The syslog output, pre-filtered for adblock related messages only."
-msgstr ""
-"De syslog-uitvoer, vooraf gefilterd voor alleen adblock-gerelateerde "
-"berichten."
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:435
 msgid "Third instance"
@@ -809,6 +799,8 @@ msgid "Unable to save changes: %s"
 msgstr "Kan wijzigingen niet opslaan: %s"
 
 #: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:588
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:604
+#: applications/luci-app-adblock/htdocs/luci-static/resources/view/adblock/overview.js:620
 msgid "Variants"
 msgstr "Varianten"
 

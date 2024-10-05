@@ -13,6 +13,7 @@ Repository: base
 Title: PopTop pptp server
 Maintainer: 
 Source: pptpd-1.4.0.tar.gz
+CPE-ID: cpe:/a:poptop:pptp_server
 Type: ipkg
 Description: PopTop pptp server
 http://poptop.sourceforge.net/

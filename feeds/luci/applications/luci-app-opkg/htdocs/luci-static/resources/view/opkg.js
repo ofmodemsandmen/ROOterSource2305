@@ -310,8 +310,9 @@ function display(pattern)
 		currentDisplayRows.push([
 			name,
 			ver,
-			pkg.size ? '%1024mB'.format(pkg.size)
-			         : (altsize ? '~%1024mB'.format(altsize) : '-'),
+			[ pkg.size || 0,
+			   pkg.size ? '%1024mB'.format(pkg.size)
+			         : (altsize ? '~%1024mB'.format(altsize) : '-') ],
 			desc,
 			btn
 		]);
@@ -1087,11 +1088,11 @@ function updateLists(data)
 
 	return (data ? Promise.resolve(data) : downloadLists()).then(function(data) {
 		var pg = document.querySelector('.cbi-progressbar'),
-		    mount = L.toArray(data[0].filter(function(m) { return m.mount == '/' || m.mount == '/overlay' }))
-		    	.sort(function(a, b) { return a.mount > b.mount })[0] || { size: 0, free: 0 };
+			mount = L.toArray(data[0].filter(function(m) { return m.mount == '/' || m.mount == '/overlay' }))
+				.sort(function(a, b) { return a.mount > b.mount })[0] || { size: 0, free: 0 };
 
-		pg.firstElementChild.style.width = Math.floor(mount.size ? ((100 / mount.size) * mount.free) : 100) + '%';
-		pg.setAttribute('title', '%s (%1024mB)'.format(pg.firstElementChild.style.width, mount.free));
+		pg.firstElementChild.style.width = Math.floor(mount.size ? (100 / mount.size) * (mount.size - mount.free) : 100) + '%';
+		pg.setAttribute('title', _('%s used (%1024mB used of %1024mB, %1024mB free)').format(pg.firstElementChild.style.width, mount.size - mount.free, mount.size, mount.free));
 
 		parseList(data[1], packages.available);
 		parseList(data[2], packages.installed);
@@ -1132,9 +1133,17 @@ return view.extend({
 			
 			E('h3', {}, _('These packages are : luci-app-firewall, luci-app-ksmbd, luci, luci-lib-base, luci-base, luci-compat, luci-mod-status, luci-theme-material, ddns-scripts, mwan3, nft-qos, openvpn, usbmode, procd, dnsmasq, ppp, mac80211, mt76 and boot-envtools')),
 			
+			E('div', { 'class': 'cbi-map-descr' }, [
+				E('span', _('Install additional software and upgrade existing packages with opkg.')),
+				E('br'),
+				E('span', _('<strong>Warning!</strong> Package operations can <a %s>break your system</a>.').format(
+					'href="https://openwrt.org/meta/infobox/upgrade_packages_warning" target="_blank" rel="noreferrer"'
+				))
+			]),
+
 			E('div', { 'class': 'controls' }, [
 				E('div', {}, [
-					E('label', {}, _('Free space') + ':'),
+					E('label', {}, _('Disk space') + ':'),
 					E('div', { 'class': 'cbi-progressbar', 'title': _('unknown') }, E('div', {}, [ '\u00a0' ]))
 				]),
 

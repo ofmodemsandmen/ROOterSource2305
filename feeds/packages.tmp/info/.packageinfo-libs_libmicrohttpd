@@ -16,6 +16,7 @@ Maintainer: Alexander Couzens <lynxis@fe80.eu>
 Source: libmicrohttpd-0.9.75.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:libmicrohttpd
 Type: ipkg
 Description: GNU libmicrohttpd is a library that runs an HTTP server.
 https://www.gnu.org/software/libmicrohttpd/
@@ -37,6 +38,7 @@ Maintainer: Alexander Couzens <lynxis@fe80.eu>
 Source: libmicrohttpd-0.9.75.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:gnu:libmicrohttpd
 Type: ipkg
 Description: GNU libmicrohttpd is a library that runs an HTTP server. with SSL support
 https://www.gnu.org/software/libmicrohttpd/

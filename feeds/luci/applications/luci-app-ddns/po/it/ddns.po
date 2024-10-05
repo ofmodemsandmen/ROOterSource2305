@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: luci-app-ddns 2.4.0-1\n"
 "POT-Creation-Date: 2016-01-30 11:07+0100\n"
-"PO-Revision-Date: 2023-05-17 13:56+0000\n"
-"Last-Translator: Daniele Olivo <daniele.olivo1996@gmail.com>\n"
+"PO-Revision-Date: 2024-07-03 10:09+0000\n"
+"Last-Translator: moreno <morenomatassini95@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsddns/it/>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:432
 msgid "\"../\" not allowed in path for Security Reason."
@@ -24,7 +24,7 @@ msgstr "Aggiungi un nuovo servizio..."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:608
 msgid "Advanced Settings"
-msgstr "Impostazioni Avanzate"
+msgstr "Impostazioni avanzate"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:401
 msgid "Allow non-public IP's"
@@ -233,15 +233,15 @@ msgstr "Abilita la comunicazione sicura con il provider DDNS"
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:613
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1132
 msgid "Enabled"
-msgstr "Abilitato"
+msgstr "Abilita"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:949
 msgid "Error"
 msgstr "Errore"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1024
-msgid "Error Retry Counter"
-msgstr "Contatore tentativi su errore"
+msgid "Error Max Retry Counter"
+msgstr "Errore: Contatore massimo di tentativi raggiunto"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1034
 msgid "Error Retry Interval"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:946
 msgid "Info"
-msgstr "Informazioni"
+msgstr "Info"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:264
 msgid "Information"
@@ -557,7 +557,8 @@ msgstr ""
 "OPZIONALE: Usa Server DNS non di default per individuare 'IP Registrato'."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1025
-msgid "On Error the script will stop execution after given number of retrys."
+msgid ""
+"On Error the script will stop execution after the given number of retries."
 msgstr ""
 "Se si verifica un errore lo script smetterà di funzionare dopo un "
 "determinato numero di tentativi."
@@ -635,7 +636,7 @@ msgstr "Sostituisci [PASSWORD] nell'URL di aggiornamento (URL codificato)"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:744
 msgid "Replaces [USERNAME] in Update-URL (URL-encoded)"
-msgstr "Sostituisci [NOME UTENTE] nell'URL di aggiornamento (URL codificato)"
+msgstr "Sostituisci [USERNAME] nell'URL di aggiornamento (URL codificato)"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:290
 msgid "Restart DDns"
@@ -710,7 +711,7 @@ msgstr "Stato cartella"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:574
 msgid "Stop"
-msgstr "Arresta"
+msgstr "Ferma"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:190
 msgid "Stop DDNS"
@@ -733,7 +734,7 @@ msgid "The default setting of '0' will retry infinitely."
 msgstr "L'opzione di default '0' riproverà all'infinito."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1035
-msgid "The interval between which each succesive retry will commence."
+msgid "The interval between which each successive retry commences."
 msgstr "L'intervallo tra il quale avrà inizio ogni tentativo successivo."
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:505
@@ -832,7 +833,7 @@ msgstr "Verifica"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:948
 msgid "Warning"
-msgstr "Allarme"
+msgstr "Avviso"
 
 #: applications/luci-app-ddns/htdocs/luci-static/resources/view/ddns/overview.js:1043
 msgid "Which time units to use for retry counters."

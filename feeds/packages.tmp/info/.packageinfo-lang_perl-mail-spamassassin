@@ -16,6 +16,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: Mail-SpamAssassin-4.0.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:spamassassin
 Type: ipkg
 Description: SpamAssassin
 https://spamassassin.apache.org/
@@ -37,6 +38,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: Mail-SpamAssassin-4.0.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:spamassassin
 Type: ipkg
 Description: SpamAssassin client binary
 https://spamassassin.apache.org/
@@ -58,6 +60,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: Mail-SpamAssassin-4.0.0.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:apache:spamassassin
 Type: ipkg
 Description: SpamAssassin client binary (with SSL)
 https://spamassassin.apache.org/

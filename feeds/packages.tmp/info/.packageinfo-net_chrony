@@ -3,7 +3,7 @@ Build-Depends: pps-tools
 
 Package: chrony
 Submenu: Time Synchronization
-Version: 4.3-2
+Version: 4.4-1
 Depends: +libc +libcap +libpthread
 Conflicts: chrony-nts
 Menu-Depends: 
@@ -15,9 +15,10 @@ Repository: base
 Title: A versatile NTP client and server (without NTS)
 Maintainer: Miroslav Lichvar <mlichvar0@gmail.com>
 Require-User: chrony=323:chrony=323
-Source: chrony-4.3.tar.gz
+Source: chrony-4.4.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tuxfamily:chrony
 Type: ipkg
 Description: 	An NTP client and server designed to perform well in a wide range
 	of conditions. It can synchronize the system clock with NTP servers,
@@ -28,7 +29,7 @@ Miroslav Lichvar <mlichvar0@gmail.com>
 
 Package: chrony-nts
 Submenu: Time Synchronization
-Version: 4.3-2
+Version: 4.4-1
 Depends: +libc +libcap +libpthread +PACKAGE_chrony-nts:libgnutls +PACKAGE_chrony-nts:ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -40,9 +41,10 @@ Repository: base
 Title: A versatile NTP client and server (with NTS)
 Maintainer: Miroslav Lichvar <mlichvar0@gmail.com>
 Require-User: chrony=323:chrony=323
-Source: chrony-4.3.tar.gz
+Source: chrony-4.4.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tuxfamily:chrony
 Type: ipkg
 Description: 	An NTP client and server designed to perform well in a wide range
 	of conditions. It can synchronize the system clock with NTP servers,

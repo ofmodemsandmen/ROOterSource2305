@@ -1,9 +1,8 @@
 Source-Makefile: feeds/packages/net/tunneldigger-broker/Makefile
-Build-Depends: python-cffi/host
 
 Package: tunneldigger-broker
-Version: 4f72b30578ac3dbc5482f4a54054bf870355bdf5-1
-Depends: +libc +ip-full +kmod-l2tp +kmod-l2tp-ip +kmod-l2tp-eth +kmod-sched +libnetfilter-conntrack +libnfnetlink +libnl-tiny +libpthread +librt +python3-cffi +python3-ctypes +python3-light +python3-logging +python3-six +tc-full
+Version: v0.4.0-1
+Depends: +libc +ip +kmod-l2tp +kmod-l2tp-eth +kmod-sched +libnfnetlink +libnl-tiny +libpthread +librt +python3-ctypes +python3-light +python3-logging +tc-tiny
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +11,7 @@ Category: Network
 Repository: base
 Title: Broker for L2TPv3 tunnels using tunneldigger
 Maintainer: Nick Hainke <vincent@systemli.org>
-Source: tunneldigger-broker-4f72b30578ac3dbc5482f4a54054bf870355bdf5.tar.xz
+Source: tunneldigger-broker-v0.4.0.tar.xz
 License: AGPL-3.0
 LicenseFiles: COPYING
 Type: ipkg
@@ -23,7 +22,7 @@ Nick Hainke <vincent@systemli.org>
 @@
 
 Package: tunneldigger-broker-src
-Version: 4f72b30578ac3dbc5482f4a54054bf870355bdf5-1
+Version: v0.4.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -33,7 +32,7 @@ Category: Network
 Repository: base
 Title: Broker for L2TPv3 tunnels using tunneldigger (sources)
 Maintainer: Nick Hainke <vincent@systemli.org>
-Source: tunneldigger-broker-4f72b30578ac3dbc5482f4a54054bf870355bdf5.tar.xz
+Source: tunneldigger-broker-v0.4.0.tar.xz
 License: AGPL-3.0
 LicenseFiles: COPYING
 Type: ipkg

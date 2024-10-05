@@ -14,6 +14,7 @@ Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish
 Source: lcdproc-0.5.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:lcdproc:lcdproc
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information
 on various LCD displays
@@ -41,6 +42,7 @@ Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish
 Source: lcdproc-0.5.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:lcdproc:lcdproc
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information
 on various LCD displays
@@ -69,6 +71,7 @@ Maintainer: Harald Geyer <harald@ccbib.org>, Philip Prindeville <philipp@redfish
 Source: lcdproc-0.5.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:lcdproc:lcdproc
 Type: ipkg
 Description: LCDProc is a daemon and clients for displaying system information
 on various LCD displays

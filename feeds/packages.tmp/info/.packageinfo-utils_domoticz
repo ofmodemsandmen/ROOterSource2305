@@ -16,6 +16,7 @@ Require-User: domoticz=6144:domoticz=6144
 Source: domoticz-2022.1.tar.gz
 License: GPL-3.0
 LicenseFiles: License.txt
+CPE-ID: cpe:/a:domoticz:domoticz
 Type: ipkg
 Description:   Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.
 http://domoticz.com/

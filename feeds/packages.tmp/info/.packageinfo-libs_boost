@@ -16,6 +16,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost atomic library.
@@ -37,6 +38,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost chrono library.
@@ -58,6 +60,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost container library.
@@ -79,6 +82,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost context library.
@@ -100,6 +104,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost contract library.
@@ -121,6 +126,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost coroutine library.
@@ -142,6 +148,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost date_time library.
@@ -163,6 +170,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost fiber library.
@@ -184,6 +192,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost filesystem library.
@@ -205,6 +214,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost graph library.
@@ -226,6 +236,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost iostreams library.
@@ -247,6 +258,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost json library.
@@ -268,6 +280,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost locale library.
@@ -289,6 +302,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost log library.
@@ -310,6 +324,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost math library.
@@ -331,6 +346,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost nowide library.
@@ -352,6 +368,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost program_options library.
@@ -373,6 +390,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost python3 library.
@@ -394,6 +412,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost random library.
@@ -415,6 +434,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost regex library.
@@ -436,6 +456,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost serialization library.
@@ -457,6 +478,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost wserialization library.
@@ -478,6 +500,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost stacktrace library.
@@ -499,6 +522,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost system library.
@@ -520,6 +544,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost thread library.
@@ -541,6 +566,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost timer library.
@@ -562,6 +588,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost type_erasure library.
@@ -583,6 +610,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost url library.
@@ -604,6 +632,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:    This package contains the Boost wave library.
@@ -625,6 +654,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description: Boost C++ source library (test)
@@ -646,6 +676,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Hidden: 1
 Description:  This meta package contains only dependencies to the other libraries from
@@ -668,6 +699,7 @@ Maintainer: Carlos M. Ferreira <carlosmf.pt@gmail.com>
 Source: boost_1_82_0.tar.bz2
 License: BSL-1.0
 LicenseFiles: LICENSE_1_0.txt
+CPE-ID: cpe:/a:boost:boost
 Type: ipkg
 Description: This package provides the Boost v1.82.0 libraries.
 Boost is a set of free, peer-reviewed, portable C++ source libraries.

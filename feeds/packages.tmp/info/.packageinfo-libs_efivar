@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/libs/efivar/Makefile
 
 Package: efivar
-Version: 38-2
-Depends: +libc @TARGET_x86_64
+Version: 38-3
+Depends: +libc @(TARGET_x86_64||TARGET_armsr_armv8)
 Conflicts: 
 Menu-Depends: 
 Provides: 

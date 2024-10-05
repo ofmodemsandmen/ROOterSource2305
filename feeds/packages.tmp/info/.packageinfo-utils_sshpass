@@ -10,7 +10,7 @@ Section: utils
 Category: Utilities
 Repository: base
 Title: Non-interactive ssh password auth
-Maintainer: Josef Schlehofer <josef.schlehofer@nic.cz>
+Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
 Source: sshpass-1.09.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
@@ -19,7 +19,7 @@ Description:   Sshpass is a tool for non-interactively performing password authe
   with SSH's so-called "interactive keyboard password authentication". Most user
   should use SSH's more secure public-key authentication instead.
 https://sourceforge.net/projects/sshpass/
-Josef Schlehofer <josef.schlehofer@nic.cz>
+Josef Schlehofer <pepe.schlehofer@gmail.com>
 @@
 
 

@@ -16,6 +16,7 @@ Maintainer: Javier Marcet <javier@marcet.info>
 Source: docker-6.0.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:docker:docker-py
 Type: ipkg
 Description:   A Python library for the Docker Engine API. It lets you do anything the
   docker command does, but from within Python apps – run containers manage
@@ -39,6 +40,7 @@ Maintainer: Javier Marcet <javier@marcet.info>
 Source: docker-6.0.1.tar.gz
 License: Apache-2.0
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:docker:docker-py
 Type: ipkg
 Description:       A Python library for the Docker Engine API. It lets you do anything the
   docker command does, but from within Python apps – run containers manage

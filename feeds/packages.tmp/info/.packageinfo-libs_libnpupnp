@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/libs/libnpupnp/Makefile
 Build-Depends: libmicrohttpd
 
 Package: libnpupnp
-Version: 5.0.0-2
+Version: 5.1.2-1
 Depends: +libc +libstdcpp +libexpat +libcurl +libmicrohttpd
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: A C++ base UPnP library
 Maintainer: 
-Source: libnpupnp-5.0.0.tar.gz
+Source: libnpupnp-5.1.2.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
 Type: ipkg

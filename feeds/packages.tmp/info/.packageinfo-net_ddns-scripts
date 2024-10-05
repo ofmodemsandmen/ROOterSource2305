@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/ddns-scripts/Makefile
 
 Package: ddns-scripts
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc +ddns-scripts-services
 Conflicts: 
 Menu-Depends: 
@@ -24,14 +24,14 @@ Description:   Dynamic DNS Client scripts (with IPv6 support)
   - Proxy server support
   - log file support
   - support to run once
-  Version: 2.8.2-37
+  Version: 2.8.2-43
   Info   : https://openwrt.org/docs/guide-user/services/ddns/client
 
 @@
 
 Package: ddns-scripts-services
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -48,9 +48,28 @@ Description:   Dynamic DNS Client definitions for supported services
 
 @@
 
+Package: ddns-scripts-utils
+Submenu: IP Addresses and Names
+Version: 2.8.2-43
+Depends: +libc ddns-scripts
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Repository: base
+Title: Utility scripts for ddns configs
+Maintainer: 
+Source: 
+License: GPL-2.0
+Type: ipkg
+Description:   Dynamic DNS Client utility scripts for config files
+
+@@
+
 Package: ddns-scripts-luadns
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -69,7 +88,7 @@ Description:   Dynamic DNS Client scripts extension for LuaDNS API v1 (require c
 
 Package: ddns-scripts-cloudflare
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -88,7 +107,7 @@ Description:   Dynamic DNS Client scripts extension for cloudflare.com API v4 (r
 
 Package: ddns-scripts-gcp
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -107,7 +126,7 @@ Description:   Dynamic DNS Client scripts extension for Google Cloud DNS API v1 
 
 Package: ddns-scripts-freedns
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -126,7 +145,7 @@ Description:   Dynamic DNS Client scripts extension for "freedns.42.pl".
 
 Package: ddns-scripts-godaddy
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -145,7 +164,7 @@ Description:   Dynamic DNS Client scripts extension for "godaddy.com API v1".
 
 Package: ddns-scripts-digitalocean
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -171,7 +190,7 @@ Description:   Dynamic DNS Client scripts extension for "digitalocean.com API v2
 
 Package: ddns-scripts-dnspod
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -190,7 +209,7 @@ Description:   Dynamic DNS Client scripts extension for dnspod.cn API (require c
 
 Package: ddns-scripts-noip
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts
 Conflicts: 
 Menu-Depends: 
@@ -209,7 +228,7 @@ Description:   Dynamic DNS Client scripts extension for "no-ip.com".
 
 Package: ddns-scripts-nsupdate
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +bind-client
 Conflicts: 
 Menu-Depends: 
@@ -234,7 +253,7 @@ Description:   Dynamic DNS Client scripts extension for direct updates using bin
 
 Package: ddns-scripts-route53
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl +openssl-util
 Conflicts: 
 Menu-Depends: 
@@ -258,7 +277,7 @@ Description:   Dynamic DNS Client scripts extension for Amazon AWS "route53 API 
 
 Package: ddns-scripts-cnkuai
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl +giflib-utils
 Conflicts: 
 Menu-Depends: 
@@ -281,7 +300,7 @@ Description:   Dynamic DNS Client scripts extension for "cnkuai.cn".
 
 Package: ddns-scripts-gandi
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -303,7 +322,7 @@ Description:   Dynamic DNS Client scripts extension for "gandi.net".
 
 Package: ddns-scripts-pdns
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -326,7 +345,7 @@ Description:   Dynamic DNS Client scripts extension for "PowerDNS" via API.
 
 Package: ddns-scripts-transip
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl +openssl-util +!BUSYBOX_CONFIG_MKTEMP:coreutils-mktemp
 Conflicts: 
 Menu-Depends: 
@@ -352,7 +371,7 @@ Description:   Dynamic DNS Client scripts extension for "transip.nl".
 
 Package: ddns-scripts-ns1
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 
@@ -374,7 +393,7 @@ Description:   Dynamic DNS Client scripts extension for "ns1.com".
 
 Package: ddns-scripts-one
 Submenu: IP Addresses and Names
-Version: 2.8.2-37
+Version: 2.8.2-43
 Depends: +libc ddns-scripts +curl
 Conflicts: 
 Menu-Depends: 

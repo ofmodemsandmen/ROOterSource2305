@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/mosquitto/Makefile
 
 Package: mosquitto-ssl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +librt +libopenssl +MOSQUITTO_LWS:libwebsockets-openssl +MOSQUITTO_DYNAMIC_SECURITY:cJSON
 Conflicts: 
 Menu-Depends: 
@@ -13,9 +13,10 @@ Repository: base
 Title: mosquitto - an MQTT message broker (with SSL support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description: 	Mosquitto is an open source (BSD licensed) message broker that implements
 the MQTT protocol version 3.1, 3.1.1 and 5. MQTT provides a lightweight
@@ -32,7 +33,7 @@ Config:
 @@
 
 Package: mosquitto-nossl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +librt
 Conflicts: 
 Menu-Depends: 
@@ -44,9 +45,10 @@ Repository: base
 Title: mosquitto - an MQTT message broker (without SSL support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:         Mosquitto is an open source (BSD licensed) message broker that implements
 the MQTT protocol version 3.1, 3.1.1 and 5. MQTT provides a lightweight
@@ -59,7 +61,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libmosquitto-ssl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +libpthread +librt +libcares +libopenssl
 Conflicts: 
 Menu-Depends: 
@@ -71,9 +73,10 @@ Repository: base
 Title: mosquitto - client library (With SSL Support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:      Library required for mosquitto's command line client tools, also for
 use by any third party software that wants to communicate with _any_
@@ -87,7 +90,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libmosquitto-nossl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +libpthread +librt +libcares
 Conflicts: 
 Menu-Depends: 
@@ -99,9 +102,10 @@ Repository: base
 Title: mosquitto - client library (Without SSL Support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:      Library required for mosquitto's command line client tools, also for
 use by any third party software that wants to communicate with _any_
@@ -115,7 +119,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: libmosquittopp
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc libmosquitto +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -125,16 +129,17 @@ Category: Libraries
 Repository: base
 Title: mosquitto - client c++ library
 Maintainer: 
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:  C++ Library wrapper for libmosquitto.
 
 @@
 
 Package: mosquitto-client-ssl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +librt +libcares +cJSON +libmosquitto-ssl
 Conflicts: 
 Menu-Depends: 
@@ -146,9 +151,10 @@ Repository: base
 Title: mosquitto - client tools (With SSL support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:  Command line client tools for working with mosquitto.
 This includes mosquitto_sub, mosquitto_pub, mosquitto_rr
@@ -159,7 +165,7 @@ Karl Palsson <karlp@etactica.com>
 @@
 
 Package: mosquitto-client-nossl
-Version: 2.0.15-1
+Version: 2.0.18-2
 Depends: +libc +librt +libcares +cJSON +libmosquitto-nossl
 Conflicts: 
 Menu-Depends: 
@@ -171,9 +177,10 @@ Repository: base
 Title: mosquitto - client tools (Without SSL support)
 Maintainer: Karl Palsson <karlp@etactica.com>
 Require-User: mosquitto=200:mosquitto=200
-Source: mosquitto-2.0.15.tar.gz
+Source: mosquitto-2.0.18.tar.gz
 License: EPL-2.0
 LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:eclipse:mosquitto
 Type: ipkg
 Description:  Command line client tools for working with mosquitto.
 This includes mosquitto_sub, mosquitto_pub, mosquitto_rr

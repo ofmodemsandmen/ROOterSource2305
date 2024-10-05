@@ -11,10 +11,10 @@ PKG_NAME:=python-requests
 PKG_VERSION:=2.30.0
 PKG_RELEASE:=1
 
-PKG_MAINTAINER:=Josef Schlehofer <josef.schlehofer@nic.cz>, Alexandru Ardelean <ardeleanalex@gmail.com>
+PKG_MAINTAINER:=Josef Schlehofer <pepe.schlehofer@gmail.com>, Alexandru Ardelean <ardeleanalex@gmail.com>
 PKG_LICENSE:=Apache-2.0
 PKG_LICENSE_FILES:=LICENSE
-PKG_CPE_ID:=cpe:/a:python-requests:requests
+PKG_CPE_ID:=cpe:/a:python:requests
 
 PYPI_NAME:=requests
 PKG_HASH:=239d7d4458afcb28a692cdd298d87542235f4ca8d36d03a15bfc128a6559a2f4

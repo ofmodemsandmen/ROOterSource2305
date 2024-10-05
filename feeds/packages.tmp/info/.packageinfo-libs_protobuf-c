@@ -17,6 +17,7 @@ Maintainer:
 Source: protobuf-c-1.4.1.tar.gz
 License: BSD-2-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:protobuf-c_project:protobuf-c
 Type: ipkg
 Description:   Runtime library to use Google Protocol Buffers from C applications.
   Protocol Buffers are a way of encoding structured data in an efficient yet

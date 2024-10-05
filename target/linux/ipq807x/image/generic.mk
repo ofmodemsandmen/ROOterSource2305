@@ -23,20 +23,6 @@ define Device/UbiFit
 	IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
 
-define Device/arcadyan_aw1000
-	$(call Device/FitImage)
-	$(call Device/UbiFit)
-	DEVICE_VENDOR := Arcadyan
-	DEVICE_MODEL := AW1000
-	BLOCKSIZE := 256k
-	PAGESIZE := 4096
-	DEVICE_DTS_CONFIG := config@hk09
-	SOC := ipq8072
-	DEVICE_PACKAGES := ipq-wifi-arcadyan_aw1000 kmod-spi-gpio \
-		kmod-gpio-nxp-74hc164 kmod-usb-serial-option uqmi
-endef
-TARGET_DEVICES += arcadyan_aw1000
-
 define Device/buffalo_wxr-5950ax12
 	$(call Device/FitImage)
 	DEVICE_VENDOR := Buffalo
@@ -94,15 +80,17 @@ TARGET_DEVICES += edimax_cax1800
 define Device/netgear_wax218
 	$(call Device/FitImage)
 	$(call Device/UbiFit)
-	ARTIFACTS := web-ui-factory.fit
 	DEVICE_VENDOR := Netgear
 	DEVICE_MODEL := WAX218
 	DEVICE_DTS_CONFIG := config@hk07
 	BLOCKSIZE := 128k
 	PAGESIZE := 2048
 	SOC := ipq8072
+ifneq ($(CONFIG_TARGET_ROOTFS_INITRAMFS),)
+	ARTIFACTS := web-ui-factory.fit
 	ARTIFACT/web-ui-factory.fit := append-image initramfs-uImage.itb | \
 		ubinize-kernel | qsdk-ipq-factory-nand
+endif
 	DEVICE_PACKAGES := kmod-spi-gpio kmod-spi-bitbang kmod-gpio-nxp-74hc164 \
 		ipq-wifi-netgear_wax218
 endef
@@ -115,7 +103,8 @@ define Device/prpl_haze
 	DEVICE_MODEL := Haze
 	DEVICE_DTS_CONFIG := config@hk09
 	SOC := ipq8072
-	DEVICE_PACKAGES += ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci
+	DEVICE_PACKAGES += ath11k-firmware-qcn9074 ipq-wifi-prpl_haze kmod-ath11k-pci \
+		mkf2fs f2fsck kmod-fs-f2fs kmod-leds-lp5562
 endef
 TARGET_DEVICES += prpl_haze
 

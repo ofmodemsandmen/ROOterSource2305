@@ -10,14 +10,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=pjproject
-PKG_VERSION:=2.12.1
-PKG_RELEASE:=2
+PKG_VERSION:=2.14.1
+PKG_RELEASE:=1
+PKG_CPE_ID:=cpe:/a:pjsip:pjsip
 
 # download "vX.Y.tar.gz" as "pjproject-vX.Y.tar.gz"
 PKG_SOURCE_URL_FILE:=$(PKG_VERSION).tar.gz
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_SOURCE_URL_FILE)
-PKG_SOURCE_URL:=https://github.com/pjsip/$(PKG_NAME)/archive
-PKG_HASH:=d0feef6963b07934e821ba4328aecb4c36358515c1b3e507da5874555d713533
+PKG_SOURCE_URL:=https://github.com/pjsip/$(PKG_NAME)/archive/refs/tags
+PKG_HASH:=6140f7a97e318caa89c17e8d5468599671c6eed12d64a7c160dac879ba004c68
 PKG_INSTALL:=1
 
 PKG_LICENSE:=GPL-2.0
@@ -71,6 +72,7 @@ CONFIGURE_ARGS+= \
 	--disable-ilbc-codec \
 	--disable-ipp \
 	--disable-l16-codec \
+	--disable-libsrtp \
 	--disable-libwebrtc \
 	--disable-libyuv \
 	--disable-opencore-amr \
@@ -82,10 +84,10 @@ CONFIGURE_ARGS+= \
 	--disable-sound \
 	--disable-speex-aec \
 	--disable-speex-codec \
+	--disable-upnp \
 	--disable-v4l2 \
 	--disable-video \
 	--enable-shared \
-	--with-external-srtp="$(STAGING_DIR)/usr" \
 	--with-ssl="$(STAGING_DIR)/usr" \
 	--without-external-gsm \
 	--without-external-pa \
@@ -116,10 +118,10 @@ endef
 
 $(eval $(call PJSIPpackage,libpj,libpj,+librt))
 $(eval $(call PJSIPpackage,libpjlib-util,libpjlib-util,+libpj +librt))
-$(eval $(call PJSIPpackage,libpjmedia,libpjmedia*,+libpj +libpjlib-util +libpjnath +librt +libsrtp2))
+$(eval $(call PJSIPpackage,libpjmedia,libpjmedia*,+libpj +libpjlib-util +libpjnath +librt))
 $(eval $(call PJSIPpackage,libpjnath,libpjnath,+libpj +libpjlib-util +librt))
 $(eval $(call PJSIPpackage,libpjsip-simple,libpjsip-simple,+libpj +libpjlib-util +libpjsip +librt))
 $(eval $(call PJSIPpackage,libpjsip-ua,libpjsip-ua,+libpj +libpjlib-util +libpjmedia +libpjsip-simple +libpjsip +librt))
-$(eval $(call PJSIPpackage,libpjsip,libpjsip,+libpj +libpjlib-util +librt +libsrtp2))
+$(eval $(call PJSIPpackage,libpjsip,libpjsip,+libpj +libpjlib-util +librt))
 $(eval $(call PJSIPpackage,libpjsua,libpjsua,+libpj +libpjlib-util +libpjmedia +libpjnath +libpjsip-simple +libpjsip-ua +libpjsip +librt))
 $(eval $(call PJSIPpackage,libpjsua2,libpjsua2,+libpj +libpjlib-util +libpjmedia +libpjnath +libpjsip-simple +libpjsip-ua +libpjsip +librt +libpjsua))

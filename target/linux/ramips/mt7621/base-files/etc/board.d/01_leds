@@ -7,6 +7,12 @@ board=$(board_name)
 board_config_update
 
 case $board in
+alfa-network,ax1800rm)
+	ucidef_set_led_netdev "lan1" "lan1" "green:lan1" "lan1"
+	ucidef_set_led_netdev "lan2" "lan2" "green:lan2" "lan2"
+	ucidef_set_led_netdev "lan3" "lan3" "green:lan3" "lan3"
+	ucidef_set_led_netdev "wan" "wan" "green:wan" "wan"
+	;;
 asus,rp-ac87)
 	ucidef_set_rssimon "wlan0" "200000" "1"
 	ucidef_set_rssimon "wlan1" "200000" "1"
@@ -24,7 +30,8 @@ asus,rt-ax53u)
 	ucidef_set_led_wlan "wlan2g" "WiFi 2.4GHz" "mt76-phy0" "phy0tpt"
 	ucidef_set_led_wlan "wlan5g" "WiFi 5GHz" "mt76-phy1" "phy1tpt"
 	;;
-asus,rt-ax54)
+asus,rt-ax54|\
+yuncore,g720)
 	ucidef_set_led_wlan "wlan2g" "WiFi 2.4GHz" "mt76-phy0" "phy0tpt"
 	ucidef_set_led_wlan "wlan5g" "WiFi 5GHz" "mt76-phy1" "phy1tpt"
 	;;
@@ -39,6 +46,14 @@ beeline,smartbox-turbo-plus|\
 etisalat,s3|\
 rostelecom,rt-sf-1)
 	ucidef_set_led_netdev "wan" "wan" "blue:wan" "wan"
+	;;
+beeline,smartbox-pro|\
+wifire,s1500-nbn)
+	ucidef_set_led_netdev "lan1" "lan1" "green:lan1" "lan1" "link tx rx"
+	ucidef_set_led_netdev "lan2" "lan2" "green:lan2" "lan2" "link tx rx"
+	ucidef_set_led_netdev "lan3" "lan3" "green:lan3" "lan3" "link tx rx"
+	ucidef_set_led_netdev "lan4" "lan4" "green:lan4" "lan4" "link tx rx"
+	ucidef_set_led_netdev "wan"  "wan"  "green:wan"  "wan"  "link tx rx"
 	;;
 belkin,rt1800)
 	ucidef_set_led_netdev "wan" "wan" "white:wan" "wan"
@@ -123,6 +138,10 @@ linksys,ea8100-v2)
 	ucidef_set_led_netdev "lan4" "lan4 link" "green:lan4" "lan4" "link"
 	ucidef_set_led_netdev "wan" "wan link" "green:wan" "wan" "link"
 	;;
+meig,slt866)
+	ucidef_set_led_netdev "lan" "eth" "blue:lanwan" "lan" "link tx rx"
+	ucidef_set_led_netdev "wwan0" "net" "blue:internet" "wwan0" "link tx rx"
+	;;
 mikrotik,routerboard-760igs)
 	ucidef_set_led_netdev "sfp" "SFP" "blue:sfp" "sfp"
 	;;
@@ -137,6 +156,10 @@ mikrotik,routerboard-m11g)
 	;;
 mtc,wr1201)
 	ucidef_set_led_netdev "eth_link" "LAN link" "green:eth_link" "br-lan"
+	;;
+netgear,eax12)
+	ucidef_set_led_netdev "eth_act" "LAN act" "yellow:eth" "lan" "tx rx"
+	ucidef_set_led_netdev "eth_link" "LAN link" "green:eth" "lan" "link"
 	;;
 netgear,r6220|\
 netgear,r6260|\
@@ -170,7 +193,8 @@ snr,snr-cpe-me1)
 tplink,archer-a6-v3|\
 tplink,archer-ax23-v1|\
 tplink,archer-c6-v3|\
-tplink,archer-c6u-v1)
+tplink,archer-c6u-v1|\
+tplink,ex220-v1)
 	ucidef_set_led_netdev "lan" "LAN" "green:lan" "br-lan"
 	ucidef_set_led_netdev "wan" "WAN" "green:wan" "wan"
 	;;
@@ -225,6 +249,11 @@ yuncore,fap690)
 yuncore,ax820)
 	ucidef_set_led_netdev "lan" "LAN" "green:lan" "lan"
 	ucidef_set_led_netdev "wan" "WAN" "green:wan" "wan"
+	;;
+z-router,zr-2660)
+	ucidef_set_led_netdev "lan" "lan" "green:lan" "br-lan" "link tx rx"
+	ucidef_set_led_netdev "wan" "wan" "green:wan" "wan" "link tx rx"
+	ucidef_set_led_netdev "wan-off" "wan-off" "red:wan" "wan" "link"
 	;;
 zyxel,lte3301-plus)
 	ucidef_set_led_netdev "internet" "internet" "white:internet" "wwan0"

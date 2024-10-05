@@ -343,6 +343,25 @@ Description:     Translation for luci-app-udpxy - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-udpxy-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-udpxy
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-udpxy - lt translation
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-udpxy - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-udpxy-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

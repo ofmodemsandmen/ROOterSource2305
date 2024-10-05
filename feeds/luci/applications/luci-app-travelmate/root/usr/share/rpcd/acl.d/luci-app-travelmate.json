@@ -12,11 +12,12 @@
 			"file": {
 				"/etc/travelmate/*.login": [ "list" ],
 				"/var/run/travelmate.pid": [ "read" ],
+				"/var/run/travelmate.scan": [ "read" ],
 				"/var/state/travelmate.refresh": [ "read" ],
 				"/tmp/trm_runtime.json": [ "read" ],
 				"/sbin/logread -e trm-": [ "exec" ],
 				"/usr/sbin/logread -e trm-": [ "exec" ],
-				"/usr/sbin/ifup *": [ "exec" ],
+				"/sbin/ifup *": [ "exec" ],
 				"/etc/init.d/travelmate start" : [ "exec" ],
 				"/etc/init.d/travelmate stop" : [ "exec" ],
 				"/etc/init.d/travelmate reload" : [ "exec" ],

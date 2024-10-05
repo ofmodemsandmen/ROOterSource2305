@@ -2,7 +2,7 @@ Source-Makefile: package/utils/px5g-wolfssl/Makefile
 
 Package: px5g-wolfssl
 Submenu: Encryption
-Version: 8.2
+Version: 9
 Depends: +libc +libwolfssl
 Conflicts: 
 Menu-Depends: 

@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/zerotier/Makefile
 
 Package: zerotier
 Submenu: VPN
-Version: 1.10.4-1
-Depends: +libc +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp
+Version: 1.12.2-2
+Depends: +libc +libpthread +libstdcpp +kmod-tun +ip +libminiupnpc +libnatpmp +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: Create flat virtual Ethernet networks of almost unlimited size
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: zerotier-1.10.4.tar.gz
+Source: zerotier-1.12.2.tar.gz
 License: BSL 1.1
 LicenseFiles: LICENSE.txt
 Type: ipkg

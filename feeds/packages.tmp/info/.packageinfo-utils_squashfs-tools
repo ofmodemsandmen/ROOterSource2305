@@ -15,6 +15,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: squashfs-tools-4.6.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:squashfs-tools_project:squashfs-tools
 Type: ipkg
 Description: Tools to create and extract Squashfs filesystems mksquashfs
 https://github.com/plougher/squashfs-tools
@@ -36,6 +37,7 @@ Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: squashfs-tools-4.6.1.tar.gz
 License: GPL-2.0-only
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:squashfs-tools_project:squashfs-tools
 Type: ipkg
 Description: Tools to create and extract Squashfs filesystems unsquashfs
 https://github.com/plougher/squashfs-tools

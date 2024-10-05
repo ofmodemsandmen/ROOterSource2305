@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/speedtestcpp/Makefile
 
 Package: libspeedtestcpp
-Version: 1.20.2-1
+Version: 1.20.3-1
 Depends: +libc +libcurl +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Libraries
 Repository: base
 Title: library for ookla's speedtest
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: speedtestcpp-1.20.2.tar.gz
+Source: speedtestcpp-1.20.3.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -21,7 +21,7 @@ Oskari Rauta <oskari.rauta@gmail.com>
 @@
 
 Package: speedtestcpp
-Version: 1.20.2-1
+Version: 1.20.3-1
 Depends: +libc +libspeedtestcpp +libstdcpp
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ Category: Network
 Repository: base
 Title: SpeedTest++
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: speedtestcpp-1.20.2.tar.gz
+Source: speedtestcpp-1.20.3.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

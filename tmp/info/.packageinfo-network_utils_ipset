@@ -13,6 +13,8 @@ Title: IPset administration utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: ipset-7.17.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:ipset
+ABI-Version: 13
 Type: ipkg
 Description: IPset administration utility
 http://ipset.netfilter.org/
@@ -32,6 +34,7 @@ Title: IPset administration utility
 Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: ipset-7.17.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:netfilter:ipset
 Type: ipkg
 Description: IPset administration utility
 http://ipset.netfilter.org/

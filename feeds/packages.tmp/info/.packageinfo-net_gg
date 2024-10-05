@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/gg/Makefile
 Build-Depends: golang/host
 
 Package: gg
-Version: 0.2.18-1
+Version: 0.2.19-1
 Depends: +libc @(aarch64||arm||x86_64) +ca-bundle
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: A command-line tool for one-click proxy
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Source: gg-0.2.18.tar.gz
+Source: gg-0.2.19.tar.gz
 License: AGPL-3.0-only
 LicenseFiles: LICENSE
 Type: ipkg

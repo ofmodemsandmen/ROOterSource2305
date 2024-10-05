@@ -2,7 +2,7 @@ Source-Makefile: package/network/services/unetd/Makefile
 Build-Depends: HAS_BPF_TOOLCHAIN:bpf-headers
 
 Package: unetd
-Version: 2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb
+Version: 2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c
 Depends: +libc +libubox +libubus +libblobmsg-json +libnl-tiny +kmod-wireguard +UNETD_VXLAN_SUPPORT:libbpf
 Conflicts: 
 Menu-Depends: 
@@ -12,7 +12,7 @@ Category: Network
 Repository: base
 Title: WireGuard based VPN connection manager for OpenWrt
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: unetd-2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb.tar.xz
+Source: unetd-2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: WireGuard based VPN connection manager for OpenWrt
@@ -28,7 +28,7 @@ Config:
 @@
 
 Package: unet-dht
-Version: 2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb
+Version: 2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c
 Depends: +libc unetd
 Conflicts: 
 Menu-Depends: 
@@ -38,7 +38,7 @@ Category: Network
 Repository: base
 Title: unetd DHT discovery support
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: unetd-2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb.tar.xz
+Source: unetd-2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: unetd DHT discovery support
@@ -46,7 +46,7 @@ Felix Fietkau <nbd@nbd.name>
 @@
 
 Package: unet-cli
-Version: 2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb
+Version: 2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c
 Depends: +libc +unetd +ucode +ucode-mod-fs
 Conflicts: 
 Menu-Depends: 
@@ -56,7 +56,7 @@ Category: Network
 Repository: base
 Title: unetd administration command line utility
 Maintainer: Felix Fietkau <nbd@nbd.name>
-Source: unetd-2023-05-31-7d3986b7a5a20b9af0dacd053b2657210385e7bb.tar.xz
+Source: unetd-2024-03-31-806457664ab6e952a7f4febb82e891f596fe577c.tar.xz
 License: GPL-2.0
 Type: ipkg
 Description: unetd administration command line utility

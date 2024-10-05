@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/lang/python/python-aiohttp/Makefile
 
 Package: python3-aiohttp
 Submenu: Python
-Version: 3.7.4.post0-1
-Depends: +libc +python3-light +python3-attrs +python3-chardet +python3-multidict +python3-async-timeout +python3-yarl +python3-logging +python3-codecs +python3-cgi +python3-openssl +python3-typing-extensions
+Version: 3.8.5-1
+Depends: +libc +python3 +python3-aiosignal +python3-async-timeout +python3-attrs +python3-charset-normalizer +python3-frozenlist +python3-multidict +python3-yarl
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,9 +12,10 @@ Category: Languages
 Repository: base
 Title: Async http client/server framework (asyncio)
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: aiohttp-3.7.4.post0.tar.gz
+Source: aiohttp-3.8.5.tar.gz
 License: Apache-2.0
-LicenseFiles: LICENSE
+LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:aiohttp:aiohttp
 Type: ipkg
 Description:   Asynchronous HTTP client/server framework for asyncio and Python3.
 https://github.com/aio-libs/aiohttp
@@ -23,7 +24,7 @@ Josef Schlehofer <pepe.schlehofer@gmail.com>
 
 Package: python3-aiohttp-src
 Submenu: Python
-Version: 3.7.4.post0-1
+Version: 3.8.5-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -33,9 +34,10 @@ Category: Languages
 Repository: base
 Title: Async http client/server framework (asyncio) (sources)
 Maintainer: Josef Schlehofer <pepe.schlehofer@gmail.com>
-Source: aiohttp-3.7.4.post0.tar.gz
+Source: aiohttp-3.8.5.tar.gz
 License: Apache-2.0
-LicenseFiles: LICENSE
+LicenseFiles: LICENSE.txt
+CPE-ID: cpe:/a:aiohttp:aiohttp
 Type: ipkg
 Description:       Asynchronous HTTP client/server framework for asyncio and Python3.
 

@@ -361,6 +361,26 @@ Description:     Translation for luci-app-qos - 한국어 (Korean)
 
 @@
 
+Package: luci-i18n-qos-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-qos
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-qos - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-qos - Lietuvių (Lithuanian)
+
+@@
+
 Package: luci-i18n-qos-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

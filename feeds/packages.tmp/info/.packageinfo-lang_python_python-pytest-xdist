@@ -3,29 +3,30 @@ Build-Depends: python-setuptools-scm/host
 
 Package: python3-pytest-xdist
 Submenu: Python
-Version: 2.2.1-2
-Depends: +libc +python3-light +python3-pytest +python3-pytest-forked +python3-execnet
+Version: 3.3.1-1
+Depends: +libc +python3-light +python3-uuid +python3-execnet +python3-pytest
 Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: lang
 Category: Languages
 Repository: base
-Title: Pytest plugin for parallel test running
+Title: pytest plugin for distributed testing
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: pytest-xdist-2.2.1.tar.gz
+Source: pytest-xdist-3.3.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:   The pytest framework makes it easy to write small tests, yet scales to support
-  complex functional testing for applications and libraries.
+Description: The pytest-xdist plugin extends pytest with new test execution modes,
+the most used being distributing tests across multiple CPUs to speed up
+test execution.
 https://github.com/pytest-dev/pytest-xdist
 Jan Pavlinec <jan.pavlinec1@gmail.com>
 @@
 
 Package: python3-pytest-xdist-src
 Submenu: Python
-Version: 2.2.1-2
+Version: 3.3.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -33,14 +34,15 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Pytest plugin for parallel test running (sources)
+Title: pytest plugin for distributed testing (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>
-Source: pytest-xdist-2.2.1.tar.gz
+Source: pytest-xdist-3.3.1.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
-Description:       The pytest framework makes it easy to write small tests, yet scales to support
-  complex functional testing for applications and libraries.
+Description:     The pytest-xdist plugin extends pytest with new test execution modes,
+the most used being distributing tests across multiple CPUs to speed up
+test execution.
 
     This package contains the Python source files for python3-pytest-xdist.
 https://github.com/pytest-dev/pytest-xdist

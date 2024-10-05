@@ -16,6 +16,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description:   OpenSC provides a set of libraries and utilities to work with smart cards.
   Its main focus is on cards that support cryptographic operations, and
@@ -39,6 +40,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description:   OpenSC PKCS#11 provider
 https://github.com/OpenSC/OpenSC/wiki
@@ -59,6 +61,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: PKCS11 spying wrapper
 https://github.com/OpenSC/OpenSC/wiki
@@ -80,6 +83,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description:   OpenSC utilities
 https://github.com/OpenSC/OpenSC/wiki
@@ -100,6 +104,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: cardos-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -120,6 +125,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: cryptoflex-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -140,6 +146,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: dnie-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -160,6 +167,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: eidenv utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -180,6 +188,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: iasecc-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -200,6 +209,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: netkey-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -220,6 +230,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: openpgp-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -240,6 +251,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: opensc-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -260,6 +272,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: opensc-explorer utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -280,6 +293,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: piv-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -300,6 +314,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: pkcs11-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -320,6 +335,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: pkcs15-crypt utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -340,6 +356,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: pkcs15-init utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -360,6 +377,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: pkcs15-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -380,6 +398,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: sc-hsm-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -400,6 +419,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: westcos-tool utility from opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -420,6 +440,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: asepcos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -440,6 +461,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: authentic card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -460,6 +482,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: cardos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -480,6 +503,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: cyberflex card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -500,6 +524,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: entersafe card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -520,6 +545,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: epass2003 card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -540,6 +566,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: flex card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -560,6 +587,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: gpk card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -580,6 +608,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: ias_adele_admin1 card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -600,6 +629,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: ias_adele_admin2 card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -620,6 +650,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: ias_adele_common card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -640,6 +671,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: iasecc_admin_eid card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -660,6 +692,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: iasecc_generic_oberthur card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -680,6 +713,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: iasecc_generic_pki card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -700,6 +734,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: iasecc card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -720,6 +755,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: incrypto34 card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -740,6 +776,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: jcop card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -760,6 +797,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: miocos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -780,6 +818,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: muscle card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -800,6 +839,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: myeid card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -820,6 +860,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: oberthur card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -840,6 +881,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: openpgp card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -860,6 +902,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: pkcs15 card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -880,6 +923,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: rutoken_ecp card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -900,6 +944,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: rutoken card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -920,6 +965,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: sc-hsm card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -940,6 +986,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: setcos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -960,6 +1007,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: starcos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki
@@ -980,6 +1028,7 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Source: opensc-0.22.0.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:opensc_project:opensc
 Type: ipkg
 Description: westcos card profile for opensc
 https://github.com/OpenSC/OpenSC/wiki

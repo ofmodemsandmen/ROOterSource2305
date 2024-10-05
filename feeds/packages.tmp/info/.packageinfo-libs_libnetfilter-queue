@@ -14,6 +14,8 @@ Maintainer:
 Source: libnetfilter_queue-1.0.5.tar.bz2
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:netfilter:libnetfilter_queue
+ABI-Version: 1
 Type: ipkg
 Description:  libnetfilter_queue is a userspace library providing a programming
  interface (API) to packets that have been queued by the kernel

@@ -14,6 +14,7 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Source: libmcrypt-2.5.8.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:mcrypt:libmcrypt
 Type: ipkg
 Description: 	libmcrypt is a cryptographic library that conveniently brings
 	together a variety of ciphers for convenient use.

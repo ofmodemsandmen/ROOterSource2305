@@ -15,6 +15,7 @@ Maintainer: Yuhei OKAWA <tochiro.srchack@gmail.com>
 Source: open-vm-tools-12.2.0-21223074.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vmware:open-vm-tools
 Type: ipkg
 Description: 	Open Virtual Machine Tools for VMware guest OS
 https://github.com/vmware/open-vm-tools
@@ -35,6 +36,7 @@ Maintainer: Kagurazaka Kotori <kagurazakakotori@gmail.com>
 Source: open-vm-tools-12.2.0-21223074.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:vmware:open-vm-tools
 Type: ipkg
 Description: 	Shared Folders user mode FUSE client support for VMware guest OS
 https://github.com/vmware/open-vm-tools

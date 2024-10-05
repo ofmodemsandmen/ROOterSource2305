@@ -5,7 +5,7 @@ Build-Types: host
 
 Package: python3-pluggy
 Submenu: Python
-Version: 1.0.0-1
+Version: 1.3.0-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -15,7 +15,7 @@ Category: Languages
 Repository: base
 Title: Plugin and hook calling mechanisms for Python
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: pluggy-1.0.0.tar.gz
+Source: pluggy-1.3.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg
@@ -26,7 +26,7 @@ Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
 
 Package: python3-pluggy-src
 Submenu: Python
-Version: 1.0.0-1
+Version: 1.3.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -36,7 +36,7 @@ Category: Languages
 Repository: base
 Title: Plugin and hook calling mechanisms for Python (sources)
 Maintainer: Jan Pavlinec <jan.pavlinec1@gmail.com>, Jeffery To <jeffery.to@gmail.com>
-Source: pluggy-1.0.0.tar.gz
+Source: pluggy-1.3.0.tar.gz
 License: MIT
 LicenseFiles: LICENSE
 Type: ipkg

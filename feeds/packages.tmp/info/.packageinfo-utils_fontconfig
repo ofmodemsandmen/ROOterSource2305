@@ -14,6 +14,7 @@ Repository: base
 Title: fontconfig
 Maintainer: 
 Source: fontconfig-2.13.94.tar.xz
+CPE-ID: cpe:/a:fontconfig_project:fontconfig
 Type: ipkg
 Description: fontconfig
 http://fontconfig.org/

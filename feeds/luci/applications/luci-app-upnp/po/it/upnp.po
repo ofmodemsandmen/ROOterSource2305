@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:36+0200\n"
-"PO-Revision-Date: 2022-02-18 20:58+0000\n"
-"Last-Translator: pisquan8 <cimurro@outlook.de>\n"
+"PO-Revision-Date: 2024-08-02 19:09+0000\n"
+"Last-Translator: Random <random-r@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsupnp/it/>\n"
 "Language: it\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 5.7-dev\n"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:182
 msgid ""
@@ -33,11 +33,15 @@ msgstr "Attiva reindirizzamento UPnP"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:119
 msgid "Advanced Settings"
-msgstr "Impostazioni Avanzate"
+msgstr "Impostazioni avanzate"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:131
 msgid "Advertise as IGDv1 device instead of IGDv2"
 msgstr "Pubblicizza come dispositivo IGDv1 anziché IGDv2"
+
+#: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:203
+msgid "Allow"
+msgstr "Permetti"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:128
 msgid "Allow adding forwards only to requesting ip addresses"
@@ -78,6 +82,10 @@ msgstr "Commento"
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:106
 msgid "Delete"
 msgstr "Elimina"
+
+#: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:204
+msgid "Deny"
+msgstr "Nega"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/status/include/80_upnp.js:48
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:88
@@ -169,7 +177,7 @@ msgstr "Protocollo"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:134
 msgid "Puts extra debugging information into the system log"
-msgstr "Scrivi nel log di sistema le informazioni di extra debugging"
+msgstr "Scrivi nel log di sistema ulteriori informazioni di debug"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:146
 msgid "Report system instead of daemon uptime"
@@ -225,9 +233,9 @@ msgstr "Uplink"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:170
 msgid "Use STUN"
-msgstr "Usare STUN"
+msgstr "Usa STUN"
 
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:137
 #: applications/luci-app-upnp/htdocs/luci-static/resources/view/upnp/upnp.js:140
 msgid "Value in KByte/s, informational only"
-msgstr "Valori in KByte/s, (informativo)"
+msgstr "Valori in KByte/s (informativo)"

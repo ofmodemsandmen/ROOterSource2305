@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/freeradius3/Makefile
 
 Package: freeradius3
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc +freeradius3-common
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Category: Network
 Repository: base
 Title: A flexible RADIUS server (version 3)
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: A flexible RADIUS server (version 3)
 https://freeradius.org/
@@ -26,8 +27,8 @@ Config:
 
 Package: freeradius3-common
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
-Depends: +libc +USE_GLIBC:libpthread +USE_GLIBC:libbsd +FREERADIUS3_OPENSSL:libopenssl +libcap +libpcap +libncurses +libpcre +libreadline +libtalloc +libatomic
+Version: 3.0.26-3
+Depends: +libc +USE_GLIBC:libpthread +USE_GLIBC:libbsd +FREERADIUS3_OPENSSL:libopenssl +libcap +libpcap +libncurses +libreadline +libtalloc +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -36,9 +37,10 @@ Category: Network
 Repository: base
 Title: common files
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: common files
 https://freeradius.org/
@@ -47,8 +49,8 @@ https://freeradius.org/
 
 Package: freeradius3-default
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
-Depends: +libc freeradius3 +freeradius3-democerts +freeradius3-mod-always +freeradius3-mod-attr-filter +freeradius3-mod-chap +freeradius3-mod-detail +freeradius3-mod-digest +freeradius3-mod-eap +freeradius3-mod-eap-gtc +freeradius3-mod-eap-leap +freeradius3-mod-eap-md5 +freeradius3-mod-eap-mschapv2 +freeradius3-mod-eap-peap +freeradius3-mod-eap-pwd +freeradius3-mod-eap-tls +freeradius3-mod-eap-ttls +freeradius3-mod-exec +freeradius3-mod-expiration +freeradius3-mod-expr +freeradius3-mod-files +freeradius3-mod-logintime +freeradius3-mod-mschap +freeradius3-mod-pap +freeradius3-mod-preprocess +freeradius3-mod-radutmp +freeradius3-mod-realm +freeradius3-mod-unix
+Version: 3.0.26-3
+Depends: +libc freeradius3 +freeradius3-democerts +freeradius3-mod-always +freeradius3-mod-attr-filter +freeradius3-mod-chap +freeradius3-mod-detail +freeradius3-mod-digest +freeradius3-mod-eap +freeradius3-mod-eap-gtc +freeradius3-mod-eap-md5 +freeradius3-mod-eap-mschapv2 +freeradius3-mod-eap-peap +freeradius3-mod-eap-pwd +freeradius3-mod-eap-tls +freeradius3-mod-eap-ttls +freeradius3-mod-exec +freeradius3-mod-expiration +freeradius3-mod-expr +freeradius3-mod-files +freeradius3-mod-logintime +freeradius3-mod-mschap +freeradius3-mod-pap +freeradius3-mod-preprocess +freeradius3-mod-radutmp +freeradius3-mod-realm +freeradius3-mod-unix
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -57,9 +59,10 @@ Category: Network
 Repository: base
 Title: Modules needed for Radius default configuration
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description:  This meta-package contains only dependencies for modules needed in
  FreeRADIUS default configuration.
@@ -69,7 +72,7 @@ https://freeradius.org/
 
 Package: freeradius3-democerts
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -79,9 +82,10 @@ Category: Network
 Repository: base
 Title: Demo certificates to test the server
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Demo certificates to test the server
 https://freeradius.org/
@@ -90,7 +94,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-always
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -100,9 +104,10 @@ Category: Network
 Repository: base
 Title: Always module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Always module
 https://freeradius.org/
@@ -111,7 +116,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-attr-filter
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -121,9 +126,10 @@ Category: Network
 Repository: base
 Title: ATTR filter module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: ATTR filter module
 https://freeradius.org/
@@ -132,7 +138,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-chap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -142,9 +148,10 @@ Category: Network
 Repository: base
 Title: CHAP module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: CHAP module
 https://freeradius.org/
@@ -153,7 +160,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-detail
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -163,9 +170,10 @@ Category: Network
 Repository: base
 Title: Detailed accounting module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Detailed accounting module
 https://freeradius.org/
@@ -174,7 +182,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-digest
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -184,9 +192,10 @@ Category: Network
 Repository: base
 Title: HTTP Digest Authentication
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: HTTP Digest Authentication
 https://freeradius.org/
@@ -195,7 +204,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -205,9 +214,10 @@ Category: Network
 Repository: base
 Title: Base EAP module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Base EAP module
 https://freeradius.org/
@@ -216,7 +226,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-gtc
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap
 Conflicts: 
 Menu-Depends: 
@@ -226,39 +236,19 @@ Category: Network
 Repository: base
 Title: EAP/GTC module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/GTC module
 https://freeradius.org/
 
 @@
 
-Package: freeradius3-mod-eap-leap
-Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
-Depends: +libc freeradius3-mod-eap
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: EAP/LEAP module
-Maintainer: 
-Source: release_3_0_21.tar.gz
-License: GPL-2.0
-LicenseFiles: COPYRIGHT LICENSE
-Type: ipkg
-Description: EAP/LEAP module
-https://freeradius.org/
-
-@@
-
 Package: freeradius3-mod-eap-md5
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap
 Conflicts: 
 Menu-Depends: 
@@ -268,9 +258,10 @@ Category: Network
 Repository: base
 Title: EAP/MD5 module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/MD5 module
 https://freeradius.org/
@@ -279,7 +270,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-mschapv2
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap +freeradius3-mod-mschap
 Conflicts: 
 Menu-Depends: 
@@ -289,9 +280,10 @@ Category: Network
 Repository: base
 Title: EAP/MS-CHAPv2 module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/MS-CHAPv2 module
 https://freeradius.org/
@@ -300,7 +292,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-peap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -310,9 +302,10 @@ Category: Network
 Repository: base
 Title: EAP/PEAP module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/PEAP module
 https://freeradius.org/
@@ -321,7 +314,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-pwd
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -331,9 +324,10 @@ Category: Network
 Repository: base
 Title: EAP/PWD module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/PWD module
 https://freeradius.org/
@@ -342,7 +336,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-tls
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -352,9 +346,10 @@ Category: Network
 Repository: base
 Title: EAP/TLS module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/TLS module
 https://freeradius.org/
@@ -363,7 +358,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-eap-ttls
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-eap-tls
 Conflicts: 
 Menu-Depends: 
@@ -373,9 +368,10 @@ Category: Network
 Repository: base
 Title: EAP/TTLS module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EAP/TTLS module
 https://freeradius.org/
@@ -384,7 +380,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-exec
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -394,9 +390,10 @@ Category: Network
 Repository: base
 Title: EXEC module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EXEC module
 https://freeradius.org/
@@ -405,7 +402,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-expiration
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -415,9 +412,10 @@ Category: Network
 Repository: base
 Title: Expiration module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Expiration module
 https://freeradius.org/
@@ -426,7 +424,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-expr
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -436,9 +434,10 @@ Category: Network
 Repository: base
 Title: EXPR module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: EXPR module
 https://freeradius.org/
@@ -447,7 +446,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-files
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -457,9 +456,10 @@ Category: Network
 Repository: base
 Title: Module using local files for authorization
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Module using local files for authorization
 https://freeradius.org/
@@ -468,7 +468,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-ldap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3 +libopenldap @FREERADIUS3_OPENSSL
 Conflicts: 
 Menu-Depends: 
@@ -478,9 +478,10 @@ Category: Network
 Repository: base
 Title: LDAP Authentication
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: LDAP Authentication
 https://freeradius.org/
@@ -489,7 +490,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-logintime
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -499,9 +500,10 @@ Category: Network
 Repository: base
 Title: Logintime module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Logintime module
 https://freeradius.org/
@@ -510,7 +512,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-mschap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -520,9 +522,10 @@ Category: Network
 Repository: base
 Title: MS-CHAP and MS-CHAPv2 module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: MS-CHAP and MS-CHAPv2 module
 https://freeradius.org/
@@ -531,7 +534,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-pap
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -541,9 +544,10 @@ Category: Network
 Repository: base
 Title: PAP module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: PAP module
 https://freeradius.org/
@@ -552,7 +556,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-passwd
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -562,9 +566,10 @@ Category: Network
 Repository: base
 Title: Rlm passwd module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Rlm passwd module
 https://freeradius.org/
@@ -573,7 +578,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-preprocess
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -583,9 +588,10 @@ Category: Network
 Repository: base
 Title: Request pre-processing module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Request pre-processing module
 https://freeradius.org/
@@ -594,7 +600,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-python3
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3 +python3
 Conflicts: 
 Menu-Depends: 
@@ -604,9 +610,10 @@ Category: Network
 Repository: base
 Title: Python3 module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Python3 module
 https://freeradius.org/
@@ -615,7 +622,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-radutmp
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -625,9 +632,10 @@ Category: Network
 Repository: base
 Title: Radius UTMP module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius UTMP module
 https://freeradius.org/
@@ -636,7 +644,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-realm
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -646,9 +654,10 @@ Category: Network
 Repository: base
 Title: Realms handling module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Realms handling module
 https://freeradius.org/
@@ -657,7 +666,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-rest
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3 +libcurl +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -667,9 +676,10 @@ Category: Network
 Repository: base
 Title: Radius REST module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius REST module
 https://freeradius.org/
@@ -678,7 +688,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -688,9 +698,10 @@ Category: Network
 Repository: base
 Title: Radius generic SQL front-end
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius generic SQL front-end
 https://freeradius.org/
@@ -699,7 +710,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-mysql
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-sql +libmysqlclient
 Conflicts: 
 Menu-Depends: 
@@ -709,9 +720,10 @@ Category: Network
 Repository: base
 Title: Radius MySQL back-end drivers
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius MySQL back-end drivers
 https://freeradius.org/
@@ -720,7 +732,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-null
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -730,9 +742,10 @@ Category: Network
 Repository: base
 Title: Radius Dummy SQL back-end drivers
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius Dummy SQL back-end drivers
 https://freeradius.org/
@@ -741,7 +754,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-postgresql
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-sql +libpq
 Conflicts: 
 Menu-Depends: 
@@ -751,9 +764,10 @@ Category: Network
 Repository: base
 Title: Radius PostgreSQL back-end drivers
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius PostgreSQL back-end drivers
 https://freeradius.org/
@@ -762,7 +776,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sql-sqlite
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3-mod-sql +libsqlite3
 Conflicts: 
 Menu-Depends: 
@@ -772,9 +786,10 @@ Category: Network
 Repository: base
 Title: Radius SQLite back-end drivers
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius SQLite back-end drivers
 https://freeradius.org/
@@ -783,7 +798,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sqlcounter
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc +freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -793,9 +808,10 @@ Category: Network
 Repository: base
 Title: Packet counter using accounting records written into an SQL database
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Packet counter using accounting records written into an SQL database
 https://freeradius.org/
@@ -804,7 +820,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-sqlippool
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc +freeradius3-mod-sql
 Conflicts: 
 Menu-Depends: 
@@ -814,9 +830,10 @@ Category: Network
 Repository: base
 Title: Radius SQL Based IP Pool module
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Radius SQL Based IP Pool module
 https://freeradius.org/
@@ -825,7 +842,7 @@ https://freeradius.org/
 
 Package: freeradius3-mod-unix
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc freeradius3
 Conflicts: 
 Menu-Depends: 
@@ -835,9 +852,10 @@ Category: Network
 Repository: base
 Title: System Authentication
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: System Authentication
 https://freeradius.org/
@@ -846,7 +864,7 @@ https://freeradius.org/
 
 Package: freeradius3-utils
 Submenu: FreeRADIUS (version 3)
-Version: 3_0_21-2
+Version: 3.0.26-3
 Depends: +libc +freeradius3-common
 Conflicts: 
 Menu-Depends: 
@@ -856,9 +874,10 @@ Category: Network
 Repository: base
 Title: Misc. client utilities
 Maintainer: 
-Source: release_3_0_21.tar.gz
+Source: freeradius-server-3.0.26.tar.bz2
 License: GPL-2.0
 LicenseFiles: COPYRIGHT LICENSE
+CPE-ID: cpe:/a:freeradius:freeradius
 Type: ipkg
 Description: Misc. client utilities
 https://freeradius.org/

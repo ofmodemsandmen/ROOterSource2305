@@ -16,6 +16,7 @@ Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Source: monit-5.26.0.tar.gz
 License: AGPL-3.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tildeslash:monit
 Type: ipkg
 Description: 	An utility for monitoring services on a Unix system
 	This package is built with SSL support.
@@ -38,6 +39,7 @@ Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
 Source: monit-5.26.0.tar.gz
 License: AGPL-3.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tildeslash:monit
 Type: ipkg
 Description: 	An utility for monitoring services on a Unix system
 	This package is built without SSL support.

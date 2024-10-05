@@ -16,6 +16,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description: libzip (GnuTLS)
 https://libzip.org/
@@ -38,6 +39,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description: libzip (mbedTLS)
 https://libzip.org/
@@ -60,6 +62,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description: libzip (OpenSSL)
 https://libzip.org/
@@ -82,6 +85,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description: libzip (w/o encryption support)
 https://libzip.org/
@@ -103,6 +107,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description:  This package contains the command line tool zipcmp from libzip.
 https://libzip.org/
@@ -124,6 +129,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description:  This package contains the command line tool zipmerge from libzip.
 https://libzip.org/
@@ -145,6 +151,7 @@ Maintainer: Michael Heimpold <mhei@heimpold.de>
 Source: libzip-1.9.2.tar.xz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libzip:libzip
 Type: ipkg
 Description:  This package contains the command line tool ziptool from libzip.
 https://libzip.org/

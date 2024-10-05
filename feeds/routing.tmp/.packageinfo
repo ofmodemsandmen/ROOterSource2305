@@ -90,7 +90,7 @@ Source-Makefile: feeds/routing/babeld/Makefile
 
 Package: babeld
 Submenu: Routing and Redirection
-Version: 1.12.2-1
+Version: 1.13.1-1
 Depends: +libc @IPV6 +libubus +libubox
 Conflicts: 
 Menu-Depends: 
@@ -100,7 +100,7 @@ Category: Network
 Repository: base
 Title: A loop-avoiding distance-vector routing protocol
 Maintainer: Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetworks.org>, Nick Hainke <vincent@systemli.org>
-Source: babeld-1.12.2.tar.gz
+Source: babeld-1.13.1.tar.gz
 License: MIT
 LicenseFiles: LICENCE
 Type: ipkg
@@ -117,7 +117,7 @@ Gabriel Kerneis <gabriel@kerneis.info>, Baptiste Jonglez <openwrt-pkg@bitsofnetw
 Source-Makefile: feeds/routing/batctl/Makefile
 
 Package: batctl-default
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -142,7 +142,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-tiny
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -167,7 +167,7 @@ Simon Wunderlich <sw@simonwunderlich.de>
 @@
 
 Package: batctl-full
-Version: 2023.1-1
+Version: 2023.1-2
 Depends: +libc +libnl-tiny +librt
 Conflicts: 
 Menu-Depends: 
@@ -196,7 +196,7 @@ Source-Makefile: feeds/routing/batman-adv/Makefile
 
 Package: kmod-batman-adv
 Submenu: Network Support
-Version: <LINUX_VERSION>+2023.1-2
+Version: <LINUX_VERSION>+2023.1-7
 Depends: +BATMAN_ADV_BLA:kmod-lib-crc16 +kmod-lib-crc32c +kmod-cfg80211 +batctl
 Conflicts: 
 Menu-Depends: 
@@ -550,7 +550,7 @@ Build-Depends: ncurses readline
 
 Package: bird2
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +libpthread
 Conflicts: bird1-ipv4 bird1-ipv6 bird4 bird6
 Menu-Depends: 
@@ -560,7 +560,7 @@ Category: Network
 Repository: base
 Title: The BIRD Internet Routing Daemon (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -586,7 +586,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2c
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +bird2 +libreadline +libncurses
 Conflicts: bird1c-ipv4 bird1c-ipv6 birdc4 birdc6
 Menu-Depends: 
@@ -596,7 +596,7 @@ Category: Network
 Repository: base
 Title: The BIRD command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -618,7 +618,7 @@ Toke Høiland-Jørgensen <toke@toke.dk>
 
 Package: bird2cl
 Submenu: Routing and Redirection
-Version: 2.13-1
+Version: 2.15.1-1
 Depends: +libc +bird2
 Conflicts: bird1cl-ipv4 bird1cl-ipv6 birdcl4 birdcl6
 Menu-Depends: 
@@ -628,7 +628,7 @@ Category: Network
 Repository: base
 Title: The BIRD lightweight command-line client (v2)
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
-Source: bird-2.13.tar.gz
+Source: bird-2.15.1.tar.gz
 License: GPL-2.0-or-later
 Type: ipkg
 Description: BIRD is an internet routing daemon which manages TCP/IP routing tables
@@ -643,110 +643,6 @@ protocols, telling BIRD to show various information, telling it to show
 a routing table filtered by a filter, or asking BIRD to reconfigure.
 http://bird.network.cz/
 Toke Høiland-Jørgensen <toke@toke.dk>
-@@
-
-
-Source-Makefile: feeds/routing/bmx6/Makefile
-
-Package: bmx6
-Menu: 1
-Submenu: Routing and Redirection
-Version: 0.1-alpha-1
-Depends: +libc +kmod-ip6-tunnel +kmod-iptunnel6 +kmod-tun
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: BMX6 layer 3 routing daemon
-Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-0.1-alpha.tar.xz
-License: GPL-2.0-or-later
-Type: ipkg
-Description: BMX6 layer 3 routing daemon supporting IPv4, IPv6, and IPv4 over IPv6
-https://bmx6.net/projects/bmx6
-Axel Neumann <neumann@cgws.de>
-@@
-
-Package: bmx6-uci-config
-Submenu: Routing and Redirection
-Version: 0.1-alpha-1
-Depends: +libc bmx6 +libuci
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: configuration plugin based on uci (recommended!)
-Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-0.1-alpha.tar.xz
-License: GPL-2.0-or-later
-Type: ipkg
-Description: configuration plugin based on uci (recommended!)
-https://bmx6.net/projects/bmx6
-Axel Neumann <neumann@cgws.de>
-@@
-
-Package: bmx6-json
-Submenu: Routing and Redirection
-Version: 0.1-alpha-1
-Depends: +libc bmx6 +libjson-c
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: json plugin based on json-c
-Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-0.1-alpha.tar.xz
-License: GPL-2.0-or-later
-Type: ipkg
-Description: json plugin based on json-c
-https://bmx6.net/projects/bmx6
-Axel Neumann <neumann@cgws.de>
-@@
-
-Package: bmx6-sms
-Submenu: Routing and Redirection
-Version: 0.1-alpha-1
-Depends: +libc bmx6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: sms plugin
-Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-0.1-alpha.tar.xz
-License: GPL-2.0-or-later
-Type: ipkg
-Description: sms plugin
-https://bmx6.net/projects/bmx6
-Axel Neumann <neumann@cgws.de>
-@@
-
-Package: bmx6-table
-Submenu: Routing and Redirection
-Version: 0.1-alpha-1
-Depends: +libc bmx6
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: net
-Category: Network
-Repository: base
-Title: bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
-Maintainer: Axel Neumann <neumann@cgws.de>
-Source: bmx6-0.1-alpha.tar.xz
-License: GPL-2.0-or-later
-Type: ipkg
-Description: bmx6 table plugin to automatic announce routing-table routes via ip6ip tunnels
-https://bmx6.net/projects/bmx6
-Axel Neumann <neumann@cgws.de>
 @@
 
 
@@ -1092,66 +988,6 @@ Steven Barth <cyrus@openwrt.org>
 @@
 
 
-Source-Makefile: feeds/routing/luci-app-bmx6/Makefile
-
-Package: luci-app-bmx6
-Submenu: 3. Applications
-Version: 6
-Depends: +libc +luci-lib-json +luci-base +luci-lib-httpclient +bmx6 +luci-lib-jquery-1-4 +luci-lib-dracula
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: bmx6 configuration, status and visualization module
-Maintainer: Pau Escrich <p4u@dabax.net>
-Source: 
-License: GPL-2.0+
-Type: ipkg
-Description: 	bmx6 web application (status and configuration) for LuCi web interface
-Pau Escrich <p4u@dabax.net>
-@@
-
-Package: luci-lib-jquery-1-4
-Submenu: 6. Libraries
-Version: 6
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: jQuery 1.4 javascript library
-Maintainer: Gui Iribarren <gui@altermundi.net>
-Source: 
-License: GPL-2.0+
-Type: ipkg
-Description: 	minified javascript jQuery 1.4 library
-Gui Iribarren <gui@altermundi.net>
-@@
-
-Package: luci-lib-dracula
-Submenu: 6. Libraries
-Version: 6
-Depends: +libc 
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: luci
-Category: LuCI
-Repository: base
-Title: dracula graph javascript library
-Maintainer: Pau Escrich <p4u@dabax.net>
-Source: 
-License: GPL-2.0+
-Type: ipkg
-Description: dracula graph javascript library
-Pau Escrich <p4u@dabax.net>
-@@
-
-
 Source-Makefile: feeds/routing/luci-app-cjdns/Makefile
 
 Package: luci-app-cjdns
@@ -1226,7 +1062,7 @@ Source-Makefile: feeds/routing/mesh11sd/Makefile
 
 Package: mesh11sd
 Submenu: Captive Portals
-Version: 1.2.0-3
+Version: 4.1.1-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -1236,7 +1072,7 @@ Category: Network
 Repository: base
 Title: Dynamic 802.11s Mesh Configuration Daemon
 Maintainer: Rob White <rob@blue-wave.net>
-Source: mesh11sd-1.2.0.tar.gz
+Source: mesh11sd-4.1.1.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -1245,10 +1081,16 @@ Description:   Mesh11sd is a dynamic parameter configuration daemon for 802.11s 
   This is the open source version and it enables easy and automated mesh network operation with multiple mesh nodes.
   It allows all mesh parameters supported by the wireless driver to be set in the uci config file.
   Settings take effect immediately without having to restart the wireless network.
+  Mesh paths are stabilised when node coverage areas overlap and rssi thresholds and tx power can be dynamically adjusted.
   Default settings give rapid and reliable layer 2 mesh convergence.
   Without mesh11sd, many mesh parameters cannot be set in the uci wireless config file as the mesh interface must be up before the parameters can be set.
   Some of those that are supported, would fail to be implemented when the network is (re)started resulting in errors or dropped nodes.
-  The mesh11sd daemon dynamically checks configured parameters and sets them as required.
+  The mesh11sd daemon can dynamically check configured parameters and set them as required.
+  In auto_config mode, upstream wan connectivity is checked (eg Internet feed) and when not present, layer 2 peer mode is autonomously enabled,
+  and when it is present, layer 3 portal mode is enabled. This allows the same simple router configuration to be used on all meshnodes in the layer 2 mesh backhaul.
+  Remote terminal sessions and remote file transfers are supported using the meshnode mac address as an identifier.
+  Simple configuration of Opportunistic Wireless Encryption (OWE) and Customer[Client] Premises Equipment (CPE) mode is supported on mesh gates.
+  OWE Transition Mode is enabled by default on mesh gates.
   This version does not require a Captive Portal to be running.
 https://github.com/opennds/mesh11sd
 Rob White <rob@blue-wave.net>
@@ -1342,9 +1184,9 @@ Source-Makefile: feeds/routing/nodogsplash/Makefile
 
 Package: nodogsplash
 Submenu: Captive Portals
-Version: 5.0.0-1
-Depends: +libc +libpthread +iptables-mod-ipopt +libmicrohttpd-no-ssl
-Conflicts: nodogsplash2
+Version: 5.0.2-1
+Depends: +libc +libpthread +libmicrohttpd-no-ssl +iptables-nft +iptables-mod-nat-extra +iptables-mod-ipopt +iptables-mod-conntrack-extra
+Conflicts: 
 Menu-Depends: 
 Provides: 
 Section: net
@@ -1352,15 +1194,13 @@ Category: Network
 Repository: base
 Title: Open public network gateway daemon
 Maintainer: Moritz Warning <moritzwarning@web.de>
-Source: nodogsplash-5.0.0.tar.gz
+Source: nodogsplash-5.0.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
 Description:   Nodogsplash is a Captive Portal that offers a simple way to
   provide restricted access to the Internet by showing a splash
   page to the user before Internet access is granted.
-  It also incorporates an API that allows the creation of
-  sophisticated authentication applications.
 https://github.com/nodogsplash/nodogsplash
 Moritz Warning <moritzwarning@web.de>
 @@
@@ -1933,17 +1773,17 @@ Source-Makefile: feeds/routing/opennds/Makefile
 
 Package: opennds
 Submenu: Captive Portals
-Version: 9.10.0-1
-Depends: +libc +iptables-nft +kmod-ipt-conntrack +kmod-ipt-nat +libmicrohttpd-no-ssl
+Version: 10.3.0-1
+Depends: +libc +libmicrohttpd-no-ssl
 Conflicts: nodogsplash
 Menu-Depends: 
 Provides: 
 Section: net
 Category: Network
 Repository: base
-Title: Open public network gateway daemon
+Title: open Network Demarcation Service
 Maintainer: Rob White <rob@blue-wave.net>
-Source: opennds-9.10.0.tar.gz
+Source: opennds-10.3.0.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg
@@ -1951,7 +1791,7 @@ Description:   openNDS (open Network Demarcation Service) is a high performance,
   It provides a border control gateway between a public local area network and the Internet.
   It supports all scenarios ranging from small stand alone venues through to large mesh networks with multiple portal entry points.
   Both the client driven Captive Portal Detection method (CPD) and gateway driven Captive Portal Identification method (CPI - RFC 8910 and RFC 8908) are supported.
-  This version requires iptables-nft.
+  This version uses nftables.
 https://github.com/opennds/opennds
 Rob White <rob@blue-wave.net>
 @@

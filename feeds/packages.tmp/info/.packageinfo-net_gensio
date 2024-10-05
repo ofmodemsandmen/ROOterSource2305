@@ -16,6 +16,7 @@ Maintainer: Nita Vesa <werecatf@outlook.com>
 Source: gensio-2.4.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+ABI-Version: 0
 Type: ipkg
 Description:  This project (pronounced gen'-see-oh) is used to abstract stream I/O
  like serial port, TCP, telnet, UDP, SSL, IPMI SOL etc and offers a
@@ -120,6 +121,7 @@ Maintainer: Nita Vesa <werecatf@outlook.com>
 Source: gensio-2.4.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+ABI-Version: 0
 Type: ipkg
 Description:  This project (pronounced gen'-see-oh) is used to abstract stream I/O
  like serial port, TCP, telnet, UDP, SSL, IPMI SOL etc and offers a

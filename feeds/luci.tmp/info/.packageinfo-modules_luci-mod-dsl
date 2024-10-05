@@ -21,6 +21,26 @@ https://github.com/openwrt/luci
 OpenWrt LuCI community
 @@
 
+Package: luci-i18n-dsl-cs
+Default: LUCI_LANG_cs||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - cs translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Čeština (Czech)
+
+@@
+
 Package: luci-i18n-dsl-da
 Default: LUCI_LANG_da||(ALL&&m)
 Version: x
@@ -81,6 +101,26 @@ Description:     Translation for luci-mod-dsl - Español (Spanish)
 
 @@
 
+Package: luci-i18n-dsl-fr
+Default: LUCI_LANG_fr||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - fr translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Français (French)
+
+@@
+
 Package: luci-i18n-dsl-it
 Default: LUCI_LANG_it||(ALL&&m)
 Version: x
@@ -98,6 +138,26 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-mod-dsl - Italiano (Italian)
+
+@@
+
+Package: luci-i18n-dsl-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - lt translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Lietuvių (Lithuanian)
 
 @@
 
@@ -278,6 +338,46 @@ License: Apache-2.0
 Type: ipkg
 Hidden: 1
 Description:     Translation for luci-mod-dsl - Українська (Ukrainian)
+
+@@
+
+Package: luci-i18n-dsl-vi
+Default: LUCI_LANG_vi||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - vi translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - Tiếng Việt (Vietnamese)
+
+@@
+
+Package: luci-i18n-dsl-zh-cn
+Default: LUCI_LANG_zh_Hans||(ALL&&m)
+Version: x
+Depends: +libc luci-mod-dsl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-mod-dsl - zh-cn translation
+Maintainer: 
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-mod-dsl - 简体中文 (Chinese Simplified)
 
 @@
 

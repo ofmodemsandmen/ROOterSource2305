@@ -15,6 +15,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: tmux-3.3a.tar.gz
 License: ISC
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:tmux_project:tmux
 Type: ipkg
 Description:   tmux is a modern, BSD-licensed alternative to GNU screen.
 http://tmux.github.io/

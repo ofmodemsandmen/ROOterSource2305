@@ -14,6 +14,7 @@ Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: zlog-1.2.15.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:zlog_project:zlog
 Type: ipkg
 Description:   zlog is a reliable, high-performance, thread safe, flexible, clear-model, pure C logging library.
 http://hardysimpson.github.io/zlog/

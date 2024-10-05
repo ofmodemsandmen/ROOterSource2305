@@ -16,6 +16,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: rsync-3.2.7.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rsync:rsync
 Type: ipkg
 Description:  rsync is a program that allows files to be copied to and from remote machines
  in much the same way as rcp. It has many more options than rcp, and uses the
@@ -46,6 +47,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: rsync-3.2.7.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rsync:rsync
 Type: ipkg
 Description:  rsyncd is a configuration file and initscript to utilize rsync as a daemon. It
  uses the same binary as rsync.
@@ -68,6 +70,7 @@ Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Source: rsync-3.2.7.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:rsync:rsync
 Type: ipkg
 Description:   rrsync is a script which wraps around rsync to restrict its permission to a
   particular subdirectory via ~/.ssh/authorized_keys and/or to read-only

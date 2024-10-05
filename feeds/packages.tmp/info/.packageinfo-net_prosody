@@ -16,6 +16,7 @@ Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Require-User: prosody=54:prosody=54
 Source: prosody-0.11.13.tar.gz
 License: MIT/X11
+CPE-ID: cpe:/a:prosody:prosody
 Type: ipkg
 Description:   Prosody is an exciting new server for Jabber/XMPP
   written in Lua. It aims to be easy to use, and light

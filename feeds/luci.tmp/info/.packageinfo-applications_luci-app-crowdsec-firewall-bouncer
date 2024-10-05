@@ -1,0 +1,24 @@
+Source-Makefile: feeds/luci/applications/luci-app-crowdsec-firewall-bouncer/Makefile
+Build-Depends: lua/host luci-base/host LUCI_CSSTIDY:csstidy/host LUCI_SRCDIET:luasrcdiet/host 
+
+Package: luci-app-crowdsec-firewall-bouncer
+Submenu: 3. Applications
+Version: x
+Depends: +libc +luci-base +crowdsec-firewall-bouncer
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: CrowdSec firewall bouncer LuCI interface
+Maintainer: OpenWrt LuCI community
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: CrowdSec firewall bouncer LuCI interface
+https://github.com/openwrt/luci
+OpenWrt LuCI community
+@@
+
+

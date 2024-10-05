@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/net/miniupnpd/Makefile
 
 Package: miniupnpd-iptables
 Submenu: Firewall
-Version: 2.3.3-1
+Version: 2.3.3-2
 Depends: +libc +libcap-ng +libmnl +libuuid +IPV6:ip6tables +IPV6:libip6tc +iptables +libip4tc +libnetfilter-conntrack
 Conflicts: 
 Menu-Depends: 
@@ -16,6 +16,7 @@ Maintainer:
 Source: miniupnpd-2.3.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:miniupnp_project:miniupnpd
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon (iptables)
 https://miniupnp.tuxfamily.org/
@@ -24,7 +25,7 @@ https://miniupnp.tuxfamily.org/
 
 Package: miniupnpd-nftables
 Submenu: Firewall
-Version: 2.3.3-1
+Version: 2.3.3-2
 Depends: +libc +libcap-ng +libmnl +libuuid +libnftnl
 Conflicts: miniupnpd-iptables
 Menu-Depends: 
@@ -39,6 +40,7 @@ Maintainer:
 Source: miniupnpd-2.3.3.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:miniupnp_project:miniupnpd
 Type: ipkg
 Description: Lightweight UPnP IGD, NAT-PMP & PCP daemon (nftables)
 https://miniupnp.tuxfamily.org/

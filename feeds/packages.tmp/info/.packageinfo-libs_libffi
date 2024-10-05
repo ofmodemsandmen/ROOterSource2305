@@ -15,6 +15,7 @@ Maintainer: Peter Wagner <tripolar@gmx.at>
 Source: libffi-3.4.2.tar.gz
 License: MIT
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:libffi_project:libffi
 Type: ipkg
 Description: The libffi library provides a portable, high level programming interface to
 various calling conventions. This allows a programmer to call any function

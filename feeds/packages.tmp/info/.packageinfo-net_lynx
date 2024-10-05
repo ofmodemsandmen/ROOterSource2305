@@ -13,6 +13,7 @@ Title: Lynx is the text web browser
 Maintainer: Leonid Esman <leonid.esman@gmail.com>
 Source: lynx2.8.9rel.1.tar.bz2
 License: GPL-2.0
+CPE-ID: cpe:/a:lynx:lynx
 Type: ipkg
 Description: 	Classic non-graphical (text-mode) web browser
 http://lynx.invisible-island.net/

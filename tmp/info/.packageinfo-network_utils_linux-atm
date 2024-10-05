@@ -13,6 +13,7 @@ Title: Linux ATM library
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:   This package contains a library for accessing the Linux ATM subsystem.
 http://linux-atm.sourceforge.net/
@@ -33,6 +34,7 @@ Title: Linux ATM tools
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:   This package contains the Linux ATM tools.
 http://linux-atm.sourceforge.net/
@@ -53,6 +55,7 @@ Title: Linux ATM debugging tools
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:   This package contains the Linux ATM debugging tools.
 http://linux-atm.sourceforge.net/
@@ -73,6 +76,7 @@ Title: Linux ATM Diagnostics
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:   This package contains the Linux ATM diagnostics.
 http://linux-atm.sourceforge.net/
@@ -93,6 +97,7 @@ Title: ATM Ethernet bridging configuration utility
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:   Support for AAL5 encapsulation (RFC-1483/RFC-2684) over ATM.
 http://linux-atm.sourceforge.net/
@@ -113,6 +118,7 @@ Title: Linux ATM tool aread
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool aread.
 http://linux-atm.sourceforge.net/
@@ -133,6 +139,7 @@ Title: Linux ATM tool awrite
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool awrite.
 http://linux-atm.sourceforge.net/
@@ -153,6 +160,7 @@ Title: Linux ATM tool atmdiag
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmdiag.
 http://linux-atm.sourceforge.net/
@@ -173,6 +181,7 @@ Title: Linux ATM tool atmdump
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmdump.
 http://linux-atm.sourceforge.net/
@@ -193,6 +202,7 @@ Title: Linux ATM tool atmswitch
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmswitch.
 http://linux-atm.sourceforge.net/
@@ -213,6 +223,7 @@ Title: Linux ATM tool saaldump
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool saaldump.
 http://linux-atm.sourceforge.net/
@@ -233,6 +244,7 @@ Title: Linux ATM tool sonetdiag
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool sonetdiag.
 http://linux-atm.sourceforge.net/
@@ -253,6 +265,7 @@ Title: Linux ATM tool svc_recv
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool svc_recv.
 http://linux-atm.sourceforge.net/
@@ -273,6 +286,7 @@ Title: Linux ATM tool svc_send
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool svc_send.
 http://linux-atm.sourceforge.net/
@@ -293,6 +307,7 @@ Title: Linux ATM tool ttcp_atm
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool ttcp_atm.
 http://linux-atm.sourceforge.net/
@@ -313,6 +328,7 @@ Title: Linux ATM tool atmaddr
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmaddr.
 http://linux-atm.sourceforge.net/
@@ -333,6 +349,7 @@ Title: Linux ATM tool atmloop
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmloop.
 http://linux-atm.sourceforge.net/
@@ -353,6 +370,7 @@ Title: Linux ATM tool atmtcp
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmtcp.
 http://linux-atm.sourceforge.net/
@@ -373,6 +391,7 @@ Title: Linux ATM tool esi
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool esi.
 http://linux-atm.sourceforge.net/
@@ -393,6 +412,7 @@ Title: Linux ATM tool atmsigd
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool atmsigd.
 http://linux-atm.sourceforge.net/
@@ -413,6 +433,7 @@ Title: Linux ATM tool bus
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool bus.
 http://linux-atm.sourceforge.net/
@@ -433,6 +454,7 @@ Title: Linux ATM tool ilmid
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool ilmid.
 http://linux-atm.sourceforge.net/
@@ -453,6 +475,7 @@ Title: Linux ATM tool ilmidiag
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool ilmidiag.
 http://linux-atm.sourceforge.net/
@@ -473,6 +496,7 @@ Title: Linux ATM tool lecs
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool lecs.
 http://linux-atm.sourceforge.net/
@@ -493,6 +517,7 @@ Title: Linux ATM tool les
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool les.
 http://linux-atm.sourceforge.net/
@@ -513,6 +538,7 @@ Title: Linux ATM tool mpcd
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool mpcd.
 http://linux-atm.sourceforge.net/
@@ -533,6 +559,7 @@ Title: Linux ATM tool zeppelin
 Maintainer: 
 Source: linux-atm-2.5.2.tar.gz
 License: GPL-2.0+
+CPE-ID: cpe:/a:linux-atm:linux-atm
 Type: ipkg
 Description:      Linux ATM tool zeppelin.
 http://linux-atm.sourceforge.net/

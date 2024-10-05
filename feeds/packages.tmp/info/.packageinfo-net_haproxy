@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/net/haproxy/Makefile
 
 Package: haproxy
 Submenu: Web Servers/Proxies
-Version: 2.8.0-1
-Depends: +libc +libpcre +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
+Version: 2.8.9-1
+Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libopenssl +libncurses +libreadline +libatomic
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -13,9 +13,10 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.8.0.tar.gz
+Source: haproxy-2.8.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:haproxy:haproxy
 Type: ipkg
 Description:  Open source Reliable, High Performance TCP/HTTP Load Balancer.
  This package is built with SSL and LUA support.
@@ -25,7 +26,7 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: halog
 Submenu: Web Servers/Proxies
-Version: 2.8.0-1
+Version: 2.8.9-1
 Depends: +libc haproxy
 Conflicts: 
 Menu-Depends: 
@@ -36,9 +37,10 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer with SSL support halog
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.8.0.tar.gz
+Source: haproxy-2.8.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:haproxy:haproxy
 Type: ipkg
 Description:   HAProxy Log Analyzer
 https://www.haproxy.org/
@@ -47,8 +49,8 @@ Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
 
 Package: haproxy-nossl
 Submenu: Web Servers/Proxies
-Version: 2.8.0-1
-Depends: +libc +libpcre +libltdl +zlib +libpthread +liblua5.3 +libatomic
+Version: 2.8.9-1
+Depends: +libc +libpcre2 +libltdl +zlib +libpthread +liblua5.3 +libatomic
 Conflicts: haproxy
 Menu-Depends: 
 Provides: 
@@ -58,9 +60,10 @@ Category: Network
 Repository: base
 Title: TCP/HTTP Load Balancer without SSL support
 Maintainer: Thomas Heil <heil@terminal-consulting.de>, Christian Lachner <gladiac@gmail.com>
-Source: haproxy-2.8.0.tar.gz
+Source: haproxy-2.8.9.tar.gz
 License: GPL-2.0-only
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:haproxy:haproxy
 Type: ipkg
 Description:    Open source Reliable, High Performance TCP/HTTP Load Balancer.
  This package is built without SSL support.

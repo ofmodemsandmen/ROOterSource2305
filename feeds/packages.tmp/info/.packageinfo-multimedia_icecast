@@ -15,6 +15,7 @@ Require-User: icecast=87:icecast=87
 Source: icecast-2.4.4.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:icecast:icecast
 Type: ipkg
 Description: 	Icecast is a streaming media server which currently supports Ogg
 	Vorbis and MP3 audio streams. It can be used to create an Internet

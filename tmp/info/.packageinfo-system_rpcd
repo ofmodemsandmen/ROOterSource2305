@@ -1,7 +1,7 @@
 Source-Makefile: package/system/rpcd/Makefile
 
 Package: rpcd
-Version: 2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd-1
+Version: 2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25-1
 Depends: +libc +libubus +libubox +libuci +libblobmsg-json +libjson-c
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt ubus RPC backend server
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: rpcd-2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd.tar.xz
+Source: rpcd-2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25.tar.xz
 License: ISC
 Type: ipkg
 Description:  This package provides the UBUS RPC backend server to expose various
@@ -20,7 +20,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rpcd-mod-file
-Version: 2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd-1
+Version: 2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25-1
 Depends: +libc +libubus +libubox rpcd
 Conflicts: 
 Menu-Depends: 
@@ -30,7 +30,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt ubus RPC backend server (file plugin)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: rpcd-2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd.tar.xz
+Source: rpcd-2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25.tar.xz
 License: ISC
 Type: ipkg
 Description:     Provides ubus calls for file and directory operations.
@@ -38,7 +38,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rpcd-mod-rpcsys
-Version: 2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd-1
+Version: 2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25-1
 Depends: +libc +libubus +libubox rpcd
 Conflicts: 
 Menu-Depends: 
@@ -48,7 +48,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt ubus RPC backend server (rpcsys plugin)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: rpcd-2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd.tar.xz
+Source: rpcd-2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25.tar.xz
 License: ISC
 Type: ipkg
 Description:     Provides ubus calls for sysupgrade and password changing.
@@ -56,7 +56,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rpcd-mod-iwinfo
-Version: 2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd-1
+Version: 2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25-1
 Depends: +libc +libubus +libubox rpcd +libiwinfo
 Conflicts: 
 Menu-Depends: 
@@ -66,7 +66,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt ubus RPC backend server (iwinfo plugin)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: rpcd-2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd.tar.xz
+Source: rpcd-2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25.tar.xz
 License: ISC
 Type: ipkg
 Description:     Provides ubus calls for accessing iwinfo data.
@@ -74,7 +74,7 @@ Jo-Philipp Wich <jo@mein.io>
 @@
 
 Package: rpcd-mod-ucode
-Version: 2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd-1
+Version: 2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25-1
 Depends: +libc +libubus +libubox rpcd +libucode
 Conflicts: 
 Menu-Depends: 
@@ -84,7 +84,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt ubus RPC backend server (ucode plugin)
 Maintainer: Jo-Philipp Wich <jo@mein.io>
-Source: rpcd-2023-03-14-d97883005ffb5be251872c3e4abe04f71732f9bd.tar.xz
+Source: rpcd-2023-07-01-c07ab2f91061ad64209e9aaa1fb1b77061a1af25.tar.xz
 License: ISC
 Type: ipkg
 Description:     Allows implementing plugins using ucode scripts.

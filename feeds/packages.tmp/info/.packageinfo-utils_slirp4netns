@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/slirp4netns/Makefile
 
 Package: slirp4netns
-Version: 1.2.0-1
+Version: 1.2.2-1
 Depends: +libc @!arc +libslirp +libseccomp +glib2 +libcap
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Network
 Repository: base
 Title: slirp4netns
 Maintainer: Oskari Rauta <oskari.rauta@gmail.com>
-Source: slirp4netns-1.2.0.tar.gz
+Source: slirp4netns-1.2.2.tar.gz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

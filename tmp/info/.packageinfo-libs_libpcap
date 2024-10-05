@@ -15,6 +15,8 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libpcap-1.10.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:tcpdump:libpcap
+ABI-Version: 1
 Type: ipkg
 Description: This package contains a system-independent library for user-level network packet
 capture.
@@ -22,7 +24,7 @@ http://www.tcpdump.org/
 Felix Fietkau <nbd@nbd.name>
 @@
 Config:
-	source "package/libs/libpcap/Config.in"
+	source "feeds/base/libs/libpcap/Config.in"
 @@
 
 Package: rpcapd
@@ -39,6 +41,7 @@ Maintainer: Felix Fietkau <nbd@nbd.name>
 Source: libpcap-1.10.4.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:tcpdump:libpcap
 Type: ipkg
 Description: Capture daemon to be controlled by a remote libpcap application
 http://www.tcpdump.org/

@@ -16,6 +16,7 @@ Maintainer:
 Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description: GnuPG is a complete and free implementation of the OpenPGP standard as
 defined by RFC4880 (also known as PGP). GnuPG allows you to encrypt and
@@ -44,6 +45,7 @@ Maintainer:
 Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description:  GPGv is a stripped down version of GnuPG that only checks signatures.
 http://www.gnupg.org/
@@ -65,6 +67,7 @@ Maintainer:
 Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description: Since version 2.1 of GnuPG, 'dirmngr' takes care of accessing the
 OpenPGP keyservers.  As with previous versions it is also used as a
@@ -91,6 +94,7 @@ Maintainer:
 Source: gnupg-2.2.39.tar.bz2
 License: GPL-3.0-or-later
 LicenseFiles: COPYING COPYING.CC0 COPYING.GPL2 COPYING.LGPL21 COPYING.LGPL3 COPYING.other
+CPE-ID: cpe:/a:gnupg:gnupg
 Type: ipkg
 Description:  Key management utilies for GnuPG (version 2).
  This package is needed to import keys from a keyserver.

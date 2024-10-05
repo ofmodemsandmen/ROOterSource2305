@@ -14,6 +14,7 @@ Maintainer: Nicholas Smith <nicholas@nbembedded.com>
 Source: libqmi-1.32.4.tar.xz
 License: LGPL-2.0-or-later
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:libqmi_project:libqmi
 Type: ipkg
 Description:   Helper library talk to QMI enabled modems.
   Add qmi-utils for extra utilities.
@@ -38,6 +39,7 @@ Maintainer: Nicholas Smith <nicholas@nbembedded.com>
 Source: libqmi-1.32.4.tar.xz
 License: GPL-2.0-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libqmi_project:libqmi
 Type: ipkg
 Description: Utilities to talk to QMI enabled modems
 https://www.freedesktop.org/wiki/Software/libqmi

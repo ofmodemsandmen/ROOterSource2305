@@ -343,6 +343,25 @@ Description:     Translation for luci-app-cshark - 한국어 (Korean)
 Luka Perkov <luka@openwrt.org>
 @@
 
+Package: luci-i18n-cshark-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-cshark
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-cshark - lt translation
+Maintainer: Luka Perkov <luka@openwrt.org>
+Source: 
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-cshark - Lietuvių (Lithuanian)
+Luka Perkov <luka@openwrt.org>
+@@
+
 Package: luci-i18n-cshark-mr
 Default: LUCI_LANG_mr||(ALL&&m)
 Version: x

@@ -68,6 +68,10 @@ KERNEL_FILES_ARCH = \
 	kernel/asm-offsets.s \
 	kernel/module.lds
 
+ifeq ($(LINUX_KARCH),powerpc)
+  KERNEL_FILES_ARCH += lib/crtsavres.o
+endif
+
 KERNEL_FILES_BASE := \
 	.config \
 	Makefile \
@@ -145,7 +149,7 @@ $(BIN_DIR)/$(SDK_NAME).tar.xz: clean
 		./files/Config.in \
 		./files/Makefile \
 		./files/include/prepare.mk \
-		./files/README.SDK \
+		./files/README.md \
 		$(SDK_BUILD_DIR)/
 	mkdir -p $(SDK_BUILD_DIR)/package/kernel
 	$(CP) \

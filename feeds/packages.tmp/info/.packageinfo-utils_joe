@@ -13,6 +13,8 @@ Repository: base
 Title: JOE - Joes own editor
 Maintainer: Vitaly Protsko <villy@sft.ru>
 Source: joe-4.6.tar.gz
+License: GPL-2.0
+CPE-ID: cpe:/a:joseph_allen:joe
 Type: ipkg
 Description: Joe is world-famous Wordstar like text editor, that also features
 Emacs and Pico emulation
@@ -33,6 +35,8 @@ Repository: base
 Title: Extra data for JOE - Joes own editor
 Maintainer: Vitaly Protsko <villy@sft.ru>
 Source: joe-4.6.tar.gz
+License: GPL-2.0
+CPE-ID: cpe:/a:joseph_allen:joe
 Type: ipkg
 Description: Additional data for full Joe editor functionality
 https://sourceforge.net/projects/joe-editor/

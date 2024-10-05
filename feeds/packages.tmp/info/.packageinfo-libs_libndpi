@@ -2,8 +2,8 @@ Source-Makefile: feeds/packages/libs/libndpi/Makefile
 Build-Depends: libpcap
 
 Package: libndpi
-Version: 4.6-1
-Depends: +libc +LIBNDPI_GCRYPT:libgcrypt +LIBNDPI_PCRE:libpcre +LIBNDPI_MAXMINDDB:libmaxminddb +LIBNDPI_NDPIREADER:libpcap
+Version: 4.8-1
+Depends: +libc +LIBNDPI_GCRYPT:libgcrypt +LIBNDPI_PCRE:libpcre2 +LIBNDPI_MAXMINDDB:libmaxminddb +LIBNDPI_NDPIREADER:libpcap
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -12,7 +12,7 @@ Category: Libraries
 Repository: base
 Title: Library for deep-packet inspection
 Maintainer: Banglang Huang <banglang.huang@foxmail.com>, Toni Uhlig <matzeton@googlemail.com>
-Source: libndpi-4.6.tar.gz
+Source: libndpi-4.8.tar.gz
 License: LGPL-3.0-or-later
 LicenseFiles: COPYING
 Type: ipkg

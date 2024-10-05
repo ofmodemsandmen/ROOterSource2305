@@ -14,6 +14,7 @@ Maintainer:
 Source: libexif-0.6.24.tar.bz2
 License: LGPL-2.1-or-later
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:libexif:libexif
 Type: ipkg
 Description:   libexif is a library for parsing, editing, and saving EXIF data. It is
   intended to replace lots of redundant implementations in command-line

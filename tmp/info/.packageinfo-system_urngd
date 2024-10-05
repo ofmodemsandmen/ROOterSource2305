@@ -1,7 +1,7 @@
 Source-Makefile: package/system/urngd/Makefile
 
 Package: urngd
-Version: 2020-01-21-c7f7b6b65b82eda4675b42d8cd28d76ea7aebf1a-1
+Version: 2023-11-01-44365eb1e1165f2a44cb31f404b04cf85031718e-1
 Depends: +libc +libubox
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Base system
 Repository: base
 Title: OpenWrt non-physical true random number generator based on timing jitter
 Maintainer: 
-Source: urngd-2020-01-21-c7f7b6b65b82eda4675b42d8cd28d76ea7aebf1a.tar.xz
+Source: urngd-2023-11-01-44365eb1e1165f2a44cb31f404b04cf85031718e.tar.xz
 License: GPL-2.0 BSD-3-Clause
 Type: ipkg
 Description:   urngd is OpenWrt's micro non-physical true random number generator based on

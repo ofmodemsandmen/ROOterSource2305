@@ -12,7 +12,8 @@ Repository: base
 Title: An optimized library for BLAS (Basic Linear Algebra Subprograms)
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
 Source: OpenBLAS-0.3.23.tar.gz
-License: BSD 3-Clause
+License: BSD-3-Clause
+CPE-ID: cpe:/a:openblas_project:openblas
 Type: ipkg
 Description:   OpenBLAS is an optimized BLAS (Basic Linear Algebra Subprograms) library
   based on GotoBLAS2 1.13 BSD version.

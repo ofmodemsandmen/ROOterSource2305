@@ -14,6 +14,7 @@ Maintainer: Federico Di Marco <fededim@gmail.com>
 Source: neon-0.32.4.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: src/COPYING.LIB
+CPE-ID: cpe:/a:webdav:neon
 Type: ipkg
 Description:   neon is an HTTP and WebDAV client library, with a C interface. Features:
 

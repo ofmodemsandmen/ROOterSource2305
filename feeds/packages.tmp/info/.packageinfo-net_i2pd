@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/net/i2pd/Makefile
 
 Package: i2pd
-Version: 2.46.1-1
+Version: 2.48.0-1
 Depends: +libc +libopenssl +boost +boost-system +boost-filesystem +boost-program_options +boost-date_time +libatomic +zlib
 Conflicts: 
 Menu-Depends: 
@@ -12,9 +12,10 @@ Repository: base
 Title: full-featured C++ implementation of I2P client
 Maintainer: David Yang <mmyangfl@gmail.com>
 Require-User: i2pd:i2pd
-Source: i2pd-2.46.1.tar.gz
+Source: i2pd-2.48.0.tar.gz
 License: BSD-3-Clause
 LicenseFiles: LICENSE
+CPE-ID: cpe:/a:i2pd:i2pd
 Type: ipkg
 Description:   I2P (Invisible Internet Protocol) is a universal anonymous network layer. All
   communications over I2P are anonymous and end-to-end encrypted, participants

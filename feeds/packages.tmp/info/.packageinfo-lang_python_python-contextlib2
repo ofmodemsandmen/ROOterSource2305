@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-contextlib2/Makefile
 
 Package: python3-contextlib2
 Submenu: Python
-Version: 0.6.0.post1-1
+Version: 21.6.0-1
 Depends: +libc +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10,18 +10,20 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: python3-contextlib2
+Title: Backports and enhancements for the contextlib module
 Maintainer: Karel Kočí <cynerd@email.cz>
-Source: contextlib2-0.6.0.post1.tar.gz
+Source: contextlib2-21.6.0.tar.gz
+License: PSF-2.0 Apache-2.0
+LicenseFiles: LICENSE.txt
 Type: ipkg
-Description: python3-contextlib2
-http://contextlib2.readthedocs.org
+Description: Backports and enhancements for the contextlib module
+https://contextlib2.readthedocs.org
 Karel Kočí <cynerd@email.cz>
 @@
 
 Package: python3-contextlib2-src
 Submenu: Python
-Version: 0.6.0.post1-1
+Version: 21.6.0-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -29,14 +31,16 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: python3-contextlib2 (sources)
+Title: Backports and enhancements for the contextlib module (sources)
 Maintainer: Karel Kočí <cynerd@email.cz>
-Source: contextlib2-0.6.0.post1.tar.gz
+Source: contextlib2-21.6.0.tar.gz
+License: PSF-2.0 Apache-2.0
+LicenseFiles: LICENSE.txt
 Type: ipkg
-Description:     	python3-contextlib2
+Description:     	Backports and enhancements for the contextlib module
 
     This package contains the Python source files for python3-contextlib2.
-http://contextlib2.readthedocs.org
+https://contextlib2.readthedocs.org
 Karel Kočí <cynerd@email.cz>
 @@
 Config:

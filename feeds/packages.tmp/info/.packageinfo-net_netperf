@@ -13,6 +13,7 @@ Title: Network performance measurement tool
 Maintainer: Toke Høiland-Jørgensen <toke@toke.dk>
 Source: netperf-2.7.0.tar.xz
 License: Custom
+CPE-ID: cpe:/a:netperf:netperf
 Type: ipkg
 Description: Network performance measurement tool
 https://github.com/HewlettPackard/netperf

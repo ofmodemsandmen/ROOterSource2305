@@ -16,6 +16,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1012AFRDM
 https://www.trustedfirmware.org/projects/tf-a/
@@ -39,6 +40,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1012ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -62,6 +64,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1012AFRWY
 https://www.trustedfirmware.org/projects/tf-a/
@@ -85,6 +88,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for 
 https://www.trustedfirmware.org/projects/tf-a/
@@ -108,6 +112,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for 
 https://www.trustedfirmware.org/projects/tf-a/
@@ -131,6 +136,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1043ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -154,6 +160,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1043ARDB SD Boot
 https://www.trustedfirmware.org/projects/tf-a/
@@ -177,6 +184,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1046AFRWY
 https://www.trustedfirmware.org/projects/tf-a/
@@ -200,6 +208,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1046AFRWY SD Boot
 https://www.trustedfirmware.org/projects/tf-a/
@@ -223,6 +232,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1046ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -246,6 +256,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1046ARDB SD Boot
 https://www.trustedfirmware.org/projects/tf-a/
@@ -269,6 +280,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1088ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -292,6 +304,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS1088ARDB SD Boot
 https://www.trustedfirmware.org/projects/tf-a/
@@ -315,6 +328,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LS2088ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -338,6 +352,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LX2160ARDB
 https://www.trustedfirmware.org/projects/tf-a/
@@ -361,6 +376,7 @@ Maintainer:
 Source: tfa-layerscape-lf-6.1.1-1.0.0.tar.xz
 License: BSD-3-Clause
 LicenseFiles: docs/license.rst
+CPE-ID: cpe:/a:arm:trusted_firmware-a
 Type: bin
 Description: Trusted-Firmware-A for NXP LX2160ARDB SD Boot
 https://www.trustedfirmware.org/projects/tf-a/

@@ -18,7 +18,7 @@ http://www.lantiq.com/
 John Crispin <john@phrozen.org>
 @@
 Config:
-	source "package/kernel/lantiq/ltq-tapi/Config.in"
+	source "feeds/base/kernel/lantiq/ltq-tapi/Config.in"
 @@
 
 

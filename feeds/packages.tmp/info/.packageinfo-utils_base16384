@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/utils/base16384/Makefile
 
 Package: base16384
-Version: 2.2.2-1
+Version: 2.2.4-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,7 +11,7 @@ Category: Utilities
 Repository: base
 Title: Encode binary files to printable utf16be
 Maintainer: 源 文雨 <fumiama@foxmail.com>
-Source: base16384-2.2.2.tar.gz
+Source: base16384-2.2.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -25,7 +25,7 @@ https://github.com/fumiama/base16384
 @@
 
 Package: libbase16384
-Version: 2.2.2-1
+Version: 2.2.4-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -35,7 +35,7 @@ Category: Libraries
 Repository: base
 Title: Base16384 library
 Maintainer: 源 文雨 <fumiama@foxmail.com>
-Source: base16384-2.2.2.tar.gz
+Source: base16384-2.2.4.tar.gz
 License: GPL-3.0-or-later
 LicenseFiles: LICENSE
 Type: ipkg

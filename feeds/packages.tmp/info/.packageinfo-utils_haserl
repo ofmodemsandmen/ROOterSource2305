@@ -15,6 +15,7 @@ Maintainer:
 Source: haserl-0.9.36.tar.gz
 License: GPL-2.0
 LicenseFiles: COPYING
+CPE-ID: cpe:/a:haserl_project:haserl
 Type: ipkg
 Description: A CGI wrapper to embed shell scripts in HTML documents
 http://haserl.sourceforge.net/

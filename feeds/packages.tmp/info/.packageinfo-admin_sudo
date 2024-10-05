@@ -1,7 +1,7 @@
 Source-Makefile: feeds/packages/admin/sudo/Makefile
 
 Package: sudo
-Version: 1.9.13p3-1
+Version: 1.9.14p3-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -11,9 +11,10 @@ Category: Administration
 Repository: base
 Title: Delegate authority to run commands
 Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
-Source: sudo-1.9.13p3.tar.gz
+Source: sudo-1.9.14p3.tar.gz
 License: ISC
 LicenseFiles: doc/LICENSE
+CPE-ID: cpe:/a:sudo_project:sudo
 Type: ipkg
 Description:  Sudo (su "do") allows a system administrator to delegate authority to
  give certain users (or groups of users) the ability to run some (or

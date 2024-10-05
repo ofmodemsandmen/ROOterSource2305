@@ -13,6 +13,8 @@ Title: A command line option parsing library
 Maintainer: 
 Source: popt-1.19.tar.gz
 License: MIT
+CPE-ID: cpe:/a:popt_project:popt
+ABI-Version: 0
 Type: ipkg
 Description: A command line option parsing library
 https://github.com/rpm-software-management/popt

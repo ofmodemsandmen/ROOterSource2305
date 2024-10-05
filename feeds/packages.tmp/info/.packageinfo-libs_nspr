@@ -12,6 +12,8 @@ Repository: base
 Title: Netscape Portable Runtime (NSPR)
 Maintainer: Lucian Cristian <lucian.cristian@gmail.com>
 Source: nspr-4.35.tar.gz
+License: MPL-2.0
+CPE-ID: cpe:/a:mozilla:netscape_portable_runtime
 Type: ipkg
 Description:   Netscape Portable Runtime (NSPR) provides a platform-neutral API for system
   level and libc-like functions. The API is used in the Mozilla clients, many

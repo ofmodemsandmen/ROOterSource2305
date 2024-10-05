@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/multimedia/mjpg-streamer/Makefile
 Build-Depends: MJPG_STREAMER_V4L2:libv4l zmq protobuf-c/host
 
 Package: mjpg-streamer
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc +libpthread +libjpeg +MJPG_STREAMER_V4L2:libv4l
 Conflicts: 
 Menu-Depends: 
@@ -31,7 +31,7 @@ endif
 @@
 
 Package: mjpg-streamer-input-file
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -53,7 +53,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-input-uvc
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -75,7 +75,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-input-http
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -97,7 +97,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-output-rtsp
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -119,7 +119,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-output-file
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -141,7 +141,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-output-http
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 
@@ -163,7 +163,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-output-zmq
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer +libzmq +libprotobuf-c
 Conflicts: 
 Menu-Depends: 
@@ -185,7 +185,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-www
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: mjpg-streamer-www-simple
 Menu-Depends: 
@@ -208,7 +208,7 @@ Roger D <rogerdammit@gmail.com>, Ted Hess <thess@kitschensync.net>
 @@
 
 Package: mjpg-streamer-www-simple
-Version: 1.0.0-5
+Version: 1.0.0-6
 Depends: +libc mjpg-streamer
 Conflicts: 
 Menu-Depends: 

@@ -2,7 +2,7 @@ Source-Makefile: feeds/packages/lang/python/python-ubus/Makefile
 
 Package: python3-ubus
 Submenu: Python
-Version: 0.1.1-2
+Version: 0.1.2-1
 Depends: +libc +libubus +libblobmsg-json +python3-light
 Conflicts: 
 Menu-Depends: 
@@ -10,9 +10,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python3 ubus
+Title: libubus bindings
 Maintainer: Erik Larsson <who+openwrt@cnackers.org>
-Source: ubus-0.1.1.tar.gz
+Source: ubus-0.1.2.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg
@@ -23,7 +23,7 @@ Erik Larsson <who+openwrt@cnackers.org>
 
 Package: python3-ubus-src
 Submenu: Python
-Version: 0.1.1-2
+Version: 0.1.2-1
 Depends: +libc 
 Conflicts: 
 Menu-Depends: 
@@ -31,9 +31,9 @@ Provides:
 Section: lang
 Category: Languages
 Repository: base
-Title: Python3 ubus (sources)
+Title: libubus bindings (sources)
 Maintainer: Erik Larsson <who+openwrt@cnackers.org>
-Source: ubus-0.1.1.tar.gz
+Source: ubus-0.1.2.tar.gz
 License: LGPL-2.1-or-later
 LicenseFiles: LICENSE
 Type: ipkg

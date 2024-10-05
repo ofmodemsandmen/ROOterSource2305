@@ -14,6 +14,7 @@ Maintainer: Jo-Philipp Wich <jo@mein.io>
 Source: lucihttp-2023-03-15-9b5b683fbb2bb0010aa031d620d0ab8105516757.tar.xz
 License: ISC
 LicenseFiles: LICENSE
+ABI-Version: 0
 Type: ipkg
 Description: LuCI HTTP utility library
 Jo-Philipp Wich <jo@mein.io>

@@ -1,8 +1,8 @@
 Source-Makefile: feeds/packages/utils/prometheus-node-exporter-lua/Makefile
 
 Package: prometheus-node-exporter-lua
-Version: 2022.08.08-1
-Depends: +libc +luasocket +lua +uhttpd +uhttpd-mod-lua
+Version: 2024.06.16-2
+Depends: +libc +luasocket +lua +uhttpd +uhttpd-mod-lua +libubus-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -20,26 +20,8 @@ Description:   Provides node metrics as Prometheus scraping endpoint.
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
-Package: prometheus-node-exporter-lua-bmx6
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua bmx6 +lua-cjson +bmx6-json
-Conflicts: 
-Menu-Depends: 
-Provides: 
-Section: utils
-Category: Utilities
-Repository: base
-Title: Prometheus node exporter (bmx6 links collector)
-Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
-Source: 
-License: Apache-2.0
-Type: ipkg
-Description: Prometheus node exporter (bmx6 links collector)
-Etienne CHAMPETIER <champetier.etienne@gmail.com>
-@@
-
 Package: prometheus-node-exporter-lua-bmx7
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua bmx7 +lua-cjson +bmx7-json
 Conflicts: 
 Menu-Depends: 
@@ -57,8 +39,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-dawn
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -75,8 +57,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-hostapd_stations
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +hostapd-utils +lua-bit32 +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +hostapd-utils +lua-bit32
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -93,8 +75,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-hostapd_ubus_stations
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +luabitop +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +luabitop
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -110,8 +92,26 @@ Description: Prometheus node exporter (hostapd_ubus_stations collector)
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
+Package: prometheus-node-exporter-lua-hwmon
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +luci-lib-nixio
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Prometheus node exporter (hwmon collector)
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: Prometheus node exporter (hwmon collector)
+Etienne CHAMPETIER <champetier.etienne@gmail.com>
+@@
+
 Package: prometheus-node-exporter-lua-ltq-dsl
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua ltq-dsl-app
 Conflicts: 
 Menu-Depends: 
@@ -129,7 +129,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-nat_traffic
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
@@ -147,7 +147,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-netstat
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
@@ -165,8 +165,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-openwrt
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -183,7 +183,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-textfile
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua +luci-lib-nixio
 Conflicts: 
 Menu-Depends: 
@@ -200,8 +200,26 @@ Description: Prometheus node exporter (textfile collector)
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
+Package: prometheus-node-exporter-lua-thermal
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Prometheus node exporter (thermal collector)
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: Prometheus node exporter (thermal collector)
+Etienne CHAMPETIER <champetier.etienne@gmail.com>
+@@
+
 Package: prometheus-node-exporter-lua-ubnt-manager
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua +ubnt-manager +lua-cjson
 Conflicts: 
 Menu-Depends: 
@@ -219,7 +237,7 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-uci_dhcp_host
-Version: 2022.08.08-1
+Version: 2024.06.16-2
 Depends: +libc prometheus-node-exporter-lua +libuci-lua
 Conflicts: 
 Menu-Depends: 
@@ -237,8 +255,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-wifi
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -255,8 +273,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-wifi_stations
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +libiwinfo-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -273,8 +291,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-snmp6
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libubus-lua
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -291,8 +309,8 @@ Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 
 Package: prometheus-node-exporter-lua-realtek-poe
-Version: 2022.08.08-1
-Depends: +libc prometheus-node-exporter-lua +libubus-lua +realtek-poe
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +realtek-poe
 Conflicts: 
 Menu-Depends: 
 Provides: 
@@ -305,6 +323,24 @@ Source:
 License: Apache-2.0
 Type: ipkg
 Description: Prometheus node exporter (realtek-poe collector)
+Etienne CHAMPETIER <champetier.etienne@gmail.com>
+@@
+
+Package: prometheus-node-exporter-lua-mwan3
+Version: 2024.06.16-2
+Depends: +libc prometheus-node-exporter-lua +mwan3
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Repository: base
+Title: Prometheus node exporter (mwan3 collector)
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Description: Prometheus node exporter (mwan3 collector)
 Etienne CHAMPETIER <champetier.etienne@gmail.com>
 @@
 

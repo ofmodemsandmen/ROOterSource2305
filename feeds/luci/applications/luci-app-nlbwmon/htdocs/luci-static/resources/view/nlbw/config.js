@@ -49,8 +49,8 @@ return view.extend({
 	render: function() {
 		var m, s, o;
 
-		m = new form.Map('nlbwmon', _('Usage Configuration'),
-			_('Configure Usage Statistics'));
+		m = new form.Map('nlbwmon', _('Usage Statistics - Configuration'),
+			_('Usage Statistics is a lightweight, efficient traffic accounting program keeping track of bandwidth usage per host and protocol.'));
 
 		s = m.section(form.TypedSection, 'nlbwmon');
 		s.anonymous = true;

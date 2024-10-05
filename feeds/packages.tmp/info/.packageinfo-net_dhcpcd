@@ -13,6 +13,7 @@ Title: DHCPv4/IPv4LL/IPv6RS/DHCPv6 quad stack client
 Maintainer: Marko Ratkaj <markoratkaj@gmail.com>
 Source: dhcpcd-9.4.1.tar.xz
 License: BSD-2c
+CPE-ID: cpe:/a:roy_marples:dhcpcd
 Type: ipkg
 Description:   DHCPv4, IPv6RS and DHCPv6 client with IPv4LL support
   dhcpcd is a one stop network management daemon which includes

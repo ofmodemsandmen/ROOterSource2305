@@ -3,7 +3,7 @@ Build-Types: host
 
 Package: u-boot-mx23_olinuxino
 Default: y
-Version: 2020.04-5
+Version: 2020.04-6
 Depends: +libc @!IN_SDK @TARGET_mxs_generic
 Conflicts: 
 Menu-Depends: 
@@ -27,7 +27,7 @@ Build-Types: host
 
 Package: u-boot-duckbill
 Default: y
-Version: 2020.04-5
+Version: 2020.04-6
 Depends: +libc @!IN_SDK @TARGET_mxs_generic
 Conflicts: 
 Menu-Depends: 

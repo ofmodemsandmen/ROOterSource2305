@@ -121,6 +121,26 @@ Description:     Translation for luci-app-natmap - Italiano (Italian)
 Richard Yu <yurichard3839@gmail.com>
 @@
 
+Package: luci-i18n-natmap-lt
+Default: LUCI_LANG_lt||(ALL&&m)
+Version: x
+Depends: +libc luci-app-natmap
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: luci
+Category: LuCI
+Repository: base
+Title: luci-app-natmap - lt translation
+Maintainer: Richard Yu <yurichard3839@gmail.com>
+Source: 
+License: Apache-2.0
+Type: ipkg
+Hidden: 1
+Description:     Translation for luci-app-natmap - Lietuvių (Lithuanian)
+Richard Yu <yurichard3839@gmail.com>
+@@
+
 Package: luci-i18n-natmap-nl
 Default: LUCI_LANG_nl||(ALL&&m)
 Version: x

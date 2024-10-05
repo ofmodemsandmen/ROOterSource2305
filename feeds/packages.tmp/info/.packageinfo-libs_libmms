@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: libmms-0.6.4.tar.gz
 License: LGPLv2.1
 LicenseFiles: COPYING.LIB
+CPE-ID: cpe:/a:libmms_project:libmms
 Type: ipkg
 Description: 	LibMMS is a common library for parsing mms:// and mmsh:// type network streams.
 	These are commonly used to stream Windows Media Video content over the web.

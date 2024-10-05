@@ -14,6 +14,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: lame-3.100.tar.gz
 License: LGPL-2.0
 LicenseFiles: COPYING LICENSE
+CPE-ID: cpe:/a:lame_project:lame
 Type: ipkg
 Description: lame mp3 encoder libs
 http://sourceforge.net/projects/lame
@@ -38,6 +39,7 @@ Maintainer: Ted Hess <thess@kitschensync.net>
 Source: lame-3.100.tar.gz
 License: LGPL-2.0
 LicenseFiles: COPYING LICENSE
+CPE-ID: cpe:/a:lame_project:lame
 Type: ipkg
 Description: lame mp3 encoder
 http://sourceforge.net/projects/lame
