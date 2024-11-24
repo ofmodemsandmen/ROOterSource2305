@@ -4,6 +4,12 @@ function trim(s)
   return (s:gsub("^%s*(.-)%s*$", "%1"))
 end
 
+printf = function(s,...)
+		io.write(s:format(...))
+		local ss = s:format(...)
+			os.execute("/usr/lib/rooter/logprint.sh " .. ss)
+end
+
 lang = trim(arg[1])
 copseq = "/tmp/copseq"
 netw = {}
@@ -101,6 +107,18 @@ for j = 0, i-1 do
 			if netfreq[k] == "2" and freq[j] == "7" then
 				netfreq[k] = "9"
 			end
+			if netfreq[k] == "7" and freq[j] == "12" then
+				netfreq[k] = "12"
+			end
+			if netfreq[k] == "12" and freq[j] == "7" then
+				netfreq[k] = "12"
+			end
+			if netfreq[k] == "9" and freq[j] == "12" then
+				netfreq[k] = "12"
+			end
+			if netfreq[k] == "12" and freq[j] == "9" then
+				netfreq[k] = "12"
+			end
 		else
 			netfnd[list] = long[j] .. netw[j] .. "   "
 			netmcc[list] = mccmnc[j]
@@ -123,7 +141,10 @@ for k = 0, list-1 do
 		netfnd[k] = netfnd[k] .. "3G        MCC/MNC - " .. string.sub(netmcc[k], 1, 3) .. " " .. string.sub(netmcc[k], 4)
 	end
 	if netfreq[k] == "7" then
-		netfnd[k] = netfnd[k] .. "LTE       MCC/MNC - " .. string.sub(netmcc[k], 1, 3) .. " " .. string.sub(netmcc[k], 4)
+		netfnd[k] = netfnd[k] .. "LTE          MCC/MNC - " .. string.sub(netmcc[k], 1, 3) .. " " .. string.sub(netmcc[k], 4)
+	end
+	if netfreq[k] == "12" then
+		netfnd[k] = netfnd[k] .. "LTE/5G       MCC/MNC - " .. string.sub(netmcc[k], 1, 3) .. " " .. string.sub(netmcc[k], 4)
 	end
 	tfile:write(netfnd[k], "\n")
 	file:write(netmcc[k], "\n")

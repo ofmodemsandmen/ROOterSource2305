@@ -4,9 +4,10 @@ ROOTER=/usr/lib/rooter
 ROOTER_LINK="/tmp/links"
 
 log() {
-	logger -t "ROAM" "$@"
+	modlog "ROAM" "$@"
 }
 
+flag=$1
 CURRMODEM=1
 CPORT=$(uci get modem.modem$CURRMODEM.commport)
 connect=$(uci get modem.modem$CURRMODEM.connected)
@@ -14,19 +15,24 @@ if [ "$connect" != "1" ]; then
 	exit 0
 fi
 
+rm -f /tmp/copseq
+rm -f /tmp/copseqxx
+rm -f /tmp/copseqmc
+rm -f /tmp/copseqlg
+rm -f /tmp/copseqav
+
 ATCMDD="AT+COPS=?"
-#export TIMEOUT="120"
+export TIMEOUT="120"
 OX=$($ROOTER/gcom/gcom-locked "/dev/ttyUSB$CPORT" "run-at.gcom" "$CURRMODEM" "$ATCMDD")
 #export TIMEOUT="5"
+log "$OX"
 OX=$(echo "$OX " | sed -e "s!+COPS: !+COPS:,!g")
 OX=$(echo "$OX" | grep "+COPS:")
 if [ -z "$OX" ]; then
-	rm -f /tmp/copseq
 	exit 0
 fi
 
 CNT=2
-rm -f /tmp/copseq
 while [ true ]; do
 	CCNT=$CNT
 	AVAIL=$(echo $OX | cut -d, -f$CCNT)
@@ -60,3 +66,4 @@ while [ true ]; do
 done
 lang=$(uci -q get luci.main.lang)
 /usr/lib/netroam/compress.lua $lang
+sleep 5

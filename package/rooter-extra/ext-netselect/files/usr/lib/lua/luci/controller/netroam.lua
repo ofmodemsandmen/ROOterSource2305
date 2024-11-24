@@ -5,12 +5,12 @@ translate = I18N.translate
 
 function index()
 	entry({"admin", "modem", "netroam"}, template("netroam/netroam"), translate("Network Selection"), 39)
-	entry({"admin", "netroam", "getconnect"}, call("action_getconnect"))
-	entry({"admin", "netroam", "getscan"}, call("action_getscan"))
-	entry({"admin", "netroam", "connect"}, call("action_connect"))
+	entry({"admin", "modem", "netgetconnect"}, call("action_netgetconnect"))
+	entry({"admin", "modem", "netgetscan"}, call("action_netgetscan"))
+	entry({"admin", "modem", "netconnect"}, call("action_netconnect"))
 end
 
-function action_getconnect()
+function action_netgetconnect()
 	local rv ={}
 	
 	connect = luci.model.uci.cursor():get("modem", "modem1", "connected")
@@ -20,21 +20,21 @@ function action_getconnect()
 	luci.http.write_json(rv)
 end
 
-function action_getscan()
+function action_netgetscan()
 	local netw = {}
 	local netmc = {}
 	local netlong = {}
 	local netavail = {}
 	local rv ={}
-	
+	rv["data"] = "0"
 	os.execute("/usr/lib/netroam/getcops.sh")
 
 	file = io.open("/tmp/copseqxx", "r")
-	mfile = io.open("/tmp/copseqmc", "r")
-	lfile = io.open("/tmp/copseqlg", "r")
-	afile = io.open("/tmp/copseqav", "r")
 	if file ~= nil then
 		rv["data"] = "1"
+		mfile = io.open("/tmp/copseqmc", "r")
+		lfile = io.open("/tmp/copseqlg", "r")
+		afile = io.open("/tmp/copseqav", "r")
 		indx = 0
 		repeat
 			line = file:read("*line")
@@ -67,7 +67,7 @@ function action_getscan()
 	luci.http.write_json(rv)
 end
 
-function action_connect()
+function action_netconnect()
 	local set = luci.http.formvalue("set")
 	os.execute("/usr/lib/netroam/doconnect.sh " .. set)
 end

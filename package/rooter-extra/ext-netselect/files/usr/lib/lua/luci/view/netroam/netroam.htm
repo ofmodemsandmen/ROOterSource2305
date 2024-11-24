@@ -9,12 +9,12 @@
 	var netavail = new Array();
 	var ulselect = -1;
 	
-	XHR.poll(2, '<%=luci.dispatcher.build_url("admin", "netroam", "getconnect")%>', null,
+	XHR.poll(5, '<%=luci.dispatcher.build_url("admin", "modem", "netgetconnect")%>', null,
 		function(x, rv)
 		{
 			connected = rv.connected;
 			if ( connected == "1" )
-			{
+			{ 
 				document.getElementById("noconnect").style.visibility="hidden";
 				document.getElementById("noconnect").style.display="none";
 				document.getElementById("scansec").style.visibility="visible";
@@ -52,71 +52,77 @@
 		document.getElementById("scan").disabled=true;
 		document.getElementById("getinfo").style.visibility="visible";
 		document.getElementById("getinfo").style.display="";
-		XHR.get('<%=luci.dispatcher.build_url("admin", "netroam", "getscan")%>',
+		XHR.get('<%=luci.dispatcher.build_url("admin", "modem", "netgetscan")%>',
 			null,
 			function(x, rv)
 			{
-				document.getElementById("results").style.visibility="visible";
-				document.getElementById("results").style.display="";
-				document.getElementById("scan").disabled=false;
-				document.getElementById("getinfo").style.visibility="hidden";
-				document.getElementById("getinfo").style.display="none";
-				gotdata = rv.data;
-				if ( gotdata == "1" )
-				{
-					document.getElementById("noresults").style.visibility="hidden";
-					document.getElementById("noresults").style.display="none";
-					document.getElementById("selected").style.visibility="visible";
-					document.getElementById("selected").style.display="";
-					clearListul("hotList1");
-					netdata = rv.network;
-					netmcc = rv.mccmnc;
-					netlong = rv.long;
-					netavail = rv.avail;
-					hotv = 0;
-					indx = parseInt(rv.indx);
-					indxx = 0;
-					for (i = 0; i < indx; i++) {
-						txtline = netdata[i];
-						if (netlong[i] == "2")
+				XHR.get('<%=luci.dispatcher.build_url("admin", "modem", "netgetscan")%>',
+					null,
+					function(x, rv)
+					{
+						document.getElementById("results").style.visibility="visible";
+						document.getElementById("results").style.display="";
+						document.getElementById("scan").disabled=false;
+						document.getElementById("getinfo").style.visibility="hidden";
+						document.getElementById("getinfo").style.display="none";
+						gotdata = rv.data;
+						if ( gotdata == "1" )
 						{
-							hotv = i;
-						}
-						txtline = txtline.replace(/ /g,"\240");
-						
-						var ul = document.getElementById("hotList1");
-						var li = document.createElement('li');
-						lix = indxx + 1;
-						li.id = 'li' + lix;
-						li.setAttribute('onclick', "testclk(" + lix + ")");
-						li.appendChild(document.createTextNode(txtline));
-						ul.appendChild(li);
-						indxx = indxx + 1;
+							document.getElementById("noresults").style.visibility="hidden";
+							document.getElementById("noresults").style.display="none";
+							document.getElementById("selected").style.visibility="visible";
+							document.getElementById("selected").style.display="";
+							clearListul("hotList1");
+							netdata = rv.network;
+							netmcc = rv.mccmnc;
+							netlong = rv.long;
+							netavail = rv.avail;
+							hotv = 0;
+							indx = parseInt(rv.indx);
+							indxx = 0;
+							for (i = 0; i < indx; i++) {
+								txtline = netdata[i];
+								if (netlong[i] == "2")
+								{
+									hotv = i;
+								}
+								txtline = txtline.replace(/ /g,"\240");
+								
+								var ul = document.getElementById("hotList1");
+								var li = document.createElement('li');
+								lix = indxx + 1;
+								li.id = 'li' + lix;
+								li.setAttribute('onclick', "testclk(" + lix + ")");
+								li.appendChild(document.createTextNode(txtline));
+								ul.appendChild(li);
+								indxx = indxx + 1;
 
+							}
+							ulselect = hotv + 1;
+							id = "li" + ulselect;
+							document.getElementById(id).style.backgroundColor = '#4686fe';
+							document.getElementById(id).style.color = 'white';
+							
+							document.getElementById("selnet").innerHTML=netavail[hotv];	
+							if ( netlong[hotv] == "2" )
+							{
+								document.getElementById("change").disabled=true;
+							}
+							else
+							{
+								document.getElementById("change").disabled=false;
+							}
+												
+						}
+						else
+						{
+							document.getElementById("noresults").style.visibility="visible";
+							document.getElementById("noresults").style.display="";
+							document.getElementById("selected").style.visibility="hidden";
+							document.getElementById("selected").style.display="none";
+						}
 					}
-					ulselect = hotv + 1;
-					id = "li" + ulselect;
-					document.getElementById(id).style.backgroundColor = '#4686fe';
-					document.getElementById(id).style.color = 'white';
-					
-					document.getElementById("selnet").innerHTML=netavail[hotv];	
-					if ( netlong[hotv] == "2" )
-					{
-						document.getElementById("change").disabled=true;
-					}
-					else
-					{
-						document.getElementById("change").disabled=false;
-					}
-										
-				}
-				else
-				{
-					document.getElementById("noresults").style.visibility="visible";
-					document.getElementById("noresults").style.display="";
-					document.getElementById("selected").style.visibility="hidden";
-					document.getElementById("selected").style.display="none";
-				}
+				);
 			}
 		);
 	}
@@ -156,7 +162,7 @@
 		mmc = netmcc[s];
 		if ( confirm("<%:Modem will be restarted to change to new network. Continue?%>") )
 		{
-			XHR.get('<%=luci.dispatcher.build_url("admin", "netroam", "connect")%>',
+			XHR.get('<%=luci.dispatcher.build_url("admin", "modem", "netconnect")%>',
 				{ set: mmc },
 				function(x, rv)
 				{
@@ -204,7 +210,7 @@
 		</tr>
 	</table>
 	
-	<table border="0" id="scansec" style="visibility:hidden;">
+	<table border="0" id="scansec">
 		<tr>
 			<td width="5%"></td>
 			<td width="15%"><input type="button" id="scan" class="cbi-button cbi-button-apply" value="<%:Scan for Networks%>" onclick="return scannet(this)" /></td>
