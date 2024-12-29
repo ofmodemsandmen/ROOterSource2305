@@ -180,5 +180,16 @@
 		"imagepath": "/mediatek/filogic/",
 		"mod": "GliNet_MT6000",
 		"ext": "-upgrade.bin"
+	},
+	"EDGE4": {
+		"details": "Ubiquiti EdgeRouter 4",
+		"type": "1",
+		"build": "2305",
+		"config": ".config_edge4",
+		"image": "openwrt-octeon-generic-ubnt_edgerouter-4-squashfs-sysupgrade.tar",
+		"imagepath": "/octeon/generic/",
+		"mod": "Ubiquiti-EdgeRouter4",
+		"ext": "-upgrade.tar",
+		"addons": ["readme.pdf", "readmerecovery.txt"]
 	}
 }
