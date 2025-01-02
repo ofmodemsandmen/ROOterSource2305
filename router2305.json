@@ -21,14 +21,14 @@
 		"mod": "Turris-Omnia-2305",
 		"addons": ["readme.pdf", "turris-omnia-initramfs.tar.gz", "turris.txt"]
 	},
-	"WG1602-32": {
+	"WG1602V04-32": {
 		"details": "ZBT WG1602",
 		"type": "1",
 		"build": "2305",
-		"config": ".config_wg1602-32",
+		"config": ".config_wg1602v4-32",
 		"image": "openwrt-ramips-mt7621-zbtlink_zbt-wg1602-v04-32m-squashfs-sysupgrade.bin",
 		"imagepath": "/ramips/mt7621/",
-		"mod": "ZBT-WG1602-32",
+		"mod": "ZBT-WG1602V04-32",
 		"ext": "-upgrade.bin",
 		"addons": ["readme.pdf", "readmerecovery.txt", "usb-configuration.txt"]
 	},
