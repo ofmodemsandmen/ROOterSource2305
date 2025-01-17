@@ -1,7 +1,7 @@
 #!/bin/sh
 
-core="-j7"
-#core=""
+#core="-j7"
+core=""
 
 DATE=$(date +%Y-%m-%d)
 routersjson="./router2305.json"
