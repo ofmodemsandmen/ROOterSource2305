@@ -191,5 +191,18 @@
 		"mod": "Ubiquiti-EdgeRouter4",
 		"ext": "-upgrade.tar",
 		"addons": ["readme.pdf", "readmerecovery.txt"]
+	},
+	"XE300": {
+		"details": "Glinet XE300",
+		"type": "2",
+		"build": "2102",
+		"config": ".config_xe300",
+		"image1": "openwrt-ath79-nand-glinet_gl-xe300-squashfs-factory.img",
+		"image2": "openwrt-ath79-nand-glinet_gl-xe300-squashfs-sysupgrade.bin",
+		"imagepath": "/ath79/nand/",
+		"mod": "Glinet-XE300",
+		"ext1": "-factory.bin",
+		"ext2": "-update.bin",
+		"addons": ["readme.pdf"]
 	}
 }
