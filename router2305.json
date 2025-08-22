@@ -204,5 +204,43 @@
 		"ext1": "-factory.bin",
 		"ext2": "-update.bin",
 		"addons": ["readme.pdf"]
+	},
+	"AR300M": {
+		"details": "Glinet AR300M",
+		"type": "2",
+		"build": "2102",
+		"config": ".config_ar300m",
+		"image1": "openwrt-ath79-nand-glinet_gl-ar300m-nand-squashfs-factory.img",
+		"image2": "openwrt-ath79-nand-glinet_gl-ar300m-nand-squashfs-sysupgrade.bin",
+		"imagepath": "/ath79/nand/",
+		"mod": "Glinet-AR300M-NAND",
+		"ext1": "-factory.img",
+		"ext2": "-update.bin",
+		"addons": ["readme.pdf"]
+	},
+	"X1200": {
+		"details": "Glinet X1200",
+		"type": "2",
+		"build": "2102",
+		"config": ".config_x1200",
+		"image1": "openwrt-ath79-nand-glinet_gl-x1200-nor-nand-squashfs-factory.img",
+		"image2": "openwrt-ath79-nand-glinet_gl-x1200-nor-nand-squashfs-sysupgrade.bin",
+		"imagepath": "/ath79/nand/",
+		"mod": "Glinet-X1200",
+		"ext1": "-factory.img",
+		"ext2": "-update.bin",
+		"addons": ["readme.pdf"]
+	},
+	"MV1000": {
+		"details": "Glinet MV1000",
+		"type": "4",
+		"build": "2102",
+		"config": ".config_mv1000",
+		"image1": "openwrt-mvebu-cortexa53-glinet_gl-mv1000-squashfs-sdcard.img.gz",
+		"image2": "openwrt-mvebu-cortexa53-glinet_gl-mv1000-squashfs-sdcard.img",
+		"imagepath": "/mvebu/cortexa53/",
+		"mod": "Glinet-MV1000",
+		"ext": "-update.bin",
+		"addons": ["readme.pdf"]
 	}
 }
