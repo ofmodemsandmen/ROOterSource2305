@@ -165,6 +165,7 @@
 		"type": "1",
 		"build": "2203",
 		"config": ".config_wg1608",
+		"package": "ext-rooter-bare",
 		"image": "openwrt-ramips-mt7621-zbtlink_zbt-wg1608-16m-squashfs-sysupgrade.bin",
 		"imagepath": "/ramips/mt7621/",
 		"mod": "ZBT-WG1608-16",
