@@ -219,19 +219,6 @@
 		"ext2": "-update.bin",
 		"addons": ["readme.pdf"]
 	},
-	"X1200": {
-		"details": "Glinet X1200",
-		"type": "2",
-		"build": "2102",
-		"config": ".config_x1200",
-		"image1": "openwrt-ath79-nand-glinet_gl-x1200-nor-nand-squashfs-factory.img",
-		"image2": "openwrt-ath79-nand-glinet_gl-x1200-nor-nand-squashfs-sysupgrade.bin",
-		"imagepath": "/ath79/nand/",
-		"mod": "Glinet-X1200",
-		"ext1": "-factory.img",
-		"ext2": "-update.bin",
-		"addons": ["readme.pdf"]
-	},
 	"MV1000": {
 		"details": "Glinet MV1000",
 		"type": "4",
