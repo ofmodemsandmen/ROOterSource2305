@@ -202,7 +202,7 @@
 		"image2": "openwrt-ath79-nand-glinet_gl-xe300-squashfs-sysupgrade.bin",
 		"imagepath": "/ath79/nand/",
 		"mod": "Glinet-XE300",
-		"ext1": "-factory.bin",
+		"ext1": "-factory.img",
 		"ext2": "-update.bin",
 		"addons": ["readme.pdf"]
 	},
@@ -244,6 +244,19 @@
 		"mod": "OrangePi-Zero-Plus",
 		"ext1": "-ext4.img",
 		"ext2": "-squashfs.img",
+		"addons": ["readme.pdf"]
+	},
+	"WNDR3700V4": {
+		"details": "Netgear WNDR3700v4",
+		"type": "2",
+		"build": "2102",
+		"config": ".config_wndr3700v4",
+		"image1": "openwrt-ath79-nand-netgear_wndr3700-v4-squashfs-factory.img",
+		"image2": "openwrt-ath79-nand-netgear_wndr3700-v4-squashfs-sysupgrade.bin",
+		"imagepath": "/ath79/nand/",
+		"mod": "Netgear-WNDR3700v4",
+		"ext1": "-factory.img",
+		"ext2": "-update.bin",
 		"addons": ["readme.pdf"]
 	}
 }
