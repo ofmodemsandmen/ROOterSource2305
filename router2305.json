@@ -258,5 +258,17 @@
 		"ext1": "-factory.img",
 		"ext2": "-update.bin",
 		"addons": ["readme.pdf"]
+	},
+	"TR1200": {
+		"details": "Cudy TR1200",
+		"type": "1",
+		"build": "2102",
+		"package": "ext-rooter-bare",
+		"config": ".config_tr1200",
+		"image": "openwrt-ramips-mt76x8-cudy_tr1200-v1-squashfs-sysupgrade.bin",
+		"imagepath": "/ramips/mt76x8/",
+		"mod": "Cudy-TR1200",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf", "TR1200-OpenWRT-Flash.bin", "tr1200flash.txt"]
 	}
 }

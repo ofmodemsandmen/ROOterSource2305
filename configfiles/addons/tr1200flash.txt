@@ -1,0 +1,9 @@
+To flash the TR1200 you first need to flash to an
+unlocked Cudy firmware.
+
+Enter the factory web interface at http://192.168.10.1/ with default password “admin”.
+Go to the “Upgrade Firmware” option and upgrade using the file “TR1200-OpenWRT-Flash.bin”. Wait 2 minutes.
+
+Go to the GUI at http://192.168.1.1/ with no password.
+
+Use System->Backup/Flash Firmware to flash the ROOter firmware.
