@@ -36,7 +36,7 @@ elecom,wrc-1167fs)
 	ucidef_set_led_switch "internet" "internet" "green:internet" "switch0" "0x10"
 	;;
 glinet,gl-mt300n-v2)
-	ucidef_set_led_netdev "wifi_led" "wifi" "red:wlan" "wlan0"
+	ucidef_set_led_netdev "wifi_led" "wifi" "red:wlan" "phy0-ap0"
 	ucidef_set_led_switch "wan" "wan" "green:wan" "switch0" "0x1"
 	;;
 hilink,hlk-7628n|\
