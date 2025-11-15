@@ -270,5 +270,16 @@
 		"mod": "Cudy-TR1200",
 		"ext": "-upgrade.bin",
 		"addons": ["readme.pdf", "TR1200-OpenWRT-Flash.bin", "tr1200flash.txt"]
+	},	
+	"MT300NV2": {
+		"details": "Gl.iNet MT300N-V2",
+		"type": "1",
+		"build": "1907",
+		"config": ".config_mt300nv2",
+		"image": "openwrt-ramips-mt76x8-glinet_gl-mt300n-v2-squashfs-sysupgrade.bin",
+		"imagepath": "/ramips/mt76x8/",
+		"mod": "GL-MT300N-V2",
+		"ext": "-upgrade.bin",
+		"addons": ["readme.pdf", "glinet.txt"]
 	}
 }
