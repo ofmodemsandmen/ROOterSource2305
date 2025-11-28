@@ -281,5 +281,18 @@
 		"mod": "GL-MT300N-V2",
 		"ext": "-upgrade.bin",
 		"addons": ["readme.pdf", "glinet.txt"]
+	},
+	"SMARTPRO": {
+		"details": "Beeline SmartBox Pro",
+		"type": "2",
+		"build": "2305",
+		"config": ".config_sbpro",
+		"image1": "openwrt-ramips-mt7621-beeline_smartbox-pro-squashfs-sysupgrade.bin",
+		"image2": "openwrt-ramips-mt7621-beeline_smartbox-pro-squashfs-factory.img",
+		"imagepath": "/ramips/mt7621/",
+		"mod": "Beeline-SmartBox-Pro",
+		"ext1": "-upgrade.bin",
+		"ext2": "-factory.img",
+		"addons": ["readme.pdf", "readmerecovery.txt"]
 	}
 }
