@@ -1,0 +1,41 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2013 OpenWrt.org
+
+START=99
+
+start_service()
+{
+	# Remove existing table if present
+    nft delete table inet quic_bypass 2>/dev/null
+
+    # Mark outbound QUIC (LAN → WAN)
+    nft add table inet quic_bypass
+    nft add chain inet quic_bypass prerouting \
+        '{ type filter hook prerouting priority mangle; policy accept; }'
+    nft add chain inet quic_bypass postrouting \
+        '{ type filter hook postrouting priority mangle; policy accept; }'
+
+    # IPv4 QUIC
+    nft add rule inet quic_bypass prerouting \
+        ip protocol udp udp dport 443 meta mark set 0x51 counter
+    # IPv6 QUIC
+    nft add rule inet quic_bypass prerouting \
+        ip6 nexthdr udp udp dport 443 meta mark set 0x51 counter
+    # IPv4 QUIC responses (WAN → LAN)
+    nft add rule inet quic_bypass postrouting \
+        ip protocol udp udp sport 443 meta mark set 0x51 counter
+    # IPv6 QUIC responses
+    nft add rule inet quic_bypass postrouting \
+        ip6 nexthdr udp udp sport 443 meta mark set 0x51 counter
+
+	iptables  -t mangle -D POSTROUTING \
+        -m mark --mark 0x51 -j DSCP --set-dscp 0x2e 2>/dev/null
+    ip6tables -t mangle -D POSTROUTING \
+        -m mark --mark 0x51 -j DSCP --set-dscp 0x2e 2>/dev/null
+
+    # Add fresh rules
+    iptables  -t mangle -A POSTROUTING \
+        -m mark --mark 0x51 -j DSCP --set-dscp 0x2e
+    ip6tables -t mangle -A POSTROUTING \
+        -m mark --mark 0x51 -j DSCP --set-dscp 0x2e
+}
